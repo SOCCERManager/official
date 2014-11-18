@@ -13,6 +13,7 @@ package soccer;
 public class PosPlayer {
     private Speler speler;
     private SpelerType posspelertype;
+    final double reduceFactor = 0.8;
 
     public PosPlayer(Speler speler, SpelerType spelertype) {
         this.speler = speler;
@@ -71,12 +72,36 @@ public class PosPlayer {
         if(speler.getType().equals(posspelertype)) {
             return speler.getUithoudingsvermogen();
         } else {
-            return (int) (speler.getUithoudingsvermogen()*0.8);
+            return (int) (speler.getUithoudingsvermogen()*reduceFactor);
         }
     }
 
     public void setUithoudingsvermogen(int aUithoudingsvermogen) {
         speler.setUithoudingsvermogen(aUithoudingsvermogen);
+    }
+    
+    /**
+     * Berekent en retourneert de aanvallende score die een speler heeft.
+     * @return Retourneert een lagere score als de speler niet in zijn standaard positie staat (factor is reduceFactor).
+     */
+    public double getOffence() {
+        if(this.posspelertype != speler.getType()){
+            return this.reduceFactor*speler.getAanvallend();
+        }else{
+            return speler.getAanvallend();
+        }
+    }
+    
+    /**
+     * Berekent en retourneert de verdedigende score die een speler heeft.
+     * @return Retourneert een lagere score als de speler niet in zijn standaard positie staat (factor is reduceFactor).
+     */
+    public double getDefense() {
+        if(this.posspelertype != speler.getType()){
+            return this.reduceFactor*speler.getVerdedigend();
+        }else{
+            return speler.getVerdedigend();
+        }
     }
 
     public SpelerType getType() {
