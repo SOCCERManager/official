@@ -18,16 +18,16 @@ public class Speler {
     private int _prijs;
     private int _gamesTilStatusDisapears;
     private int _aanvallend;
-    private int _verdeligend;
+    private int _verdedigend;
     private int _uithoudingsvermogen;
 
-    public Speler(String _naam, int _nummer, SpelerType _type, int _prijs, int _aanvallend, int _verdeligend, int _uithoudingsvermogen) {
+    public Speler(String _naam, int _nummer, SpelerType _type, int _prijs, int _aanvallend, int _verdedigend, int _uithoudingsvermogen) {
         this._naam = _naam;
         this._nummer = _nummer;
         this._type = _type;
         this._prijs = _prijs;
         this._aanvallend = _aanvallend;
-        this._verdeligend = _verdeligend;
+        this._verdedigend = _verdedigend;
         this._uithoudingsvermogen = _uithoudingsvermogen;
     }
 
@@ -63,12 +63,12 @@ public class Speler {
         this._aanvallend = aAanvallend;
     }
 
-    public int getVerdeligend() {
-        return this._verdeligend;
+    public int getVerdedigend() {
+        return this._verdedigend;
     }
 
-    public void setVerdeligend(int aVerdeligend) {
-        this._verdeligend = aVerdeligend;
+    public void setVerdedigend(int aVerdedigend) {
+        this._verdedigend = aVerdedigend;
     }
 
     public int getUithoudingsvermogen() {
