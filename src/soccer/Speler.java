@@ -79,14 +79,6 @@ public class Speler {
         this._uithoudingsvermogen = aUithoudingsvermogen;
     }
 
-    public SpelerType getType() {
-        return _type;
-    }
-
-    public void setType(SpelerType _type) {
-        this._type = _type;
-    }
-
     public SpelerStatus getStatus() {
         return _status;
     }
