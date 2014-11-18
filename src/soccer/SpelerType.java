@@ -1,5 +1,5 @@
 package soccer;
 
 public enum SpelerType {
-	Aanvaller, Verdeliger, Middenvelder, Doelman;
+	Aanvaller, Verdediger, Middenvelder, Doelman;
 }
