@@ -59,12 +59,12 @@ public class PosPlayer {
         speler.setAanvallend(aAanvallend);
     }
 
-    public int getVerdeligend() {
-        return speler.getVerdeligend();
+    public int getVerdedigend() {
+        return speler.getVerdedigend();
     }
 
-    public void setVerdeligend(int aVerdeligend) {
-        speler.setVerdeligend(aVerdeligend);
+    public void setVerdedigend(int aVerdeligend) {
+        speler.setVerdedigend(aVerdeligend);
     }
 
     public int getUithoudingsvermogen() {
