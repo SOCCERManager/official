@@ -12,11 +12,11 @@ package soccer;
  */
 public class PosPlayer {
     private Speler speler;
-    private SpelerType spelertype;
+    private SpelerType posspelertype;
 
     public PosPlayer(Speler speler, SpelerType spelertype) {
         this.speler = speler;
-        this.spelertype = spelertype;
+        this.posspelertype = spelertype;
     }
 
     public Speler getSpeler() {
@@ -27,11 +27,85 @@ public class PosPlayer {
         this.speler = speler;
     }
 
-    public SpelerType getSpelertype() {
-        return spelertype;
+    public SpelerType getPosSpelertype() {
+        return posspelertype;
     }
 
-    public void setSpelertype(SpelerType spelertype) {
-        this.spelertype = spelertype;
+    public void setPosSpelertype(SpelerType spelertype) {
+        this.posspelertype = spelertype;
     }
+
+    public String getNaam() {
+        return speler.getNaam();
+    }
+
+    public void setNaam(String aNaam) {
+        speler.setNaam(aNaam);
+    }
+
+    public int getNummer() {
+        return speler.getNummer();
+    }
+
+    public void setNummer(int aNummer) {
+        speler.setNummer(aNummer);
+    }
+
+    public int getAanvallend() {
+        return speler.getAanvallend();
+    }
+
+    public void setAanvallend(int aAanvallend) {
+        speler.setAanvallend(aAanvallend);
+    }
+
+    public int getVerdeligend() {
+        return speler.getVerdeligend();
+    }
+
+    public void setVerdeligend(int aVerdeligend) {
+        speler.setVerdeligend(aVerdeligend);
+    }
+
+    public int getUithoudingsvermogen() {
+        if(speler.getType().equals(posspelertype)) {
+            return speler.getUithoudingsvermogen();
+        } else {
+            return (int) (speler.getUithoudingsvermogen()*0.8);
+        }
+    }
+
+    public void setUithoudingsvermogen(int aUithoudingsvermogen) {
+        speler.setUithoudingsvermogen(aUithoudingsvermogen);
+    }
+
+    public SpelerType getType() {
+        return speler.getType();
+    }
+
+    public void setType(SpelerType aType) {
+        speler.setType(aType);
+    }
+
+    public SpelerStatus getStatus() {
+        return speler.getStatus();
+    }
+
+    public void setStatus(SpelerStatus _status) {
+        speler.setStatus(_status);
+    }
+
+    public int getPrijs() {
+        return speler.getPrijs();
+    }
+
+    public void setPrijs(int _prijs) {
+        speler.setPrijs(_prijs);
+    }
+
+    public void playedGame() {
+        speler.playedGame();
+    }
+    
+    
 }
