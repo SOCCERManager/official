@@ -5,6 +5,7 @@
  */
 package soccer;
 
+import java.io.IOException;
 import java.util.*;
 
 /**
@@ -13,7 +14,7 @@ import java.util.*;
  */
 public class SoccerApplication {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
        
   
@@ -68,5 +69,6 @@ public class SoccerApplication {
         Posities.add(pos11);
         
         Team testElftal = new Team(spelerlijst, "testElftal", Posities);
+        soccer.bouwXML.bouwXML(testElftal);
     }
 }
