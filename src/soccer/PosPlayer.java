@@ -63,8 +63,8 @@ public class PosPlayer {
         return speler.getVerdedigend();
     }
 
-    public void setVerdedigend(int aVerdeligend) {
-        speler.setVerdedigend(aVerdeligend);
+    public void setVerdedigend(int aVerdedigend) {
+        speler.setVerdedigend(aVerdedigend);
     }
 
     public int getUithoudingsvermogen() {
