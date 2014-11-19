@@ -20,16 +20,16 @@ import java.util.Scanner;
  * @author floris
  */
 public class bouwXML {
-    public static void bouwXML(Team t) throws IOException{
+    public static void bouwXML(Competitie t, File f) throws IOException{
         XStream xstream = new XStream(new StaxDriver());
         String xml = xstream.toXML(t);
-        BufferedWriter out = new BufferedWriter(new FileWriter("test.xml"));
+        BufferedWriter out = new BufferedWriter(new FileWriter(f));
         out.write(xml);
         out.close();
     }
     
-    public static Team leesXML() throws FileNotFoundException{
-        Scanner infile = new Scanner(new File("test.xml"));
+    public static Team leesXML(File f) throws FileNotFoundException{
+        Scanner infile = new Scanner(f);
         String te = "";
         while(infile.hasNext()){
             te += infile.nextLine();

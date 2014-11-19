@@ -17,11 +17,13 @@ public class Team {
     private ArrayList<Speler> spelers;
     private String name;
     private ArrayList<PosPlayer> opstelling;
+    private Competitie competitie;
 
-    public Team(ArrayList<Speler> spelers, String name, ArrayList<PosPlayer> opstelling) {
+    public Team(ArrayList<Speler> spelers, String name, ArrayList<PosPlayer> opstelling, Competitie c) {
         this.spelers = spelers;
         this.name = name;
         this.opstelling = opstelling;
+        this.competitie = c;
     }
 
     public ArrayList<Speler> getSpelers() {
@@ -69,5 +71,8 @@ public class Team {
         return true;
     }
     
+    public int getScore(){
+        return this.competitie.getScoreOfTeam(this);
+    }
     
 }
