@@ -3,11 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
 import static org.junit.Assert.*;
 import soccer.PosPlayer;
 import soccer.Speler;
@@ -15,8 +10,8 @@ import soccer.SpelerStatus;
 import soccer.SpelerType;
 
 /**
- *
- * @author floris
+ * 
+ * @author Nils
  */
 public class PosPlayerTest {
 
