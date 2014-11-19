@@ -70,5 +70,9 @@ public class SoccerApplication {
         
         Team testElftal = new Team(spelerlijst, "testElftal", Posities);
         soccer.bouwXML.bouwXML(testElftal);
+        
+        System.out.println(testElftal.getName());
+        Team test = soccer.bouwXML.leesXML();
+        System.out.println(test.getName());
     }
 }

@@ -7,6 +7,7 @@
 package soccer;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 /**
  *
@@ -46,4 +47,27 @@ public class Team {
     public void setOpstelling(ArrayList<PosPlayer> opstelling) {
         this.opstelling = opstelling;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Team other = (Team) obj;
+        if (!Objects.equals(this.spelers, other.spelers)) {
+            return false;
+        }
+        if (!Objects.equals(this.name, other.name)) {
+            return false;
+        }
+        if (!Objects.equals(this.opstelling, other.opstelling)) {
+            return false;
+        }
+        return true;
+    }
+    
+    
 }

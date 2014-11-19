@@ -173,4 +173,22 @@ public class Speler {
     public void playedGame() {
         throw new UnsupportedOperationException();
     }
+    
+    public boolean equals(Object obj){
+        if(obj instanceof Speler)
+        {
+            Speler s = (Speler)obj;
+            return (this.naam.equals(s.naam) &&
+                    this.nummer == s.nummer &&
+                    this.type.equals(s.type) &&
+                    this.status.equals(s.status) &&
+                    this.prijs == s.prijs &&
+                    this.gamesTilStatusDisapears == s.gamesTilStatusDisapears &&
+                    this.aanvallend == s.aanvallend &&
+                    this.verdedigend == s.verdedigend &&
+                    this.uithoudingsvermogen == s.uithoudingsvermogen);
+        }
+        return false;
+    }
+    
 }

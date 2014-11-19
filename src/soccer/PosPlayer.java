@@ -6,6 +6,8 @@
 
 package soccer; 
 
+import java.util.Objects;
+
 /**
  *
  * @author Youri
@@ -130,6 +132,27 @@ public class PosPlayer {
 
     public void playedGame() {
         speler.playedGame();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final PosPlayer other = (PosPlayer) obj;
+        if (!Objects.equals(this.speler, other.speler)) {
+            return false;
+        }
+        if (this.posspelertype != other.posspelertype) {
+            return false;
+        }
+        if (Double.doubleToLongBits(this.reduceFactor) != Double.doubleToLongBits(other.reduceFactor)) {
+            return false;
+        }
+        return true;
     }
     
     
