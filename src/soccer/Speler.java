@@ -168,12 +168,17 @@ public class Speler {
     }
     
     /**
-     * ?????????????????????????????
+     * Past de status aan van de speler na iedere wedstrijd.
      */
     public void playedGame() {
         throw new UnsupportedOperationException();
     }
     
+    /**
+     * Vergelijkt een andere instantie van PosPlayer
+     * @param obj Object PosPlayer
+     * @return Retourneert True als andere PosPlayer overeenkomt met this en anders retourneert false.
+     */
     public boolean equals(Object obj){
         if(obj instanceof Speler)
         {
