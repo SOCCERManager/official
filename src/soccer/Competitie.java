@@ -16,6 +16,7 @@ public class Competitie {
 
     private ArrayList<Wedstrijd> wedstrijden;
     private ArrayList<Team> teams;
+    private int userindex;
 
     /**
      * Sets private members wedstrijden and teams.
@@ -26,7 +27,14 @@ public class Competitie {
         this.wedstrijden = wedstrijden;
         this.teams = teams;
     }
+    public int getUserindex() {
+        return userindex;
+    }
 
+    public void setUserindex(int userindex) {
+        this.userindex = userindex;
+    }
+    
     /**
      * Returns the complete arraylist which contains the total amount of wedstrijden played.
      * @return
