@@ -9,11 +9,11 @@ package soccer;
 /**
  *
  * @author Youri
- */
+ **/
 public class PosPlayer {
     private Speler speler;
     private SpelerType posspelertype;
-    final double reduceFactor = 0.8;
+    final double reduceFactor = 0.8; 
 
     public PosPlayer(Speler speler, SpelerType spelertype) {
         this.speler = speler;
@@ -116,16 +116,16 @@ public class PosPlayer {
         return speler.getStatus();
     }
 
-    public void setStatus(SpelerStatus _status) {
-        speler.setStatus(_status);
+    public void setStatus(SpelerStatus status) {
+        speler.setStatus(status);
     }
 
     public int getPrijs() {
         return speler.getPrijs();
     }
 
-    public void setPrijs(int _prijs) {
-        speler.setPrijs(_prijs);
+    public void setPrijs(int prijs) {
+        speler.setPrijs(prijs);
     }
 
     public void playedGame() {
