@@ -50,7 +50,7 @@ public class Speler {
 
     /**
      * Stel de naam van een speler in.
-     * @param aNaam De naam van de speler die ingesteld moet worden.
+     * @param naam De naam van de speler die ingesteld moet worden.
      */
     public void setNaam(String naam) {
         this.naam = naam;
@@ -65,7 +65,7 @@ public class Speler {
 
     /**
      * Stel het nummer van de speler in.
-     * @param aNummer Het nummer van de speler die ingesteld moet worden.
+     * @param nummer Het nummer van de speler die ingesteld moet worden.
      */
     public void setNummer(int nummer) {
         this.nummer = nummer;
@@ -97,7 +97,7 @@ public class Speler {
 
     /**
      * Stel de aanvalspunten van de speler in.
-     * @param aAanvallend De punten die ingesteld moeten worden.
+     * @param aanvallend De punten die ingesteld moeten worden.
      */
     public void setAanvallend(int aanvallend) {
         this.aanvallend = aanvallend;
