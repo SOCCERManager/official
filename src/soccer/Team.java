@@ -18,6 +18,7 @@ public class Team {
     private String name;
     private ArrayList<PosPlayer> opstelling;
     private Competitie competitie;
+    private int budget;
 
     /**
      * This constructor sets the private variables spelers, name, opstelling and c.
@@ -25,14 +26,28 @@ public class Team {
      * @param name
      * @param opstelling
      * @param c
+     * @param budget
      */
-    public Team(ArrayList<Speler> spelers, String name, ArrayList<PosPlayer> opstelling, Competitie c) {
+    public Team(ArrayList<Speler> spelers, String name, ArrayList<PosPlayer> opstelling, Competitie c, int budget) {
         this.spelers = spelers;
         this.name = name;
         this.opstelling = opstelling;
         this.competitie = c;
+        this.budget = budget;
     }
 
+    /**
+     * Budget van het team
+     * @return Het budget van het team.
+     */
+    public int getBudget(){
+        return budget;
+    }
+    
+    public void setBudget(int budget){
+        this.budget = budget;
+    }
+    
     /**
      * Returns the arraylist which contains all the spelers in a team.
      * @return

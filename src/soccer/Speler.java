@@ -52,8 +52,8 @@ public class Speler {
      * Stel de naam van een speler in.
      * @param aNaam De naam van de speler die ingesteld moet worden.
      */
-    public void setNaam(String aNaam) {
-        this.naam = aNaam;
+    public void setNaam(String naam) {
+        this.naam = naam;
     }
     /**
      * Nummer van de speler.
@@ -67,8 +67,8 @@ public class Speler {
      * Stel het nummer van de speler in.
      * @param aNummer Het nummer van de speler die ingesteld moet worden.
      */
-    public void setNummer(int aNummer) {
-        this.nummer = aNummer;
+    public void setNummer(int nummer) {
+        this.nummer = nummer;
     }
 
     /**
@@ -81,10 +81,10 @@ public class Speler {
 
     /**
      * Stel het type van de speler in.
-     * @param aType het type die ingesteld moet worden.
+     * @param type het type die ingesteld moet worden.
      */
-    public void setType(SpelerType aType) {
-        this.type = aType;
+    public void setType(SpelerType type) {
+        this.type = type;
     }
 
     /**
@@ -99,8 +99,8 @@ public class Speler {
      * Stel de aanvalspunten van de speler in.
      * @param aAanvallend De punten die ingesteld moeten worden.
      */
-    public void setAanvallend(int aAanvallend) {
-        this.aanvallend = aAanvallend;
+    public void setAanvallend(int aanvallend) {
+        this.aanvallend = aanvallend;
     }
 
     /**
@@ -113,10 +113,10 @@ public class Speler {
 
     /**
      * Stel de verdedigingspunten van de speler in.
-     * @param aVerdedigend de punten die ingesteld moeten worden.
+     * @param verdedigend de punten die ingesteld moeten worden.
      */
-    public void setVerdedigend(int aVerdedigend) {
-        this.verdedigend = aVerdedigend;
+    public void setVerdedigend(int verdedigend) {
+        this.verdedigend = verdedigend;
     }
 
     /**
@@ -129,10 +129,10 @@ public class Speler {
     
     /**
      * Stel het uithoudingsvermogen van de speler in.
-     * @param aUithoudingsvermogen de punten voor het uithoudingsvermogen van de speler.
+     * @param uithoudingsvermogen de punten voor het uithoudingsvermogen van de speler.
      */
-    public void setUithoudingsvermogen(int aUithoudingsvermogen) {
-        this.uithoudingsvermogen = aUithoudingsvermogen;
+    public void setUithoudingsvermogen(int uithoudingsvermogen) {
+        this.uithoudingsvermogen = uithoudingsvermogen;
     }
 
     /**
