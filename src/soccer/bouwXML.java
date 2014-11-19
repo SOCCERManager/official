@@ -8,8 +8,11 @@ package soccer;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.StaxDriver;
 import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 
 /**
@@ -23,5 +26,16 @@ public class bouwXML {
         BufferedWriter out = new BufferedWriter(new FileWriter("test.xml"));
         out.write(xml);
         out.close();
+    }
+    
+    public static Team leesXML() throws FileNotFoundException{
+        Scanner infile = new Scanner(new File("test.xml"));
+        String te = "";
+        while(infile.hasNext()){
+            te += infile.nextLine();
+        }
+        XStream xstream = new XStream(new StaxDriver());
+        Team t = (Team)xstream.fromXML(te);
+        return t;
     }
 }
