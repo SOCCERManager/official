@@ -11,5 +11,24 @@ package soccer;
  * @author Youri
  */
 public enum SpelerStatus {
-	Gele_kaart, Roode_kaart, Gebleseerd, Normaal;
+
+    /**
+     *
+     */
+    Gele_kaart,
+
+    /**
+     *
+     */
+    Roode_kaart,
+
+    /**
+     *
+     */
+    Gebleseerd,
+
+    /**
+     *
+     */
+    Normaal;
 }

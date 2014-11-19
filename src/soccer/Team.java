@@ -19,6 +19,13 @@ public class Team {
     private ArrayList<PosPlayer> opstelling;
     private Competitie competitie;
 
+    /**
+     * This constructor sets the private variables spelers, name, opstelling and c.
+     * @param spelers
+     * @param name
+     * @param opstelling
+     * @param c
+     */
     public Team(ArrayList<Speler> spelers, String name, ArrayList<PosPlayer> opstelling, Competitie c) {
         this.spelers = spelers;
         this.name = name;
@@ -26,26 +33,50 @@ public class Team {
         this.competitie = c;
     }
 
+    /**
+     * Returns the arraylist which contains all the spelers in a team.
+     * @return
+     */
     public ArrayList<Speler> getSpelers() {
         return spelers;
     }
 
+    /**
+     *
+     * @param spelers
+     */
     public void setSpelers(ArrayList<Speler> spelers) {
         this.spelers = spelers;
     }
 
+    /**
+     * Returns the name of the team.
+     * @return
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     *
+     * @param name
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+    /**
+     * Returns the current opstelling of the team.
+     * @return
+     */
     public ArrayList<PosPlayer> getOpstelling() {
         return opstelling;
     }
 
+    /**
+     *
+     * @param opstelling
+     */
     public void setOpstelling(ArrayList<PosPlayer> opstelling) {
         this.opstelling = opstelling;
     }
@@ -71,6 +102,10 @@ public class Team {
         return true;
     }
     
+    /**
+     * Calls the function getScoreOfTeam which returns an integer and consists out of the total amount of points gained.
+     * @return
+     */
     public int getScore(){
         return this.competitie.getScoreOfTeam(this);
     }

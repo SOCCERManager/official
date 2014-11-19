@@ -14,6 +14,11 @@ import java.util.*;
  */
 public class SoccerApplication {
 
+    /**
+     *
+     * @param args
+     * @throws IOException
+     */
     public static void main(String[] args) throws IOException {
 
        
@@ -68,11 +73,5 @@ public class SoccerApplication {
         Posities.add(pos10);
         Posities.add(pos11);
         
-        Team testElftal = new Team(spelerlijst, "testElftal", Posities);
-        soccer.bouwXML.bouwXML(testElftal);
-        
-        System.out.println(testElftal.getName());
-        Team test = soccer.bouwXML.leesXML();
-        System.out.println(test.getName());
     }
 }

@@ -20,6 +20,13 @@ import java.util.Scanner;
  * @author floris
  */
 public class bouwXML {
+
+    /**
+     * This function takes params Competitie t and File f to transfer Competitie t to XML and write it into File f.
+     * @param t
+     * @param f
+     * @throws IOException
+     */
     public static void bouwXML(Competitie t, File f) throws IOException{
         XStream xstream = new XStream(new StaxDriver());
         String xml = xstream.toXML(t);
@@ -28,14 +35,20 @@ public class bouwXML {
         out.close();
     }
     
-    public static Team leesXML(File f) throws FileNotFoundException{
+    /**
+     * This function reads the contents of File f and transfers the contents to a Competitie class.
+     * @param f
+     * @return
+     * @throws FileNotFoundException
+     */
+    public static Competitie leesXML(File f) throws FileNotFoundException{
         Scanner infile = new Scanner(f);
         String te = "";
         while(infile.hasNext()){
             te += infile.nextLine();
         }
         XStream xstream = new XStream(new StaxDriver());
-        Team t = (Team)xstream.fromXML(te);
+        Competitie t = (Competitie)xstream.fromXML(te);
         return t;
     }
     

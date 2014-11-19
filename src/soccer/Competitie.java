@@ -17,15 +17,28 @@ public class Competitie {
     private ArrayList<Wedstrijd> wedstrijden;
     private ArrayList<Team> teams;
 
+    /**
+     * Sets private members wedstrijden and teams.
+     * @param wedstrijden
+     * @param teams
+     */
     public Competitie(ArrayList<Wedstrijd> wedstrijden, ArrayList<Team> teams) {
         this.wedstrijden = wedstrijden;
         this.teams = teams;
     }
 
+    /**
+     * Returns the complete arraylist which contains the total amount of wedstrijden played.
+     * @return
+     */
     public ArrayList<Wedstrijd> getWedstrijden() {
         return wedstrijden;
     }
 
+    /**
+     *
+     * @param wedstrijden
+     */
     public void setWedstrijden(ArrayList<Wedstrijd> wedstrijden) {
         this.wedstrijden = wedstrijden;
     }
@@ -51,6 +64,12 @@ public class Competitie {
         return "Competitie{" + "wedstrijden=" + wedstrijden + '}';
     }
     
+    /**
+     * This function checks for every wedstrijd played if Team t obtained any points. If that is the case those points will be added and 
+     * finally returned.
+     * @param t
+     * @return
+     */
     public int getScoreOfTeam(Team t){
         return this.wedstrijden.stream().mapToInt(v -> v.scoreOfTeam(t)).sum();
     }
