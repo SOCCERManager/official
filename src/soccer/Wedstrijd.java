@@ -189,11 +189,13 @@ public class Wedstrijd {
      */
     public int scoreOfTeam(Team t){
         
-        if(t.equals(getTeam_a()))
-            return getPoints_a();
+        if(t.equals(this.getTeam_a())){
+            return this.getPoints_a();
+        }
         
-        else if (t.equals(getTeam_b()))
-            return getPoints_b();
+        else if (t.equals(this.getTeam_b())){
+            return this.getPoints_b();
+        }
         
         return 0;
     }

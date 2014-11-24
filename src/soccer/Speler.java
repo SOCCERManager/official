@@ -5,6 +5,8 @@
  */
 package soccer;
 
+import java.util.Objects;
+
 /**
  *
  * @author Youri
@@ -173,27 +175,52 @@ public class Speler {
     public void playedGame() {
         throw new UnsupportedOperationException();
     }
+
+
+    
     
     /**
      * Vergelijkt een andere instantie van PosPlayer
      * @param obj Object PosPlayer
      * @return Retourneert True als andere PosPlayer overeenkomt met this en anders retourneert false.
      */
-    public boolean equals(Object obj){
-        if(obj instanceof Speler)
-        {
-            Speler s = (Speler)obj;
-            return (this.naam.equals(s.naam) &&
-                    this.nummer == s.nummer &&
-                    this.type.equals(s.type) &&
-                    this.status.equals(s.status) &&
-                    this.prijs == s.prijs &&
-                    this.gamesTilStatusDisapears == s.gamesTilStatusDisapears &&
-                    this.aanvallend == s.aanvallend &&
-                    this.verdedigend == s.verdedigend &&
-                    this.uithoudingsvermogen == s.uithoudingsvermogen);
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
         }
-        return false;
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Speler other = (Speler) obj;
+        if (!Objects.equals(this.naam, other.naam)) {
+            return false;
+        }
+        if (this.nummer != other.nummer) {
+            return false;
+        }
+        if (this.type != other.type) {
+            return false;
+        }
+        if (this.status != other.status) {
+            return false;
+        }
+        if (this.prijs != other.prijs) {
+            return false;
+        }
+        if (this.gamesTilStatusDisapears != other.gamesTilStatusDisapears) {
+            return false;
+        }
+        if (this.aanvallend != other.aanvallend) {
+            return false;
+        }
+        if (this.verdedigend != other.verdedigend) {
+            return false;
+        }
+        if (this.uithoudingsvermogen != other.uithoudingsvermogen) {
+            return false;
+        }
+        return true;
     }
     
 }

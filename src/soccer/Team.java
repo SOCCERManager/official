@@ -114,8 +114,15 @@ public class Team {
         if (!Objects.equals(this.opstelling, other.opstelling)) {
             return false;
         }
+        if (!Objects.equals(this.competitie, other.competitie)) {
+            return false;
+        }
+        if (this.budget != other.budget) {
+            return false;
+        }
         return true;
     }
+
     
     /**
      * Calls the function getScoreOfTeam which returns an integer and consists out of the total amount of points gained.
