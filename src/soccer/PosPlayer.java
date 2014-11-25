@@ -233,6 +233,19 @@ public class PosPlayer {
         }
         return true;
     }
+
+    public void playGame() {
+        speler.playGame();
+    }
+
+    public boolean isUnavaliableAvaliableToPlay() {
+        return speler.isUnavaliableAvaliableToPlay();
+    }
+
+    public boolean isAvaliableToPlay() {
+        return speler.isAvaliableToPlay();
+    }
     
+
     
 }
