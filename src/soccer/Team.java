@@ -132,4 +132,67 @@ public class Team {
         return this.competitie.getScoreOfTeam(this);
     }
     
+    /**
+     * Method to be called when playing a game.
+     */
+    public void playGame() {
+        for(Speler s: this.spelers)
+            s.playGame();
+    }
+    
+    public boolean OpstellingIsValide() {
+        return this.opstelling.size() == 11 && ((int) this.opstelling.stream().filter(v -> v.isUnavaliableAvaliableToPlay()).count()) == 0;
+    }
+    
+    public void generateOpstelling() {
+        
+        // To many players injured, lets magialy fix some (:
+        while(this.spelers.stream().filter(v -> v.isUnavaliableAvaliableToPlay()).count() >= 11)
+            for(Speler s:this.spelers)
+                if(s.isUnavaliableAvaliableToPlay()) {
+                    s.magicalyFix();
+                    break;
+                }
+        
+        this.opstelling = new ArrayList<>();
+        
+        // See if doelman is avaliable
+        boolean dedicated_goalie = this.spelers.stream().filter(v -> v.isAvaliableToPlay()).filter(v -> v.getType().equals(SpelerType.Doelman)).count() > 1;
+        
+        // Set doelman
+        for(Speler s: this.spelers)
+            if(!dedicated_goalie || s.getType().equals(SpelerType.Doelman))
+                this.opstelling.add(new PosPlayer(s, s.getType()));
+                    
+        // set other players
+        for(Speler s: this.spelers) {
+            if(this.opstelling.size() <= 11 && !s.isUnavaliableAvaliableToPlay() && !this.opstelling.contains(s))
+                 this.opstelling.add(new PosPlayer(s, s.getType()));
+        }
+    }
+    
+    public int getAanvallendTotaal() {
+        if(!this.OpstellingIsValide())
+            this.generateOpstelling();
+        
+        return this.opstelling.stream().mapToInt(v -> v.getAanvallend()).sum();
+    }
+    
+    public int getVerdedigingsTotaal() {
+        if(!this.OpstellingIsValide())
+            this.generateOpstelling();
+        
+        return this.opstelling.stream().mapToInt(v -> v.getVerdedigend()).sum();
+    }
+    public int getUithoudingsTotaal() {
+        if(!this.OpstellingIsValide())
+            this.generateOpstelling();
+        
+        return this.opstelling.stream().mapToInt(v -> v.getUithoudingsvermogen()).sum();
+    }
+    
+    
+    public int getTotalStat() {
+        return this.getAanvallendTotaal() + this.getVerdedigingsTotaal() + this.getUithoudingsTotaal();
+    }
 }
