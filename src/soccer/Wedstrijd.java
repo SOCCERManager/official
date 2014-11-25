@@ -204,6 +204,36 @@ public class Wedstrijd {
      *
      */
     public void playGame(){
+        if(!this.team_a.OpstellingIsValide()) 
+            this.team_a.generateOpstelling();
         
+        if(!this.team_b.OpstellingIsValide())
+            this.team_b.generateOpstelling();
+        
+        this.team_a.playGame();
+        this.team_b.playGame();
+        
+        this.score_a = getGoals(team_a, team_b);
+        this.score_b = getGoals(team_b, team_a);
+        
+        if(this.score_a > this.score_b) {
+            this.points_a = 3;
+            this.points_b = 0;
+        } else if(this.score_a < this.score_b) {
+            this.points_a = 0;
+            this.points_b = 3;
+        } else { 
+            this.points_a = 1;
+            this.points_b = 1;
+        }
+        
+    }
+    
+    private int getGoals(Team a, Team b) {
+        return (int) Math.round(
+            (double)a.getAanvallendTotaal()*(double)a.getUithoudingsTotaal()*Math.random()
+            /
+            (double)b.getVerdedigingsTotaal()*(double)b.getUithoudingsTotaal()
+        );
     }
 }
