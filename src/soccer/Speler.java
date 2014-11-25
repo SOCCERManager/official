@@ -172,8 +172,29 @@ public class Speler {
     /**
      * Past de status aan van de speler na iedere wedstrijd.
      */
-    public void playedGame() {
-        throw new UnsupportedOperationException();
+    public void playGame() {
+        if(this.gamesTilStatusDisapears > 0) {
+            this.gamesTilStatusDisapears--;
+            if(this.gamesTilStatusDisapears == 0) this.status = SpelerStatus.Normaal;
+            
+        } else {
+            if(this.randomWithRange(0, 100) == 0) {
+                this.status = SpelerStatus.Gebleseerd;
+                this.gamesTilStatusDisapears = this.randomWithRange(2, 5);
+                
+            } else if(this.randomWithRange(0, 100) == 0) {
+                this.status = SpelerStatus.Gele_kaart;
+                this.gamesTilStatusDisapears = 1;
+                
+            } else if(this.randomWithRange(0, 100) == 0) {
+                this.status = SpelerStatus.Roode_kaart;
+                this.gamesTilStatusDisapears = 2;
+            }
+        }
+    }
+    
+    private int randomWithRange(int min, int max) {
+       return (int)(Math.random() * ((max - min) + 1)) + min;
     }
 
 
@@ -223,4 +244,15 @@ public class Speler {
         return true;
     }
     
+    public boolean isUnavaliableAvaliableToPlay() {
+        return this.gamesTilStatusDisapears != 0;
+    }
+    public boolean isAvaliableToPlay() {
+        return !this.isUnavaliableAvaliableToPlay();
+    }
+    
+    public void magicalyFix() {
+        this.gamesTilStatusDisapears =0;
+        this.status = SpelerStatus.Normaal;
+    }
 }
