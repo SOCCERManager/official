@@ -19,6 +19,12 @@ import soccer.SpelerType;
 public class SpelerTest {
     
     @Test
+    public void constructorTest() {
+        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 92, 58);
+        assertNotNull(s1);
+    }
+    
+    @Test
     public void getNaamTest() {
         Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
         assertEquals("Bert", s1.getNaam());
