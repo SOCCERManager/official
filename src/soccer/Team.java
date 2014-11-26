@@ -141,15 +141,15 @@ public class Team {
     }
     
     public boolean OpstellingIsValide() {
-        return this.opstelling.size() == 11 && ((int) this.opstelling.stream().filter(v -> v.isUnavaliableAvaliableToPlay()).count()) == 0;
+        return this.opstelling.size() == 11 && ((int) this.opstelling.stream().filter(v -> v.isUnavaliableToPlay()).count()) == 0;
     }
     
     public void generateOpstelling() {
         
         // To many players injured, lets magialy fix some (:
-        while(this.spelers.stream().filter(v -> v.isUnavaliableAvaliableToPlay()).count() >= 11)
+        while(this.spelers.stream().filter(v -> v.isUnavaliableToPlay()).count() >= 11)
             for(Speler s:this.spelers)
-                if(s.isUnavaliableAvaliableToPlay()) {
+                if(s.isUnavaliableToPlay()) {
                     s.magicalyFix();
                     break;
                 }
@@ -166,7 +166,7 @@ public class Team {
                     
         // set other players
         for(Speler s: this.spelers) {
-            if(this.opstelling.size() <= 11 && !s.isUnavaliableAvaliableToPlay() && !this.opstelling.contains(s))
+            if(this.opstelling.size() <= 11 && !s.isUnavaliableToPlay() && !this.opstelling.contains(s))
                  this.opstelling.add(new PosPlayer(s, s.getType()));
         }
     }
