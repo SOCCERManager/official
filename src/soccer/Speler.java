@@ -1,15 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package soccer;
 
 import java.util.Objects;
 
 /**
- *
- * @author Youri
+ * Class speler
  */
 public class Speler {
     private String naam;
@@ -43,7 +37,6 @@ public class Speler {
     }
 
     /**
-     * 
      * @return Retourneert de naam van de speler als String.
      */
     public String getNaam() {
@@ -178,14 +171,16 @@ public class Speler {
             if(this.gamesTilStatusDisapears == 0) this.status = SpelerStatus.Normaal;
             
         } else {
+            //1 op 100 kans dat de speler geblesseerd raakt na een wedstrijd
             if(this.randomWithRange(0, 100) == 0) {
                 this.status = SpelerStatus.Gebleseerd;
                 this.gamesTilStatusDisapears = this.randomWithRange(2, 5);
-                
+            
+            //1 op 100 kans dat de speler een gele kaart krijgt na een wedstrijd
             } else if(this.randomWithRange(0, 100) == 0) {
                 this.status = SpelerStatus.Gele_kaart;
                 this.gamesTilStatusDisapears = 1;
-                
+            //1 op 100 kans dat de speler een rode kaart krijgt na een wedstrijd    
             } else if(this.randomWithRange(0, 100) == 0) {
                 this.status = SpelerStatus.Roode_kaart;
                 this.gamesTilStatusDisapears = 2;
@@ -193,12 +188,15 @@ public class Speler {
         }
     }
     
+    /**
+     * Kiest een random geheel getal uit een range van twee ingevoerde getallen
+     * @param min minimale waarde
+     * @param max maximale waarde 
+     * @return een random getal binnen de opgegeven range
+     */
     private int randomWithRange(int min, int max) {
        return (int)(Math.random() * ((max - min) + 1)) + min;
     }
-
-
-    
     
     /**
      * Vergelijkt een andere instantie van PosPlayer
@@ -243,14 +241,25 @@ public class Speler {
         }
         return true;
     }
-    
-    public boolean isUnavaliableAvaliableToPlay() {
+     /**
+     * Kijkt of de speler niet beschikbaar is om te spelen
+     * @return true als de speler niet beschikbaar is en false als de speler wel beschikbaar is.
+     */
+    public boolean isUnavaliableToPlay() {
         return this.gamesTilStatusDisapears != 0;
     }
-    public boolean isAvaliableToPlay() {
-        return !this.isUnavaliableAvaliableToPlay();
-    }
     
+    /**
+     * Kijkt of de speler beschikbaar is om te spelen
+     * @return true als de speler beschikbaar is en false als de speler niet beschikbaar is. 
+     */
+    public boolean isAvaliableToPlay() {
+        return !this.isUnavaliableToPlay();
+    }
+    /**
+     * Als een team minder dan 11 spelers beschikbaar heeft (dus geen volledig elftal kan opstellen)
+     * wordt er een willekeurig een speler van dit team weer beschikbaar
+     */
     public void magicalyFix() {
         this.gamesTilStatusDisapears =0;
         this.status = SpelerStatus.Normaal;
