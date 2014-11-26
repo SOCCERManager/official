@@ -1,15 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package soccer;
 
 import java.util.Objects;
 
 /**
- *
- * @author floris
+ * Class Wedstrijd
  */
 public class Wedstrijd {
 
@@ -22,9 +16,9 @@ public class Wedstrijd {
     private boolean played;
     
     /**
-     *
-     * @param team_a
-     * @param team_b
+     * Constructor van Wedstrijd, bestaande uit twee teams
+     * @param team_a het eerste team dat deelneemt aan een wedstrijd
+     * @param team_b het tweede team dat deelneemt aan een wedstrijd
      */
     public Wedstrijd(Team team_a, Team team_b) {
         this.team_a = team_a;
@@ -33,117 +27,122 @@ public class Wedstrijd {
     }
 
     /**
-     *Returns Team a.
-     * @return
+     * geeft het eerste team in een wedstrijd terug
+     * @return het eerste team
      */
     public Team getTeam_a() {
         return team_a;
     }
 
     /**
-     *
-     * @param team_a
+     * Veranderd het eerste team van een wedstrijd
+     * @param team_a het eerste team in een wedstrijd
      */
     public void setTeam_a(Team team_a) {
         this.team_a = team_a;
     }
 
     /**
-     *Returns Team b
-     * @return
+     * geeft het tweede team in een wedstrijd terug
+     * @return het tweede team
      */
     public Team getTeam_b() {
         return team_b;
     }
 
     /**
-     *
-     * @param team_b
+     * Veranderd het tweede team van een wedstrijd
+     * @param team_b het tweede team in een wedstrijd
      */
     public void setTeam_b(Team team_b) {
         this.team_b = team_b;
     }
 
     /**
-     *The score of Team a in the current match.
-     * @return
+     * Geeft de score van het eerste team in een wedstrijd
+     * @return de score van het eerste team
      */
     public int getScore_a() {
         return score_a;
     }
 
     /**
-     *
-     * @param score_a
+     * Set de score van het eerste team in een wedstrijd
+     * @param score_a de score van het eerste team
      */
     public void setScore_a(int score_a) {
         this.score_a = score_a;
     }
 
     /**
-     *The score of Team b in the current match.
-     * @return
+     * Geeft de score van het tweede team in een wedstrijd
+     * @return de score van het tweede team
      */
     public int getScore_b() {
         return score_b;
     }
 
     /**
-     *
-     * @param score_b
+     * Set de score van het eerste team in een wedstrijd
+     * @param score_b de score van het eerste team
      */
     public void setScore_b(int score_b) {
         this.score_b = score_b;
     }
 
     /**
-     *The amount of points Team a has.
-     * @return
+     * Get het aantal punten van het eerste team in een wedstrijd
+     * @return het aantal punten van het eerste team in een wedstrijd (int)
      */
     public int getPoints_a() {
         return points_a;
     }
 
     /**
-     *
-     * @param points_a
+     * Set het aantal punten van het eerste team in een wedstrijd
+     * @param points_a het aantal punten van het eerste team in een wedstrijd
      */
     public void setPoints_a(int points_a) {
         this.points_a = points_a;
     }
 
     /**
-     *The amount of points Team b has.
-     * @return
+     * Get het aantal punten van het tweede team in een wedstrijd
+     * @return het aantal punten van het tweede team in een wedstrijd (int)
      */
     public int getPoints_b() {
         return points_b;
     }
 
     /**
-     *
-     * @param points_b
+     * Set het aantal punten van het tweede team in een wedstrijd
+     * @param points_b het aantal punten van het tweede team in een wedstrijd
      */
     public void setPoints_b(int points_b) {
         this.points_b = points_b;
     }
 
     /**
-     *
-     * @return
+     * Kijkt of een wedstrijd gespeeld is
+     * @return true als de wedstrijd gespeeld is, false als dit niet het geval is
      */
     public boolean isPlayed() {
         return played;
     }
 
     /**
-     *
-     * @param played
+     * Set of de wedstrijd al gespeeld is
+     * @param played true/false of de wedstrijd al gespeeld is ja/nee
      */
     public void setPlayed(boolean played) {
         this.played = played;
     }
 
+    /**
+     * De equals methode om te kijken of wedstrijden aan elkaar gelijk zijn.
+     * @param obj de wedstrijd die vergeleken wordt met de wedstrijd waarbij deze methode is aangeroepen
+     * @return true als de wedstrijden gelijk zijn en false als de wedstrijdne niet aan elkaar gelijk zijn. 
+     */
     @Override
     public boolean equals(Object obj) {
         if (obj == null) {
@@ -177,15 +176,20 @@ public class Wedstrijd {
         return true;
     }
 
+    /**
+     * toString voor een wedstrijd
+     * @return De String representatie van een wedstrijd in de vorm van "Wedstrijd{teams, scores, aantal punten, is de wedstrijd gespeeld true of false)
+     */
     @Override
     public String toString() {
         return "Wedstrijd{" + "team_a=" + team_a + ", team_b=" + team_b + ", score_a=" + score_a + ", score_b=" + score_b + ", points_a=" + points_a + ", points_b=" + points_b + ", played=" + played + '}';
     }
     
     /**
-     *This function checks for the score of a Team t, if this Team t corresponds to Team a or Team b it will return the right score.
-     * @param t
-     * @return
+     * Kijkt of de score van een team t gelijk is aan dat van een team in de wedstrijd (team_a of team_b). 
+     * Indien deze aan elkaar gelijk zijn, zal het aantal punten van dit team returnen
+     * @param t een team waarvoor het bovenstaande bekeken moet worden
+     * @return de score van team a of team b als deze gelijk zijn, anders return 0
      */
     public int scoreOfTeam(Team t){
         
@@ -201,7 +205,9 @@ public class Wedstrijd {
     }
     
     /**
-     *
+     * De wedstrijd zelf, er wordt gekeken of de opstellingen valide zijn, anders worden deze gegenereert.
+     * Daarna wordt er op basis van de stats van de teams een aantal goals toegekend aan een team.
+     * Tot slot wordt gekeken naar de uitslag van de wedstrijd en de hoeveelheid punten die ieder team krijgt. 
      */
     public void playGame(){
         if(!this.team_a.OpstellingIsValide()) 
@@ -228,7 +234,12 @@ public class Wedstrijd {
         }
         
     }
-    
+    /**
+     * De berekening achter het genereren van de goals
+     * De aanvallende- en de uithoudingsscore van het team waarvoor het aantal goals gegenereerd moet worden wordt het product van genomen. (a)
+     * Van de verdedigende- en de uithoudingsscore van het team dat "verdedigd" wordt het product genomen. (b)
+     * Dan (a)/(b) = (c) en tot slot (c) vermenigvuldigd met een willekeurige waarde tussen 0 en 1. 
+     */ 
     private int getGoals(Team a, Team b) {
         return (int) Math.round(
             (double)a.getAanvallendTotaal()*(double)a.getUithoudingsTotaal()*Math.random()
