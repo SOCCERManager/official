@@ -1,34 +1,27 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package soccer;
 
 /**
- *
- * @author Youri
+ * Een enum voor de verschillende spelerStatussen. 
  */
 public enum SpelerStatus {
 
     /**
-     *
+     * Enum gele kaart
      */
     Gele_kaart,
 
     /**
-     *
+     * Enum rode kaart
      */
     Roode_kaart,
 
     /**
-     *
+     * Enum geblesseerd
      */
     Gebleseerd,
 
     /**
-     *
+     * enum normaal
      */
     Normaal;
 }
