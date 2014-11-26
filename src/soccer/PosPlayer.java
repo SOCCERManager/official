@@ -1,14 +1,9 @@
-/*
- *PosPlayer is een 
- */
-
 package soccer; 
 
 import java.util.Objects;
 
 /**
  * PosPlayer is een speler decorator, bepaalt o.a. het aantal typepunten die een speler heeft afhankelijk van zijn positie.
- * @author Youri
  **/
 public class PosPlayer {
     private Speler speler;
@@ -16,7 +11,7 @@ public class PosPlayer {
     final double reduceFactor = 0.8; 
 
     /**
-     * Initiliseer PosPlayer
+     * Initialiseer PosPlayer
      * @param speler Een object van klasse van Speler.
      * @param spelertype Het type speler.
      */
@@ -134,7 +129,7 @@ public class PosPlayer {
     }
 
     /**
-     * 
+     * Stel het uithoudingsvermogen van een speler in
      * @param uithoudingsvermogen Het uithoudingsvermogen van de speler.
      */
     public void setUithoudingsvermogen(int uithoudingsvermogen) {
@@ -179,12 +174,16 @@ public class PosPlayer {
 
     /**
      * Status van de speler (blessure/gele/rode kaart)
-     * @return 
+     * @return de status van de speler (enum)
      */
     public SpelerStatus getStatus() {
         return speler.getStatus();
     }
 
+    /**
+     * Stel de status van een speler in (blessure/gele kaart/rode kaart)
+     * @param status (blessure, gele kaart, rode kaart, normaal)
+     */
     public void setStatus(SpelerStatus status) {
         speler.setStatus(status);
     }
@@ -197,6 +196,10 @@ public class PosPlayer {
         return speler.getPrijs();
     }
 
+    /**
+     * Stel de prijs van de speler in
+     * @param prijs de nieuwe prijs van de speler
+     */
     public void setPrijs(int prijs) {
         speler.setPrijs(prijs);
     }
@@ -227,14 +230,25 @@ public class PosPlayer {
         return true;
     }
 
+    /**
+     * Speelt een game (gekoppeld aan speler)
+     */
     public void playGame() {
         speler.playGame();
     }
 
-    public boolean isUnavaliableAvaliableToPlay() {
-        return speler.isUnavaliableAvaliableToPlay();
+    /**
+     * Kijkt of de speler niet beschikbaar is om te spelen
+     * @return true als de speler niet beschikbaar is en false als de speler wel beschikbaar is.
+     */
+    public boolean isUnavaliableToPlay() {
+        return speler.isUnavaliableToPlay();
     }
 
+    /**
+     * Kijkt of de speler beschikbaar is om te spelen
+     * @return true als de speler beschikbaar is en false als de speler niet beschikbaar is. 
+     */
     public boolean isAvaliableToPlay() {
         return speler.isAvaliableToPlay();
     }
