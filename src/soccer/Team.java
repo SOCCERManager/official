@@ -65,6 +65,22 @@ public class Team {
     }
 
     /**
+     * Gets current competitie object
+     * @return 
+     */
+    public Competitie getCompetitie() {
+        return competitie;
+    }
+
+    /**
+     * Sets current competitie object
+     * @param competitie 
+     */
+    public void setCompetitie(Competitie competitie) {
+        this.competitie = competitie;
+    }
+    
+    /**
      * Returns the name of the team.
      * @return
      */
