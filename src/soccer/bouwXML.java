@@ -28,11 +28,22 @@ public class bouwXML {
      * @throws IOException
      */
     public static void bouwXML(Competitie t, File f) throws IOException{
-        XStream xstream = new XStream(new StaxDriver());
-        String xml = xstream.toXML(t);
+       
+        String xml = getStream().toXML(t);
         BufferedWriter out = new BufferedWriter(new FileWriter(f));
         out.write(xml);
         out.close();
+    }
+    
+    
+    public static XStream getStream() {
+         XStream xstream = new XStream(new StaxDriver());
+         xstream.alias("Competitie", Competitie.class);
+         xstream.alias("OpgesteldeSpeler", PosPlayer.class);
+         xstream.alias("Speler", Speler.class);
+         xstream.alias("Team", Team.class);
+         xstream.alias("Wedstreid", Wedstrijd.class);
+         return xstream;
     }
     
     /**
@@ -46,8 +57,7 @@ public class bouwXML {
         String te = "";
         while(infile.hasNext())
             te += infile.nextLine();
-        XStream xstream = new XStream(new StaxDriver());
-        Competitie t = (Competitie)xstream.fromXML(te);
+        Competitie t = (Competitie) getStream().fromXML(te);
         return t;
     }
     
