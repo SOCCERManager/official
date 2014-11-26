@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package soccer;
 
 import java.util.ArrayList;
@@ -10,8 +5,7 @@ import java.util.Collections;
 import java.util.Objects;
 
 /**
- *
- * @author floris
+ * Class Competitie
  */
 public class Competitie {
 
@@ -20,46 +14,68 @@ public class Competitie {
     private int userindex;
 
     /**
-     * Sets private members wedstrijden and teams.
-     * @param wedstrijden
-     * @param teams
+     * Constructor van Competitie opgebouwd uit (ArrayList<Wedstrijd> en ArrayList<Team>)
+     * @param wedstrijden ArrayList<Wedstrijd>
+     * @param teams ArrayList<Team>
      */
     public Competitie(ArrayList<Wedstrijd> wedstrijden, ArrayList<Team> teams) {
         this.wedstrijden = wedstrijden;
         this.teams = teams;
     }
+    /**
+     * Getter van UserIndex
+     * @return de UserIndex
+     */
     public int getUserindex() {
         return userindex;
     }
 
+    /**
+     * Setter van userIndex
+     * @param userindex
+     */
     public void setUserindex(int userindex) {
         this.userindex = userindex;
     }
     
     /**
-     * Returns the complete arraylist which contains the total amount of wedstrijden played.
-     * @return
+     * Getter van een ArrayList<Wedstrijd>, alle wedstrijden in een competitie in een arrayList
+     * @return ArrayList<Wedstrijd>, een lijst van alle wedstrijden in een competitie
      */
     public ArrayList<Wedstrijd> getWedstrijden() {
         return wedstrijden;
     }
 
     /**
-     *
-     * @param wedstrijden
+     * Setter voor een ArrayList<Wedstrijd>, alle wedstrijden in een competitie in een arrayList
+     * @param wedstrijden dit is de ArrayList<Wedstrijden die de nieuwe lijst moet worden
      */
     public void setWedstrijden(ArrayList<Wedstrijd> wedstrijden) {
         this.wedstrijden = wedstrijden;
     }
 
+    /**
+     * Getter van een ArrayList<Team> terug, alle teams in een competitie
+     * @return de teams in een competitie
+     */
     public ArrayList<Team> getTeams() {
         return teams;
     }
 
+    /**
+     * Setter voor een ArrayList<Team>, een arrayList van alle teams in een competitie
+     * @param teams de arrayList van alle teams in een competitie
+     */
     public void setTeams(ArrayList<Team> teams) {
         this.teams = teams;
     }
 
+    /**
+     * Equals methode voor een competitie.
+     * Er wordt gekeken of twee competities aan elkaar gelijk zijn.
+     * @param obj de competitie waarmee de this.competitie vergeleken moet worden
+     * @return true/false (als de twee competities aan elkaar gelijk zijn is de return true, anders false)
+     */
     @Override
     public boolean equals(Object obj) {
         if (obj == null) {
@@ -76,23 +92,27 @@ public class Competitie {
 
     }
 
+    /**
+     * toString methode voor een competitie
+     * @return de String van een competitie in de vorm: Competitie{wedstrijden= x} met x als wedstrijden in de competitie
+     */
     @Override
     public String toString() {
         return "Competitie{" + "wedstrijden=" + wedstrijden + '}';
     }
     
     /**
-     * This function checks for every wedstrijd played if Team t obtained any points. If that is the case those points will be added and 
-     * finally returned.
-     * @param t
-     * @return
+     * Als een team punten heeft gekregen na een wedstrijd, wordt dat bij het aanroepen van de functie toegevoegd aan
+     * het totaal van het team. 
+     * @param t het ingevoerde team waarvan het puntentotaal berekend moet worden. 
+     * @return het puntentotaal van het team (int)
      */
     public int getScoreOfTeam(Team t){
         return this.wedstrijden.stream().mapToInt(v -> v.scoreOfTeam(t)).sum();
     }
     /**
      * Creërt alle wedstrijden voor een competite uit een ArrayList van Teams.
-     * @param team  ArrayList<Team>
+     * @param team De lijst van teams waarvoor de wedstrijden moeten worden opgeschreven. 
      */ 
     public static void bouwWedstrijden(ArrayList<Team> team){
         
@@ -123,7 +143,5 @@ public class Competitie {
                 listA.set(listA.size(), listB.get(listB.size()));
             }
         }
-        
-        
     }   
 }
