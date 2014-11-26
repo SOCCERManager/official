@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package soccer;
 
 import com.thoughtworks.xstream.XStream;
@@ -17,14 +12,14 @@ import java.util.Scanner;
 
 /**
  *
- * @author floris
+ * Class bouwXML
  */
 public class bouwXML {
 
     /**
-     * This function takes params Competitie t and File f to transfer Competitie t to XML and write it into File f.
-     * @param t
-     * @param f
+     * Een Competitie wordt in de opgegeven XMLfie gezet.
+     * @param t de opgegeven competitie
+     * @param f de file waar de xml in moet komen te staan
      * @throws IOException
      */
     public static void bouwXML(Competitie t, File f) throws IOException{
@@ -35,7 +30,10 @@ public class bouwXML {
         out.close();
     }
     
-    
+    /**
+     * Genereert uit een XML file de Competitie klasse
+     * @return  de competitie
+     */
     public static XStream getStream() {
          XStream xstream = new XStream(new StaxDriver());
          xstream.alias("Competitie", Competitie.class);
@@ -47,9 +45,10 @@ public class bouwXML {
     }
     
     /**
+     * Leest uit een bestand en zet dit om naar een Competitie
      * This function reads the contents of File f and transfers the contents to a Competitie class.
-     * @param f
-     * @return
+     * @param f de file waaruit gelezen moet worden
+     * @return de competitie die aan alle eisen voldoet. 
      * @throws FileNotFoundException
      */
     public static Competitie leesXML(File f) throws FileNotFoundException{
