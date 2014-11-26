@@ -44,9 +44,8 @@ public class bouwXML {
     public static Competitie leesXML(File f) throws FileNotFoundException{
         Scanner infile = new Scanner(f);
         String te = "";
-        while(infile.hasNext()){
+        while(infile.hasNext())
             te += infile.nextLine();
-        }
         XStream xstream = new XStream(new StaxDriver());
         Competitie t = (Competitie)xstream.fromXML(te);
         return t;

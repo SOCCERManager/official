@@ -5,6 +5,7 @@
  */
 package soccer;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
@@ -72,6 +73,34 @@ public class SoccerApplication {
         Posities.add(pos9);
         Posities.add(pos10);
         Posities.add(pos11);
+        
+        Team t1 = new Team(spelerlijst, "FC team 1", Posities, null, 1000);
+        Team t2 = new Team(spelerlijst, "FC team 2", Posities, null, 1000);
+        
+        ArrayList<Team> teams = new ArrayList<Team>();
+        teams.add(t1);
+        teams.add(t2);
+        
+        Wedstrijd w1 = new Wedstrijd(t1, t2);
+        Wedstrijd w2 = new Wedstrijd(t2, t1);
+        
+        ArrayList<Wedstrijd> wedstrijden = new ArrayList<Wedstrijd>();
+        wedstrijden.add(w1);
+        wedstrijden.add(w2);
+        
+        Competitie c = new Competitie(wedstrijden, teams);
+        
+        File lol = new File("demonuxml.xml");
+        
+        soccer.bouwXML.bouwXML(c, lol);
+        
+        
+        Competitie cterug = soccer.bouwXML.leesXML(lol);
+        
+        System.out.println(cterug.equals(c));
+        
+        
+        
         
     }
 }
