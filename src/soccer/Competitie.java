@@ -114,22 +114,21 @@ public class Competitie {
      * Creërt alle wedstrijden voor een competite uit een ArrayList van Teams.
      * @param team De lijst van teams waarvoor de wedstrijden moeten worden opgeschreven. 
      */ 
-    public static void bouwWedstrijden(ArrayList<Team> team){
+    public void bouwWedstrijden(){
         
         ArrayList<Team> listA = new ArrayList<>();
         ArrayList<Team> listB = new ArrayList<>();
-        ArrayList<Wedstrijd> wedstrijdenlijst = new ArrayList<>();
         
         
-        for (int i=0; i<(team.size()/2); i++) {
-            listA.add(team.get(i));
+        for (int i=0; i<(teams.size()/2); i++) {
+            listA.add(teams.get(i));
         }
-        for (int p=(team.size()/2); p<team.size(); p++) {
-            listB.add(team.get(p));
+        for (int p=(teams.size()/2); p<teams.size(); p++) {
+            listB.add(teams.get(p));
         }
-        for (int x = 0; x<team.size()-2; x++) {
+        for (int x = 0; x<teams.size()-2; x++) {
             for (int j = 0; j<listA.size(); j++) {
-                wedstrijdenlijst.add(new Wedstrijd(listA.get(j), listB.get(j)));
+                wedstrijden.add(new Wedstrijd(listA.get(j), listB.get(j)));
             }
 
             for (int q = 0; q<listA.size(); q++){
