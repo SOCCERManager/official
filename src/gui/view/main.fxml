@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.MainFXMLController">
+    <children>
+        <Button fx:id="mainButton" layoutY="255.0" onAction="#handleLoadButton" prefHeight="80.0" prefWidth="300.0" text="Load Game" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Lucida Sans Regular" size="36.0" />
+         </font></Button>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Button fx:id="mainButton2" layoutX="195.0" layoutY="392.0" onAction="#handleLoadButton" prefHeight="80.0" prefWidth="300.0" text="New Game" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Lucida Sans Regular" size="36.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

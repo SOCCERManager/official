@@ -1,0 +1,28 @@
+#BorderPane{
+    -fx-background-image: url("BackGround_8168644501_5a27649597_k.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+}
+
+#mainButton{
+    -fx-text-align: center;
+}
+
+#mainButton2{
+    
+}
+
+.button {
+    -fx-padding: 5 22 5 22;   
+    -fx-background-radius: 0;
+    -fx-background-color: #1d1d1d;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+    -fx-background-color: #3a3a3a;
+}
