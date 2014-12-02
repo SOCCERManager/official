@@ -246,6 +246,6 @@ public class Team {
      */
     @Override
     public String toString() {
-        return "Team{" + "spelers=" + spelers + ", name=" + name + ", opstelling=" + opstelling + ", competitie=" + competitie + ", budget=" + budget + '}';
+        return "Team{" + "spelers=" + spelers + ", name=" + name + ", opstelling=" + opstelling + ", budget=" + budget + '}';
     }
 }
