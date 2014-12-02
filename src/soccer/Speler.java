@@ -264,4 +264,12 @@ public class Speler {
         this.gamesTilStatusDisapears =0;
         this.status = SpelerStatus.Normaal;
     }
+
+    /**
+     * Respresenteer ~ als een string
+     */
+    @Override
+    public String toString() {
+        return "Speler{" + "naam=" + naam + ", nummer=" + nummer + ", type=" + type + ", status=" + status + ", prijs=" + prijs + ", gamesTilStatusDisapears=" + gamesTilStatusDisapears + ", aanvallend=" + aanvallend + ", verdedigend=" + verdedigend + ", uithoudingsvermogen=" + uithoudingsvermogen + '}';
+    }
 }

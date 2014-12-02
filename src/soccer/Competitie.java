@@ -97,7 +97,7 @@ public class Competitie {
      */
     @Override
     public String toString() {
-        return "Competitie{" + "wedstrijden=" + wedstrijden + '}';
+        return "Competitie{" + "wedstrijden=" + wedstrijden + ", teams=" + teams + ", userindex=" + userindex + '}';
     }
     
     /**
