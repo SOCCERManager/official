@@ -12,7 +12,8 @@
                     <aanvallend>2</aanvallend>
                     <verdedigend>99</verdedigend>
                     <uithoudingsvermogen>100</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>2</nummer>
                     <naam>Dion Malone</naam>
@@ -21,7 +22,8 @@
                     <aanvallend>60</aanvallend>
                     <verdedigend>29</verdedigend>
                     <uithoudingsvermogen>73</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>3</nummer>
                     <naam>Vito Wormgoor</naam>
@@ -30,7 +32,8 @@
                     <aanvallend>10</aanvallend>
                     <verdedigend>18</verdedigend>
                     <uithoudingsvermogen>89</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>4</nummer>
                     <naam>Timothy Derijck</naam>
@@ -39,7 +42,8 @@
                     <aanvallend>16</aanvallend>
                     <verdedigend>82</verdedigend>
                     <uithoudingsvermogen>21</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>5</nummer>
                     <naam>Wilfried Kanon</naam>
@@ -48,7 +52,8 @@
                     <aanvallend>11</aanvallend>
                     <verdedigend>11</verdedigend>
                     <uithoudingsvermogen>71</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>6</nummer>
                     <naam>Thomas Kristensen</naam>
@@ -57,7 +62,8 @@
                     <aanvallend>75</aanvallend>
                     <verdedigend>76</verdedigend>
                     <uithoudingsvermogen>60</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>7</nummer>
                     <naam>Kevin Jansen</naam>
@@ -66,7 +72,8 @@
                     <aanvallend>12</aanvallend>
                     <verdedigend>36</verdedigend>
                     <uithoudingsvermogen>87</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>8</nummer>
                     <naam>Aaron Meijers</naam>
@@ -75,7 +82,8 @@
                     <aanvallend>42</aanvallend>
                     <verdedigend>100</verdedigend>
                     <uithoudingsvermogen>60</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>9</nummer>
                     <naam>Mike van Duinen</naam>
@@ -84,7 +92,8 @@
                     <aanvallend>12</aanvallend>
                     <verdedigend>10</verdedigend>
                     <uithoudingsvermogen>23</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>10</nummer>
                     <naam>Mathias Gehrt</naam>
@@ -93,7 +102,8 @@
                     <aanvallend>6</aanvallend>
                     <verdedigend>6</verdedigend>
                     <uithoudingsvermogen>9</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>17</nummer>
                     <naam>Danny Bakker</naam>
@@ -102,7 +112,8 @@
                     <aanvallend>3</aanvallend>
                     <verdedigend>93</verdedigend>
                     <uithoudingsvermogen>99</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>18</nummer>
                     <naam>Tim Coremans</naam>
@@ -111,7 +122,8 @@
                     <aanvallend>33</aanvallend>
                     <verdedigend>74</verdedigend>
                     <uithoudingsvermogen>6</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>19</nummer>
                     <naam>Mitchell Schet</naam>
@@ -120,7 +132,8 @@
                     <aanvallend>62</aanvallend>
                     <verdedigend>72</verdedigend>
                     <uithoudingsvermogen>43</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>22</nummer>
                     <naam>Robert Zwinkels</naam>
@@ -129,7 +142,8 @@
                     <aanvallend>39</aanvallend>
                     <verdedigend>44</verdedigend>
                     <uithoudingsvermogen>60</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>23</nummer>
                     <naam>Roland Alberg</naam>
@@ -138,7 +152,8 @@
                     <aanvallend>23</aanvallend>
                     <verdedigend>21</verdedigend>
                     <uithoudingsvermogen>58</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>24</nummer>
                     <naam>Rody de Boer</naam>
@@ -147,7 +162,8 @@
                     <aanvallend>53</aanvallend>
                     <verdedigend>70</verdedigend>
                     <uithoudingsvermogen>64</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>25</nummer>
                     <naam>Mitchell de Vlugt</naam>
@@ -156,7 +172,8 @@
                     <aanvallend>72</aanvallend>
                     <verdedigend>40</verdedigend>
                     <uithoudingsvermogen>58</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>26</nummer>
                     <naam>Xander Houtkoop</naam>
@@ -165,7 +182,8 @@
                     <aanvallend>73</aanvallend>
                     <verdedigend>65</verdedigend>
                     <uithoudingsvermogen>69</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>27</nummer>
                     <naam>Richelo Fecunda</naam>
@@ -174,7 +192,8 @@
                     <aanvallend>4</aanvallend>
                     <verdedigend>100</verdedigend>
                     <uithoudingsvermogen>35</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>28</nummer>
                     <naam>Tyronne Ebuehi</naam>
@@ -183,7 +202,8 @@
                     <aanvallend>52</aanvallend>
                     <verdedigend>64</verdedigend>
                     <uithoudingsvermogen>44</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>29</nummer>
                     <naam>Michiel Kramer</naam>
@@ -192,7 +212,8 @@
                     <aanvallend>98</aanvallend>
                     <verdedigend>8</verdedigend>
                     <uithoudingsvermogen>21</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>30</nummer>
                     <naam>Segun Owobowale</naam>
@@ -201,7 +222,8 @@
                     <aanvallend>80</aanvallend>
                     <verdedigend>74</verdedigend>
                     <uithoudingsvermogen>54</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>37</nummer>
                     <naam>Papito Merencia</naam>
@@ -210,7 +232,8 @@
                     <aanvallend>66</aanvallend>
                     <verdedigend>11</verdedigend>
                     <uithoudingsvermogen>78</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>51</nummer>
                     <naam>Gianni Zuiverloon</naam>
@@ -219,7 +242,8 @@
                     <aanvallend>0</aanvallend>
                     <verdedigend>70</verdedigend>
                     <uithoudingsvermogen>51</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
             </spelers>
             <name>ADO Denhaag</name>
             <opstelling></opstelling>
@@ -236,7 +260,8 @@
                     <aanvallend>91</aanvallend>
                     <verdedigend>13</verdedigend>
                     <uithoudingsvermogen>24</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>31</nummer>
                     <naam>Peter Leeuwenburgh</naam>
@@ -245,7 +270,8 @@
                     <aanvallend>1</aanvallend>
                     <verdedigend>18</verdedigend>
                     <uithoudingsvermogen>63</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>33</nummer>
                     <naam>Diederik Boer</naam>
@@ -254,7 +280,8 @@
                     <aanvallend>31</aanvallend>
                     <verdedigend>68</verdedigend>
                     <uithoudingsvermogen>11</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>2</nummer>
                     <naam>Ricardo van Rhijn</naam>
@@ -263,7 +290,8 @@
                     <aanvallend>18</aanvallend>
                     <verdedigend>6</verdedigend>
                     <uithoudingsvermogen>25</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>3</nummer>
                     <naam>Joël Veltman</naam>
@@ -272,7 +300,8 @@
                     <aanvallend>85</aanvallend>
                     <verdedigend>30</verdedigend>
                     <uithoudingsvermogen>100</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>4</nummer>
                     <naam>Niklas Moisander Aanvoerder</naam>
@@ -281,7 +310,8 @@
                     <aanvallend>71</aanvallend>
                     <verdedigend>88</verdedigend>
                     <uithoudingsvermogen>8</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>5</nummer>
                     <naam>Nicolai Boilesen</naam>
@@ -290,7 +320,8 @@
                     <aanvallend>2</aanvallend>
                     <verdedigend>28</verdedigend>
                     <uithoudingsvermogen>81</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>6</nummer>
                     <naam>Mike van der Hoorn</naam>
@@ -299,7 +330,8 @@
                     <aanvallend>42</aanvallend>
                     <verdedigend>20</verdedigend>
                     <uithoudingsvermogen>14</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>12</nummer>
                     <naam>Jaïro Riedewald</naam>
@@ -308,7 +340,8 @@
                     <aanvallend>51</aanvallend>
                     <verdedigend>1</verdedigend>
                     <uithoudingsvermogen>73</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>23</nummer>
                     <naam>Kenny Tete</naam>
@@ -317,7 +350,8 @@
                     <aanvallend>99</aanvallend>
                     <verdedigend>51</verdedigend>
                     <uithoudingsvermogen>43</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>24</nummer>
                     <naam>Stefano Denswil</naam>
@@ -326,7 +360,8 @@
                     <aanvallend>23</aanvallend>
                     <verdedigend>82</verdedigend>
                     <uithoudingsvermogen>90</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>29</nummer>
                     <naam>Ruben Ligeon</naam>
@@ -335,7 +370,8 @@
                     <aanvallend>33</aanvallend>
                     <verdedigend>9</verdedigend>
                     <uithoudingsvermogen>48</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>8</nummer>
                     <naam>Lerin Duarte</naam>
@@ -344,7 +380,8 @@
                     <aanvallend>44</aanvallend>
                     <verdedigend>49</verdedigend>
                     <uithoudingsvermogen>0</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>10</nummer>
                     <naam>Davy Klaassen</naam>
@@ -353,7 +390,8 @@
                     <aanvallend>64</aanvallend>
                     <verdedigend>76</verdedigend>
                     <uithoudingsvermogen>58</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>16</nummer>
                     <naam>Lucas Andersen</naam>
@@ -362,7 +400,8 @@
                     <aanvallend>59</aanvallend>
                     <verdedigend>76</verdedigend>
                     <uithoudingsvermogen>7</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>25</nummer>
                     <naam>Thulani Serero</naam>
@@ -371,7 +410,8 @@
                     <aanvallend>19</aanvallend>
                     <verdedigend>33</verdedigend>
                     <uithoudingsvermogen>41</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>26</nummer>
                     <naam>Nick Viergever</naam>
@@ -380,7 +420,8 @@
                     <aanvallend>41</aanvallend>
                     <verdedigend>38</verdedigend>
                     <uithoudingsvermogen>4</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>27</nummer>
                     <naam>Riechedly Bazoer</naam>
@@ -389,7 +430,8 @@
                     <aanvallend>5</aanvallend>
                     <verdedigend>89</verdedigend>
                     <uithoudingsvermogen>29</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>32</nummer>
                     <naam>Niki Zimling</naam>
@@ -398,7 +440,8 @@
                     <aanvallend>54</aanvallend>
                     <verdedigend>4</verdedigend>
                     <uithoudingsvermogen>41</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>7</nummer>
                     <naam>Viktor Fischer</naam>
@@ -407,7 +450,8 @@
                     <aanvallend>45</aanvallend>
                     <verdedigend>36</verdedigend>
                     <uithoudingsvermogen>98</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>9</nummer>
                     <naam>Kolbeinn Sigþórsson</naam>
@@ -416,7 +460,8 @@
                     <aanvallend>27</aanvallend>
                     <verdedigend>13</verdedigend>
                     <uithoudingsvermogen>52</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>11</nummer>
                     <naam>Ricardo Kishna</naam>
@@ -425,7 +470,8 @@
                     <aanvallend>57</aanvallend>
                     <verdedigend>86</verdedigend>
                     <uithoudingsvermogen>68</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>18</nummer>
                     <naam>Robert Murić</naam>
@@ -434,7 +480,8 @@
                     <aanvallend>75</aanvallend>
                     <verdedigend>41</verdedigend>
                     <uithoudingsvermogen>70</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>19</nummer>
                     <naam>Arkadiusz Milik</naam>
@@ -443,7 +490,8 @@
                     <aanvallend>53</aanvallend>
                     <verdedigend>56</verdedigend>
                     <uithoudingsvermogen>10</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>20</nummer>
                     <naam>Lasse Schøne</naam>
@@ -452,7 +500,8 @@
                     <aanvallend>15</aanvallend>
                     <verdedigend>32</verdedigend>
                     <uithoudingsvermogen>97</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>21</nummer>
                     <naam>Anwar El Ghazi</naam>
@@ -461,7 +510,8 @@
                     <aanvallend>67</aanvallend>
                     <verdedigend>17</verdedigend>
                     <uithoudingsvermogen>68</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>28</nummer>
                     <naam>Tobias Sana</naam>
@@ -470,7 +520,8 @@
                     <aanvallend>43</aanvallend>
                     <verdedigend>4</verdedigend>
                     <uithoudingsvermogen>85</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>30</nummer>
                     <naam>Richairo Živković</naam>
@@ -479,7 +530,8 @@
                     <aanvallend>93</aanvallend>
                     <verdedigend>4</verdedigend>
                     <uithoudingsvermogen>90</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
             </spelers>
             <name>Ajax</name>
             <opstelling></opstelling>
@@ -496,7 +548,8 @@
                     <aanvallend>40</aanvallend>
                     <verdedigend>10</verdedigend>
                     <uithoudingsvermogen>25</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>16</nummer>
                     <naam>Yves De Winter</naam>
@@ -505,7 +558,8 @@
                     <aanvallend>86</aanvallend>
                     <verdedigend>78</verdedigend>
                     <uithoudingsvermogen>17</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>25</nummer>
                     <naam>Sergio Rochet</naam>
@@ -514,7 +568,8 @@
                     <aanvallend>45</aanvallend>
                     <verdedigend>1</verdedigend>
                     <uithoudingsvermogen>26</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>2</nummer>
                     <naam>Mattias Johansson</naam>
@@ -523,7 +578,8 @@
                     <aanvallend>40</aanvallend>
                     <verdedigend>85</verdedigend>
                     <uithoudingsvermogen>58</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>3</nummer>
                     <naam>Jeffrey Gouweleeuw</naam>
@@ -532,7 +588,8 @@
                     <aanvallend>10</aanvallend>
                     <verdedigend>29</verdedigend>
                     <uithoudingsvermogen>0</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>4</nummer>
                     <naam>Jan Wuytens</naam>
@@ -541,7 +598,8 @@
                     <aanvallend>61</aanvallend>
                     <verdedigend>86</verdedigend>
                     <uithoudingsvermogen>67</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>14</nummer>
                     <naam>Wesley Hoedt</naam>
@@ -550,7 +608,8 @@
                     <aanvallend>81</aanvallend>
                     <verdedigend>92</verdedigend>
                     <uithoudingsvermogen>100</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>15</nummer>
                     <naam>Simon Poulsen</naam>
@@ -559,7 +618,8 @@
                     <aanvallend>85</aanvallend>
                     <verdedigend>63</verdedigend>
                     <uithoudingsvermogen>20</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>17</nummer>
                     <naam>Djavan Anderson</naam>
@@ -568,7 +628,8 @@
                     <aanvallend>11</aanvallend>
                     <verdedigend>86</verdedigend>
                     <uithoudingsvermogen>26</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>23</nummer>
                     <naam>Derrick Luckassen</naam>
@@ -577,7 +638,8 @@
                     <aanvallend>79</aanvallend>
                     <verdedigend>56</verdedigend>
                     <uithoudingsvermogen>80</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>24</nummer>
                     <naam>Ridgeciano Haps</naam>
@@ -586,7 +648,8 @@
                     <aanvallend>89</aanvallend>
                     <verdedigend>29</verdedigend>
                     <uithoudingsvermogen>26</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>5</nummer>
                     <naam>Donny Gorter</naam>
@@ -595,7 +658,8 @@
                     <aanvallend>97</aanvallend>
                     <verdedigend>0</verdedigend>
                     <uithoudingsvermogen>57</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>6</nummer>
                     <naam>Celso Ortiz</naam>
@@ -604,7 +668,8 @@
                     <aanvallend>81</aanvallend>
                     <verdedigend>38</verdedigend>
                     <uithoudingsvermogen>23</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>8</nummer>
                     <naam>Nemanja Gudelj</naam>
@@ -613,7 +678,8 @@
                     <aanvallend>96</aanvallend>
                     <verdedigend>32</verdedigend>
                     <uithoudingsvermogen>73</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>10</nummer>
                     <naam>Markus Henriksen</naam>
@@ -622,7 +688,8 @@
                     <aanvallend>43</aanvallend>
                     <verdedigend>79</verdedigend>
                     <uithoudingsvermogen>45</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>12</nummer>
                     <naam>Viktor Elm</naam>
@@ -631,7 +698,8 @@
                     <aanvallend>87</aanvallend>
                     <verdedigend>59</verdedigend>
                     <uithoudingsvermogen>31</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>20</nummer>
                     <naam>Thom Haye</naam>
@@ -640,7 +708,8 @@
                     <aanvallend>52</aanvallend>
                     <verdedigend>5</verdedigend>
                     <uithoudingsvermogen>22</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>7</nummer>
                     <naam>Guus Hupperts</naam>
@@ -649,7 +718,8 @@
                     <aanvallend>59</aanvallend>
                     <verdedigend>26</verdedigend>
                     <uithoudingsvermogen>74</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>9</nummer>
                     <naam>Aron Jóhannsson</naam>
@@ -658,7 +728,8 @@
                     <aanvallend>96</aanvallend>
                     <verdedigend>65</verdedigend>
                     <uithoudingsvermogen>88</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>11</nummer>
                     <naam>Muamer Tanković</naam>
@@ -667,7 +738,8 @@
                     <aanvallend>61</aanvallend>
                     <verdedigend>41</verdedigend>
                     <uithoudingsvermogen>63</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>18</nummer>
                     <naam>Mikhail Rosheuvel</naam>
@@ -676,7 +748,8 @@
                     <aanvallend>60</aanvallend>
                     <verdedigend>80</verdedigend>
                     <uithoudingsvermogen>74</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>19</nummer>
                     <naam>Eli Babalj</naam>
@@ -685,7 +758,8 @@
                     <aanvallend>69</aanvallend>
                     <verdedigend>80</verdedigend>
                     <uithoudingsvermogen>26</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>22</nummer>
                     <naam>Steven Berghuis</naam>
@@ -694,7 +768,8 @@
                     <aanvallend>5</aanvallend>
                     <verdedigend>38</verdedigend>
                     <uithoudingsvermogen>69</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
             </spelers>
             <name>AZ</name>
             <opstelling></opstelling>
@@ -711,7 +786,8 @@
                     <aanvallend>21</aanvallend>
                     <verdedigend>48</verdedigend>
                     <uithoudingsvermogen>80</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>22</nummer>
                     <naam>Leonard Nienhuis</naam>
@@ -720,7 +796,8 @@
                     <aanvallend>8</aanvallend>
                     <verdedigend>50</verdedigend>
                     <uithoudingsvermogen>84</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>25</nummer>
                     <naam>Harm Zeinstra</naam>
@@ -729,7 +806,8 @@
                     <aanvallend>67</aanvallend>
                     <verdedigend>21</verdedigend>
                     <uithoudingsvermogen>11</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>2</nummer>
                     <naam>Wout Droste</naam>
@@ -738,7 +816,8 @@
                     <aanvallend>77</aanvallend>
                     <verdedigend>92</verdedigend>
                     <uithoudingsvermogen>49</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>3</nummer>
                     <naam>Etiënne Reijnen</naam>
@@ -747,7 +826,8 @@
                     <aanvallend>13</aanvallend>
                     <verdedigend>30</verdedigend>
                     <uithoudingsvermogen>13</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>5</nummer>
                     <naam>Marlon Pereira</naam>
@@ -756,7 +836,8 @@
                     <aanvallend>98</aanvallend>
                     <verdedigend>22</verdedigend>
                     <uithoudingsvermogen>25</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>15</nummer>
                     <naam>Mart Dijkstra</naam>
@@ -765,7 +846,8 @@
                     <aanvallend>28</aanvallend>
                     <verdedigend>0</verdedigend>
                     <uithoudingsvermogen>17</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>17</nummer>
                     <naam>Lucas Bijker</naam>
@@ -774,7 +856,8 @@
                     <aanvallend>38</aanvallend>
                     <verdedigend>19</verdedigend>
                     <uithoudingsvermogen>79</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>30</nummer>
                     <naam>Calvin Mac-Intosch</naam>
@@ -783,7 +866,8 @@
                     <aanvallend>88</aanvallend>
                     <verdedigend>94</verdedigend>
                     <uithoudingsvermogen>79</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>23</nummer>
                     <naam>Ron Janzen</naam>
@@ -792,7 +876,8 @@
                     <aanvallend>1</aanvallend>
                     <verdedigend>59</verdedigend>
                     <uithoudingsvermogen>88</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>4</nummer>
                     <naam>Vytautas Andriuškevičius</naam>
@@ -801,7 +886,8 @@
                     <aanvallend>20</aanvallend>
                     <verdedigend>7</verdedigend>
                     <uithoudingsvermogen>2</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>6</nummer>
                     <naam>Erik Bakker</naam>
@@ -810,7 +896,8 @@
                     <aanvallend>86</aanvallend>
                     <verdedigend>39</verdedigend>
                     <uithoudingsvermogen>68</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>20</nummer>
                     <naam>Sander van de Streek</naam>
@@ -819,7 +906,8 @@
                     <aanvallend>63</aanvallend>
                     <verdedigend>37</verdedigend>
                     <uithoudingsvermogen>92</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>25</nummer>
                     <naam>Berend-Jan Schootstra</naam>
@@ -828,7 +916,8 @@
                     <aanvallend>50</aanvallend>
                     <verdedigend>51</verdedigend>
                     <uithoudingsvermogen>80</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>7</nummer>
                     <naam>Furdjel Narsingh</naam>
@@ -837,7 +926,8 @@
                     <aanvallend>52</aanvallend>
                     <verdedigend>73</verdedigend>
                     <uithoudingsvermogen>21</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>9</nummer>
                     <naam>Martijn Barto</naam>
@@ -846,7 +936,8 @@
                     <aanvallend>46</aanvallend>
                     <verdedigend>2</verdedigend>
                     <uithoudingsvermogen>71</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>12</nummer>
                     <naam>Michiel Hemmen</naam>
@@ -855,7 +946,8 @@
                     <aanvallend>45</aanvallend>
                     <verdedigend>13</verdedigend>
                     <uithoudingsvermogen>75</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>14</nummer>
                     <naam>Oebele Schokker</naam>
@@ -864,7 +956,8 @@
                     <aanvallend>35</aanvallend>
                     <verdedigend>65</verdedigend>
                     <uithoudingsvermogen>20</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>18</nummer>
                     <naam>Bartholomew Ogbeche</naam>
@@ -873,7 +966,8 @@
                     <aanvallend>80</aanvallend>
                     <verdedigend>63</verdedigend>
                     <uithoudingsvermogen>3</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>27</nummer>
                     <naam>Bob Schepers</naam>
@@ -882,7 +976,8 @@
                     <aanvallend>12</aanvallend>
                     <verdedigend>62</verdedigend>
                     <uithoudingsvermogen>83</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>10</nummer>
                     <naam>Dejan Meleg</naam>
@@ -891,7 +986,8 @@
                     <aanvallend>15</aanvallend>
                     <verdedigend>74</verdedigend>
                     <uithoudingsvermogen>58</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
             </spelers>
             <name>SC Cambuur</name>
             <opstelling></opstelling>
@@ -908,7 +1004,8 @@
                     <aanvallend>24</aanvallend>
                     <verdedigend>65</verdedigend>
                     <uithoudingsvermogen>11</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>2</nummer>
                     <naam>Robbert te Loeke</naam>
@@ -917,7 +1014,8 @@
                     <aanvallend>56</aanvallend>
                     <verdedigend>29</verdedigend>
                     <uithoudingsvermogen>22</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>3</nummer>
                     <naam>Jeffry Fortes</naam>
@@ -926,7 +1024,8 @@
                     <aanvallend>63</aanvallend>
                     <verdedigend>90</verdedigend>
                     <uithoudingsvermogen>7</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>4</nummer>
                     <naam>Ilias Haddad</naam>
@@ -935,7 +1034,8 @@
                     <aanvallend>89</aanvallend>
                     <verdedigend>81</verdedigend>
                     <uithoudingsvermogen>76</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>5</nummer>
                     <naam>William Troost-Ekong</naam>
@@ -944,7 +1044,8 @@
                     <aanvallend>71</aanvallend>
                     <verdedigend>24</verdedigend>
                     <uithoudingsvermogen>21</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>6</nummer>
                     <naam>Marvin Peersman</naam>
@@ -953,7 +1054,8 @@
                     <aanvallend>89</aanvallend>
                     <verdedigend>95</verdedigend>
                     <uithoudingsvermogen>6</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>7</nummer>
                     <naam>Josimar Lima</naam>
@@ -962,7 +1064,8 @@
                     <aanvallend>58</aanvallend>
                     <verdedigend>80</verdedigend>
                     <uithoudingsvermogen>100</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>8</nummer>
                     <naam>Jordy van Deelen</naam>
@@ -971,7 +1074,8 @@
                     <aanvallend>1</aanvallend>
                     <verdedigend>98</verdedigend>
                     <uithoudingsvermogen>81</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>9</nummer>
                     <naam>Nando Wormgoor</naam>
@@ -980,7 +1084,8 @@
                     <aanvallend>22</aanvallend>
                     <verdedigend>98</verdedigend>
                     <uithoudingsvermogen>93</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>10</nummer>
                     <naam>Robin Gosens</naam>
@@ -989,7 +1094,8 @@
                     <aanvallend>33</aanvallend>
                     <verdedigend>72</verdedigend>
                     <uithoudingsvermogen>19</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>11</nummer>
                     <naam>Funso Ojo</naam>
@@ -998,7 +1104,8 @@
                     <aanvallend>39</aanvallend>
                     <verdedigend>53</verdedigend>
                     <uithoudingsvermogen>31</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>12</nummer>
                     <naam>Adnan Alisic</naam>
@@ -1007,7 +1114,8 @@
                     <aanvallend>76</aanvallend>
                     <verdedigend>69</verdedigend>
                     <uithoudingsvermogen>34</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>13</nummer>
                     <naam>Ricky van Haaren</naam>
@@ -1016,7 +1124,8 @@
                     <aanvallend>54</aanvallend>
                     <verdedigend>90</verdedigend>
                     <uithoudingsvermogen>10</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>14</nummer>
                     <naam>Javier Vet</naam>
@@ -1025,7 +1134,8 @@
                     <aanvallend>57</aanvallend>
                     <verdedigend>39</verdedigend>
                     <uithoudingsvermogen>81</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>15</nummer>
                     <naam>Ryan Koolwijk</naam>
@@ -1034,7 +1144,8 @@
                     <aanvallend>83</aanvallend>
                     <verdedigend>52</verdedigend>
                     <uithoudingsvermogen>52</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>16</nummer>
                     <naam>Joris van Overeem</naam>
@@ -1043,7 +1154,8 @@
                     <aanvallend>8</aanvallend>
                     <verdedigend>92</verdedigend>
                     <uithoudingsvermogen>13</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>17</nummer>
                     <naam>Sem de Wit</naam>
@@ -1052,7 +1164,8 @@
                     <aanvallend>49</aanvallend>
                     <verdedigend>97</verdedigend>
                     <uithoudingsvermogen>94</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>18</nummer>
                     <naam>Everon Pisas</naam>
@@ -1061,7 +1174,8 @@
                     <aanvallend>30</aanvallend>
                     <verdedigend>96</verdedigend>
                     <uithoudingsvermogen>38</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>19</nummer>
                     <naam>Rihairo Meulens</naam>
@@ -1070,7 +1184,8 @@
                     <aanvallend>51</aanvallend>
                     <verdedigend>54</verdedigend>
                     <uithoudingsvermogen>62</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>20</nummer>
                     <naam>Mart Lieder</naam>
@@ -1079,7 +1194,8 @@
                     <aanvallend>24</aanvallend>
                     <verdedigend>62</verdedigend>
                     <uithoudingsvermogen>29</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>21</nummer>
                     <naam>Mo Hamdaoui</naam>
@@ -1088,7 +1204,8 @@
                     <aanvallend>50</aanvallend>
                     <verdedigend>91</verdedigend>
                     <uithoudingsvermogen>27</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>22</nummer>
                     <naam>Rick ten Voorde</naam>
@@ -1097,7 +1214,8 @@
                     <aanvallend>47</aanvallend>
                     <verdedigend>85</verdedigend>
                     <uithoudingsvermogen>18</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
             </spelers>
             <name>FC Dordrecht</name>
             <opstelling></opstelling>
@@ -1114,7 +1232,8 @@
                     <aanvallend>98</aanvallend>
                     <verdedigend>78</verdedigend>
                     <uithoudingsvermogen>37</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>16</nummer>
                     <naam>Alessandro Damen</naam>
@@ -1123,7 +1242,8 @@
                     <aanvallend>35</aanvallend>
                     <verdedigend>60</verdedigend>
                     <uithoudingsvermogen>63</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>26</nummer>
                     <naam>Gino Coutinho</naam>
@@ -1132,7 +1252,8 @@
                     <aanvallend>70</aanvallend>
                     <verdedigend>91</verdedigend>
                     <uithoudingsvermogen>46</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>5</nummer>
                     <naam>Bas Kuipers</naam>
@@ -1141,7 +1262,8 @@
                     <aanvallend>11</aanvallend>
                     <verdedigend>3</verdedigend>
                     <uithoudingsvermogen>95</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>20</nummer>
                     <naam>Elso Brito</naam>
@@ -1150,7 +1272,8 @@
                     <aanvallend>34</aanvallend>
                     <verdedigend>95</verdedigend>
                     <uithoudingsvermogen>76</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>2</nummer>
                     <naam>Khalid Karami</naam>
@@ -1159,7 +1282,8 @@
                     <aanvallend>30</aanvallend>
                     <verdedigend>46</verdedigend>
                     <uithoudingsvermogen>53</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>12</nummer>
                     <naam>Jurgen Mattheij</naam>
@@ -1168,7 +1292,8 @@
                     <aanvallend>84</aanvallend>
                     <verdedigend>20</verdedigend>
                     <uithoudingsvermogen>12</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>3</nummer>
                     <naam>Kevin van Diermen</naam>
@@ -1177,7 +1302,8 @@
                     <aanvallend>37</aanvallend>
                     <verdedigend>58</verdedigend>
                     <uithoudingsvermogen>52</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>6</nummer>
                     <naam>Sander Fischer</naam>
@@ -1186,7 +1312,8 @@
                     <aanvallend>60</aanvallend>
                     <verdedigend>79</verdedigend>
                     <uithoudingsvermogen>49</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>24</nummer>
                     <naam>Daan Bovenberg</naam>
@@ -1195,7 +1322,8 @@
                     <aanvallend>21</aanvallend>
                     <verdedigend>8</verdedigend>
                     <uithoudingsvermogen>48</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>15</nummer>
                     <naam>Richard Stolte</naam>
@@ -1204,7 +1332,8 @@
                     <aanvallend>71</aanvallend>
                     <verdedigend>17</verdedigend>
                     <uithoudingsvermogen>32</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>4</nummer>
                     <naam>Rick Kruys</naam>
@@ -1213,7 +1342,8 @@
                     <aanvallend>98</aanvallend>
                     <verdedigend>34</verdedigend>
                     <uithoudingsvermogen>28</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>10</nummer>
                     <naam>Lars Hutten</naam>
@@ -1222,7 +1352,8 @@
                     <aanvallend>0</aanvallend>
                     <verdedigend>82</verdedigend>
                     <uithoudingsvermogen>57</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>8</nummer>
                     <naam>Jeff Stans</naam>
@@ -1231,7 +1362,8 @@
                     <aanvallend>80</aanvallend>
                     <verdedigend>5</verdedigend>
                     <uithoudingsvermogen>76</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>11</nummer>
                     <naam>Adil Auassar</naam>
@@ -1240,7 +1372,8 @@
                     <aanvallend>24</aanvallend>
                     <verdedigend>7</verdedigend>
                     <uithoudingsvermogen>96</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>18</nummer>
                     <naam>Kevin Vermeulen</naam>
@@ -1249,7 +1382,8 @@
                     <aanvallend>50</aanvallend>
                     <verdedigend>10</verdedigend>
                     <uithoudingsvermogen>86</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>7</nummer>
                     <naam>Daan Blij</naam>
@@ -1258,7 +1392,8 @@
                     <aanvallend>17</aanvallend>
                     <verdedigend>55</verdedigend>
                     <uithoudingsvermogen>63</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>9</nummer>
                     <naam>Tom van Weert</naam>
@@ -1267,7 +1402,8 @@
                     <aanvallend>64</aanvallend>
                     <verdedigend>69</verdedigend>
                     <uithoudingsvermogen>55</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>25</nummer>
                     <naam>Marko Maletic</naam>
@@ -1276,7 +1412,8 @@
                     <aanvallend>86</aanvallend>
                     <verdedigend>3</verdedigend>
                     <uithoudingsvermogen>77</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>21</nummer>
                     <naam>Carlo de Reuver</naam>
@@ -1285,7 +1422,8 @@
                     <aanvallend>61</aanvallend>
                     <verdedigend>66</verdedigend>
                     <uithoudingsvermogen>76</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>26</nummer>
                     <naam>Jordan Botaka</naam>
@@ -1294,7 +1432,8 @@
                     <aanvallend>97</aanvallend>
                     <verdedigend>44</verdedigend>
                     <uithoudingsvermogen>46</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>11</nummer>
                     <naam>Daryl van Mieghem</naam>
@@ -1303,7 +1442,8 @@
                     <aanvallend>16</aanvallend>
                     <verdedigend>65</verdedigend>
                     <uithoudingsvermogen>99</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>17</nummer>
                     <naam>Ninos Gouriye</naam>
@@ -1312,7 +1452,8 @@
                     <aanvallend>21</aanvallend>
                     <verdedigend>34</verdedigend>
                     <uithoudingsvermogen>24</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
             </spelers>
             <name>Excelsior</name>
             <opstelling></opstelling>
@@ -1329,7 +1470,8 @@
                     <aanvallend>46</aanvallend>
                     <verdedigend>48</verdedigend>
                     <uithoudingsvermogen>59</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>13</nummer>
                     <naam>Ronald Graafland</naam>
@@ -1338,7 +1480,8 @@
                     <aanvallend>65</aanvallend>
                     <verdedigend>4</verdedigend>
                     <uithoudingsvermogen>74</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>16</nummer>
                     <naam>Kenneth Vermeer</naam>
@@ -1347,7 +1490,8 @@
                     <aanvallend>1</aanvallend>
                     <verdedigend>97</verdedigend>
                     <uithoudingsvermogen>79</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>2</nummer>
                     <naam>Luke Wilkshire</naam>
@@ -1356,7 +1500,8 @@
                     <aanvallend>15</aanvallend>
                     <verdedigend>11</verdedigend>
                     <uithoudingsvermogen>40</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>4</nummer>
                     <naam>Joris Mathijsen</naam>
@@ -1365,7 +1510,8 @@
                     <aanvallend>53</aanvallend>
                     <verdedigend>20</verdedigend>
                     <uithoudingsvermogen>99</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>5</nummer>
                     <naam>Terence Kongolo</naam>
@@ -1374,7 +1520,8 @@
                     <aanvallend>9</aanvallend>
                     <verdedigend>92</verdedigend>
                     <uithoudingsvermogen>42</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>18</nummer>
                     <naam>Miquel Nelom</naam>
@@ -1383,7 +1530,8 @@
                     <aanvallend>72</aanvallend>
                     <verdedigend>52</verdedigend>
                     <uithoudingsvermogen>65</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>22</nummer>
                     <naam>Sven van Beek</naam>
@@ -1392,7 +1540,8 @@
                     <aanvallend>17</aanvallend>
                     <verdedigend>10</verdedigend>
                     <uithoudingsvermogen>48</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>23</nummer>
                     <naam>Khalid Boulahrouz</naam>
@@ -1401,7 +1550,8 @@
                     <aanvallend>49</aanvallend>
                     <verdedigend>84</verdedigend>
                     <uithoudingsvermogen>58</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>24</nummer>
                     <naam>Matthew Steenvoorden</naam>
@@ -1410,7 +1560,8 @@
                     <aanvallend>98</aanvallend>
                     <verdedigend>57</verdedigend>
                     <uithoudingsvermogen>52</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>25</nummer>
                     <naam>Lucas Woudenberg</naam>
@@ -1419,7 +1570,8 @@
                     <aanvallend>22</aanvallend>
                     <verdedigend>79</verdedigend>
                     <uithoudingsvermogen>53</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>35</nummer>
                     <naam>Rodney Lopes Cabral</naam>
@@ -1428,7 +1580,8 @@
                     <aanvallend>81</aanvallend>
                     <verdedigend>76</verdedigend>
                     <uithoudingsvermogen>85</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>6</nummer>
                     <naam>Jordy Clasie</naam>
@@ -1437,7 +1590,8 @@
                     <aanvallend>25</aanvallend>
                     <verdedigend>89</verdedigend>
                     <uithoudingsvermogen>88</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>8</nummer>
                     <naam>Karim El Ahmadi</naam>
@@ -1446,7 +1600,8 @@
                     <aanvallend>14</aanvallend>
                     <verdedigend>1</verdedigend>
                     <uithoudingsvermogen>19</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>10</nummer>
                     <naam>Lex Immers</naam>
@@ -1455,7 +1610,8 @@
                     <aanvallend>77</aanvallend>
                     <verdedigend>81</verdedigend>
                     <uithoudingsvermogen>42</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>21</nummer>
                     <naam>Tonny Vilhena</naam>
@@ -1464,7 +1620,8 @@
                     <aanvallend>46</aanvallend>
                     <verdedigend>35</verdedigend>
                     <uithoudingsvermogen>67</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>26</nummer>
                     <naam>Rick Karsdorp</naam>
@@ -1473,7 +1630,8 @@
                     <aanvallend>88</aanvallend>
                     <verdedigend>6</verdedigend>
                     <uithoudingsvermogen>37</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>28</nummer>
                     <naam>Jens Toornstra</naam>
@@ -1482,7 +1640,8 @@
                     <aanvallend>22</aanvallend>
                     <verdedigend>2</verdedigend>
                     <uithoudingsvermogen>54</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>7</nummer>
                     <naam>Jean-Paul Boëtius</naam>
@@ -1491,7 +1650,8 @@
                     <aanvallend>75</aanvallend>
                     <verdedigend>90</verdedigend>
                     <uithoudingsvermogen>78</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>11</nummer>
                     <naam>Wesley Verhoek</naam>
@@ -1500,7 +1660,8 @@
                     <aanvallend>78</aanvallend>
                     <verdedigend>48</verdedigend>
                     <uithoudingsvermogen>71</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>14</nummer>
                     <naam>Bilal Başaçıkoğlu</naam>
@@ -1509,7 +1670,8 @@
                     <aanvallend>37</aanvallend>
                     <verdedigend>21</verdedigend>
                     <uithoudingsvermogen>92</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>15</nummer>
                     <naam>Colin Kâzım-Richards</naam>
@@ -1518,7 +1680,8 @@
                     <aanvallend>72</aanvallend>
                     <verdedigend>66</verdedigend>
                     <uithoudingsvermogen>4</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>17</nummer>
                     <naam>Elvis Manu</naam>
@@ -1527,7 +1690,8 @@
                     <aanvallend>42</aanvallend>
                     <verdedigend>67</verdedigend>
                     <uithoudingsvermogen>45</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>19</nummer>
                     <naam>Mitchell te Vrede</naam>
@@ -1536,7 +1700,8 @@
                     <aanvallend>23</aanvallend>
                     <verdedigend>38</verdedigend>
                     <uithoudingsvermogen>8</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>27</nummer>
                     <naam>Ruben Schaken</naam>
@@ -1545,7 +1710,8 @@
                     <aanvallend>13</aanvallend>
                     <verdedigend>4</verdedigend>
                     <uithoudingsvermogen>55</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>29</nummer>
                     <naam>Anass Achahbar</naam>
@@ -1554,7 +1720,8 @@
                     <aanvallend>46</aanvallend>
                     <verdedigend>2</verdedigend>
                     <uithoudingsvermogen>86</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>31</nummer>
                     <naam>Wessel Dammers</naam>
@@ -1563,7 +1730,8 @@
                     <aanvallend>63</aanvallend>
                     <verdedigend>46</verdedigend>
                     <uithoudingsvermogen>90</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
             </spelers>
             <name>Feyenoord</name>
             <opstelling></opstelling>
@@ -1580,7 +1748,8 @@
                     <aanvallend>48</aanvallend>
                     <verdedigend>88</verdedigend>
                     <uithoudingsvermogen>80</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>2</nummer>
                     <naam>Erik Cummins</naam>
@@ -1589,7 +1758,8 @@
                     <aanvallend>27</aanvallend>
                     <verdedigend>17</verdedigend>
                     <uithoudingsvermogen>0</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>3</nummer>
                     <naam>Ruben Lucas</naam>
@@ -1598,7 +1768,8 @@
                     <aanvallend>75</aanvallend>
                     <verdedigend>56</verdedigend>
                     <uithoudingsvermogen>14</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>4</nummer>
                     <naam>Jordy Rondeel</naam>
@@ -1607,7 +1778,8 @@
                     <aanvallend>27</aanvallend>
                     <verdedigend>92</verdedigend>
                     <uithoudingsvermogen>26</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>5</nummer>
                     <naam>Mawouna Amevor</naam>
@@ -1616,7 +1788,8 @@
                     <aanvallend>84</aanvallend>
                     <verdedigend>64</verdedigend>
                     <uithoudingsvermogen>47</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>6</nummer>
                     <naam>Bart Vriends</naam>
@@ -1625,7 +1798,8 @@
                     <aanvallend>27</aanvallend>
                     <verdedigend>64</verdedigend>
                     <uithoudingsvermogen>16</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>7</nummer>
                     <naam>Jop van der Linden</naam>
@@ -1634,7 +1808,8 @@
                     <aanvallend>55</aanvallend>
                     <verdedigend>9</verdedigend>
                     <uithoudingsvermogen>60</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>8</nummer>
                     <naam>Xandro Schenk</naam>
@@ -1643,7 +1818,8 @@
                     <aanvallend>39</aanvallend>
                     <verdedigend>98</verdedigend>
                     <uithoudingsvermogen>95</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>9</nummer>
                     <naam>Robin van der Meer</naam>
@@ -1652,7 +1828,8 @@
                     <aanvallend>95</aanvallend>
                     <verdedigend>25</verdedigend>
                     <uithoudingsvermogen>69</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>10</nummer>
                     <naam>Sven Nieuwpoort</naam>
@@ -1661,7 +1838,8 @@
                     <aanvallend>24</aanvallend>
                     <verdedigend>7</verdedigend>
                     <uithoudingsvermogen>25</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>11</nummer>
                     <naam>Giliano Wijnaldum</naam>
@@ -1670,7 +1848,8 @@
                     <aanvallend>59</aanvallend>
                     <verdedigend>88</verdedigend>
                     <uithoudingsvermogen>16</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>12</nummer>
                     <naam>Sjoerd Overgoor</naam>
@@ -1679,7 +1858,8 @@
                     <aanvallend>7</aanvallend>
                     <verdedigend>36</verdedigend>
                     <uithoudingsvermogen>23</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>13</nummer>
                     <naam>Deniz Türüç</naam>
@@ -1688,7 +1868,8 @@
                     <aanvallend>61</aanvallend>
                     <verdedigend>72</verdedigend>
                     <uithoudingsvermogen>45</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>14</nummer>
                     <naam>Jeffrey Rijsdijk</naam>
@@ -1697,7 +1878,8 @@
                     <aanvallend>74</aanvallend>
                     <verdedigend>43</verdedigend>
                     <uithoudingsvermogen>71</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>15</nummer>
                     <naam>Lars Lambooij</naam>
@@ -1706,7 +1888,8 @@
                     <aanvallend>70</aanvallend>
                     <verdedigend>91</verdedigend>
                     <uithoudingsvermogen>7</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>16</nummer>
                     <naam>Peter van Ooijen</naam>
@@ -1715,7 +1898,8 @@
                     <aanvallend>75</aanvallend>
                     <verdedigend>29</verdedigend>
                     <uithoudingsvermogen>36</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>17</nummer>
                     <naam>Sander Duits</naam>
@@ -1724,7 +1908,8 @@
                     <aanvallend>29</aanvallend>
                     <verdedigend>20</verdedigend>
                     <uithoudingsvermogen>44</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>18</nummer>
                     <naam>Marnix Kolder</naam>
@@ -1733,7 +1918,8 @@
                     <aanvallend>63</aanvallend>
                     <verdedigend>6</verdedigend>
                     <uithoudingsvermogen>52</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>19</nummer>
                     <naam>Teije ten Den</naam>
@@ -1742,7 +1928,8 @@
                     <aanvallend>3</aanvallend>
                     <verdedigend>77</verdedigend>
                     <uithoudingsvermogen>53</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>20</nummer>
                     <naam>Alex Schalk</naam>
@@ -1751,7 +1938,8 @@
                     <aanvallend>14</aanvallend>
                     <verdedigend>28</verdedigend>
                     <uithoudingsvermogen>63</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>21</nummer>
                     <naam>Jules Reimerink</naam>
@@ -1760,7 +1948,8 @@
                     <aanvallend>58</aanvallend>
                     <verdedigend>88</verdedigend>
                     <uithoudingsvermogen>82</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>22</nummer>
                     <naam>Nick de Bondt</naam>
@@ -1769,7 +1958,8 @@
                     <aanvallend>28</aanvallend>
                     <verdedigend>5</verdedigend>
                     <uithoudingsvermogen>70</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>23</nummer>
                     <naam>Fernando Lewis</naam>
@@ -1778,7 +1968,8 @@
                     <aanvallend>60</aanvallend>
                     <verdedigend>7</verdedigend>
                     <uithoudingsvermogen>59</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>24</nummer>
                     <naam>Lesley de Sa</naam>
@@ -1787,7 +1978,8 @@
                     <aanvallend>45</aanvallend>
                     <verdedigend>48</verdedigend>
                     <uithoudingsvermogen>10</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
             </spelers>
             <name>Go Ahead Eagles</name>
             <opstelling></opstelling>
@@ -1804,7 +1996,8 @@
                     <aanvallend>1</aanvallend>
                     <verdedigend>11</verdedigend>
                     <uithoudingsvermogen>66</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>26</nummer>
                     <naam>Peter van der Vlag</naam>
@@ -1813,7 +2006,8 @@
                     <aanvallend>40</aanvallend>
                     <verdedigend>92</verdedigend>
                     <uithoudingsvermogen>99</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>2</nummer>
                     <naam>Johan Kappelhof</naam>
@@ -1822,7 +2016,8 @@
                     <aanvallend>88</aanvallend>
                     <verdedigend>51</verdedigend>
                     <uithoudingsvermogen>67</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>3</nummer>
                     <naam>Eric Botteghin</naam>
@@ -1831,7 +2026,8 @@
                     <aanvallend>27</aanvallend>
                     <verdedigend>30</verdedigend>
                     <uithoudingsvermogen>3</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>4</nummer>
                     <naam>Martijn van der Laan</naam>
@@ -1840,7 +2036,8 @@
                     <aanvallend>10</aanvallend>
                     <verdedigend>3</verdedigend>
                     <uithoudingsvermogen>96</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>5</nummer>
                     <naam>Lorenzo Burnet</naam>
@@ -1849,7 +2046,8 @@
                     <aanvallend>58</aanvallend>
                     <verdedigend>61</verdedigend>
                     <uithoudingsvermogen>72</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>15</nummer>
                     <naam>Nick Bakker</naam>
@@ -1858,7 +2056,8 @@
                     <aanvallend>62</aanvallend>
                     <verdedigend>62</verdedigend>
                     <uithoudingsvermogen>49</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>33</nummer>
                     <naam>Hans Hateboer</naam>
@@ -1867,7 +2066,8 @@
                     <aanvallend>46</aanvallend>
                     <verdedigend>74</verdedigend>
                     <uithoudingsvermogen>59</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>6</nummer>
                     <naam>Maikel Kieftenbeld</naam>
@@ -1876,7 +2076,8 @@
                     <aanvallend>41</aanvallend>
                     <verdedigend>51</verdedigend>
                     <uithoudingsvermogen>92</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>8</nummer>
                     <naam>Michael de Leeuw</naam>
@@ -1885,7 +2086,8 @@
                     <aanvallend>56</aanvallend>
                     <verdedigend>64</verdedigend>
                     <uithoudingsvermogen>100</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>10</nummer>
                     <naam>Tjaronn Chery</naam>
@@ -1894,7 +2096,8 @@
                     <aanvallend>25</aanvallend>
                     <verdedigend>99</verdedigend>
                     <uithoudingsvermogen>20</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>16</nummer>
                     <naam>Hilal Ben Moussa</naam>
@@ -1903,7 +2106,8 @@
                     <aanvallend>76</aanvallend>
                     <verdedigend>15</verdedigend>
                     <uithoudingsvermogen>83</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>18</nummer>
                     <naam>Henk Bos</naam>
@@ -1912,7 +2116,8 @@
                     <aanvallend>11</aanvallend>
                     <verdedigend>17</verdedigend>
                     <uithoudingsvermogen>100</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>20</nummer>
                     <naam>Yoell van Nieff</naam>
@@ -1921,7 +2126,8 @@
                     <aanvallend>12</aanvallend>
                     <verdedigend>37</verdedigend>
                     <uithoudingsvermogen>57</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>21</nummer>
                     <naam>Rasmus Lindgren</naam>
@@ -1930,7 +2136,8 @@
                     <aanvallend>16</aanvallend>
                     <verdedigend>88</verdedigend>
                     <uithoudingsvermogen>64</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>23</nummer>
                     <naam>Nick van der Velden</naam>
@@ -1939,7 +2146,8 @@
                     <aanvallend>29</aanvallend>
                     <verdedigend>3</verdedigend>
                     <uithoudingsvermogen>49</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>24</nummer>
                     <naam>Tom Hiariej</naam>
@@ -1948,7 +2156,8 @@
                     <aanvallend>38</aanvallend>
                     <verdedigend>30</verdedigend>
                     <uithoudingsvermogen>80</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>7</nummer>
                     <naam>Jarchinio Antonia</naam>
@@ -1957,7 +2166,8 @@
                     <aanvallend>52</aanvallend>
                     <verdedigend>54</verdedigend>
                     <uithoudingsvermogen>53</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>9</nummer>
                     <naam>Danny Hoesen</naam>
@@ -1966,7 +2176,8 @@
                     <aanvallend>83</aanvallend>
                     <verdedigend>25</verdedigend>
                     <uithoudingsvermogen>14</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>19</nummer>
                     <naam>Dino Islamovic</naam>
@@ -1975,7 +2186,8 @@
                     <aanvallend>53</aanvallend>
                     <verdedigend>66</verdedigend>
                     <uithoudingsvermogen>15</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>36</nummer>
                     <naam>Género Zeefuik</naam>
@@ -1984,7 +2196,8 @@
                     <aanvallend>72</aanvallend>
                     <verdedigend>95</verdedigend>
                     <uithoudingsvermogen>36</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
             </spelers>
             <name>FC Groningen</name>
             <opstelling></opstelling>
@@ -2001,7 +2214,8 @@
                     <aanvallend>24</aanvallend>
                     <verdedigend>22</verdedigend>
                     <uithoudingsvermogen>81</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>30</nummer>
                     <naam>Robin Kist</naam>
@@ -2010,7 +2224,8 @@
                     <aanvallend>94</aanvallend>
                     <verdedigend>70</verdedigend>
                     <uithoudingsvermogen>59</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>31</nummer>
                     <naam>Viktor Noring</naam>
@@ -2019,7 +2234,8 @@
                     <aanvallend>74</aanvallend>
                     <verdedigend>86</verdedigend>
                     <uithoudingsvermogen>66</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>33</nummer>
                     <naam>Maarten de Fockert</naam>
@@ -2028,7 +2244,8 @@
                     <aanvallend>53</aanvallend>
                     <verdedigend>35</verdedigend>
                     <uithoudingsvermogen>14</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>2</nummer>
                     <naam>Kenny Otigba</naam>
@@ -2037,7 +2254,8 @@
                     <aanvallend>58</aanvallend>
                     <verdedigend>35</verdedigend>
                     <uithoudingsvermogen>21</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>5</nummer>
                     <naam>Pelé van Anholt</naam>
@@ -2046,7 +2264,8 @@
                     <aanvallend>45</aanvallend>
                     <verdedigend>17</verdedigend>
                     <uithoudingsvermogen>11</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>6</nummer>
                     <naam>Stefano Marzo</naam>
@@ -2055,7 +2274,8 @@
                     <aanvallend>15</aanvallend>
                     <verdedigend>81</verdedigend>
                     <uithoudingsvermogen>74</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>12</nummer>
                     <naam>Doke Schmidt</naam>
@@ -2064,7 +2284,8 @@
                     <aanvallend>36</aanvallend>
                     <verdedigend>37</verdedigend>
                     <uithoudingsvermogen>49</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>14</nummer>
                     <naam>Joost van Aken</naam>
@@ -2073,7 +2294,8 @@
                     <aanvallend>59</aanvallend>
                     <verdedigend>55</verdedigend>
                     <uithoudingsvermogen>94</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>18</nummer>
                     <naam>Jens Jurn Streutker</naam>
@@ -2082,7 +2304,8 @@
                     <aanvallend>61</aanvallend>
                     <verdedigend>17</verdedigend>
                     <uithoudingsvermogen>26</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>20</nummer>
                     <naam>Jukka Raitala</naam>
@@ -2091,7 +2314,8 @@
                     <aanvallend>22</aanvallend>
                     <verdedigend>95</verdedigend>
                     <uithoudingsvermogen>53</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>22</nummer>
                     <naam>Stephen Warmolts</naam>
@@ -2100,7 +2324,8 @@
                     <aanvallend>43</aanvallend>
                     <verdedigend>86</verdedigend>
                     <uithoudingsvermogen>72</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>23</nummer>
                     <naam>Jordy Buijs</naam>
@@ -2109,7 +2334,8 @@
                     <aanvallend>98</aanvallend>
                     <verdedigend>36</verdedigend>
                     <uithoudingsvermogen>57</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>25</nummer>
                     <naam>Willem Huizing</naam>
@@ -2118,7 +2344,8 @@
                     <aanvallend>28</aanvallend>
                     <verdedigend>85</verdedigend>
                     <uithoudingsvermogen>2</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>32</nummer>
                     <naam>Joris Voest</naam>
@@ -2127,7 +2354,8 @@
                     <aanvallend>66</aanvallend>
                     <verdedigend>86</verdedigend>
                     <uithoudingsvermogen>41</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>8</nummer>
                     <naam>Morten Thorsby</naam>
@@ -2136,7 +2364,8 @@
                     <aanvallend>95</aanvallend>
                     <verdedigend>43</verdedigend>
                     <uithoudingsvermogen>9</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>15</nummer>
                     <naam>Marten de Roon Aanvoerder</naam>
@@ -2145,7 +2374,8 @@
                     <aanvallend>62</aanvallend>
                     <verdedigend>43</verdedigend>
                     <uithoudingsvermogen>61</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>16</nummer>
                     <naam>Daley Sinkgraven</naam>
@@ -2154,7 +2384,8 @@
                     <aanvallend>7</aanvallend>
                     <verdedigend>14</verdedigend>
                     <uithoudingsvermogen>51</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>21</nummer>
                     <naam>Joey van den Berg</naam>
@@ -2163,7 +2394,8 @@
                     <aanvallend>50</aanvallend>
                     <verdedigend>66</verdedigend>
                     <uithoudingsvermogen>72</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>26</nummer>
                     <naam>Janio Bikel</naam>
@@ -2172,7 +2404,8 @@
                     <aanvallend>58</aanvallend>
                     <verdedigend>35</verdedigend>
                     <uithoudingsvermogen>29</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>27</nummer>
                     <naam>Michael Chacón</naam>
@@ -2181,7 +2414,8 @@
                     <aanvallend>43</aanvallend>
                     <verdedigend>53</verdedigend>
                     <uithoudingsvermogen>69</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>9</nummer>
                     <naam>Thomas Dalgaard</naam>
@@ -2190,7 +2424,8 @@
                     <aanvallend>70</aanvallend>
                     <verdedigend>76</verdedigend>
                     <uithoudingsvermogen>48</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>11</nummer>
                     <naam>Sam Larsson</naam>
@@ -2199,7 +2434,8 @@
                     <aanvallend>71</aanvallend>
                     <verdedigend>70</verdedigend>
                     <uithoudingsvermogen>63</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>17</nummer>
                     <naam>Luciano Slagveer</naam>
@@ -2208,7 +2444,8 @@
                     <aanvallend>94</aanvallend>
                     <verdedigend>75</verdedigend>
                     <uithoudingsvermogen>69</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>19</nummer>
                     <naam>Mark Uth</naam>
@@ -2217,7 +2454,8 @@
                     <aanvallend>85</aanvallend>
                     <verdedigend>31</verdedigend>
                     <uithoudingsvermogen>17</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>24</nummer>
                     <naam>Szabolcs Varga</naam>
@@ -2226,7 +2464,8 @@
                     <aanvallend>78</aanvallend>
                     <verdedigend>3</verdedigend>
                     <uithoudingsvermogen>66</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>28</nummer>
                     <naam>Pascal Huser</naam>
@@ -2235,7 +2474,8 @@
                     <aanvallend>14</aanvallend>
                     <verdedigend>53</verdedigend>
                     <uithoudingsvermogen>3</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>40</nummer>
                     <naam>Pelle van Amersfoort</naam>
@@ -2244,7 +2484,8 @@
                     <aanvallend>56</aanvallend>
                     <verdedigend>69</verdedigend>
                     <uithoudingsvermogen>10</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
             </spelers>
             <name>sc Heerenveen</name>
             <opstelling></opstelling>
@@ -2261,7 +2502,8 @@
                     <aanvallend>78</aanvallend>
                     <verdedigend>16</verdedigend>
                     <uithoudingsvermogen>52</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>16</nummer>
                     <naam>Bram Castro</naam>
@@ -2270,7 +2512,8 @@
                     <aanvallend>6</aanvallend>
                     <verdedigend>60</verdedigend>
                     <uithoudingsvermogen>18</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>25</nummer>
                     <naam>Renze Fij</naam>
@@ -2279,7 +2522,8 @@
                     <aanvallend>99</aanvallend>
                     <verdedigend>67</verdedigend>
                     <uithoudingsvermogen>24</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>26</nummer>
                     <naam>Michael Brouwer</naam>
@@ -2288,7 +2532,8 @@
                     <aanvallend>45</aanvallend>
                     <verdedigend>64</verdedigend>
                     <uithoudingsvermogen>78</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>2</nummer>
                     <naam>Milano Koenders</naam>
@@ -2297,7 +2542,8 @@
                     <aanvallend>7</aanvallend>
                     <verdedigend>72</verdedigend>
                     <uithoudingsvermogen>0</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>3</nummer>
                     <naam>Bart Schenkeveld</naam>
@@ -2306,7 +2552,8 @@
                     <aanvallend>45</aanvallend>
                     <verdedigend>41</verdedigend>
                     <uithoudingsvermogen>27</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>4</nummer>
                     <naam>Jeroen Veldmate</naam>
@@ -2315,7 +2562,8 @@
                     <aanvallend>12</aanvallend>
                     <verdedigend>30</verdedigend>
                     <uithoudingsvermogen>77</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>5</nummer>
                     <naam>Fahd Aktaou</naam>
@@ -2324,7 +2572,8 @@
                     <aanvallend>57</aanvallend>
                     <verdedigend>100</verdedigend>
                     <uithoudingsvermogen>58</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>18</nummer>
                     <naam>Ramon Zomer</naam>
@@ -2333,7 +2582,8 @@
                     <aanvallend>66</aanvallend>
                     <verdedigend>66</verdedigend>
                     <uithoudingsvermogen>18</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>28</nummer>
                     <naam>Travis Brent</naam>
@@ -2342,7 +2592,8 @@
                     <aanvallend>12</aanvallend>
                     <verdedigend>40</verdedigend>
                     <uithoudingsvermogen>98</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>29</nummer>
                     <naam>Coen Gortemaker</naam>
@@ -2351,7 +2602,8 @@
                     <aanvallend>85</aanvallend>
                     <verdedigend>51</verdedigend>
                     <uithoudingsvermogen>92</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>30</nummer>
                     <naam>Mark Engberink</naam>
@@ -2360,7 +2612,8 @@
                     <aanvallend>92</aanvallend>
                     <verdedigend>10</verdedigend>
                     <uithoudingsvermogen>7</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>32</nummer>
                     <naam>Mike te Wierik</naam>
@@ -2369,7 +2622,8 @@
                     <aanvallend>79</aanvallend>
                     <verdedigend>8</verdedigend>
                     <uithoudingsvermogen>36</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>6</nummer>
                     <naam>Bas Sibum</naam>
@@ -2378,7 +2632,8 @@
                     <aanvallend>7</aanvallend>
                     <verdedigend>85</verdedigend>
                     <uithoudingsvermogen>71</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>8</nummer>
                     <naam>Iliass Bel Hassani</naam>
@@ -2387,7 +2642,8 @@
                     <aanvallend>47</aanvallend>
                     <verdedigend>6</verdedigend>
                     <uithoudingsvermogen>19</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>10</nummer>
                     <naam>Thomas Bruns</naam>
@@ -2396,7 +2652,8 @@
                     <aanvallend>16</aanvallend>
                     <verdedigend>57</verdedigend>
                     <uithoudingsvermogen>18</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>14</nummer>
                     <naam>Joey Pelupessy</naam>
@@ -2405,7 +2662,8 @@
                     <aanvallend>10</aanvallend>
                     <verdedigend>8</verdedigend>
                     <uithoudingsvermogen>21</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>17</nummer>
                     <naam>Dario Vujicevic</naam>
@@ -2414,7 +2672,8 @@
                     <aanvallend>89</aanvallend>
                     <verdedigend>27</verdedigend>
                     <uithoudingsvermogen>64</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>21</nummer>
                     <naam>Simon Cziommer</naam>
@@ -2423,7 +2682,8 @@
                     <aanvallend>18</aanvallend>
                     <verdedigend>66</verdedigend>
                     <uithoudingsvermogen>85</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>23</nummer>
                     <naam>Mark-Jan Fledderus</naam>
@@ -2432,7 +2692,8 @@
                     <aanvallend>44</aanvallend>
                     <verdedigend>79</verdedigend>
                     <uithoudingsvermogen>28</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>24</nummer>
                     <naam>Menno Heerkes</naam>
@@ -2441,7 +2702,8 @@
                     <aanvallend>52</aanvallend>
                     <verdedigend>52</verdedigend>
                     <uithoudingsvermogen>69</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>31</nummer>
                     <naam>Daan Rienstra</naam>
@@ -2450,7 +2712,8 @@
                     <aanvallend>24</aanvallend>
                     <verdedigend>46</verdedigend>
                     <uithoudingsvermogen>24</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>35</nummer>
                     <naam>Rick Hemmink</naam>
@@ -2459,7 +2722,8 @@
                     <aanvallend>7</aanvallend>
                     <verdedigend>24</verdedigend>
                     <uithoudingsvermogen>94</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>9</nummer>
                     <naam>Denni Avdic</naam>
@@ -2468,7 +2732,8 @@
                     <aanvallend>43</aanvallend>
                     <verdedigend>63</verdedigend>
                     <uithoudingsvermogen>23</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>11</nummer>
                     <naam>Bryan Linssen</naam>
@@ -2477,7 +2742,8 @@
                     <aanvallend>73</aanvallend>
                     <verdedigend>3</verdedigend>
                     <uithoudingsvermogen>46</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>12</nummer>
                     <naam>Aleksei Kangaskolkka</naam>
@@ -2486,7 +2752,8 @@
                     <aanvallend>55</aanvallend>
                     <verdedigend>23</verdedigend>
                     <uithoudingsvermogen>10</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>13</nummer>
                     <naam>Dragan Paljić</naam>
@@ -2495,7 +2762,8 @@
                     <aanvallend>4</aanvallend>
                     <verdedigend>65</verdedigend>
                     <uithoudingsvermogen>49</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>15</nummer>
                     <naam>Jaroslav Navrátil</naam>
@@ -2504,7 +2772,8 @@
                     <aanvallend>77</aanvallend>
                     <verdedigend>29</verdedigend>
                     <uithoudingsvermogen>7</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>19</nummer>
                     <naam>Wout Weghorst</naam>
@@ -2513,7 +2782,8 @@
                     <aanvallend>40</aanvallend>
                     <verdedigend>65</verdedigend>
                     <uithoudingsvermogen>68</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>20</nummer>
                     <naam>Edwin Gyasi</naam>
@@ -2522,7 +2792,8 @@
                     <aanvallend>44</aanvallend>
                     <verdedigend>24</verdedigend>
                     <uithoudingsvermogen>70</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>22</nummer>
                     <naam>Oussama Tannane</naam>
@@ -2531,7 +2802,8 @@
                     <aanvallend>75</aanvallend>
                     <verdedigend>31</verdedigend>
                     <uithoudingsvermogen>86</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
             </spelers>
             <name>Heracles Almelo</name>
             <opstelling></opstelling>
@@ -2548,7 +2820,8 @@
                     <aanvallend>100</aanvallend>
                     <verdedigend>81</verdedigend>
                     <uithoudingsvermogen>8</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>12</nummer>
                     <naam>Andries Noppert</naam>
@@ -2557,7 +2830,8 @@
                     <aanvallend>40</aanvallend>
                     <verdedigend>61</verdedigend>
                     <uithoudingsvermogen>77</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>21</nummer>
                     <naam>Gábor Babos</naam>
@@ -2566,7 +2840,8 @@
                     <aanvallend>20</aanvallend>
                     <verdedigend>46</verdedigend>
                     <uithoudingsvermogen>59</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>2</nummer>
                     <naam>Sepp De Roover</naam>
@@ -2575,7 +2850,8 @@
                     <aanvallend>79</aanvallend>
                     <verdedigend>6</verdedigend>
                     <uithoudingsvermogen>96</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>3</nummer>
                     <naam>Henrico Drost</naam>
@@ -2584,7 +2860,8 @@
                     <aanvallend>34</aanvallend>
                     <verdedigend>39</verdedigend>
                     <uithoudingsvermogen>32</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>4</nummer>
                     <naam>Aleksandar Damcevski</naam>
@@ -2593,7 +2870,8 @@
                     <aanvallend>46</aanvallend>
                     <verdedigend>47</verdedigend>
                     <uithoudingsvermogen>56</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>5</nummer>
                     <naam>Remy Amieux</naam>
@@ -2602,7 +2880,8 @@
                     <aanvallend>15</aanvallend>
                     <verdedigend>18</verdedigend>
                     <uithoudingsvermogen>21</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>16</nummer>
                     <naam>Isak Ssewankambo</naam>
@@ -2611,7 +2890,8 @@
                     <aanvallend>21</aanvallend>
                     <verdedigend>40</verdedigend>
                     <uithoudingsvermogen>56</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>22</nummer>
                     <naam>Gill Swerts</naam>
@@ -2620,7 +2900,8 @@
                     <aanvallend>27</aanvallend>
                     <verdedigend>55</verdedigend>
                     <uithoudingsvermogen>96</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>28</nummer>
                     <naam>Kenny van der Weg</naam>
@@ -2629,7 +2910,8 @@
                     <aanvallend>98</aanvallend>
                     <verdedigend>58</verdedigend>
                     <uithoudingsvermogen>66</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>10</nummer>
                     <naam>Uros Matic</naam>
@@ -2638,7 +2920,8 @@
                     <aanvallend>92</aanvallend>
                     <verdedigend>75</verdedigend>
                     <uithoudingsvermogen>69</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>11</nummer>
                     <naam>Joey Suk</naam>
@@ -2647,7 +2930,8 @@
                     <aanvallend>35</aanvallend>
                     <verdedigend>88</verdedigend>
                     <uithoudingsvermogen>30</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>17</nummer>
                     <naam>Erik Falkenburg</naam>
@@ -2656,7 +2940,8 @@
                     <aanvallend>64</aanvallend>
                     <verdedigend>7</verdedigend>
                     <uithoudingsvermogen>71</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>6</nummer>
                     <naam>Joeri de Kamps</naam>
@@ -2665,7 +2950,8 @@
                     <aanvallend>36</aanvallend>
                     <verdedigend>0</verdedigend>
                     <uithoudingsvermogen>35</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>19</nummer>
                     <naam>Mounir El Allouchi</naam>
@@ -2674,7 +2960,8 @@
                     <aanvallend>79</aanvallend>
                     <verdedigend>34</verdedigend>
                     <uithoudingsvermogen>43</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>23</nummer>
                     <naam>Vinnie Vermeer</naam>
@@ -2683,7 +2970,8 @@
                     <aanvallend>9</aanvallend>
                     <verdedigend>33</verdedigend>
                     <uithoudingsvermogen>81</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>7</nummer>
                     <naam>Elson Hooi</naam>
@@ -2692,7 +2980,8 @@
                     <aanvallend>94</aanvallend>
                     <verdedigend>71</verdedigend>
                     <uithoudingsvermogen>36</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>8</nummer>
                     <naam>Jeffrey Sarpong</naam>
@@ -2701,7 +2990,8 @@
                     <aanvallend>14</aanvallend>
                     <verdedigend>0</verdedigend>
                     <uithoudingsvermogen>57</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>11</nummer>
                     <naam>Adnane Tighadouini</naam>
@@ -2710,7 +3000,8 @@
                     <aanvallend>78</aanvallend>
                     <verdedigend>92</verdedigend>
                     <uithoudingsvermogen>14</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>20</nummer>
                     <naam>Mats Seuntjens</naam>
@@ -2719,7 +3010,8 @@
                     <aanvallend>24</aanvallend>
                     <verdedigend>6</verdedigend>
                     <uithoudingsvermogen>91</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>9</nummer>
                     <naam>Kingsley Boateng</naam>
@@ -2728,7 +3020,8 @@
                     <aanvallend>72</aanvallend>
                     <verdedigend>62</verdedigend>
                     <uithoudingsvermogen>36</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>18</nummer>
                     <naam>Stipe Perica</naam>
@@ -2737,7 +3030,8 @@
                     <aanvallend>22</aanvallend>
                     <verdedigend>49</verdedigend>
                     <uithoudingsvermogen>81</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
             </spelers>
             <name>NAC Breda</name>
             <opstelling></opstelling>
@@ -2754,7 +3048,8 @@
                     <aanvallend>54</aanvallend>
                     <verdedigend>65</verdedigend>
                     <uithoudingsvermogen>100</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>2</nummer>
                     <naam>Warner Hahn</naam>
@@ -2763,7 +3058,8 @@
                     <aanvallend>97</aanvallend>
                     <verdedigend>72</verdedigend>
                     <uithoudingsvermogen>24</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>3</nummer>
                     <naam>Boy de Jong</naam>
@@ -2772,7 +3068,8 @@
                     <aanvallend>5</aanvallend>
                     <verdedigend>26</verdedigend>
                     <uithoudingsvermogen>48</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>4</nummer>
                     <naam>Bram van Polen</naam>
@@ -2781,7 +3078,8 @@
                     <aanvallend>8</aanvallend>
                     <verdedigend>58</verdedigend>
                     <uithoudingsvermogen>19</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>5</nummer>
                     <naam>Joost Broerse</naam>
@@ -2790,7 +3088,8 @@
                     <aanvallend>47</aanvallend>
                     <verdedigend>89</verdedigend>
                     <uithoudingsvermogen>47</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>6</nummer>
                     <naam>Kingsley Ehizibue</naam>
@@ -2799,7 +3098,8 @@
                     <aanvallend>29</aanvallend>
                     <verdedigend>62</verdedigend>
                     <uithoudingsvermogen>94</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>7</nummer>
                     <naam>Bart van Hintum</naam>
@@ -2808,7 +3108,8 @@
                     <aanvallend>98</aanvallend>
                     <verdedigend>55</verdedigend>
                     <uithoudingsvermogen>41</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>8</nummer>
                     <naam>Leroy Labylle</naam>
@@ -2817,7 +3118,8 @@
                     <aanvallend>60</aanvallend>
                     <verdedigend>45</verdedigend>
                     <uithoudingsvermogen>22</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>9</nummer>
                     <naam>Thomas Lam</naam>
@@ -2826,7 +3128,8 @@
                     <aanvallend>81</aanvallend>
                     <verdedigend>89</verdedigend>
                     <uithoudingsvermogen>96</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>10</nummer>
                     <naam>Steven Fernandes Pereira</naam>
@@ -2835,7 +3138,8 @@
                     <aanvallend>12</aanvallend>
                     <verdedigend>100</verdedigend>
                     <uithoudingsvermogen>37</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>11</nummer>
                     <naam>Trent Sainsbury</naam>
@@ -2844,7 +3148,8 @@
                     <aanvallend>48</aanvallend>
                     <verdedigend>38</verdedigend>
                     <uithoudingsvermogen>49</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>12</nummer>
                     <naam>Maikel van der Werff</naam>
@@ -2853,7 +3158,8 @@
                     <aanvallend>73</aanvallend>
                     <verdedigend>55</verdedigend>
                     <uithoudingsvermogen>95</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>13</nummer>
                     <naam>Wout Brama</naam>
@@ -2862,7 +3168,8 @@
                     <aanvallend>73</aanvallend>
                     <verdedigend>44</verdedigend>
                     <uithoudingsvermogen>90</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>14</nummer>
                     <naam>Rick Dekker</naam>
@@ -2871,7 +3178,8 @@
                     <aanvallend>67</aanvallend>
                     <verdedigend>15</verdedigend>
                     <uithoudingsvermogen>7</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>15</nummer>
                     <naam>Jesper Drost</naam>
@@ -2880,7 +3188,8 @@
                     <aanvallend>97</aanvallend>
                     <verdedigend>69</verdedigend>
                     <uithoudingsvermogen>92</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>16</nummer>
                     <naam>Wouter Marinus</naam>
@@ -2889,7 +3198,8 @@
                     <aanvallend>44</aanvallend>
                     <verdedigend>14</verdedigend>
                     <uithoudingsvermogen>58</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>17</nummer>
                     <naam>Stefan Nijland</naam>
@@ -2898,7 +3208,8 @@
                     <aanvallend>23</aanvallend>
                     <verdedigend>81</verdedigend>
                     <uithoudingsvermogen>67</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>18</nummer>
                     <naam>Ben Rienstra</naam>
@@ -2907,7 +3218,8 @@
                     <aanvallend>89</aanvallend>
                     <verdedigend>43</verdedigend>
                     <uithoudingsvermogen>55</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>19</nummer>
                     <naam>Mustafa Saymak</naam>
@@ -2916,7 +3228,8 @@
                     <aanvallend>42</aanvallend>
                     <verdedigend>16</verdedigend>
                     <uithoudingsvermogen>89</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>20</nummer>
                     <naam>Dimitrios Ferfelis</naam>
@@ -2925,7 +3238,8 @@
                     <aanvallend>93</aanvallend>
                     <verdedigend>30</verdedigend>
                     <uithoudingsvermogen>96</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>21</nummer>
                     <naam>Nikolaos Ioannidis</naam>
@@ -2934,7 +3248,8 @@
                     <aanvallend>80</aanvallend>
                     <verdedigend>93</verdedigend>
                     <uithoudingsvermogen>4</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>22</nummer>
                     <naam>Athanasios Karagounis</naam>
@@ -2943,7 +3258,8 @@
                     <aanvallend>45</aanvallend>
                     <verdedigend>7</verdedigend>
                     <uithoudingsvermogen>96</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>23</nummer>
                     <naam>Jody Lukoki</naam>
@@ -2952,7 +3268,8 @@
                     <aanvallend>92</aanvallend>
                     <verdedigend>54</verdedigend>
                     <uithoudingsvermogen>13</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>24</nummer>
                     <naam>Soufian Moro</naam>
@@ -2961,7 +3278,8 @@
                     <aanvallend>11</aanvallend>
                     <verdedigend>5</verdedigend>
                     <uithoudingsvermogen>90</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>25</nummer>
                     <naam>Tomáš Necid</naam>
@@ -2970,7 +3288,8 @@
                     <aanvallend>72</aanvallend>
                     <verdedigend>63</verdedigend>
                     <uithoudingsvermogen>92</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>26</nummer>
                     <naam>Ryan Thomas</naam>
@@ -2979,7 +3298,8 @@
                     <aanvallend>97</aanvallend>
                     <verdedigend>59</verdedigend>
                     <uithoudingsvermogen>95</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
             </spelers>
             <name>PEC Zwolle</name>
             <opstelling></opstelling>
@@ -2996,7 +3316,8 @@
                     <aanvallend>19</aanvallend>
                     <verdedigend>23</verdedigend>
                     <uithoudingsvermogen>80</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>22</nummer>
                     <naam>Remko Pasveer</naam>
@@ -3005,7 +3326,8 @@
                     <aanvallend>96</aanvallend>
                     <verdedigend>72</verdedigend>
                     <uithoudingsvermogen>54</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>31</nummer>
                     <naam>Nigel Bertrams</naam>
@@ -3014,7 +3336,8 @@
                     <aanvallend>80</aanvallend>
                     <verdedigend>86</verdedigend>
                     <uithoudingsvermogen>86</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>2</nummer>
                     <naam>Nicolas Isimat-Mirin</naam>
@@ -3023,7 +3346,8 @@
                     <aanvallend>4</aanvallend>
                     <verdedigend>23</verdedigend>
                     <uithoudingsvermogen>27</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>3</nummer>
                     <naam>Karim Rekik</naam>
@@ -3032,7 +3356,8 @@
                     <aanvallend>90</aanvallend>
                     <verdedigend>38</verdedigend>
                     <uithoudingsvermogen>24</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>4</nummer>
                     <naam>Santiago Arias</naam>
@@ -3041,7 +3366,8 @@
                     <aanvallend>38</aanvallend>
                     <verdedigend>72</verdedigend>
                     <uithoudingsvermogen>25</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>5</nummer>
                     <naam>Jeffrey Bruma</naam>
@@ -3050,7 +3376,8 @@
                     <aanvallend>72</aanvallend>
                     <verdedigend>16</verdedigend>
                     <uithoudingsvermogen>62</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>15</nummer>
                     <naam>Jetro Willems</naam>
@@ -3059,7 +3386,8 @@
                     <aanvallend>95</aanvallend>
                     <verdedigend>42</verdedigend>
                     <uithoudingsvermogen>50</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>20</nummer>
                     <naam>Joshua Brenet</naam>
@@ -3068,7 +3396,8 @@
                     <aanvallend>28</aanvallend>
                     <verdedigend>54</verdedigend>
                     <uithoudingsvermogen>67</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>25</nummer>
                     <naam>Menno Koch</naam>
@@ -3077,7 +3406,8 @@
                     <aanvallend>39</aanvallend>
                     <verdedigend>7</verdedigend>
                     <uithoudingsvermogen>84</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>28</nummer>
                     <naam>Abel Tamata</naam>
@@ -3086,7 +3416,8 @@
                     <aanvallend>80</aanvallend>
                     <verdedigend>59</verdedigend>
                     <uithoudingsvermogen>53</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>29</nummer>
                     <naam>Jorrit Hendrix</naam>
@@ -3095,7 +3426,8 @@
                     <aanvallend>67</aanvallend>
                     <verdedigend>87</verdedigend>
                     <uithoudingsvermogen>63</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>30</nummer>
                     <naam>Jordy de Wijs</naam>
@@ -3104,7 +3436,8 @@
                     <aanvallend>34</aanvallend>
                     <verdedigend>51</verdedigend>
                     <uithoudingsvermogen>95</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>6</nummer>
                     <naam>Adam Maher</naam>
@@ -3113,7 +3446,8 @@
                     <aanvallend>34</aanvallend>
                     <verdedigend>56</verdedigend>
                     <uithoudingsvermogen>24</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>8</nummer>
                     <naam>Stijn Schaars</naam>
@@ -3122,7 +3456,8 @@
                     <aanvallend>32</aanvallend>
                     <verdedigend>62</verdedigend>
                     <uithoudingsvermogen>84</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>10</nummer>
                     <naam>Georginio Wijnaldum</naam>
@@ -3131,7 +3466,8 @@
                     <aanvallend>81</aanvallend>
                     <verdedigend>11</verdedigend>
                     <uithoudingsvermogen>36</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>18</nummer>
                     <naam>Andrés Guardado</naam>
@@ -3140,7 +3476,8 @@
                     <aanvallend>27</aanvallend>
                     <verdedigend>38</verdedigend>
                     <uithoudingsvermogen>18</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>23</nummer>
                     <naam>Rai Vloet</naam>
@@ -3149,7 +3486,8 @@
                     <aanvallend>98</aanvallend>
                     <verdedigend>54</verdedigend>
                     <uithoudingsvermogen>7</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>24</nummer>
                     <naam>Marcel Ritzmaier</naam>
@@ -3158,7 +3496,8 @@
                     <aanvallend>48</aanvallend>
                     <verdedigend>88</verdedigend>
                     <uithoudingsvermogen>47</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>26</nummer>
                     <naam>Clint Leemans</naam>
@@ -3167,7 +3506,8 @@
                     <aanvallend>9</aanvallend>
                     <verdedigend>66</verdedigend>
                     <uithoudingsvermogen>10</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>27</nummer>
                     <naam>Oscar Hiljemark</naam>
@@ -3176,7 +3516,8 @@
                     <aanvallend>64</aanvallend>
                     <verdedigend>86</verdedigend>
                     <uithoudingsvermogen>14</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>7</nummer>
                     <naam>Memphis Depay</naam>
@@ -3185,7 +3526,8 @@
                     <aanvallend>11</aanvallend>
                     <verdedigend>51</verdedigend>
                     <uithoudingsvermogen>44</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>9</nummer>
                     <naam>Luuk de Jong</naam>
@@ -3194,7 +3536,8 @@
                     <aanvallend>90</aanvallend>
                     <verdedigend>59</verdedigend>
                     <uithoudingsvermogen>25</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>11</nummer>
                     <naam>Luciano Narsingh</naam>
@@ -3203,7 +3546,8 @@
                     <aanvallend>77</aanvallend>
                     <verdedigend>32</verdedigend>
                     <uithoudingsvermogen>36</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>14</nummer>
                     <naam>Florian Jozefzoon</naam>
@@ -3212,7 +3556,8 @@
                     <aanvallend>55</aanvallend>
                     <verdedigend>62</verdedigend>
                     <uithoudingsvermogen>78</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>17</nummer>
                     <naam>Jürgen Locadia</naam>
@@ -3221,7 +3566,8 @@
                     <aanvallend>12</aanvallend>
                     <verdedigend>67</verdedigend>
                     <uithoudingsvermogen>56</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>39</nummer>
                     <naam>Zakaria Bakkali</naam>
@@ -3230,7 +3576,8 @@
                     <aanvallend>87</aanvallend>
                     <verdedigend>90</verdedigend>
                     <uithoudingsvermogen>70</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
             </spelers>
             <name>PSV</name>
             <opstelling></opstelling>
@@ -3247,7 +3594,8 @@
                     <aanvallend>63</aanvallend>
                     <verdedigend>57</verdedigend>
                     <uithoudingsvermogen>35</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>20</nummer>
                     <naam>Sonny Stevens</naam>
@@ -3256,7 +3604,8 @@
                     <aanvallend>7</aanvallend>
                     <verdedigend>58</verdedigend>
                     <uithoudingsvermogen>22</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>35</nummer>
                     <naam>Filip Bednarek</naam>
@@ -3265,7 +3614,8 @@
                     <aanvallend>7</aanvallend>
                     <verdedigend>68</verdedigend>
                     <uithoudingsvermogen>58</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>2</nummer>
                     <naam>Cuco Martina</naam>
@@ -3274,7 +3624,8 @@
                     <aanvallend>6</aanvallend>
                     <verdedigend>32</verdedigend>
                     <uithoudingsvermogen>28</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>3</nummer>
                     <naam>Andreas Bjelland Aanvoerder</naam>
@@ -3283,7 +3634,8 @@
                     <aanvallend>79</aanvallend>
                     <verdedigend>29</verdedigend>
                     <uithoudingsvermogen>13</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>4</nummer>
                     <naam>Darryl Lachman</naam>
@@ -3292,7 +3644,8 @@
                     <aanvallend>97</aanvallend>
                     <verdedigend>98</verdedigend>
                     <uithoudingsvermogen>28</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>15</nummer>
                     <naam>Dico Koppers</naam>
@@ -3301,7 +3654,8 @@
                     <aanvallend>34</aanvallend>
                     <verdedigend>75</verdedigend>
                     <uithoudingsvermogen>62</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>16</nummer>
                     <naam>Tim Breukers</naam>
@@ -3310,7 +3664,8 @@
                     <aanvallend>99</aanvallend>
                     <verdedigend>37</verdedigend>
                     <uithoudingsvermogen>5</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>17</nummer>
                     <naam>Rasmus Bengtsson</naam>
@@ -3319,7 +3674,8 @@
                     <aanvallend>70</aanvallend>
                     <verdedigend>97</verdedigend>
                     <uithoudingsvermogen>43</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>23</nummer>
                     <naam>Joachim Andersen</naam>
@@ -3328,7 +3684,8 @@
                     <aanvallend>35</aanvallend>
                     <verdedigend>58</verdedigend>
                     <uithoudingsvermogen>56</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>26</nummer>
                     <naam>Renato Tapia</naam>
@@ -3337,7 +3694,8 @@
                     <aanvallend>24</aanvallend>
                     <verdedigend>67</verdedigend>
                     <uithoudingsvermogen>99</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>5</nummer>
                     <naam>Robbert Schilder</naam>
@@ -3346,7 +3704,8 @@
                     <aanvallend>7</aanvallend>
                     <verdedigend>74</verdedigend>
                     <uithoudingsvermogen>6</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>8</nummer>
                     <naam>Kyle Ebecilio</naam>
@@ -3355,7 +3714,8 @@
                     <aanvallend>57</aanvallend>
                     <verdedigend>64</verdedigend>
                     <uithoudingsvermogen>95</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>10</nummer>
                     <naam>Hakim Ziyech</naam>
@@ -3364,7 +3724,8 @@
                     <aanvallend>7</aanvallend>
                     <verdedigend>75</verdedigend>
                     <uithoudingsvermogen>91</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>11</nummer>
                     <naam>Jesús Manuel Corona</naam>
@@ -3373,7 +3734,8 @@
                     <aanvallend>28</aanvallend>
                     <verdedigend>95</verdedigend>
                     <uithoudingsvermogen>71</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>19</nummer>
                     <naam>Shadrach Eghan</naam>
@@ -3382,7 +3744,8 @@
                     <aanvallend>87</aanvallend>
                     <verdedigend>48</verdedigend>
                     <uithoudingsvermogen>85</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>21</nummer>
                     <naam>Felipe Gutiérrez</naam>
@@ -3391,7 +3754,8 @@
                     <aanvallend>96</aanvallend>
                     <verdedigend>82</verdedigend>
                     <uithoudingsvermogen>50</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>22</nummer>
                     <naam>Kamohelo Mokotjo</naam>
@@ -3400,7 +3764,8 @@
                     <aanvallend>100</aanvallend>
                     <verdedigend>47</verdedigend>
                     <uithoudingsvermogen>84</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>24</nummer>
                     <naam>Orlando Engelaar</naam>
@@ -3409,7 +3774,8 @@
                     <aanvallend>62</aanvallend>
                     <verdedigend>61</verdedigend>
                     <uithoudingsvermogen>5</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>7</nummer>
                     <naam>Youness Mokhtar</naam>
@@ -3418,7 +3784,8 @@
                     <aanvallend>11</aanvallend>
                     <verdedigend>13</verdedigend>
                     <uithoudingsvermogen>3</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>9</nummer>
                     <naam>Torgeir Børven</naam>
@@ -3427,7 +3794,8 @@
                     <aanvallend>48</aanvallend>
                     <verdedigend>71</verdedigend>
                     <uithoudingsvermogen>76</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>14</nummer>
                     <naam>Ryo Miyaichi</naam>
@@ -3436,7 +3804,8 @@
                     <aanvallend>69</aanvallend>
                     <verdedigend>18</verdedigend>
                     <uithoudingsvermogen>47</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>25</nummer>
                     <naam>Bilal Ould-Chikh</naam>
@@ -3445,7 +3814,8 @@
                     <aanvallend>9</aanvallend>
                     <verdedigend>81</verdedigend>
                     <uithoudingsvermogen>53</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>30</nummer>
                     <naam>Luc Castaignos</naam>
@@ -3454,7 +3824,8 @@
                     <aanvallend>39</aanvallend>
                     <verdedigend>31</verdedigend>
                     <uithoudingsvermogen>71</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>33</nummer>
                     <naam>Kasper Kusk</naam>
@@ -3463,7 +3834,8 @@
                     <aanvallend>54</aanvallend>
                     <verdedigend>57</verdedigend>
                     <uithoudingsvermogen>87</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
             </spelers>
             <name>FC Tukkers</name>
             <opstelling></opstelling>
@@ -3480,7 +3852,8 @@
                     <aanvallend>52</aanvallend>
                     <verdedigend>52</verdedigend>
                     <uithoudingsvermogen>83</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>30</nummer>
                     <naam>Jeroen Verhoeven</naam>
@@ -3489,7 +3862,8 @@
                     <aanvallend>18</aanvallend>
                     <verdedigend>55</verdedigend>
                     <uithoudingsvermogen>89</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>31</nummer>
                     <naam>Mike Havekotte</naam>
@@ -3498,7 +3872,8 @@
                     <aanvallend>35</aanvallend>
                     <verdedigend>12</verdedigend>
                     <uithoudingsvermogen>81</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>2</nummer>
                     <naam>Mark van der Maarel</naam>
@@ -3507,7 +3882,8 @@
                     <aanvallend>53</aanvallend>
                     <verdedigend>100</verdedigend>
                     <uithoudingsvermogen>7</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>3</nummer>
                     <naam>Ramon Leeuwin</naam>
@@ -3516,7 +3892,8 @@
                     <aanvallend>50</aanvallend>
                     <verdedigend>30</verdedigend>
                     <uithoudingsvermogen>97</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>13</nummer>
                     <naam>Gévero Markiet</naam>
@@ -3525,7 +3902,8 @@
                     <aanvallend>100</aanvallend>
                     <verdedigend>9</verdedigend>
                     <uithoudingsvermogen>64</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>14</nummer>
                     <naam>Kai Heerings</naam>
@@ -3534,7 +3912,8 @@
                     <aanvallend>99</aanvallend>
                     <verdedigend>72</verdedigend>
                     <uithoudingsvermogen>67</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>17</nummer>
                     <naam>Michael Zullo</naam>
@@ -3543,7 +3922,8 @@
                     <aanvallend>74</aanvallend>
                     <verdedigend>17</verdedigend>
                     <uithoudingsvermogen>35</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>24</nummer>
                     <naam>Yannick Cortie</naam>
@@ -3552,7 +3932,8 @@
                     <aanvallend>11</aanvallend>
                     <verdedigend>19</verdedigend>
                     <uithoudingsvermogen>91</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>25</nummer>
                     <naam>Timo Letschert</naam>
@@ -3561,7 +3942,8 @@
                     <aanvallend>31</aanvallend>
                     <verdedigend>36</verdedigend>
                     <uithoudingsvermogen>40</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>6</nummer>
                     <naam>Anouar Kali</naam>
@@ -3570,7 +3952,8 @@
                     <aanvallend>79</aanvallend>
                     <verdedigend>58</verdedigend>
                     <uithoudingsvermogen>11</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>7</nummer>
                     <naam>Edouard Duplan</naam>
@@ -3579,7 +3962,8 @@
                     <aanvallend>58</aanvallend>
                     <verdedigend>90</verdedigend>
                     <uithoudingsvermogen>75</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>8</nummer>
                     <naam>Willem JanssenAanvoerder</naam>
@@ -3588,7 +3972,8 @@
                     <aanvallend>75</aanvallend>
                     <verdedigend>98</verdedigend>
                     <uithoudingsvermogen>5</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>11</nummer>
                     <naam>Tommy Oar</naam>
@@ -3597,7 +3982,8 @@
                     <aanvallend>39</aanvallend>
                     <verdedigend>24</verdedigend>
                     <uithoudingsvermogen>32</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>15</nummer>
                     <naam>Mark Diemers</naam>
@@ -3606,7 +3992,8 @@
                     <aanvallend>19</aanvallend>
                     <verdedigend>70</verdedigend>
                     <uithoudingsvermogen>13</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>16</nummer>
                     <naam>Yassin Ayoub</naam>
@@ -3615,7 +4002,8 @@
                     <aanvallend>59</aanvallend>
                     <verdedigend>96</verdedigend>
                     <uithoudingsvermogen>97</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>18</nummer>
                     <naam>Fernando Quesada</naam>
@@ -3624,7 +4012,8 @@
                     <aanvallend>61</aanvallend>
                     <verdedigend>67</verdedigend>
                     <uithoudingsvermogen>74</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>19</nummer>
                     <naam>Adam Sarota</naam>
@@ -3633,7 +4022,8 @@
                     <aanvallend>69</aanvallend>
                     <verdedigend>28</verdedigend>
                     <uithoudingsvermogen>59</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>26</nummer>
                     <naam>Sean Klaiber</naam>
@@ -3642,7 +4032,8 @@
                     <aanvallend>23</aanvallend>
                     <verdedigend>16</verdedigend>
                     <uithoudingsvermogen>99</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>44</nummer>
                     <naam>Sofyan Amrabat</naam>
@@ -3651,7 +4042,8 @@
                     <aanvallend>17</aanvallend>
                     <verdedigend>28</verdedigend>
                     <uithoudingsvermogen>26</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>9</nummer>
                     <naam>Ruud Boymans</naam>
@@ -3660,7 +4052,8 @@
                     <aanvallend>47</aanvallend>
                     <verdedigend>34</verdedigend>
                     <uithoudingsvermogen>63</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>10</nummer>
                     <naam>Nacer Barazite</naam>
@@ -3669,7 +4062,8 @@
                     <aanvallend>30</aanvallend>
                     <verdedigend>7</verdedigend>
                     <uithoudingsvermogen>65</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>20</nummer>
                     <naam>Danny Verbeek</naam>
@@ -3678,7 +4072,8 @@
                     <aanvallend>66</aanvallend>
                     <verdedigend>8</verdedigend>
                     <uithoudingsvermogen>69</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>21</nummer>
                     <naam>Kristoffer Peterson</naam>
@@ -3687,7 +4082,8 @@
                     <aanvallend>24</aanvallend>
                     <verdedigend>33</verdedigend>
                     <uithoudingsvermogen>15</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>26</nummer>
                     <naam>Gyliano van Velzen</naam>
@@ -3696,7 +4092,8 @@
                     <aanvallend>43</aanvallend>
                     <verdedigend>70</verdedigend>
                     <uithoudingsvermogen>2</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>37</nummer>
                     <naam>Gyrano Kerk</naam>
@@ -3705,7 +4102,8 @@
                     <aanvallend>1</aanvallend>
                     <verdedigend>83</verdedigend>
                     <uithoudingsvermogen>31</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>39</nummer>
                     <naam>Cedric Badjeck</naam>
@@ -3714,7 +4112,8 @@
                     <aanvallend>65</aanvallend>
                     <verdedigend>47</verdedigend>
                     <uithoudingsvermogen>31</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>45</nummer>
                     <naam>Rubio Rubin</naam>
@@ -3723,7 +4122,8 @@
                     <aanvallend>43</aanvallend>
                     <verdedigend>61</verdedigend>
                     <uithoudingsvermogen>51</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>47</nummer>
                     <naam>Rodney Antwi</naam>
@@ -3732,7 +4132,8 @@
                     <aanvallend>85</aanvallend>
                     <verdedigend>6</verdedigend>
                     <uithoudingsvermogen>44</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>49</nummer>
                     <naam>Issa Kallon</naam>
@@ -3741,7 +4142,8 @@
                     <aanvallend>33</aanvallend>
                     <verdedigend>41</verdedigend>
                     <uithoudingsvermogen>4</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
             </spelers>
             <name>FC Utrecht</name>
             <opstelling></opstelling>
@@ -3758,7 +4160,8 @@
                     <aanvallend>59</aanvallend>
                     <verdedigend>3</verdedigend>
                     <uithoudingsvermogen>50</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>1</nummer>
                     <naam>Eloy Room</naam>
@@ -3767,7 +4170,8 @@
                     <aanvallend>96</aanvallend>
                     <verdedigend>6</verdedigend>
                     <uithoudingsvermogen>31</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>22</nummer>
                     <naam>Piet Velthuizen</naam>
@@ -3776,7 +4180,8 @@
                     <aanvallend>70</aanvallend>
                     <verdedigend>70</verdedigend>
                     <uithoudingsvermogen>76</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>35</nummer>
                     <naam>Rochdi Achenteh</naam>
@@ -3785,7 +4190,8 @@
                     <aanvallend>92</aanvallend>
                     <verdedigend>27</verdedigend>
                     <uithoudingsvermogen>92</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>40</nummer>
                     <naam>Kevin Diks</naam>
@@ -3794,7 +4200,8 @@
                     <aanvallend>1</aanvallend>
                     <verdedigend>88</verdedigend>
                     <uithoudingsvermogen>75</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>23</nummer>
                     <naam>Jan-Arie van der Heijden</naam>
@@ -3803,7 +4210,8 @@
                     <aanvallend>33</aanvallend>
                     <verdedigend>49</verdedigend>
                     <uithoudingsvermogen>22</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>37</nummer>
                     <naam>Guram Kashia Aanvoerder</naam>
@@ -3812,7 +4220,8 @@
                     <aanvallend>67</aanvallend>
                     <verdedigend>76</verdedigend>
                     <uithoudingsvermogen>72</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>15</nummer>
                     <naam>Arnold Kruiswijk</naam>
@@ -3821,7 +4230,8 @@
                     <aanvallend>8</aanvallend>
                     <verdedigend>79</verdedigend>
                     <uithoudingsvermogen>67</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>3</nummer>
                     <naam>Dan Mori</naam>
@@ -3830,7 +4240,8 @@
                     <aanvallend>95</aanvallend>
                     <verdedigend>24</verdedigend>
                     <uithoudingsvermogen>45</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>2</nummer>
                     <naam>Wallace Oliveira dos Santos</naam>
@@ -3839,7 +4250,8 @@
                     <aanvallend>27</aanvallend>
                     <verdedigend>68</verdedigend>
                     <uithoudingsvermogen>71</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>25</nummer>
                     <naam>Gino Bosz</naam>
@@ -3848,7 +4260,8 @@
                     <aanvallend>31</aanvallend>
                     <verdedigend>13</verdedigend>
                     <uithoudingsvermogen>99</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>20</nummer>
                     <naam>Zakaria Labyad</naam>
@@ -3857,7 +4270,8 @@
                     <aanvallend>43</aanvallend>
                     <verdedigend>44</verdedigend>
                     <uithoudingsvermogen>73</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>5</nummer>
                     <naam>Kelvin Leerdam</naam>
@@ -3866,7 +4280,8 @@
                     <aanvallend>20</aanvallend>
                     <verdedigend>25</verdedigend>
                     <uithoudingsvermogen>13</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>6</nummer>
                     <naam>Josh McEachran</naam>
@@ -3875,7 +4290,8 @@
                     <aanvallend>53</aanvallend>
                     <verdedigend>100</verdedigend>
                     <uithoudingsvermogen>58</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>18</nummer>
                     <naam>Marvelous Nakamba</naam>
@@ -3884,7 +4300,8 @@
                     <aanvallend>94</aanvallend>
                     <verdedigend>50</verdedigend>
                     <uithoudingsvermogen>24</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>10</nummer>
                     <naam>Davy Pröpper</naam>
@@ -3893,7 +4310,8 @@
                     <aanvallend>1</aanvallend>
                     <verdedigend>36</verdedigend>
                     <uithoudingsvermogen>85</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>7</nummer>
                     <naam>Marko Vejinović</naam>
@@ -3902,7 +4320,8 @@
                     <aanvallend>94</aanvallend>
                     <verdedigend>49</verdedigend>
                     <uithoudingsvermogen>83</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>14</nummer>
                     <naam>Abiola Dauda</naam>
@@ -3911,7 +4330,8 @@
                     <aanvallend>91</aanvallend>
                     <verdedigend>21</verdedigend>
                     <uithoudingsvermogen>35</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>9</nummer>
                     <naam>Uroš Đurđević</naam>
@@ -3920,7 +4340,8 @@
                     <aanvallend>55</aanvallend>
                     <verdedigend>46</verdedigend>
                     <uithoudingsvermogen>23</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>30</nummer>
                     <naam>Renato Ibarra</naam>
@@ -3929,7 +4350,8 @@
                     <aanvallend>10</aanvallend>
                     <verdedigend>54</verdedigend>
                     <uithoudingsvermogen>21</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>11</nummer>
                     <naam>Denys Oliynyk</naam>
@@ -3938,7 +4360,8 @@
                     <aanvallend>32</aanvallend>
                     <verdedigend>2</verdedigend>
                     <uithoudingsvermogen>4</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>8</nummer>
                     <naam>Valeri Qazaishvili</naam>
@@ -3947,7 +4370,8 @@
                     <aanvallend>82</aanvallend>
                     <verdedigend>34</verdedigend>
                     <uithoudingsvermogen>83</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>27</nummer>
                     <naam>Bertrand Traoré</naam>
@@ -3956,7 +4380,8 @@
                     <aanvallend>96</aanvallend>
                     <verdedigend>79</verdedigend>
                     <uithoudingsvermogen>25</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
             </spelers>
             <name>Vitesse</name>
             <opstelling></opstelling>
@@ -3973,7 +4398,8 @@
                     <aanvallend>26</aanvallend>
                     <verdedigend>25</verdedigend>
                     <uithoudingsvermogen>14</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>21</nummer>
                     <naam>David Meul  </naam>
@@ -3982,7 +4408,8 @@
                     <aanvallend>100</aanvallend>
                     <verdedigend>37</verdedigend>
                     <uithoudingsvermogen>85</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>31</nummer>
                     <naam>Mathijs Branderhorst  </naam>
@@ -3991,7 +4418,8 @@
                     <aanvallend>87</aanvallend>
                     <verdedigend>78</verdedigend>
                     <uithoudingsvermogen>86</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>3</nummer>
                     <naam>Freek Heerkens  </naam>
@@ -4000,7 +4428,8 @@
                     <aanvallend>12</aanvallend>
                     <verdedigend>40</verdedigend>
                     <uithoudingsvermogen>34</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>4</nummer>
                     <naam>Jordens Peters  </naam>
@@ -4009,7 +4438,8 @@
                     <aanvallend>57</aanvallend>
                     <verdedigend>48</verdedigend>
                     <uithoudingsvermogen>24</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>5</nummer>
                     <naam>Frank van der Struijk</naam>
@@ -4018,7 +4448,8 @@
                     <aanvallend>69</aanvallend>
                     <verdedigend>99</verdedigend>
                     <uithoudingsvermogen>84</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>15</nummer>
                     <naam>Dries Wuytens  </naam>
@@ -4027,7 +4458,8 @@
                     <aanvallend>2</aanvallend>
                     <verdedigend>99</verdedigend>
                     <uithoudingsvermogen>72</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>19</nummer>
                     <naam>Jonas Heymans  </naam>
@@ -4036,7 +4468,8 @@
                     <aanvallend>17</aanvallend>
                     <verdedigend>56</verdedigend>
                     <uithoudingsvermogen>97</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>28</nummer>
                     <naam>Tim Cornelisse  </naam>
@@ -4045,7 +4478,8 @@
                     <aanvallend>28</aanvallend>
                     <verdedigend>9</verdedigend>
                     <uithoudingsvermogen>25</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>35</nummer>
                     <naam>Mitchell Dijks  </naam>
@@ -4054,7 +4488,8 @@
                     <aanvallend>1</aanvallend>
                     <verdedigend>37</verdedigend>
                     <uithoudingsvermogen>55</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>6</nummer>
                     <naam>Fabian Sporkslede  </naam>
@@ -4063,7 +4498,8 @@
                     <aanvallend>91</aanvallend>
                     <verdedigend>54</verdedigend>
                     <uithoudingsvermogen>8</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>8</nummer>
                     <naam>Robbie Haemhouts  </naam>
@@ -4072,7 +4508,8 @@
                     <aanvallend>39</aanvallend>
                     <verdedigend>68</verdedigend>
                     <uithoudingsvermogen>22</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>10</nummer>
                     <naam>Ali Messaoud  </naam>
@@ -4081,7 +4518,8 @@
                     <aanvallend>53</aanvallend>
                     <verdedigend>82</verdedigend>
                     <uithoudingsvermogen>11</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>12</nummer>
                     <naam>Ricardo Ippel  </naam>
@@ -4090,7 +4528,8 @@
                     <aanvallend>56</aanvallend>
                     <verdedigend>78</verdedigend>
                     <uithoudingsvermogen>55</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>17</nummer>
                     <naam>Robert Braber  </naam>
@@ -4099,7 +4538,8 @@
                     <aanvallend>13</aanvallend>
                     <verdedigend>7</verdedigend>
                     <uithoudingsvermogen>38</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>29</nummer>
                     <naam>Stijn Wuytens  </naam>
@@ -4108,7 +4548,8 @@
                     <aanvallend>4</aanvallend>
                     <verdedigend>29</verdedigend>
                     <uithoudingsvermogen>40</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>30</nummer>
                     <naam>Jordy Vleugels  </naam>
@@ -4117,7 +4558,8 @@
                     <aanvallend>8</aanvallend>
                     <verdedigend>21</verdedigend>
                     <uithoudingsvermogen>38</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>25</nummer>
                     <naam>Jan Praktiek  </naam>
@@ -4126,7 +4568,8 @@
                     <aanvallend>16</aanvallend>
                     <verdedigend>54</verdedigend>
                     <uithoudingsvermogen>99</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>45</nummer>
                     <naam>Jeroen van Wageningen </naam>
@@ -4135,7 +4578,8 @@
                     <aanvallend>30</aanvallend>
                     <verdedigend>24</verdedigend>
                     <uithoudingsvermogen>8</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>7</nummer>
                     <naam>Terell Ondaan  </naam>
@@ -4144,7 +4588,8 @@
                     <aanvallend>40</aanvallend>
                     <verdedigend>86</verdedigend>
                     <uithoudingsvermogen>90</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>9</nummer>
                     <naam>Samuel Armenteros  </naam>
@@ -4153,7 +4598,8 @@
                     <aanvallend>13</aanvallend>
                     <verdedigend>96</verdedigend>
                     <uithoudingsvermogen>30</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>11</nummer>
                     <naam>Bruno Andrade  </naam>
@@ -4162,7 +4608,8 @@
                     <aanvallend>56</aanvallend>
                     <verdedigend>80</verdedigend>
                     <uithoudingsvermogen>68</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>14</nummer>
                     <naam>Ben Sahar  </naam>
@@ -4171,7 +4618,8 @@
                     <aanvallend>71</aanvallend>
                     <verdedigend>22</verdedigend>
                     <uithoudingsvermogen>76</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>20</nummer>
                     <naam>Jerson Cabral  </naam>
@@ -4180,7 +4628,8 @@
                     <aanvallend>49</aanvallend>
                     <verdedigend>52</verdedigend>
                     <uithoudingsvermogen>31</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
                 <Speler>
                     <nummer>36</nummer>
                     <naam>Charlton Vicento  </naam>
@@ -4189,7 +4638,8 @@
                     <aanvallend>39</aanvallend>
                     <verdedigend>24</verdedigend>
                     <uithoudingsvermogen>29</uithoudingsvermogen>
-                </Speler>
+                	<status>Normaal</status>
+				</Speler>
             </spelers>
             <name>Willem II</name>
             <opstelling></opstelling>
