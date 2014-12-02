@@ -252,7 +252,12 @@ public class PosPlayer {
     public boolean isAvaliableToPlay() {
         return speler.isAvaliableToPlay();
     }
-    
 
-    
+    /**
+     * Respresenteer ~ als een string
+     */
+    @Override
+    public String toString() {
+        return "PosPlayer{" + "speler=" + speler + ", posspelertype=" + posspelertype + ", reduceFactor=" + reduceFactor + '}';
+    }
 }

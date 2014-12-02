@@ -240,4 +240,12 @@ public class Team {
     public int getTotalStat() {
         return this.getAanvallendTotaal() + this.getVerdedigingsTotaal() + this.getUithoudingsTotaal();
     }
+    
+    /**
+     * Respresenteer ~ als een string
+     */
+    @Override
+    public String toString() {
+        return "Team{" + "spelers=" + spelers + ", name=" + name + ", opstelling=" + opstelling + ", competitie=" + competitie + ", budget=" + budget + '}';
+    }
 }
