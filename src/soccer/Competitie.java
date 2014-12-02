@@ -12,7 +12,6 @@ public class Competitie {
     private ArrayList<Wedstrijd> wedstrijden;
     private ArrayList<Team> teams;
     private int userindex;
-
     /**
      * Constructor van Competitie opgebouwd uit (ArrayList<Wedstrijd> en ArrayList<Team>)
      * @param wedstrijden ArrayList<Wedstrijd>
