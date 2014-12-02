@@ -99,7 +99,6 @@ public class Competitie {
     public String toString() {
         return "Competitie{" + "wedstrijden=" + wedstrijden + ", teams=" + teams + ", userindex=" + userindex + '}';
     }
-
     
     /**
      * Als een team punten heeft gekregen na een wedstrijd, wordt dat bij het aanroepen van de functie toegevoegd aan
