@@ -416,9 +416,35 @@ public class WedstrijdTest {
         assertTrue(we.scoreOfTeam(t1) == 5);
         assertTrue(we.scoreOfTeam(t2) == 3);
     }
-    /* NOG MAKEN */
+    
     @Test
-    public void playGameTest(){
+    public void scoreOfTeamNoTeamTest() {
+        Speler s1 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
+        PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
+        ArrayList<Speler> sp1 = new ArrayList<Speler>();
+        ArrayList<PosPlayer> pp = new ArrayList<PosPlayer>();
+        pp.add(p1);
+        sp1.add(s1);
         
+        Speler s2 = new Speler("B", 14, SpelerType.Aanvaller, 10, 10,10,10);
+        PosPlayer p2 = new PosPlayer(s1, SpelerType.Aanvaller);
+        ArrayList<Speler> sp2 = new ArrayList<Speler>();
+        ArrayList<PosPlayer> pp2 = new ArrayList<PosPlayer>();
+        pp2.add(p2);
+        sp2.add(s2);
+        
+        Speler s3 = new Speler("C", 14, SpelerType.Aanvaller, 10, 10,10,10);
+        PosPlayer p3 = new PosPlayer(s1, SpelerType.Aanvaller);
+        ArrayList<Speler> sp3 = new ArrayList<Speler>();
+        ArrayList<PosPlayer> pp3 = new ArrayList<PosPlayer>();
+        pp3.add(p3);
+        sp3.add(s3);
+        
+        Team t1 = new Team(sp1, "Team", pp, null, 50000);
+        Team t2 = new Team(sp2, "Team", pp, null, 50000);
+        Team t3 = new Team(sp3, "NoTeam", pp, null, 555455);
+        
+        Wedstrijd we = new Wedstrijd(t1,t2);
+        assertEquals(0, we.scoreOfTeam(t3));
     }
 }
