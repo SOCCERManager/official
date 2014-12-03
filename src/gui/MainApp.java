@@ -44,10 +44,6 @@ public class MainApp extends Application {
         
         Scene scene = new Scene(root);
         scene.getStylesheets().addAll(this.getClass().getResource("view/main.css").toExternalForm());
-        
-        Competitie c = soccer.bouwXML.leesXML(new File("src/saves/competitie.xml"));
-        Competitie d = soccer.bouwXML.leesXML(new File("src/saves/ololol.xml"));
-        System.out.println(c.equals(d));
     }
     
     public void initRootLayout() {
