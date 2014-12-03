@@ -152,7 +152,7 @@ public class Competitie {
         
         Team tmp;
 
-        for (int x = 0; x < teams.size() - 2; x++) {
+        for (int x = 0; x < teams.size() - 1; x++) {
             for (int j = 0; j < a.size(); j++) {
                 wedstrijden.add(new Wedstrijd(a.get(j), b.get(j)));
             }
