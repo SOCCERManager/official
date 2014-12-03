@@ -6,11 +6,16 @@
 package gui.controller;
 
 import gui.MainApp;
+import java.io.File;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.Scanner;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TextField;
+import org.controlsfx.dialog.Dialogs;
+import soccer.Competitie;
 
 /**
  * FXML Controller class
@@ -19,6 +24,9 @@ import javafx.fxml.Initializable;
  */
 
 public class newgamescreenController {
+    
+    @FXML
+    private TextField nameField;
     
     private MainApp mainApp;
     /**
@@ -33,7 +41,37 @@ public class newgamescreenController {
         mainApp.showStartScreen();
         
     }
+    
+    @FXML
+    private void handleStartButton(){
+        if(isInputValid()){
+        String savegame = nameField.getText();
+        System.out.println(savegame);
+        try{
+        Competitie c = soccer.bouwXML.leesXML(new File("src/saves/competitie.xml"));
+        soccer.bouwXML.bouwXML(c, new File("src/saves/"+savegame+".xml"));
+        }catch(Exception e){System.out.println(e);}
+        mainApp.showStartScreen();
+        }
+    }
     public void setMainApp(MainApp mainApp) {
         this.mainApp = mainApp;
+    }
+    
+    private boolean isInputValid(){
+        String errortext = "";
+        if(nameField.getText() == null || nameField.getText().length() == 0)
+            errortext = "No valid input";
+        if (errortext.length() == 0) {
+            return true;
+        } else {
+            // Show the error message.
+            Dialogs.create()
+                .title("Invalid Fields")
+                .masthead("Please correct invalid fields")
+                .message(errortext)
+                .showError();
+            return false;
+        }
     }
 }

@@ -8,6 +8,7 @@ package gui;
 
 
 import gui.controller.*;
+import java.io.File;
 
 import java.io.IOException;
 import javafx.application.Application;
@@ -19,6 +20,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import soccer.Competitie;
 
 /**
  *
@@ -43,7 +45,9 @@ public class MainApp extends Application {
         Scene scene = new Scene(root);
         scene.getStylesheets().addAll(this.getClass().getResource("view/main.css").toExternalForm());
         
-        
+        Competitie c = soccer.bouwXML.leesXML(new File("src/saves/competitie.xml"));
+        Competitie d = soccer.bouwXML.leesXML(new File("src/saves/ololol.xml"));
+        System.out.println(c.equals(d));
     }
     
     public void initRootLayout() {
