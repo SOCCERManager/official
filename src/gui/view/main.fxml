@@ -12,7 +12,7 @@
             <Font name="Lucida Sans Regular" size="36.0" />
          </font></Button>
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <Button fx:id="mainButton2" layoutX="195.0" layoutY="392.0" onAction="#handleLoadButton" prefHeight="80.0" prefWidth="300.0" text="New Game" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <Button fx:id="mainButton2" layoutX="195.0" layoutY="392.0" onAction="#handleNewGameButton" prefHeight="80.0" prefWidth="300.0" text="New Game" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <font>
             <Font name="Lucida Sans Regular" size="36.0" />
          </font>

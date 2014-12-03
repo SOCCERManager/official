@@ -108,7 +108,7 @@ public class MainApp extends Application {
            e.printStackTrace();
        }
     }
-    /*
+    
     public void showNewGameScreen() {
         try {
            // Load person overview.
@@ -127,5 +127,5 @@ public class MainApp extends Application {
            e.printStackTrace();
        }
     }
-    */
+    
 }

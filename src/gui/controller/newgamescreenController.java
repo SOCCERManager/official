@@ -17,13 +17,13 @@ import javafx.fxml.Initializable;
  *
  * @author floris
  */
-public class loadscreenController implements Initializable {
 
+public class newgamescreenController {
+    
     private MainApp mainApp;
     /**
      * Initializes the controller class.
      */
-    @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
@@ -36,5 +36,4 @@ public class loadscreenController implements Initializable {
     public void setMainApp(MainApp mainApp) {
         this.mainApp = mainApp;
     }
-    
 }

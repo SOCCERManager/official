@@ -32,6 +32,11 @@ public class MainFXMLController implements Initializable {
         mainApp.showLoadScreen();
     }
     
+    @FXML
+    private void handleNewGameButton(ActionEvent event) {
+        mainApp.showNewGameScreen();
+    }
+    
     public void setMainApp(MainApp mainApp) {
         this.mainApp = mainApp;
     }

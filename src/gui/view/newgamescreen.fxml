@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.newgamescreenController">
+    <stylesheets>
+        <URL value="@main.css" />
+    </stylesheets>
+    <children>
+      <Button layoutY="739.0" mnemonicParsing="false" onAction="#handleBackButton" text="Back" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="137.0" prefHeight="119.0" prefWidth="1295.0" text="New Game" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="81.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
