@@ -10,6 +10,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import soccer.Speler;
+import soccer.SpelerStatus;
 import soccer.SpelerType;
 
 /**
@@ -114,4 +115,77 @@ public class SpelerTest {
         s1.setPrijs(5);
         assertEquals(5, s1.getPrijs());
     }
+    
+    @Test
+    public void getEnSetStatus() {
+        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        s1.setStatus(SpelerStatus.Normaal);
+        assertNotNull(s1.getStatus());
+        assertEquals(SpelerStatus.Normaal, s1.getStatus());
+    }
+    
+    @Test
+    public void equalsGelijkTest() {
+        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        Speler s2 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        assertEquals(true, s1.equals(s2));
+    }
+    
+    @Test
+    public void equalsNullTest() {
+        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        Speler s2 = null;
+        assertEquals(false, s1.equals(s2));
+    }
+    
+    @Test
+    public void equalsNummerTest() {
+        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        Speler s2 = new Speler("Bert", 4, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        assertEquals(false, s1.equals(s2));
+    }
+    
+    @Test
+    public void equalsSpelerTypeTest() {
+        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        Speler s2 = new Speler("Bert", 1, SpelerType.Verdediger, 10000, 81, 98, 22);
+        assertEquals(false, s1.equals(s2));
+    }
+    
+    @Test
+    public void equalsPrijsTest() {
+        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        Speler s2 = new Speler("Bert", 1, SpelerType.Aanvaller, 50000, 81, 98, 22);
+        assertEquals(false, s1.equals(s2));
+    }
+    
+    @Test
+    public void equalsAttackStatTest() {
+        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        Speler s2 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 89, 98, 22);
+        assertEquals(false, s1.equals(s2));
+    }
+    
+    @Test 
+    public void equalsDefenceStatTest() {
+        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        Speler s2 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 59, 22);
+        assertEquals(false, s1.equals(s2));
+    }
+    
+    @Test
+    public void equalsUithoudingStatTest() {
+        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        Speler s2 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 59);
+        assertEquals(false, s1.equals(s2));
+    }
+    
+    @Test
+    public void equalsNaamTest() {
+        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        Speler s2 = new Speler("Antoine", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        assertEquals(false, s1.equals(s2));
+    }
+    
+    
 }
