@@ -128,4 +128,32 @@ public class MainApp extends Application {
        }
     }
     
+    public void showMainHubScreen(){
+        try {
+           // Load person overview.
+           FXMLLoader loader = new FXMLLoader();
+           loader.setLocation(MainApp.class.getResource("view/mainhub.fxml"));
+           AnchorPane personOverview = (AnchorPane) loader.load();
+
+           // Set person overview into the center of root layout.
+           Layout.setCenter(personOverview);
+
+           // Give the controller access to the main app.
+           mainhubController controller = loader.getController();
+           controller.setMainApp(this);
+
+       } catch (IOException e) {
+           e.printStackTrace();
+       }
+    }
+    public void showKoopScreen(){
+        
+    }
+    public void showVerkoopScreen(){
+        
+    }
+    public void showOpstellingScreen(){
+        
+    }
+    
 }
