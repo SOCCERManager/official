@@ -66,11 +66,7 @@ public class newgamescreenController {
             return true;
         } else {
             // Show the error message.
-            Dialogs.create()
-                .title("Invalid Fields")
-                .masthead("Please correct invalid fields")
-                .message(errortext)
-                .showError();
+            
             return false;
         }
     }
