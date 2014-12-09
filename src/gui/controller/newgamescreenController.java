@@ -14,7 +14,6 @@ import java.util.Scanner;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
-import org.controlsfx.dialog.Dialogs;
 import soccer.Competitie;
 
 /**
