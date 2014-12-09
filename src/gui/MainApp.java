@@ -81,7 +81,7 @@ public class MainApp extends Application {
            Layout.setCenter(main);
 
            // Give the controller access to the main app.
-           MainFXMLController controller = loader.getController();
+           mainController controller = loader.getController();
            controller.setMainApp(this);
 
        } catch (IOException e) {
