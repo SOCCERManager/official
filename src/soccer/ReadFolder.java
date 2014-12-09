@@ -16,22 +16,29 @@ import java.util.ArrayList;
  */
 public class ReadFolder {
     private static ArrayList<String> saveFiles = new ArrayList<String>();
-    public static void main(String[] args) throws FileNotFoundException, IOException{
-//        Competitie gelezenCompetitie = bouwXML.leesXML(new File("./src/competitie.xml"));
-//        System.out.println(gelezenCompetitie.getTeams().get(0));
-       
+    
+    public static ArrayList<String> Read() throws IOException{
         String path = new java.io.File(".").getCanonicalPath();
-        File folder = new File(path + "/src");
+        File folder = new File(path + "/src/saves");
         File[] listOfFiles = folder.listFiles();
         for (int i = 0; i < listOfFiles.length; i++) {
-           if (listOfFiles[i].isFile()) {
-               saveFiles.add(listOfFiles[i].getName());
+           if (getFileExtension(listOfFiles[i]).equals("xml")) {
+               saveFiles.add(listOfFiles[i].getName().replace(".xml", ""));
            }
         }
+        return saveFiles;
     }
     
     public static Competitie readXML(String file) throws FileNotFoundException {
         File saveGame = new File(file);
         return bouwXML.leesXML(saveGame);
+    }
+    
+    public static String getFileExtension(File file){
+        return
+            (file.getName().lastIndexOf(".") > 0)? 
+                file.getName().substring( file.getName().lastIndexOf(".")+1)
+                :""
+            ;
     }
 }
