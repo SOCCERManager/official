@@ -187,5 +187,32 @@ public class SpelerTest {
         assertEquals(false, s1.equals(s2));
     }
     
+    @Test
+    public void equalsNotSpelerTest() {
+        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        String naam = "Henk";
+        assertEquals(false, s1.equals(naam));
+    }
+    
+    @Test
+    public void isAvailableToPlayTest() {
+        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        s1.isAvaliableToPlay();
+        assertEquals(true, s1.isAvaliableToPlay());
+    }
+    
+    @Test
+    public void isUnavailableToPlayTest() {
+        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        s1.isAvaliableToPlay();
+        assertEquals(false, s1.isUnavaliableToPlay());
+    }
+    
+    @Test
+    public void testingTest() {
+        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        s1.magicalyFix();
+        assertEquals(true, s1.isAvaliableToPlay());
+    }
     
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.net.*?>
 <?import java.util.*?>
@@ -7,11 +8,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.loadscreenController">
+<AnchorPane id="AnchorPane" fx:id="loadAnchorPane" prefHeight="1080.0" prefWidth="1920.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.loadscreenController">
     <stylesheets>
         <URL value="@main.css" />
     </stylesheets>
    <children>
-      <Button layoutY="739.0" mnemonicParsing="false" onAction="#handleBackButton" text="Back" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+    <Button layoutY="696.0" mnemonicParsing="false" onAction="#handleBackButton" text="Back" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
    </children>
 </AnchorPane>

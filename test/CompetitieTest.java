@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+import java.time.Clock;
 import java.util.ArrayList;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -505,17 +506,53 @@ public class CompetitieTest {
         ta.add(t5);
         ta.add(t6);
         
-        Wedstrijd we = new Wedstrijd(t1,t2);
-        we.setScore_a(5);
-        we.setScore_b(8888);
-        we.setPoints_a(59);
-        we.setPoints_b(23);
-        ArrayList<Wedstrijd> w = new ArrayList<Wedstrijd>();
-        w.add(we);
+        ArrayList<Wedstrijd> wedlijst = new ArrayList<Wedstrijd>();
         
-        Competitie c1 = new Competitie(w, ta);
+        
+        Competitie c1 = new Competitie(wedlijst, ta);
         c1.bouwWedstrijden();
         ArrayList<Wedstrijd> wedstr = c1.getWedstrijden();
-        assertEquals(w.toString(), wedstr.get(0).toString());
+        ArrayList<Wedstrijd> wedstrControle = new ArrayList<Wedstrijd>();
+        Wedstrijd w1_1 = new Wedstrijd(t1, t4);
+        Wedstrijd w1_2 = new Wedstrijd(t2, t5);
+        Wedstrijd w1_3 = new Wedstrijd(t3, t6);
+        
+        Wedstrijd w2_1 = new Wedstrijd(t1, t2);
+        Wedstrijd w2_2 = new Wedstrijd(t3, t4);
+        Wedstrijd w2_3 = new Wedstrijd(t6, t5);
+        
+        Wedstrijd w3_1 = new Wedstrijd(t1, t3);
+        Wedstrijd w3_2 = new Wedstrijd(t6, t2);
+        Wedstrijd w3_3 = new Wedstrijd(t5, t4);
+        
+        Wedstrijd w4_1 = new Wedstrijd(t1, t6);
+        Wedstrijd w4_2 = new Wedstrijd(t5, t3);
+        Wedstrijd w4_3 = new Wedstrijd(t4, t2);
+        
+        Wedstrijd w5_1 = new Wedstrijd(t1, t5);
+        Wedstrijd w5_2 = new Wedstrijd(t4, t6);
+        Wedstrijd w5_3 = new Wedstrijd(t2, t3);
+        
+        wedstrControle.add(w1_1);
+        wedstrControle.add(w1_2);
+        wedstrControle.add(w1_3);
+        
+        wedstrControle.add(w2_1);
+        wedstrControle.add(w2_2);
+        wedstrControle.add(w2_3);
+        
+        wedstrControle.add(w3_1);
+        wedstrControle.add(w3_2);
+        wedstrControle.add(w3_3);
+        
+        wedstrControle.add(w4_1);
+        wedstrControle.add(w4_2);
+        wedstrControle.add(w4_3);
+        
+        wedstrControle.add(w5_1);
+        wedstrControle.add(w5_2);
+        wedstrControle.add(w5_3);
+        
+        assertEquals(wedstr, wedstrControle);
     }
 }
