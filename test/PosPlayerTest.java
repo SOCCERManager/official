@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 import static org.junit.Assert.*;
-import org.junit.Test;
+import org.junit.*;
 import soccer.PosPlayer;
 import soccer.Speler;
 import soccer.SpelerStatus;
@@ -15,6 +15,27 @@ import soccer.SpelerType;
  * @author Nils
  */
 public class PosPlayerTest {
+    Speler s1;
+    PosPlayer p1;
+    Speler s2;
+    PosPlayer p2;
+        
+    @Before 
+    public void setUp() {
+        s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        p1 = new PosPlayer(s1, SpelerType.Aanvaller);
+        s2 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        p2 = new PosPlayer(s1, SpelerType.Aanvaller);
+    }
+    
+    @After 
+    public void tearDown() {
+        s1 = null;
+        p1 = null;
+        s2 = null;
+        p2 = null;
+    }
+    
     @Test
     public void ConstructorTest() {
         Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
@@ -40,14 +61,14 @@ public class PosPlayerTest {
     public void getPosSpelerTypeTest() {
         Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
         PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
-        assertEquals(SpelerType.Aanvaller, p1.getType());
+        assertEquals(SpelerType.Aanvaller, p1.getPosSpelertype());
     }
     @Test
     public void setPosSpelerTypeTest() {
         Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
         PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
-        p1.setType(SpelerType.Middenvelder);
-        assertEquals(SpelerType.Middenvelder, p1.getType());
+        p1.setPosSpelertype(SpelerType.Middenvelder);
+        assertEquals(SpelerType.Middenvelder, p1.getPosSpelertype());
     }
     @Test
     public void getNaamTest() {
@@ -198,7 +219,27 @@ public class PosPlayerTest {
         PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
         Speler s2 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
         PosPlayer p2 = new PosPlayer(s2, SpelerType.Verdediger);
-        boolean actual = p1.equals(p2);
-        assertEquals(false, actual);
+        assertFalse(p1.equals(p2));
+    }
+    @Test
+    public void equalsNullTest() {
+        assertFalse(p1.equals(null));
+    }
+    
+    @Test
+    public void equalsStringTest() {
+        assertFalse(p1.equals("test"));
+    }
+    
+    @Test
+    public void equalsOtherPosTypeTest() {
+        p2.setPosSpelertype(SpelerType.Verdediger);
+        assertFalse(p1.equals(p2));
+    }
+    
+    @Test
+    public void getUighoudingsVermogenWrongPosType() {
+        p1.setPosSpelertype(SpelerType.Doelman);
+        assertEquals(20, p1.getUithoudingsvermogen());
     }
 }
