@@ -15,15 +15,16 @@ import java.util.Date;
 /**
  *Klasse ReadFolder leest alle bestanden in ./saves af en zet de namen ervan in de ArrayList
  * @author codesalad
+ * location: afgesproken is >>>>>>>>>>>>/src/saves<<<<<<<<<<<
  */
 public class ReadFolder {
     private static int aantalGames;
     private static ArrayList<String> saveFilesName = new ArrayList<String>();
     
-    public static ArrayList<String> readNames(){
+    public static ArrayList<String> readNames(String location){
         try{
             String path = new java.io.File(".").getCanonicalPath();
-            File folder = new File(path + "/src/saves");
+            File folder = new File(path + location);
             File[] listOfFiles = folder.listFiles();
             aantalGames = listOfFiles.length;
             SimpleDateFormat format = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss");
@@ -41,15 +42,31 @@ public class ReadFolder {
         }
     }
     
+    /**
+     * 
+     * @return Retourneert de private aantalGames waarde
+     */
     public static int getAantalSaveGames(){
         return aantalGames;
     }
     
-    public static Competitie readXML(String file) throws FileNotFoundException {
-        File saveGame = new File(file);
+    /**
+     * Leest het xml bestand in en maak er competities van
+     * @param fileName
+     * @return Retourneert een competitie die ingelezen is.
+     * @throws FileNotFoundException 
+     */
+    public static Competitie readXML(String fileName) throws FileNotFoundException {
+        
+        File saveGame = new File(fileName+".xml");
         return bouwXML.leesXML(saveGame);
     }
     
+    /**
+     * Hulp methode voor readNames()
+     * @param file
+     * @return Retourneert de extensie van een bestand.
+     */
     public static String getFileExtension(File file){
         return
             (file.getName().lastIndexOf(".") > 0)? 
