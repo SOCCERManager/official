@@ -1,6 +1,7 @@
 package soccer;
 
 import java.util.Objects;
+import java.util.Random;
 
 /**
  * Class speler
@@ -15,6 +16,7 @@ public class Speler {
     private int aanvallend;
     private int verdedigend;
     private int uithoudingsvermogen;
+    private Random rnd;
 
     /**
      * Initialiseer Speler. 
@@ -34,6 +36,7 @@ public class Speler {
         this.aanvallend = aanvallend;
         this.verdedigend = verdedigend;
         this.uithoudingsvermogen = uithoudingsvermogen;
+        this.rnd = new Random((long) Math.random());
     }
 
     /**
@@ -160,6 +163,22 @@ public class Speler {
      */
     public void setPrijs(int prijs) {
         this.prijs = prijs;
+    }
+
+    /**
+     * Set random generator
+     * @return 
+     */
+    public Random getRnd() {
+        return rnd;
+    }
+
+    /**
+     * Get Random generator
+     * @param rnd 
+     */
+    public void setRnd(Random rnd) {
+        this.rnd = rnd;
     }
     
     /**
