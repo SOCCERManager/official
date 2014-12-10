@@ -40,7 +40,7 @@ public class bouwXML {
          xstream.alias("OpgesteldeSpeler", PosPlayer.class);
          xstream.alias("Speler", Speler.class);
          xstream.alias("Team", Team.class);
-         xstream.alias("Wedstreid", Wedstrijd.class);
+         xstream.alias("Wedstrijd", Wedstrijd.class);
          return xstream;
     }
     
