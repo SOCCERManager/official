@@ -1,6 +1,7 @@
 package soccer;
 
 import java.util.Objects;
+import java.util.Random;
 
 /**
  * Class Wedstrijd
@@ -14,6 +15,7 @@ public class Wedstrijd {
     private int points_a;
     private int points_b;
     private boolean played;
+    private Random rnd;
     
     /**
      * Constructor van Wedstrijd, bestaande uit twee teams
@@ -24,6 +26,7 @@ public class Wedstrijd {
         this.team_a = team_a;
         this.team_b = team_b;
         played = false;
+        rnd = new Random((long) Math.random());
     }
 
     /**
@@ -137,7 +140,23 @@ public class Wedstrijd {
     public void setPlayed(boolean played) {
         this.played = played;
     }
-
+    
+    /**
+     * Get randomizer
+     * @return 
+     */
+    public Random getRnd() {
+        return rnd;
+    }
+    
+    /**
+     * Set randomizer
+     * @param rnd 
+     */
+    public void setRnd(Random rnd) {
+        this.rnd = rnd;
+    }
+    
     /**
      * De equals methode om te kijken of wedstrijden aan elkaar gelijk zijn.
      * @param obj de wedstrijd die vergeleken wordt met de wedstrijd waarbij deze methode is aangeroepen
@@ -192,7 +211,6 @@ public class Wedstrijd {
      * @return de score van team a of team b als deze gelijk zijn, anders return 0
      */
     public int scoreOfTeam(Team t){
-        
         if(t.equals(this.getTeam_a())){
             return this.getPoints_a();
         }
@@ -242,7 +260,7 @@ public class Wedstrijd {
      */ 
     private int getGoals(Team a, Team b) {
         return (int) Math.round(
-            (double)a.getAanvallendTotaal()*(double)a.getUithoudingsTotaal()*Math.random()
+            (double)a.getAanvallendTotaal()*(double)a.getUithoudingsTotaal()*this.rnd.nextDouble()
             /
             (double)b.getVerdedigingsTotaal()*(double)b.getUithoudingsTotaal()
         );
