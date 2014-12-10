@@ -224,9 +224,6 @@ public class PosPlayer {
         if (this.posspelertype != other.posspelertype) {
             return false;
         }
-        if (Double.doubleToLongBits(this.reduceFactor) != Double.doubleToLongBits(other.reduceFactor)) {
-            return false;
-        }
         return true;
     }
 
