@@ -1,0 +1,4651 @@
+<?xml version="1.0"?>
+<Competitie>
+	<wedstrijden></wedstrijden>
+	<teams>
+		<Team>
+			<spelers>
+				<Speler>
+					<nummer>1</nummer>
+					<naam>Martin Hansen</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>2</aanvallend>
+					<verdedigend>99</verdedigend>
+					<uithoudingsvermogen>100</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>2</nummer>
+					<naam>Dion Malone</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>60</aanvallend>
+					<verdedigend>29</verdedigend>
+					<uithoudingsvermogen>73</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>3</nummer>
+					<naam>Vito Wormgoor</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>10</aanvallend>
+					<verdedigend>18</verdedigend>
+					<uithoudingsvermogen>89</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>4</nummer>
+					<naam>Timothy Derijck</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>16</aanvallend>
+					<verdedigend>82</verdedigend>
+					<uithoudingsvermogen>21</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>5</nummer>
+					<naam>Wilfried Kanon</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>11</aanvallend>
+					<verdedigend>11</verdedigend>
+					<uithoudingsvermogen>71</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>6</nummer>
+					<naam>Thomas Kristensen</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>75</aanvallend>
+					<verdedigend>76</verdedigend>
+					<uithoudingsvermogen>60</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>7</nummer>
+					<naam>Kevin Jansen</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>12</aanvallend>
+					<verdedigend>36</verdedigend>
+					<uithoudingsvermogen>87</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>8</nummer>
+					<naam>Aaron Meijers</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>42</aanvallend>
+					<verdedigend>100</verdedigend>
+					<uithoudingsvermogen>60</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>9</nummer>
+					<naam>Mike van Duinen</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>12</aanvallend>
+					<verdedigend>10</verdedigend>
+					<uithoudingsvermogen>23</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>10</nummer>
+					<naam>Mathias Gehrt</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>6</aanvallend>
+					<verdedigend>6</verdedigend>
+					<uithoudingsvermogen>9</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>17</nummer>
+					<naam>Danny Bakker</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>3</aanvallend>
+					<verdedigend>93</verdedigend>
+					<uithoudingsvermogen>99</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>18</nummer>
+					<naam>Tim Coremans</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>33</aanvallend>
+					<verdedigend>74</verdedigend>
+					<uithoudingsvermogen>6</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>19</nummer>
+					<naam>Mitchell Schet</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>62</aanvallend>
+					<verdedigend>72</verdedigend>
+					<uithoudingsvermogen>43</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>22</nummer>
+					<naam>Robert Zwinkels</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>39</aanvallend>
+					<verdedigend>44</verdedigend>
+					<uithoudingsvermogen>60</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>23</nummer>
+					<naam>Roland Alberg</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>23</aanvallend>
+					<verdedigend>21</verdedigend>
+					<uithoudingsvermogen>58</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>24</nummer>
+					<naam>Rody de Boer</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>53</aanvallend>
+					<verdedigend>70</verdedigend>
+					<uithoudingsvermogen>64</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>25</nummer>
+					<naam>Mitchell de Vlugt</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>72</aanvallend>
+					<verdedigend>40</verdedigend>
+					<uithoudingsvermogen>58</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>26</nummer>
+					<naam>Xander Houtkoop</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>73</aanvallend>
+					<verdedigend>65</verdedigend>
+					<uithoudingsvermogen>69</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>27</nummer>
+					<naam>Richelo Fecunda</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>4</aanvallend>
+					<verdedigend>100</verdedigend>
+					<uithoudingsvermogen>35</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>28</nummer>
+					<naam>Tyronne Ebuehi</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>52</aanvallend>
+					<verdedigend>64</verdedigend>
+					<uithoudingsvermogen>44</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>29</nummer>
+					<naam>Michiel Kramer</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>98</aanvallend>
+					<verdedigend>8</verdedigend>
+					<uithoudingsvermogen>21</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>30</nummer>
+					<naam>Segun Owobowale</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>80</aanvallend>
+					<verdedigend>74</verdedigend>
+					<uithoudingsvermogen>54</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>37</nummer>
+					<naam>Papito Merencia</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>66</aanvallend>
+					<verdedigend>11</verdedigend>
+					<uithoudingsvermogen>78</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>51</nummer>
+					<naam>Gianni Zuiverloon</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>0</aanvallend>
+					<verdedigend>70</verdedigend>
+					<uithoudingsvermogen>51</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+			</spelers>
+			<name>ADO Denhaag</name>
+			<opstelling></opstelling>
+			<competitie reference="../../.."></competitie>
+			<budget>1000</budget>
+		</Team>
+		<Team>
+			<spelers>
+				<Speler>
+					<nummer>22</nummer>
+					<naam>Jasper Cillessen</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>91</aanvallend>
+					<verdedigend>13</verdedigend>
+					<uithoudingsvermogen>24</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>31</nummer>
+					<naam>Peter Leeuwenburgh</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>1</aanvallend>
+					<verdedigend>18</verdedigend>
+					<uithoudingsvermogen>63</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>33</nummer>
+					<naam>Diederik Boer</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>31</aanvallend>
+					<verdedigend>68</verdedigend>
+					<uithoudingsvermogen>11</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>2</nummer>
+					<naam>Ricardo van Rhijn</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>18</aanvallend>
+					<verdedigend>6</verdedigend>
+					<uithoudingsvermogen>25</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>3</nummer>
+					<naam>Joël Veltman</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>85</aanvallend>
+					<verdedigend>30</verdedigend>
+					<uithoudingsvermogen>100</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>4</nummer>
+					<naam>Niklas Moisander Aanvoerder</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>71</aanvallend>
+					<verdedigend>88</verdedigend>
+					<uithoudingsvermogen>8</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>5</nummer>
+					<naam>Nicolai Boilesen</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>2</aanvallend>
+					<verdedigend>28</verdedigend>
+					<uithoudingsvermogen>81</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>6</nummer>
+					<naam>Mike van der Hoorn</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>42</aanvallend>
+					<verdedigend>20</verdedigend>
+					<uithoudingsvermogen>14</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>12</nummer>
+					<naam>Jaïro Riedewald</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>51</aanvallend>
+					<verdedigend>1</verdedigend>
+					<uithoudingsvermogen>73</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>23</nummer>
+					<naam>Kenny Tete</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>99</aanvallend>
+					<verdedigend>51</verdedigend>
+					<uithoudingsvermogen>43</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>24</nummer>
+					<naam>Stefano Denswil</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>23</aanvallend>
+					<verdedigend>82</verdedigend>
+					<uithoudingsvermogen>90</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>29</nummer>
+					<naam>Ruben Ligeon</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>33</aanvallend>
+					<verdedigend>9</verdedigend>
+					<uithoudingsvermogen>48</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>8</nummer>
+					<naam>Lerin Duarte</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>44</aanvallend>
+					<verdedigend>49</verdedigend>
+					<uithoudingsvermogen>0</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>10</nummer>
+					<naam>Davy Klaassen</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>64</aanvallend>
+					<verdedigend>76</verdedigend>
+					<uithoudingsvermogen>58</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>16</nummer>
+					<naam>Lucas Andersen</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>59</aanvallend>
+					<verdedigend>76</verdedigend>
+					<uithoudingsvermogen>7</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>25</nummer>
+					<naam>Thulani Serero</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>19</aanvallend>
+					<verdedigend>33</verdedigend>
+					<uithoudingsvermogen>41</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>26</nummer>
+					<naam>Nick Viergever</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>41</aanvallend>
+					<verdedigend>38</verdedigend>
+					<uithoudingsvermogen>4</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>27</nummer>
+					<naam>Riechedly Bazoer</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>5</aanvallend>
+					<verdedigend>89</verdedigend>
+					<uithoudingsvermogen>29</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>32</nummer>
+					<naam>Niki Zimling</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>54</aanvallend>
+					<verdedigend>4</verdedigend>
+					<uithoudingsvermogen>41</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>7</nummer>
+					<naam>Viktor Fischer</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>45</aanvallend>
+					<verdedigend>36</verdedigend>
+					<uithoudingsvermogen>98</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>9</nummer>
+					<naam>Kolbeinn Sigþórsson</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>27</aanvallend>
+					<verdedigend>13</verdedigend>
+					<uithoudingsvermogen>52</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>11</nummer>
+					<naam>Ricardo Kishna</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>57</aanvallend>
+					<verdedigend>86</verdedigend>
+					<uithoudingsvermogen>68</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>18</nummer>
+					<naam>Robert Murić</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>75</aanvallend>
+					<verdedigend>41</verdedigend>
+					<uithoudingsvermogen>70</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>19</nummer>
+					<naam>Arkadiusz Milik</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>53</aanvallend>
+					<verdedigend>56</verdedigend>
+					<uithoudingsvermogen>10</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>20</nummer>
+					<naam>Lasse Schøne</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>15</aanvallend>
+					<verdedigend>32</verdedigend>
+					<uithoudingsvermogen>97</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>21</nummer>
+					<naam>Anwar El Ghazi</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>67</aanvallend>
+					<verdedigend>17</verdedigend>
+					<uithoudingsvermogen>68</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>28</nummer>
+					<naam>Tobias Sana</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>43</aanvallend>
+					<verdedigend>4</verdedigend>
+					<uithoudingsvermogen>85</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>30</nummer>
+					<naam>Richairo Živković</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>93</aanvallend>
+					<verdedigend>4</verdedigend>
+					<uithoudingsvermogen>90</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+			</spelers>
+			<name>Ajax</name>
+			<opstelling></opstelling>
+			<competitie reference="../../.."></competitie>
+			<budget>1000</budget>
+		</Team>
+		<Team>
+			<spelers>
+				<Speler>
+					<nummer>1</nummer>
+					<naam>Esteban</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>40</aanvallend>
+					<verdedigend>10</verdedigend>
+					<uithoudingsvermogen>25</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>16</nummer>
+					<naam>Yves De Winter</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>86</aanvallend>
+					<verdedigend>78</verdedigend>
+					<uithoudingsvermogen>17</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>25</nummer>
+					<naam>Sergio Rochet</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>45</aanvallend>
+					<verdedigend>1</verdedigend>
+					<uithoudingsvermogen>26</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>2</nummer>
+					<naam>Mattias Johansson</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>40</aanvallend>
+					<verdedigend>85</verdedigend>
+					<uithoudingsvermogen>58</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>3</nummer>
+					<naam>Jeffrey Gouweleeuw</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>10</aanvallend>
+					<verdedigend>29</verdedigend>
+					<uithoudingsvermogen>0</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>4</nummer>
+					<naam>Jan Wuytens</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>61</aanvallend>
+					<verdedigend>86</verdedigend>
+					<uithoudingsvermogen>67</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>14</nummer>
+					<naam>Wesley Hoedt</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>81</aanvallend>
+					<verdedigend>92</verdedigend>
+					<uithoudingsvermogen>100</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>15</nummer>
+					<naam>Simon Poulsen</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>85</aanvallend>
+					<verdedigend>63</verdedigend>
+					<uithoudingsvermogen>20</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>17</nummer>
+					<naam>Djavan Anderson</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>11</aanvallend>
+					<verdedigend>86</verdedigend>
+					<uithoudingsvermogen>26</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>23</nummer>
+					<naam>Derrick Luckassen</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>79</aanvallend>
+					<verdedigend>56</verdedigend>
+					<uithoudingsvermogen>80</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>24</nummer>
+					<naam>Ridgeciano Haps</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>89</aanvallend>
+					<verdedigend>29</verdedigend>
+					<uithoudingsvermogen>26</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>5</nummer>
+					<naam>Donny Gorter</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>97</aanvallend>
+					<verdedigend>0</verdedigend>
+					<uithoudingsvermogen>57</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>6</nummer>
+					<naam>Celso Ortiz</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>81</aanvallend>
+					<verdedigend>38</verdedigend>
+					<uithoudingsvermogen>23</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>8</nummer>
+					<naam>Nemanja Gudelj</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>96</aanvallend>
+					<verdedigend>32</verdedigend>
+					<uithoudingsvermogen>73</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>10</nummer>
+					<naam>Markus Henriksen</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>43</aanvallend>
+					<verdedigend>79</verdedigend>
+					<uithoudingsvermogen>45</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>12</nummer>
+					<naam>Viktor Elm</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>87</aanvallend>
+					<verdedigend>59</verdedigend>
+					<uithoudingsvermogen>31</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>20</nummer>
+					<naam>Thom Haye</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>52</aanvallend>
+					<verdedigend>5</verdedigend>
+					<uithoudingsvermogen>22</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>7</nummer>
+					<naam>Guus Hupperts</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>59</aanvallend>
+					<verdedigend>26</verdedigend>
+					<uithoudingsvermogen>74</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>9</nummer>
+					<naam>Aron Jóhannsson</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>96</aanvallend>
+					<verdedigend>65</verdedigend>
+					<uithoudingsvermogen>88</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>11</nummer>
+					<naam>Muamer Tanković</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>61</aanvallend>
+					<verdedigend>41</verdedigend>
+					<uithoudingsvermogen>63</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>18</nummer>
+					<naam>Mikhail Rosheuvel</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>60</aanvallend>
+					<verdedigend>80</verdedigend>
+					<uithoudingsvermogen>74</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>19</nummer>
+					<naam>Eli Babalj</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>69</aanvallend>
+					<verdedigend>80</verdedigend>
+					<uithoudingsvermogen>26</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>22</nummer>
+					<naam>Steven Berghuis</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>5</aanvallend>
+					<verdedigend>38</verdedigend>
+					<uithoudingsvermogen>69</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+			</spelers>
+			<name>AZ</name>
+			<opstelling></opstelling>
+			<competitie reference="../../.."></competitie>
+			<budget>1000</budget>
+		</Team>
+		<Team>
+			<spelers>
+				<Speler>
+					<nummer>28</nummer>
+					<naam>Jurjan Wouda</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>21</aanvallend>
+					<verdedigend>48</verdedigend>
+					<uithoudingsvermogen>80</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>22</nummer>
+					<naam>Leonard Nienhuis</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>8</aanvallend>
+					<verdedigend>50</verdedigend>
+					<uithoudingsvermogen>84</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>25</nummer>
+					<naam>Harm Zeinstra</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>67</aanvallend>
+					<verdedigend>21</verdedigend>
+					<uithoudingsvermogen>11</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>2</nummer>
+					<naam>Wout Droste</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>77</aanvallend>
+					<verdedigend>92</verdedigend>
+					<uithoudingsvermogen>49</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>3</nummer>
+					<naam>Etiënne Reijnen</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>13</aanvallend>
+					<verdedigend>30</verdedigend>
+					<uithoudingsvermogen>13</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>5</nummer>
+					<naam>Marlon Pereira</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>98</aanvallend>
+					<verdedigend>22</verdedigend>
+					<uithoudingsvermogen>25</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>15</nummer>
+					<naam>Mart Dijkstra</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>28</aanvallend>
+					<verdedigend>0</verdedigend>
+					<uithoudingsvermogen>17</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>17</nummer>
+					<naam>Lucas Bijker</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>38</aanvallend>
+					<verdedigend>19</verdedigend>
+					<uithoudingsvermogen>79</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>30</nummer>
+					<naam>Calvin Mac-Intosch</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>88</aanvallend>
+					<verdedigend>94</verdedigend>
+					<uithoudingsvermogen>79</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>23</nummer>
+					<naam>Ron Janzen</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>1</aanvallend>
+					<verdedigend>59</verdedigend>
+					<uithoudingsvermogen>88</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>4</nummer>
+					<naam>Vytautas Andriuškevičius</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>20</aanvallend>
+					<verdedigend>7</verdedigend>
+					<uithoudingsvermogen>2</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>6</nummer>
+					<naam>Erik Bakker</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>86</aanvallend>
+					<verdedigend>39</verdedigend>
+					<uithoudingsvermogen>68</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>20</nummer>
+					<naam>Sander van de Streek</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>63</aanvallend>
+					<verdedigend>37</verdedigend>
+					<uithoudingsvermogen>92</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>25</nummer>
+					<naam>Berend-Jan Schootstra</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>50</aanvallend>
+					<verdedigend>51</verdedigend>
+					<uithoudingsvermogen>80</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>7</nummer>
+					<naam>Furdjel Narsingh</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>52</aanvallend>
+					<verdedigend>73</verdedigend>
+					<uithoudingsvermogen>21</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>9</nummer>
+					<naam>Martijn Barto</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>46</aanvallend>
+					<verdedigend>2</verdedigend>
+					<uithoudingsvermogen>71</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>12</nummer>
+					<naam>Michiel Hemmen</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>45</aanvallend>
+					<verdedigend>13</verdedigend>
+					<uithoudingsvermogen>75</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>14</nummer>
+					<naam>Oebele Schokker</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>35</aanvallend>
+					<verdedigend>65</verdedigend>
+					<uithoudingsvermogen>20</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>18</nummer>
+					<naam>Bartholomew Ogbeche</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>80</aanvallend>
+					<verdedigend>63</verdedigend>
+					<uithoudingsvermogen>3</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>27</nummer>
+					<naam>Bob Schepers</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>12</aanvallend>
+					<verdedigend>62</verdedigend>
+					<uithoudingsvermogen>83</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>10</nummer>
+					<naam>Dejan Meleg</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>15</aanvallend>
+					<verdedigend>74</verdedigend>
+					<uithoudingsvermogen>58</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+			</spelers>
+			<name>SC Cambuur</name>
+			<opstelling></opstelling>
+			<competitie reference="../../.."></competitie>
+			<budget>1000</budget>
+		</Team>
+		<Team>
+			<spelers>
+				<Speler>
+					<nummer>1</nummer>
+					<naam>Filip Kurto</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>24</aanvallend>
+					<verdedigend>65</verdedigend>
+					<uithoudingsvermogen>11</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>2</nummer>
+					<naam>Robbert te Loeke</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>56</aanvallend>
+					<verdedigend>29</verdedigend>
+					<uithoudingsvermogen>22</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>3</nummer>
+					<naam>Jeffry Fortes</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>63</aanvallend>
+					<verdedigend>90</verdedigend>
+					<uithoudingsvermogen>7</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>4</nummer>
+					<naam>Ilias Haddad</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>89</aanvallend>
+					<verdedigend>81</verdedigend>
+					<uithoudingsvermogen>76</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>5</nummer>
+					<naam>William Troost-Ekong</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>71</aanvallend>
+					<verdedigend>24</verdedigend>
+					<uithoudingsvermogen>21</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>6</nummer>
+					<naam>Marvin Peersman</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>89</aanvallend>
+					<verdedigend>95</verdedigend>
+					<uithoudingsvermogen>6</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>7</nummer>
+					<naam>Josimar Lima</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>58</aanvallend>
+					<verdedigend>80</verdedigend>
+					<uithoudingsvermogen>100</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>8</nummer>
+					<naam>Jordy van Deelen</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>1</aanvallend>
+					<verdedigend>98</verdedigend>
+					<uithoudingsvermogen>81</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>9</nummer>
+					<naam>Nando Wormgoor</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>22</aanvallend>
+					<verdedigend>98</verdedigend>
+					<uithoudingsvermogen>93</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>10</nummer>
+					<naam>Robin Gosens</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>33</aanvallend>
+					<verdedigend>72</verdedigend>
+					<uithoudingsvermogen>19</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>11</nummer>
+					<naam>Funso Ojo</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>39</aanvallend>
+					<verdedigend>53</verdedigend>
+					<uithoudingsvermogen>31</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>12</nummer>
+					<naam>Adnan Alisic</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>76</aanvallend>
+					<verdedigend>69</verdedigend>
+					<uithoudingsvermogen>34</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>13</nummer>
+					<naam>Ricky van Haaren</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>54</aanvallend>
+					<verdedigend>90</verdedigend>
+					<uithoudingsvermogen>10</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>14</nummer>
+					<naam>Javier Vet</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>57</aanvallend>
+					<verdedigend>39</verdedigend>
+					<uithoudingsvermogen>81</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>15</nummer>
+					<naam>Ryan Koolwijk</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>83</aanvallend>
+					<verdedigend>52</verdedigend>
+					<uithoudingsvermogen>52</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>16</nummer>
+					<naam>Joris van Overeem</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>8</aanvallend>
+					<verdedigend>92</verdedigend>
+					<uithoudingsvermogen>13</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>17</nummer>
+					<naam>Sem de Wit</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>49</aanvallend>
+					<verdedigend>97</verdedigend>
+					<uithoudingsvermogen>94</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>18</nummer>
+					<naam>Everon Pisas</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>30</aanvallend>
+					<verdedigend>96</verdedigend>
+					<uithoudingsvermogen>38</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>19</nummer>
+					<naam>Rihairo Meulens</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>51</aanvallend>
+					<verdedigend>54</verdedigend>
+					<uithoudingsvermogen>62</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>20</nummer>
+					<naam>Mart Lieder</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>24</aanvallend>
+					<verdedigend>62</verdedigend>
+					<uithoudingsvermogen>29</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>21</nummer>
+					<naam>Mo Hamdaoui</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>50</aanvallend>
+					<verdedigend>91</verdedigend>
+					<uithoudingsvermogen>27</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>22</nummer>
+					<naam>Rick ten Voorde</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>47</aanvallend>
+					<verdedigend>85</verdedigend>
+					<uithoudingsvermogen>18</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+			</spelers>
+			<name>FC Dordrecht</name>
+			<opstelling></opstelling>
+			<competitie reference="../../.."></competitie>
+			<budget>10000</budget>
+		</Team>
+		<Team>
+			<spelers>
+				<Speler>
+					<nummer>1</nummer>
+					<naam>Jordy Deckers</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>98</aanvallend>
+					<verdedigend>78</verdedigend>
+					<uithoudingsvermogen>37</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>16</nummer>
+					<naam>Alessandro Damen</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>35</aanvallend>
+					<verdedigend>60</verdedigend>
+					<uithoudingsvermogen>63</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>26</nummer>
+					<naam>Gino Coutinho</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>70</aanvallend>
+					<verdedigend>91</verdedigend>
+					<uithoudingsvermogen>46</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>5</nummer>
+					<naam>Bas Kuipers</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>11</aanvallend>
+					<verdedigend>3</verdedigend>
+					<uithoudingsvermogen>95</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>20</nummer>
+					<naam>Elso Brito</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>34</aanvallend>
+					<verdedigend>95</verdedigend>
+					<uithoudingsvermogen>76</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>2</nummer>
+					<naam>Khalid Karami</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>30</aanvallend>
+					<verdedigend>46</verdedigend>
+					<uithoudingsvermogen>53</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>12</nummer>
+					<naam>Jurgen Mattheij</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>84</aanvallend>
+					<verdedigend>20</verdedigend>
+					<uithoudingsvermogen>12</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>3</nummer>
+					<naam>Kevin van Diermen</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>37</aanvallend>
+					<verdedigend>58</verdedigend>
+					<uithoudingsvermogen>52</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>6</nummer>
+					<naam>Sander Fischer</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>60</aanvallend>
+					<verdedigend>79</verdedigend>
+					<uithoudingsvermogen>49</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>24</nummer>
+					<naam>Daan Bovenberg</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>21</aanvallend>
+					<verdedigend>8</verdedigend>
+					<uithoudingsvermogen>48</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>15</nummer>
+					<naam>Richard Stolte</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>71</aanvallend>
+					<verdedigend>17</verdedigend>
+					<uithoudingsvermogen>32</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>4</nummer>
+					<naam>Rick Kruys</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>98</aanvallend>
+					<verdedigend>34</verdedigend>
+					<uithoudingsvermogen>28</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>10</nummer>
+					<naam>Lars Hutten</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>0</aanvallend>
+					<verdedigend>82</verdedigend>
+					<uithoudingsvermogen>57</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>8</nummer>
+					<naam>Jeff Stans</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>80</aanvallend>
+					<verdedigend>5</verdedigend>
+					<uithoudingsvermogen>76</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>11</nummer>
+					<naam>Adil Auassar</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>24</aanvallend>
+					<verdedigend>7</verdedigend>
+					<uithoudingsvermogen>96</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>18</nummer>
+					<naam>Kevin Vermeulen</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>50</aanvallend>
+					<verdedigend>10</verdedigend>
+					<uithoudingsvermogen>86</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>7</nummer>
+					<naam>Daan Blij</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>17</aanvallend>
+					<verdedigend>55</verdedigend>
+					<uithoudingsvermogen>63</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>9</nummer>
+					<naam>Tom van Weert</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>64</aanvallend>
+					<verdedigend>69</verdedigend>
+					<uithoudingsvermogen>55</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>25</nummer>
+					<naam>Marko Maletic</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>86</aanvallend>
+					<verdedigend>3</verdedigend>
+					<uithoudingsvermogen>77</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>21</nummer>
+					<naam>Carlo de Reuver</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>61</aanvallend>
+					<verdedigend>66</verdedigend>
+					<uithoudingsvermogen>76</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>26</nummer>
+					<naam>Jordan Botaka</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>97</aanvallend>
+					<verdedigend>44</verdedigend>
+					<uithoudingsvermogen>46</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>11</nummer>
+					<naam>Daryl van Mieghem</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>16</aanvallend>
+					<verdedigend>65</verdedigend>
+					<uithoudingsvermogen>99</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>17</nummer>
+					<naam>Ninos Gouriye</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>21</aanvallend>
+					<verdedigend>34</verdedigend>
+					<uithoudingsvermogen>24</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+			</spelers>
+			<name>Excelsior</name>
+			<opstelling></opstelling>
+			<competitie reference="../../.."></competitie>
+			<budget>1000</budget>
+		</Team>
+		<Team>
+			<spelers>
+				<Speler>
+					<nummer>1</nummer>
+					<naam>Erwin Mulder</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>46</aanvallend>
+					<verdedigend>48</verdedigend>
+					<uithoudingsvermogen>59</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>13</nummer>
+					<naam>Ronald Graafland</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>65</aanvallend>
+					<verdedigend>4</verdedigend>
+					<uithoudingsvermogen>74</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>16</nummer>
+					<naam>Kenneth Vermeer</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>1</aanvallend>
+					<verdedigend>97</verdedigend>
+					<uithoudingsvermogen>79</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>2</nummer>
+					<naam>Luke Wilkshire</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>15</aanvallend>
+					<verdedigend>11</verdedigend>
+					<uithoudingsvermogen>40</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>4</nummer>
+					<naam>Joris Mathijsen</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>53</aanvallend>
+					<verdedigend>20</verdedigend>
+					<uithoudingsvermogen>99</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>5</nummer>
+					<naam>Terence Kongolo</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>9</aanvallend>
+					<verdedigend>92</verdedigend>
+					<uithoudingsvermogen>42</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>18</nummer>
+					<naam>Miquel Nelom</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>72</aanvallend>
+					<verdedigend>52</verdedigend>
+					<uithoudingsvermogen>65</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>22</nummer>
+					<naam>Sven van Beek</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>17</aanvallend>
+					<verdedigend>10</verdedigend>
+					<uithoudingsvermogen>48</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>23</nummer>
+					<naam>Khalid Boulahrouz</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>49</aanvallend>
+					<verdedigend>84</verdedigend>
+					<uithoudingsvermogen>58</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>24</nummer>
+					<naam>Matthew Steenvoorden</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>98</aanvallend>
+					<verdedigend>57</verdedigend>
+					<uithoudingsvermogen>52</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>25</nummer>
+					<naam>Lucas Woudenberg</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>22</aanvallend>
+					<verdedigend>79</verdedigend>
+					<uithoudingsvermogen>53</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>35</nummer>
+					<naam>Rodney Lopes Cabral</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>81</aanvallend>
+					<verdedigend>76</verdedigend>
+					<uithoudingsvermogen>85</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>6</nummer>
+					<naam>Jordy Clasie</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>25</aanvallend>
+					<verdedigend>89</verdedigend>
+					<uithoudingsvermogen>88</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>8</nummer>
+					<naam>Karim El Ahmadi</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>14</aanvallend>
+					<verdedigend>1</verdedigend>
+					<uithoudingsvermogen>19</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>10</nummer>
+					<naam>Lex Immers</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>77</aanvallend>
+					<verdedigend>81</verdedigend>
+					<uithoudingsvermogen>42</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>21</nummer>
+					<naam>Tonny Vilhena</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>46</aanvallend>
+					<verdedigend>35</verdedigend>
+					<uithoudingsvermogen>67</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>26</nummer>
+					<naam>Rick Karsdorp</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>88</aanvallend>
+					<verdedigend>6</verdedigend>
+					<uithoudingsvermogen>37</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>28</nummer>
+					<naam>Jens Toornstra</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>22</aanvallend>
+					<verdedigend>2</verdedigend>
+					<uithoudingsvermogen>54</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>7</nummer>
+					<naam>Jean-Paul Boëtius</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>75</aanvallend>
+					<verdedigend>90</verdedigend>
+					<uithoudingsvermogen>78</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>11</nummer>
+					<naam>Wesley Verhoek</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>78</aanvallend>
+					<verdedigend>48</verdedigend>
+					<uithoudingsvermogen>71</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>14</nummer>
+					<naam>Bilal Başaçıkoğlu</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>37</aanvallend>
+					<verdedigend>21</verdedigend>
+					<uithoudingsvermogen>92</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>15</nummer>
+					<naam>Colin Kâzım-Richards</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>72</aanvallend>
+					<verdedigend>66</verdedigend>
+					<uithoudingsvermogen>4</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>17</nummer>
+					<naam>Elvis Manu</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>42</aanvallend>
+					<verdedigend>67</verdedigend>
+					<uithoudingsvermogen>45</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>19</nummer>
+					<naam>Mitchell te Vrede</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>23</aanvallend>
+					<verdedigend>38</verdedigend>
+					<uithoudingsvermogen>8</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>27</nummer>
+					<naam>Ruben Schaken</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>13</aanvallend>
+					<verdedigend>4</verdedigend>
+					<uithoudingsvermogen>55</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>29</nummer>
+					<naam>Anass Achahbar</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>46</aanvallend>
+					<verdedigend>2</verdedigend>
+					<uithoudingsvermogen>86</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>31</nummer>
+					<naam>Wessel Dammers</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>63</aanvallend>
+					<verdedigend>46</verdedigend>
+					<uithoudingsvermogen>90</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+			</spelers>
+			<name>Feyenoord</name>
+			<opstelling></opstelling>
+			<competitie reference="../../.."></competitie>
+			<budget>1000</budget>
+		</Team>
+		<Team>
+			<spelers>
+				<Speler>
+					<nummer>1</nummer>
+					<naam>Mickey van der Hart</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>48</aanvallend>
+					<verdedigend>88</verdedigend>
+					<uithoudingsvermogen>80</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>2</nummer>
+					<naam>Erik Cummins</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>27</aanvallend>
+					<verdedigend>17</verdedigend>
+					<uithoudingsvermogen>0</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>3</nummer>
+					<naam>Ruben Lucas</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>75</aanvallend>
+					<verdedigend>56</verdedigend>
+					<uithoudingsvermogen>14</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>4</nummer>
+					<naam>Jordy Rondeel</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>27</aanvallend>
+					<verdedigend>92</verdedigend>
+					<uithoudingsvermogen>26</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>5</nummer>
+					<naam>Mawouna Amevor</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>84</aanvallend>
+					<verdedigend>64</verdedigend>
+					<uithoudingsvermogen>47</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>6</nummer>
+					<naam>Bart Vriends</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>27</aanvallend>
+					<verdedigend>64</verdedigend>
+					<uithoudingsvermogen>16</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>7</nummer>
+					<naam>Jop van der Linden</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>55</aanvallend>
+					<verdedigend>9</verdedigend>
+					<uithoudingsvermogen>60</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>8</nummer>
+					<naam>Xandro Schenk</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>39</aanvallend>
+					<verdedigend>98</verdedigend>
+					<uithoudingsvermogen>95</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>9</nummer>
+					<naam>Robin van der Meer</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>95</aanvallend>
+					<verdedigend>25</verdedigend>
+					<uithoudingsvermogen>69</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>10</nummer>
+					<naam>Sven Nieuwpoort</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>24</aanvallend>
+					<verdedigend>7</verdedigend>
+					<uithoudingsvermogen>25</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>11</nummer>
+					<naam>Giliano Wijnaldum</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>59</aanvallend>
+					<verdedigend>88</verdedigend>
+					<uithoudingsvermogen>16</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>12</nummer>
+					<naam>Sjoerd Overgoor</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>7</aanvallend>
+					<verdedigend>36</verdedigend>
+					<uithoudingsvermogen>23</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>13</nummer>
+					<naam>Deniz Türüç</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>61</aanvallend>
+					<verdedigend>72</verdedigend>
+					<uithoudingsvermogen>45</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>14</nummer>
+					<naam>Jeffrey Rijsdijk</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>74</aanvallend>
+					<verdedigend>43</verdedigend>
+					<uithoudingsvermogen>71</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>15</nummer>
+					<naam>Lars Lambooij</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>70</aanvallend>
+					<verdedigend>91</verdedigend>
+					<uithoudingsvermogen>7</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>16</nummer>
+					<naam>Peter van Ooijen</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>75</aanvallend>
+					<verdedigend>29</verdedigend>
+					<uithoudingsvermogen>36</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>17</nummer>
+					<naam>Sander Duits</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>29</aanvallend>
+					<verdedigend>20</verdedigend>
+					<uithoudingsvermogen>44</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>18</nummer>
+					<naam>Marnix Kolder</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>63</aanvallend>
+					<verdedigend>6</verdedigend>
+					<uithoudingsvermogen>52</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>19</nummer>
+					<naam>Teije ten Den</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>3</aanvallend>
+					<verdedigend>77</verdedigend>
+					<uithoudingsvermogen>53</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>20</nummer>
+					<naam>Alex Schalk</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>14</aanvallend>
+					<verdedigend>28</verdedigend>
+					<uithoudingsvermogen>63</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>21</nummer>
+					<naam>Jules Reimerink</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>58</aanvallend>
+					<verdedigend>88</verdedigend>
+					<uithoudingsvermogen>82</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>22</nummer>
+					<naam>Nick de Bondt</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>28</aanvallend>
+					<verdedigend>5</verdedigend>
+					<uithoudingsvermogen>70</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>23</nummer>
+					<naam>Fernando Lewis</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>60</aanvallend>
+					<verdedigend>7</verdedigend>
+					<uithoudingsvermogen>59</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>24</nummer>
+					<naam>Lesley de Sa</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>45</aanvallend>
+					<verdedigend>48</verdedigend>
+					<uithoudingsvermogen>10</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+			</spelers>
+			<name>Go Ahead Eagles</name>
+			<opstelling></opstelling>
+			<competitie reference="../../.."></competitie>
+			<budget>1000</budget>
+		</Team>
+		<Team>
+			<spelers>
+				<Speler>
+					<nummer>1</nummer>
+					<naam>Sergio Padt</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>1</aanvallend>
+					<verdedigend>11</verdedigend>
+					<uithoudingsvermogen>66</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>26</nummer>
+					<naam>Peter van der Vlag</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>40</aanvallend>
+					<verdedigend>92</verdedigend>
+					<uithoudingsvermogen>99</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>2</nummer>
+					<naam>Johan Kappelhof</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>88</aanvallend>
+					<verdedigend>51</verdedigend>
+					<uithoudingsvermogen>67</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>3</nummer>
+					<naam>Eric Botteghin</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>27</aanvallend>
+					<verdedigend>30</verdedigend>
+					<uithoudingsvermogen>3</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>4</nummer>
+					<naam>Martijn van der Laan</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>10</aanvallend>
+					<verdedigend>3</verdedigend>
+					<uithoudingsvermogen>96</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>5</nummer>
+					<naam>Lorenzo Burnet</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>58</aanvallend>
+					<verdedigend>61</verdedigend>
+					<uithoudingsvermogen>72</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>15</nummer>
+					<naam>Nick Bakker</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>62</aanvallend>
+					<verdedigend>62</verdedigend>
+					<uithoudingsvermogen>49</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>33</nummer>
+					<naam>Hans Hateboer</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>46</aanvallend>
+					<verdedigend>74</verdedigend>
+					<uithoudingsvermogen>59</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>6</nummer>
+					<naam>Maikel Kieftenbeld</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>41</aanvallend>
+					<verdedigend>51</verdedigend>
+					<uithoudingsvermogen>92</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>8</nummer>
+					<naam>Michael de Leeuw</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>56</aanvallend>
+					<verdedigend>64</verdedigend>
+					<uithoudingsvermogen>100</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>10</nummer>
+					<naam>Tjaronn Chery</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>25</aanvallend>
+					<verdedigend>99</verdedigend>
+					<uithoudingsvermogen>20</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>16</nummer>
+					<naam>Hilal Ben Moussa</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>76</aanvallend>
+					<verdedigend>15</verdedigend>
+					<uithoudingsvermogen>83</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>18</nummer>
+					<naam>Henk Bos</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>11</aanvallend>
+					<verdedigend>17</verdedigend>
+					<uithoudingsvermogen>100</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>20</nummer>
+					<naam>Yoell van Nieff</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>12</aanvallend>
+					<verdedigend>37</verdedigend>
+					<uithoudingsvermogen>57</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>21</nummer>
+					<naam>Rasmus Lindgren</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>16</aanvallend>
+					<verdedigend>88</verdedigend>
+					<uithoudingsvermogen>64</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>23</nummer>
+					<naam>Nick van der Velden</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>29</aanvallend>
+					<verdedigend>3</verdedigend>
+					<uithoudingsvermogen>49</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>24</nummer>
+					<naam>Tom Hiariej</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>38</aanvallend>
+					<verdedigend>30</verdedigend>
+					<uithoudingsvermogen>80</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>7</nummer>
+					<naam>Jarchinio Antonia</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>52</aanvallend>
+					<verdedigend>54</verdedigend>
+					<uithoudingsvermogen>53</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>9</nummer>
+					<naam>Danny Hoesen</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>83</aanvallend>
+					<verdedigend>25</verdedigend>
+					<uithoudingsvermogen>14</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>19</nummer>
+					<naam>Dino Islamovic</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>53</aanvallend>
+					<verdedigend>66</verdedigend>
+					<uithoudingsvermogen>15</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>36</nummer>
+					<naam>Género Zeefuik</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>72</aanvallend>
+					<verdedigend>95</verdedigend>
+					<uithoudingsvermogen>36</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+			</spelers>
+			<name>FC Groningen</name>
+			<opstelling></opstelling>
+			<competitie reference="../../.."></competitie>
+			<budget>1000</budget>
+		</Team>
+		<Team>
+			<spelers>
+				<Speler>
+					<nummer>1</nummer>
+					<naam>Bo Kristoffer Nordfeldt</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>24</aanvallend>
+					<verdedigend>22</verdedigend>
+					<uithoudingsvermogen>81</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>30</nummer>
+					<naam>Robin Kist</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>94</aanvallend>
+					<verdedigend>70</verdedigend>
+					<uithoudingsvermogen>59</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>31</nummer>
+					<naam>Viktor Noring</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>74</aanvallend>
+					<verdedigend>86</verdedigend>
+					<uithoudingsvermogen>66</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>33</nummer>
+					<naam>Maarten de Fockert</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>53</aanvallend>
+					<verdedigend>35</verdedigend>
+					<uithoudingsvermogen>14</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>2</nummer>
+					<naam>Kenny Otigba</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>58</aanvallend>
+					<verdedigend>35</verdedigend>
+					<uithoudingsvermogen>21</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>5</nummer>
+					<naam>Pelé van Anholt</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>45</aanvallend>
+					<verdedigend>17</verdedigend>
+					<uithoudingsvermogen>11</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>6</nummer>
+					<naam>Stefano Marzo</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>15</aanvallend>
+					<verdedigend>81</verdedigend>
+					<uithoudingsvermogen>74</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>12</nummer>
+					<naam>Doke Schmidt</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>36</aanvallend>
+					<verdedigend>37</verdedigend>
+					<uithoudingsvermogen>49</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>14</nummer>
+					<naam>Joost van Aken</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>59</aanvallend>
+					<verdedigend>55</verdedigend>
+					<uithoudingsvermogen>94</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>18</nummer>
+					<naam>Jens Jurn Streutker</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>61</aanvallend>
+					<verdedigend>17</verdedigend>
+					<uithoudingsvermogen>26</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>20</nummer>
+					<naam>Jukka Raitala</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>22</aanvallend>
+					<verdedigend>95</verdedigend>
+					<uithoudingsvermogen>53</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>22</nummer>
+					<naam>Stephen Warmolts</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>43</aanvallend>
+					<verdedigend>86</verdedigend>
+					<uithoudingsvermogen>72</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>23</nummer>
+					<naam>Jordy Buijs</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>98</aanvallend>
+					<verdedigend>36</verdedigend>
+					<uithoudingsvermogen>57</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>25</nummer>
+					<naam>Willem Huizing</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>28</aanvallend>
+					<verdedigend>85</verdedigend>
+					<uithoudingsvermogen>2</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>32</nummer>
+					<naam>Joris Voest</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>66</aanvallend>
+					<verdedigend>86</verdedigend>
+					<uithoudingsvermogen>41</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>8</nummer>
+					<naam>Morten Thorsby</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>95</aanvallend>
+					<verdedigend>43</verdedigend>
+					<uithoudingsvermogen>9</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>15</nummer>
+					<naam>Marten de Roon Aanvoerder</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>62</aanvallend>
+					<verdedigend>43</verdedigend>
+					<uithoudingsvermogen>61</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>16</nummer>
+					<naam>Daley Sinkgraven</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>7</aanvallend>
+					<verdedigend>14</verdedigend>
+					<uithoudingsvermogen>51</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>21</nummer>
+					<naam>Joey van den Berg</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>50</aanvallend>
+					<verdedigend>66</verdedigend>
+					<uithoudingsvermogen>72</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>26</nummer>
+					<naam>Janio Bikel</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>58</aanvallend>
+					<verdedigend>35</verdedigend>
+					<uithoudingsvermogen>29</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>27</nummer>
+					<naam>Michael Chacón</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>43</aanvallend>
+					<verdedigend>53</verdedigend>
+					<uithoudingsvermogen>69</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>9</nummer>
+					<naam>Thomas Dalgaard</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>70</aanvallend>
+					<verdedigend>76</verdedigend>
+					<uithoudingsvermogen>48</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>11</nummer>
+					<naam>Sam Larsson</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>71</aanvallend>
+					<verdedigend>70</verdedigend>
+					<uithoudingsvermogen>63</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>17</nummer>
+					<naam>Luciano Slagveer</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>94</aanvallend>
+					<verdedigend>75</verdedigend>
+					<uithoudingsvermogen>69</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>19</nummer>
+					<naam>Mark Uth</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>85</aanvallend>
+					<verdedigend>31</verdedigend>
+					<uithoudingsvermogen>17</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>24</nummer>
+					<naam>Szabolcs Varga</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>78</aanvallend>
+					<verdedigend>3</verdedigend>
+					<uithoudingsvermogen>66</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>28</nummer>
+					<naam>Pascal Huser</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>14</aanvallend>
+					<verdedigend>53</verdedigend>
+					<uithoudingsvermogen>3</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>40</nummer>
+					<naam>Pelle van Amersfoort</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>56</aanvallend>
+					<verdedigend>69</verdedigend>
+					<uithoudingsvermogen>10</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+			</spelers>
+			<name>sc Heerenveen</name>
+			<opstelling></opstelling>
+			<competitie reference="../../.."></competitie>
+			<budget>1000</budget>
+		</Team>
+		<Team>
+			<spelers>
+				<Speler>
+					<nummer>1</nummer>
+					<naam>Dennis Telgenkamp</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>78</aanvallend>
+					<verdedigend>16</verdedigend>
+					<uithoudingsvermogen>52</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>16</nummer>
+					<naam>Bram Castro</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>6</aanvallend>
+					<verdedigend>60</verdedigend>
+					<uithoudingsvermogen>18</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>25</nummer>
+					<naam>Renze Fij</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>99</aanvallend>
+					<verdedigend>67</verdedigend>
+					<uithoudingsvermogen>24</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>26</nummer>
+					<naam>Michael Brouwer</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>45</aanvallend>
+					<verdedigend>64</verdedigend>
+					<uithoudingsvermogen>78</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>2</nummer>
+					<naam>Milano Koenders</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>7</aanvallend>
+					<verdedigend>72</verdedigend>
+					<uithoudingsvermogen>0</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>3</nummer>
+					<naam>Bart Schenkeveld</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>45</aanvallend>
+					<verdedigend>41</verdedigend>
+					<uithoudingsvermogen>27</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>4</nummer>
+					<naam>Jeroen Veldmate</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>12</aanvallend>
+					<verdedigend>30</verdedigend>
+					<uithoudingsvermogen>77</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>5</nummer>
+					<naam>Fahd Aktaou</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>57</aanvallend>
+					<verdedigend>100</verdedigend>
+					<uithoudingsvermogen>58</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>18</nummer>
+					<naam>Ramon Zomer</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>66</aanvallend>
+					<verdedigend>66</verdedigend>
+					<uithoudingsvermogen>18</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>28</nummer>
+					<naam>Travis Brent</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>12</aanvallend>
+					<verdedigend>40</verdedigend>
+					<uithoudingsvermogen>98</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>29</nummer>
+					<naam>Coen Gortemaker</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>85</aanvallend>
+					<verdedigend>51</verdedigend>
+					<uithoudingsvermogen>92</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>30</nummer>
+					<naam>Mark Engberink</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>92</aanvallend>
+					<verdedigend>10</verdedigend>
+					<uithoudingsvermogen>7</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>32</nummer>
+					<naam>Mike te Wierik</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>79</aanvallend>
+					<verdedigend>8</verdedigend>
+					<uithoudingsvermogen>36</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>6</nummer>
+					<naam>Bas Sibum</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>7</aanvallend>
+					<verdedigend>85</verdedigend>
+					<uithoudingsvermogen>71</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>8</nummer>
+					<naam>Iliass Bel Hassani</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>47</aanvallend>
+					<verdedigend>6</verdedigend>
+					<uithoudingsvermogen>19</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>10</nummer>
+					<naam>Thomas Bruns</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>16</aanvallend>
+					<verdedigend>57</verdedigend>
+					<uithoudingsvermogen>18</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>14</nummer>
+					<naam>Joey Pelupessy</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>10</aanvallend>
+					<verdedigend>8</verdedigend>
+					<uithoudingsvermogen>21</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>17</nummer>
+					<naam>Dario Vujicevic</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>89</aanvallend>
+					<verdedigend>27</verdedigend>
+					<uithoudingsvermogen>64</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>21</nummer>
+					<naam>Simon Cziommer</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>18</aanvallend>
+					<verdedigend>66</verdedigend>
+					<uithoudingsvermogen>85</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>23</nummer>
+					<naam>Mark-Jan Fledderus</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>44</aanvallend>
+					<verdedigend>79</verdedigend>
+					<uithoudingsvermogen>28</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>24</nummer>
+					<naam>Menno Heerkes</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>52</aanvallend>
+					<verdedigend>52</verdedigend>
+					<uithoudingsvermogen>69</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>31</nummer>
+					<naam>Daan Rienstra</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>24</aanvallend>
+					<verdedigend>46</verdedigend>
+					<uithoudingsvermogen>24</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>35</nummer>
+					<naam>Rick Hemmink</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>7</aanvallend>
+					<verdedigend>24</verdedigend>
+					<uithoudingsvermogen>94</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>9</nummer>
+					<naam>Denni Avdic</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>43</aanvallend>
+					<verdedigend>63</verdedigend>
+					<uithoudingsvermogen>23</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>11</nummer>
+					<naam>Bryan Linssen</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>73</aanvallend>
+					<verdedigend>3</verdedigend>
+					<uithoudingsvermogen>46</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>12</nummer>
+					<naam>Aleksei Kangaskolkka</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>55</aanvallend>
+					<verdedigend>23</verdedigend>
+					<uithoudingsvermogen>10</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>13</nummer>
+					<naam>Dragan Paljić</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>4</aanvallend>
+					<verdedigend>65</verdedigend>
+					<uithoudingsvermogen>49</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>15</nummer>
+					<naam>Jaroslav Navrátil</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>77</aanvallend>
+					<verdedigend>29</verdedigend>
+					<uithoudingsvermogen>7</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>19</nummer>
+					<naam>Wout Weghorst</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>40</aanvallend>
+					<verdedigend>65</verdedigend>
+					<uithoudingsvermogen>68</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>20</nummer>
+					<naam>Edwin Gyasi</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>44</aanvallend>
+					<verdedigend>24</verdedigend>
+					<uithoudingsvermogen>70</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>22</nummer>
+					<naam>Oussama Tannane</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>75</aanvallend>
+					<verdedigend>31</verdedigend>
+					<uithoudingsvermogen>86</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+			</spelers>
+			<name>Heracles Almelo</name>
+			<opstelling></opstelling>
+			<competitie reference="../../.."></competitie>
+			<budget>1000</budget>
+		</Team>
+		<Team>
+			<spelers>
+				<Speler>
+					<nummer>1</nummer>
+					<naam>Jelle ten Rouwelaar</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>100</aanvallend>
+					<verdedigend>81</verdedigend>
+					<uithoudingsvermogen>8</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>12</nummer>
+					<naam>Andries Noppert</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>40</aanvallend>
+					<verdedigend>61</verdedigend>
+					<uithoudingsvermogen>77</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>21</nummer>
+					<naam>Gábor Babos</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>20</aanvallend>
+					<verdedigend>46</verdedigend>
+					<uithoudingsvermogen>59</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>2</nummer>
+					<naam>Sepp De Roover</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>79</aanvallend>
+					<verdedigend>6</verdedigend>
+					<uithoudingsvermogen>96</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>3</nummer>
+					<naam>Henrico Drost</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>34</aanvallend>
+					<verdedigend>39</verdedigend>
+					<uithoudingsvermogen>32</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>4</nummer>
+					<naam>Aleksandar Damcevski</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>46</aanvallend>
+					<verdedigend>47</verdedigend>
+					<uithoudingsvermogen>56</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>5</nummer>
+					<naam>Remy Amieux</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>15</aanvallend>
+					<verdedigend>18</verdedigend>
+					<uithoudingsvermogen>21</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>16</nummer>
+					<naam>Isak Ssewankambo</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>21</aanvallend>
+					<verdedigend>40</verdedigend>
+					<uithoudingsvermogen>56</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>22</nummer>
+					<naam>Gill Swerts</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>27</aanvallend>
+					<verdedigend>55</verdedigend>
+					<uithoudingsvermogen>96</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>28</nummer>
+					<naam>Kenny van der Weg</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>98</aanvallend>
+					<verdedigend>58</verdedigend>
+					<uithoudingsvermogen>66</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>10</nummer>
+					<naam>Uros Matic</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>92</aanvallend>
+					<verdedigend>75</verdedigend>
+					<uithoudingsvermogen>69</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>11</nummer>
+					<naam>Joey Suk</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>35</aanvallend>
+					<verdedigend>88</verdedigend>
+					<uithoudingsvermogen>30</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>17</nummer>
+					<naam>Erik Falkenburg</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>64</aanvallend>
+					<verdedigend>7</verdedigend>
+					<uithoudingsvermogen>71</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>6</nummer>
+					<naam>Joeri de Kamps</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>36</aanvallend>
+					<verdedigend>0</verdedigend>
+					<uithoudingsvermogen>35</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>19</nummer>
+					<naam>Mounir El Allouchi</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>79</aanvallend>
+					<verdedigend>34</verdedigend>
+					<uithoudingsvermogen>43</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>23</nummer>
+					<naam>Vinnie Vermeer</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>9</aanvallend>
+					<verdedigend>33</verdedigend>
+					<uithoudingsvermogen>81</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>7</nummer>
+					<naam>Elson Hooi</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>94</aanvallend>
+					<verdedigend>71</verdedigend>
+					<uithoudingsvermogen>36</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>8</nummer>
+					<naam>Jeffrey Sarpong</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>14</aanvallend>
+					<verdedigend>0</verdedigend>
+					<uithoudingsvermogen>57</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>11</nummer>
+					<naam>Adnane Tighadouini</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>78</aanvallend>
+					<verdedigend>92</verdedigend>
+					<uithoudingsvermogen>14</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>20</nummer>
+					<naam>Mats Seuntjens</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>24</aanvallend>
+					<verdedigend>6</verdedigend>
+					<uithoudingsvermogen>91</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>9</nummer>
+					<naam>Kingsley Boateng</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>72</aanvallend>
+					<verdedigend>62</verdedigend>
+					<uithoudingsvermogen>36</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>18</nummer>
+					<naam>Stipe Perica</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>22</aanvallend>
+					<verdedigend>49</verdedigend>
+					<uithoudingsvermogen>81</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+			</spelers>
+			<name>NAC Breda</name>
+			<opstelling></opstelling>
+			<competitie reference="../../.."></competitie>
+			<budget>1000</budget>
+		</Team>
+		<Team>
+			<spelers>
+				<Speler>
+					<nummer>1</nummer>
+					<naam>Kevin Begois</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>54</aanvallend>
+					<verdedigend>65</verdedigend>
+					<uithoudingsvermogen>100</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>2</nummer>
+					<naam>Warner Hahn</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>97</aanvallend>
+					<verdedigend>72</verdedigend>
+					<uithoudingsvermogen>24</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>3</nummer>
+					<naam>Boy de Jong</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>5</aanvallend>
+					<verdedigend>26</verdedigend>
+					<uithoudingsvermogen>48</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>4</nummer>
+					<naam>Bram van Polen</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>8</aanvallend>
+					<verdedigend>58</verdedigend>
+					<uithoudingsvermogen>19</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>5</nummer>
+					<naam>Joost Broerse</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>47</aanvallend>
+					<verdedigend>89</verdedigend>
+					<uithoudingsvermogen>47</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>6</nummer>
+					<naam>Kingsley Ehizibue</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>29</aanvallend>
+					<verdedigend>62</verdedigend>
+					<uithoudingsvermogen>94</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>7</nummer>
+					<naam>Bart van Hintum</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>98</aanvallend>
+					<verdedigend>55</verdedigend>
+					<uithoudingsvermogen>41</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>8</nummer>
+					<naam>Leroy Labylle</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>60</aanvallend>
+					<verdedigend>45</verdedigend>
+					<uithoudingsvermogen>22</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>9</nummer>
+					<naam>Thomas Lam</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>81</aanvallend>
+					<verdedigend>89</verdedigend>
+					<uithoudingsvermogen>96</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>10</nummer>
+					<naam>Steven Fernandes Pereira</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>12</aanvallend>
+					<verdedigend>100</verdedigend>
+					<uithoudingsvermogen>37</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>11</nummer>
+					<naam>Trent Sainsbury</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>48</aanvallend>
+					<verdedigend>38</verdedigend>
+					<uithoudingsvermogen>49</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>12</nummer>
+					<naam>Maikel van der Werff</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>73</aanvallend>
+					<verdedigend>55</verdedigend>
+					<uithoudingsvermogen>95</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>13</nummer>
+					<naam>Wout Brama</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>73</aanvallend>
+					<verdedigend>44</verdedigend>
+					<uithoudingsvermogen>90</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>14</nummer>
+					<naam>Rick Dekker</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>67</aanvallend>
+					<verdedigend>15</verdedigend>
+					<uithoudingsvermogen>7</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>15</nummer>
+					<naam>Jesper Drost</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>97</aanvallend>
+					<verdedigend>69</verdedigend>
+					<uithoudingsvermogen>92</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>16</nummer>
+					<naam>Wouter Marinus</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>44</aanvallend>
+					<verdedigend>14</verdedigend>
+					<uithoudingsvermogen>58</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>17</nummer>
+					<naam>Stefan Nijland</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>23</aanvallend>
+					<verdedigend>81</verdedigend>
+					<uithoudingsvermogen>67</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>18</nummer>
+					<naam>Ben Rienstra</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>89</aanvallend>
+					<verdedigend>43</verdedigend>
+					<uithoudingsvermogen>55</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>19</nummer>
+					<naam>Mustafa Saymak</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>42</aanvallend>
+					<verdedigend>16</verdedigend>
+					<uithoudingsvermogen>89</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>20</nummer>
+					<naam>Dimitrios Ferfelis</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>93</aanvallend>
+					<verdedigend>30</verdedigend>
+					<uithoudingsvermogen>96</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>21</nummer>
+					<naam>Nikolaos Ioannidis</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>80</aanvallend>
+					<verdedigend>93</verdedigend>
+					<uithoudingsvermogen>4</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>22</nummer>
+					<naam>Athanasios Karagounis</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>45</aanvallend>
+					<verdedigend>7</verdedigend>
+					<uithoudingsvermogen>96</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>23</nummer>
+					<naam>Jody Lukoki</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>92</aanvallend>
+					<verdedigend>54</verdedigend>
+					<uithoudingsvermogen>13</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>24</nummer>
+					<naam>Soufian Moro</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>11</aanvallend>
+					<verdedigend>5</verdedigend>
+					<uithoudingsvermogen>90</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>25</nummer>
+					<naam>Tomáš Necid</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>72</aanvallend>
+					<verdedigend>63</verdedigend>
+					<uithoudingsvermogen>92</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>26</nummer>
+					<naam>Ryan Thomas</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>97</aanvallend>
+					<verdedigend>59</verdedigend>
+					<uithoudingsvermogen>95</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+			</spelers>
+			<name>PEC Zwolle</name>
+			<opstelling></opstelling>
+			<competitie reference="../../.."></competitie>
+			<budget>1000</budget>
+		</Team>
+		<Team>
+			<spelers>
+				<Speler>
+					<nummer>1</nummer>
+					<naam>Jeroen Zoet</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>19</aanvallend>
+					<verdedigend>23</verdedigend>
+					<uithoudingsvermogen>80</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>22</nummer>
+					<naam>Remko Pasveer</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>96</aanvallend>
+					<verdedigend>72</verdedigend>
+					<uithoudingsvermogen>54</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>31</nummer>
+					<naam>Nigel Bertrams</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>80</aanvallend>
+					<verdedigend>86</verdedigend>
+					<uithoudingsvermogen>86</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>2</nummer>
+					<naam>Nicolas Isimat-Mirin</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>4</aanvallend>
+					<verdedigend>23</verdedigend>
+					<uithoudingsvermogen>27</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>3</nummer>
+					<naam>Karim Rekik</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>90</aanvallend>
+					<verdedigend>38</verdedigend>
+					<uithoudingsvermogen>24</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>4</nummer>
+					<naam>Santiago Arias</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>38</aanvallend>
+					<verdedigend>72</verdedigend>
+					<uithoudingsvermogen>25</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>5</nummer>
+					<naam>Jeffrey Bruma</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>72</aanvallend>
+					<verdedigend>16</verdedigend>
+					<uithoudingsvermogen>62</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>15</nummer>
+					<naam>Jetro Willems</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>95</aanvallend>
+					<verdedigend>42</verdedigend>
+					<uithoudingsvermogen>50</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>20</nummer>
+					<naam>Joshua Brenet</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>28</aanvallend>
+					<verdedigend>54</verdedigend>
+					<uithoudingsvermogen>67</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>25</nummer>
+					<naam>Menno Koch</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>39</aanvallend>
+					<verdedigend>7</verdedigend>
+					<uithoudingsvermogen>84</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>28</nummer>
+					<naam>Abel Tamata</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>80</aanvallend>
+					<verdedigend>59</verdedigend>
+					<uithoudingsvermogen>53</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>29</nummer>
+					<naam>Jorrit Hendrix</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>67</aanvallend>
+					<verdedigend>87</verdedigend>
+					<uithoudingsvermogen>63</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>30</nummer>
+					<naam>Jordy de Wijs</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>34</aanvallend>
+					<verdedigend>51</verdedigend>
+					<uithoudingsvermogen>95</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>6</nummer>
+					<naam>Adam Maher</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>34</aanvallend>
+					<verdedigend>56</verdedigend>
+					<uithoudingsvermogen>24</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>8</nummer>
+					<naam>Stijn Schaars</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>32</aanvallend>
+					<verdedigend>62</verdedigend>
+					<uithoudingsvermogen>84</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>10</nummer>
+					<naam>Georginio Wijnaldum</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>81</aanvallend>
+					<verdedigend>11</verdedigend>
+					<uithoudingsvermogen>36</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>18</nummer>
+					<naam>Andrés Guardado</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>27</aanvallend>
+					<verdedigend>38</verdedigend>
+					<uithoudingsvermogen>18</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>23</nummer>
+					<naam>Rai Vloet</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>98</aanvallend>
+					<verdedigend>54</verdedigend>
+					<uithoudingsvermogen>7</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>24</nummer>
+					<naam>Marcel Ritzmaier</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>48</aanvallend>
+					<verdedigend>88</verdedigend>
+					<uithoudingsvermogen>47</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>26</nummer>
+					<naam>Clint Leemans</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>9</aanvallend>
+					<verdedigend>66</verdedigend>
+					<uithoudingsvermogen>10</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>27</nummer>
+					<naam>Oscar Hiljemark</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>64</aanvallend>
+					<verdedigend>86</verdedigend>
+					<uithoudingsvermogen>14</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>7</nummer>
+					<naam>Memphis Depay</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>11</aanvallend>
+					<verdedigend>51</verdedigend>
+					<uithoudingsvermogen>44</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>9</nummer>
+					<naam>Luuk de Jong</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>90</aanvallend>
+					<verdedigend>59</verdedigend>
+					<uithoudingsvermogen>25</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>11</nummer>
+					<naam>Luciano Narsingh</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>77</aanvallend>
+					<verdedigend>32</verdedigend>
+					<uithoudingsvermogen>36</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>14</nummer>
+					<naam>Florian Jozefzoon</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>55</aanvallend>
+					<verdedigend>62</verdedigend>
+					<uithoudingsvermogen>78</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>17</nummer>
+					<naam>Jürgen Locadia</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>12</aanvallend>
+					<verdedigend>67</verdedigend>
+					<uithoudingsvermogen>56</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>39</nummer>
+					<naam>Zakaria Bakkali</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>87</aanvallend>
+					<verdedigend>90</verdedigend>
+					<uithoudingsvermogen>70</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+			</spelers>
+			<name>PSV</name>
+			<opstelling></opstelling>
+			<competitie reference="../../.."></competitie>
+			<budget>1000</budget>
+		</Team>
+		<Team>
+			<spelers>
+				<Speler>
+					<nummer>1</nummer>
+					<naam>Nick Marsman</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>63</aanvallend>
+					<verdedigend>57</verdedigend>
+					<uithoudingsvermogen>35</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>20</nummer>
+					<naam>Sonny Stevens</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>7</aanvallend>
+					<verdedigend>58</verdedigend>
+					<uithoudingsvermogen>22</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>35</nummer>
+					<naam>Filip Bednarek</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>7</aanvallend>
+					<verdedigend>68</verdedigend>
+					<uithoudingsvermogen>58</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>2</nummer>
+					<naam>Cuco Martina</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>6</aanvallend>
+					<verdedigend>32</verdedigend>
+					<uithoudingsvermogen>28</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>3</nummer>
+					<naam>Andreas Bjelland Aanvoerder</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>79</aanvallend>
+					<verdedigend>29</verdedigend>
+					<uithoudingsvermogen>13</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>4</nummer>
+					<naam>Darryl Lachman</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>97</aanvallend>
+					<verdedigend>98</verdedigend>
+					<uithoudingsvermogen>28</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>15</nummer>
+					<naam>Dico Koppers</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>34</aanvallend>
+					<verdedigend>75</verdedigend>
+					<uithoudingsvermogen>62</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>16</nummer>
+					<naam>Tim Breukers</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>99</aanvallend>
+					<verdedigend>37</verdedigend>
+					<uithoudingsvermogen>5</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>17</nummer>
+					<naam>Rasmus Bengtsson</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>70</aanvallend>
+					<verdedigend>97</verdedigend>
+					<uithoudingsvermogen>43</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>23</nummer>
+					<naam>Joachim Andersen</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>35</aanvallend>
+					<verdedigend>58</verdedigend>
+					<uithoudingsvermogen>56</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>26</nummer>
+					<naam>Renato Tapia</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>24</aanvallend>
+					<verdedigend>67</verdedigend>
+					<uithoudingsvermogen>99</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>5</nummer>
+					<naam>Robbert Schilder</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>7</aanvallend>
+					<verdedigend>74</verdedigend>
+					<uithoudingsvermogen>6</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>8</nummer>
+					<naam>Kyle Ebecilio</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>57</aanvallend>
+					<verdedigend>64</verdedigend>
+					<uithoudingsvermogen>95</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>10</nummer>
+					<naam>Hakim Ziyech</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>7</aanvallend>
+					<verdedigend>75</verdedigend>
+					<uithoudingsvermogen>91</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>11</nummer>
+					<naam>Jesús Manuel Corona</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>28</aanvallend>
+					<verdedigend>95</verdedigend>
+					<uithoudingsvermogen>71</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>19</nummer>
+					<naam>Shadrach Eghan</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>87</aanvallend>
+					<verdedigend>48</verdedigend>
+					<uithoudingsvermogen>85</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>21</nummer>
+					<naam>Felipe Gutiérrez</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>96</aanvallend>
+					<verdedigend>82</verdedigend>
+					<uithoudingsvermogen>50</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>22</nummer>
+					<naam>Kamohelo Mokotjo</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>100</aanvallend>
+					<verdedigend>47</verdedigend>
+					<uithoudingsvermogen>84</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>24</nummer>
+					<naam>Orlando Engelaar</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>62</aanvallend>
+					<verdedigend>61</verdedigend>
+					<uithoudingsvermogen>5</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>7</nummer>
+					<naam>Youness Mokhtar</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>11</aanvallend>
+					<verdedigend>13</verdedigend>
+					<uithoudingsvermogen>3</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>9</nummer>
+					<naam>Torgeir Børven</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>48</aanvallend>
+					<verdedigend>71</verdedigend>
+					<uithoudingsvermogen>76</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>14</nummer>
+					<naam>Ryo Miyaichi</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>69</aanvallend>
+					<verdedigend>18</verdedigend>
+					<uithoudingsvermogen>47</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>25</nummer>
+					<naam>Bilal Ould-Chikh</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>9</aanvallend>
+					<verdedigend>81</verdedigend>
+					<uithoudingsvermogen>53</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>30</nummer>
+					<naam>Luc Castaignos</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>39</aanvallend>
+					<verdedigend>31</verdedigend>
+					<uithoudingsvermogen>71</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>33</nummer>
+					<naam>Kasper Kusk</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>54</aanvallend>
+					<verdedigend>57</verdedigend>
+					<uithoudingsvermogen>87</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+			</spelers>
+			<name>FC Tukkers</name>
+			<opstelling></opstelling>
+			<competitie reference="../../.."></competitie>
+			<budget>1000</budget>
+		</Team>
+		<Team>
+			<spelers>
+				<Speler>
+					<nummer>1</nummer>
+					<naam>Robbin Ruiter</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>52</aanvallend>
+					<verdedigend>52</verdedigend>
+					<uithoudingsvermogen>83</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>30</nummer>
+					<naam>Jeroen Verhoeven</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>18</aanvallend>
+					<verdedigend>55</verdedigend>
+					<uithoudingsvermogen>89</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>31</nummer>
+					<naam>Mike Havekotte</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>35</aanvallend>
+					<verdedigend>12</verdedigend>
+					<uithoudingsvermogen>81</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>2</nummer>
+					<naam>Mark van der Maarel</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>53</aanvallend>
+					<verdedigend>100</verdedigend>
+					<uithoudingsvermogen>7</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>3</nummer>
+					<naam>Ramon Leeuwin</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>50</aanvallend>
+					<verdedigend>30</verdedigend>
+					<uithoudingsvermogen>97</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>13</nummer>
+					<naam>Gévero Markiet</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>100</aanvallend>
+					<verdedigend>9</verdedigend>
+					<uithoudingsvermogen>64</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>14</nummer>
+					<naam>Kai Heerings</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>99</aanvallend>
+					<verdedigend>72</verdedigend>
+					<uithoudingsvermogen>67</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>17</nummer>
+					<naam>Michael Zullo</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>74</aanvallend>
+					<verdedigend>17</verdedigend>
+					<uithoudingsvermogen>35</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>24</nummer>
+					<naam>Yannick Cortie</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>11</aanvallend>
+					<verdedigend>19</verdedigend>
+					<uithoudingsvermogen>91</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>25</nummer>
+					<naam>Timo Letschert</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>31</aanvallend>
+					<verdedigend>36</verdedigend>
+					<uithoudingsvermogen>40</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>6</nummer>
+					<naam>Anouar Kali</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>79</aanvallend>
+					<verdedigend>58</verdedigend>
+					<uithoudingsvermogen>11</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>7</nummer>
+					<naam>Edouard Duplan</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>58</aanvallend>
+					<verdedigend>90</verdedigend>
+					<uithoudingsvermogen>75</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>8</nummer>
+					<naam>Willem JanssenAanvoerder</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>75</aanvallend>
+					<verdedigend>98</verdedigend>
+					<uithoudingsvermogen>5</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>11</nummer>
+					<naam>Tommy Oar</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>39</aanvallend>
+					<verdedigend>24</verdedigend>
+					<uithoudingsvermogen>32</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>15</nummer>
+					<naam>Mark Diemers</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>19</aanvallend>
+					<verdedigend>70</verdedigend>
+					<uithoudingsvermogen>13</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>16</nummer>
+					<naam>Yassin Ayoub</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>59</aanvallend>
+					<verdedigend>96</verdedigend>
+					<uithoudingsvermogen>97</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>18</nummer>
+					<naam>Fernando Quesada</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>61</aanvallend>
+					<verdedigend>67</verdedigend>
+					<uithoudingsvermogen>74</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>19</nummer>
+					<naam>Adam Sarota</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>69</aanvallend>
+					<verdedigend>28</verdedigend>
+					<uithoudingsvermogen>59</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>26</nummer>
+					<naam>Sean Klaiber</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>23</aanvallend>
+					<verdedigend>16</verdedigend>
+					<uithoudingsvermogen>99</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>44</nummer>
+					<naam>Sofyan Amrabat</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>17</aanvallend>
+					<verdedigend>28</verdedigend>
+					<uithoudingsvermogen>26</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>9</nummer>
+					<naam>Ruud Boymans</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>47</aanvallend>
+					<verdedigend>34</verdedigend>
+					<uithoudingsvermogen>63</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>10</nummer>
+					<naam>Nacer Barazite</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>30</aanvallend>
+					<verdedigend>7</verdedigend>
+					<uithoudingsvermogen>65</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>20</nummer>
+					<naam>Danny Verbeek</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>66</aanvallend>
+					<verdedigend>8</verdedigend>
+					<uithoudingsvermogen>69</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>21</nummer>
+					<naam>Kristoffer Peterson</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>24</aanvallend>
+					<verdedigend>33</verdedigend>
+					<uithoudingsvermogen>15</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>26</nummer>
+					<naam>Gyliano van Velzen</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>43</aanvallend>
+					<verdedigend>70</verdedigend>
+					<uithoudingsvermogen>2</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>37</nummer>
+					<naam>Gyrano Kerk</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>1</aanvallend>
+					<verdedigend>83</verdedigend>
+					<uithoudingsvermogen>31</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>39</nummer>
+					<naam>Cedric Badjeck</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>65</aanvallend>
+					<verdedigend>47</verdedigend>
+					<uithoudingsvermogen>31</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>45</nummer>
+					<naam>Rubio Rubin</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>43</aanvallend>
+					<verdedigend>61</verdedigend>
+					<uithoudingsvermogen>51</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>47</nummer>
+					<naam>Rodney Antwi</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>85</aanvallend>
+					<verdedigend>6</verdedigend>
+					<uithoudingsvermogen>44</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>49</nummer>
+					<naam>Issa Kallon</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>33</aanvallend>
+					<verdedigend>41</verdedigend>
+					<uithoudingsvermogen>4</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+			</spelers>
+			<name>FC Utrecht</name>
+			<opstelling></opstelling>
+			<competitie reference="../../.."></competitie>
+			<budget>1000</budget>
+		</Team>
+		<Team>
+			<spelers>
+				<Speler>
+					<nummer>48</nummer>
+					<naam>Jeroen Houwen</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>59</aanvallend>
+					<verdedigend>3</verdedigend>
+					<uithoudingsvermogen>50</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>1</nummer>
+					<naam>Eloy Room</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>96</aanvallend>
+					<verdedigend>6</verdedigend>
+					<uithoudingsvermogen>31</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>22</nummer>
+					<naam>Piet Velthuizen</naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>70</aanvallend>
+					<verdedigend>70</verdedigend>
+					<uithoudingsvermogen>76</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>35</nummer>
+					<naam>Rochdi Achenteh</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>92</aanvallend>
+					<verdedigend>27</verdedigend>
+					<uithoudingsvermogen>92</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>40</nummer>
+					<naam>Kevin Diks</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>1</aanvallend>
+					<verdedigend>88</verdedigend>
+					<uithoudingsvermogen>75</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>23</nummer>
+					<naam>Jan-Arie van der Heijden</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>33</aanvallend>
+					<verdedigend>49</verdedigend>
+					<uithoudingsvermogen>22</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>37</nummer>
+					<naam>Guram Kashia Aanvoerder</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>67</aanvallend>
+					<verdedigend>76</verdedigend>
+					<uithoudingsvermogen>72</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>15</nummer>
+					<naam>Arnold Kruiswijk</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>8</aanvallend>
+					<verdedigend>79</verdedigend>
+					<uithoudingsvermogen>67</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>3</nummer>
+					<naam>Dan Mori</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>95</aanvallend>
+					<verdedigend>24</verdedigend>
+					<uithoudingsvermogen>45</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>2</nummer>
+					<naam>Wallace Oliveira dos Santos</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>27</aanvallend>
+					<verdedigend>68</verdedigend>
+					<uithoudingsvermogen>71</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>25</nummer>
+					<naam>Gino Bosz</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>31</aanvallend>
+					<verdedigend>13</verdedigend>
+					<uithoudingsvermogen>99</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>20</nummer>
+					<naam>Zakaria Labyad</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>43</aanvallend>
+					<verdedigend>44</verdedigend>
+					<uithoudingsvermogen>73</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>5</nummer>
+					<naam>Kelvin Leerdam</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>20</aanvallend>
+					<verdedigend>25</verdedigend>
+					<uithoudingsvermogen>13</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>6</nummer>
+					<naam>Josh McEachran</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>53</aanvallend>
+					<verdedigend>100</verdedigend>
+					<uithoudingsvermogen>58</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>18</nummer>
+					<naam>Marvelous Nakamba</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>94</aanvallend>
+					<verdedigend>50</verdedigend>
+					<uithoudingsvermogen>24</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>10</nummer>
+					<naam>Davy Pröpper</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>1</aanvallend>
+					<verdedigend>36</verdedigend>
+					<uithoudingsvermogen>85</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>7</nummer>
+					<naam>Marko Vejinović</naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>94</aanvallend>
+					<verdedigend>49</verdedigend>
+					<uithoudingsvermogen>83</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>14</nummer>
+					<naam>Abiola Dauda</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>91</aanvallend>
+					<verdedigend>21</verdedigend>
+					<uithoudingsvermogen>35</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>9</nummer>
+					<naam>Uroš Đurđević</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>55</aanvallend>
+					<verdedigend>46</verdedigend>
+					<uithoudingsvermogen>23</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>30</nummer>
+					<naam>Renato Ibarra</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>10</aanvallend>
+					<verdedigend>54</verdedigend>
+					<uithoudingsvermogen>21</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>11</nummer>
+					<naam>Denys Oliynyk</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>32</aanvallend>
+					<verdedigend>2</verdedigend>
+					<uithoudingsvermogen>4</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>8</nummer>
+					<naam>Valeri Qazaishvili</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>82</aanvallend>
+					<verdedigend>34</verdedigend>
+					<uithoudingsvermogen>83</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>27</nummer>
+					<naam>Bertrand Traoré</naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>96</aanvallend>
+					<verdedigend>79</verdedigend>
+					<uithoudingsvermogen>25</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+			</spelers>
+			<name>Vitesse</name>
+			<opstelling></opstelling>
+			<competitie reference="../../.."></competitie>
+			<budget>1000</budget>
+		</Team>
+		<Team>
+			<spelers>
+				<Speler>
+					<nummer>1</nummer>
+					<naam>Kostas Lamprou  </naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>26</aanvallend>
+					<verdedigend>25</verdedigend>
+					<uithoudingsvermogen>14</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>21</nummer>
+					<naam>David Meul  </naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>100</aanvallend>
+					<verdedigend>37</verdedigend>
+					<uithoudingsvermogen>85</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>31</nummer>
+					<naam>Mathijs Branderhorst  </naam>
+					<type>Doelman</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>87</aanvallend>
+					<verdedigend>78</verdedigend>
+					<uithoudingsvermogen>86</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>3</nummer>
+					<naam>Freek Heerkens  </naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>12</aanvallend>
+					<verdedigend>40</verdedigend>
+					<uithoudingsvermogen>34</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>4</nummer>
+					<naam>Jordens Peters  </naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>57</aanvallend>
+					<verdedigend>48</verdedigend>
+					<uithoudingsvermogen>24</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>5</nummer>
+					<naam>Frank van der Struijk</naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>69</aanvallend>
+					<verdedigend>99</verdedigend>
+					<uithoudingsvermogen>84</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>15</nummer>
+					<naam>Dries Wuytens  </naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>2</aanvallend>
+					<verdedigend>99</verdedigend>
+					<uithoudingsvermogen>72</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>19</nummer>
+					<naam>Jonas Heymans  </naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>17</aanvallend>
+					<verdedigend>56</verdedigend>
+					<uithoudingsvermogen>97</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>28</nummer>
+					<naam>Tim Cornelisse  </naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>28</aanvallend>
+					<verdedigend>9</verdedigend>
+					<uithoudingsvermogen>25</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>35</nummer>
+					<naam>Mitchell Dijks  </naam>
+					<type>Verdediger</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>1</aanvallend>
+					<verdedigend>37</verdedigend>
+					<uithoudingsvermogen>55</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>6</nummer>
+					<naam>Fabian Sporkslede  </naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>91</aanvallend>
+					<verdedigend>54</verdedigend>
+					<uithoudingsvermogen>8</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>8</nummer>
+					<naam>Robbie Haemhouts  </naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>39</aanvallend>
+					<verdedigend>68</verdedigend>
+					<uithoudingsvermogen>22</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>10</nummer>
+					<naam>Ali Messaoud  </naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>53</aanvallend>
+					<verdedigend>82</verdedigend>
+					<uithoudingsvermogen>11</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>12</nummer>
+					<naam>Ricardo Ippel  </naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>56</aanvallend>
+					<verdedigend>78</verdedigend>
+					<uithoudingsvermogen>55</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>17</nummer>
+					<naam>Robert Braber  </naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>13</aanvallend>
+					<verdedigend>7</verdedigend>
+					<uithoudingsvermogen>38</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>29</nummer>
+					<naam>Stijn Wuytens  </naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>4</aanvallend>
+					<verdedigend>29</verdedigend>
+					<uithoudingsvermogen>40</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>30</nummer>
+					<naam>Jordy Vleugels  </naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>8</aanvallend>
+					<verdedigend>21</verdedigend>
+					<uithoudingsvermogen>38</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>25</nummer>
+					<naam>Jan Praktiek  </naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>16</aanvallend>
+					<verdedigend>54</verdedigend>
+					<uithoudingsvermogen>99</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>45</nummer>
+					<naam>Jeroen van Wageningen </naam>
+					<type>Middenvelder</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>30</aanvallend>
+					<verdedigend>24</verdedigend>
+					<uithoudingsvermogen>8</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>7</nummer>
+					<naam>Terell Ondaan  </naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>40</aanvallend>
+					<verdedigend>86</verdedigend>
+					<uithoudingsvermogen>90</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>9</nummer>
+					<naam>Samuel Armenteros  </naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>13</aanvallend>
+					<verdedigend>96</verdedigend>
+					<uithoudingsvermogen>30</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>11</nummer>
+					<naam>Bruno Andrade  </naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>56</aanvallend>
+					<verdedigend>80</verdedigend>
+					<uithoudingsvermogen>68</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>14</nummer>
+					<naam>Ben Sahar  </naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>71</aanvallend>
+					<verdedigend>22</verdedigend>
+					<uithoudingsvermogen>76</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>20</nummer>
+					<naam>Jerson Cabral  </naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>49</aanvallend>
+					<verdedigend>52</verdedigend>
+					<uithoudingsvermogen>31</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+				<Speler>
+					<nummer>36</nummer>
+					<naam>Charlton Vicento  </naam>
+					<type>Aanvaller</type>
+					<gamesTilStatusDisapears>0</gamesTilStatusDisapears>
+					<aanvallend>39</aanvallend>
+					<verdedigend>24</verdedigend>
+					<uithoudingsvermogen>29</uithoudingsvermogen>
+					<status>Normaal</status>
+				</Speler>
+			</spelers>
+			<name>Willem II</name>
+			<opstelling></opstelling>
+			<competitie reference="../../.."></competitie>
+			<budget>1000</budget>
+		</Team>
+	</teams>
+	<userindex>0</userindex>
+</Competitie>
