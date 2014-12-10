@@ -240,6 +240,6 @@ public class PosPlayerTest {
     @Test
     public void getUighoudingsVermogenWrongPosType() {
         p1.setPosSpelertype(SpelerType.Doelman);
-        assertEquals(20, p1.getUithoudingsvermogen());
+        assertEquals(17, p1.getUithoudingsvermogen());
     }
 }
