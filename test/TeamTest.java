@@ -415,6 +415,26 @@ public class TeamTest {
         Team t2 = new Team(spelerlijst, "Fc club", posities, eredivisie, 3);
         assertEquals(false, t1.equals(t2));
     }
+    
+    @Test
+    public void getAanvallendTotaalGenerateOpstellingTest() {
+        Speler s97 = new Speler("Piet", 97, SpelerType.Verdediger, 888, 20, 55, 88);
+        Speler s98 = new Speler("Johan", 98, SpelerType.Doelman, 999, 100, 88, 22);
+        Speler s99 = new Speler("Fred", 99, SpelerType.Aanvaller, 555, 67, 44 ,55);
+        
+        t1.getSpelers().get(0).isUnavaliableToPlay();
+        t1.getSpelers().get(1).isUnavaliableToPlay();
+        t1.getSpelers().add(s97);
+        t1.getSpelers().add(s98);
+        t1.getSpelers().add(s99);
+        
+        assertEquals(210, t1.getAanvallendTotaal());   
+    }
+    
+    @Test
+    public void opstellingIsValideTest() {
+        assertEquals(true, t1.OpstellingIsValide());
+    }
 }
 
 
