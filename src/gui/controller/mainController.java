@@ -37,6 +37,11 @@ public class mainController implements Initializable {
         mainApp.showNewGameScreen();
     }
     
+    @FXML
+    private void handleExitButton(){
+        System.exit(0);
+    }
+    
     public void setMainApp(MainApp mainApp) {
         this.mainApp = mainApp;
     }
