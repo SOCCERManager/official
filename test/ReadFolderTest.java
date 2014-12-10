@@ -47,6 +47,7 @@ public class ReadFolderTest {
     
     @After
     public void tearDown() {
+        target.toFile().delete();
         dir.delete();
     }
     @Test
