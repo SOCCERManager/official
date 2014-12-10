@@ -209,10 +209,9 @@ public class SpelerTest {
     }
     
     @Test
-    public void testingTest() {
-        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
-        s1.magicalyFix();
-        assertEquals(true, s1.isAvaliableToPlay());
+    public void getGamesTillStatusDissappearsTest() {
+       Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+       s1.setGamesTilStatusDisapears(2);
+       assertEquals(2, s1.getGamesTilStatusDisapears());
     }
-    
 }
