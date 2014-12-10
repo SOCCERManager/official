@@ -248,4 +248,5 @@ public class Team {
     public String toString() {
         return "Team{" + "spelers=" + spelers + ", name=" + name + ", opstelling=" + opstelling + ", budget=" + budget + '}';
     }
+    
 }
