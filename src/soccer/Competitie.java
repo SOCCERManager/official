@@ -12,6 +12,7 @@ public class Competitie {
     private ArrayList<Wedstrijd> wedstrijden;
     private ArrayList<Team> teams;
     private int userindex;
+    private static Competitie c;
 
     /**
      * Constructor van Competitie opgebouwd uit (ArrayList<Wedstrijd> en
@@ -23,6 +24,7 @@ public class Competitie {
     public Competitie(ArrayList<Wedstrijd> wedstrijden, ArrayList<Team> teams) {
         this.wedstrijden = wedstrijden;
         this.teams = teams;
+        Competitie.c = this;
     }
 
     /**
@@ -171,5 +173,9 @@ public class Competitie {
             b.set(0, a.get(a.size()-1));
             a.set(a.size()-1, tmp);
         }
+    }
+    
+    public static Competitie getCompetitie() {
+        return Competitie.c;
     }
 }

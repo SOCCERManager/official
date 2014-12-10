@@ -33,6 +33,8 @@ public class mainhubController implements Initializable {
     private Label winsLabel;
     @FXML
     private Label kaartenLabel;
+    @FXML
+    private Label gameLabel;
     
     @FXML
     private AnchorPane hubBanner;
@@ -45,6 +47,7 @@ public class mainhubController implements Initializable {
      */
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        gameLabel.setText(loadscreenController.savegame);
     }    
     
     @FXML
@@ -74,6 +77,11 @@ public class mainhubController implements Initializable {
     @FXML
     private void handleOpstelling(){
         mainApp.showOpstellingScreen();
+    }
+    
+    @FXML
+    private void handleExit(){
+        System.exit(0);
     }
     
     public void setMainApp(MainApp mainApp) {

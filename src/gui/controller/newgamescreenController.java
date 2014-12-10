@@ -50,7 +50,8 @@ public class newgamescreenController {
         Competitie c = soccer.bouwXML.leesXML(new File("src/saves/competitie.xml"));
         soccer.bouwXML.bouwXML(c, new File("src/saves/"+savegame+".xml"));
         }catch(Exception e){System.out.println(e);}
-        mainApp.showMainHubScreen();
+        loadscreenController.savegame = savegame;
+        mainApp.showNewTeamScreen();
         }
     }
     public void setMainApp(MainApp mainApp) {

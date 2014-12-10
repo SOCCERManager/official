@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
@@ -10,9 +11,15 @@
         <Button fx:id="mainButton" layoutY="255.0" onAction="#handleLoadButton" prefHeight="80.0" prefWidth="300.0" text="Load Game" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <font>
             <Font name="Lucida Sans Regular" size="36.0" />
-         </font></Button>
+         </font>
+      </Button>
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
       <Button fx:id="mainButton2" layoutX="195.0" layoutY="392.0" onAction="#handleNewGameButton" prefHeight="80.0" prefWidth="300.0" text="New Game" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Lucida Sans Regular" size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="mainButton21" layoutY="529.0" onAction="#handleExitButton" prefHeight="80.0" prefWidth="300.0" text="Exit Game" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <font>
             <Font name="Lucida Sans Regular" size="36.0" />
          </font>

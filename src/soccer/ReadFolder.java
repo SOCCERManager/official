@@ -36,9 +36,10 @@ public class ReadFolder {
             }
             return saveFilesName;
         }
-        catch(IOException e){
+        catch(Exception e){
+            aantalGames = 0;
             System.err.println("Het opgegeven pad bestaat niet!");
-            return null;
+            return saveFilesName;
         }
     }
     
@@ -49,18 +50,18 @@ public class ReadFolder {
     public static int getAantalSaveGames(){
         return aantalGames;
     }
-    
-    /**
-     * Leest het xml bestand in en maak er competities van
-     * @param fileName
-     * @return Retourneert een competitie die ingelezen is.
-     * @throws FileNotFoundException 
-     */
-    public static Competitie readXML(String fileName) throws FileNotFoundException {
-        
-        File saveGame = new File(fileName+".xml");
-        return bouwXML.leesXML(saveGame);
-    }
+//    
+//    /**
+//     * Leest het xml bestand in en maak er competities van
+//     * @param fileName
+//     * @return Retourneert een competitie die ingelezen is.
+//     * @throws FileNotFoundException 
+//     */
+//    public static Competitie readXML(String fileName) throws FileNotFoundException {
+//        
+//        File saveGame = new File(fileName+".xml");
+//        return bouwXML.leesXML(saveGame);
+//    }
     
     /**
      * Hulp methode voor readNames()
