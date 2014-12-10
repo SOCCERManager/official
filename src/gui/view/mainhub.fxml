@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.mainhubController">
+<AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" styleClass="mainFxmlClass" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.mainhubController">
     <stylesheets>
         <URL value="@main.css" />
     </stylesheets>
@@ -43,7 +43,7 @@
                <children>
                   <SplitPane dividerPositions="0.28345724907063197" layoutX="177.0" layoutY="395.0" orientation="VERTICAL" prefHeight="1078.0" prefWidth="1065.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <items>
-                      <AnchorPane minHeight="300.0" minWidth="0.0" prefHeight="300.0" prefWidth="993.0">
+                      <AnchorPane fx:id="hubBanner" styleClass="hubBanner" minHeight="300.0" minWidth="0.0" prefHeight="300.0" prefWidth="993.0">
                            <children>
                               <Label alignment="CENTER" layoutX="514.0" layoutY="14.0" prefHeight="78.0" prefWidth="300.0" text="S.O.C.C.E.R. Manager" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                                  <font>
@@ -67,12 +67,19 @@
                                        <font>
                                           <Font size="26.0" />
                                        </font></Label>
-                                    <Label fx:id="nameLabel" text="Label" GridPane.columnIndex="1" />
+                                    <Label fx:id="nameLabel" text="Label" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font size="26.0" />
+                                       </font></Label>
                                     <Label prefHeight="38.0" prefWidth="394.0" text="Budget:" GridPane.rowIndex="1">
                                        <font>
                                           <Font size="26.0" />
                                        </font></Label>
-                                    <Label fx:id="budgetLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label fx:id="budgetLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="26.0" />
+                                       </font>
+                                    </Label>
                                     <Label prefHeight="38.0" prefWidth="374.0" text="Competitie punten:" GridPane.columnIndex="2">
                                        <font>
                                           <Font size="26.0" />
