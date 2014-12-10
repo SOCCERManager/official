@@ -249,16 +249,34 @@ public class Team {
         return "Team{" + "spelers=" + spelers + ", name=" + name + ", opstelling=" + opstelling + ", budget=" + budget + '}';
     }
     
+    /**
+     * Counts yellow card that player in team has
+     * @return 
+     */
     public int countYellowCards() {
         return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Gele_kaart)).count();
     }
     
+    /**
+     * Counts red cards that players in team have
+     * @return 
+     */
     public int countRedCards() {
         return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Roode_kaart)).count();
     }
+    
+    /**
+     * Return count of injuries in team.
+     * @return 
+     */
     public int countGebleseerd() {
         return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Gebleseerd)).count();
     }
+    
+    /**
+     * Return count of avaliable team members.
+     * @return 
+     */
     public int countAvaliable() {
         return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Normaal)).count();
     }
