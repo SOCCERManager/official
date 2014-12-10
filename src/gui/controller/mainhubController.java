@@ -35,6 +35,8 @@ public class mainhubController implements Initializable {
     private Label kaartenLabel;
     
     @FXML
+    private AnchorPane hubBanner;
+    @FXML
     private AnchorPane viewPane;
     
     private MainApp mainApp;
