@@ -15,18 +15,31 @@ import java.util.ArrayList;
  * @author codesalad
  */
 public class ReadFolder {
+    private static int aantalGames;
     private static ArrayList<String> saveFiles = new ArrayList<String>();
     
-    public static ArrayList<String> Read() throws IOException{
-        String path = new java.io.File(".").getCanonicalPath();
-        File folder = new File(path + "/src/saves");
-        File[] listOfFiles = folder.listFiles();
-        for (int i = 0; i < listOfFiles.length; i++) {
-           if (getFileExtension(listOfFiles[i]).equals("xml")) {
-               saveFiles.add(listOfFiles[i].getName().replace(".xml", ""));
-           }
+    public static ArrayList<String> Read(){
+        try{
+            String path = new java.io.File(".").getCanonicalPath();
+            File folder = new File(path + "/src/saves");
+            File[] listOfFiles = folder.listFiles();
+            aantalGames = listOfFiles.length;
+            
+            for (int i = 0; i < aantalGames; i++) {
+               if (getFileExtension(listOfFiles[i]).equals("xml")) {
+                   saveFiles.add(listOfFiles[i].getName().replace(".xml", ""));
+               }
+            }
+            return saveFiles;
         }
-        return saveFiles;
+        catch(IOException e){
+            System.err.println("Path does not exist!");
+            return null;
+        }
+    }
+    
+    public static int getAantalSaveGames(){
+        return aantalGames;
     }
     
     public static Competitie readXML(String file) throws FileNotFoundException {
