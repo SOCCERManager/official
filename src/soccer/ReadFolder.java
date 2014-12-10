@@ -31,7 +31,7 @@ public class ReadFolder {
             for (int i = 0; i < aantalGames; i++) {
                if (getFileExtension(listOfFiles[i]).equals("xml")) {
                    String naam = format.format(listOfFiles[i].lastModified()) + "\t|\t";
-                   saveFilesName.add(naam + listOfFiles[i].getName().replace(".xml", ""));
+                   saveFilesName.add(listOfFiles[i].getName().replace(".xml", ""));
                }
             }
             return saveFilesName;
