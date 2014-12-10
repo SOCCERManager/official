@@ -272,4 +272,12 @@ public class Speler {
     public String toString() {
         return "Speler{" + "naam=" + naam + ", nummer=" + nummer + ", type=" + type + ", status=" + status + ", prijs=" + prijs + ", gamesTilStatusDisapears=" + gamesTilStatusDisapears + ", aanvallend=" + aanvallend + ", verdedigend=" + verdedigend + ", uithoudingsvermogen=" + uithoudingsvermogen + '}';
     }
+    
+    public int getGamesTilStatusDisapears() {
+        return this.gamesTilStatusDisapears;
+    }
+    
+    public void setGamesTilStatusDisapears(int games) {
+        this.gamesTilStatusDisapears = games;
+    }
 }
