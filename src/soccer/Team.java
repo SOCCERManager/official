@@ -249,4 +249,18 @@ public class Team {
         return "Team{" + "spelers=" + spelers + ", name=" + name + ", opstelling=" + opstelling + ", budget=" + budget + '}';
     }
     
+    public int countYellowCards() {
+        return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Gele_kaart)).count();
+    }
+    
+    public int countRedCards() {
+        return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Roode_kaart)).count();
+    }
+    public int countGebleseerd() {
+        return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Gebleseerd)).count();
+    }
+    public int countAvaliable() {
+        return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Normaal)).count();
+    }
+    
 }
