@@ -241,4 +241,22 @@ public class SpelerTest {
         s2.setGamesTilStatusDisapears(9);
         assertFalse(s1.equals(s2));
     }
+    
+    @Test
+    public void playGame2GamesTillStatusDissappearsTest() {
+        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        s1.setGamesTilStatusDisapears(2);
+        s1.playGame();
+        assertEquals(1, s1.getGamesTilStatusDisapears());
+    }
+    
+    @Test
+    public void magicalyFixTest() {
+        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        s1.setGamesTilStatusDisapears(2);
+        s1.setStatus(SpelerStatus.Gebleseerd);
+        s1.magicalyFix();
+        assertEquals(0, s1.getGamesTilStatusDisapears());
+        assertEquals(SpelerStatus.Normaal, s1.getStatus());
+    }
 }
