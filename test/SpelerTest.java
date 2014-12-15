@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+import java.util.Random;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -213,5 +214,31 @@ public class SpelerTest {
        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
        s1.setGamesTilStatusDisapears(2);
        assertEquals(2, s1.getGamesTilStatusDisapears());
+    }
+    
+    @Test
+    public void getEnSetRndTest() {
+        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        Random rnd = new Random();
+        s1.setRnd(rnd);
+        assertEquals(rnd, s1.getRnd());
+    }
+    
+    @Test
+    public void equalsOngelijkeStatusTest() {
+        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        Speler s2 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        s1.setStatus(SpelerStatus.Normaal);
+        s2.setStatus(SpelerStatus.Gele_kaart);
+        assertFalse(s1.equals(s2));
+    }
+    
+    @Test
+    public void equalsOngelijkeGamesTillStatusDissappearsTest() {
+        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        Speler s2 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        s1.setGamesTilStatusDisapears(2);
+        s2.setGamesTilStatusDisapears(9);
+        assertFalse(s1.equals(s2));
     }
 }
