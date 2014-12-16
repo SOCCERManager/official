@@ -1,3 +1,4 @@
+import java.time.Clock;
 import java.util.ArrayList;
 import java.util.Collection;
 import static org.junit.Assert.*;
@@ -5,6 +6,7 @@ import org.junit.*;
 import soccer.Competitie;
 import soccer.PosPlayer;
 import soccer.Speler;
+import soccer.SpelerStatus;
 import soccer.SpelerType;
 import soccer.Team;
 import soccer.Wedstrijd;
@@ -563,5 +565,41 @@ public class TeamTest {
         posities.add(p11);
         Team t2 = new Team(spelerlijst, "Fc club", posities, henk, 500000);
         assertFalse(t1.equals(t2));
+    }
+    
+    @Test
+    public void countYellowCardsTest() {
+        t1.getSpelers().get(1).setStatus(SpelerStatus.Gele_kaart);
+        t1.getSpelers().get(5).setStatus(SpelerStatus.Gele_kaart);
+        t1.getSpelers().get(9).setStatus(SpelerStatus.Roode_kaart);
+        t1.getSpelers().get(6).setStatus(SpelerStatus.Gebleseerd);
+        assertEquals(2, t1.countYellowCards());
+    }
+    
+    @Test
+    public void countRedCardsTest() {
+        t1.getSpelers().get(1).setStatus(SpelerStatus.Roode_kaart);
+        t1.getSpelers().get(5).setStatus(SpelerStatus.Gele_kaart);
+        t1.getSpelers().get(9).setStatus(SpelerStatus.Roode_kaart);
+        t1.getSpelers().get(6).setStatus(SpelerStatus.Gebleseerd);
+        assertEquals(2, t1.countRedCards());
+    }
+    
+    @Test
+    public void countgeBlesseerdTest() {
+        t1.getSpelers().get(1).setStatus(SpelerStatus.Gele_kaart);
+        t1.getSpelers().get(5).setStatus(SpelerStatus.Gele_kaart);
+        t1.getSpelers().get(9).setStatus(SpelerStatus.Roode_kaart);
+        t1.getSpelers().get(6).setStatus(SpelerStatus.Gebleseerd);
+        assertEquals(1, t1.countGebleseerd());
+    }
+    
+    @Test
+    public void countAvailableTest() {
+        t1.getSpelers().get(1).setStatus(SpelerStatus.Gele_kaart);
+        t1.getSpelers().get(5).setStatus(SpelerStatus.Gele_kaart);
+        t1.getSpelers().get(9).setStatus(SpelerStatus.Roode_kaart);
+        t1.getSpelers().get(6).setStatus(SpelerStatus.Gebleseerd);
+        assertEquals(7, t1.countAvaliable());
     }
 }
