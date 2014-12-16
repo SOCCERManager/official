@@ -729,4 +729,5 @@ public class TeamTest {
         t1.generateOpstelling();
         assertEquals(opstelling, t1.getOpstelling());
     }
+    
 }
