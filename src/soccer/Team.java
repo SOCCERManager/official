@@ -302,7 +302,12 @@ public class Team {
     public int getGoals() {
         return this.competitie.getGoalsofTeam(this);
     }
+    
     public int getCounterGoals() {
         return this.competitie.getCounterGoalsofTeam(this);
+    }
+    
+    public int getGoalSaldo() {
+        return this.getGoals()-this.getCounterGoals();
     }
 }
