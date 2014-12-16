@@ -262,4 +262,155 @@ public class WedstrijdTest {
         assertEquals(0, we.getPoints_a());
         assertEquals(3, we.getPoints_b());
     }
+    
+    @Test
+    public void teamWonATrueTest() {
+        we.setPoints_a(3);
+        we.setPoints_b(0);
+        assertTrue(we.teamWon(t1));
+    }
+    
+    @Test
+    public void teamWonBTrueTest() {
+        we.setPoints_a(0);
+        we.setPoints_b(3);
+        assertTrue(we.teamWon(t2));
+    }
+    
+    @Test
+    public void teamWonAFalseTest() {
+        we.setPoints_a(0);
+        we.setPoints_b(3);
+        
+    }
+    @Test
+    public void teamWonBFalseTest() {
+        we.setPoints_a(3);
+        we.setPoints_b(0);
+        assertFalse(we.teamWon(t2));
+    }
+    
+    @Test
+    public void teamWonGeenTeamTest() {
+        Team t3 = new Team(null, null, null, null, 1);
+        we.setPoints_a(3);
+        we.setPoints_b(0);
+        assertFalse(we.teamWon(t3));
+    }
+    
+    @Test
+    public void teamLostTrueTest() {
+        we.setPoints_a(0);
+        we.setPoints_b(3);
+        assertTrue(we.teamLost(t1));
+    }
+    
+    @Test
+    public void teamLostFalseTest() {
+        we.setPoints_a(0);
+        we.setPoints_b(3);
+        assertFalse(we.teamLost(t2));
+    }
+    
+    @Test
+    public void teamLostGeenTeamTest() {
+        Team t3 = new Team(null, null, null, null, 0);
+        we.setPoints_a(3);
+        we.setPoints_b(0);
+        assertFalse(we.teamLost(t3));
+    }
+    
+    @Test
+    public void teamDrawedATrueTest() {
+        we.setPoints_a(1);
+        we.setPoints_b(0);
+        assertTrue(we.teamDrawed(t1));
+    }
+    
+    @Test
+    public void teamDrawedBTrueTest() {
+        we.setPoints_a(0);
+        we.setPoints_b(1);
+        assertTrue(we.teamDrawed(t2));
+    }
+    
+    @Test
+    public void teamDrawedAFalseTest() {
+        we.setPoints_a(0);
+        we.setPoints_b(1);
+        assertFalse(we.teamDrawed(t1));
+    }
+    
+    @Test
+    public void teamDrawedBFalseTest() {
+        we.setPoints_a(1);
+        we.setPoints_b(0);
+        assertFalse(we.teamDrawed(t2));
+    }
+    
+    @Test
+    public void teamDrawedGeenTeamTest() {
+        Team t3 = new Team(null, null, null, null, 0);
+        we.setPoints_a(3);
+        we.setPoints_b(0);
+        assertFalse(we.teamDrawed(t3));
+    }
+    
+    @Test
+    public void teamPlayedTrueTest() {
+        assertTrue(we.teamPlayed(t1));
+    }
+    
+    @Test
+    public void teamPlayedFalseTest() {
+        Team t3 = new Team(null, null, null, null, 50);
+        assertFalse(we.teamPlayed(t3));
+    }
+    
+    @Test
+    public void teamGoalTeamATest() {
+        we.setScore_a(3);
+        we.setScore_b(1);
+        assertEquals(3, we.teamGoal(t1));
+    }
+    
+    @Test
+    public void teamGoalTeamBTest() {
+        we.setScore_a(3);
+        we.setScore_b(1);
+        assertEquals(1, we.teamGoal(t2));
+    }
+    
+    @Test
+    public void teamGoalTeamBuitenWedstrijdTest() {
+        Team t3 = new Team(null, null, null, null, 50);
+        we.setScore_a(3);
+        we.setScore_b(1);
+        assertEquals(0, we.teamGoal(t3));
+    }
+    
+    @Test
+    public void teamCounterGoalTeamATest() {
+        we.setScore_a(3);
+        we.setScore_b(1);
+        assertEquals(1, we.teamCounterGoal(t1));
+    }
+    
+    @Test
+    public void teamCounterGoalTeamBTest() {
+        we.setScore_a(3);
+        we.setScore_b(1);
+        assertEquals(3, we.teamCounterGoal(t2));
+    }
+    
+    @Test
+    public void teamCounterGoalTeamBuitenWedstrijdTest() {
+        Team t3 = new Team(null, null, null, null, 50);
+        we.setScore_a(3);
+        we.setScore_b(1);
+        assertEquals(0, we.teamCounterGoal(t3));
+    }
+    
+    
+    
 }
