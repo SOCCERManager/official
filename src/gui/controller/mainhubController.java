@@ -8,7 +8,9 @@ package gui.controller;
 import gui.MainApp;
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -18,6 +20,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.layout.AnchorPane;
+import soccer.Competitie;
 import soccer.Team;
 
 /**
@@ -47,6 +50,34 @@ public class mainhubController implements Initializable {
     private AnchorPane hubBanner;
     @FXML
     private AnchorPane viewPane;
+    
+    @FXML
+    private ObservableList<Team> resultatenList = FXCollections.observableArrayList();
+    
+    @FXML
+    private TableView<Team> resultatenTable;
+    @FXML
+    private TableColumn<Team, String> teamColumn;
+    @FXML
+    private TableColumn<Team, String> puntenColumn;
+    @FXML    
+    private TableColumn<Team, String> gespeeldColumn;
+    @FXML
+    private TableColumn<Team, String> gewonnenColumn;
+    @FXML
+    private TableColumn<Team, String> gelijkspelColumn;
+    @FXML
+    private TableColumn<Team, String> verlorenColumn;
+    @FXML
+    private TableColumn<Team, String> goalsvoorColumn;
+    @FXML
+    private TableColumn<Team, String> goalstegenColumn;
+    @FXML
+    private TableColumn<Team, String> doelsaldoColumn;
+    @FXML
+    private TableColumn<Team, String> rodekaartenColumn;
+    @FXML
+    private TableColumn<Team, String> gelekaartenColumn;
     
     private MainApp mainApp;
     /**
@@ -90,6 +121,15 @@ public class mainhubController implements Initializable {
         FXMLLoader loader = new FXMLLoader();
            loader.setLocation(MainApp.class.getResource("view/competitieframe.fxml"));
            paneAdd(loader);
+        
+    
+        ArrayList<Team> teamList = Competitie.getCompetitie().getTeams();
+        resultatenList.addAll(teamList);
+        System.out.println(resultatenList.size());
+        teamColumn.setCellValueFactory(
+                cellData -> new SimpleStringProperty(cellData.getValue().getName()));
+        resultatenTable.setItems(resultatenList);
+    
     }
     @FXML
     private void handleExit(){
