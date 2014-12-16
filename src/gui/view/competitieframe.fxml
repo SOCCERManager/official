@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.view.CompetitieframeController">
    <children>
       <Label alignment="CENTER" layoutX="283.0" layoutY="122.0" text="GODVERDOMME YOURI" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <font>
@@ -19,14 +19,27 @@
           <TableColumn fx:id="teamColumn" prefWidth="75.0" text="Team" />
           <TableColumn fx:id="puntenColumn" prefWidth="75.0" text="Punten" />
             <TableColumn fx:id="gespeeldColumn" prefWidth="75.0" text="Gespeeld" />
-            <TableColumn fx:id="gewonnenColumn" prefWidth="75.0" text="Gewonnen" />
-            <TableColumn fx:id="gelijkspelColumn" prefWidth="75.0" text="Gelijkspel" />
-            <TableColumn fx:id="verlorenColumn" prefWidth="75.0" text="Verloren" />
-            <TableColumn fx:id="goalsvoorColumn" prefWidth="75.0" text="Goals Voor" />
-            <TableColumn fx:id="goalstegenColumn" prefWidth="75.0" text="Goals tegen" />
-            <TableColumn fx:id="doelsaldoColumn" prefWidth="75.0" text="Doelsaldo" />
-            <TableColumn fx:id="rodekaartenColumn" prefWidth="75.0" text="Rode Kaarten" />
-            <TableColumn fx:id="gelekaartenColumn" prefWidth="75.0" text="Gele Kaarten" />
+            <TableColumn fx:id="gelijkspelColumn1" prefWidth="75.0" text="Resultaten">
+               <columns>
+                  <TableColumn fx:id="gewonnenColumn" prefWidth="75.0" text="Gewonnen" />
+                  <TableColumn fx:id="gelijkspelColumn" prefWidth="75.0" text="Gelijkspel" />
+                  <TableColumn fx:id="verlorenColumn" prefWidth="75.0" text="Verloren" />
+               </columns>
+            </TableColumn>
+            <TableColumn fx:id="teamColumn1" prefWidth="75.0" text="Goals">
+               <columns>
+                  <TableColumn fx:id="goalsvoorColumn" prefWidth="75.0" text="Goals Voor" />
+                  <TableColumn fx:id="goalstegenColumn" prefWidth="75.0" text="Goals tegen" />
+                  <TableColumn fx:id="doelsaldoColumn" prefWidth="75.0" text="Doelsaldo" />
+               </columns>
+            </TableColumn>
+            <TableColumn fx:id="teamColumn2" prefWidth="75.0" text="Kaarten">
+               <columns>
+                  <TableColumn fx:id="rodekaartenColumn" prefWidth="75.0" text="Rode Kaarten" />
+                  <TableColumn fx:id="gelekaartenColumn" prefWidth="75.0" text="Gele Kaarten" />
+               </columns>
+            </TableColumn>
+            <TableColumn fx:id="blessureColumn" prefWidth="75.0" text="Blessures" />
         </columns>
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
