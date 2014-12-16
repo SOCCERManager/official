@@ -5,8 +5,10 @@
  */
 import java.time.Clock;
 import java.util.ArrayList;
+import org.junit.After;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Before;
 import soccer.Competitie;
 import static soccer.Competitie.getCompetitie;
 import soccer.PosPlayer;
@@ -21,9 +23,10 @@ import soccer.Wedstrijd;
  */
 public class CompetitieTest {
     
-    @Test
-    public void CompetitieTest() {
-        
+    Competitie c1;
+    
+    @Before
+    public void setUp() {
         Speler s1 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
         PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
         ArrayList<Speler> sp1 = new ArrayList<Speler>();
@@ -49,13 +52,21 @@ public class CompetitieTest {
         w.add(we);
         
         Competitie c1 = new Competitie(w,ta); 
-        
+    }
+    
+    @After
+    public void tearDown() {
+        c1 = null;
+    }
+    /*
+    @Test
+    public void CompetitieTest() {
         assertTrue(c1.getWedstrijden().equals(w));
         assertTrue(c1.getTeams().equals(ta));
     }
-    
+    */
     @Test
-    public void getEnSetUserIndexCompareTest() {
+    public void getEnSetUserIndexCompareTest() { 
         Speler s1 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
         PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
         ArrayList<Speler> sp1 = new ArrayList<Speler>();
