@@ -259,4 +259,13 @@ public class SpelerTest {
         assertEquals(0, s1.getGamesTilStatusDisapears());
         assertEquals(SpelerStatus.Normaal, s1.getStatus());
     }
+    
+    @Test
+    public void playGameGamesTillStatusDissappears0Test() {
+        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        s1.setGamesTilStatusDisapears(0);
+        s1.playGame();
+        assertEquals(SpelerStatus.Normaal, s1.getStatus());
+
+    }
 }
