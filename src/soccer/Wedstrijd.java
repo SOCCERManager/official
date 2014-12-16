@@ -231,6 +231,19 @@ public class Wedstrijd {
     public boolean teamDrawed(Team t) {
         return (this.team_a.equals(t) && this.getPoints_a() == 1) || (this.team_b.equals(t) && this.getPoints_b() == 1);
     }
+    public boolean teamPlayed(Team t) {
+        return this.team_a.equals(t) || this.team_b.equals(t);
+    }
+    public int teamGoal(Team t) {
+        if(this.team_a.equals(t)) return score_a;
+        if(this.team_b.equals(t)) return score_b;
+        return 0;
+    }
+    public int teamCounterGoal(Team t) {
+        if(this.team_a.equals(t)) return score_b;
+        if(this.team_b.equals(t)) return score_a;
+        return 0;
+    }
     
     /**
      * De wedstrijd zelf, er wordt gekeken of de opstellingen valide zijn, anders worden deze gegenereert.

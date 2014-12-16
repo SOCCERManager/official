@@ -146,6 +146,19 @@ public class Competitie {
         return (int) this.wedstrijden.stream().filter(v -> v.teamDrawed(t)).count();
     }
 
+    public int getPlayedGamesofTeam(Team t) {
+        return (int) this.wedstrijden.stream().filter(v -> v.teamPlayed(t)).count();
+    }
+
+    public int getGoalsofTeam(Team t) {
+        return (int) this.wedstrijden.stream().mapToInt(v -> v.teamGoal(t)).sum();
+    }
+    public int getCounterGoalsofTeam(Team t) {
+        return (int) this.wedstrijden.stream().mapToInt(v -> v.teamCounterGoal(t)).sum();
+    }
+    
+    
+
     /**
      * Creërt alle wedstrijden voor een competite uit een ArrayList van Teams.
      *

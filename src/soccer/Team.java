@@ -295,4 +295,14 @@ public class Team {
         return this.competitie.getLossesOfTeam(this);
     }
     
+    public int getPlayed() {
+        return this.competitie.getPlayedGamesofTeam(this);
+    }
+
+    public int getGoals() {
+        return this.competitie.getGoalsofTeam(this);
+    }
+    public int getCounterGoals() {
+        return this.competitie.getCounterGoalsofTeam(this);
+    }
 }
