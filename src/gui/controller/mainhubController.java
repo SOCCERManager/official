@@ -124,6 +124,12 @@ public class mainhubController implements Initializable {
     }
     
     @FXML
+    private void handleBackButton(){
+        mainApp.showStartScreen();
+        
+    }
+    
+    @FXML
     private void handleExit(){
         System.exit(0);
     }
