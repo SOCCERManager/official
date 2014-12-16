@@ -14,6 +14,7 @@ import soccer.Wedstrijd;
 public class TeamTest {
     
     private Team t1;
+    private Competitie eredivisie;
     
     @Before
     public void setUp() {
@@ -23,26 +24,26 @@ public class TeamTest {
         PosPlayer p2 = new PosPlayer(s2, SpelerType.Verdediger);
         Speler s3 = new Speler("Chris", 3, SpelerType.Verdediger, 20000, 10, 20, 30);
         PosPlayer p3 = new PosPlayer(s3, SpelerType.Verdediger);
-        Speler s4 = new Speler("Anton", 1, SpelerType.Doelman, 10000, 10, 20, 30);
+        Speler s4 = new Speler("Anton", 4, SpelerType.Doelman, 10000, 10, 20, 30);
         PosPlayer p4 = new PosPlayer(s4, SpelerType.Doelman);
-        Speler s5 = new Speler("Bert", 2, SpelerType.Verdediger, 15000, 10, 20, 30);
+        Speler s5 = new Speler("Bert", 5, SpelerType.Verdediger, 15000, 10, 20, 30);
         PosPlayer p5 = new PosPlayer(s5, SpelerType.Verdediger);
-        Speler s6 = new Speler("Chris", 3, SpelerType.Verdediger, 20000, 10, 20, 30);
+        Speler s6 = new Speler("Chris", 6, SpelerType.Verdediger, 20000, 10, 20, 30);
         PosPlayer p6 = new PosPlayer(s6, SpelerType.Verdediger);
-        Speler s7 = new Speler("Anton", 1, SpelerType.Doelman, 10000, 10, 20, 30);
+        Speler s7 = new Speler("Anton", 7, SpelerType.Doelman, 10000, 10, 20, 30);
         PosPlayer p7 = new PosPlayer(s7, SpelerType.Doelman);
-        Speler s8 = new Speler("Bert", 2, SpelerType.Verdediger, 15000, 10, 20, 30);
+        Speler s8 = new Speler("Bert", 8, SpelerType.Verdediger, 15000, 10, 20, 30);
         PosPlayer p8 = new PosPlayer(s8, SpelerType.Verdediger);
-        Speler s9 = new Speler("Chris", 3, SpelerType.Verdediger, 20000, 10, 20, 30);
+        Speler s9 = new Speler("Chris", 9, SpelerType.Verdediger, 20000, 10, 20, 30);
         PosPlayer p9 = new PosPlayer(s9, SpelerType.Verdediger);
-        Speler s10 = new Speler("Anton", 1, SpelerType.Doelman, 10000, 10, 20, 30);
+        Speler s10 = new Speler("Anton", 10, SpelerType.Doelman, 10000, 10, 20, 30);
         PosPlayer p10 = new PosPlayer(s10, SpelerType.Doelman);
-        Speler s11 = new Speler("Bert", 2, SpelerType.Verdediger, 15000, 10, 20, 30);
+        Speler s11 = new Speler("Bert", 11, SpelerType.Verdediger, 15000, 10, 20, 30);
         PosPlayer p11 = new PosPlayer(s11, SpelerType.Verdediger);
+        ArrayList<Team> t10 = new ArrayList<Team>(); 
         ArrayList<Speler> spelerlijst = new ArrayList<Speler>();
         ArrayList<PosPlayer> posities = new ArrayList<PosPlayer>();
         ArrayList<Wedstrijd> wedstrijden = new ArrayList<Wedstrijd>();
-        ArrayList<Team> t10 = new ArrayList<Team>(); 
         Competitie eredivisie = new Competitie(wedstrijden, t10);
         spelerlijst.add(s1);
         spelerlijst.add(s2);
@@ -86,21 +87,21 @@ public class TeamTest {
         PosPlayer p2 = new PosPlayer(s2, SpelerType.Verdediger);
         Speler s3 = new Speler("Chris", 3, SpelerType.Verdediger, 20000, 10, 20, 30);
         PosPlayer p3 = new PosPlayer(s3, SpelerType.Verdediger);
-        Speler s4 = new Speler("Anton", 1, SpelerType.Doelman, 10000, 10, 20, 30);
+        Speler s4 = new Speler("Anton", 4, SpelerType.Doelman, 10000, 10, 20, 30);
         PosPlayer p4 = new PosPlayer(s4, SpelerType.Doelman);
-        Speler s5 = new Speler("Bert", 2, SpelerType.Verdediger, 15000, 10, 20, 30);
+        Speler s5 = new Speler("Bert", 5, SpelerType.Verdediger, 15000, 10, 20, 30);
         PosPlayer p5 = new PosPlayer(s5, SpelerType.Verdediger);
-        Speler s6 = new Speler("Chris", 3, SpelerType.Verdediger, 20000, 10, 20, 30);
+        Speler s6 = new Speler("Chris", 6, SpelerType.Verdediger, 20000, 10, 20, 30);
         PosPlayer p6 = new PosPlayer(s6, SpelerType.Verdediger);
-        Speler s7 = new Speler("Anton", 1, SpelerType.Doelman, 10000, 10, 20, 30);
+        Speler s7 = new Speler("Anton", 7, SpelerType.Doelman, 10000, 10, 20, 30);
         PosPlayer p7 = new PosPlayer(s7, SpelerType.Doelman);
-        Speler s8 = new Speler("Bert", 2, SpelerType.Verdediger, 15000, 10, 20, 30);
+        Speler s8 = new Speler("Bert", 8, SpelerType.Verdediger, 15000, 10, 20, 30);
         PosPlayer p8 = new PosPlayer(s8, SpelerType.Verdediger);
-        Speler s9 = new Speler("Chris", 3, SpelerType.Verdediger, 20000, 10, 20, 30);
+        Speler s9 = new Speler("Chris", 9, SpelerType.Verdediger, 20000, 10, 20, 30);
         PosPlayer p9 = new PosPlayer(s9, SpelerType.Verdediger);
-        Speler s10 = new Speler("Anton", 1, SpelerType.Doelman, 10000, 10, 20, 30);
+        Speler s10 = new Speler("Anton", 10, SpelerType.Doelman, 10000, 10, 20, 30);
         PosPlayer p10 = new PosPlayer(s10, SpelerType.Doelman);
-        Speler s11 = new Speler("Bert", 2, SpelerType.Verdediger, 15000, 10, 20, 30);
+        Speler s11 = new Speler("Bert", 11, SpelerType.Verdediger, 15000, 10, 20, 30);
         PosPlayer p11 = new PosPlayer(s11, SpelerType.Verdediger);
         ArrayList<Speler> spelerlijst = new ArrayList<Speler>();
         ArrayList<PosPlayer> posities = new ArrayList<PosPlayer>();
@@ -182,21 +183,21 @@ public class TeamTest {
         PosPlayer p2 = new PosPlayer(s2, SpelerType.Verdediger);
         Speler s3 = new Speler("Chris", 3, SpelerType.Verdediger, 20000, 10, 20, 30);
         PosPlayer p3 = new PosPlayer(s3, SpelerType.Verdediger);
-        Speler s4 = new Speler("Anton", 1, SpelerType.Doelman, 10000, 10, 20, 30);
+        Speler s4 = new Speler("Anton", 4, SpelerType.Doelman, 10000, 10, 20, 30);
         PosPlayer p4 = new PosPlayer(s4, SpelerType.Doelman);
-        Speler s5 = new Speler("Bert", 2, SpelerType.Verdediger, 15000, 10, 20, 30);
+        Speler s5 = new Speler("Bert", 5, SpelerType.Verdediger, 15000, 10, 20, 30);
         PosPlayer p5 = new PosPlayer(s5, SpelerType.Verdediger);
-        Speler s6 = new Speler("Chris", 3, SpelerType.Verdediger, 20000, 10, 20, 30);
+        Speler s6 = new Speler("Chris", 6, SpelerType.Verdediger, 20000, 10, 20, 30);
         PosPlayer p6 = new PosPlayer(s6, SpelerType.Verdediger);
-        Speler s7 = new Speler("Anton", 1, SpelerType.Doelman, 10000, 10, 20, 30);
+        Speler s7 = new Speler("Anton", 7, SpelerType.Doelman, 10000, 10, 20, 30);
         PosPlayer p7 = new PosPlayer(s7, SpelerType.Doelman);
-        Speler s8 = new Speler("Bert", 2, SpelerType.Verdediger, 15000, 10, 20, 30);
+        Speler s8 = new Speler("Bert", 8, SpelerType.Verdediger, 15000, 10, 20, 30);
         PosPlayer p8 = new PosPlayer(s8, SpelerType.Verdediger);
-        Speler s9 = new Speler("Chris", 3, SpelerType.Verdediger, 20000, 10, 20, 30);
+        Speler s9 = new Speler("Chris", 9, SpelerType.Verdediger, 20000, 10, 20, 30);
         PosPlayer p9 = new PosPlayer(s9, SpelerType.Verdediger);
-        Speler s10 = new Speler("Anton", 1, SpelerType.Doelman, 10000, 10, 20, 30);
+        Speler s10 = new Speler("Anton", 10, SpelerType.Doelman, 10000, 10, 20, 30);
         PosPlayer p10 = new PosPlayer(s10, SpelerType.Doelman);
-        Speler s11 = new Speler("Bert", 2, SpelerType.Verdediger, 15000, 10, 20, 30);
+        Speler s11 = new Speler("Bert", 11, SpelerType.Verdediger, 15000, 10, 20, 30);
         PosPlayer p11 = new PosPlayer(s11, SpelerType.Verdediger);
         ArrayList<Speler> spelerlijst = new ArrayList<Speler>();
         ArrayList<PosPlayer> posities = new ArrayList<PosPlayer>();
@@ -241,14 +242,14 @@ public class TeamTest {
         Speler s1 = new Speler("Anton", 1, SpelerType.Doelman, 10000, 10, 20, 30);
         Speler s2 = new Speler("Bert", 2, SpelerType.Verdediger, 15000, 10, 20, 30);
         Speler s3 = new Speler("Chris", 3, SpelerType.Verdediger, 20000, 10, 20, 30);
-        Speler s4 = new Speler("Anton", 1, SpelerType.Doelman, 10000, 10, 20, 30);
-        Speler s5 = new Speler("Bert", 2, SpelerType.Verdediger, 15000, 10, 20, 30);
-        Speler s6 = new Speler("Chris", 3, SpelerType.Verdediger, 20000, 10, 20, 30);
-        Speler s7 = new Speler("Anton", 1, SpelerType.Doelman, 10000, 10, 20, 30);
-        Speler s8 = new Speler("Bert", 2, SpelerType.Verdediger, 15000, 10, 20, 30);
-        Speler s9 = new Speler("Chris", 3, SpelerType.Verdediger, 20000, 10, 20, 30);
-        Speler s10 = new Speler("Anton", 1, SpelerType.Doelman, 10000, 10, 20, 30);
-        Speler s11 = new Speler("Bert", 2, SpelerType.Verdediger, 15000, 10, 20, 30);
+        Speler s4 = new Speler("Anton", 4, SpelerType.Doelman, 10000, 10, 20, 30);
+        Speler s5 = new Speler("Bert", 5, SpelerType.Verdediger, 15000, 10, 20, 30);
+        Speler s6 = new Speler("Chris", 6, SpelerType.Verdediger, 20000, 10, 20, 30);
+        Speler s7 = new Speler("Anton", 7, SpelerType.Doelman, 10000, 10, 20, 30);
+        Speler s8 = new Speler("Bert", 8, SpelerType.Verdediger, 15000, 10, 20, 30);
+        Speler s9 = new Speler("Chris", 9, SpelerType.Verdediger, 20000, 10, 20, 30);
+        Speler s10 = new Speler("Anton", 10, SpelerType.Doelman, 10000, 10, 20, 30);
+        Speler s11 = new Speler("Bert", 11, SpelerType.Verdediger, 15000, 10, 20, 30);
         ArrayList<Speler> spelerlijst = new ArrayList<Speler>();
         ArrayList<Wedstrijd> wedstrijden = new ArrayList<Wedstrijd>();
         ArrayList<Team> t10 = new ArrayList<Team>(); 
@@ -381,7 +382,7 @@ public class TeamTest {
     }
     
     @Test
-    public void equalsOngelijkeOpstellingTest() {
+    public void equalsOngelijkeSpelerLijstTest() {
         Speler s1 = new Speler("Anton", 1, SpelerType.Doelman, 10000, 10, 20, 30);
         PosPlayer p1 = new PosPlayer(s1, SpelerType.Doelman);
         Speler s2 = new Speler("Bert", 2, SpelerType.Verdediger, 15000, 10, 20, 30);
@@ -502,7 +503,7 @@ public class TeamTest {
         t1.getSpelers().add(s98);
         t1.getSpelers().add(s99);
         
-        assertEquals(210, t1.getAanvallendTotaal());   
+        assertEquals(120, t1.getAanvallendTotaal());   
     }
     
     @Test
@@ -601,5 +602,131 @@ public class TeamTest {
         t1.getSpelers().get(9).setStatus(SpelerStatus.Roode_kaart);
         t1.getSpelers().get(6).setStatus(SpelerStatus.Gebleseerd);
         assertEquals(7, t1.countAvaliable());
+    }
+    
+    @Test
+    public void equalsOngelijkeOpstellingTest() {
+        Speler s1 = new Speler("Anton", 1, SpelerType.Doelman, 10000, 10, 20, 30);
+        PosPlayer p1 = new PosPlayer(s1, SpelerType.Doelman);
+        Speler s2 = new Speler("Bert", 2, SpelerType.Verdediger, 15000, 10, 20, 30);
+        PosPlayer p2 = new PosPlayer(s2, SpelerType.Verdediger);
+        Speler s3 = new Speler("Chris", 3, SpelerType.Verdediger, 20000, 10, 20, 30);
+        PosPlayer p3 = new PosPlayer(s3, SpelerType.Verdediger);
+        Speler s4 = new Speler("Anton", 1, SpelerType.Doelman, 10000, 10, 20, 30);
+        PosPlayer p4 = new PosPlayer(s4, SpelerType.Doelman);
+        Speler s5 = new Speler("Bert", 2, SpelerType.Verdediger, 15000, 10, 20, 30);
+        PosPlayer p5 = new PosPlayer(s5, SpelerType.Verdediger);
+        Speler s6 = new Speler("Chris", 3, SpelerType.Verdediger, 20000, 10, 20, 30);
+        PosPlayer p6 = new PosPlayer(s6, SpelerType.Verdediger);
+        Speler s7 = new Speler("Anton", 1, SpelerType.Doelman, 10000, 10, 20, 30);
+        PosPlayer p7 = new PosPlayer(s7, SpelerType.Doelman);
+        Speler s8 = new Speler("Bert", 2, SpelerType.Verdediger, 15000, 10, 20, 30);
+        PosPlayer p8 = new PosPlayer(s8, SpelerType.Verdediger);
+        Speler s9 = new Speler("Chris", 3, SpelerType.Verdediger, 20000, 10, 20, 30);
+        PosPlayer p9 = new PosPlayer(s9, SpelerType.Verdediger);
+        Speler s10 = new Speler("Anton", 1, SpelerType.Doelman, 10000, 10, 20, 30);
+        PosPlayer p10 = new PosPlayer(s10, SpelerType.Doelman);
+        Speler s11 = new Speler("Bert", 2, SpelerType.Verdediger, 15000, 10, 20, 30);
+        PosPlayer p11 = new PosPlayer(s11, SpelerType.Verdediger);
+        ArrayList<Speler> spelerlijst = new ArrayList<Speler>();
+        ArrayList<PosPlayer> posities2 = new ArrayList<PosPlayer>();
+        ArrayList<Wedstrijd> wedstrijden = new ArrayList<Wedstrijd>();
+        ArrayList<Team> t10 = new ArrayList<Team>(); 
+        Competitie eredivisie = new Competitie(wedstrijden, t10);
+        spelerlijst.add(s1);
+        spelerlijst.add(s2);
+        spelerlijst.add(s3);
+        spelerlijst.add(s4);
+        spelerlijst.add(s5);
+        spelerlijst.add(s6);
+        spelerlijst.add(s7);
+        spelerlijst.add(s8);
+        spelerlijst.add(s9);
+        spelerlijst.add(s10);
+        spelerlijst.add(s11);
+        posities2.add(p1);
+        posities2.add(p2);
+        posities2.add(p3);
+        posities2.add(p4);
+        posities2.add(p5);
+        posities2.add(p6);
+        posities2.add(p7);
+        posities2.add(p9);
+        posities2.add(p10);
+        posities2.add(p11);
+        posities2.add(p8);
+        Team t2 = new Team(spelerlijst, "Fc club", posities2, eredivisie, 500000);
+        assertEquals(false, t1.equals(t2));
+    }
+    
+    @Test
+    public void getScoreTest() {
+        ArrayList<Wedstrijd> wedstrlijst = new ArrayList<Wedstrijd>();
+        Speler s1 = new Speler("Anton", 1, SpelerType.Doelman, 10000, 10, 20, 30);
+        PosPlayer p1 = new PosPlayer(s1, SpelerType.Doelman);
+        Speler s2 = new Speler("Bert", 2, SpelerType.Verdediger, 15000, 10, 20, 30);
+        PosPlayer p2 = new PosPlayer(s2, SpelerType.Verdediger);
+        Speler s3 = new Speler("Chris", 3, SpelerType.Verdediger, 20000, 10, 20, 30);
+        PosPlayer p3 = new PosPlayer(s3, SpelerType.Verdediger);
+        Speler s4 = new Speler("Anton", 1, SpelerType.Doelman, 10000, 10, 20, 30);
+        PosPlayer p4 = new PosPlayer(s4, SpelerType.Doelman);
+        Speler s5 = new Speler("Bert", 2, SpelerType.Verdediger, 15000, 10, 20, 30);
+        PosPlayer p5 = new PosPlayer(s5, SpelerType.Verdediger);
+        Speler s6 = new Speler("Chris", 3, SpelerType.Verdediger, 20000, 10, 20, 30);
+        PosPlayer p6 = new PosPlayer(s6, SpelerType.Verdediger);
+        Speler s7 = new Speler("Anton", 1, SpelerType.Doelman, 10000, 10, 20, 30);
+        PosPlayer p7 = new PosPlayer(s7, SpelerType.Doelman);
+        Speler s8 = new Speler("Bert", 2, SpelerType.Verdediger, 15000, 10, 20, 30);
+        PosPlayer p8 = new PosPlayer(s8, SpelerType.Verdediger);
+        Speler s9 = new Speler("Chris", 3, SpelerType.Verdediger, 20000, 10, 20, 30);
+        PosPlayer p9 = new PosPlayer(s9, SpelerType.Verdediger);
+        Speler s10 = new Speler("Anton", 1, SpelerType.Doelman, 10000, 10, 20, 30);
+        PosPlayer p10 = new PosPlayer(s10, SpelerType.Doelman);
+        Speler s11 = new Speler("Bert", 2, SpelerType.Verdediger, 15000, 10, 20, 30);
+        PosPlayer p11 = new PosPlayer(s11, SpelerType.Verdediger);
+        ArrayList<Speler> spelerlijst = new ArrayList<Speler>();
+        ArrayList<PosPlayer> posities = new ArrayList<PosPlayer>();
+        ArrayList<Wedstrijd> wedstrijden = new ArrayList<Wedstrijd>();
+        ArrayList<Team> t10 = new ArrayList<Team>(); 
+        Competitie eredivisie = new Competitie(wedstrijden, t10);
+        spelerlijst.add(s1);
+        spelerlijst.add(s2);
+        spelerlijst.add(s3);
+        spelerlijst.add(s4);
+        spelerlijst.add(s5);
+        spelerlijst.add(s6);
+        spelerlijst.add(s7);
+        spelerlijst.add(s8);
+        spelerlijst.add(s9);
+        spelerlijst.add(s10);
+        spelerlijst.add(s11);
+        posities.add(p1);
+        posities.add(p2);
+        posities.add(p3);
+        posities.add(p4);
+        posities.add(p5);
+        posities.add(p6);
+        posities.add(p7);
+        posities.add(p8);
+        posities.add(p9);
+        posities.add(p10);
+        posities.add(p11);
+        Team t2 = new Team(spelerlijst, "Fc club", posities, eredivisie, 500000);
+        Wedstrijd w1 = new Wedstrijd(t1, t2);
+        w1.setPoints_a(3);
+        w1.setPoints_b(0);
+        wedstrijden.add(w1);
+        eredivisie.setWedstrijden(wedstrijden);
+        t1.setCompetitie(eredivisie);
+        assertEquals(3, t1.getScore());
+    }
+    
+    @Test
+    public void generateOpstellingMetMagicFixTest() {
+        ArrayList<PosPlayer> opstelling = t1.getOpstelling();
+        t1.getSpelers().get(1).setStatus(SpelerStatus.Gebleseerd);
+        t1.getSpelers().get(2).setStatus(SpelerStatus.Gebleseerd);
+        t1.generateOpstelling();
+        assertEquals(opstelling, t1.getOpstelling());
     }
 }
