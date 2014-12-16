@@ -78,7 +78,12 @@ public class mainhubController implements Initializable {
     private void handleOpstelling(){
         mainApp.showOpstellingScreen();
     }
-    
+    @FXML
+    private void handleCompetitie() throws IOException{
+        FXMLLoader loader = new FXMLLoader();
+           loader.setLocation(MainApp.class.getResource("view/competitieframe.fxml"));
+           paneAdd(loader);
+    }
     @FXML
     private void handleExit(){
         System.exit(0);
