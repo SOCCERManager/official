@@ -23,7 +23,7 @@
     -fx-font-size: 20pt;
     -fx-text-fill: #d8d8d8;
     -fx-background-insets: 0 0 0 0, 0, 1, 2;
-    -fx-effect: dropshadow(gaussian, white, 10, 0.1, 0, 0); 
+    //-fx-effect: innershadow(gaussian, white, 10, 0.1, 0, 0); 
 }
 
 .button:hover {
