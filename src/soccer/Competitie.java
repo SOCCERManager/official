@@ -143,7 +143,7 @@ public class Competitie {
     }
     
     public int getLossesOfTeam(Team t) {
-        return (int) this.wedstrijden.stream().filter(v -> v.teamDrawed(t)).count();
+        return (int) this.wedstrijden.stream().filter(v -> v.teamLost(t)).count();
     }
 
     public int getPlayedGamesofTeam(Team t) {
