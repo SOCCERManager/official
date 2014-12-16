@@ -194,7 +194,7 @@ public class Team {
                     
         // set other players
         for(Speler s: this.spelers) {
-            if(this.opstelling.size() < 11 && !s.isUnavaliableToPlay() && !this.opstelling.contains(s))
+            if(this.opstelling.size() < 11 && (!s.isUnavaliableToPlay()) && this.opstelling.stream().map(v -> v.getSpeler()).filter(v -> v.equals(s)).count() < 1)
                  this.opstelling.add(new PosPlayer(s, s.getType()));
         }
     }
