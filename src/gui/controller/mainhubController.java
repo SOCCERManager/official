@@ -21,6 +21,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.layout.AnchorPane;
 import soccer.Competitie;
+import soccer.Speler;
 import soccer.Team;
 
 /**
@@ -29,7 +30,12 @@ import soccer.Team;
  * @author floris
  */
 public class mainhubController implements Initializable {
-    
+    private Team userteam = Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex());
+    private ObservableList<Speler> teamData = FXCollections.observableArrayList();
+    @FXML
+    private TableView<Speler> teamTable;
+    @FXML
+    private TableColumn<Speler, String> naamColumn;
     
     @FXML
     private Label nameLabel;
@@ -51,39 +57,20 @@ public class mainhubController implements Initializable {
     @FXML
     private AnchorPane viewPane;
     
-//    @FXML
-//    private ObservableList<Team> resultatenList = FXCollections.observableArrayList();
-//    
-//    @FXML
-//    private TableView<Team> resultatenTable;
-//    @FXML
-//    private TableColumn<Team, String> teamColumn;
-//    @FXML
-//    private TableColumn<Team, String> puntenColumn;
-//    @FXML    
-//    private TableColumn<Team, String> gespeeldColumn;
-//    @FXML
-//    private TableColumn<Team, String> gewonnenColumn;
-//    @FXML
-//    private TableColumn<Team, String> gelijkspelColumn;
-//    @FXML
-//    private TableColumn<Team, String> verlorenColumn;
-//    @FXML
-//    private TableColumn<Team, String> goalsvoorColumn;
-//    @FXML
-//    private TableColumn<Team, String> goalstegenColumn;
-//    @FXML
-//    private TableColumn<Team, String> doelsaldoColumn;
-//    @FXML
-//    private TableColumn<Team, String> rodekaartenColumn;
-//    @FXML
-//    private TableColumn<Team, String> gelekaartenColumn;
-    
     private MainApp mainApp;
     /**
      * Initializes the controller class.
      */
     public void initialize(URL url, ResourceBundle rb) {
+        teamData.addAll(userteam.getSpelers());
+        
+        naamColumn.setText(userteam.getName());
+        naamColumn.setCellValueFactory(
+                cellData -> new SimpleStringProperty(cellData.getValue().getNaam()));
+        
+        
+        teamTable.getSelectionModel().selectedItemProperty().addListener(
+                (observable, oldValue, newValue) -> showSpelerDetails(newValue));
         // TODO
         gameLabel.setText(loadscreenController.savegame);
     }    
@@ -136,6 +123,10 @@ public class mainhubController implements Initializable {
     
     public void setMainApp(MainApp mainApp) {
         this.mainApp = mainApp;
+        
+        teamTable.setItems(teamData);
     }
-    
+    private void showSpelerDetails(Speler speler){
+        
+    }
 }
