@@ -133,6 +133,18 @@ public class Competitie {
     public int getScoreOfTeam(Team t) {
         return this.wedstrijden.stream().mapToInt(v -> v.scoreOfTeam(t)).sum();
     }
+    
+    public int getWinsOfTeam(Team t) {
+        return (int) this.wedstrijden.stream().filter(v -> v.teamWon(t)).count();
+    }
+    
+    public int getDrawsOfTeam(Team t) {
+        return (int) this.wedstrijden.stream().filter(v -> v.teamLost(t)).count();
+    }
+    
+    public int getLossesOfTeam(Team t) {
+        return (int) this.wedstrijden.stream().filter(v -> v.teamDrawed(t)).count();
+    }
 
     /**
      * Creërt alle wedstrijden voor een competite uit een ArrayList van Teams.

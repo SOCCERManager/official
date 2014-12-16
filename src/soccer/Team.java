@@ -281,4 +281,16 @@ public class Team {
         return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Normaal)).count();
     }
     
+    public int getWins() {
+        return this.competitie.getWinsOfTeam(this);
+    }
+    
+    public int getDraws() {
+        return this.competitie.getDrawsOfTeam(this);
+    }
+    
+    public int getLosses() {
+        return this.competitie.getLossesOfTeam(this);
+    }
+    
 }

@@ -222,6 +222,16 @@ public class Wedstrijd {
         return 0;
     }
     
+    public boolean teamWon(Team t) {
+        return (this.team_a.equals(t) && this.getPoints_a() == 3) || (this.team_b.equals(t) && this.getPoints_b() == 3);
+    }
+    public boolean teamLost(Team t) {
+        return (this.team_a.equals(t) && this.getPoints_a() == 0) || (this.team_b.equals(t) && this.getPoints_b() == 0);
+    }
+    public boolean teamDrawed(Team t) {
+        return (this.team_a.equals(t) && this.getPoints_a() == 1) || (this.team_b.equals(t) && this.getPoints_b() == 1);
+    }
+    
     /**
      * De wedstrijd zelf, er wordt gekeken of de opstellingen valide zijn, anders worden deze gegenereert.
      * Daarna wordt er op basis van de stats van de teams een aantal goals toegekend aan een team.
