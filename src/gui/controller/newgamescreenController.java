@@ -47,7 +47,9 @@ public class newgamescreenController {
         String savegame = nameField.getText();
         System.out.println(savegame);
         try{
+            
         Competitie c = soccer.bouwXML.leesXML(new File("src/saves/competitie.xml"));
+        
         soccer.bouwXML.bouwXML(c, new File("src/saves/"+savegame+".xml"));
         }catch(Exception e){System.out.println(e);}
         loadscreenController.savegame = savegame;

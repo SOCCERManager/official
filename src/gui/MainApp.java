@@ -13,6 +13,8 @@ import java.io.File;
 import java.io.IOException;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -21,12 +23,15 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import soccer.Competitie;
+import soccer.Team;
 
 /**
  *
  * @author codesalad
  */
 public class MainApp extends Application {
+    
+    private ObservableList<Team> teamData = FXCollections.observableArrayList();
     
     private Stage primarystage;
     private BorderPane Layout;
@@ -56,6 +61,7 @@ public class MainApp extends Application {
             // Show the scene containing the root layout.
             Scene scene = new Scene(Layout);
             primarystage.setFullScreen(true);
+            primarystage.setResizable(true);
             primarystage.setScene(scene);
             primarystage.show();
         } catch (IOException e) {

@@ -7,10 +7,18 @@ package gui.controller;
 
 import gui.MainApp;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TitledPane;
+import soccer.Competitie;
+import soccer.Team;
 
 /**
  * FXML Controller class
@@ -19,25 +27,37 @@ import javafx.scene.control.TitledPane;
  */
 public class newteamscreenController implements Initializable {
     
+    private ObservableList<Team> teamData = FXCollections.observableArrayList();
     @FXML
-    private TitledPane team1;
+    private TableView<Team> teamTable;
     @FXML
-    private TitledPane team2;
+    private TableColumn<Team, String> TeamColumn;
     
     private MainApp mainApp;
+    
+    public newteamscreenController(){
+        
+        
+    }
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-        team1.setText("test1");
-        team2.setText("test2");
+        ArrayList<Team> teamList = Competitie.getCompetitie().getTeams();
+        System.out.println(teamData);
+        for(int i = 0; i < teamList.size(); i++)
+            teamData.add(teamList.get(i));
+        
+        TeamColumn.setCellValueFactory(
+                cellData -> new SimpleStringProperty(cellData.getValue().getName()));
     }    
     
     public void setMainApp(MainApp mainApp) {
         this.mainApp = mainApp;
+        
+        teamTable.setItems(teamData);
     }
     
 }

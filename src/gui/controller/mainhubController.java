@@ -9,11 +9,16 @@ import gui.MainApp;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.layout.AnchorPane;
+import soccer.Team;
 
 /**
  * FXML Controller class
@@ -21,6 +26,8 @@ import javafx.scene.layout.AnchorPane;
  * @author floris
  */
 public class mainhubController implements Initializable {
+    
+    
     @FXML
     private Label nameLabel;
     @FXML
