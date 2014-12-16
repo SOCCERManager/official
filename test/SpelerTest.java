@@ -19,6 +19,18 @@ import soccer.SpelerType;
  * @author Nils
  */
 public class SpelerTest {
+    Speler s1;
+    
+    @Before
+    public void setUp() {
+        s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 92, 58);
+    }
+    
+    
+    @After
+    public void tearDown() {
+        s1 = null;
+    }
     
     @Test
     public void constructorTest() {
@@ -243,14 +255,6 @@ public class SpelerTest {
     }
     
     @Test
-    public void playGame2GamesTillStatusDissappearsTest() {
-        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
-        s1.setGamesTilStatusDisapears(2);
-        s1.playGame();
-        assertEquals(1, s1.getGamesTilStatusDisapears());
-    }
-    
-    @Test
     public void magicalyFixTest() {
         Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
         s1.setGamesTilStatusDisapears(2);
@@ -261,11 +265,41 @@ public class SpelerTest {
     }
     
     @Test
+    public void playGameGamesTillStatusDissappears2Test() {
+        Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        s1.setGamesTilStatusDisapears(2);
+        s1.playGame();
+        assertEquals(1, s1.getGamesTilStatusDisapears());
+    }
+    
+    @Test
     public void playGameGamesTillStatusDissappears0Test() {
         Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
         s1.setGamesTilStatusDisapears(0);
         s1.playGame();
         assertEquals(SpelerStatus.Normaal, s1.getStatus());
 
+    }
+    
+    
+    @Test
+    public void playGameTestGeblesserd() {
+        s1.setRnd(new Random(5120));
+        s1.playGame();
+        assertEquals(SpelerStatus.Gebleseerd, s1.getStatus());
+    }
+    
+    @Test
+    public void playGameTestGelekaart() {
+        s1.setRnd(new Random(38));
+        s1.playGame();
+        assertEquals(SpelerStatus.Gele_kaart, s1.getStatus());
+    }
+    
+    @Test
+    public void playGameTestRoodekaart() {
+        s1.setRnd(new Random(91));
+        s1.playGame();
+        assertEquals(SpelerStatus.Roode_kaart, s1.getStatus());
     }
 }
