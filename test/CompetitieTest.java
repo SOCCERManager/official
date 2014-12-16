@@ -587,4 +587,313 @@ public class CompetitieTest {
         assertEquals(c1, Competitie.getCompetitie());
     }
     
+    @Test
+    public void getWinsOfTeamAantalTest() {
+        Speler s1 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
+        PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
+        ArrayList<Speler> sp1 = new ArrayList<Speler>();
+        ArrayList<PosPlayer> pp = new ArrayList<PosPlayer>();
+        pp.add(p1);
+        sp1.add(s1);
+        
+        Speler s2 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
+        PosPlayer p2 = new PosPlayer(s1, SpelerType.Aanvaller);
+        ArrayList<Speler> sp2 = new ArrayList<Speler>();
+        ArrayList<PosPlayer> pp2 = new ArrayList<PosPlayer>();
+        pp2.add(p2);
+        sp2.add(s1);
+        
+        Team t1 = new Team(sp1, "Team1", pp, null, 50000);
+        Team t2 = new Team(sp2, "Team2", pp, null, 50000);
+        ArrayList<Team> ta = new ArrayList<Team>();
+        ta.add(t1);
+        ta.add(t2);
+        
+        Wedstrijd w1 = new Wedstrijd(t1, t2);
+        Wedstrijd w2 = new Wedstrijd(t1, t2);
+        Wedstrijd w3 = new Wedstrijd(t1, t2);
+        Wedstrijd w4 = new Wedstrijd(t1, t2);
+        
+        w1.setPoints_a(1);
+        w1.setPoints_b(1);
+        
+        w2.setPoints_a(3);
+        w2.setPoints_b(0);
+        
+        w3.setPoints_a(0);
+        w3.setPoints_b(3);
+        
+        w4.setPoints_a(1);
+        w4.setPoints_b(1);
+        
+        ArrayList<Wedstrijd> wlijst = new ArrayList<Wedstrijd>();
+        wlijst.add(w1);
+        wlijst.add(w2);
+        wlijst.add(w3);
+        wlijst.add(w4);
+        
+        Competitie c1 = new Competitie(wlijst, ta);
+        assertEquals(1, c1.getWinsOfTeam(t1));
+    }
+    
+    @Test
+    public void getDrawsOfTeamTest() {
+        Speler s1 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
+        PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
+        ArrayList<Speler> sp1 = new ArrayList<Speler>();
+        ArrayList<PosPlayer> pp = new ArrayList<PosPlayer>();
+        pp.add(p1);
+        sp1.add(s1);
+        
+        Speler s2 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
+        PosPlayer p2 = new PosPlayer(s1, SpelerType.Aanvaller);
+        ArrayList<Speler> sp2 = new ArrayList<Speler>();
+        ArrayList<PosPlayer> pp2 = new ArrayList<PosPlayer>();
+        pp2.add(p2);
+        sp2.add(s1);
+        
+        Team t1 = new Team(sp1, "Team1", pp, null, 50000);
+        Team t2 = new Team(sp2, "Team2", pp, null, 50000);
+        ArrayList<Team> ta = new ArrayList<Team>();
+        ta.add(t1);
+        ta.add(t2);
+        
+        Wedstrijd w1 = new Wedstrijd(t1, t2);
+        Wedstrijd w2 = new Wedstrijd(t1, t2);
+        Wedstrijd w3 = new Wedstrijd(t1, t2);
+        Wedstrijd w4 = new Wedstrijd(t1, t2);
+        
+        w1.setPoints_a(1);
+        w1.setPoints_b(1);
+        
+        w2.setPoints_a(3);
+        w2.setPoints_b(0);
+        
+        w3.setPoints_a(0);
+        w3.setPoints_b(3);
+        
+        w4.setPoints_a(1);
+        w4.setPoints_b(1);
+        
+        ArrayList<Wedstrijd> wlijst = new ArrayList<Wedstrijd>();
+        wlijst.add(w1);
+        wlijst.add(w2);
+        wlijst.add(w3);
+        wlijst.add(w4);
+        
+        Competitie c1 = new Competitie(wlijst, ta);
+        assertEquals(2, c1.getDrawsOfTeam(t2));
+    }
+    
+    @Test
+    public void getLossesOfTeamTest() {
+        Speler s1 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
+        PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
+        ArrayList<Speler> sp1 = new ArrayList<Speler>();
+        ArrayList<PosPlayer> pp = new ArrayList<PosPlayer>();
+        pp.add(p1);
+        sp1.add(s1);
+        
+        Speler s2 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
+        PosPlayer p2 = new PosPlayer(s1, SpelerType.Aanvaller);
+        ArrayList<Speler> sp2 = new ArrayList<Speler>();
+        ArrayList<PosPlayer> pp2 = new ArrayList<PosPlayer>();
+        pp2.add(p2);
+        sp2.add(s1);
+        
+        Team t1 = new Team(sp1, "Team1", pp, null, 50000);
+        Team t2 = new Team(sp2, "Team2", pp, null, 50000);
+        ArrayList<Team> ta = new ArrayList<Team>();
+        ta.add(t1);
+        ta.add(t2);
+        
+        Wedstrijd w1 = new Wedstrijd(t1, t2);
+        Wedstrijd w2 = new Wedstrijd(t1, t2);
+        Wedstrijd w3 = new Wedstrijd(t1, t2);
+        Wedstrijd w4 = new Wedstrijd(t1, t2);
+        
+        w1.setPoints_a(1);
+        w1.setPoints_b(1);
+        
+        w2.setPoints_a(3);
+        w2.setPoints_b(0);
+        
+        w3.setPoints_a(0);
+        w3.setPoints_b(3);
+        
+        w4.setPoints_a(1);
+        w4.setPoints_b(1);
+        
+        ArrayList<Wedstrijd> wlijst = new ArrayList<Wedstrijd>();
+        wlijst.add(w1);
+        wlijst.add(w2);
+        wlijst.add(w3);
+        wlijst.add(w4);
+        
+        Competitie c1 = new Competitie(wlijst, ta);
+        assertEquals(1, c1.getLossesOfTeam(t2));
+    }
+    
+    @Test
+    public void getPlayedGamesOfTeamTest() {
+        Speler s1 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
+        PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
+        ArrayList<Speler> sp1 = new ArrayList<Speler>();
+        ArrayList<PosPlayer> pp = new ArrayList<PosPlayer>();
+        pp.add(p1);
+        sp1.add(s1);
+        
+        Speler s2 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
+        PosPlayer p2 = new PosPlayer(s1, SpelerType.Aanvaller);
+        ArrayList<Speler> sp2 = new ArrayList<Speler>();
+        ArrayList<PosPlayer> pp2 = new ArrayList<PosPlayer>();
+        pp2.add(p2);
+        sp2.add(s1);
+        
+        Team t1 = new Team(sp1, "Team1", pp, null, 50000);
+        Team t2 = new Team(sp2, "Team2", pp, null, 50000);
+        ArrayList<Team> ta = new ArrayList<Team>();
+        ta.add(t1);
+        ta.add(t2);
+        
+        Wedstrijd w1 = new Wedstrijd(t1, t2);
+        Wedstrijd w2 = new Wedstrijd(t1, t2);
+        Wedstrijd w3 = new Wedstrijd(t1, t2);
+        Wedstrijd w4 = new Wedstrijd(t1, t2);
+        
+        w1.setPoints_a(1);
+        w1.setPoints_b(1);
+        
+        w2.setPoints_a(3);
+        w2.setPoints_b(0);
+        
+        w3.setPoints_a(0);
+        w3.setPoints_b(3);
+        
+        w4.setPoints_a(1);
+        w4.setPoints_b(1);
+        
+        ArrayList<Wedstrijd> wlijst = new ArrayList<Wedstrijd>();
+        wlijst.add(w1);
+        wlijst.add(w2);
+        wlijst.add(w3);
+        wlijst.add(w4);
+        
+        Competitie c1 = new Competitie(wlijst, ta);
+        assertEquals(4, c1.getPlayedGamesofTeam(t2));
+    }
+    
+    @Test
+    public void getGoalsOfTeamTest() {
+        Speler s1 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
+        PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
+        ArrayList<Speler> sp1 = new ArrayList<Speler>();
+        ArrayList<PosPlayer> pp = new ArrayList<PosPlayer>();
+        pp.add(p1);
+        sp1.add(s1);
+        
+        Speler s2 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
+        PosPlayer p2 = new PosPlayer(s1, SpelerType.Aanvaller);
+        ArrayList<Speler> sp2 = new ArrayList<Speler>();
+        ArrayList<PosPlayer> pp2 = new ArrayList<PosPlayer>();
+        pp2.add(p2);
+        sp2.add(s1);
+        
+        Team t1 = new Team(sp1, "Team1", pp, null, 50000);
+        Team t2 = new Team(sp2, "Team2", pp, null, 50000);
+        ArrayList<Team> ta = new ArrayList<Team>();
+        ta.add(t1);
+        ta.add(t2);
+        
+        Wedstrijd w1 = new Wedstrijd(t1, t2);
+        Wedstrijd w2 = new Wedstrijd(t1, t2);
+        Wedstrijd w3 = new Wedstrijd(t1, t2);
+        Wedstrijd w4 = new Wedstrijd(t1, t2);
+        
+        w1.setScore_a(1);
+        w1.setScore_b(1);
+        w1.setPoints_a(1);
+        w1.setPoints_b(1);
+        
+        w2.setScore_a(2);
+        w2.setScore_b(0);
+        w2.setPoints_a(3);
+        w2.setPoints_b(0);
+        
+        w3.setScore_a(0);
+        w3.setScore_b(1);
+        w3.setPoints_a(0);
+        w3.setPoints_b(3);
+        
+        w2.setScore_a(1);
+        w2.setScore_b(1);
+        w4.setPoints_a(1);
+        w4.setPoints_b(1);
+        
+        ArrayList<Wedstrijd> wlijst = new ArrayList<Wedstrijd>();
+        wlijst.add(w1);
+        wlijst.add(w2);
+        wlijst.add(w3);
+        wlijst.add(w4);
+        
+        Competitie c1 = new Competitie(wlijst, ta);
+        assertEquals(3, c1.getGoalsofTeam(t2));
+    }
+    
+    @Test
+    public void getCounterGoalsofTeamTest() {
+        Speler s1 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
+        PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
+        ArrayList<Speler> sp1 = new ArrayList<Speler>();
+        ArrayList<PosPlayer> pp = new ArrayList<PosPlayer>();
+        pp.add(p1);
+        sp1.add(s1);
+        
+        Speler s2 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
+        PosPlayer p2 = new PosPlayer(s1, SpelerType.Aanvaller);
+        ArrayList<Speler> sp2 = new ArrayList<Speler>();
+        ArrayList<PosPlayer> pp2 = new ArrayList<PosPlayer>();
+        pp2.add(p2);
+        sp2.add(s1);
+        
+        Team t1 = new Team(sp1, "Team1", pp, null, 50000);
+        Team t2 = new Team(sp2, "Team2", pp, null, 50000);
+        ArrayList<Team> ta = new ArrayList<Team>();
+        ta.add(t1);
+        ta.add(t2);
+        
+        Wedstrijd w1 = new Wedstrijd(t1, t2);
+        Wedstrijd w2 = new Wedstrijd(t1, t2);
+        Wedstrijd w3 = new Wedstrijd(t1, t2);
+        Wedstrijd w4 = new Wedstrijd(t1, t2);
+        
+        w1.setScore_a(1);
+        w1.setScore_b(1);
+        w1.setPoints_a(1);
+        w1.setPoints_b(1);
+        
+        w2.setScore_a(2);
+        w2.setScore_b(0);
+        w2.setPoints_a(3);
+        w2.setPoints_b(0);
+        
+        w3.setScore_a(0);
+        w3.setScore_b(1);
+        w3.setPoints_a(0);
+        w3.setPoints_b(3);
+        
+        w4.setScore_a(1);
+        w4.setScore_b(1);
+        w4.setPoints_a(1);
+        w4.setPoints_b(1);
+        
+        ArrayList<Wedstrijd> wlijst = new ArrayList<Wedstrijd>();
+        wlijst.add(w1);
+        wlijst.add(w2);
+        wlijst.add(w3);
+        wlijst.add(w4);
+        
+        Competitie c1 = new Competitie(wlijst, ta);
+        assertEquals(4, c1.getCounterGoalsofTeam(t2));
+    }
 }
