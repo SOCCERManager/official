@@ -13,6 +13,7 @@
             <VBox fx:id="leftPanel" maxWidth="360.0" prefHeight="200.0" prefWidth="30.0" HBox.hgrow="ALWAYS">
                <children>
                   <Button mnemonicParsing="false" onAction="#handleExit" prefHeight="31.0" prefWidth="525.0" text="Exit" />
+                  <Button fx:id="Menu" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="31.0" prefWidth="432.0" text="Back" />
                   <Label fx:id="gameLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="412.0" text="Label" VBox.vgrow="ALWAYS">
                      <font>
                         <Font size="30.0" />
