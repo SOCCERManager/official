@@ -187,12 +187,14 @@ public class Team {
         
         // Set doelman
         for(Speler s: this.spelers)
-            if(!dedicated_goalie || s.getType().equals(SpelerType.Doelman))
+            if(!dedicated_goalie || s.getType().equals(SpelerType.Doelman)) {
                 this.opstelling.add(new PosPlayer(s, s.getType()));
+                break;
+            }
                     
         // set other players
         for(Speler s: this.spelers) {
-            if(this.opstelling.size() <= 11 && !s.isUnavaliableToPlay() && !this.opstelling.contains(s))
+            if(this.opstelling.size() < 11 && !s.isUnavaliableToPlay() && !this.opstelling.contains(s))
                  this.opstelling.add(new PosPlayer(s, s.getType()));
         }
     }
