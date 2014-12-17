@@ -143,7 +143,7 @@ public class Competitie {
     }
 
     public int getLossesOfTeam(Team t) {
-        return (int) this.wedstrijden.stream().filter(v -> v.teamLost(t)).count();
+        return (int) this.wedstrijden.stream().filter(v -> v.isPlayed()).filter(v -> v.teamLost(t)).count();
     }
 
     public int getPlayedGamesofTeam(Team t) {
@@ -180,7 +180,9 @@ public class Competitie {
 
         for (int x = 0; x < teams.size() - 1; x++) {
             for (int j = 0; j < a.size(); j++) {
-                wedstrijden.add(new Wedstrijd(a.get(j), b.get(j)));
+                Wedstrijd w = new Wedstrijd(a.get(j), b.get(j));
+                w.setPlayed(false);
+                wedstrijden.add(w);
             }
 
             // up each element in a
@@ -212,8 +214,9 @@ public class Competitie {
             this.bouwWedstrijden();
         
         for(Wedstrijd w:this.wedstrijden) {
+            System.out.println(w);
             if(w.isPlayed()) continue;
-            if(w.teamPlayed(this.teams.get(this.userindex))) break;
+            if(w.teamPlaying(this.teams.get(this.userindex))) break;
             w.playGame();
         }
     }
@@ -229,7 +232,7 @@ public class Competitie {
         this.playGamesTilPlayerGameIsDue();
         for(Wedstrijd w: this.wedstrijden) {
             if(w.isPlayed()) continue;
-            if(w.teamPlayed(this.teams.get(this.userindex))) {
+            if(w.teamPlaying(this.teams.get(this.userindex))) {
                 w.playGame();
                 break;
             } else {

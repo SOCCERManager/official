@@ -78,7 +78,7 @@ public class mainhubController implements Initializable {
      * Initializes the controller class.
      */
     public void initialize(URL url, ResourceBundle rb) {
-        
+        Competitie.getCompetitie().playGamesTilPlayerGameIsDue();
         teamData.addAll(userteam.getSpelers());
         if(!userteam.OpstellingIsValide())
             userteam.generateOpstelling();
@@ -142,7 +142,9 @@ public class mainhubController implements Initializable {
     }
     @FXML
     private void handlePlay(){
-        //Competitie.getCompetitie().
+        try{
+        Competitie.getCompetitie().playPlayerGame();
+        }catch(Exception e){e.printStackTrace();}
     }
     
     @FXML
