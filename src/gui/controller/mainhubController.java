@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
+import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -35,7 +36,11 @@ public class mainhubController implements Initializable {
     @FXML
     private TableView<Speler> teamTable;
     @FXML
-    private TableColumn<Speler, String> naamColumn;
+    private TableColumn<Speler, String> zijteamColumn;
+    @FXML
+    private TableColumn<Speler, Integer> zijrugColumn;
+    @FXML
+    private TableColumn<Speler, String> zijnaamColumn;
     
     @FXML
     private Label nameLabel;
@@ -64,9 +69,11 @@ public class mainhubController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         teamData.addAll(userteam.getSpelers());
         
-        naamColumn.setText(userteam.getName());
-        naamColumn.setCellValueFactory(
+        zijteamColumn.setText(userteam.getName());
+        zijnaamColumn.setCellValueFactory(
                 cellData -> new SimpleStringProperty(cellData.getValue().getNaam()));
+        zijrugColumn.setCellValueFactory(
+                cellData -> new SimpleIntegerProperty(cellData.getValue().getNummer()).asObject());
         
         
         teamTable.getSelectionModel().selectedItemProperty().addListener(

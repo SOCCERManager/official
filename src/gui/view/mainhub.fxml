@@ -32,7 +32,11 @@
                               <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                            </columnResizePolicy>
                            <columns>
-                              <TableColumn fx:id="naamColumn" prefWidth="75.0" text="C1" />
+                              <TableColumn fx:id="zijteamColumn" prefWidth="75.0" text="C1">
+                                 <columns>
+                                    <TableColumn fx:id="zijrugColumn" prefWidth="75.0" text="Rugnummer" />
+                                    <TableColumn fx:id="zijnaamColumn" prefWidth="75.0" text="Naam" />
+                                 </columns></TableColumn>
                            </columns>
                         </TableView>
                      </children>
