@@ -907,4 +907,10 @@ public class CompetitieTest {
         Competitie c1 = new Competitie(wlijst, ta);
         assertEquals(4, c1.getCounterGoalsofTeam(t2));
     }
+    
+    @Test
+    public void getEnSetCompetitie() {
+        Competitie.setCompetitie(c1);
+        assertEquals(c1, Competitie.getCompetitie());
+    }
 }
