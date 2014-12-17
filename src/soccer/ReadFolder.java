@@ -34,6 +34,7 @@ public class ReadFolder {
                    saveFilesName.add(listOfFiles[i].getName().replace(".xml", ""));
                }
             }
+            System.out.println("ejfioejf" + saveFilesName);
             return saveFilesName;
         }
         catch(Exception e){
