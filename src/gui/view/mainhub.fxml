@@ -12,14 +12,27 @@
          <children>
             <VBox fx:id="leftPanel" maxWidth="360.0" prefHeight="200.0" prefWidth="30.0" HBox.hgrow="ALWAYS">
                <children>
-                  <Button mnemonicParsing="false" onAction="#handleExit" prefHeight="31.0" prefWidth="525.0" text="Exit" />
-                  <Button fx:id="Menu" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="31.0" prefWidth="432.0" text="Back" />
+                  <HBox>
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#handleExit" prefHeight="31.0" prefWidth="182.0" text="Exit" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="Menu" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="31.0" prefWidth="185.0" text="Back" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
                   <Label fx:id="gameLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="412.0" text="Label" VBox.vgrow="ALWAYS">
                      <font>
-                        <Font size="30.0" />
+                        <Font size="55.0" />
                      </font>
                   </Label>
-                  <Button mnemonicParsing="false" onAction="#handleCompetitie" prefHeight="31.0" prefWidth="432.0" text="Show Competitie" />
+                  <Button fx:id="handlePlay" mnemonicParsing="false" prefHeight="31.0" prefWidth="506.0" text="Speel volgende ronde" />
+                  <Button mnemonicParsing="false" onAction="#handleCompetitie" prefHeight="31.0" prefWidth="432.0" text="Bekijk Competitie">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin></Button>
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleKoop" text="Bekijk Markt" />
                   <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
                      <children>
                         <Label alignment="CENTER" prefHeight="43.0" prefWidth="360.0" text="Team">
@@ -34,7 +47,7 @@
                            <columns>
                               <TableColumn fx:id="zijteamColumn" prefWidth="75.0" text="C1">
                                  <columns>
-                                    <TableColumn fx:id="zijrugColumn" prefWidth="75.0" text="Rugnummer" />
+                                    <TableColumn fx:id="zijrugColumn" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" text="#" />
                                     <TableColumn fx:id="zijnaamColumn" prefWidth="75.0" text="Naam" />
                                  </columns></TableColumn>
                            </columns>
@@ -48,26 +61,16 @@
                               <Font size="32.0" />
                            </font>
                         </Label>
-                        <ScrollPane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
-                          <content>
-                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
-                          </content>
-                        </ScrollPane>
-                     </children>
-                  </VBox>
-                  <VBox prefHeight="200.0" prefWidth="100.0">
-                     <children>
-                        <Label alignment="CENTER" prefHeight="48.0" prefWidth="360.0" text="Market">
-                           <font>
-                              <Font size="32.0" />
-                           </font>
-                        </Label>
-                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleKoop" text="Koop" />
-                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleVerkoop" text="Verkoop">
-                           <VBox.margin>
-                              <Insets top="5.0" />
-                           </VBox.margin>
-                        </Button>
+                        <TableView fx:id="opstelTable" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                          <columns>
+                            <TableColumn fx:id="opstelrugColumn" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" text="#" />
+                            <TableColumn fx:id="opstelnaamColumn" prefWidth="162.0" text="Naam" />
+                              <TableColumn fx:id="opstelposColumn" prefWidth="75.0" text="Positie" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
                      </children>
                   </VBox>
                </children>

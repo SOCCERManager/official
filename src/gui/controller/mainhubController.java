@@ -22,6 +22,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.layout.AnchorPane;
 import soccer.Competitie;
+import soccer.PosPlayer;
 import soccer.Speler;
 import soccer.Team;
 
@@ -41,6 +42,16 @@ public class mainhubController implements Initializable {
     private TableColumn<Speler, Integer> zijrugColumn;
     @FXML
     private TableColumn<Speler, String> zijnaamColumn;
+    
+    private ObservableList<PosPlayer> opstelData = FXCollections.observableArrayList();
+    @FXML
+    private TableView<PosPlayer> opstelTable;
+    @FXML
+    private TableColumn<PosPlayer, Integer> opstelrugColumn;
+    @FXML
+    private TableColumn<PosPlayer, String> opstelnaamColumn;
+    @FXML
+    private TableColumn<PosPlayer, String> opstelposColumn;
     
     @FXML
     private Label nameLabel;
@@ -67,7 +78,11 @@ public class mainhubController implements Initializable {
      * Initializes the controller class.
      */
     public void initialize(URL url, ResourceBundle rb) {
+        
         teamData.addAll(userteam.getSpelers());
+        if(!userteam.OpstellingIsValide())
+            userteam.generateOpstelling();
+        opstelData.addAll(userteam.getOpstelling());
         
         zijteamColumn.setText(userteam.getName());
         zijnaamColumn.setCellValueFactory(
@@ -75,9 +90,18 @@ public class mainhubController implements Initializable {
         zijrugColumn.setCellValueFactory(
                 cellData -> new SimpleIntegerProperty(cellData.getValue().getNummer()).asObject());
         
+        opstelnaamColumn.setCellValueFactory(
+                cellData -> new SimpleStringProperty(cellData.getValue().getNaam()));
+        opstelrugColumn.setCellValueFactory(
+                cellData -> new SimpleIntegerProperty(cellData.getValue().getNummer()).asObject());
+        opstelposColumn.setCellValueFactory(
+                cellData -> new SimpleStringProperty(""+cellData.getValue().getPosSpelertype()));
+        
         
         teamTable.getSelectionModel().selectedItemProperty().addListener(
                 (observable, oldValue, newValue) -> showSpelerDetails(newValue));
+        opstelTable.getSelectionModel().selectedItemProperty().addListener(
+                (observable, oldValue, newValue) -> showOpstellingDetails(newValue));
         // TODO
         gameLabel.setText(loadscreenController.savegame);
     }    
@@ -116,6 +140,10 @@ public class mainhubController implements Initializable {
            loader.setLocation(MainApp.class.getResource("view/competitieframe.fxml"));
            paneAdd(loader); 
     }
+    @FXML
+    private void handlePlay(){
+        //Competitie.getCompetitie().
+    }
     
     @FXML
     private void handleBackButton(){
@@ -131,9 +159,13 @@ public class mainhubController implements Initializable {
     public void setMainApp(MainApp mainApp) {
         this.mainApp = mainApp;
         
+        opstelTable.setItems(opstelData);
         teamTable.setItems(teamData);
     }
     private void showSpelerDetails(Speler speler){
+        
+    }
+    private void showOpstellingDetails(PosPlayer speler){
         
     }
 }
