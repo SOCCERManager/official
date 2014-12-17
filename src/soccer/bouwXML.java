@@ -55,7 +55,7 @@ public class bouwXML {
         Scanner infile = new Scanner(f);
         String te = "";
         while(infile.hasNext())
-            te += infile.nextLine();
+            te += infile.nextLine()+"\n";
         Competitie c = (Competitie) getStream().fromXML(te);
         Competitie t =  new Competitie(c.getWedstrijden(), c.getTeams());
         c = null;
