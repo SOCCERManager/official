@@ -245,6 +245,7 @@ public class Speler {
      * @return een random getal binnen de opgegeven range
      */
     private int randomWithRange(int min, int max) {
+       if(this.rnd == null) this.rnd = new Random((long) Math.random());
        return (int)(rnd.nextDouble() * ((max - min) + 1)) + min;
     }
 

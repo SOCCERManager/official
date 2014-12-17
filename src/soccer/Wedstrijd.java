@@ -201,7 +201,7 @@ public class Wedstrijd {
      */
     @Override
     public String toString() {
-        return "Wedstrijd{" + "team_a=" + team_a + ", team_b=" + team_b + ", score_a=" + score_a + ", score_b=" + score_b + ", points_a=" + points_a + ", points_b=" + points_b + ", played=" + played + '}';
+        return "Wedstrijd{" + "team_a=" + team_a.getName() + ", team_b=" + team_b.getName() + ", score_a=" + score_a + ", score_b=" + score_b + ", points_a=" + points_a + ", points_b=" + points_b + ", played=" + played + '}';
     }
     
     /**
@@ -223,15 +223,18 @@ public class Wedstrijd {
     }
     
     public boolean teamWon(Team t) {
-        return (this.team_a.equals(t) && this.getPoints_a() == 3) || (this.team_b.equals(t) && this.getPoints_b() == 3);
+        return this.played && (this.team_a.equals(t) && this.getPoints_a() == 3) || (this.team_b.equals(t) && this.getPoints_b() == 3);
     }
     public boolean teamLost(Team t) {
-        return (this.team_a.equals(t) && this.getPoints_a() == 0) || (this.team_b.equals(t) && this.getPoints_b() == 0);
+        return this.played && (this.team_a.equals(t) && this.getPoints_a() == 0) || (this.team_b.equals(t) && this.getPoints_b() == 0);
     }
     public boolean teamDrawed(Team t) {
-        return (this.team_a.equals(t) && this.getPoints_a() == 1) || (this.team_b.equals(t) && this.getPoints_b() == 1);
+        return this.played && (this.team_a.equals(t) && this.getPoints_a() == 1) || (this.team_b.equals(t) && this.getPoints_b() == 1);
     }
     public boolean teamPlayed(Team t) {
+        return this.played && teamPlaying(t);
+    }
+    public boolean teamPlaying(Team t) {
         return this.team_a.equals(t) || this.team_b.equals(t);
     }
     public int teamGoal(Team t) {
@@ -257,11 +260,14 @@ public class Wedstrijd {
         if(!this.team_b.OpstellingIsValide())
             this.team_b.generateOpstelling();
         
+        this.played = true;
         this.team_a.playGame();
         this.team_b.playGame();
         
         this.score_a = getGoals(team_a, team_b);
         this.score_b = getGoals(team_b, team_a);
+        
+        System.out.println(team_a.getName()+" - "+team_b.getName()+": "+score_a+" - "+score_b);
         
         if(this.score_a > this.score_b) {
             this.points_a = 3;
@@ -282,10 +288,11 @@ public class Wedstrijd {
      * Dan (a)/(b) = (c) en tot slot (c) vermenigvuldigd met een willekeurige waarde tussen 0 en 1. 
      */ 
     private int getGoals(Team a, Team b) {
-        return (int) Math.round(
-            (double)a.getAanvallendTotaal()*(double)a.getUithoudingsTotaal()*this.rnd.nextDouble()
+        int t = (int) Math.round(
+            ((double)a.getAanvallendTotaal()*(double)a.getUithoudingsTotaal()*this.rnd.nextDouble()*this.rnd.nextDouble()*4)
             /
-            (double)b.getVerdedigingsTotaal()*(double)b.getUithoudingsTotaal()
+            ((double)b.getVerdedigingsTotaal()*(double)b.getUithoudingsTotaal())
         );
+        return (t>0? t: 0);
     }
 }
