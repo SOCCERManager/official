@@ -203,7 +203,7 @@ public class Competitie {
         return Competitie.c;
     }
 
-    static void setCompetitie(Competitie c) {
+    public static void setCompetitie(Competitie c) {
         Competitie.c = c;
     }
 
