@@ -30,11 +30,15 @@ public class SpelerTypeTest {
     
     @After
     public void tearDown() {
+        s1 = null;
+        s2 = null;
     }
-
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
+    
+    @Test
+    public void valueOfTest() {
+        assertEquals(SpelerType.Doelman, SpelerType.valueOf("Doelman"));
+        assertEquals(SpelerType.Verdediger, SpelerType.valueOf("Verdediger"));
+        assertEquals(SpelerType.Middenvelder, SpelerType.valueOf("Middenvelder"));
+        assertEquals(SpelerType.Aanvaller, SpelerType.valueOf("Aanvaller"));
+    }
 }
