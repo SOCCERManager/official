@@ -59,6 +59,7 @@ public class CompetitieframeController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        
         ArrayList<Team> teamList = Competitie.getCompetitie().getTeams();
         resultatenList.addAll(teamList);
         System.out.println(resultatenList);
@@ -86,7 +87,9 @@ public class CompetitieframeController implements Initializable {
                 cellData -> new SimpleIntegerProperty(cellData.getValue().countYellowCards()).asObject());  
         blessureColumn.setCellValueFactory(
                 cellData -> new SimpleIntegerProperty(cellData.getValue().countGebleseerd()).asObject());
-      resultatenTable.setItems(resultatenList);  
+      resultatenTable.setItems(resultatenList); 
+      puntenColumn.setSortType(TableColumn.SortType.DESCENDING);
+        resultatenTable.getSortOrder().add(puntenColumn);
         teamColumn.isVisible();
     }    
     

@@ -122,6 +122,12 @@ public class SpelerTest {
     }
     
     @Test
+    public void testDefineMarketValue(){
+        s1.defineMarketValue();
+        System.out.println("prijs: " + s1.getPrijs());
+    }
+    
+    @Test
     public void equalsGelijkTest() {
         Speler s2 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
         assertEquals(true, s1.equals(s2));
