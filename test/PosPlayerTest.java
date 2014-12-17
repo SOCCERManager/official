@@ -242,4 +242,17 @@ public class PosPlayerTest {
         p1.setPosSpelertype(SpelerType.Doelman);
         assertEquals(17, p1.getUithoudingsvermogen());
     }
+    
+    @Test
+    public void playGameTest() {
+        p1.getSpeler().setGamesTilStatusDisapears(0);
+        p1.playGame();
+        assertEquals(SpelerStatus.Normaal, p1.getStatus());
+    }
+    
+    @Test
+    public void isAvailableToPlayTest() {
+        p1.getSpeler().setGamesTilStatusDisapears(2);
+        assertFalse(p1.isAvaliableToPlay());
+    }
 }
