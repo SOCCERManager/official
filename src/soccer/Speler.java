@@ -323,6 +323,15 @@ public class Speler {
     public void magicalyFix() {
         this.gamesTilStatusDisapears = 0;
         this.status = SpelerStatus.Normaal;
+    } 
+    
+    /**
+     * Berekent de prijs van de speler op basis van zijn stats
+     **/
+    public void defineMarketValue() {
+        int rnd = 42;
+        double prijs = (Math.pow((double)getAanvallend(), 2.0) + Math.pow((double)getVerdedigend(), 2.0) + Math.pow((double)getUithoudingsvermogen(), 2.0))*rnd;
+        setPrijs((int)prijs);
     }
 
     /**
