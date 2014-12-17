@@ -34,22 +34,19 @@ public class CompetitieTest {
         pp.add(p1);
         sp1.add(s1);
         
-        Speler s2 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
-        PosPlayer p2 = new PosPlayer(s1, SpelerType.Aanvaller);
-        ArrayList<Speler> sp2 = new ArrayList<Speler>();
-        ArrayList<PosPlayer> pp2 = new ArrayList<PosPlayer>();
-        pp2.add(p2);
-        sp2.add(s1);
-        
         Team t1 = new Team(sp1, "Team", pp, null, 50000);
-        Team t2 = new Team(sp2, "Team", pp, null, 50000);
+        Team t2 = new Team(sp1, "Team", pp, null, 50000);
+        Team t3 = new Team(sp1, "Team", pp, null, 50000);
+        Team t4 = new Team(sp1, "Team", pp, null, 50000);
         ArrayList<Team> ta = new ArrayList<Team>();
         ta.add(t1);
         ta.add(t2);
+        ta.add(t3);
+        ta.add(t4);
         
-        Wedstrijd we = new Wedstrijd(t1,t2);
+        Wedstrijd w1 = new Wedstrijd(t1,t2);
         ArrayList<Wedstrijd> w = new ArrayList<Wedstrijd>();
-        w.add(we);
+        w.add(w1);
         
         Competitie c1 = new Competitie(w,ta); 
     }
@@ -260,39 +257,10 @@ public class CompetitieTest {
     
     @Test
     public void bouwWedstrijdenTest() {
-        Speler s1 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
-        PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
-        ArrayList<Speler> sp1 = new ArrayList<Speler>();
-        ArrayList<PosPlayer> pp = new ArrayList<PosPlayer>();
-        pp.add(p1);
-        sp1.add(s1);
-        
-        Speler s2 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
-        PosPlayer p2 = new PosPlayer(s1, SpelerType.Aanvaller);
-        ArrayList<Speler> sp2 = new ArrayList<Speler>();
-        ArrayList<PosPlayer> pp2 = new ArrayList<PosPlayer>();
-        pp2.add(p2);
-        sp2.add(s1);
-        
-        Team t1 = new Team(sp1, "TeamA", pp, null, 50000);
-        Team t2 = new Team(sp2, "TeamB", pp, null, 50000);
-        ArrayList<Team> ta = new ArrayList<Team>();
-        ta.add(t1);
-        ta.add(t2);
-        
-        Wedstrijd we = new Wedstrijd(t1,t2);
-        we.setScore_a(5);
-        we.setScore_b(8888);
-        we.setPoints_a(59);
-        we.setPoints_b(23);
-        ArrayList<Wedstrijd> w = new ArrayList<Wedstrijd>();
-        w.add(we);
-        
-        Competitie c1 = new Competitie(w,ta); 
         c1.bouwWedstrijden();
-        ArrayList<Wedstrijd> wedstrijden= c1.getWedstrijden();
-        assertNotNull(wedstrijden);
-        assertEquals("Wedstrijd{team_a=Team{spelers=[Speler{naam=A, nummer=14, type=Aanvaller, status=null, prijs=10, gamesTilStatusDisapears=0, aanvallend=10, verdedigend=10, uithoudingsvermogen=10}], name=TeamA, opstelling=[PosPlayer{speler=Speler{naam=A, nummer=14, type=Aanvaller, status=null, prijs=10, gamesTilStatusDisapears=0, aanvallend=10, verdedigend=10, uithoudingsvermogen=10}, posspelertype=Aanvaller, reduceFactor=0.8}], budget=50000}, team_b=Team{spelers=[Speler{naam=A, nummer=14, type=Aanvaller, status=null, prijs=10, gamesTilStatusDisapears=0, aanvallend=10, verdedigend=10, uithoudingsvermogen=10}], name=TeamB, opstelling=[PosPlayer{speler=Speler{naam=A, nummer=14, type=Aanvaller, status=null, prijs=10, gamesTilStatusDisapears=0, aanvallend=10, verdedigend=10, uithoudingsvermogen=10}, posspelertype=Aanvaller, reduceFactor=0.8}], budget=50000}, score_a=5, score_b=8888, points_a=59, points_b=23, played=false}", wedstrijden.get(0).toString());
+        c1.getWedstrijden().get(0).setPlayed(true);
+        System.out.println(c1.getWedstrijden());
+        assertEquals("Naam", c1.getWedstrijden().get(0).toString());
     }
     
     @Test
@@ -451,12 +419,13 @@ public class CompetitieTest {
         ta.add(t2);
         
         Wedstrijd we = new Wedstrijd(t1,t2);
+        we.setPlayed(true);
         ArrayList<Wedstrijd> w = new ArrayList<Wedstrijd>();
         w.add(we);
         
         Competitie c1 = new Competitie(w,ta); 
         c1.setUserindex(5);
-        assertEquals("Competitie{wedstrijden=[Wedstrijd{team_a=Team{spelers=[Speler{naam=A, nummer=14, type=Aanvaller, status=null, prijs=10, gamesTilStatusDisapears=0, aanvallend=10, verdedigend=10, uithoudingsvermogen=10}], name=Team, opstelling=[PosPlayer{speler=Speler{naam=A, nummer=14, type=Aanvaller, status=null, prijs=10, gamesTilStatusDisapears=0, aanvallend=10, verdedigend=10, uithoudingsvermogen=10}, posspelertype=Aanvaller, reduceFactor=0.8}], budget=50000}, team_b=Team{spelers=[Speler{naam=A, nummer=14, type=Aanvaller, status=null, prijs=10, gamesTilStatusDisapears=0, aanvallend=10, verdedigend=10, uithoudingsvermogen=10}], name=Team, opstelling=[PosPlayer{speler=Speler{naam=A, nummer=14, type=Aanvaller, status=null, prijs=10, gamesTilStatusDisapears=0, aanvallend=10, verdedigend=10, uithoudingsvermogen=10}, posspelertype=Aanvaller, reduceFactor=0.8}], budget=50000}, score_a=0, score_b=0, points_a=0, points_b=0, played=false}], teams=[Team{spelers=[Speler{naam=A, nummer=14, type=Aanvaller, status=null, prijs=10, gamesTilStatusDisapears=0, aanvallend=10, verdedigend=10, uithoudingsvermogen=10}], name=Team, opstelling=[PosPlayer{speler=Speler{naam=A, nummer=14, type=Aanvaller, status=null, prijs=10, gamesTilStatusDisapears=0, aanvallend=10, verdedigend=10, uithoudingsvermogen=10}, posspelertype=Aanvaller, reduceFactor=0.8}], budget=50000}, Team{spelers=[Speler{naam=A, nummer=14, type=Aanvaller, status=null, prijs=10, gamesTilStatusDisapears=0, aanvallend=10, verdedigend=10, uithoudingsvermogen=10}], name=Team, opstelling=[PosPlayer{speler=Speler{naam=A, nummer=14, type=Aanvaller, status=null, prijs=10, gamesTilStatusDisapears=0, aanvallend=10, verdedigend=10, uithoudingsvermogen=10}, posspelertype=Aanvaller, reduceFactor=0.8}], budget=50000}], userindex=5}", c1.toString());
+        assertEquals("Competitie{wedstrijden=[Wedstrijd{team_a=Team, team_b=Team, score_a=0, score_b=0, points_a=0, points_b=0, played=true}], teams=[Team{spelers=[Speler{naam=A, nummer=14, type=Aanvaller, status=null, prijs=10, gamesTilStatusDisapears=0, aanvallend=10, verdedigend=10, uithoudingsvermogen=10}], name=Team, opstelling=[PosPlayer{speler=Speler{naam=A, nummer=14, type=Aanvaller, status=null, prijs=10, gamesTilStatusDisapears=0, aanvallend=10, verdedigend=10, uithoudingsvermogen=10}, posspelertype=Aanvaller, reduceFactor=0.8}], budget=50000}, Team{spelers=[Speler{naam=A, nummer=14, type=Aanvaller, status=null, prijs=10, gamesTilStatusDisapears=0, aanvallend=10, verdedigend=10, uithoudingsvermogen=10}], name=Team, opstelling=[PosPlayer{speler=Speler{naam=A, nummer=14, type=Aanvaller, status=null, prijs=10, gamesTilStatusDisapears=0, aanvallend=10, verdedigend=10, uithoudingsvermogen=10}, posspelertype=Aanvaller, reduceFactor=0.8}], budget=50000}], userindex=5}", c1.toString());
     }
     
     @Test
@@ -624,6 +593,10 @@ public class CompetitieTest {
         Wedstrijd w2 = new Wedstrijd(t1, t2);
         Wedstrijd w3 = new Wedstrijd(t1, t2);
         Wedstrijd w4 = new Wedstrijd(t1, t2);
+        w1.setPlayed(true);
+        w2.setPlayed(true);
+        w3.setPlayed(true);
+        w4.setPlayed(true);
         
         w1.setPoints_a(1);
         w1.setPoints_b(1);
@@ -723,15 +696,19 @@ public class CompetitieTest {
         Wedstrijd w3 = new Wedstrijd(t1, t2);
         Wedstrijd w4 = new Wedstrijd(t1, t2);
         
+        w1.setPlayed(true);
         w1.setPoints_a(1);
         w1.setPoints_b(1);
         
+        w2.setPlayed(true);
         w2.setPoints_a(3);
         w2.setPoints_b(0);
         
+        w3.setPlayed(true);
         w3.setPoints_a(0);
         w3.setPoints_b(3);
         
+        w4.setPlayed(true);
         w4.setPoints_a(1);
         w4.setPoints_b(1);
         
@@ -771,6 +748,11 @@ public class CompetitieTest {
         Wedstrijd w2 = new Wedstrijd(t1, t2);
         Wedstrijd w3 = new Wedstrijd(t1, t2);
         Wedstrijd w4 = new Wedstrijd(t1, t2);
+        
+        w1.setPlayed(true);
+        w2.setPlayed(true);
+        w3.setPlayed(true);
+        w4.setPlayed(true);
         
         w1.setPoints_a(1);
         w1.setPoints_b(1);
