@@ -1,5 +1,5 @@
 #BorderPane{
-    -fx-background-image: url("background6.jpg");
+    -fx-background-image: url("background5.jpg");
     -fx-background-repeat: stretch;   
     -fx-background-position: center center;
     //-fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); Dit zie je toch niet.
@@ -30,17 +30,12 @@
     -fx-background-color: #3a3a3a;
 }
 
-#resultatenTable{
-    -fx-opacity:.85;
-    -fx-background-color: #1d1d1d;
+#leftPanel, #resultatenTable, #teamTable, #spelerTable{
+    -fx-background-color: whitesmoke;
+    -fx-opacity:.95;
     -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
     -fx-font-size: 12pt;
     -fx-text-fill: #d8d8d8;
-}
-
-#leftPanel{
-    -fx-background-color: whitesmoke;
-    -fx-opacity:.85;
 }
 
 #title{
@@ -49,5 +44,5 @@
     //-fx-effect: dropshadow(gaussian, black, 30, 0.5, 0, 0); 
     -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
     -fx-background-color:#004680;
-    -fx-opacity:.85;
+    -fx-opacity:.90;
 }
