@@ -57,9 +57,8 @@ public class bouwXML {
         while(infile.hasNext())
             te += infile.nextLine()+"\n";
         Competitie c = (Competitie) getStream().fromXML(te);
-        Competitie t =  new Competitie(c.getWedstrijden(), c.getTeams());
-        c = null;
-        return t;
+        Competitie.setCompetitie(c);
+        return c;
     }
     
     
