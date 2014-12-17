@@ -143,7 +143,11 @@ public class mainhubController implements Initializable {
     @FXML
     private void handlePlay(){
         try{
-        Competitie.getCompetitie().playPlayerGame();
+            Competitie.getCompetitie().playPlayerGame();
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(MainApp.class.getResource("view/currentgameframe.fxml"));
+            paneAdd(loader); 
+            System.out.println("kkk");
         }catch(Exception e){e.printStackTrace();}
     }
     

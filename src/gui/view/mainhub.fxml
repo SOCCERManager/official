@@ -27,7 +27,7 @@
                         <Font size="55.0" />
                      </font>
                   </Label>
-                  <Button fx:id="handlePlay" mnemonicParsing="false" prefHeight="31.0" prefWidth="506.0" text="Speel volgende ronde" />
+                  <Button mnemonicParsing="false" onAction="#handlePlay" prefHeight="31.0" prefWidth="506.0" text="Speel volgende ronde" />
                   <Button mnemonicParsing="false" onAction="#handleCompetitie" prefHeight="31.0" prefWidth="432.0" text="Bekijk Competitie">
                      <VBox.margin>
                         <Insets bottom="10.0" top="10.0" />
