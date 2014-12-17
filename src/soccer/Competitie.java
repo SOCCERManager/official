@@ -207,4 +207,35 @@ public class Competitie {
         Competitie.c = c;
     }
 
+    public void playGamesTilPlayerGameIsDue() {
+        if(this.wedstrijden == null || this.wedstrijden.isEmpty())
+            this.bouwWedstrijden();
+        
+        for(Wedstrijd w:this.wedstrijden) {
+            if(w.isPlayed()) continue;
+            if(w.teamPlayed(this.teams.get(this.userindex))) break;
+            w.playGame();
+        }
+    }
+    
+    public boolean gamesLeftToPlay() {
+        return (this.wedstrijden.stream().filter(v -> !v.isPlayed()).count()>0);
+    }
+    
+    public void playPlayerGame() throws Exception {
+        if(this.wedstrijden == null || this.wedstrijden.isEmpty())
+            this.bouwWedstrijden();
+        
+        this.playGamesTilPlayerGameIsDue();
+        for(Wedstrijd w: this.wedstrijden) {
+            if(w.isPlayed()) continue;
+            if(w.teamPlayed(this.teams.get(this.userindex))) {
+                w.playGame();
+                break;
+            } else {
+                throw new Exception("EVERYTHING DIED!!!!");
+            }
+        }
+        this.playGamesTilPlayerGameIsDue();
+    }
 }
