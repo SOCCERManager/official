@@ -35,4 +35,12 @@ public class SpelerStatusTest {
         s1 = null;
         s2 = null;
     }
+    
+    @Test
+    public void valueOfTest() {
+        assertEquals(SpelerStatus.Normaal, SpelerStatus.valueOf("Normaal"));
+        assertEquals(SpelerStatus.Gele_kaart, SpelerStatus.valueOf("Gele_kaart"));
+        assertEquals(SpelerStatus.Roode_kaart, SpelerStatus.valueOf("Roode_kaart"));
+        assertEquals(SpelerStatus.Gebleseerd, SpelerStatus.valueOf("Gebleseerd"));
+    }
 }
