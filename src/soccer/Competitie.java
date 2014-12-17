@@ -133,15 +133,15 @@ public class Competitie {
     public int getScoreOfTeam(Team t) {
         return this.wedstrijden.stream().mapToInt(v -> v.scoreOfTeam(t)).sum();
     }
-    
+
     public int getWinsOfTeam(Team t) {
         return (int) this.wedstrijden.stream().filter(v -> v.teamWon(t)).count();
     }
-    
+
     public int getDrawsOfTeam(Team t) {
         return (int) this.wedstrijden.stream().filter(v -> v.teamDrawed(t)).count();
     }
-    
+
     public int getLossesOfTeam(Team t) {
         return (int) this.wedstrijden.stream().filter(v -> v.teamLost(t)).count();
     }
@@ -153,11 +153,10 @@ public class Competitie {
     public int getGoalsofTeam(Team t) {
         return (int) this.wedstrijden.stream().mapToInt(v -> v.teamGoal(t)).sum();
     }
+
     public int getCounterGoalsofTeam(Team t) {
         return (int) this.wedstrijden.stream().mapToInt(v -> v.teamCounterGoal(t)).sum();
     }
-    
-    
 
     /**
      * Creërt alle wedstrijden voor een competite uit een ArrayList van Teams.
@@ -176,31 +175,36 @@ public class Competitie {
         for (int p = (teams.size() / 2); p < teams.size(); p++) {
             b.add(teams.get(p));
         }
-        
+
         Team tmp;
 
         for (int x = 0; x < teams.size() - 1; x++) {
             for (int j = 0; j < a.size(); j++) {
                 wedstrijden.add(new Wedstrijd(a.get(j), b.get(j)));
             }
-            
+
             // up each element in a
             Collections.rotate(a, -1);
-            
+
             // down each element in b
             Collections.rotate(b, 1);
-            
+
             // swap first and last in a
-            Collections.swap(a, 0, a.size()-1);
-            
+            Collections.swap(a, 0, a.size() - 1);
+
             // switch last in a with first in b
             tmp = b.get(0);
-            b.set(0, a.get(a.size()-1));
-            a.set(a.size()-1, tmp);
+            b.set(0, a.get(a.size() - 1));
+            a.set(a.size() - 1, tmp);
         }
     }
-    
+
     public static Competitie getCompetitie() {
         return Competitie.c;
     }
+
+    static void setCompetitie(Competitie c) {
+        Competitie.c = c;
+    }
+
 }

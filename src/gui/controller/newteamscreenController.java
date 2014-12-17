@@ -6,6 +6,7 @@
 package gui.controller;
 
 import gui.MainApp;
+import java.io.File;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
@@ -22,6 +23,8 @@ import javafx.scene.control.TitledPane;
 import soccer.Competitie;
 import soccer.Speler;
 import soccer.Team;
+import soccer.bouwXML;
+import static soccer.bouwXML.bouwXML;
 
 /**
  * FXML Controller class
@@ -106,7 +109,9 @@ public class newteamscreenController implements Initializable {
     private void handleSelect(){
         Competitie.getCompetitie().setUserindex(
         Competitie.getCompetitie().getTeams().indexOf(teamTable.getSelectionModel().getSelectedItem()));
-        
+        try{
+        bouwXML.bouwXML(Competitie.getCompetitie(), new File("src/saves/"+loadscreenController.savegame+".xml"));
+        }catch(Exception e){e.printStackTrace();};
         mainApp.showMainHubScreen();
     }
 }
