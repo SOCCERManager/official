@@ -25,6 +25,7 @@ import soccer.Competitie;
 import soccer.PosPlayer;
 import soccer.Speler;
 import soccer.Team;
+import soccer.Wedstrijd;
 
 /**
  * FXML Controller class
@@ -72,6 +73,8 @@ public class mainhubController implements Initializable {
     private AnchorPane hubBanner;
     @FXML
     private AnchorPane viewPane;
+    
+    private Wedstrijd currentgame;
     
     private MainApp mainApp;
     /**
@@ -141,9 +144,14 @@ public class mainhubController implements Initializable {
            paneAdd(loader); 
     }
     @FXML
+    private void handleHistory(){
+        
+    }
+    @FXML
     private void handlePlay(){
         try{
-            Competitie.getCompetitie().playPlayerGame();
+            this.currentgame = Competitie.getCompetitie().playPlayerGame();
+            currentgameframeController.currentgame = currentgame;
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(MainApp.class.getResource("view/currentgameframe.fxml"));
             paneAdd(loader); 
@@ -173,5 +181,8 @@ public class mainhubController implements Initializable {
     }
     private void showOpstellingDetails(PosPlayer speler){
         
+    }
+    public Wedstrijd getCurrentGame(){
+        return this.currentgame;
     }
 }

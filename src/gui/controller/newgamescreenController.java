@@ -45,7 +45,6 @@ public class newgamescreenController {
     private void handleStartButton(){
         if(isInputValid()){
         String savegame = nameField.getText();
-        System.out.println(savegame);
         try{
             
         Competitie c = soccer.bouwXML.leesXML(new File("src/competitie.xml"));
