@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -7,20 +8,27 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" fx:id="marketPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label alignment="CENTER" layoutX="283.0" layoutY="122.0" text="GODVERDOMME YOURI" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <font>
-            <Font size="96.0" />
-         </font>
-      </Label>
-      <TableView prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane fx:id="marketPane" layoutX="10.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="marketLabel" alignment="TOP_LEFT" text="Market" AnchorPane.leftAnchor="10.0">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" contentDisplay="RIGHT" layoutX="463.0" layoutY="5.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="129.0" text="Koop" textAlignment="CENTER" AnchorPane.rightAnchor="10.0" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="marketTable" layoutY="53.0" prefHeight="347.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="Speler naam" />
-          <TableColumn prefWidth="75.0" text="Team" />
-            <TableColumn prefWidth="75.0" text="Stats" />
-            <TableColumn prefWidth="75.0" text="Prijs" />
-            <TableColumn prefWidth="75.0" text="Koop" />
+          <TableColumn fx:id="naamColumn" prefWidth="75.0" text="Speler naam" />
+          <TableColumn fx:id="teamColumn" prefWidth="75.0" text="Team" />
+            <TableColumn fx:id="typeColumn" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="aanvallendColumn" prefWidth="75.0" text="Aanvallend" />
+            <TableColumn fx:id="verdedigendCollumn" prefWidth="75.0" text="Verdedigend" />
+            <TableColumn fx:id="staminaColumn" prefWidth="75.0" text="Uithoudingsvermogen" />
+            <TableColumn fx:id="prijsColumn" prefWidth="75.0" text="Prijs" />
         </columns>
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
