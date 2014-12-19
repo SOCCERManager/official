@@ -30,7 +30,7 @@
     -fx-background-color: #3a3a3a;
 }
 
-#leftPanel, #resultatenTable, #teamTable, #spelerTable{
+#leftPanel, #resultatenTable, #teamTable, #spelerTable, #marketPane{
     -fx-background-color: whitesmoke;
     -fx-opacity:.95;
     -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
