@@ -125,7 +125,7 @@ public class SpelerTest {
     public void testDefineMarketValue(){
         s1.defineMarketValue();
         System.out.println("prijs: " + s1.getPrijs());
-        assertTrue(s1.getPrijs() == 699258);
+        assertTrue(s1.defineMarketValue()== 832450);
     }
     
     @Test
