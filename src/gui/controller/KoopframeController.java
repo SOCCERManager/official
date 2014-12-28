@@ -72,10 +72,12 @@ public class KoopframeController implements Initializable {
         HashSet tempList = new HashSet();
         //ArrayList<Speler> spelerList = new ArrayList<Speler>();
         for (int i = 0; i < rnd.nextInt(teamList.size()); i++) {
-            if(teamList.get(i).equals(userteam) == false) {
-                System.out.println("--Picking from team: " + teamList.get(i).getName());
-                for (int j = 0; j < rnd.nextInt(teamList.get(i).getSpelers().size()); j++) {
-                    tempList.add(teamList.get(i).getSpelers().get(rnd.nextInt(teamList.get(i).getSpelers().size())));
+            int randomTeamIndex = rnd.nextInt(teamList.size());
+            if(teamList.get(randomTeamIndex).equals(userteam) == false) {
+                System.out.println("--Picking from team: " + teamList.get(randomTeamIndex).getName());
+                for (int j = 0; j < rnd.nextInt(teamList.get(randomTeamIndex).getSpelers().size()); j++) {
+                    int randomSpelerIndex = rnd.nextInt(teamList.get(randomTeamIndex).getSpelers().size());
+                    tempList.add(teamList.get(randomTeamIndex).getSpelers().get(randomSpelerIndex));
                 }
             }
         }
