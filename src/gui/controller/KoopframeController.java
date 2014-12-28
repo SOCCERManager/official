@@ -5,6 +5,8 @@
  */
 package gui.controller;
 
+import gui.MainApp;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -15,6 +17,7 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
@@ -32,6 +35,8 @@ import soccer.Team;
 public class KoopframeController implements Initializable {
     @FXML
     private AnchorPane marketPane;
+    @FXML
+    private AnchorPane mainMarketPane;
     @FXML
     private Label marketLabel;
     @FXML
@@ -52,7 +57,11 @@ public class KoopframeController implements Initializable {
     private TableColumn<Speler, Integer> staminaColumn;
     @FXML
     private TableColumn<Speler, Integer> prijsColumn;
-
+    @FXML
+    private Team userteam = Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()); 
+    
+    private MainApp mainApp = new MainApp();
+    
     /**
      * Initializes the controller class.
      */
@@ -88,6 +97,16 @@ public class KoopframeController implements Initializable {
             cellData -> new SimpleIntegerProperty(cellData.getValue().defineMarketValue()).asObject());
         
         marketTable.setItems(spelerList);
-    }    
+        prijsColumn.setSortType(TableColumn.SortType.DESCENDING);
+        marketTable.getSortOrder().add(prijsColumn);
+        
+    }
     
+    @FXML
+    private void handleKoopSpeler() {
+       userteam.addSpeler(marketTable.getSelectionModel().getSelectedItem());
+       //mainApp.showMainHubScreen();
+       this.mainMarketPane.setVisible(false);
+    }
+
 }
