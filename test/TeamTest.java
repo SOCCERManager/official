@@ -729,4 +729,11 @@ public class TeamTest {
         t1.generateOpstelling();
         assertEquals(opstelling, t1.getOpstelling());
     }
+    
+    @Test
+    public void addSpelerTest() {
+         Speler newSpeler = new Speler("Jeroen de Nieuw", 3, SpelerType.Verdediger, 20000, 10, 20, 30);
+        t1.addSpeler(newSpeler);
+        assertEquals(t1.getSpelers().size(), 12);
+    }
 }
