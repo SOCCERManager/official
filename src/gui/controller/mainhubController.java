@@ -145,7 +145,6 @@ public class mainhubController implements Initializable {
     }
     @FXML
     private void handleHistory(){
-        
     }
     @FXML
     private void handlePlay(){
