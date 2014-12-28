@@ -53,9 +53,6 @@ public class currentgameframeController implements Initializable {
         goal2Label.setText(Integer.toString(currentgame.getScore_b()));
         punten1Label.setText(Integer.toString(currentgame.getPoints_a()));
         punten2Label.setText(Integer.toString(currentgame.getPoints_b()));
-        
-        
-        
     }    
     
 }
