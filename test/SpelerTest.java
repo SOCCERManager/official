@@ -23,7 +23,7 @@ public class SpelerTest {
     
     @Before
     public void setUp() {
-        s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 71);
     }
     
     
@@ -94,7 +94,7 @@ public class SpelerTest {
     
     @Test
     public void getUithoudingsvermogenTest(){
-        assertEquals(22, s1.getUithoudingsvermogen());
+        assertEquals(71, s1.getUithoudingsvermogen());
     }
     
     @Test
@@ -122,15 +122,14 @@ public class SpelerTest {
     }
     
     @Test
-    public void testDefineMarketValue(){
+    public void defineMarketValueAanvTest(){
         s1.defineMarketValue();
-        System.out.println("prijs: " + s1.getPrijs());
-        assertTrue(s1.defineMarketValue()== 832450);
+        assertTrue(s1.defineMarketValue()== 1060300);
     }
     
     @Test
     public void equalsGelijkTest() {
-        Speler s2 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
+        Speler s2 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 71);
         assertEquals(true, s1.equals(s2));
     }
     
@@ -282,5 +281,33 @@ public class SpelerTest {
         s1.setRnd(new Random(91));
         s1.playGame();
         assertEquals(SpelerStatus.Roode_kaart, s1.getStatus());
+    }
+    
+    @Test
+    public void defineMarketValueVerdTest() {
+        s1.setType(SpelerType.Verdediger);
+        assertTrue(s1.defineMarketValue()==1060300);
+    }
+    
+    @Test
+    public void defineMarketValueMidTest() {
+        s1.setType(SpelerType.Middenvelder);
+        assertTrue(s1.defineMarketValue()==1060300);
+    }
+    
+    @Test
+    public void randomWithRangeNotNullTest() {
+        Random r1 = new Random((long) 5);
+        s1.setRnd(r1);
+        s1.playGame();
+        assertNotNull(s1.getRnd());
+    }
+    
+    @Test
+    public void randomWithRangeNullTest() {
+        Random r1 = null;
+        s1.setRnd(r1);
+        s1.playGame();
+        assertNotNull(s1.getRnd());
     }
 }
