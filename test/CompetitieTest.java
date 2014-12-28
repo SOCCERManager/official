@@ -258,9 +258,12 @@ public class CompetitieTest {
     @Test
     public void bouwWedstrijdenTest() {
         c1.bouwWedstrijden();
-        c1.getWedstrijden().get(0).setPlayed(true);
+        for(int i = 0; i < c1.getWedstrijden().size(); i++) {
+            c1.getWedstrijden().get(i).setPlayed(true);
+        }
         System.out.println(c1.getWedstrijden());
         assertEquals("Naam", c1.getWedstrijden().get(0).toString());
+        
     }
     
     @Test
