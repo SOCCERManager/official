@@ -106,6 +106,12 @@ public class mainhubController implements Initializable {
         opstelTable.getSelectionModel().selectedItemProperty().addListener(
                 (observable, oldValue, newValue) -> showOpstellingDetails(newValue));
         // TODO
+        
+        opstelTable.setItems(opstelData);
+        teamTable.setItems(teamData);
+        
+        zijnaamColumn.setSortType(TableColumn.SortType.ASCENDING);
+        teamTable.getSortOrder().add(zijnaamColumn);
         gameLabel.setText(loadscreenController.savegame);
     }    
     
@@ -165,15 +171,20 @@ public class mainhubController implements Initializable {
     }
     
     @FXML
+    private void handleRefresh() {
+        mainApp.showMainHubScreen();
+    }
+    
+    @FXML
     private void handleExit(){
         System.exit(0);
     }
     
     public void setMainApp(MainApp mainApp) {
         this.mainApp = mainApp;
-        
-        opstelTable.setItems(opstelData);
-        teamTable.setItems(teamData);
+//        NAAR BOVEN GEPLAATST IN INITILIZE VOOR SORTEREN.        
+//        opstelTable.setItems(opstelData);
+//        teamTable.setItems(teamData);
     }
     private void showSpelerDetails(Speler speler){
         
