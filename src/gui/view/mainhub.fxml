@@ -48,6 +48,11 @@
                      </VBox.margin>
                   </HBox>
                   <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleKoop" text="Bekijk Markt" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleVeranderOpstelling" text="Verander Opstelling">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Button>
                   <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
                      <children>
                         <HBox>
@@ -57,13 +62,10 @@
                                     <Font size="32.0" />
                                  </font>
                               </Label>
-                              <ImageView blendMode="MULTIPLY" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#handleRefresh" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="refreshButton1" blendMode="MULTIPLY" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#handleRefresh" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@refresh.png" />
                                  </image>
-                                 <HBox.margin>
-                                    <Insets />
-                                 </HBox.margin>
                               </ImageView>
                            </children>
                         </HBox>
@@ -83,11 +85,23 @@
                   </VBox>
                   <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
                      <children>
-                        <Label alignment="CENTER" prefHeight="41.0" prefWidth="360.0" text="Opstelling">
-                           <font>
-                              <Font size="32.0" />
-                           </font>
-                        </Label>
+                        <HBox>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="41.0" prefWidth="360.0" text="Opstelling">
+                                 <font>
+                                    <Font size="32.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="refreshButton" blendMode="MULTIPLY" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#handleRefresh" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@refresh.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
                         <TableView fx:id="opstelTable" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
                           <columns>
                             <TableColumn fx:id="opstelrugColumn" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" text="#" />
