@@ -33,7 +33,7 @@
     -fx-background-color: whitesmoke;
     -fx-opacity:.95;
     -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
-    -fx-font-size: 12pt;
+    -fx-font-size: 11pt;
     -fx-text-fill: #d8d8d8;
 }
 
@@ -52,4 +52,23 @@
     -fx-background-color: transparent;
     -fx-background-insets: 0;
     -fx-shape: " ";
+}
+
+.messages{
+    -fx-background-color:black;
+    -fx-opacity:.90;
+    -fx-font-size:12pt;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.text-area .content{
+  -fx-background-color: black;
+}
+.text-area{
+    -fx-text-fill:white;
+}
+
+.closeButton{
+    -fx-background-color: #E35454;
+    -fx-opacity:.90;
 }
