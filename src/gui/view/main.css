@@ -14,7 +14,6 @@
 #mainButton2{
     
 }
-
 .button {
     -fx-padding: 5 22 5 22;   
     -fx-background-radius: 0;
@@ -30,7 +29,7 @@
     -fx-background-color: #3a3a3a;
 }
 
-#leftPanel, #resultatenTable, #teamTable, #spelerTable, #marketPane{
+#leftPanel, #resultatenTable, #teamTable, #spelerTable, #marketPane, #mainOpstellingPane, #titlePane, #teamTable, #opstellingTable{
     -fx-background-color: whitesmoke;
     -fx-opacity:.95;
     -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
@@ -46,4 +45,11 @@
     //-fx-background-color:#004680;
     -fx-background-color:black;
     -fx-opacity:.90;
+}
+
+.split-pane *.split-pane-divider {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-shape: " ";
 }
