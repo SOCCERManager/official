@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="mainOpstellingPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.veranderOpstellingController">
+   <children>
+      <AnchorPane fx:id="titlePane" layoutX="10.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="opstellingLabel" alignment="TOP_LEFT" text="Verander Opstelling" AnchorPane.leftAnchor="10.0">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Button fx:id="saveOpstellingButton" layoutX="487.0" layoutY="5.0" maxHeight="51.0" maxWidth="571.0" mnemonicParsing="false" onAction="#handleSaveOpstelling" prefHeight="42.0" prefWidth="126.0" text="Opslaan" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </Button>
+         </children>
+      </AnchorPane>
+      <SplitPane fx:id="splitPane" dividerPositions="0.4698996655518395, 0.5301003344481605" layoutY="53.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+         <items>
+            <TableView fx:id="teamTable" prefHeight="347.0" prefWidth="311.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <columns>
+                  <TableColumn fx:id="filteredTeamColumn" prefWidth="75.0" text="Het Team" />
+                  <TableColumn fx:id="filteredPositieColumn" prefWidth="75.0" text="Positie" />
+               </columns>
+            </TableView>
+            <VBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="104.0">
+               <children>
+                  <Button fx:id="opstellingRemoveButton" maxHeight="40.0" maxWidth="571.0" mnemonicParsing="false" onAction="#handleRemoveFromOpstelling" prefHeight="2.0" prefWidth="571.0" text="&lt;">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="opstellingAddButton" maxHeight="40.0" maxWidth="571.0" mnemonicParsing="false" onAction="#handleAddToOpstelling" prefHeight="23.0" prefWidth="571.0" text="&gt;" />
+               </children>
+            </VBox>
+            <TableView fx:id="opstellingTable" prefHeight="347.0" prefWidth="311.0">
+              <columns>
+                <TableColumn fx:id="opstellingSpelersColumn" prefWidth="75.0" text="De Opstelling" />
+                  <TableColumn fx:id="opstellingPositieColumn" prefWidth="75.0" text="Positie" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
