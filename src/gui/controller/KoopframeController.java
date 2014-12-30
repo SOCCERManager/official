@@ -40,8 +40,6 @@ public class KoopframeController implements Initializable {
     @FXML
     private Label marketLabel;
     @FXML
-    private ObservableList<Speler>spelerList = FXCollections.observableArrayList();
-    @FXML
     private TableView<Speler> marketTable;
     @FXML
     private TableColumn<Speler, String> naamColumn;
@@ -59,6 +57,7 @@ public class KoopframeController implements Initializable {
     private TableColumn<Speler, Integer> prijsColumn;
     @FXML
     private Team userteam = Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()); 
+    private HashSet tempList = new HashSet();
     
     private MainApp mainApp = new MainApp();
     
@@ -69,7 +68,7 @@ public class KoopframeController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         Random rnd = new Random();
         ArrayList<Team> teamList = Competitie.getCompetitie().getTeams();
-        HashSet tempList = new HashSet();
+
         //ArrayList<Speler> spelerList = new ArrayList<Speler>();
         for (int i = 0; i < rnd.nextInt(teamList.size()); i++) {
             int randomTeamIndex = rnd.nextInt(teamList.size());
@@ -81,6 +80,11 @@ public class KoopframeController implements Initializable {
                 }
             }
         }
+        drawTable();        
+    }
+    
+    private void drawTable(){
+        ObservableList<Speler>spelerList = FXCollections.observableArrayList();
         spelerList.addAll(tempList);
         
         for (int i=0; i<spelerList.size(); i++){
@@ -103,14 +107,19 @@ public class KoopframeController implements Initializable {
         marketTable.setItems(spelerList);
         prijsColumn.setSortType(TableColumn.SortType.DESCENDING);
         marketTable.getSortOrder().add(prijsColumn);
-        
     }
     
     @FXML
     private void handleKoopSpeler() {
        userteam.addSpeler(marketTable.getSelectionModel().getSelectedItem());
        //mainApp.showMainHubScreen();
-       this.mainMarketPane.setVisible(false);
+       tempList.remove(marketTable.getSelectionModel().getSelectedItem());
+       drawTable();
+    }
+    
+    @FXML
+    private void handleExit() {
+       this.mainMarketPane.setVisible(false); 
     }
 
 }
