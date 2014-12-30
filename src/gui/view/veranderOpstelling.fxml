@@ -56,5 +56,25 @@
             </TableView>
          </items>
       </SplitPane>
+      <VBox fx:id="helpMessage" prefHeight="138.0" prefWidth="600.0" styleClass="messages" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="27.0" prefWidth="600.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleCloseHelpMessage" styleClass="closeButton" text="x" AnchorPane.rightAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" text="De opstelling kan hier worden veranderd. Het rechter tabel is de huidige opstelling, het linker tabel bevat de overige spelers van het team.&#10;Het linkerpijl zet de speler uit de opstelling en plaatst deze terug in het team.&#10;Het rechterpijl plaatst de speler in de opstelling.&#10;Als de opstelling uit 11 spelers bestaat, kan deze opgeslagen worden.&#10;" wrapText="true" />
+         </children>
+      </VBox>
+      <VBox fx:id="alert1" layoutX="10.0" layoutY="10.0" prefHeight="138.0" prefWidth="600.0" styleClass="messages" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="27.0" prefWidth="600.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleCloseAlert1" styleClass="closeButton" text="x" AnchorPane.rightAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <TextArea fx:id="alert1Text" editable="false" prefHeight="200.0" prefWidth="200.0" text="ALERT1&#10;" wrapText="true" />
+         </children>
+      </VBox>
    </children>
 </AnchorPane>
