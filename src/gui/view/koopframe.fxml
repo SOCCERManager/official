@@ -17,7 +17,12 @@
                   <Font size="35.0" />
                </font>
             </Label>
-            <Button fx:id="koopButton" alignment="CENTER" contentDisplay="RIGHT" layoutX="463.0" layoutY="5.0" mnemonicParsing="false" onAction="#handleKoopSpeler" prefHeight="44.0" prefWidth="129.0" text="Koop" textAlignment="CENTER" AnchorPane.rightAnchor="10.0" />
+            <ToolBar layoutX="424.0" layoutY="-1.0" AnchorPane.rightAnchor="5.0">
+               <items>
+                  <Button fx:id="koopButton" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleKoopSpeler" prefHeight="44.0" prefWidth="162.0" text="Koop" textAlignment="CENTER" AnchorPane.rightAnchor="55.0" />
+                  <Button fx:id="exitBuyButton" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleExit" prefHeight="44.0" prefWidth="44.0" text="X" textAlignment="CENTER" />
+               </items>
+            </ToolBar>
          </children>
       </AnchorPane>
       <TableView fx:id="marketTable" layoutY="53.0" prefHeight="347.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
