@@ -13,11 +13,14 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.SplitPane;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.VBox;
 import soccer.Competitie;
 import soccer.PosPlayer;
 import soccer.Speler;
@@ -49,6 +52,17 @@ public class veranderOpstellingController implements Initializable {
     private AnchorPane titlePane;
     @FXML
     private SplitPane splitPane;
+    @FXML
+    private VBox helpMessage;
+    @FXML
+    private VBox alert1;
+    @FXML
+    private TextArea alert1Text;
+    @FXML
+    private Button opstellingRemoveButton;
+    @FXML
+    private Button opstellingAddButton;
+
     
     private Team userteam = Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()); 
     private ArrayList<Speler> teamSpelers = userteam.getSpelers();
@@ -59,6 +73,8 @@ public class veranderOpstellingController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        opstellingRemoveButton.setDisable(false);
+        opstellingAddButton.setDisable(true);
         drawOpstelling();
         drawTeam();
     }    
@@ -108,6 +124,10 @@ public class veranderOpstellingController implements Initializable {
         for(int i=0; i<opstelling.size();i++){
             System.out.println(opstelling.get(i).getNaam());
         }
+        if(opstelling.size()==0){
+            opstellingRemoveButton.setDisable(true);
+        }
+        opstellingAddButton.setDisable(false);
         drawOpstelling();
         drawTeam();
     }
@@ -116,7 +136,11 @@ public class veranderOpstellingController implements Initializable {
     private void handleAddToOpstelling() {
         if(opstelling.size()<11){
             opstelling.add(teamTable.getSelectionModel().getSelectedItem());
+            if(opstelling.size()==11){
+                opstellingAddButton.setDisable(true);
+            }
         }
+        opstellingRemoveButton.setDisable(false);
         drawOpstelling();
         drawTeam();
     }
@@ -125,11 +149,25 @@ public class veranderOpstellingController implements Initializable {
     private void handleSaveOpstelling() {
         if(opstelling.size() == 11){
             userteam.setOpstelling(opstelling);
+            mainOpstellingPane.setVisible(false);
+        }else{
+            alert1Text.setText("De opstelling bevat niet genoeg spelers! (" + Integer.toString(opstelling.size()) + "/11 spelers)");
+            alert1.setVisible(true);
         }
         System.out.println("Saved new opstelling");
         for(int i=0; i<userteam.getOpstelling().size();i++){
             System.out.println(userteam.getOpstelling().get(i).getNaam());
         }
-        mainOpstellingPane.setVisible(false);
     }
+    
+    @FXML
+    private void handleCloseHelpMessage(){
+        helpMessage.setVisible(false);
+    }
+    
+    @FXML
+    private void handleCloseAlert1() {
+        alert1.setVisible(false);
+    }
+
 }
