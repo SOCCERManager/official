@@ -133,11 +133,19 @@ public class mainhubController implements Initializable {
            paneAdd(loader);
            
     }
+    
+    @FXML
+    private void handleVeranderOpstelling() throws IOException{
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(MainApp.class.getResource("view/veranderOpstelling.fxml"));
+        paneAdd(loader);
+                
+    }
     @FXML
     private void handleVerkoop() throws IOException{
         FXMLLoader loader = new FXMLLoader();
-           loader.setLocation(MainApp.class.getResource("view/verkoopframe.fxml"));
-           paneAdd(loader);
+        loader.setLocation(MainApp.class.getResource("view/verkoopframe.fxml"));
+        paneAdd(loader);
     }
     @FXML
     private void handleOpstelling(){
@@ -146,8 +154,8 @@ public class mainhubController implements Initializable {
     @FXML
     private void handleCompetitie() throws IOException{
         FXMLLoader loader = new FXMLLoader();
-           loader.setLocation(MainApp.class.getResource("view/competitieframe.fxml"));
-           paneAdd(loader); 
+        loader.setLocation(MainApp.class.getResource("view/competitieframe.fxml"));
+        paneAdd(loader); 
     }
     @FXML
     private void handleHistory(){
