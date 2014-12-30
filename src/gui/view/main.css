@@ -29,11 +29,11 @@
     -fx-background-color: #3a3a3a;
 }
 
-#leftPanel, #resultatenTable, #teamTable, #spelerTable, #marketPane, #mainOpstellingPane, #titlePane, #teamTable, #opstellingTable{
+#leftPanel, #resultatenTable, #teamTable, #spelerTable, #marketPane, #mainOpstellingPane, #marketTable, #titlePane, #teamTable, #opstellingTable{
     -fx-background-color: whitesmoke;
     -fx-opacity:.95;
     -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
-    -fx-font-size: 11pt;
+    -fx-font-size: 10pt;
     -fx-text-fill: #d8d8d8;
 }
 
