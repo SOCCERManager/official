@@ -154,13 +154,12 @@ public class veranderOpstellingController implements Initializable {
     @FXML
     private void handleRemoveFromOpstelling() {
         opstelling.remove(opstellingTable.getSelectionModel().getSelectedItem());
-        for(int i=0; i<opstelling.size();i++){
-            System.out.println(opstelling.get(i).getNaam());
-        }
         if(opstelling.size()==0){
             opstellingRemoveButton.setDisable(true);
         }
-        opstellingAddButton.setDisable(false);
+        if(opstelling.size()<11){
+            opstellingAddButton.setDisable(false);
+        }
         drawOpstelling();
         drawTeam();
     }
