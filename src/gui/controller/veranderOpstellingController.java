@@ -8,6 +8,7 @@ package gui.controller;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
+import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -43,11 +44,27 @@ public class veranderOpstellingController implements Initializable {
     @FXML
     private TableColumn<PosPlayer, String> filteredPositieColumn;
     @FXML
+    private TableColumn<PosPlayer, Integer> filteredAanvalColumn;
+    @FXML
+    private TableColumn<PosPlayer, Integer> filteredStaminaColumn;
+    @FXML
+    private TableColumn<PosPlayer, Integer> filteredVerdedigingColumn;
+    @FXML
+    private TableColumn<PosPlayer, String> filteredStatusColumn;
+    @FXML
     private TableView<PosPlayer> opstellingTable;
     @FXML
     private TableColumn<PosPlayer, String> opstellingSpelersColumn;
     @FXML
     private TableColumn<PosPlayer, String> opstellingPositieColumn;
+    @FXML
+    private TableColumn<PosPlayer, Integer> opstellingAanvalColumn;
+    @FXML
+    private TableColumn<PosPlayer, Integer> opstellingStaminaColumn;
+    @FXML
+    private TableColumn<PosPlayer, Integer> opstellingVerdedigingColumn;
+    @FXML
+    private TableColumn<PosPlayer, String> opstellingStatusColumn;
     @FXML
     private AnchorPane titlePane;
     @FXML
@@ -99,6 +116,14 @@ public class veranderOpstellingController implements Initializable {
             cellData -> new SimpleStringProperty(cellData.getValue().getNaam()));
         filteredPositieColumn.setCellValueFactory(
             cellData -> new SimpleStringProperty(""+cellData.getValue().getType()));
+        filteredAanvalColumn.setCellValueFactory(
+            cellData -> new SimpleIntegerProperty(cellData.getValue().getAanvallend()).asObject());
+        filteredStaminaColumn.setCellValueFactory(
+            cellData -> new SimpleIntegerProperty(cellData.getValue().getUithoudingsvermogen()).asObject());
+        filteredVerdedigingColumn.setCellValueFactory(
+            cellData -> new SimpleIntegerProperty(cellData.getValue().getVerdedigend()).asObject());
+        filteredStatusColumn.setCellValueFactory(
+            cellData -> new SimpleStringProperty(""+cellData.getValue().getStatus()));
         teamTable.setItems(filteredTeamList);
         filteredTeamColumn.setSortType(TableColumn.SortType.ASCENDING);
         teamTable.getSortOrder().add(filteredTeamColumn);
@@ -113,6 +138,14 @@ public class veranderOpstellingController implements Initializable {
             cellData -> new SimpleStringProperty(cellData.getValue().getNaam()));
         opstellingPositieColumn.setCellValueFactory(
             cellData -> new SimpleStringProperty(""+cellData.getValue().getType()));
+        opstellingAanvalColumn.setCellValueFactory(
+            cellData -> new SimpleIntegerProperty(cellData.getValue().getAanvallend()).asObject());
+        opstellingStaminaColumn.setCellValueFactory(
+            cellData -> new SimpleIntegerProperty(cellData.getValue().getUithoudingsvermogen()).asObject());
+        opstellingVerdedigingColumn.setCellValueFactory(
+            cellData -> new SimpleIntegerProperty(cellData.getValue().getVerdedigend()).asObject());
+        opstellingStatusColumn.setCellValueFactory(
+            cellData -> new SimpleStringProperty(""+cellData.getValue().getStatus()));
         opstellingTable.setItems(opstellingList);
         opstellingSpelersColumn.setSortType(TableColumn.SortType.ASCENDING);
         opstellingTable.getSortOrder().add(opstellingSpelersColumn);
