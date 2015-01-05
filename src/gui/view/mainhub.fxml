@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
@@ -28,18 +30,45 @@
                      </font>
                   </Label>
                   <Button mnemonicParsing="false" onAction="#handlePlay" prefHeight="31.0" prefWidth="506.0" text="Speel volgende ronde" />
-                  <Button mnemonicParsing="false" onAction="#handleCompetitie" prefHeight="31.0" prefWidth="432.0" text="Bekijk Competitie">
+                  <HBox>
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#handleHistory" prefWidth="182.0" text="Match History">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleCompetitie" prefHeight="31.0" prefWidth="185.0" text="Bekijk Competitie">
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
                      <VBox.margin>
                         <Insets bottom="10.0" top="10.0" />
-                     </VBox.margin></Button>
+                     </VBox.margin>
+                  </HBox>
                   <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleKoop" text="Bekijk Markt" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleVeranderOpstelling" text="Verander Opstelling">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Button>
                   <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
                      <children>
-                        <Label alignment="CENTER" prefHeight="43.0" prefWidth="360.0" text="Team">
-                           <font>
-                              <Font size="32.0" />
-                           </font>
-                        </Label>
+                        <HBox>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="47.0" prefWidth="364.0" text="Team">
+                                 <font>
+                                    <Font size="32.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="refreshButton1" blendMode="MULTIPLY" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#handleRefresh" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@refresh.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
                         <TableView fx:id="teamTable" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
                            <columnResizePolicy>
                               <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -56,11 +85,23 @@
                   </VBox>
                   <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
                      <children>
-                        <Label alignment="CENTER" prefHeight="41.0" prefWidth="360.0" text="Opstelling">
-                           <font>
-                              <Font size="32.0" />
-                           </font>
-                        </Label>
+                        <HBox>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="41.0" prefWidth="360.0" text="Opstelling">
+                                 <font>
+                                    <Font size="32.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="refreshButton" blendMode="MULTIPLY" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#handleRefresh" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@refresh.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
                         <TableView fx:id="opstelTable" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
                           <columns>
                             <TableColumn fx:id="opstelrugColumn" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" text="#" />

@@ -14,13 +14,12 @@
 #mainButton2{
     
 }
-
 .button {
     -fx-padding: 5 22 5 22;   
     -fx-background-radius: 0;
     -fx-background-color: #1d1d1d;
     -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
-    -fx-font-size: 20pt;
+    -fx-font-size: 16pt;
     -fx-text-fill: #d8d8d8;
     -fx-background-insets: 0 0 0 0, 0, 1, 2;
     //-fx-effect: innershadow(gaussian, white, 10, 0.1, 0, 0); 
@@ -30,11 +29,11 @@
     -fx-background-color: #3a3a3a;
 }
 
-#leftPanel, #resultatenTable, #teamTable, #spelerTable{
+#leftPanel, #resultatenTable, #teamTable, #spelerTable, #marketPane, #mainOpstellingPane, #marketTable, #titlePane, #teamTable, #opstellingTable{
     -fx-background-color: whitesmoke;
     -fx-opacity:.95;
     -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
-    -fx-font-size: 12pt;
+    -fx-font-size: 10pt;
     -fx-text-fill: #d8d8d8;
 }
 
@@ -43,6 +42,33 @@
     -fx-font-size:80pt;
     //-fx-effect: dropshadow(gaussian, black, 30, 0.5, 0, 0); 
     -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
-    -fx-background-color:#004680;
+    //-fx-background-color:#004680;
+    -fx-background-color:black;
+    -fx-opacity:.90;
+}
+
+.split-pane *.split-pane-divider {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-shape: " ";
+}
+
+.messages{
+    -fx-background-color:black;
+    -fx-opacity:.90;
+    -fx-font-size:12pt;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.text-area .content{
+  -fx-background-color: black;
+}
+.text-area{
+    -fx-text-fill:white;
+}
+
+.closeButton{
+    -fx-background-color: #E35454;
     -fx-opacity:.90;
 }
