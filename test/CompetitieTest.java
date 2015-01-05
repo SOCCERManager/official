@@ -45,10 +45,11 @@ public class CompetitieTest {
         ta.add(t4);
         
         Wedstrijd w1 = new Wedstrijd(t1,t2);
+        w1.setPlayed(true);
         ArrayList<Wedstrijd> w = new ArrayList<Wedstrijd>();
         w.add(w1);
         
-        Competitie c1 = new Competitie(w,ta); 
+        c1 = new Competitie(w,ta); 
     }
     
     @After
@@ -253,17 +254,6 @@ public class CompetitieTest {
         Competitie c1 = new Competitie(w,ta); 
         
         assertTrue(c1.getScoreOfTeam(t1) == 11);
-    }
-    
-    @Test
-    public void bouwWedstrijdenTest() {
-        c1.bouwWedstrijden();
-        for(int i = 0; i < c1.getWedstrijden().size(); i++) {
-            c1.getWedstrijden().get(i).setPlayed(true);
-        }
-        System.out.println(c1.getWedstrijden());
-        assertEquals("Naam", c1.getWedstrijden().get(0).toString());
-        
     }
     
     @Test
@@ -897,5 +887,155 @@ public class CompetitieTest {
     public void getEnSetCompetitie() {
         Competitie.setCompetitie(c1);
         assertEquals(c1, Competitie.getCompetitie());
+    }
+   
+    @Test
+    public void playGamesTillPlayerGameIsDueTest() {
+        ArrayList<Wedstrijd> wedlijst = new ArrayList<Wedstrijd>();
+        
+        ArrayList<Speler> sp5 = new ArrayList<Speler>();
+        ArrayList<PosPlayer> pp5 = new ArrayList<PosPlayer>();
+        Speler s5 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
+        PosPlayer p5 = new PosPlayer(s5, SpelerType.Aanvaller);
+        pp5.add(p5);
+        sp5.add(s5);
+        
+        ArrayList<Speler> sp6 = new ArrayList<Speler>();
+        ArrayList<PosPlayer> pp6 = new ArrayList<PosPlayer>();
+        Speler s6 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
+        PosPlayer p6 = new PosPlayer(s6, SpelerType.Aanvaller);
+        pp6.add(p6);
+        sp6.add(s6);
+        
+        Team t5 = new Team(sp5, "TeamE", pp5, null, 99999);
+        Team t6 = new Team(sp6, "TeamF", pp6, null, 584612);
+        
+        c1.getTeams().add(t5);
+        c1.getTeams().add(t6);
+        System.out.println(c1.getTeams().size());
+        
+        c1.setWedstrijden(wedlijst);
+        System.out.println(c1.getWedstrijden());
+        c1.playGamesTilPlayerGameIsDue();
+        assertNotNull(c1.getWedstrijden());
+    }
+    
+    @Test
+    public void playGamesTillPlayerGameIsDue_UI_FalseTest() {
+        c1.setUserindex(0);
+        c1.playGamesTilPlayerGameIsDue();
+        assertNotNull(c1.getWedstrijden());
+        assertTrue(c1.getWedstrijden().get(0).isPlayed());
+    }
+    /*
+    @Test
+    public void playGamesTillPlayerGameIsDue_UI_TrueTest() {
+        c1.setUserindex(1);
+        c1.getWedstrijden().get(0).setPlayed(false);
+        c1.playGamesTilPlayerGameIsDue();
+        assertTrue(c1.getWedstrijden().get(0).isPlayed());
+    }
+    */
+    
+    @Test
+    public void gamesLeftToPlayTrueTest() {
+        c1.bouwWedstrijden();
+        for (int i = 0; i < c1.getWedstrijden().size(); i++) {
+            c1.getWedstrijden().get(i).setPlayed(true);
+        }
+        c1.getWedstrijden().get(1).setPlayed(false);
+        c1.getWedstrijden().get(3).setPlayed(false);
+        c1.getWedstrijden().get(4).setPlayed(false);
+        c1.getWedstrijden().get(0).setPlayed(false);
+        
+        assertTrue(c1.gamesLeftToPlay());
+    }
+    
+    @Test
+    public void gamesLeftToPlayFalseTest() {
+        c1.bouwWedstrijden();
+        for (int i = 0; i < c1.getWedstrijden().size(); i++) {
+            c1.getWedstrijden().get(i).setPlayed(true);
+        }
+        assertFalse(c1.gamesLeftToPlay());
+    }
+    
+    @Test
+    public void playPlayerGameTest() throws Exception {
+        ArrayList<Wedstrijd> wedlijst = new ArrayList<Wedstrijd>();
+        
+        ArrayList<Speler> sp5 = new ArrayList<Speler>();
+        ArrayList<PosPlayer> pp5 = new ArrayList<PosPlayer>();
+        Speler s5 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
+        PosPlayer p5 = new PosPlayer(s5, SpelerType.Aanvaller);
+        pp5.add(p5);
+        sp5.add(s5);
+        
+        ArrayList<Speler> sp6 = new ArrayList<Speler>();
+        ArrayList<PosPlayer> pp6 = new ArrayList<PosPlayer>();
+        Speler s6 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
+        PosPlayer p6 = new PosPlayer(s6, SpelerType.Aanvaller);
+        pp6.add(p6);
+        sp6.add(s6);
+        
+        Team t5 = new Team(sp5, "TeamE", pp5, null, 99999);
+        Team t6 = new Team(sp6, "TeamF", pp6, null, 584612);
+        
+        c1.getTeams().add(t5);
+        c1.getTeams().add(t6);
+        c1.setWedstrijden(wedlijst);
+        c1.setUserindex(0);
+        c1.playPlayerGame();
+        
+        Speler s1 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
+        PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
+        ArrayList<Speler> sp1 = new ArrayList<Speler>();
+        ArrayList<PosPlayer> pp = new ArrayList<PosPlayer>();
+        pp.add(p1);
+        sp1.add(s1);
+        
+        Team t1 = new Team(sp1, "Team", pp, null, 50000);
+        Team t2 = new Team(sp1, "Team", pp, null, 50000);
+        
+        Wedstrijd w1 = new Wedstrijd(t1, t2);
+        w1.setScore_a(1);
+        w1.setScore_b(1);
+        w1.setPoints_a(1);
+        w1.setPoints_b(1);
+        w1.setPlayed(true);
+        assertEquals(c1.getWedstrijden().get(0), w1);
+    }
+    
+    @Test
+    public void playPlayerGameExceptionTest() throws Exception {
+        ArrayList<Wedstrijd> wedlijst = new ArrayList<Wedstrijd>();
+        
+        ArrayList<Speler> sp5 = new ArrayList<Speler>();
+        ArrayList<PosPlayer> pp5 = new ArrayList<PosPlayer>();
+        Speler s5 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
+        PosPlayer p5 = new PosPlayer(s5, SpelerType.Aanvaller);
+        pp5.add(p5);
+        sp5.add(s5);
+        
+        ArrayList<Speler> sp6 = new ArrayList<Speler>();
+        ArrayList<PosPlayer> pp6 = new ArrayList<PosPlayer>();
+        Speler s6 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
+        PosPlayer p6 = new PosPlayer(s6, SpelerType.Aanvaller);
+        pp6.add(p6);
+        sp6.add(s6);
+        
+        Team t5 = new Team(sp5, "TeamE", pp5, null, 99999);
+        Team t6 = new Team(sp6, "TeamF", pp6, null, 584612);
+        Team t99 = new Team(sp5, "QED", pp6, null, 52488);
+        
+        c1.getTeams().add(t5);
+        c1.getTeams().add(t6);
+        c1.setWedstrijden(wedlijst);
+        c1.bouwWedstrijden();
+        c1.getTeams().add(t99);
+        c1.setUserindex(6);
+        System.out.println("FINAL" + c1.getWedstrijden());
+        assertNull(c1.playPlayerGame());
+        
     }
 }
