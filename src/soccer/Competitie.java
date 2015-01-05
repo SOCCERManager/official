@@ -225,20 +225,23 @@ public class Competitie {
         return (this.wedstrijden.stream().filter(v -> !v.isPlayed()).count()>0);
     }
     
-    public void playPlayerGame() throws Exception {
+    public Wedstrijd playPlayerGame() throws Exception {
         if(this.wedstrijden == null || this.wedstrijden.isEmpty())
             this.bouwWedstrijden();
         
         this.playGamesTilPlayerGameIsDue();
+        Wedstrijd houder = null;
         for(Wedstrijd w: this.wedstrijden) {
             if(w.isPlayed()) continue;
             if(w.teamPlaying(this.teams.get(this.userindex))) {
                 w.playGame();
+                houder = w;
                 break;
             } else {
                 throw new Exception("EVERYTHING DIED!!!!");
             }
         }
         this.playGamesTilPlayerGameIsDue();
+        return houder;
     }
 }

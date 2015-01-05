@@ -327,11 +327,22 @@ public class Speler {
     
     /**
      * Berekent de prijs van de speler op basis van zijn stats
+     * @return prijs
      **/
-    public void defineMarketValue() {
-        int rnd = 42;
-        double prijs = (Math.pow((double)getAanvallend(), 2.0) + Math.pow((double)getVerdedigend(), 2.0) + Math.pow((double)getUithoudingsvermogen(), 2.0))*rnd;
+    public int defineMarketValue() {
+        int factor = 42;
+        if(this.getType().toString().equals("Aanvaller") && this.getAanvallend()>70){
+            factor = 50;
+        }
+        if(this.getType().toString().equals("Middenvelder") && this.getUithoudingsvermogen()>70){
+            factor = 50;
+        }
+        if(this.getType().toString().equals("Verdediger") && this.getVerdedigend()>70){
+            factor = 50;
+        }
+        double prijs = (Math.pow((double)getAanvallend(), 2.0) + Math.pow((double)getVerdedigend(), 2.0) + Math.pow((double)getUithoudingsvermogen(), 2.0))*factor;
         setPrijs((int)prijs);
+        return (int)prijs;
     }
 
     /**
