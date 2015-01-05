@@ -732,8 +732,25 @@ public class TeamTest {
     
     @Test
     public void addSpelerTest() {
-         Speler newSpeler = new Speler("Jeroen de Nieuw", 3, SpelerType.Verdediger, 20000, 10, 20, 30);
+        Speler newSpeler = new Speler("Jeroen de Nieuw", 3, SpelerType.Verdediger, 20000, 10, 20, 30);
         t1.addSpeler(newSpeler);
         assertEquals(t1.getSpelers().size(), 12);
     }
+//    @Test
+//    public void getWinsTest() {
+//        Team t2 = t1;
+//        t2.setName("Hallo");
+//        Wedstrijd w10 = new Wedstrijd(t1, t2);
+//        w10.setPoints_a(3);
+//        w10.setPoints_b(0);
+//        w10.setScore_a(3);
+//        w10.setScore_b(0);
+//        w10.setPlayed(true);
+//        ArrayList<Wedstrijd> wedlijst = new ArrayList<>();
+//        wedlijst.add(w10);
+//        System.out.println(wedlijst);
+//        t1.getCompetitie().setWedstrijden(wedlijst);
+//        assertEquals(0, t1.getWins());
+//    }
+   
 }
