@@ -306,11 +306,6 @@ public class Team {
         System.out.println("Speler " + speler.getNaam() + " toegevoegd");
     }
     
-    public void addSpeler(Speler speler) {
-        this.spelers.add(speler);
-        System.out.println("Speler " + speler.getNaam() + " toegevoegd");
-    }
-    
     /**
      * Berekent de totale Aanvalsstats van een team door alle Aanvalstats van
      * alle spelers in de opstelling bij elkaar op te tellen
