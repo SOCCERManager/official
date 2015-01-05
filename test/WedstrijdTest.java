@@ -23,6 +23,7 @@ public class WedstrijdTest {
     private Team t1;
     private Team t2;
     private Wedstrijd we;
+    private Wedstrijd w8;
     
     @Before
     public void setUp() {
@@ -43,6 +44,8 @@ public class WedstrijdTest {
         this.t1 = new Team(sp1, "TeamA", pp, null, 50000);
         this.t2 = new Team(sp2, "TeamB", pp, null, 50000);
         this.we = new Wedstrijd(t1,t2);
+        this.w8 = new Wedstrijd(t1,t2);
+        we.setPlayed(true);
     }
     
     @After
@@ -50,6 +53,7 @@ public class WedstrijdTest {
         t1 = null;
         t2 = null;
         we = null;
+        w8 = null;
     }
     
     @Test
@@ -142,7 +146,7 @@ public class WedstrijdTest {
     
     @Test
     public void isPlayedTest(){
-        assertFalse(we.isPlayed());
+        assertTrue(we.isPlayed());
     }
     
     @Test
@@ -230,12 +234,13 @@ public class WedstrijdTest {
     public void equalsWePlayed() {
         Wedstrijd wf = new Wedstrijd(t1, t2);
         wf.setPlayed(true);
-        assertFalse(we.equals(wf));
+        assertTrue(we.equals(wf));
     }
     
     @Test
     public void equalsWeTrue() {
         Wedstrijd wf = new Wedstrijd(t1, t2);
+        wf.setPlayed(true);
         assertTrue(we.equals(wf));
     }
     
@@ -248,19 +253,19 @@ public class WedstrijdTest {
     }
     
     @Test
-    public void playGameEq() {
+    public void playGameLs() {
         we.setRnd(new Random((long) 109));
-        we.playGame();
-        assertEquals(1, we.getPoints_a());
-        assertEquals(1, we.getPoints_b());
-    }
-    
-    @Test
-    public void playGameLs(){
-        we.setRnd(new Random((long) 2.0));
         we.playGame();
         assertEquals(0, we.getPoints_a());
         assertEquals(3, we.getPoints_b());
+    }
+    
+    @Test
+    public void playGameDraw(){
+        we.setRnd(new Random((long) 25.0));
+        we.playGame();
+        assertEquals(1, we.getPoints_a());
+        assertEquals(1, we.getPoints_b());
     }
     
     @Test
@@ -411,6 +416,8 @@ public class WedstrijdTest {
         assertEquals(0, we.teamCounterGoal(t3));
     }
     
-    
-    
+    @Test
+    public void equalsNotPlayedTest() {
+        assertFalse(w8.equals(we));
+    }   
 }
