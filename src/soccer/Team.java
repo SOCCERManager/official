@@ -220,9 +220,16 @@ public class Team {
      * Creëert een opstelling voor een team
      */
     public void generateOpstelling() {
-
+        
+        System.out.println("Generating Opstelling");
+        
+        // add some emergaancy student assistents in case you have to few player (:
+        while(this.spelers.size() < 11) {
+            this.spelers.add(new Speler("Emergancy student assistenten", 0, SpelerType.Middenvelder, 1000, 40, 40, 40));
+        }
+        
         // To many players injured, lets magialy fix some (:
-        while (this.spelers.stream().filter(v -> v.isUnavaliableToPlay()).count() >= 11) {
+        while (this.spelers.stream().filter(v -> v.isAvaliableToPlay()).count() < 11) {
             for (Speler s : this.spelers) {
                 if (s.isUnavaliableToPlay()) {
                     s.magicalyFix();
@@ -240,7 +247,7 @@ public class Team {
         // Set doelman
         for (Speler s : this.spelers) {
             if (!dedicated_goalie || s.getType().equals(SpelerType.Doelman)) {
-                this.opstelling.add(new PosPlayer(s, s.getType()));
+                this.opstelling.add(new PosPlayer(s, SpelerType.Doelman));
                 break;
             }
         }
@@ -249,8 +256,11 @@ public class Team {
         int totdefenders = (int) this.spelers.stream().filter(v -> v.isAvaliableToPlay()).filter(v -> v.getType().equals(SpelerType.Verdediger)).count();
 
         // sort spelers by defensive score
-        this.spelers.sort((s1, s2) -> s1.getVerdedigend() - s2.getVerdedigend());
-
+        this.spelers.sort((s2, s1) -> s1.getVerdedigend() - s2.getVerdedigend());
+        
+        System.out.println("Sortyed player by defence");
+        System.out.println(this.spelers);
+        
         // add defenders till there are 4 defenders in there
         while (this.opstelling.size() < Math.min(totdefenders, 4)+1) {
             Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Verdediger, true);
@@ -259,8 +269,8 @@ public class Team {
         }
         
         // add normaly non deferders as defenders
-        while (this.opstelling.size() < 11) {
-            Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Verdediger, true);
+        while (this.opstelling.size() < 5) {
+            Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Verdediger, false);
             if(s == null) magicalyFixAPlayer();
             else this.opstelling.add(new PosPlayer(s, SpelerType.Verdediger));
         }
@@ -268,37 +278,58 @@ public class Team {
         // see if enough middenvelders are avaliable
         int totMiddenvelders = (int) this.spelers.stream().filter(v -> v.isAvaliableToPlay()).filter(v -> v.getType().equals(SpelerType.Middenvelder)).count();
 
+        
+        // sort spelers by uithoudings score
+        this.spelers.sort((s2, s1) -> s1.getUithoudingsvermogen()- s2.getUithoudingsvermogen());
+        
+        System.out.println("Sortyed player by Uithoudingsvermogen");
+        System.out.println(this.spelers);
+        System.out.println(totMiddenvelders + " Avaliable middenvelders in total");
+        System.out.println(Math.min(totMiddenvelders, 3)+5);
         // add defenders till there are 4 middenvelders in there
         while (this.opstelling.size() < Math.min(totMiddenvelders, 3)+5) {
             Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Middenvelder, true);
             if(s == null) break;
             this.opstelling.add(new PosPlayer(s, SpelerType.Middenvelder));
         }
-
-        // add normaly non deferders as defenders
+        
+        System.out.println("1");
+        System.out.println(this.opstelling);
+        System.out.println(this.spelers);
+        
+        // add normaly non middenvelders as middenvelders
         while (this.opstelling.size() < 8) {
-            Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Verdediger, true);
+            Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Middenvelder, false);
             if(s == null) magicalyFixAPlayer();
-            else this.opstelling.add(new PosPlayer(s, SpelerType.Verdediger));
+            else this.opstelling.add(new PosPlayer(s, SpelerType.Middenvelder));
         }
-        
-        
+        System.out.println("2");
         // see if enough aanvallers are avaliable
         int totAttackers = (int) this.spelers.stream().filter(v -> v.isAvaliableToPlay()).filter(v -> v.getType().equals(SpelerType.Aanvaller)).count();
-
+        System.out.println("3");
+        // sort spelers by aanvallende score
+        this.spelers.sort((s2, s1) -> s1.getAanvallend()- s2.getAanvallend());
+        
+        System.out.println("Sortyed player by Aanvallend");
+        System.out.println(this.spelers);
+        
         // add defenders till there are 4 anvallers in there
         while (this.opstelling.size() < Math.min(totMiddenvelders, 3)+8) {
             Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Aanvaller, true);
             if(s == null) break;
             this.opstelling.add(new PosPlayer(s, SpelerType.Aanvaller));
         }
+        
+        
 
-//        // set other players
-//        for (Speler s : this.spelers) {
-//            if (this.opstelling.size() < 11 && (!s.isUnavaliableToPlay()) && this.opstelling.stream().map(v -> v.getSpeler()).filter(v -> v.equals(s)).count() < 1) {
-//                this.opstelling.add(new PosPlayer(s, s.getType()));
-//            }
-//        }
+        // add normaly non middenvelders as middenvelders
+        while (this.opstelling.size() < 11) {
+            Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Aanvaller, false);
+            if(s == null) magicalyFixAPlayer();
+            else this.opstelling.add(new PosPlayer(s, SpelerType.Aanvaller));
+        }
+        
+        System.out.println(this.opstelling);
     }
     
     public void addSpeler(Speler speler) {
@@ -433,6 +464,10 @@ public class Team {
     }
 
     private void magicalyFixAPlayer() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        for(Speler s: this.spelers) 
+            if(s.isUnavaliableToPlay()) {
+                s.magicalyFix();
+                return;
+            }
     }
 }
