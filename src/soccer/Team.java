@@ -8,16 +8,21 @@ import java.util.Objects;
  * Class Team
  */
 public class Team {
+
     private ArrayList<Speler> spelers;
     private String name;
     private ArrayList<PosPlayer> opstelling;
     private Competitie competitie;
     private int budget;
+
     /**
-     * This constructor sets the private variables spelers, name, opstelling and c.
+     * This constructor sets the private variables spelers, name, opstelling and
+     * c.
+     *
      * @param spelers De lijst van spelers in het team (ArrayList<Spelers>)
      * @param name De naam van het team (String)
-     * @param opstelling De opstelling van het team gemaakt door de positie van de spelers (ArrayList<PosPlayer>)
+     * @param opstelling De opstelling van het team gemaakt door de positie van
+     * de spelers (ArrayList<PosPlayer>)
      * @param c De competitie waarin dit team speelt (Competitie)
      * @param budget Het budget van het team (int)
      */
@@ -27,26 +32,30 @@ public class Team {
         this.opstelling = opstelling;
         this.competitie = c;
         this.budget = budget;
-        
+
     }
 
     /**
      * Budget van het team
+     *
      * @return Het budget van het team.
      */
-    public int getBudget(){
+    public int getBudget() {
         return budget;
     }
+
     /**
      * Set het budget van het team
+     *
      * @param budget nieuw budget van het team
      */
-    public void setBudget(int budget){
+    public void setBudget(int budget) {
         this.budget = budget;
     }
-    
+
     /**
      * Geeft alle spelers in een team terug
+     *
      * @return een ArrayList van alle spelers in een team
      */
     public ArrayList<Speler> getSpelers() {
@@ -55,6 +64,7 @@ public class Team {
 
     /**
      * Set de lijst van spelers in het team
+     *
      * @param spelers de nieuwe lijst van spelers voor het team
      */
     public void setSpelers(ArrayList<Speler> spelers) {
@@ -63,7 +73,8 @@ public class Team {
 
     /**
      * Get de competitie van het team
-     * @return  de competitie van het team
+     *
+     * @return de competitie van het team
      */
     public Competitie getCompetitie() {
         return competitie;
@@ -71,14 +82,16 @@ public class Team {
 
     /**
      * Set de opgegeven competitie als de huidige voor het team
+     *
      * @param competitie de nieuwe competitie voor het team
      */
     public void setCompetitie(Competitie competitie) {
         this.competitie = competitie;
     }
-    
+
     /**
      * Get de naam van het team
+     *
      * @return de naam van het team
      */
     public String getName() {
@@ -87,6 +100,7 @@ public class Team {
 
     /**
      * Set de naam van het team
+     *
      * @param name de nieuwe naam voor het team
      */
     public void setName(String name) {
@@ -95,6 +109,7 @@ public class Team {
 
     /**
      * Get de huidige opstelling van het team
+     *
      * @return ArrayList<PosPlayer> waarin de opstelling staat van het team
      */
     public ArrayList<PosPlayer> getOpstelling() {
@@ -103,6 +118,7 @@ public class Team {
 
     /**
      * Set een opgegeven opstelling van het team
+     *
      * @param opstelling de nieuwe osptelling voor het team
      */
     public void setOpstelling(ArrayList<PosPlayer> opstelling) {
@@ -111,8 +127,11 @@ public class Team {
 
     /**
      * Kijkt of Teams aan elkaar gelijk zijn
-     * @param obj het opgegeven team dat wordt vergeleken met het team waarbij deze methode wordt opgeroepen
-     * @return true als de teams gelijk zijn en false als de teams niet gelijk zijn aan elkaar
+     *
+     * @param obj het opgegeven team dat wordt vergeleken met het team waarbij
+     * deze methode wordt opgeroepen
+     * @return true als de teams gelijk zijn en false als de teams niet gelijk
+     * zijn aan elkaar
      */
     @Override
     public boolean equals(Object obj) {
@@ -141,62 +160,176 @@ public class Team {
         return true;
     }
 
-    
     /**
-     * Roept getScoreOfTeam in competitie aan en vraagt hierbij het totaal aantal punten van het team
+     * Roept getScoreOfTeam in competitie aan en vraagt hierbij het totaal
+     * aantal punten van het team
+     *
      * @return het aantal punten van een team
      */
-    public int getScore(){
+    public int getScore() {
         return this.competitie.getScoreOfTeam(this);
     }
-    
+
     /**
-     * Start een spel (start het spel voor alle spelers om te kijken of deze wel/niet beschikbaar zijn enz.
-     * zie speler.playGame();
+     * Start een spel (start het spel voor alle spelers om te kijken of deze
+     * wel/niet beschikbaar zijn enz. zie speler.playGame();
      */
     public void playGame() {
-        for(Speler s: this.spelers)
+        for (Speler s : this.spelers) {
             s.playGame();
+        }
     }
-    
+
     /**
      * Kijkt of de opstelling valide is
-     * @return true als de opstelling valide is en false als de opstelling niet valide is
+     *
+     * @return true als de opstelling valide is en false als de opstelling niet
+     * valide is
      */
     public boolean OpstellingIsValide() {
         return this.opstelling.size() == 11 && ((int) this.opstelling.stream().filter(v -> v.isUnavaliableToPlay()).count()) == 0;
     }
     
     /**
+     * Get Next Avaliable Player
+     * @param sType
+     * @param same true if return ought to be the same as sType, false if return meant to be diffrent that sType
+     * @return 
+     */
+    private Speler getNextAvaliableSpelerWithTypeLike(SpelerType sType, boolean same) {
+        for (Speler s : this.spelers) {
+            // iff filtering for same type
+            if(same && !s.getType().equals(sType)) continue;
+            
+            // iff filtering for diffrent type
+            if(!same && s.getType().equals(sType)) continue;
+            
+            // See if not in there and a defender
+            if (this.opstelling.stream()
+                    .map(v -> v.getSpeler())
+                    .filter(v -> v.equals(s))
+                    .count()
+                    < 1) {
+                return s;
+            }
+        }
+        return null;
+    }
+
+    /**
      * Creëert een opstelling voor een team
      */
     public void generateOpstelling() {
         
+        System.out.println("Generating Opstelling");
+        
+        // add some emergaancy student assistents in case you have to few player (:
+        while(this.spelers.size() < 11) {
+            this.spelers.add(new Speler("Emergancy student assistenten", 0, SpelerType.Middenvelder, 1000, 40, 40, 40));
+        }
+        
         // To many players injured, lets magialy fix some (:
-        while(this.spelers.stream().filter(v -> v.isUnavaliableToPlay()).count() >= 11)
-            for(Speler s:this.spelers)
-                if(s.isUnavaliableToPlay()) {
+        while (this.spelers.stream().filter(v -> v.isAvaliableToPlay()).count() < 11) {
+            for (Speler s : this.spelers) {
+                if (s.isUnavaliableToPlay()) {
                     s.magicalyFix();
                     break;
                 }
-        
+            }
+        }
+
         this.opstelling = new ArrayList<>();
-        
+
+        // use a 1 4 3 3 setup
         // See if doelman is avaliable
         boolean dedicated_goalie = this.spelers.stream().filter(v -> v.isAvaliableToPlay()).filter(v -> v.getType().equals(SpelerType.Doelman)).count() > 1;
-        
+
         // Set doelman
-        for(Speler s: this.spelers)
-            if(!dedicated_goalie || s.getType().equals(SpelerType.Doelman)) {
-                this.opstelling.add(new PosPlayer(s, s.getType()));
+        for (Speler s : this.spelers) {
+            if (!dedicated_goalie || s.getType().equals(SpelerType.Doelman)) {
+                this.opstelling.add(new PosPlayer(s, SpelerType.Doelman));
                 break;
             }
-                    
-        // set other players
-        for(Speler s: this.spelers) {
-            if(this.opstelling.size() < 11 && (!s.isUnavaliableToPlay()) && this.opstelling.stream().map(v -> v.getSpeler()).filter(v -> v.equals(s)).count() < 1)
-                 this.opstelling.add(new PosPlayer(s, s.getType()));
         }
+
+        // see if enough defenders are avaliable
+        int totdefenders = (int) this.spelers.stream().filter(v -> v.isAvaliableToPlay()).filter(v -> v.getType().equals(SpelerType.Verdediger)).count();
+
+        // sort spelers by defensive score
+        this.spelers.sort((s2, s1) -> s1.getVerdedigend() - s2.getVerdedigend());
+        
+        System.out.println("Sortyed player by defence");
+        System.out.println(this.spelers);
+        
+        // add defenders till there are 4 defenders in there
+        while (this.opstelling.size() < Math.min(totdefenders, 4)+1) {
+            Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Verdediger, true);
+            if(s == null) break;
+            this.opstelling.add(new PosPlayer(s, SpelerType.Verdediger));
+        }
+        
+        // add normaly non deferders as defenders
+        while (this.opstelling.size() < 5) {
+            Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Verdediger, false);
+            if(s == null) magicalyFixAPlayer();
+            else this.opstelling.add(new PosPlayer(s, SpelerType.Verdediger));
+        }
+
+        // see if enough middenvelders are avaliable
+        int totMiddenvelders = (int) this.spelers.stream().filter(v -> v.isAvaliableToPlay()).filter(v -> v.getType().equals(SpelerType.Middenvelder)).count();
+
+        
+        // sort spelers by uithoudings score
+        this.spelers.sort((s2, s1) -> s1.getUithoudingsvermogen()- s2.getUithoudingsvermogen());
+        
+        System.out.println("Sortyed player by Uithoudingsvermogen");
+        System.out.println(this.spelers);
+        System.out.println(totMiddenvelders + " Avaliable middenvelders in total");
+        System.out.println(Math.min(totMiddenvelders, 3)+5);
+        // add defenders till there are 4 middenvelders in there
+        while (this.opstelling.size() < Math.min(totMiddenvelders, 3)+5) {
+            Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Middenvelder, true);
+            if(s == null) break;
+            this.opstelling.add(new PosPlayer(s, SpelerType.Middenvelder));
+        }
+        
+        System.out.println("1");
+        System.out.println(this.opstelling);
+        System.out.println(this.spelers);
+        
+        // add normaly non middenvelders as middenvelders
+        while (this.opstelling.size() < 8) {
+            Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Middenvelder, false);
+            if(s == null) magicalyFixAPlayer();
+            else this.opstelling.add(new PosPlayer(s, SpelerType.Middenvelder));
+        }
+        System.out.println("2");
+        // see if enough aanvallers are avaliable
+        int totAttackers = (int) this.spelers.stream().filter(v -> v.isAvaliableToPlay()).filter(v -> v.getType().equals(SpelerType.Aanvaller)).count();
+        System.out.println("3");
+        // sort spelers by aanvallende score
+        this.spelers.sort((s2, s1) -> s1.getAanvallend()- s2.getAanvallend());
+        
+        System.out.println("Sortyed player by Aanvallend");
+        System.out.println(this.spelers);
+        
+        // add defenders till there are 4 anvallers in there
+        while (this.opstelling.size() < Math.min(totMiddenvelders, 3)+8) {
+            Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Aanvaller, true);
+            if(s == null) break;
+            this.opstelling.add(new PosPlayer(s, SpelerType.Aanvaller));
+        }
+        
+        
+
+        // add normaly non middenvelders as middenvelders
+        while (this.opstelling.size() < 11) {
+            Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Aanvaller, false);
+            if(s == null) magicalyFixAPlayer();
+            else this.opstelling.add(new PosPlayer(s, SpelerType.Aanvaller));
+        }
+        
+        System.out.println(this.opstelling);
     }
     
     public void addSpeler(Speler speler) {
@@ -205,49 +338,59 @@ public class Team {
     }
     
     /**
-     * Berekent de totale Aanvalsstats van een team door alle Aanvalstats van alle spelers in de opstelling
-     * bij elkaar op te tellen
+     * Berekent de totale Aanvalsstats van een team door alle Aanvalstats van
+     * alle spelers in de opstelling bij elkaar op te tellen
+     *
      * @return het totaal(int)
      */
     public int getAanvallendTotaal() {
-        if(!this.OpstellingIsValide())
+        if (!this.OpstellingIsValide()) {
             this.generateOpstelling();
-        
+        }
+
         return this.opstelling.stream().mapToInt(v -> v.getAanvallend()).sum();
     }
-    
+
     /**
-     * Berekent de totale Verdedigingsstats van een team door alle Verdedigingstats van alle spelers in de opstelling
-     * bij elkaar op te tellen
+     * Berekent de totale Verdedigingsstats van een team door alle
+     * Verdedigingstats van alle spelers in de opstelling bij elkaar op te
+     * tellen
+     *
      * @return het totaal (int)
      */
     public int getVerdedigingsTotaal() {
-        if(!this.OpstellingIsValide())
+        if (!this.OpstellingIsValide()) {
             this.generateOpstelling();
-        
+        }
+
         return this.opstelling.stream().mapToInt(v -> v.getVerdedigend()).sum();
     }
-    
+
     /**
-     * Berekent de totale Uithoudingsstats van een team door alle Uithoudingsstats van alle spelers in de opstelling
-     * bij elkaar op te tellen
+     * Berekent de totale Uithoudingsstats van een team door alle
+     * Uithoudingsstats van alle spelers in de opstelling bij elkaar op te
+     * tellen
+     *
      * @return het totaal (int)
      */
     public int getUithoudingsTotaal() {
-        if(!this.OpstellingIsValide())
+        if (!this.OpstellingIsValide()) {
             this.generateOpstelling();
-        
+        }
+
         return this.opstelling.stream().mapToInt(v -> v.getUithoudingsvermogen()).sum();
     }
-    
+
     /**
-     * Telt alle stats van een team bij elkaar op (aanvallend + verdedigend + uithoudingsvermogen)
+     * Telt alle stats van een team bij elkaar op (aanvallend + verdedigend +
+     * uithoudingsvermogen)
+     *
      * @return het totaal van alle stats voor een team
      */
     public int getTotalStat() {
         return this.getAanvallendTotaal() + this.getVerdedigingsTotaal() + this.getUithoudingsTotaal();
     }
-    
+
     /**
      * Respresenteer ~ als een string
      */
@@ -255,51 +398,55 @@ public class Team {
     public String toString() {
         return "Team{" + "spelers=" + spelers + ", name=" + name + ", opstelling=" + opstelling + ", budget=" + budget + '}';
     }
-    
+
     /**
      * Counts yellow card that player in team has
-     * @return 
+     *
+     * @return
      */
     public int countYellowCards() {
         return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Gele_kaart)).count();
     }
-    
+
     /**
      * Counts red cards that players in team have
-     * @return 
+     *
+     * @return
      */
     public int countRedCards() {
         return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Roode_kaart)).count();
     }
-    
+
     /**
      * Return count of injuries in team.
-     * @return 
+     *
+     * @return
      */
     public int countGebleseerd() {
         return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Gebleseerd)).count();
     }
-    
+
     /**
      * Return count of avaliable team members.
-     * @return 
+     *
+     * @return
      */
     public int countAvaliable() {
         return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Normaal)).count();
     }
-    
+
     public int getWins() {
         return this.competitie.getWinsOfTeam(this);
     }
-    
+
     public int getDraws() {
         return this.competitie.getDrawsOfTeam(this);
     }
-    
+
     public int getLosses() {
         return this.competitie.getLossesOfTeam(this);
     }
-    
+
     public int getPlayed() {
         return this.competitie.getPlayedGamesofTeam(this);
     }
@@ -307,12 +454,20 @@ public class Team {
     public int getGoals() {
         return this.competitie.getGoalsofTeam(this);
     }
-    
+
     public int getCounterGoals() {
         return this.competitie.getCounterGoalsofTeam(this);
     }
-    
+
     public int getGoalSaldo() {
-        return this.getGoals()-this.getCounterGoals();
+        return this.getGoals() - this.getCounterGoals();
+    }
+
+    private void magicalyFixAPlayer() {
+        for(Speler s: this.spelers) 
+            if(s.isUnavaliableToPlay()) {
+                s.magicalyFix();
+                return;
+            }
     }
 }
