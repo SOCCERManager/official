@@ -237,9 +237,7 @@ public class Competitie {
                 w.playGame();
                 houder = w;
                 break;
-            } else {
-                throw new Exception("EVERYTHING DIED!!!!");
-            }
+            } 
         }
         this.playGamesTilPlayerGameIsDue();
         return houder;
