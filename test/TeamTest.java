@@ -955,12 +955,31 @@ public class TeamTest {
         t2.getCompetitie().setWedstrijden(wedlijst);
         assertEquals(-3, t1.getGoalSaldo());
     }
-    
+    /*
     @Test
-    public void generateOpstellingZonderMagicFixTest() {
+    public void generateOpstelling11UnavailableTest() {
         ArrayList<PosPlayer> opstelling = t1.getOpstelling();
         Speler s38 = new Speler("Henk", 59, SpelerType.Doelman, 52200, 5, 9, 64);
+        Speler s39 = new Speler("Henk", 59, SpelerType.Doelman, 52200, 5, 9, 64);
+        Speler s40 = new Speler("Henk", 59, SpelerType.Doelman, 52200, 5, 9, 64);
+        Speler s41 = new Speler("Henk", 59, SpelerType.Doelman, 52200, 5, 9, 64);
+        Speler s42 = new Speler("Henk", 59, SpelerType.Doelman, 52200, 5, 9, 64);
+        Speler s43 = new Speler("Henk", 59, SpelerType.Doelman, 52200, 5, 9, 64);
+        Speler s44 = new Speler("Henk", 59, SpelerType.Doelman, 52200, 5, 9, 64);
+        Speler s45 = new Speler("Henk", 59, SpelerType.Doelman, 52200, 5, 9, 64);
+        Speler s46 = new Speler("Henk", 59, SpelerType.Doelman, 52200, 5, 9, 64);
+        Speler s47 = new Speler("Henk", 59, SpelerType.Doelman, 52200, 5, 9, 64);
         t1.addSpeler(s38);
+        t1.addSpeler(s39);
+        t1.addSpeler(s40);
+        t1.addSpeler(s41);
+        t1.addSpeler(s42);
+        t1.addSpeler(s43);
+        t1.addSpeler(s44);
+        t1.addSpeler(s45);
+        t1.addSpeler(s46);
+        t1.addSpeler(s47);
+        
         t1.getSpelers().get(1).setGamesTilStatusDisapears(3);
         t1.getSpelers().get(2).setGamesTilStatusDisapears(3);
         t1.getSpelers().get(3).setGamesTilStatusDisapears(3);
@@ -973,9 +992,37 @@ public class TeamTest {
         t1.getSpelers().get(10).setGamesTilStatusDisapears(3);
         t1.getSpelers().get(11).setGamesTilStatusDisapears(3);
         t1.generateOpstelling();
+        
+        Speler s1 = t1.getSpelers().get(0);
+        Speler s2 = t1.getSpelers().get(1);
+        
+        PosPlayer p1 = new PosPlayer(s1, SpelerType.Doelman);
+        PosPlayer p2 = new PosPlayer(s2, SpelerType.Doelman);
+        PosPlayer p3 = new PosPlayer(s38, SpelerType.Doelman);
+        PosPlayer p4 = new PosPlayer(s39, SpelerType.Doelman);
+        PosPlayer p5 = new PosPlayer(s40, SpelerType.Doelman);
+        PosPlayer p6 = new PosPlayer(s41, SpelerType.Doelman);
+        PosPlayer p7 = new PosPlayer(s42, SpelerType.Doelman);
+        PosPlayer p8 = new PosPlayer(s43, SpelerType.Doelman);
+        PosPlayer p9 = new PosPlayer(s44, SpelerType.Doelman);
+        PosPlayer p10 = new PosPlayer(s45, SpelerType.Doelman);
+        PosPlayer p11 = new PosPlayer(s46, SpelerType.Doelman);
+        
+        opstelling.add(p1);
+        opstelling.add(p2);
+        opstelling.add(p3);
+        opstelling.add(p4);
+        opstelling.add(p5);
+        opstelling.add(p6);
+        opstelling.add(p7);
+        opstelling.add(p8);
+        opstelling.add(p9);
+        opstelling.add(p10);
+        opstelling.add(p11);
+        
         assertEquals(opstelling, t1.getOpstelling());
     }
-    
+    */
     @Test
     public void generateOpstellingGeenKeeperTest() {
         for (int i = 0; i < t1.getSpelers().size(); i++) {
