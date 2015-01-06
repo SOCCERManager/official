@@ -24,7 +24,9 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.layout.AnchorPane;
 import soccer.Competitie;
+import soccer.PosPlayer;
 import soccer.Speler;
+import soccer.SpelerType;
 import soccer.Team;
 
 /**
@@ -44,7 +46,7 @@ public class KoopframeController implements Initializable {
     @FXML
     private TableColumn<Speler, String> naamColumn;
     @FXML
-    private TableColumn<Team, String> teamColumn;
+    private TableColumn<Speler, String> teamColumn;
     @FXML
     private TableColumn<Speler, String> typeColumn;
     @FXML
@@ -57,8 +59,7 @@ public class KoopframeController implements Initializable {
     private TableColumn<Speler, Integer> prijsColumn;
     @FXML
     private Team userteam = Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()); 
-    private HashSet tempList = new HashSet();
-    
+    private HashSet<Speler> tempList = new HashSet();
     private MainApp mainApp = new MainApp();
     
     /**
@@ -66,20 +67,21 @@ public class KoopframeController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        
         Random rnd = new Random();
         ArrayList<Team> teamList = Competitie.getCompetitie().getTeams();
-
-        //ArrayList<Speler> spelerList = new ArrayList<Speler>();
         for (int i = 0; i < rnd.nextInt(teamList.size()); i++) {
             int randomTeamIndex = rnd.nextInt(teamList.size());
             if(teamList.get(randomTeamIndex).equals(userteam) == false) {
-                System.out.println("--Picking from team: " + teamList.get(randomTeamIndex).getName());
                 for (int j = 0; j < rnd.nextInt(teamList.get(randomTeamIndex).getSpelers().size()); j++) {
                     int randomSpelerIndex = rnd.nextInt(teamList.get(randomTeamIndex).getSpelers().size());
-                    tempList.add(teamList.get(randomTeamIndex).getSpelers().get(randomSpelerIndex));
+                    if(!teamList.get(randomTeamIndex).getOpstelling().contains(new PosPlayer(teamList.get(randomTeamIndex).getSpelers().get(randomSpelerIndex), teamList.get(randomTeamIndex).getSpelers().get(randomSpelerIndex).getType()))){
+                        tempList.add(teamList.get(randomTeamIndex).getSpelers().get(randomSpelerIndex));
+                    }
                 }
             }
         }
+        
         drawTable();        
     }
     
@@ -88,8 +90,22 @@ public class KoopframeController implements Initializable {
         spelerList.addAll(tempList);
         
         for (int i=0; i<spelerList.size(); i++){
-            System.out.println("----Spelers: " + spelerList.get(i).getNaam()); 
+            //System.out.println("----Spelers: " + spelerList.get(i).getNaam()); 
         }
+        
+        teamColumn.setCellValueFactory(cellData -> new SimpleStringProperty(
+                Competitie.getCompetitie().getTeams().stream().filter(
+                    v->v.getSpelers().contains(cellData.getValue())
+                ).findFirst().orElse(
+                        new Team(
+                                new ArrayList<>(), 
+                                "No Team", 
+                                new ArrayList<>(), 
+                                Competitie.getCompetitie(), 
+                                0
+                        )
+                ).getName()
+            ));
         
         naamColumn.setCellValueFactory(
             cellData -> new SimpleStringProperty(cellData.getValue().getNaam()));
@@ -111,10 +127,24 @@ public class KoopframeController implements Initializable {
     
     @FXML
     private void handleKoopSpeler() {
-       userteam.addSpeler(marketTable.getSelectionModel().getSelectedItem());
-       //mainApp.showMainHubScreen();
-       tempList.remove(marketTable.getSelectionModel().getSelectedItem());
-       drawTable();
+//        Speler temp = new Speler("New", 1, SpelerType.Aanvaller, 1, 1,1,1);
+//        if(marketTable.getSelectionModel().getSelectedItem()!=null){
+//            temp = marketTable.getSelectionModel().getSelectedItem();
+//        }
+        if(marketTable.getSelectionModel().getSelectedItem()!=null){
+            Speler temp = marketTable.getFocusModel().getFocusedItem();
+            System.out.println(temp);
+            userteam.addSpeler(temp);
+
+            tempList.remove(temp);
+            marketTable.getSelectionModel().clearSelection();
+            System.out.println("Removing from table: " + temp.getNaam());
+            //mainApp.showMainHubScreen();
+
+            drawTable();
+        }else{
+            System.out.println("You've encoutered the bug dragon, the player this table thinks it's selecting is null!");
+        }
     }
     
     @FXML
