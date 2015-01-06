@@ -2,6 +2,7 @@ package soccer;
 
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.StaxDriver;
+import gui.controller.loadscreenController;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -59,6 +60,12 @@ public class bouwXML {
         Competitie c = (Competitie) getStream().fromXML(te);
         Competitie.setCompetitie(c);
         return c;
+    }
+    
+    public static void SaveGame() {
+        try{
+        bouwXML.bouwXML(Competitie.getCompetitie(), new File("src/saves/"+loadscreenController.savegame+".xml"));
+        }catch(Exception e){e.printStackTrace();};
     }
     
     

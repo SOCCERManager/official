@@ -72,3 +72,9 @@
     -fx-background-color: #E35454;
     -fx-opacity:.90;
 }
+
+.red-bar    { -fx-accent: #990000;    }
+.yellow-bar    { -fx-accent: #E6E600;    }
+.blue-bar    { -fx-accent: #000099;    }
+
+.speler { -fx-font-weight: bold;}

@@ -62,11 +62,6 @@
                                     <Font size="32.0" />
                                  </font>
                               </Label>
-                              <ImageView fx:id="refreshButton1" blendMode="MULTIPLY" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#handleRefresh" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@refresh.png" />
-                                 </image>
-                              </ImageView>
                            </children>
                         </HBox>
                         <TableView fx:id="teamTable" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
@@ -92,14 +87,6 @@
                                     <Font size="32.0" />
                                  </font>
                               </Label>
-                              <ImageView fx:id="refreshButton" blendMode="MULTIPLY" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#handleRefresh" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@refresh.png" />
-                                 </image>
-                                 <HBox.margin>
-                                    <Insets />
-                                 </HBox.margin>
-                              </ImageView>
                            </children>
                         </HBox>
                         <TableView fx:id="opstelTable" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">

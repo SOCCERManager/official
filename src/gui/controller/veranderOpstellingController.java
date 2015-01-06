@@ -5,27 +5,39 @@
  */
 package gui.controller;
 
+import java.io.File;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
+import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.control.Button;
+import javafx.scene.control.ContentDisplay;
 import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
+import javafx.scene.control.ProgressIndicator;
 import javafx.scene.control.SplitPane;
+import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.cell.ProgressBarTableCell;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
+import javafx.util.Callback;
 import soccer.Competitie;
 import soccer.PosPlayer;
 import soccer.Speler;
 import soccer.Team;
+import soccer.bouwXML;
 
 /**
  * FXML Controller class
@@ -44,13 +56,14 @@ public class veranderOpstellingController implements Initializable {
     @FXML
     private TableColumn<PosPlayer, String> filteredPositieColumn;
     @FXML
-    private TableColumn<PosPlayer, Integer> filteredAanvalColumn;
+    private TableColumn<PosPlayer, Double> filteredAanvalColumn;
     @FXML
-    private TableColumn<PosPlayer, Integer> filteredStaminaColumn;
+    private TableColumn<PosPlayer, Double> filteredStaminaColumn;
     @FXML
-    private TableColumn<PosPlayer, Integer> filteredVerdedigingColumn;
+    private TableColumn<PosPlayer, Double> filteredVerdedigingColumn;
     @FXML
     private TableColumn<PosPlayer, String> filteredStatusColumn;
+    
     @FXML
     private TableView<PosPlayer> opstellingTable;
     @FXML
@@ -58,11 +71,11 @@ public class veranderOpstellingController implements Initializable {
     @FXML
     private TableColumn<PosPlayer, String> opstellingPositieColumn;
     @FXML
-    private TableColumn<PosPlayer, Integer> opstellingAanvalColumn;
+    private TableColumn<PosPlayer, Double> opstellingAanvalColumn;
     @FXML
-    private TableColumn<PosPlayer, Integer> opstellingStaminaColumn;
+    private TableColumn<PosPlayer, Double> opstellingStaminaColumn;
     @FXML
-    private TableColumn<PosPlayer, Integer> opstellingVerdedigingColumn;
+    private TableColumn<PosPlayer, Double> opstellingVerdedigingColumn;
     @FXML
     private TableColumn<PosPlayer, String> opstellingStatusColumn;
     @FXML
@@ -94,6 +107,8 @@ public class veranderOpstellingController implements Initializable {
         opstellingAddButton.setDisable(true);
         drawOpstelling();
         drawTeam();
+        
+        
     }    
     
     public void drawTeam() {
@@ -116,17 +131,33 @@ public class veranderOpstellingController implements Initializable {
             cellData -> new SimpleStringProperty(cellData.getValue().getNaam()));
         filteredPositieColumn.setCellValueFactory(
             cellData -> new SimpleStringProperty(""+cellData.getValue().getType()));
+        
         filteredAanvalColumn.setCellValueFactory(
-            cellData -> new SimpleIntegerProperty(cellData.getValue().getAanvallend()).asObject());
+                cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getAanvallend() * 0.01)).asObject());
+        filteredAanvalColumn.setCellFactory(
+                ProgressBarTableCell.<PosPlayer> forTableColumn());
+        
         filteredStaminaColumn.setCellValueFactory(
-            cellData -> new SimpleIntegerProperty(cellData.getValue().getUithoudingsvermogen()).asObject());
+                cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getUithoudingsvermogen()* 0.01)).asObject());
+        filteredStaminaColumn.setCellFactory(
+                ProgressBarTableCell.<PosPlayer> forTableColumn());
+        
         filteredVerdedigingColumn.setCellValueFactory(
-            cellData -> new SimpleIntegerProperty(cellData.getValue().getVerdedigend()).asObject());
+                cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getVerdedigend()* 0.01)).asObject());
+        filteredVerdedigingColumn.setCellFactory(
+                ProgressBarTableCell.<PosPlayer> forTableColumn());
+        
         filteredStatusColumn.setCellValueFactory(
             cellData -> new SimpleStringProperty(""+cellData.getValue().getStatus()));
+        
+        
         teamTable.setItems(filteredTeamList);
         filteredTeamColumn.setSortType(TableColumn.SortType.ASCENDING);
         teamTable.getSortOrder().add(filteredTeamColumn);
+        
+        filteredAanvalColumn.getStyleClass().add("red-bar");
+        filteredStaminaColumn.getStyleClass().add("yellow-bar");
+        filteredVerdedigingColumn.getStyleClass().add("blue-bar");
     }
     
     public void drawOpstelling() {
@@ -139,16 +170,26 @@ public class veranderOpstellingController implements Initializable {
         opstellingPositieColumn.setCellValueFactory(
             cellData -> new SimpleStringProperty(""+cellData.getValue().getType()));
         opstellingAanvalColumn.setCellValueFactory(
-            cellData -> new SimpleIntegerProperty(cellData.getValue().getAanvallend()).asObject());
+                cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getAanvallend() * 0.01)).asObject());
+        opstellingAanvalColumn.setCellFactory(
+                ProgressBarTableCell.<PosPlayer> forTableColumn());
         opstellingStaminaColumn.setCellValueFactory(
-            cellData -> new SimpleIntegerProperty(cellData.getValue().getUithoudingsvermogen()).asObject());
+                cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getUithoudingsvermogen()* 0.01)).asObject());
+        opstellingStaminaColumn.setCellFactory(
+                ProgressBarTableCell.<PosPlayer> forTableColumn());
         opstellingVerdedigingColumn.setCellValueFactory(
-            cellData -> new SimpleIntegerProperty(cellData.getValue().getVerdedigend()).asObject());
+                cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getVerdedigend()* 0.01)).asObject());
+        opstellingVerdedigingColumn.setCellFactory(
+                ProgressBarTableCell.<PosPlayer> forTableColumn());
         opstellingStatusColumn.setCellValueFactory(
             cellData -> new SimpleStringProperty(""+cellData.getValue().getStatus()));
         opstellingTable.setItems(opstellingList);
         opstellingSpelersColumn.setSortType(TableColumn.SortType.ASCENDING);
         opstellingTable.getSortOrder().add(opstellingSpelersColumn);
+        
+        opstellingAanvalColumn.getStyleClass().add("red-bar");
+        opstellingStaminaColumn.getStyleClass().add("yellow-bar");
+        opstellingVerdedigingColumn.getStyleClass().add("blue-bar");
     }
     
     @FXML
@@ -181,7 +222,9 @@ public class veranderOpstellingController implements Initializable {
     private void handleSaveOpstelling() {
         if(opstelling.size() == 11){
             userteam.setOpstelling(opstelling);
+            mainhubController.setOpstellingTable();
             mainOpstellingPane.setVisible(false);
+            bouwXML.SaveGame();
         }else{
             alert1Text.setText("De opstelling bevat niet genoeg spelers! (" + Integer.toString(opstelling.size()) + "/11 spelers)");
             alert1.setVisible(true);
@@ -201,5 +244,9 @@ public class veranderOpstellingController implements Initializable {
     private void handleCloseAlert1() {
         alert1.setVisible(false);
     }
+
+            
+
+   
 
 }

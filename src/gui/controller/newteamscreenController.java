@@ -11,6 +11,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
@@ -20,6 +21,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TitledPane;
+import javafx.scene.control.cell.ProgressBarTableCell;
 import soccer.Competitie;
 import soccer.Speler;
 import soccer.Team;
@@ -49,11 +51,11 @@ public class newteamscreenController implements Initializable {
     @FXML
     private TableColumn<Speler, String> positieColumn;
     @FXML
-    private TableColumn<Speler, Integer> aanvalColumn;
+    private TableColumn<Speler, Double> aanvalColumn;
     @FXML
-    private TableColumn<Speler, Integer> verdedigingColumn;
+    private TableColumn<Speler, Double> verdedigingColumn;
     @FXML
-    private TableColumn<Speler, Integer> staminaColumn;
+    private TableColumn<Speler, Double> staminaColumn;
     
     private MainApp mainApp;
     
@@ -96,22 +98,30 @@ public class newteamscreenController implements Initializable {
         positieColumn.setCellValueFactory(
                 cellData -> new SimpleStringProperty(""+cellData.getValue().getType()));
         aanvalColumn.setCellValueFactory(
-                cellData -> new SimpleIntegerProperty(cellData.getValue().getAanvallend()).asObject());
+                cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getVerdedigend()* 0.01)).asObject());
+        aanvalColumn.setCellFactory(
+                ProgressBarTableCell.<Speler> forTableColumn());
         verdedigingColumn.setCellValueFactory(
-                cellData -> new SimpleIntegerProperty(cellData.getValue().getVerdedigend()).asObject());
+                cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getVerdedigend()* 0.01)).asObject());
+        verdedigingColumn.setCellFactory(
+                ProgressBarTableCell.<Speler> forTableColumn());
         staminaColumn.setCellValueFactory(
-                cellData -> new SimpleIntegerProperty(cellData.getValue().getUithoudingsvermogen()).asObject());
+                cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getVerdedigend()* 0.01)).asObject());
+        staminaColumn.setCellFactory(
+                ProgressBarTableCell.<Speler> forTableColumn());
         
         spelerTable.setItems(spelerData);
+        
+        aanvalColumn.getStyleClass().add("red-bar");
+        staminaColumn.getStyleClass().add("yellow-bar");
+        verdedigingColumn.getStyleClass().add("blue-bar");
     }
     
     @FXML
     private void handleSelect(){
         Competitie.getCompetitie().setUserindex(
         Competitie.getCompetitie().getTeams().indexOf(teamTable.getSelectionModel().getSelectedItem()));
-        try{
-        bouwXML.bouwXML(Competitie.getCompetitie(), new File("src/saves/"+loadscreenController.savegame+".xml"));
-        }catch(Exception e){e.printStackTrace();};
+        bouwXML.SaveGame();
         mainApp.showMainHubScreen();
     }
 }

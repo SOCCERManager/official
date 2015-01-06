@@ -14,8 +14,12 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
 import soccer.Competitie;
 import soccer.Team;
 
@@ -87,6 +91,24 @@ public class CompetitieframeController implements Initializable {
                 cellData -> new SimpleIntegerProperty(cellData.getValue().countYellowCards()).asObject());  
         blessureColumn.setCellValueFactory(
                 cellData -> new SimpleIntegerProperty(cellData.getValue().countGebleseerd()).asObject());
+        teamColumn.setCellFactory(column -> {
+			return new TableCell<Team, String>() {
+				@Override
+				protected void updateItem(String item, boolean empty) {
+					super.updateItem(item, empty);
+					if(item != null){
+					if (item.equalsIgnoreCase(Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()).getName())) {
+                                                setText(item);
+						setTextFill(Color.GREEN);
+                                                setFont(Font.font(null, FontWeight.BOLD, USE_COMPUTED_SIZE));
+					} else {
+						setText(item);
+					}
+                                        }
+				}
+			};
+		});
+        
       resultatenTable.setItems(resultatenList); 
       puntenColumn.setSortType(TableColumn.SortType.DESCENDING);
         resultatenTable.getSortOrder().add(puntenColumn);

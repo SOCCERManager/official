@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Random;
 import java.util.ResourceBundle;
+import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
@@ -22,6 +23,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.ProgressBarTableCell;
 import javafx.scene.layout.AnchorPane;
 import soccer.Competitie;
 import soccer.PosPlayer;
@@ -50,11 +52,11 @@ public class KoopframeController implements Initializable {
     @FXML
     private TableColumn<Speler, String> typeColumn;
     @FXML
-    private TableColumn<Speler, Integer> aanvallendColumn;
+    private TableColumn<Speler, Double> aanvallendColumn;
     @FXML
-    private TableColumn<Speler, Integer> verdedigendColumn;
+    private TableColumn<Speler, Double> verdedigendColumn;
     @FXML
-    private TableColumn<Speler, Integer> staminaColumn;
+    private TableColumn<Speler, Double> staminaColumn;
     @FXML
     private TableColumn<Speler, Integer> prijsColumn;
     @FXML
@@ -112,17 +114,27 @@ public class KoopframeController implements Initializable {
         typeColumn.setCellValueFactory(
             cellData -> new SimpleStringProperty(""+cellData.getValue().getType()));
         aanvallendColumn.setCellValueFactory(
-            cellData -> new SimpleIntegerProperty(cellData.getValue().getAanvallend()).asObject());
+                cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getVerdedigend()* 0.01)).asObject());
+        aanvallendColumn.setCellFactory(
+                ProgressBarTableCell.<Speler> forTableColumn());
         verdedigendColumn.setCellValueFactory(
-            cellData -> new SimpleIntegerProperty(cellData.getValue().getVerdedigend()).asObject());
+                cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getVerdedigend()* 0.01)).asObject());
+        verdedigendColumn.setCellFactory(
+                ProgressBarTableCell.<Speler> forTableColumn());
         staminaColumn.setCellValueFactory(
-            cellData -> new SimpleIntegerProperty(cellData.getValue().getUithoudingsvermogen()).asObject());
+                cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getVerdedigend()* 0.01)).asObject());
+        staminaColumn.setCellFactory(
+                ProgressBarTableCell.<Speler> forTableColumn());
         prijsColumn.setCellValueFactory(
             cellData -> new SimpleIntegerProperty(cellData.getValue().defineMarketValue()).asObject());
         
         marketTable.setItems(spelerList);
         prijsColumn.setSortType(TableColumn.SortType.DESCENDING);
         marketTable.getSortOrder().add(prijsColumn);
+        
+        aanvallendColumn.getStyleClass().add("red-bar");
+        staminaColumn.getStyleClass().add("yellow-bar");
+        verdedigendColumn.getStyleClass().add("blue-bar");
     }
     
     @FXML
