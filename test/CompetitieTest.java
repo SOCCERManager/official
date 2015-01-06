@@ -530,35 +530,7 @@ public class CompetitieTest {
         assertEquals(wedstr, wedstrControle);
     }
     
-    @Test
-    public void Test() {
-        Speler s1 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
-        PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
-        ArrayList<Speler> sp1 = new ArrayList<Speler>();
-        ArrayList<PosPlayer> pp = new ArrayList<PosPlayer>();
-        pp.add(p1);
-        sp1.add(s1);
-        
-        Speler s2 = new Speler("A", 14, SpelerType.Aanvaller, 10, 10,10,10);
-        PosPlayer p2 = new PosPlayer(s1, SpelerType.Aanvaller);
-        ArrayList<Speler> sp2 = new ArrayList<Speler>();
-        ArrayList<PosPlayer> pp2 = new ArrayList<PosPlayer>();
-        pp2.add(p2);
-        sp2.add(s1);
-        
-        Team t1 = new Team(sp1, "Team", pp, null, 50000);
-        Team t2 = new Team(sp2, "Team", pp, null, 50000);
-        ArrayList<Team> ta = new ArrayList<Team>();
-        ta.add(t1);
-        ta.add(t2);
-        
-        Wedstrijd we = new Wedstrijd(t1,t2);
-        ArrayList<Wedstrijd> w = new ArrayList<Wedstrijd>();
-        w.add(we);
-        
-        Competitie c1 = new Competitie(w,ta); 
-        assertEquals(c1, Competitie.getCompetitie());
-    }
+    
     
     @Test
     public void getWinsOfTeamAantalTest() {
