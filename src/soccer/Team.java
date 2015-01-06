@@ -200,7 +200,17 @@ public class Team {
     }
     
     public void addSpeler(Speler speler) {
+        // remove first
+        //Competitie.getCompetitie().getTeams().stream().filter(v -> v.getSpelers().contains(speler)).findFirst().ifPresent(v -> ((Team)v).getSpelers().remove(speler));
         this.spelers.add(speler);
+        for(int i=0; i<competitie.getTeams().size(); i++){
+            if(competitie.getTeams().get(i).equals(competitie.getTeams().get(competitie.getUserindex())) == false && competitie.getTeams().get(i).getSpelers().contains(speler)){
+                System.out.println("Removing from team: " + competitie.getTeams().get(i).getName() +
+                                    "\n\t\t Team size: " + competitie.getTeams().get(i).getSpelers().size());
+                competitie.getTeams().get(i).getSpelers().remove(speler);
+                
+            }
+        }
         System.out.println("Speler " + speler.getNaam() + " toegevoegd");
     }
     
