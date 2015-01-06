@@ -1036,6 +1036,5 @@ public class CompetitieTest {
         c1.setUserindex(6);
         System.out.println("FINAL" + c1.getWedstrijden());
         assertNull(c1.playPlayerGame());
-        
     }
 }
