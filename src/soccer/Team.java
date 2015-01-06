@@ -258,7 +258,7 @@ public class Team {
         // sort spelers by defensive score
         this.spelers.sort((s2, s1) -> s1.getVerdedigend() - s2.getVerdedigend());
         
-        System.out.println("Sortyed player by defence");
+        System.out.println("Sorted player by defence");
         System.out.println(this.spelers);
         
         // add defenders till there are 4 defenders in there
@@ -282,7 +282,7 @@ public class Team {
         // sort spelers by uithoudings score
         this.spelers.sort((s2, s1) -> s1.getUithoudingsvermogen()- s2.getUithoudingsvermogen());
         
-        System.out.println("Sortyed player by Uithoudingsvermogen");
+        System.out.println("Sorted player by Uithoudingsvermogen");
         System.out.println(this.spelers);
         System.out.println(totMiddenvelders + " Avaliable middenvelders in total");
         System.out.println(Math.min(totMiddenvelders, 3)+5);
@@ -310,7 +310,7 @@ public class Team {
         // sort spelers by aanvallende score
         this.spelers.sort((s2, s1) -> s1.getAanvallend()- s2.getAanvallend());
         
-        System.out.println("Sortyed player by Aanvallend");
+        System.out.println("Sorted player by Aanvallend");
         System.out.println(this.spelers);
         
         // add defenders till there are 4 anvallers in there
