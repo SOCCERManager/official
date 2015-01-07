@@ -12,7 +12,7 @@
    <children>
       <AnchorPane fx:id="marketPane" layoutX="10.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label fx:id="marketLabel" alignment="TOP_LEFT" text="Market" AnchorPane.leftAnchor="10.0">
+            <Label fx:id="marketLabel" alignment="TOP_LEFT" text="Markt" AnchorPane.leftAnchor="10.0">
                <font>
                   <Font size="35.0" />
                </font>

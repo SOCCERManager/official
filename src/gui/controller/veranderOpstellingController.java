@@ -88,6 +88,10 @@ public class veranderOpstellingController implements Initializable {
     private VBox alert1;
     @FXML
     private TextArea alert1Text;
+    @FXML 
+    private VBox alert2;
+    @FXML
+    private TextArea alert2Text;
     @FXML
     private Button opstellingRemoveButton;
     @FXML
@@ -208,7 +212,12 @@ public class veranderOpstellingController implements Initializable {
     @FXML
     private void handleAddToOpstelling() {
         if(opstelling.size()<11){
-            opstelling.add(teamTable.getSelectionModel().getSelectedItem());
+            if(!teamTable.getSelectionModel().getSelectedItem().isUnavaliableToPlay()) {
+                opstelling.add(teamTable.getSelectionModel().getSelectedItem());
+            } else {
+                alert2Text.setText("Speler is niet beschikbaar: " + teamTable.getSelectionModel().getSelectedItem().getStatus() + "!");
+                alert2.setVisible(true);
+            }
             if(opstelling.size()==11){
                 opstellingAddButton.setDisable(true);
             }
@@ -243,6 +252,11 @@ public class veranderOpstellingController implements Initializable {
     @FXML
     private void handleCloseAlert1() {
         alert1.setVisible(false);
+    }
+    
+    @FXML
+    private void handleCloseAlert2() {
+        alert2.setVisible(false);
     }
 
             
