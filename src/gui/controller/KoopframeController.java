@@ -89,9 +89,7 @@ public class KoopframeController implements Initializable {
             drawTable();    
             oldmatchplayed = Competitie.getCompetitie().getPlayedGamesofTeam(userteam);
             System.out.println("old match: " +oldmatchplayed + "\nnew match: " + Competitie.getCompetitie().getPlayedGamesofTeam(userteam));
-        }
-        
-            
+        } 
     }
     
     private void setData() {
