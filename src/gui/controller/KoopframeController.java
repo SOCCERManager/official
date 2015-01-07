@@ -6,6 +6,7 @@
 package gui.controller;
 
 import gui.MainApp;
+import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -17,11 +18,13 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.ProgressBarTableCell;
 import javafx.scene.layout.AnchorPane;
@@ -83,6 +86,18 @@ public class KoopframeController implements Initializable {
                 }
             }
         }
+        
+        marketTable.setRowFactory(tv -> {
+            TableRow<Speler> row = new TableRow<>();
+            row.setOnMouseClicked(event -> {
+                Speler rowData = row.getItem(); 
+                System.out.println("Speler: " + rowData.getNaam() + "\t\tAanvallend: "+ rowData.getAanvallend() + "\tVerdedigend: " + rowData.getVerdedigend() + "\tUithouding: " + rowData.getUithoudingsvermogen() + "\tPrijs: " + rowData.getPrijs());
+            });
+            return row;
+        });
+        
+        
+        
         
         drawTable();        
     }
