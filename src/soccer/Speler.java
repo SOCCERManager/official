@@ -352,7 +352,7 @@ public class Speler {
         }
         double prijs = (Math.pow((double)getAanvallend(), 2.0) + Math.pow((double)getVerdedigend(), 2.0) + Math.pow((double)getUithoudingsvermogen(), 2.0))*factor;
         setPrijs((int)prijs);
-        return (int)prijs;
+        return ((int)(prijs/1000))*1000;
     }
 
     /**

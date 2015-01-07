@@ -124,7 +124,7 @@ public class SpelerTest {
     @Test
     public void defineMarketValueAanvTest(){
         s1.defineMarketValue();
-        assertTrue(s1.defineMarketValue()== 1060300);
+        assertTrue(s1.defineMarketValue()== 1060000);
     }
     
     @Test
@@ -286,13 +286,13 @@ public class SpelerTest {
     @Test
     public void defineMarketValueVerdTest() {
         s1.setType(SpelerType.Verdediger);
-        assertTrue(s1.defineMarketValue()==1060300);
+        assertTrue(s1.defineMarketValue()==1060000);
     }
     
     @Test
     public void defineMarketValueMidTest() {
         s1.setType(SpelerType.Middenvelder);
-        assertTrue(s1.defineMarketValue()==1060300);
+        assertTrue(s1.defineMarketValue()==1060000);
     }
     
     @Test
