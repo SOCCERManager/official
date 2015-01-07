@@ -84,5 +84,15 @@
             <TextArea fx:id="alert1Text" editable="false" prefHeight="200.0" prefWidth="200.0" text="ALERT1&#10;" wrapText="true" />
          </children>
       </VBox>
+      <VBox fx:id="alert2" layoutX="20.0" layoutY="20.0" prefHeight="138.0" prefWidth="600.0" styleClass="messages" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="27.0" prefWidth="600.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleCloseAlert2" styleClass="closeButton" text="x" AnchorPane.rightAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <TextArea fx:id="alert2Text" editable="false" prefHeight="200.0" prefWidth="200.0" text="ALERT2&#10;&#10;&#10;" wrapText="true" />
+         </children>
+      </VBox>
    </children>
 </AnchorPane>
