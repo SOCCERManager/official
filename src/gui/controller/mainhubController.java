@@ -91,7 +91,7 @@ public class mainhubController implements Initializable {
     @FXML
     private void handleVeranderOpstelling() throws IOException{
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(MainApp.class.getResource("view/veranderOpstelling.fxml"));
+        loader.setLocation(MainApp.class.getResource("view/veranderopstelling.fxml"));
         paneAdd(loader);
                 
     }
