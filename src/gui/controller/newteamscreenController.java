@@ -98,7 +98,7 @@ public class newteamscreenController implements Initializable {
         positieColumn.setCellValueFactory(
                 cellData -> new SimpleStringProperty(""+cellData.getValue().getType()));
         aanvalColumn.setCellValueFactory(
-                cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getVerdedigend()* 0.01)).asObject());
+                cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getAanvallend()* 0.01)).asObject());
         aanvalColumn.setCellFactory(
                 ProgressBarTableCell.<Speler> forTableColumn());
         verdedigingColumn.setCellValueFactory(
@@ -106,7 +106,7 @@ public class newteamscreenController implements Initializable {
         verdedigingColumn.setCellFactory(
                 ProgressBarTableCell.<Speler> forTableColumn());
         staminaColumn.setCellValueFactory(
-                cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getVerdedigend()* 0.01)).asObject());
+                cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getUithoudingsvermogen()* 0.01)).asObject());
         staminaColumn.setCellFactory(
                 ProgressBarTableCell.<Speler> forTableColumn());
         
