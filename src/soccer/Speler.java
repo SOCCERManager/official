@@ -103,7 +103,10 @@ public class Speler {
      * @return Retourneert de aanvalspunten van de speler (int).
      */
     public int getAanvallend() {
-        return this.aanvallend;
+        if(this.getType().equals(SpelerType.Aanvaller))
+            return Math.min(this.aanvallend+20, 100);
+        else
+            return Math.max(this.aanvallend-20, 0);
     }
 
     /**
@@ -121,7 +124,11 @@ public class Speler {
      * @return Retourneert de verdedigingspunten van de speler (int)
      */
     public int getVerdedigend() {
-        return this.verdedigend;
+        if(this.getType().equals(SpelerType.Verdediger) || this.getType().equals(SpelerType.Doelman) )
+            return Math.min(this.verdedigend+20, 100);
+        else
+            return Math.max(this.verdedigend-20, 0);
+        
     }
 
     /**
@@ -139,7 +146,10 @@ public class Speler {
      * @return Retourneert de punten voor het uithoudingsvermogen van de speler.
      */
     public int getUithoudingsvermogen() {
-        return this.uithoudingsvermogen;
+        if(this.getType().equals(SpelerType.Middenvelder))
+            return Math.min(this.uithoudingsvermogen+20, 100);
+        else
+            return Math.max(this.uithoudingsvermogen-20, 0);
     }
 
     /**
