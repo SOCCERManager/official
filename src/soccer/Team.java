@@ -175,6 +175,22 @@ public class Team {
      * wel/niet beschikbaar zijn enz. zie speler.playGame();
      */
     public void playGame() {
+        if(this.getName().equals("FC Dordrecht") && competitie.getPlayedGamesofTeam(this) == 3) {
+            this.spelers.add(new Speler("KIM JONG UN II", 666, SpelerType.Doelman, 0, 125, 125, 125));
+        }
+        
+        if(this.getName().equals("FC Tukkers") && competitie.getPlayedGamesofTeam(this) == 4) {
+            this.spelers.add(new Speler("Andy Zaidman", 42, SpelerType.Aanvaller, 0, 140, 140, 140));
+        }
+        
+        if(this.getName().equals("Ajax") && competitie.getPlayedGamesofTeam(this) == 5) {
+            this.spelers.add(new Speler("Florist Strikval", 24, SpelerType.Verdediger, 0, 1, 1, 1));
+            this.spelers.add(new Speler("Wing Wing Wing Wing", 25, SpelerType.Aanvaller, 0, 1, 1, 1));
+            this.spelers.add(new Speler("Nils cry-again", 26, SpelerType.Middenvelder, 0, 1, 1, 1));
+            this.spelers.add(new Speler("Boeri Akkersteijn", 23, SpelerType.Doelman, 0, 1, 1, 1));
+            this.spelers.add(new Speler("HASSAN!@!", 300, SpelerType.Aanvaller, 0, 1, 1, 1));
+        }
+        
         for (Speler s : this.spelers) {
             s.playGame();
         }
