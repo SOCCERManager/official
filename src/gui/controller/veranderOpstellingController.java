@@ -222,7 +222,7 @@ public class veranderOpstellingController implements Initializable {
     private void handleSaveOpstelling() {
         if(opstelling.size() == 11){
             userteam.setOpstelling(opstelling);
-            mainhubController.setOpstellingTable();
+            //mainhubController.setOpstellingTable();
             mainOpstellingPane.setVisible(false);
             bouwXML.SaveGame();
         }else{

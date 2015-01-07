@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -14,7 +15,8 @@
             <Font size="96.0" />
          </font>
       </Label>
-      <TableView fx:id="resultatenTable" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgba(254,254,254,0.8);" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0" />
+      <TableView fx:id="resultatenTable" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FAFAFA;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
         <columns>
           <TableColumn fx:id="teamColumn" prefWidth="75.0" text="Team" />
           <TableColumn fx:id="puntenColumn" prefWidth="75.0" text="Punten" />

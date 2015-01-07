@@ -34,26 +34,7 @@ import soccer.bouwXML;
  * @author floris
  */
 public class mainhubController implements Initializable {
-    private Team userteam = Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex());
-    private ObservableList<Speler> teamData = FXCollections.observableArrayList();
-    @FXML
-    private TableView<Speler> teamTable;
-    @FXML
-    private TableColumn<Speler, String> zijteamColumn;
-    @FXML
-    private TableColumn<Speler, Integer> zijrugColumn;
-    @FXML
-    private TableColumn<Speler, String> zijnaamColumn;
     
-    private ObservableList<PosPlayer> opstelData = FXCollections.observableArrayList();
-    @FXML
-    private TableView<PosPlayer> opstelTable;
-    @FXML
-    private TableColumn<PosPlayer, Integer> opstelrugColumn;
-    @FXML
-    private TableColumn<PosPlayer, String> opstelnaamColumn;
-    @FXML
-    private TableColumn<PosPlayer, String> opstelposColumn;
     
     private static mainhubController mch;
     
@@ -69,8 +50,7 @@ public class mainhubController implements Initializable {
     private Label winsLabel;
     @FXML
     private Label kaartenLabel;
-    @FXML
-    private Label gameLabel;
+    
     
     @FXML
     private AnchorPane hubBanner;
@@ -85,37 +65,7 @@ public class mainhubController implements Initializable {
      */
     public void initialize(URL url, ResourceBundle rb) {
         Competitie.getCompetitie().playGamesTilPlayerGameIsDue();
-        teamData.addAll(userteam.getSpelers());
-        if(!userteam.OpstellingIsValide())
-            userteam.generateOpstelling();
-        opstelData.addAll(userteam.getOpstelling());
         
-        zijteamColumn.setText(userteam.getName());
-        zijnaamColumn.setCellValueFactory(
-                cellData -> new SimpleStringProperty(cellData.getValue().getNaam()));
-        zijrugColumn.setCellValueFactory(
-                cellData -> new SimpleIntegerProperty(cellData.getValue().getNummer()).asObject());
-        
-        opstelnaamColumn.setCellValueFactory(
-                cellData -> new SimpleStringProperty(cellData.getValue().getNaam()));
-        opstelrugColumn.setCellValueFactory(
-                cellData -> new SimpleIntegerProperty(cellData.getValue().getNummer()).asObject());
-        opstelposColumn.setCellValueFactory(
-                cellData -> new SimpleStringProperty(""+cellData.getValue().getPosSpelertype()));
-        
-        
-        teamTable.getSelectionModel().selectedItemProperty().addListener(
-                (observable, oldValue, newValue) -> showSpelerDetails(newValue));
-        opstelTable.getSelectionModel().selectedItemProperty().addListener(
-                (observable, oldValue, newValue) -> showOpstellingDetails(newValue));
-        // TODO
-        
-        opstelTable.setItems(opstelData);
-        teamTable.setItems(teamData);
-        
-        zijnaamColumn.setSortType(TableColumn.SortType.ASCENDING);
-        teamTable.getSortOrder().add(zijnaamColumn);
-        gameLabel.setText(loadscreenController.savegame);
         mainhubController.mch = this;
     }    
     
@@ -185,28 +135,13 @@ public class mainhubController implements Initializable {
     }
     
     @FXML
-    private void handleExit(){
-        bouwXML.SaveGame();
-        System.exit(0);
+    private void handleTeam() throws IOException{
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(MainApp.class.getResource("view/teamframe.fxml"));
+        paneAdd(loader);
     }
     
-    public static void setTeamTable() {
-        mch.teamData.setAll(mch.userteam.getSpelers());
-        mch.zijnaamColumn.setCellValueFactory(
-                cellData -> new SimpleStringProperty(cellData.getValue().getNaam()));
-        mch.zijrugColumn.setCellValueFactory(
-                cellData -> new SimpleIntegerProperty(cellData.getValue().getNummer()).asObject());
-    }
     
-    public static void setOpstellingTable() {
-        mch.opstelData.setAll(mch.userteam.getOpstelling());
-        mch.opstelnaamColumn.setCellValueFactory(
-                cellData -> new SimpleStringProperty(cellData.getValue().getNaam()));
-        mch.opstelrugColumn.setCellValueFactory(
-                cellData -> new SimpleIntegerProperty(cellData.getValue().getNummer()).asObject());
-        mch.opstelposColumn.setCellValueFactory(
-                cellData -> new SimpleStringProperty(""+cellData.getValue().getPosSpelertype()));
-    }
     
     public void setMainApp(MainApp mainApp) {
         this.mainApp = mainApp;

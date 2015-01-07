@@ -16,25 +16,33 @@
 }
 .button {
     -fx-padding: 5 22 5 22;   
-    -fx-background-radius: 0;
-    -fx-background-color: #1d1d1d;
+    -fx-background-color: #FEFEFE;
     -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
     -fx-font-size: 16pt;
-    -fx-text-fill: #d8d8d8;
+    -fx-text-fill: #080308;
     -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-border-radius: 6;
     //-fx-effect: innershadow(gaussian, white, 10, 0.1, 0, 0); 
 }
 
 .button:hover {
-    -fx-background-color: #3a3a3a;
+    -fx-background-color: #080308;
+    -fx-text-fill: #FEFEFE;
 }
 
-#leftPanel, #resultatenTable, #teamTable, #spelerTable, #marketPane, #mainOpstellingPane, #marketTable, #titlePane, #teamTable, #opstellingTable{
-    -fx-background-color: whitesmoke;
-    -fx-opacity:.95;
+.button:active {
+    -fx-background-color: #080308;
+    -fx-text-fill: #FEFEFE;
+}
+
+#leftPanel, #resultatenTable, #teamTable, #spelerTable, #marketPane, #mainOpstellingPane, #marketTable, #titlePane, #teamTable, #opstellingTable, #opstelTable{
+    -fx-background-color: rgba(245,245,245,0.3);
+    -fx-background-radius: 6;
+    -fx-opacity:.8;
     -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
     -fx-font-size: 10pt;
     -fx-text-fill: #d8d8d8;
+    -fx-border-radius: 6;
 }
 
 #title{
