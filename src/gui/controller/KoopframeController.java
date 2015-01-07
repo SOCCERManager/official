@@ -129,7 +129,7 @@ public class KoopframeController implements Initializable {
         typeColumn.setCellValueFactory(
             cellData -> new SimpleStringProperty(""+cellData.getValue().getType()));
         aanvallendColumn.setCellValueFactory(
-                cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getVerdedigend()* 0.01)).asObject());
+                cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getAanvallend()* 0.01)).asObject());
         aanvallendColumn.setCellFactory(
                 ProgressBarTableCell.<Speler> forTableColumn());
         verdedigendColumn.setCellValueFactory(
@@ -137,7 +137,7 @@ public class KoopframeController implements Initializable {
         verdedigendColumn.setCellFactory(
                 ProgressBarTableCell.<Speler> forTableColumn());
         staminaColumn.setCellValueFactory(
-                cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getVerdedigend()* 0.01)).asObject());
+                cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getUithoudingsvermogen()* 0.01)).asObject());
         staminaColumn.setCellFactory(
                 ProgressBarTableCell.<Speler> forTableColumn());
         prijsColumn.setCellValueFactory(
