@@ -13,6 +13,8 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Random;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
@@ -33,6 +35,7 @@ import soccer.PosPlayer;
 import soccer.Speler;
 import soccer.SpelerType;
 import soccer.Team;
+import soccer.Wedstrijd;
 
 /**
  * FXML Controller class
@@ -65,14 +68,33 @@ public class KoopframeController implements Initializable {
     @FXML
     private Team userteam = Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()); 
     private HashSet<Speler> tempList = new HashSet();
+    static HashSet<Speler> backupList = new HashSet();
     private MainApp mainApp = new MainApp();
+    static int oldmatchplayed = 0;
     
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        if(oldmatchplayed == Competitie.getCompetitie().getPlayedGamesofTeam(userteam)){
+            System.out.println("OLD TABLE");
+            tempList = backupList;
+            drawTable();
+            System.out.println("old match: " +oldmatchplayed + "\nnew match: " + Competitie.getCompetitie().getPlayedGamesofTeam(userteam));
+        }else{
+            System.out.println("NEW TABLE");
+            setData();
+            backupList = tempList;
+            drawTable();    
+            oldmatchplayed = Competitie.getCompetitie().getPlayedGamesofTeam(userteam);
+            System.out.println("old match: " +oldmatchplayed + "\nnew match: " + Competitie.getCompetitie().getPlayedGamesofTeam(userteam));
+        }
         
+            
+    }
+    
+    private void setData() {
         Random rnd = new Random();
         ArrayList<Team> teamList = Competitie.getCompetitie().getTeams();
         for (int i = 0; i < rnd.nextInt(teamList.size()); i++) {
@@ -95,15 +117,11 @@ public class KoopframeController implements Initializable {
             });
             return row;
         });
-        
-        
-        
-        
-        drawTable();        
     }
     
     private void drawTable(){
         ObservableList<Speler>spelerList = FXCollections.observableArrayList();
+        System.out.println(tempList.size());
         spelerList.addAll(tempList);
         
         for (int i=0; i<spelerList.size(); i++){
