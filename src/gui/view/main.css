@@ -35,7 +35,7 @@
     -fx-text-fill: #FEFEFE;
 }
 
-#leftPanel, #resultatenTable, #teamTable, #spelerTable, #marketPane, #mainOpstellingPane, #marketTable, #titlePane, #teamTable, #opstellingTable, #opstelTable{
+#leftPanel, #resultatenTable, #teamTable, #spelerTable, #marketPane, #verkoopPane, #mainOpstellingPane, #marketTable, #titlePane, #teamTable, #opstellingTable, #opstelTable{
     -fx-background-color: rgba(245,245,245,0.3);
     -fx-background-radius: 6;
     -fx-opacity:.8;
