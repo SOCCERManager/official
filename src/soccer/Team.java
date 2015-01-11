@@ -360,7 +360,7 @@ public class Team {
                 
             }
         }
-        System.out.println("Speler " + speler.getNaam() + " toegevoegd");
+        System.out.println("Speler " + speler.getNaam() + " toegevoegd aan " + this.getName());
     }
     
     /**
