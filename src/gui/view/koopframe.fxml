@@ -12,7 +12,7 @@
    <children>
       <AnchorPane fx:id="marketPane" layoutX="10.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label fx:id="marketLabel" alignment="TOP_LEFT" text="Markt" AnchorPane.leftAnchor="10.0">
+            <Label fx:id="marketLabel" alignment="TOP_LEFT" layoutX="14.0" layoutY="1.0" text="Markt" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="1.0">
                <font>
                   <Font size="35.0" />
                </font>
@@ -23,6 +23,12 @@
                   <Button fx:id="exitBuyButton" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleExit" prefHeight="44.0" prefWidth="44.0" text="X" textAlignment="CENTER" />
                </items>
             </ToolBar>
+            <Label fx:id="budgetLabel" alignment="TOP_LEFT" layoutX="124.0" layoutY="1.0" prefHeight="51.0" prefWidth="248.0" text="Budget" AnchorPane.rightAnchor="228.0" AnchorPane.topAnchor="1.0">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Button fx:id="koopShadow" alignment="CENTER" contentDisplay="RIGHT" disable="true" layoutX="381.0" mnemonicParsing="false" onAction="#handleKoopshadow" opacity="0.0" prefHeight="54.0" prefWidth="168.0" text="Koopshadow" textAlignment="CENTER" AnchorPane.rightAnchor="51.0" />
          </children>
       </AnchorPane>
       <TableView fx:id="marketTable" layoutY="53.0" prefHeight="347.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
@@ -39,5 +45,15 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
+      <VBox fx:id="alert1" layoutX="10.0" layoutY="10.0" prefHeight="138.0" prefWidth="600.0" styleClass="messages" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="27.0" prefWidth="600.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleCloseAlert1" styleClass="closeButton" text="x" AnchorPane.rightAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <TextArea fx:id="alert1Text" editable="false" prefHeight="200.0" prefWidth="200.0" text="ALERT1&#10;" wrapText="true" />
+         </children>
+      </VBox>
    </children>
 </AnchorPane>
