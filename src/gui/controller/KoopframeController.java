@@ -24,12 +24,15 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.cell.ProgressBarTableCell;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.VBox;
 import soccer.Competitie;
 import soccer.PosPlayer;
 import soccer.Speler;
@@ -66,6 +69,15 @@ public class KoopframeController implements Initializable {
     @FXML
     private TableColumn<Speler, Integer> prijsColumn;
     @FXML
+    private Label budgetLabel;
+    @FXML
+    private VBox alert1;
+    @FXML
+    private TextArea alert1Text;
+    @FXML
+    private Button koopButton;
+    @FXML
+    private Button koopShadow;
     private Team userteam = Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()); 
     private HashSet<Speler> tempList = new HashSet();
     static HashSet<Speler> backupList = new HashSet();
@@ -77,6 +89,7 @@ public class KoopframeController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        
         if(oldmatchplayed == Competitie.getCompetitie().getPlayedGamesofTeam(userteam)){
             System.out.println("OLD TABLE");
             tempList = backupList;
@@ -90,6 +103,26 @@ public class KoopframeController implements Initializable {
             oldmatchplayed = Competitie.getCompetitie().getPlayedGamesofTeam(userteam);
             System.out.println("old match: " +oldmatchplayed + "\nnew match: " + Competitie.getCompetitie().getPlayedGamesofTeam(userteam));
         } 
+        
+        marketTable.setRowFactory(tv -> {
+            TableRow<Speler> row = new TableRow<>();
+            row.setOnMouseClicked(event -> {
+                Speler rowData = row.getItem(); 
+                System.out.println("Speler: " + rowData.getNaam() + "\t\tAanvallend: "+ rowData.getAanvallend() + "\tVerdedigend: " + rowData.getVerdedigend() + "\tUithouding: " + rowData.getUithoudingsvermogen() + "\tPrijs: " + rowData.getPrijs());
+                if(userteam.getBudget()-rowData.getPrijs()<0) {
+                    koopButton.setDisable(true);
+                    koopShadow.setDisable((false));
+                }else{
+                    koopButton.setDisable(false);
+                    koopShadow.setDisable(true);
+                }
+            });
+            return row;
+        });        
+    }
+    
+    private void drawBudget() {
+       budgetLabel.setText("Budget: " + userteam.getBudget()); 
     }
     
     private void setData() {
@@ -106,18 +139,10 @@ public class KoopframeController implements Initializable {
                 }
             }
         }
-        
-        marketTable.setRowFactory(tv -> {
-            TableRow<Speler> row = new TableRow<>();
-            row.setOnMouseClicked(event -> {
-                Speler rowData = row.getItem(); 
-                System.out.println("Speler: " + rowData.getNaam() + "\t\tAanvallend: "+ rowData.getAanvallend() + "\tVerdedigend: " + rowData.getVerdedigend() + "\tUithouding: " + rowData.getUithoudingsvermogen() + "\tPrijs: " + rowData.getPrijs());
-            });
-            return row;
-        });
     }
     
     private void drawTable(){
+        koopButton.setDisable(false);
         ObservableList<Speler>spelerList = FXCollections.observableArrayList();
         System.out.println(tempList.size());
         spelerList.addAll(tempList);
@@ -166,6 +191,8 @@ public class KoopframeController implements Initializable {
         aanvallendColumn.getStyleClass().add("red-bar");
         staminaColumn.getStyleClass().add("yellow-bar");
         verdedigendColumn.getStyleClass().add("blue-bar");
+        
+        drawBudget();
     }
     
     @FXML
@@ -175,20 +202,39 @@ public class KoopframeController implements Initializable {
 //            temp = marketTable.getSelectionModel().getSelectedItem();
 //        }
         if(marketTable.getSelectionModel().getSelectedItem()!=null){
-            Speler temp = marketTable.getFocusModel().getFocusedItem();
-            System.out.println(temp);
-            userteam.addSpeler(temp);
+            if(userteam.getBudget()-marketTable.getFocusModel().getFocusedItem().getPrijs()>0) {
+                Speler temp = marketTable.getFocusModel().getFocusedItem();
+                System.out.println(temp);
+                userteam.addSpeler(temp);
 
-            tempList.remove(temp);
-            marketTable.getSelectionModel().clearSelection();
-            System.out.println("Removing from table: " + temp.getNaam());
-            //mainApp.showMainHubScreen();
+                tempList.remove(temp);
 
-            drawTable();
+                userteam.setBudget(userteam.getBudget()-temp.defineMarketValue());
+
+                marketTable.getSelectionModel().clearSelection();
+                System.out.println("Removing from table: " + temp.getNaam());
+                //mainApp.showMainHubScreen();
+
+                drawTable();
+            }
         }else{
             System.out.println("You've encoutered the bug dragon, the player this table thinks it's selecting is null!");
         }
     }
+    
+    @FXML
+    private void handleCloseAlert1() {
+        alert1.setVisible(false);
+    }
+    
+    @FXML
+    private void handleKoopshadow() {
+        alert1Text.setText("Het budget is te klein! Uw budget is: " + userteam.getBudget() + ", "
+                + "\nmaar de speler die u probeert te kopen kost: " + marketTable.getFocusModel().getFocusedItem().getPrijs()
+                + ".\nSpeel een wedstrijd om meer geld te verdienen, of verkoop enkele spelers.");
+        alert1.setVisible(true);
+    }
+    
     
     @FXML
     private void handleExit() {
