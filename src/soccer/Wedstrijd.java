@@ -272,14 +272,27 @@ public class Wedstrijd {
         if(this.score_a > this.score_b) {
             this.points_a = 3;
             this.points_b = 0;
+            if(team_a.equals(this.getTeam_a().getCompetitie().getTeams().get(this.getTeam_a().getCompetitie().getUserindex()))){
+                int temp = this.getTeam_a().getCompetitie().getTeams().get(this.getTeam_a().getCompetitie().getUserindex()).getBudget() + 100000;
+                this.getTeam_a().getCompetitie().getTeams().get(this.getTeam_a().getCompetitie().getUserindex()).setBudget(temp);
+                
+            }
         } else if(this.score_a < this.score_b) {
             this.points_a = 0;
             this.points_b = 3;
+            if (team_b.equals(this.getTeam_b().getCompetitie().getTeams().get(this.getTeam_b().getCompetitie().getUserindex()))) {
+                int temp = this.getTeam_b().getCompetitie().getTeams().get(this.getTeam_b().getCompetitie().getUserindex()).getBudget() + 100000;
+                this.getTeam_b().getCompetitie().getTeams().get(this.getTeam_b().getCompetitie().getUserindex()).setBudget(temp);
+            }
+            
         } else { 
             this.points_a = 1;
             this.points_b = 1;
-        }
-        
+            if(team_a.equals(this.getTeam_a().getCompetitie().getTeams().get(this.getTeam_a().getCompetitie().getUserindex())) || team_b.equals(this.getTeam_b().getCompetitie().getTeams().get(this.getTeam_b().getCompetitie().getUserindex()))) {
+                int temp = this.getTeam_a().getCompetitie().getTeams().get(this.getTeam_a().getCompetitie().getUserindex()).getBudget() + 50000;
+                this.getTeam_a().getCompetitie().getTeams().get(this.getTeam_a().getCompetitie().getUserindex()).setBudget(temp);
+            }
+        }        
     }
     /**
      * De berekening achter het genereren van de goals
