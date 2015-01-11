@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
@@ -43,7 +42,7 @@
                         <TableColumn fx:id="filteredStatusColumn" prefWidth="75.0" text="Status" />
                      </columns>
                   </TableView>
-                  <VBox>
+                  <VBox prefHeight="306.0" prefWidth="90.0">
                      <children>
                         <Pane prefWidth="200.0" VBox.vgrow="ALWAYS" />
                         <Button fx:id="opstellingRemoveButton" maxHeight="50.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleRemoveFromOpstelling" prefHeight="50.0" prefWidth="100.0" text="&lt;">
@@ -80,26 +79,30 @@
                   </TableView>
                </children>
             </HBox>
-            <VBox fx:id="helpMessage" prefHeight="138.0" prefWidth="600.0" styleClass="messages">
+            <AnchorPane>
                <children>
-                  <AnchorPane prefHeight="27.0" prefWidth="600.0">
+                  <VBox fx:id="helpMessage" prefHeight="138.0" prefWidth="600.0" styleClass="messages" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#handleCloseHelpMessage" styleClass="closeButton" text="x" AnchorPane.rightAnchor="0.0" />
+                        <AnchorPane prefHeight="27.0" prefWidth="600.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#handleCloseHelpMessage" styleClass="closeButton" text="x" AnchorPane.rightAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                        <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" text="De opstelling kan hier worden veranderd. Het rechter tabel is de huidige opstelling, het linker tabel bevat de overige spelers van het team.&#10;Het linkerpijl zet de speler uit de opstelling en plaatst deze terug in het team.&#10;Het rechterpijl plaatst de speler in de opstelling.&#10;Als de opstelling uit 11 spelers bestaat, kan deze opgeslagen worden.&#10;" wrapText="true" />
                      </children>
-                  </AnchorPane>
-                  <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" text="De opstelling kan hier worden veranderd. Het rechter tabel is de huidige opstelling, het linker tabel bevat de overige spelers van het team.&#10;Het linkerpijl zet de speler uit de opstelling en plaatst deze terug in het team.&#10;Het rechterpijl plaatst de speler in de opstelling.&#10;Als de opstelling uit 11 spelers bestaat, kan deze opgeslagen worden.&#10;" wrapText="true" />
-               </children>
-            </VBox>
-            <VBox fx:id="alert1" prefHeight="138.0" prefWidth="600.0" styleClass="messages" visible="false">
-               <children>
-                  <AnchorPane prefHeight="27.0" prefWidth="600.0">
+                  </VBox>
+                  <VBox fx:id="alert1" prefHeight="138.0" prefWidth="600.0" styleClass="messages" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#handleCloseAlert1" styleClass="closeButton" text="x" AnchorPane.rightAnchor="0.0" />
+                        <AnchorPane prefHeight="27.0" prefWidth="600.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#handleCloseAlert1" styleClass="closeButton" text="x" AnchorPane.rightAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                        <TextArea fx:id="alert1Text" editable="false" prefHeight="200.0" prefWidth="200.0" text="ALERT1&#10;" wrapText="true" />
                      </children>
-                  </AnchorPane>
-                  <TextArea fx:id="alert1Text" editable="false" prefHeight="200.0" prefWidth="200.0" text="ALERT1&#10;" wrapText="true" />
+                  </VBox>
                </children>
-            </VBox>
+            </AnchorPane>
          </children>
       </VBox>
    </children>
