@@ -9,6 +9,13 @@ package gui;
 
 import gui.controller.*;
 import java.io.File;
+import java.io.FileInputStream;
+
+
+import java.net.URL;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.scene.media.MediaPlayerBuilder;
 
 import java.io.IOException;
 import javafx.application.Application;
@@ -21,6 +28,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.media.AudioClip;
 import javafx.stage.Stage;
 import soccer.Competitie;
 import soccer.Team;
@@ -38,15 +46,18 @@ public class MainApp extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        this.primarystage = stage;
+        Thread bgmusic = new BackgroundMusic("bgmusic");
+        bgmusic.setDaemon(true);
+        bgmusic.start();
         
+        this.primarystage = stage;
+    
         initRootLayout();
         
         showStartScreen();
         Parent root = FXMLLoader.load(getClass().getResource("view/root.fxml"));
         root.setId("AnchorPane");
-        
-        
+
         Scene scene = new Scene(root);
         scene.getStylesheets().addAll(this.getClass().getResource("view/main.css").toExternalForm());
     }
@@ -57,7 +68,7 @@ public class MainApp extends Application {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(MainApp.class.getResource("view/root.fxml"));
             Layout = (BorderPane) loader.load();
-
+            
             // Show the scene containing the root layout.
             Scene scene = new Scene(Layout);
             primarystage.setFullScreen(true);
