@@ -43,10 +43,11 @@ public class MainApp extends Application {
     
     private Stage primarystage;
     private BorderPane Layout;
+    public BackgroundMusic bgmusicRunnable = new BackgroundMusic("bgmusic");
+    public Thread bgmusic = new Thread(bgmusicRunnable);
     
     @Override
     public void start(Stage stage) throws Exception {
-        Thread bgmusic = new BackgroundMusic("bgmusic");
         bgmusic.setDaemon(true);
         bgmusic.start();
         
@@ -100,7 +101,7 @@ public class MainApp extends Application {
            // Give the controller access to the main app.
            mainController controller = loader.getController();
            controller.setMainApp(this);
-
+           
        } catch (IOException e) {
            e.printStackTrace();
        }
