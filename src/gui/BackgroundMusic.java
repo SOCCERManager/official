@@ -116,6 +116,7 @@ public class BackgroundMusic implements Runnable {
         }
         current.stop();
         mediaView.setMediaPlayer(nextPlayer);
+        nextPlayer.setVolume(volume);
         nextPlayer.play();
     }
     
@@ -129,6 +130,7 @@ public class BackgroundMusic implements Runnable {
         }
         current.stop();
         mediaView.setMediaPlayer(nextPlayer);
+        nextPlayer.setVolume(volume);
         nextPlayer.play();
     }
     
