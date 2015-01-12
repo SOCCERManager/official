@@ -103,7 +103,6 @@ public class BackgroundMusic implements Runnable {
         }
         MediaPlayer current = mediaView.getMediaPlayer();
         current.setVolume(volume);
-        System.out.println("Volume Up! " + volume);
     }
     
     public void playNext() {
