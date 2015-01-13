@@ -110,5 +110,53 @@
             </HBox>
          </children>
       </AnchorPane>
+      <AnchorPane id="AnchorPane" fx:id="resultPane" layoutX="10.0" layoutY="10.0" prefHeight="570.0" prefWidth="917.0" visible="false" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ToolBar prefHeight="40.0" prefWidth="824.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="5.0">
+               <items>
+                  <AnchorPane>
+                     <children>
+                        <HBox prefHeight="30.0" prefWidth="833.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#closeResults" text="X" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </items>
+            </ToolBar>
+            <HBox prefHeight="451.0" prefWidth="907.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0">
+               <children>
+                  <VBox HBox.hgrow="ALWAYS">
+                     <children>
+                        <AnchorPane prefHeight="51.0" />
+                        <TableView fx:id="resultTable" prefHeight="400.0" prefWidth="350.0" VBox.vgrow="ALWAYS">
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                           <columns>
+                              <TableColumn fx:id="userTeamColumn" prefWidth="155.0" text="team1">
+                                 <columns>
+                                    <TableColumn fx:id="userScoregColumn" prefWidth="118.0" text="Goals" />
+                                    <TableColumn fx:id="userPointColumn" prefWidth="76.0" text="Punten" />
+                                 </columns>
+                              </TableColumn>
+                              <TableColumn fx:id="enemyTeamColumn" prefWidth="75.0" text="team2">
+                                 <columns>
+                                    <TableColumn fx:id="enemyScoregColumn" prefWidth="75.0" text="Goals" />
+                                    <TableColumn fx:id="enemyPointColumn" prefWidth="75.0" text="Punten" />
+                                 </columns>
+                              </TableColumn>
+                           </columns>
+                        </TableView>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

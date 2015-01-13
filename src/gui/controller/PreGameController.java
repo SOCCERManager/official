@@ -8,6 +8,7 @@ package gui.controller;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.beans.property.SimpleDoubleProperty;
+import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -33,6 +34,7 @@ public class PreGameController implements Initializable {
     
     private ObservableList<PosPlayer> userData = FXCollections.observableArrayList();
     private ObservableList<PosPlayer> enemyData = FXCollections.observableArrayList();
+    private ObservableList<Wedstrijd> wedstrijdData = FXCollections.observableArrayList();
     
     @FXML
     private TableView<PosPlayer> userTeamTable;
@@ -53,24 +55,45 @@ public class PreGameController implements Initializable {
     private TableColumn<PosPlayer, Double> enemyScoreColumn;
     
     @FXML
+    private TableView<Wedstrijd> resultTable;
+    @FXML
+    private TableColumn<Wedstrijd, String> userTeamColumn;
+    @FXML
+    private TableColumn<Wedstrijd, Integer> userScoregColumn;
+    @FXML
+    private TableColumn<Wedstrijd, Integer> userPointColumn;
+    
+    @FXML
+    private TableColumn<Wedstrijd, String> enemyTeamColumn;
+    @FXML
+    private TableColumn<Wedstrijd, Integer> enemyScoregColumn;
+    @FXML
+    private TableColumn<Wedstrijd, Integer> enemyPointColumn;
+    
+    @FXML
     private Label userTeamLabel;
     @FXML
     private Label enemyTeamLabel;
 
+    private Wedstrijd wed;
     /**
      * Initializes the controller class.
      */
     @FXML
     private AnchorPane compareTeamsPane;
+    @FXML
+    private AnchorPane resultPane;
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         for(Wedstrijd w: Competitie.getCompetitie().getWedstrijden()){
             if(!w.isPlayed()){
                 userData.addAll(w.getTeam_a().getOpstelling());
-                System.out.println(w.getTeam_a());
                 enemyData.addAll(w.getTeam_b().getOpstelling());
                 userTeamLabel.setText(w.getTeam_a().getName());
                 enemyTeamLabel.setText(w.getTeam_b().getName());
+                wedstrijdData.addAll(w);
+                wed = w;
                 break;
             }
         }
@@ -93,6 +116,8 @@ public class PreGameController implements Initializable {
         enemyScoreColumn.setCellFactory(
                 ProgressBarTableCell.<PosPlayer> forTableColumn());
         
+        
+        
         userTeamTable.setItems(userData);
         enemyTeamTable.setItems(enemyData);
     }    
@@ -105,9 +130,29 @@ public class PreGameController implements Initializable {
         compareTeamsPane.setVisible(false);
     }
     
+    public void closeResults() {
+        resultPane.setVisible(false);
+    }
+    
     @FXML
     private void handlePlay() throws Exception{
         Competitie.getCompetitie().playPlayerGame();
+        drawResults();
+        resultPane.setVisible(true);
     }
     
+    private void drawResults(){
+        userTeamColumn.setText(wed.getTeam_a().getName());
+        enemyTeamColumn.setText(wed.getTeam_b().getName());
+        
+        userScoregColumn.setCellValueFactory(
+                cellData -> new SimpleIntegerProperty(cellData.getValue().getScore_a()).asObject());
+        userPointColumn.setCellValueFactory(
+                cellData -> new SimpleIntegerProperty(cellData.getValue().getPoints_a()).asObject());
+        enemyScoregColumn.setCellValueFactory(
+                cellData -> new SimpleIntegerProperty(cellData.getValue().getScore_b()).asObject());
+        enemyPointColumn.setCellValueFactory(
+                cellData -> new SimpleIntegerProperty(cellData.getValue().getPoints_b()).asObject());
+        resultTable.setItems(wedstrijdData);
+    }
 }
