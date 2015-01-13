@@ -9,31 +9,40 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="907.0" styleClass="generalAnchor" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.PreGameController">
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="907.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.PreGameController">
    <children>
-      <HBox alignment="CENTER" layoutY="191.0" prefHeight="178.0" prefWidth="907.0" AnchorPane.bottomAnchor="191.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="191.0">
+      <AnchorPane prefHeight="560.0" prefWidth="907.0" style="-fx-background-color: rgba(254,254,254,0.3);" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button alignment="CENTER" mnemonicParsing="false" onAction="#showCompareTeams" prefHeight="75.0" prefWidth="355.0" text="Bekijk opstellingen">
-               <font>
-                  <Font size="35.0" />
-               </font>
-               <HBox.margin>
-                  <Insets right="5.0" />
-               </HBox.margin>
-            </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="75.0" prefWidth="355.0" text="Speel de wedstrijd">
-               <font>
-                  <Font size="35.0" />
-               </font>
-               <HBox.margin>
-                  <Insets left="5.0" />
-               </HBox.margin>
-            </Button>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="510.0" prefWidth="807.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane maxHeight="1.7976931348623157E308" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                  <HBox>
+                     <children>
+                        <Pane maxWidth="1.7976931348623157E308" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#showCompareTeams" prefHeight="75.0" prefWidth="355.0" text="Bekijk opstellingen">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#handlePlay" prefHeight="75.0" prefWidth="355.0" text="Speel de wedstrijd">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Button>
+                        <Pane maxWidth="1.7976931348623157E308" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <Pane maxHeight="1.7976931348623157E308" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
          </children>
-      </HBox>
-      <AnchorPane id="AnchorPane" fx:id="compareTeamsPane" layoutX="10.0" layoutY="10.0" prefHeight="560.0" prefWidth="907.0" visible="false" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+      </AnchorPane>
+      <AnchorPane id="AnchorPane" fx:id="compareTeamsPane" prefHeight="560.0" prefWidth="907.0" visible="false" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ToolBar prefHeight="40.0" prefWidth="824.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+            <ToolBar prefHeight="40.0" prefWidth="824.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="5.0">
               <items>
                   <AnchorPane>
                      <children>
@@ -66,10 +75,13 @@
                            <columns>
                               <TableColumn fx:id="userSpelerColumn" prefWidth="155.0" text="Speler" />
                               <TableColumn fx:id="userPositieColumn" prefWidth="118.0" text="Positie" />
-                              <TableColumn fx:id="userScoreColumn" prefWidth="76.0" text="Score" />
+                              <TableColumn fx:id="userScoreColumn" prefWidth="76.0" text="Speler Punten" />
                            </columns>
                         </TableView>
                      </children>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
                   </VBox>
                   <VBox HBox.hgrow="ALWAYS">
                      <children>
@@ -89,13 +101,10 @@
                            <columns>
                               <TableColumn fx:id="enemySpelerColumn" prefWidth="155.0" text="Speler" />
                               <TableColumn fx:id="enemyPositieColumn" prefWidth="118.0" text="Positie" />
-                              <TableColumn fx:id="enemyScoreColumn" prefWidth="76.0" text="Score" />
+                              <TableColumn fx:id="enemyScoreColumn" prefWidth="76.0" text="Speler Punten" />
                            </columns>
                         </TableView>
                      </children>
-                     <HBox.margin>
-                        <Insets left="10.0" />
-                     </HBox.margin>
                   </VBox>
                </children>
             </HBox>
