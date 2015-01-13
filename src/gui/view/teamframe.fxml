@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
@@ -9,16 +10,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="907.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="gui.controller.teamframeController">
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="907.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.teamframeController">
    <children>
-      <VBox prefHeight="641.0" prefWidth="907.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox prefHeight="641.0" prefWidth="907.0" style="-fx-background-color: rgba(254,254,254,0.3);" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label fx:id="gameLabel" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="45.0" prefWidth="412.0" text="Label" VBox.vgrow="ALWAYS">
-               <font>
-                  <Font size="55.0" />
-               </font>
-            </Label>
-            <HBox prefHeight="560.0" prefWidth="907.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" VBox.vgrow="ALWAYS">
+            <HBox maxWidth="1.7976931348623157E308" prefHeight="560.0" prefWidth="907.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" VBox.vgrow="ALWAYS">
                <children>
                   <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: rgba(254,254,254,0.8); -fx-background-radius: 6;" HBox.hgrow="ALWAYS">
                      <children>
@@ -40,12 +36,12 @@
                               <TableColumn fx:id="zijnaamColumn" prefWidth="75.0" text="Naam" />
                            </columns>
                            <VBox.margin>
-                              <Insets bottom="20.0" />
+                              <Insets />
                            </VBox.margin>
                         </TableView>
                      </children>
                      <HBox.margin>
-                        <Insets left="40.0" right="30.0" />
+                        <Insets right="30.0" />
                      </HBox.margin>
                   </VBox>
                   <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: rgba(254,254,254,0.8); -fx-background-radius: 6;" HBox.hgrow="ALWAYS">
@@ -69,17 +65,17 @@
                               <TableColumn fx:id="opstelposColumn" editable="false" prefWidth="75.0" text="Positie" />
                            </columns>
                            <VBox.margin>
-                              <Insets bottom="20.0" />
+                              <Insets />
                            </VBox.margin>
                         </TableView>
                      </children>
                      <HBox.margin>
-                        <Insets right="40.0" />
+                        <Insets />
                      </HBox.margin>
                   </VBox>
                </children>
                <VBox.margin>
-                  <Insets bottom="70.0" left="30.0" right="30.0" />
+                  <Insets />
                </VBox.margin>
             </HBox>
          </children>

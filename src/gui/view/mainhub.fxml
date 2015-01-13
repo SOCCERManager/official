@@ -43,20 +43,14 @@
                   </VBox>
                   <VBox>
                      <children>
-                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="teamLogo" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                            <HBox.margin>
                               <Insets right="5.0" />
                            </HBox.margin>
-                           <image>
-                              <Image url="@football1.png" />
-                           </image>
-                        </ImageView>
-                        <Button fx:id="Menu" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="31.0" text="Main menu">
                            <VBox.margin>
-                              <Insets bottom="10.0" />
+                              <Insets bottom="5.0" />
                            </VBox.margin>
-                        </Button>
-                        <Button mnemonicParsing="false" onAction="#handlePlay" prefHeight="62.0" prefWidth="150.0" text="Play" />
+                        </ImageView>
                      </children>
                   </VBox>
                   <VBox>
@@ -66,7 +60,7 @@
                            <children>
                               <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleVeranderOpstelling" prefHeight="62.0" prefWidth="185.0" text="Opstelling">
                                  <HBox.margin>
-                                    <Insets right="5.0" />
+                                    <Insets left="5.0" right="5.0" />
                                  </HBox.margin>
                               </Button>
                               <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleKoop" prefHeight="62.0" prefWidth="185.0" text="Markt">
@@ -85,6 +79,26 @@
                <VBox.margin>
                   <Insets top="20.0" />
                </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Pane prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <VBox>
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#handlePlay" prefHeight="31.0" prefWidth="150.0" text="Play">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="Menu" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="31.0" text="Main menu">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <Pane prefWidth="200.0" HBox.hgrow="ALWAYS" />
+               </children>
             </HBox>
             <AnchorPane fx:id="viewPane" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
          </children>

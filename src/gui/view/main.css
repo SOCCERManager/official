@@ -35,7 +35,7 @@
     -fx-text-fill: #FEFEFE;
 }
 
-#leftPanel, #resultatenTable, #teamTable, #spelerTable, #marketPane, #verkoopPane, #mainOpstellingPane, #marketTable, #titlePane, #teamTable, #opstellingTable, #opstelTable{
+#leftPanel, #resultatenTable, #teamTable, #spelerTable, #marketPane, #verkoopPane, #mainOpstellingPane, #marketTable, #titlePane, #teamTable, #opstellingTable, #opstelTable, #historyTable, #sellTable{
     -fx-background-color: rgba(245,245,245,0.3);
     -fx-background-radius: 6;
     -fx-opacity:.8;
@@ -85,4 +85,4 @@
 .yellow-bar    { -fx-accent: #E6E600;    }
 .blue-bar    { -fx-accent: #000099;    }
 
-.speler { -fx-font-weight: bold;}
+.speler { -fx-background-color:#E35454;}

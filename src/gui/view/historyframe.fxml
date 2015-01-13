@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="589.0" prefWidth="956.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="gui.controller.historyframeController">
+   <children>
+      <TableView fx:id="historyTable" layoutX="189.0" layoutY="83.0" prefHeight="589.0" prefWidth="956.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Teams">
+               <columns>
+                  <TableColumn fx:id="tthuis" prefWidth="75.0" text="Thuis" />
+                  <TableColumn fx:id="tuit" prefWidth="75.0" text="Uit" />
+               </columns>
+            </TableColumn>
+          <TableColumn prefWidth="75.0" text="Score">
+               <columns>
+                  <TableColumn fx:id="sthuis" prefWidth="75.0" text="Thuis" />
+                  <TableColumn fx:id="suit" prefWidth="75.0" text="Uit" />
+               </columns>
+            </TableColumn>
+            <TableColumn prefWidth="158.0" text="Behaalde Punten">
+               <columns>
+                  <TableColumn fx:id="bthuis" prefWidth="75.0" text="Thuis" />
+                  <TableColumn fx:id="buit" prefWidth="75.0" text="Uit" />
+               </columns>
+            </TableColumn>
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

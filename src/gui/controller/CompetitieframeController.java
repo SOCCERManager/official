@@ -66,7 +66,6 @@ public class CompetitieframeController implements Initializable {
         
         ArrayList<Team> teamList = Competitie.getCompetitie().getTeams();
         resultatenList.addAll(teamList);
-        System.out.println(resultatenList);
         teamColumn.setCellValueFactory(
                 cellData -> new SimpleStringProperty(cellData.getValue().getName()));
         puntenColumn.setCellValueFactory(
