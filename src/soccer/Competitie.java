@@ -242,4 +242,13 @@ public class Competitie {
         this.playGamesTilPlayerGameIsDue();
         return houder;
     }
+    
+    /**
+     * Restart competition with same players
+     */
+    public void resetCompetition() {
+        this.wedstrijden = new ArrayList<>();
+        Collections.shuffle(this.teams);
+        bouwWedstrijden();
+    }
 }
