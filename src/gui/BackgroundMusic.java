@@ -30,7 +30,7 @@ public class BackgroundMusic implements Runnable {
 
     private ArrayList<String> listOfSongs = new ArrayList();
     final ArrayList<MediaPlayer> players = new ArrayList();
-    public static double volume = 1.0;
+    public static double volume = .5;
     public String threadName;
     private MediaView mediaView;
     

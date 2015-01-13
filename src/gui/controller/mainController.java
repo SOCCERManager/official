@@ -21,6 +21,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.media.AudioClip;
 
 /**
  *
@@ -44,19 +45,27 @@ public class mainController implements Initializable {
     
     @FXML
     private void handleLoadButton(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
+        handleClickSound();
         mainApp.showLoadScreen();
     }
     
     @FXML
     private void handleNewGameButton(ActionEvent event) {
+        handleClickSound();
         mainApp.showNewGameScreen();
     }
     
     @FXML
     private void handleExitButton() {
+        handleClickSound();
         System.exit(0);
+    }
+    
+    @FXML
+    private void handleClickSound() {
+        AudioClip clickSound = new AudioClip(new File("./src/gui/clicksound.mp3").toURI().toString());
+        clickSound.setVolume(1.5);
+        clickSound.play();
     }
     
     @FXML

@@ -7,78 +7,96 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.mainController">
+<AnchorPane id="AnchorPane" fx:id="mainScreenPane" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.mainController">
     <children>
-        <Button fx:id="mainButton" layoutY="255.0" onAction="#handleLoadButton" prefHeight="80.0" prefWidth="300.0" text="Load Game" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@background8.JPG" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="mediaPane" layoutX="617.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ToolBar fx:id="mediaBar" prefHeight="47.0" prefWidth="667.0" AnchorPane.leftAnchor="617.0" AnchorPane.rightAnchor="616.0" AnchorPane.topAnchor="0.0">
+               <items>
+                  <Label alignment="CENTER" prefHeight="37.0" prefWidth="89.0" text="Music">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleRefresh" prefHeight="35.0" prefWidth="70.0" styleClass="mediaButton">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@media_refresh.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleOpenFolder" prefHeight="35.0" prefWidth="70.0" styleClass="mediaButton">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@media_folder.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handlePrevious" prefHeight="35.0" prefWidth="70.0" styleClass="mediaButton">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@media_previous.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="playPauseButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handlePlayPause" prefHeight="35.0" prefWidth="70.0" styleClass="mediaButton">
+                     <graphic>
+                        <ImageView fx:id="playPauseImage" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@media_pause.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#handleNext" prefHeight="35.0" prefWidth="70.0" styleClass="mediaButton">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@media_next.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ImageView fx:id="muteButton" fitHeight="16.0" fitWidth="16.0" onMouseClicked="#handleMute" pickOnBounds="true" preserveRatio="true" styleClass="mediaButton">
+                     <image>
+                        <Image url="@media_volume.png" />
+                     </image>
+                  </ImageView>
+                  <Slider fx:id="volumeSlider" blockIncrement="0.1" majorTickUnit="0.1" max="1.0" minorTickCount="0" onMouseReleased="#handleVolumeSlider" prefHeight="30.0" prefWidth="171.0" showTickMarks="true" />
+               </items>
+            </ToolBar>
+         </children>
+      </AnchorPane>
+        <Button fx:id="mainButton" alignment="TOP_LEFT" contentDisplay="TEXT_ONLY" layoutX="146.0" layoutY="346.0" onAction="#handleLoadButton" onMouseEntered="#handleClickSound" prefHeight="47.0" prefWidth="452.0" style="-fx-background-color: ;" styleClass="menuButton" text="Load Game" AnchorPane.leftAnchor="146.0" AnchorPane.rightAnchor="1322.0">
+         <font>
+            <Font name="Segoe UI" size="52.0" />
+         </font>
+      </Button>
+      <Button fx:id="mainButton2" alignment="TOP_LEFT" layoutX="146.0" layoutY="490.0" onAction="#handleNewGameButton" onMouseEntered="#handleClickSound" prefHeight="47.0" prefWidth="452.0" styleClass="menuButton" text="New Game" AnchorPane.leftAnchor="146.0" AnchorPane.rightAnchor="1322.0">
          <font>
             <Font name="Lucida Sans Regular" size="36.0" />
          </font>
       </Button>
-        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <Button fx:id="mainButton2" layoutX="195.0" layoutY="392.0" onAction="#handleNewGameButton" prefHeight="80.0" prefWidth="300.0" text="New Game" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <Button fx:id="mainButton21" alignment="TOP_LEFT" layoutX="146.0" layoutY="641.0" onAction="#handleExitButton" onMouseEntered="#handleClickSound" prefHeight="47.0" prefWidth="452.0" styleClass="menuButton" text="Exit Game" AnchorPane.leftAnchor="146.0" AnchorPane.rightAnchor="1322.0">
          <font>
             <Font name="Lucida Sans Regular" size="36.0" />
          </font>
       </Button>
-      <Button fx:id="mainButton21" layoutY="529.0" onAction="#handleExitButton" prefHeight="80.0" prefWidth="300.0" text="Exit Game" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <Label fx:id="titleLabel" layoutX="80.0" layoutY="103.0" prefHeight="166.0" prefWidth="1448.0" text="System Out  Soccer Manager" wrapText="true" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="103.0">
          <font>
-            <Font name="Lucida Sans Regular" size="36.0" />
+            <Font name="Segoe UI Light" size="80.0" />
          </font>
-      </Button>
-      <ToolBar layoutX="1447.0" prefHeight="47.0" prefWidth="574.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <items>
-            <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleRefresh" prefHeight="35.0" prefWidth="70.0">
-               <graphic>
-                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@media_refresh.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleOpenFolder" prefHeight="35.0" prefWidth="70.0">
-               <graphic>
-                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@media_folder.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handlePrevious" prefHeight="35.0" prefWidth="70.0">
-               <graphic>
-                  <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@media_previous.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button fx:id="playPauseButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handlePlayPause" prefHeight="35.0" prefWidth="70.0">
-               <graphic>
-                  <ImageView fx:id="playPauseImage" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@media_pause.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button mnemonicParsing="false" onAction="#handleNext" prefHeight="35.0" prefWidth="70.0">
-               <graphic>
-                  <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@media_next.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <ImageView fx:id="muteButton" fitHeight="16.0" fitWidth="16.0" onMouseClicked="#handleMute" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@media_volume.png" />
-               </image>
-            </ImageView>
-            <Slider fx:id="volumeSlider" blockIncrement="0.1" majorTickUnit="0.1" max="1.0" minorTickCount="0" onMouseReleased="#handleVolumeSlider" prefHeight="30.0" prefWidth="171.0" showTickMarks="true" />
-         </items>
-      </ToolBar>
+      </Label>
     </children>
 </AnchorPane>

@@ -28,12 +28,43 @@
 .button:hover {
     -fx-background-color: #080308;
     -fx-text-fill: #FEFEFE;
+
+}
+.mediaButton:hover {
+    -fx-background-color: #69B9FF;
+    -fx-text-fill: #FEFEFE;
+    //-fx-effect: dropshadow(three-pass-box, black, 10, 0.1, 0, 0);
 }
 
 .button:active {
     -fx-background-color: #080308;
     -fx-text-fill: #FEFEFE;
 }
+
+.mediaButton:active {
+    -fx-background-color: #49769E;
+    -fx-text-fill: #FEFEFE;
+}
+
+#mediaPane {
+    -fx-background-color:#1E2124;
+    -fx-opacity:.8;
+}
+
+#mediaPane:hover{
+    -fx-background-color:#1E2124;
+    -fx-opacity:1;
+}
+
+#mediaBar {
+    -fx-opacity:.5;
+}
+
+#mediaBar:hover {
+    -fx-opacity:.8;
+}
+
+
 
 #leftPanel, #resultatenTable, #teamTable, #spelerTable, #marketPane, #verkoopPane, #mainOpstellingPane, #marketTable, #titlePane, #teamTable, #opstellingTable, #opstelTable, #historyTable, #sellTable{
     -fx-background-color: rgba(245,245,245,0.3);
@@ -96,3 +127,29 @@
 .blue-bar    { -fx-accent: #000099;    }
 
 .speler { -fx-background-color:#E35454;}
+
+
+.menuButton {
+    -fx-background-color:transparent;
+    -fx-text-fill:#FEFEFE;
+    -fx-font-size:42pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-effect: dropshadow(three-pass-box, black, 30, .5, 0, 0);
+}
+
+.menuButton:hover {
+    -fx-background-color:transparent;
+    -fx-text-fill:#69B9FF;
+    -fx-font-size:42pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-effect: dropshadow(three-pass-box, black, 50, .6, 0, 0);
+}
+
+#titleLabel {
+    -fx-background-color:#1E2124;
+    -fx-background-opacity:.1;
+    -fx-text-fill:#FEFEFE;
+    -fx-font-size:85pt;
+    -fx-font-family: "Segoe UI Light";
+    //-fx-effect: dropshadow(three-pass-box, black, 30, .5, 0, 0);
+}
