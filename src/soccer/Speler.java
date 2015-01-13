@@ -351,13 +351,13 @@ public class Speler {
             factor = 50;
         }
             //If player is exceptionally bad.
-        if(this.getType().toString().equals("Aanvaller") && this.getAanvallend()<20){
+        if(this.getType().toString().equals("Aanvaller") && this.getAanvallend()<30){
             factor = 10;
         }
-        if(this.getType().toString().equals("Middenvelder") && this.getUithoudingsvermogen()<20){
+        if(this.getType().toString().equals("Middenvelder") && this.getUithoudingsvermogen()<30){
             factor = 10;
         }
-        if(this.getType().toString().equals("Verdediger") && this.getVerdedigend()<20){
+        if(this.getType().toString().equals("Verdediger") && this.getVerdedigend()<30){
             factor = 10;
         }
         double prijs = (Math.pow((double)getAanvallend(), 2.0) + Math.pow((double)getVerdedigend(), 2.0) + Math.pow((double)getUithoudingsvermogen(), 2.0))*factor;
