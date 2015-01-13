@@ -165,7 +165,7 @@ public class Competitie {
      * opgeschreven.
      */
     public void bouwWedstrijden() {
-
+        Collections.shuffle(teams);
         ArrayList<Team> a = new ArrayList<>();
         ArrayList<Team> b = new ArrayList<>();
 
@@ -248,7 +248,6 @@ public class Competitie {
      */
     public void resetCompetition() {
         this.wedstrijden = new ArrayList<>();
-        Collections.shuffle(this.teams);
         bouwWedstrijden();
     }
 }
