@@ -66,11 +66,8 @@ public class PreGameController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         for(Wedstrijd w: Competitie.getCompetitie().getWedstrijden()){
             if(!w.isPlayed()){
-                //System.out.println(w.getTeam_a().getName()+" <- SPELER "+w.getTeam_b().getName()+" <- ENEMY "+w.isPlayed()+" EN HIER TEAM DAT JE SPEELT"+Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()).getName());
-                System.out.println(Competitie.getCompetitie().getUserindex());
-                for(Team t: mainhubController.originalteamlist)
-                    System.out.println(t.getName());
                 userData.addAll(w.getTeam_a().getOpstelling());
+                System.out.println(w.getTeam_a());
                 enemyData.addAll(w.getTeam_b().getOpstelling());
                 userTeamLabel.setText(w.getTeam_a().getName());
                 enemyTeamLabel.setText(w.getTeam_b().getName());

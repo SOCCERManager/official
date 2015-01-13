@@ -70,6 +70,8 @@ public class mainhubController implements Initializable {
      * Initializes the controller class.
      */
     public void initialize(URL url, ResourceBundle rb) {
+        if(!Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()).OpstellingIsValide())
+            Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()).generateOpstelling();
         teamLogo.setImage(new Image("/gui/view/logo/"+Competitie.getCompetitie().getUserindex()+".png"));
         originalteamlist = Competitie.getCompetitie().getTeams();
         System.out.println(Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()).getName() +" DIT IS DE TEAMNAAM");

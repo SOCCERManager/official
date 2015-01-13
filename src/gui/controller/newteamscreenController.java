@@ -69,6 +69,9 @@ public class newteamscreenController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+            for(int i = 0; i < Competitie.getCompetitie().getTeams().size(); i++){
+                Competitie.getCompetitie().getTeams().get(i).generateOpstelling();
+            }
         ArrayList<Team> teamList = Competitie.getCompetitie().getTeams();
         teamData.addAll(teamList);
         

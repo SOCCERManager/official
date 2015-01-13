@@ -63,8 +63,6 @@ public class teamframeController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         
         teamData.addAll(userteam.getSpelers());
-        if(!userteam.OpstellingIsValide())
-            userteam.generateOpstelling();
         opstelData.addAll(userteam.getOpstelling());
         zijnaamColumn.setCellValueFactory(
                 cellData -> new SimpleStringProperty(cellData.getValue().getNaam()));

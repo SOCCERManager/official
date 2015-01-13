@@ -107,8 +107,6 @@ public class veranderOpstellingController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        System.out.println(Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()).getName()+"HIER KIJK IK");
-        System.out.println(mainhubController.originalteamlist.get(Competitie.getCompetitie().getUserindex()).getName()+" HIER KIJK IK NU2");
         opstellingRemoveButton.setDisable(false);
         opstellingAddButton.setDisable(true);
         drawOpstelling();
