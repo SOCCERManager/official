@@ -18,8 +18,8 @@
                   <Pane prefHeight="200.0" HBox.hgrow="ALWAYS" />
                   <VBox>
                      <children>
-                        <Pane prefHeight="24.0" prefWidth="570.0" VBox.vgrow="ALWAYS" />
-                        <HBox prefHeight="62.0" prefWidth="570.0" VBox.vgrow="ALWAYS">
+                        <Pane prefHeight="0.0" prefWidth="565.0" VBox.vgrow="ALWAYS" />
+                        <HBox prefHeight="62.0">
                            <children>
                               <Button mnemonicParsing="false" onAction="#handleCompetitie" prefHeight="62.0" prefWidth="185.0" text="Competitie">
                                  <HBox.margin>
@@ -38,7 +38,7 @@
                               </Button>
                            </children>
                         </HBox>
-                        <Pane prefHeight="0.0" prefWidth="570.0" VBox.vgrow="ALWAYS" />
+                        <Pane prefHeight="0.0" prefWidth="565.0" VBox.vgrow="ALWAYS" />
                      </children>
                   </VBox>
                   <VBox>
