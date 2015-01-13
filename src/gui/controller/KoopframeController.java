@@ -78,7 +78,7 @@ public class KoopframeController implements Initializable {
     private Button koopButton;
     @FXML
     private Button koopShadow;
-    private Team userteam = Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()); 
+    private Team userteam = mainhubController.originalteamlist.get(Competitie.getCompetitie().getUserindex()); 
     private HashSet<Speler> tempList = new HashSet();
     static HashSet<Speler> backupList = new HashSet();
     private MainApp mainApp = new MainApp();
@@ -127,7 +127,7 @@ public class KoopframeController implements Initializable {
     
     private void setData() {
         Random rnd = new Random();
-        ArrayList<Team> teamList = Competitie.getCompetitie().getTeams();
+        ArrayList<Team> teamList = mainhubController.originalteamlist;
         for (int i = 0; i < rnd.nextInt(teamList.size()); i++) {
             int randomTeamIndex = rnd.nextInt(teamList.size());
             if(teamList.get(randomTeamIndex).equals(userteam) == false) {
@@ -152,7 +152,7 @@ public class KoopframeController implements Initializable {
         }
         
         teamColumn.setCellValueFactory(cellData -> new SimpleStringProperty(
-                Competitie.getCompetitie().getTeams().stream().filter(
+                mainhubController.originalteamlist.stream().filter(
                     v->v.getSpelers().contains(cellData.getValue())
                 ).findFirst().orElse(
                         new Team(

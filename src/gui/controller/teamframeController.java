@@ -33,7 +33,7 @@ public class teamframeController implements Initializable {
     
 
     
-    private Team userteam = Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex());
+    private Team userteam = mainhubController.originalteamlist.get(Competitie.getCompetitie().getUserindex());
     private ObservableList<Speler> teamData = FXCollections.observableArrayList();
     @FXML
     private TableView<Speler> teamTable;

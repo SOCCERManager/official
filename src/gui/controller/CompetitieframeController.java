@@ -64,7 +64,7 @@ public class CompetitieframeController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
-        ArrayList<Team> teamList = Competitie.getCompetitie().getTeams();
+        ArrayList<Team> teamList = mainhubController.originalteamlist;
         resultatenList.addAll(teamList);
         teamColumn.setCellValueFactory(
                 cellData -> new SimpleStringProperty(cellData.getValue().getName()));
@@ -96,7 +96,7 @@ public class CompetitieframeController implements Initializable {
 				protected void updateItem(String item, boolean empty) {
 					super.updateItem(item, empty);
 					if(item != null){
-					if (item.equalsIgnoreCase(Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()).getName())) {
+					if (item.equalsIgnoreCase(mainhubController.originalteamlist.get(Competitie.getCompetitie().getUserindex()).getName())) {
                                                 setText(item);
 						setTextFill(Color.GREEN);
                                                 setFont(Font.font(null, FontWeight.BOLD, USE_COMPUTED_SIZE));

@@ -21,6 +21,7 @@ import javafx.scene.layout.AnchorPane;
 import soccer.Competitie;
 import soccer.PosPlayer;
 import soccer.Speler;
+import soccer.Team;
 import soccer.Wedstrijd;
 
 /**
@@ -65,7 +66,10 @@ public class PreGameController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         for(Wedstrijd w: Competitie.getCompetitie().getWedstrijden()){
             if(!w.isPlayed()){
-                //System.out.println(w.getTeam_a().getName()+" <- SPELER "+w.getTeam_b().getName()+" <- ENEMY "+w.isPlayed());
+                //System.out.println(w.getTeam_a().getName()+" <- SPELER "+w.getTeam_b().getName()+" <- ENEMY "+w.isPlayed()+" EN HIER TEAM DAT JE SPEELT"+Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()).getName());
+                System.out.println(Competitie.getCompetitie().getUserindex());
+                for(Team t: mainhubController.originalteamlist)
+                    System.out.println(t.getName());
                 userData.addAll(w.getTeam_a().getOpstelling());
                 enemyData.addAll(w.getTeam_b().getOpstelling());
                 userTeamLabel.setText(w.getTeam_a().getName());
@@ -83,7 +87,17 @@ public class PreGameController implements Initializable {
         userScoreColumn.setCellFactory(
                 ProgressBarTableCell.<PosPlayer> forTableColumn());
         
+        enemySpelerColumn.setCellValueFactory(
+                cellData -> new SimpleStringProperty(cellData.getValue().getNaam()));
+        enemyPositieColumn.setCellValueFactory(
+                cellData -> new SimpleStringProperty(""+cellData.getValue().getType()));
+        enemyScoreColumn.setCellValueFactory(
+                cellData -> new SimpleDoubleProperty((cellData.getValue().getAanvallend() + cellData.getValue().getDefense() + cellData.getValue().getUithoudingsvermogen()) / 300).asObject());
+        enemyScoreColumn.setCellFactory(
+                ProgressBarTableCell.<PosPlayer> forTableColumn());
+        
         userTeamTable.setItems(userData);
+        enemyTeamTable.setItems(enemyData);
     }    
     
     public void showCompareTeams() {

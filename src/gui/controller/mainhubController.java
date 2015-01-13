@@ -37,6 +37,7 @@ import soccer.bouwXML;
  */
 public class mainhubController implements Initializable {
     
+    public static ArrayList<Team> originalteamlist;
     
     private static mainhubController mch;
     
@@ -70,10 +71,9 @@ public class mainhubController implements Initializable {
      */
     public void initialize(URL url, ResourceBundle rb) {
         teamLogo.setImage(new Image("/gui/view/logo/"+Competitie.getCompetitie().getUserindex()+".png"));
-        for(int i=0;i<Competitie.getCompetitie().getTeams().size();i++)
-            System.out.println(i +"ID VAN TEAM "+Competitie.getCompetitie().getTeams().get(i).getName());
+        originalteamlist = Competitie.getCompetitie().getTeams();
+        System.out.println(Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()).getName() +" DIT IS DE TEAMNAAM");
         Competitie.getCompetitie().playGamesTilPlayerGameIsDue();
-        System.out.println(Competitie.getCompetitie().getUserindex());
         mainhubController.mch = this;
     }    
     
@@ -127,6 +127,7 @@ public class mainhubController implements Initializable {
     }
     @FXML
     private void handlePlay() throws IOException{
+        Competitie.getCompetitie().playGamesTilPlayerGameIsDue();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(MainApp.class.getResource("view/preGame.fxml"));
         paneAdd(loader);

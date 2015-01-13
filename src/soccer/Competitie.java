@@ -165,7 +165,7 @@ public class Competitie {
      * opgeschreven.
      */
     public void bouwWedstrijden() {
-        Collections.shuffle(teams);
+        //Collections.shuffle(teams);
         ArrayList<Team> a = new ArrayList<>();
         ArrayList<Team> b = new ArrayList<>();
 

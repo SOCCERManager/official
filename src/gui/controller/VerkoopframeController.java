@@ -70,7 +70,7 @@ public class VerkoopframeController implements Initializable {
     private VBox alert1;
     @FXML
     private TextArea alert1Text;
-    private Team userteam = Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()); 
+    private Team userteam = mainhubController.originalteamlist.get(Competitie.getCompetitie().getUserindex()); 
     private ArrayList<Speler> toSell = new ArrayList();
     private ArrayList<Team> teamOffers = new ArrayList();
     static ArrayList<Speler> backupSpelerList = new ArrayList();
@@ -103,10 +103,10 @@ public class VerkoopframeController implements Initializable {
         int randomNumber = rnd.nextInt(userteam.getSpelers().size());
         for ( int i = 0; i<randomNumber; i++){
         int randomSpeler = rnd.nextInt(userteam.getSpelers().size());
-        int randomTeam = rnd.nextInt(Competitie.getCompetitie().getTeams().size());            
+        int randomTeam = rnd.nextInt(mainhubController.originalteamlist.size());            
             if (toSell.contains(userteam.getSpelers().get(randomSpeler)) == false && userteam.getOpstelling().contains(userteam.getSpelers().get(randomSpeler)) == false) {
                 toSell.add(userteam.getSpelers().get(randomSpeler));
-                teamOffers.add(Competitie.getCompetitie().getTeams().get(randomTeam));
+                teamOffers.add(mainhubController.originalteamlist.get(randomTeam));
             }
         }
         System.out.println("Spelersize: " + toSell.size());
