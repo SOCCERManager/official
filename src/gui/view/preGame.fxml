@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="907.0" styleClass="generalAnchor" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.PreGameController">
+   <children>
+      <HBox alignment="CENTER" layoutY="191.0" prefHeight="178.0" prefWidth="907.0" AnchorPane.bottomAnchor="191.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="191.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="75.0" prefWidth="355.0" text="Bekijk opstellingen">
+               <font>
+                  <Font size="35.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="75.0" prefWidth="355.0" text="Speel de wedstrijd">
+               <font>
+                  <Font size="35.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <AnchorPane id="AnchorPane" fx:id="compareTeamsPane" layoutX="10.0" layoutY="10.0" prefHeight="560.0" prefWidth="907.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <ToolBar prefHeight="40.0" prefWidth="824.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+              <items>
+                  <AnchorPane>
+                     <children>
+                        <HBox prefHeight="30.0" prefWidth="833.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                            <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" text="Button" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </ToolBar>
+            <HBox prefHeight="451.0" prefWidth="907.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0">
+               <children>
+                  <VBox HBox.hgrow="ALWAYS">
+                     <children>
+                        <AnchorPane>
+                           <children>
+                              <Label fx:id="userTeamLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="350.0" text="User team" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <font>
+                                    <Font size="35.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <TableView fx:id="userTeamTable" prefHeight="400.0" prefWidth="350.0" VBox.vgrow="ALWAYS">
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                           <columns>
+                              <TableColumn fx:id="userSpelerColumn" prefWidth="155.0" text="Speler" />
+                              <TableColumn fx:id="userPositieColumn" prefWidth="118.0" text="Positie" />
+                              <TableColumn fx:id="userScoreColumn" prefWidth="76.0" text="Score" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+                  <VBox HBox.hgrow="ALWAYS">
+                     <children>
+                        <AnchorPane>
+                           <children>
+                              <Label fx:id="enemyTeamLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="350.0" text="Tegenstander" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <font>
+                                    <Font size="35.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <TableView fx:id="enemyTeamTable" prefHeight="400.0" prefWidth="350.0" VBox.vgrow="ALWAYS">
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                           <columns>
+                              <TableColumn fx:id="enemySpelerColumn" prefWidth="155.0" text="Speler" />
+                              <TableColumn fx:id="enemyPositieColumn" prefWidth="118.0" text="Positie" />
+                              <TableColumn fx:id="enemyScoreColumn" prefWidth="76.0" text="Score" />
+                           </columns>
+                        </TableView>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
