@@ -15,6 +15,9 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.event.EventType;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
@@ -30,6 +33,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.cell.ProgressBarTableCell;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.util.Callback;
@@ -96,12 +100,12 @@ public class veranderOpstellingController implements Initializable {
     private Button opstellingRemoveButton;
     @FXML
     private Button opstellingAddButton;
-
+    @FXML
+    private Button saveOpstellingButton;
     
     private Team userteam = mainhubController.originalteamlist.get(Competitie.getCompetitie().getUserindex()); 
-    private ArrayList<Speler> teamSpelers = userteam.getSpelers();
-    private ArrayList<PosPlayer> opstelling = userteam.getOpstelling();
-
+    private ArrayList<Speler> teamSpelers = new ArrayList<Speler>(userteam.getSpelers());
+    private ArrayList<PosPlayer> opstelling = new ArrayList<PosPlayer>(userteam.getOpstelling());
     /**
      * Initializes the controller class.
      */
@@ -109,17 +113,20 @@ public class veranderOpstellingController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         opstellingRemoveButton.setDisable(false);
         opstellingAddButton.setDisable(true);
+        
         drawOpstelling();
         drawTeam();
         
-        
+        System.out.println("Teamspelers: " + teamSpelers.size());
+        System.out.println("opstelling: " + opstelling.size());
+        System.out.println("userteamopstelling: " + userteam.getOpstelling().size());
     }    
     
     public void drawTeam() {
         ObservableList<PosPlayer>filteredTeamList = FXCollections.observableArrayList();
         ArrayList<PosPlayer> allPosPlayers = new ArrayList<PosPlayer>();
         ArrayList<PosPlayer> filteredTeam = new ArrayList<PosPlayer>();
-        filteredTeamList.removeAll();
+        filteredTeamList.clear();
         for(int i=0; i<teamSpelers.size(); i++){
             allPosPlayers.add(new PosPlayer(teamSpelers.get(i), teamSpelers.get(i).getType()));
         }
@@ -162,11 +169,13 @@ public class veranderOpstellingController implements Initializable {
         filteredAanvalColumn.getStyleClass().add("red-bar");
         filteredStaminaColumn.getStyleClass().add("yellow-bar");
         filteredVerdedigingColumn.getStyleClass().add("blue-bar");
+        
+        teamTable.getSelectionModel().clearSelection();
     }
     
     public void drawOpstelling() {
         ObservableList<PosPlayer>opstellingList = FXCollections.observableArrayList();
-        opstellingList.removeAll();
+        opstellingList.clear();
         opstellingList.addAll(opstelling);
         System.out.println("DRAW OPSTELLING "+opstellingList.size());
         opstellingSpelersColumn.setCellValueFactory(
@@ -194,6 +203,8 @@ public class veranderOpstellingController implements Initializable {
         opstellingAanvalColumn.getStyleClass().add("red-bar");
         opstellingStaminaColumn.getStyleClass().add("yellow-bar");
         opstellingVerdedigingColumn.getStyleClass().add("blue-bar");
+        
+        opstellingTable.getSelectionModel().clearSelection();
     }
     
     @FXML
@@ -204,14 +215,23 @@ public class veranderOpstellingController implements Initializable {
         }
         if(opstelling.size()<11){
             opstellingAddButton.setDisable(false);
+            //saveOpstellingButton.setDisable(true);
+            saveOpstellingButton.setOpacity(.2);
+            
+            saveOpstellingButton.setOnAction(new EventHandler<ActionEvent>() {
+                @Override public void handle(ActionEvent e) {
+                    handleOpstellingMessage();
+                }
+            });
         }
+
         drawOpstelling();
         drawTeam();
     }
     
     @FXML
     private void handleAddToOpstelling() {
-        if(opstelling.size()<11){
+        if(opstelling.size()<11 && teamTable.getSelectionModel().getSelectedItem() != null){
             if(!teamTable.getSelectionModel().getSelectedItem().isUnavaliableToPlay()) {
                 opstelling.add(teamTable.getSelectionModel().getSelectedItem());
             } else {
@@ -220,11 +240,26 @@ public class veranderOpstellingController implements Initializable {
             }
             if(opstelling.size()==11){
                 opstellingAddButton.setDisable(true);
+                //saveOpstellingButton.setDisable(false);
+                
+                saveOpstellingButton.setOpacity(1);
+
+                saveOpstellingButton.setOnAction(new EventHandler<ActionEvent>() {
+                    @Override public void handle(ActionEvent e) {
+                        handleSaveOpstelling();
+                    }
+                });
             }
         }
         opstellingRemoveButton.setDisable(false);
         drawOpstelling();
         drawTeam();
+
+    }
+    
+    public void handleOpstellingMessage() {
+        alert1Text.setText("De opstelling bevat niet genoeg spelers! (" + Integer.toString(opstelling.size()) + "/11 spelers)");
+        alert1.setVisible(true);
     }
     
     @FXML
@@ -234,11 +269,9 @@ public class veranderOpstellingController implements Initializable {
             //mainhubController.setOpstellingTable();
             mainOpstellingPane.setVisible(false);
             bouwXML.SaveGame();
-        }else{
-            alert1Text.setText("De opstelling bevat niet genoeg spelers! (" + Integer.toString(opstelling.size()) + "/11 spelers)");
-            alert1.setVisible(true);
+            System.out.println("Saved new opstelling");
         }
-        System.out.println("Saved new opstelling");
+
         for(int i=0; i<userteam.getOpstelling().size();i++){
             System.out.println(userteam.getOpstelling().get(i).getNaam());
         }
