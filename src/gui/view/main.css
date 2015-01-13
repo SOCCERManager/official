@@ -45,6 +45,16 @@
     -fx-border-radius: 6;
 }
 
+.generalAnchor {
+    -fx-background-color: rgba(245,245,245,0.3);
+    -fx-background-radius: 6;
+    -fx-opacity:.8;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 10pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-border-radius: 6;
+}
+
 #title{
     -fx-text-fill:whitesmoke;
     -fx-font-size:80pt;

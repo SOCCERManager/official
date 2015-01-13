@@ -13,7 +13,7 @@
    <children>
       <HBox alignment="CENTER" layoutY="191.0" prefHeight="178.0" prefWidth="907.0" AnchorPane.bottomAnchor="191.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="191.0">
          <children>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="75.0" prefWidth="355.0" text="Bekijk opstellingen">
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#showCompareTeams" prefHeight="75.0" prefWidth="355.0" text="Bekijk opstellingen">
                <font>
                   <Font size="35.0" />
                </font>
@@ -31,7 +31,7 @@
             </Button>
          </children>
       </HBox>
-      <AnchorPane id="AnchorPane" fx:id="compareTeamsPane" layoutX="10.0" layoutY="10.0" prefHeight="560.0" prefWidth="907.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+      <AnchorPane id="AnchorPane" fx:id="compareTeamsPane" layoutX="10.0" layoutY="10.0" prefHeight="560.0" prefWidth="907.0" visible="false" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
          <children>
             <ToolBar prefHeight="40.0" prefWidth="824.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
               <items>
@@ -39,7 +39,7 @@
                      <children>
                         <HBox prefHeight="30.0" prefWidth="833.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                            <children>
-                            <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" text="Button" HBox.hgrow="ALWAYS" />
+                            <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#closeCompareTeams" text="X" HBox.hgrow="ALWAYS" />
                            </children>
                         </HBox>
                      </children>
