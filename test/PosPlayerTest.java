@@ -100,40 +100,40 @@ public class PosPlayerTest {
     public void getAanvallendTest() {
         Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
         PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
-        assertEquals(81, p1.getAanvallend());
+        assertEquals(100, p1.getAanvallend());
     }
     @Test
     public void setAanvallendTest() {
         Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
         PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
         p1.setAanvallend(89);
-        assertEquals(89, p1.getAanvallend());
+        assertEquals(100, p1.getAanvallend());
     }
     @Test
     public void getVerdedigendTest() {
         Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
         PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
-        assertEquals(98, p1.getVerdedigend());
+        assertEquals(78, p1.getVerdedigend());
     }
     @Test
     public void setVerdedigendTest() {
         Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
         PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
         p1.setVerdedigend(65);
-        assertEquals(65, p1.getVerdedigend());
+        assertEquals(45, p1.getVerdedigend());
     }
     @Test
     public void getUithoudingsvermogenTest() {
         Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
         PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
-        assertEquals(22, p1.getUithoudingsvermogen());
+        assertEquals(2, p1.getUithoudingsvermogen());
     }
     @Test
     public void setUithoudingsvermogenTest() {
         Speler s1 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
         PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
         p1.setUithoudingsvermogen(74);
-        assertEquals(74, p1.getUithoudingsvermogen());
+        assertEquals(54, p1.getUithoudingsvermogen());
     }
     @Test
     public void getOffenceZelfdeTypeTest() {
@@ -240,7 +240,7 @@ public class PosPlayerTest {
     @Test
     public void getUithoudingsVermogenWrongPosType() {
         p1.setPosSpelertype(SpelerType.Doelman);
-        assertEquals(17, p1.getUithoudingsvermogen());
+        assertEquals(1, p1.getUithoudingsvermogen());
     }
     
     @Test
