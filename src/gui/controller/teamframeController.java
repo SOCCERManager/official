@@ -5,6 +5,7 @@
  */
 package gui.controller;
 
+import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.beans.property.SimpleIntegerProperty;
@@ -16,6 +17,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import soccer.Competitie;
 import soccer.PosPlayer;
 import soccer.Speler;
@@ -27,6 +30,8 @@ import soccer.Team;
  * @author floris
  */
 public class teamframeController implements Initializable {
+    
+
     
     private Team userteam = Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex());
     private ObservableList<Speler> teamData = FXCollections.observableArrayList();
@@ -49,8 +54,6 @@ public class teamframeController implements Initializable {
     @FXML
     private TableColumn<PosPlayer, String> opstelposColumn;
 
-    @FXML
-    private Label gameLabel;
     
     
     /**
@@ -58,8 +61,6 @@ public class teamframeController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-        gameLabel.setText(userteam.getName());
         
         teamData.addAll(userteam.getSpelers());
         if(!userteam.OpstellingIsValide())

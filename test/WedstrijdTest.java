@@ -8,6 +8,7 @@ import java.util.Random;
 import org.junit.*;
 import static org.junit.Assert.*;
 import org.junit.Before;
+import soccer.Competitie;
 import soccer.PosPlayer;
 import soccer.Speler;
 import soccer.SpelerType;
@@ -164,7 +165,6 @@ public class WedstrijdTest {
     @Test
     public void scoreOfTeamBTest(){
         we.setPoints_b(3);
-        System.out.println(we);
         assertTrue(we.scoreOfTeam(t2) == 3);
     }
     
@@ -242,30 +242,6 @@ public class WedstrijdTest {
         Wedstrijd wf = new Wedstrijd(t1, t2);
         wf.setPlayed(true);
         assertTrue(we.equals(wf));
-    }
-    
-    @Test
-    public void playGameWn() {
-        we.setRnd(new Random((long) 1.0));
-        we.playGame();
-        assertEquals(3, we.getPoints_a());
-        assertEquals(0, we.getPoints_b());
-    }
-    
-    @Test
-    public void playGameLs() {
-        we.setRnd(new Random((long) 109));
-        we.playGame();
-        assertEquals(0, we.getPoints_a());
-        assertEquals(3, we.getPoints_b());
-    }
-    
-    @Test
-    public void playGameDraw(){
-        we.setRnd(new Random((long) 25.0));
-        we.playGame();
-        assertEquals(1, we.getPoints_a());
-        assertEquals(1, we.getPoints_b());
     }
     
     @Test
@@ -420,4 +396,282 @@ public class WedstrijdTest {
     public void equalsNotPlayedTest() {
         assertFalse(w8.equals(we));
     }   
+    
+    @Test
+    public void playGame() {
+        ArrayList<Speler> spellijst = new ArrayList<Speler>();
+        ArrayList<PosPlayer> posities = new ArrayList<PosPlayer>();
+        ArrayList<Team> teamlijst = new ArrayList<Team>();
+        Speler s1 = new Speler("Albert", 1, SpelerType.Aanvaller, 500, 70, 70, 70);
+        Speler s3 = new Speler("Chris", 3, SpelerType.Doelman, 500, 70, 70, 70);
+        Speler s4 = new Speler("Dirk", 4, SpelerType.Verdediger, 500, 70, 70, 70);
+        Speler s5 = new Speler("Erik", 5, SpelerType.Verdediger, 500, 70, 70, 70);
+        Speler s6 = new Speler("Frits", 6, SpelerType.Verdediger, 500, 70, 70, 70);
+        Speler s7 = new Speler("Gerard", 7, SpelerType.Verdediger, 500, 70, 70, 70);
+        Speler s8 = new Speler("Henk", 8, SpelerType.Middenvelder, 500, 70, 70, 70);
+        Speler s9 = new Speler("Adriaan", 9, SpelerType.Middenvelder, 500, 70, 70, 70);
+        Speler s10 = new Speler("Adriaan", 10, SpelerType.Middenvelder, 500, 70, 70, 70);
+        Speler s11 = new Speler("Adriaan", 11, SpelerType.Aanvaller, 500, 70, 70, 70);
+        Speler s12 = new Speler("Adriaan", 12, SpelerType.Aanvaller, 500, 70, 70, 70);
+        spellijst.add(s1);
+        spellijst.add(s3);
+        spellijst.add(s4);
+        spellijst.add(s5);
+        spellijst.add(s6);
+        spellijst.add(s7);
+        spellijst.add(s8);
+        spellijst.add(s9);
+        spellijst.add(s10);
+        spellijst.add(s11);
+        spellijst.add(s12);
+        PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
+        PosPlayer p3 = new PosPlayer(s3, SpelerType.Doelman);
+        PosPlayer p4 = new PosPlayer(s4, SpelerType.Verdediger);
+        PosPlayer p5 = new PosPlayer(s5, SpelerType.Verdediger);
+        PosPlayer p6 = new PosPlayer(s6, SpelerType.Verdediger);
+        PosPlayer p7 = new PosPlayer(s7, SpelerType.Verdediger);
+        PosPlayer p8 = new PosPlayer(s8, SpelerType.Middenvelder);
+        PosPlayer p9 = new PosPlayer(s9, SpelerType.Middenvelder);
+        PosPlayer p10 = new PosPlayer(s10, SpelerType.Middenvelder);
+        PosPlayer p11 = new PosPlayer(s11, SpelerType.Aanvaller);
+        PosPlayer p12 = new PosPlayer(s12, SpelerType.Aanvaller);
+        posities.add(p1);
+        posities.add(p3);
+        posities.add(p4);
+        posities.add(p5);
+        posities.add(p6);
+        posities.add(p7);
+        posities.add(p8);
+        posities.add(p9);
+        posities.add(p10);
+        posities.add(p11);
+        posities.add(p12); 
+        Team t56 = new Team(spellijst, "Team1", posities, null, 500000);
+        Team t57 = new Team(spellijst, "Team2", posities, null, 500000);
+        teamlijst.add(t56);
+        teamlijst.add(t57);
+        Competitie c = new Competitie(null, teamlijst);
+        c.setUserindex(0);
+        t56.setCompetitie(c);
+        t57.setCompetitie(c);
+        Wedstrijd w87 = new Wedstrijd(t56, t57);
+        w87.playGame();
+        assertTrue(1==w87.getScore_a());
+        assertTrue(1==w87.getScore_b());
+        assertTrue(1==w87.getPoints_a());
+        assertTrue(1==w87.getPoints_b());
+    }
+    
+    @Test
+    public void playGameA0PuntenTest(){
+        ArrayList<Speler> spellijst = new ArrayList<Speler>();
+        ArrayList<PosPlayer> posities = new ArrayList<PosPlayer>();
+        ArrayList<Team> teamlijst = new ArrayList<Team>();
+        Speler s1 = new Speler("Albert", 1, SpelerType.Aanvaller, 500, 0, 0, 0);
+        Speler s3 = new Speler("Chris", 3, SpelerType.Doelman, 500, 0, 0, 0);
+        Speler s4 = new Speler("Dirk", 4, SpelerType.Verdediger, 500, 0, 0, 0);
+        Speler s5 = new Speler("Erik", 5, SpelerType.Verdediger, 500, 0, 0, 0);
+        Speler s6 = new Speler("Frits", 6, SpelerType.Verdediger, 500, 0, 0, 0);
+        Speler s7 = new Speler("Gerard", 7, SpelerType.Verdediger, 500, 0, 0, 0);
+        Speler s8 = new Speler("Henk", 8, SpelerType.Middenvelder, 500, 0, 0, 0);
+        Speler s9 = new Speler("Adriaan", 9, SpelerType.Middenvelder, 500, 0, 0, 0);
+        Speler s10 = new Speler("Adriaan", 10, SpelerType.Middenvelder, 500, 0, 0, 0);
+        Speler s11 = new Speler("Adriaan", 11, SpelerType.Aanvaller, 500, 0, 0, 0);
+        Speler s12 = new Speler("Adriaan", 12, SpelerType.Aanvaller, 500, 0, 0, 0);
+        spellijst.add(s1);
+        spellijst.add(s3);
+        spellijst.add(s4);
+        spellijst.add(s5);
+        spellijst.add(s6);
+        spellijst.add(s7);
+        spellijst.add(s8);
+        spellijst.add(s9);
+        spellijst.add(s10);
+        spellijst.add(s11);
+        spellijst.add(s12);
+        PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
+        PosPlayer p3 = new PosPlayer(s3, SpelerType.Doelman);
+        PosPlayer p4 = new PosPlayer(s4, SpelerType.Verdediger);
+        PosPlayer p5 = new PosPlayer(s5, SpelerType.Verdediger);
+        PosPlayer p6 = new PosPlayer(s6, SpelerType.Verdediger);
+        PosPlayer p7 = new PosPlayer(s7, SpelerType.Verdediger);
+        PosPlayer p8 = new PosPlayer(s8, SpelerType.Middenvelder);
+        PosPlayer p9 = new PosPlayer(s9, SpelerType.Middenvelder);
+        PosPlayer p10 = new PosPlayer(s10, SpelerType.Middenvelder);
+        PosPlayer p11 = new PosPlayer(s11, SpelerType.Aanvaller);
+        PosPlayer p12 = new PosPlayer(s12, SpelerType.Aanvaller);
+        posities.add(p1);
+        posities.add(p3);
+        posities.add(p4);
+        posities.add(p5);
+        posities.add(p6);
+        posities.add(p7);
+        posities.add(p8);
+        posities.add(p9);
+        posities.add(p10);
+        posities.add(p11);
+        posities.add(p12); 
+        Team t56 = new Team(spellijst, "Team1", posities, null, 500000);
+        Team t57 = new Team(spellijst, "Team2", posities, null, 500000);
+        for(int i = 0; i<spellijst.size(); i++) {
+            t57.getSpelers().get(i).setAanvallend(100);
+        }
+        teamlijst.add(t56);
+        teamlijst.add(t57);
+        Competitie c = new Competitie(null, teamlijst);
+        c.setUserindex(0);
+        t56.setCompetitie(c);
+        t57.setCompetitie(c);
+        Wedstrijd w87 = new Wedstrijd(t56, t57);
+        w87.playGame();
+        assertTrue(7==w87.getScore_a());
+        assertTrue(13==w87.getScore_b());
+        assertTrue(0==w87.getPoints_a());
+        assertTrue(3==w87.getPoints_b());
+    }
+    @Test
+    public void playGameB0PuntenTest() { 
+        ArrayList<Speler> spellijst = new ArrayList<Speler>();
+        ArrayList<PosPlayer> posities = new ArrayList<PosPlayer>();
+        ArrayList<Team> teamlijst = new ArrayList<Team>();
+        Speler s1 = new Speler("Albert", 1, SpelerType.Aanvaller, 500, 0, 0, 0);
+        Speler s3 = new Speler("Chris", 3, SpelerType.Doelman, 500, 0, 0, 0);
+        Speler s4 = new Speler("Dirk", 4, SpelerType.Verdediger, 500, 0, 0, 0);
+        Speler s5 = new Speler("Erik", 5, SpelerType.Verdediger, 500, 0, 0, 0);
+        Speler s6 = new Speler("Frits", 6, SpelerType.Verdediger, 500, 0, 0, 0);
+        Speler s7 = new Speler("Gerard", 7, SpelerType.Verdediger, 500, 0, 0, 0);
+        Speler s8 = new Speler("Henk", 8, SpelerType.Middenvelder, 500, 0, 0, 0);
+        Speler s9 = new Speler("Adriaan", 9, SpelerType.Middenvelder, 500, 0, 0, 0);
+        Speler s10 = new Speler("Adriaan", 10, SpelerType.Middenvelder, 500, 0, 0, 0);
+        Speler s11 = new Speler("Adriaan", 11, SpelerType.Aanvaller, 500, 0, 0, 0);
+        Speler s12 = new Speler("Adriaan", 12, SpelerType.Aanvaller, 500, 0, 0, 0);
+        spellijst.add(s1);
+        spellijst.add(s3);
+        spellijst.add(s4);
+        spellijst.add(s5);
+        spellijst.add(s6);
+        spellijst.add(s7);
+        spellijst.add(s8);
+        spellijst.add(s9);
+        spellijst.add(s10);
+        spellijst.add(s11);
+        spellijst.add(s12);
+        PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
+        PosPlayer p3 = new PosPlayer(s3, SpelerType.Doelman);
+        PosPlayer p4 = new PosPlayer(s4, SpelerType.Verdediger);
+        PosPlayer p5 = new PosPlayer(s5, SpelerType.Verdediger);
+        PosPlayer p6 = new PosPlayer(s6, SpelerType.Verdediger);
+        PosPlayer p7 = new PosPlayer(s7, SpelerType.Verdediger);
+        PosPlayer p8 = new PosPlayer(s8, SpelerType.Middenvelder);
+        PosPlayer p9 = new PosPlayer(s9, SpelerType.Middenvelder);
+        PosPlayer p10 = new PosPlayer(s10, SpelerType.Middenvelder);
+        PosPlayer p11 = new PosPlayer(s11, SpelerType.Aanvaller);
+        PosPlayer p12 = new PosPlayer(s12, SpelerType.Aanvaller);
+        posities.add(p1);
+        posities.add(p3);
+        posities.add(p4);
+        posities.add(p5);
+        posities.add(p6);
+        posities.add(p7);
+        posities.add(p8);
+        posities.add(p9);
+        posities.add(p10);
+        posities.add(p11);
+        posities.add(p12); 
+        Team A = new Team(spellijst, "Team1", posities, null, 500000);
+        Team B = new Team(spellijst, "Team2", posities, null, 500000);
+        for(int i = 0; i<spellijst.size(); i++) {
+            A.getSpelers().get(i).setUithoudingsvermogen(50);
+            A.getSpelers().get(i).setVerdedigend(100);
+            A.getSpelers().get(i).setAanvallend(100);
+        }
+        teamlijst.add(A);
+        teamlijst.add(B);
+        Competitie c = new Competitie(null, teamlijst);
+        c.setUserindex(0);
+        A.setCompetitie(c);
+        B.setCompetitie(c);
+        Wedstrijd w87 = new Wedstrijd(A, B);
+        System.out.println("A aanval: " + A.getAanvallendTotaal());
+        System.out.println("A uithoud: " + A.getUithoudingsTotaal());
+        System.out.println("A verd: " + A.getVerdedigingsTotaal());
+        System.out.println("B aanval: " + B.getAanvallendTotaal());
+        System.out.println("B uithoud: " + B.getUithoudingsTotaal());
+        System.out.println("B verd: " + B.getVerdedigingsTotaal());
+        w87.playGame();
+        System.out.println("Out: " + w87.getScore_a());
+        System.out.println("Out: " + w87.getScore_b());
+//        assertTrue(7==w87.getScore_a());
+//        assertTrue(0==w87.getScore_b());
+        assertTrue(3==w87.getPoints_a());
+        assertTrue(0==w87.getPoints_b());
+    }
+    
+    @Test
+    public void playGame0GoalsTest() { 
+        ArrayList<Speler> spellijst = new ArrayList<Speler>();
+        ArrayList<PosPlayer> posities = new ArrayList<PosPlayer>();
+        ArrayList<Team> teamlijst = new ArrayList<Team>();
+        Speler s1 = new Speler("Albert", 1, SpelerType.Aanvaller, 500, 0, 0, 0);
+        Speler s3 = new Speler("Chris", 3, SpelerType.Doelman, 500, 0, 0, 0);
+        Speler s4 = new Speler("Dirk", 4, SpelerType.Verdediger, 500, 0, 0, 0);
+        Speler s5 = new Speler("Erik", 5, SpelerType.Verdediger, 500, 0, 0, 0);
+        Speler s6 = new Speler("Frits", 6, SpelerType.Verdediger, 500, 0, 0, 0);
+        Speler s7 = new Speler("Gerard", 7, SpelerType.Verdediger, 500, 0, 0, 0);
+        Speler s8 = new Speler("Henk", 8, SpelerType.Middenvelder, 500, 0, 0, 0);
+        Speler s9 = new Speler("Adriaan", 9, SpelerType.Middenvelder, 500, 0, 0, 0);
+        Speler s10 = new Speler("Adriaan", 10, SpelerType.Middenvelder, 500, 0, 0, 0);
+        Speler s11 = new Speler("Adriaan", 11, SpelerType.Aanvaller, 500, 0, 0, 0);
+        Speler s12 = new Speler("Adriaan", 12, SpelerType.Aanvaller, 500, 0, 0, 0);
+        spellijst.add(s1);
+        spellijst.add(s3);
+        spellijst.add(s4);
+        spellijst.add(s5);
+        spellijst.add(s6);
+        spellijst.add(s7);
+        spellijst.add(s8);
+        spellijst.add(s9);
+        spellijst.add(s10);
+        spellijst.add(s11);
+        spellijst.add(s12);
+        PosPlayer p1 = new PosPlayer(s1, SpelerType.Aanvaller);
+        PosPlayer p3 = new PosPlayer(s3, SpelerType.Doelman);
+        PosPlayer p4 = new PosPlayer(s4, SpelerType.Verdediger);
+        PosPlayer p5 = new PosPlayer(s5, SpelerType.Verdediger);
+        PosPlayer p6 = new PosPlayer(s6, SpelerType.Verdediger);
+        PosPlayer p7 = new PosPlayer(s7, SpelerType.Verdediger);
+        PosPlayer p8 = new PosPlayer(s8, SpelerType.Middenvelder);
+        PosPlayer p9 = new PosPlayer(s9, SpelerType.Middenvelder);
+        PosPlayer p10 = new PosPlayer(s10, SpelerType.Middenvelder);
+        PosPlayer p11 = new PosPlayer(s11, SpelerType.Aanvaller);
+        PosPlayer p12 = new PosPlayer(s12, SpelerType.Aanvaller);
+        posities.add(p1);
+        posities.add(p3);
+        posities.add(p4);
+        posities.add(p5);
+        posities.add(p6);
+        posities.add(p7);
+        posities.add(p8);
+        posities.add(p9);
+        posities.add(p10);
+        posities.add(p11);
+        posities.add(p12); 
+        Team t56 = new Team(spellijst, "Team1", posities, null, 500000);
+        Team t57 = new Team(spellijst, "Team2", posities, null, 500000);
+        for(int i = 0; i<spellijst.size(); i++) {
+            t56.getSpelers().get(i).setVerdedigend(100);
+        }
+        teamlijst.add(t56);
+        teamlijst.add(t57);
+        Competitie c = new Competitie(null, teamlijst);
+        c.setUserindex(0);
+        t56.setCompetitie(c);
+        t57.setCompetitie(c);
+        Wedstrijd w87 = new Wedstrijd(t56, t57);
+        w87.playGame();
+        assertTrue(0==w87.getScore_a());
+        assertTrue(0==w87.getScore_b());
+        assertTrue(1==w87.getPoints_a());
+        assertTrue(1==w87.getPoints_b());
+    }
 }

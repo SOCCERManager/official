@@ -20,6 +20,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import soccer.Competitie;
 import soccer.PosPlayer;
@@ -37,6 +39,9 @@ public class mainhubController implements Initializable {
     
     
     private static mainhubController mch;
+    
+    @FXML
+    private ImageView teamLogo;
     
     @FXML
     private Label nameLabel;
@@ -64,8 +69,11 @@ public class mainhubController implements Initializable {
      * Initializes the controller class.
      */
     public void initialize(URL url, ResourceBundle rb) {
+        teamLogo.setImage(new Image("/gui/view/logo/"+Competitie.getCompetitie().getUserindex()+".png"));
+        for(int i=0;i<Competitie.getCompetitie().getTeams().size();i++)
+            System.out.println(i +"ID VAN TEAM "+Competitie.getCompetitie().getTeams().get(i).getName());
         Competitie.getCompetitie().playGamesTilPlayerGameIsDue();
-        
+        System.out.println(Competitie.getCompetitie().getUserindex());
         mainhubController.mch = this;
     }    
     
@@ -112,7 +120,10 @@ public class mainhubController implements Initializable {
         paneAdd(loader); 
     }
     @FXML
-    private void handleHistory(){
+    private void handleHistory() throws IOException{
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(MainApp.class.getResource("view/historyframe.fxml"));
+        paneAdd(loader);
     }
     @FXML
     private void handlePlay() throws IOException{

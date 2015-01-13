@@ -72,35 +72,35 @@ public class SpelerTest {
     
     @Test
     public void getAanvallendTest() {
-        assertEquals(81, s1.getAanvallend());
+        assertEquals(100, s1.getAanvallend());
     }
     
     @Test
     public void setAanvallendTest() {
         s1.setAanvallend(3);
-        assertEquals(3, s1.getAanvallend());
+        assertEquals(23, s1.getAanvallend());
     }
     
     @Test
     public void getVerdedigendTest(){
-        assertEquals(98, s1.getVerdedigend());
+        assertEquals(78, s1.getVerdedigend());
     }
     
     @Test
     public void setVerdedigendTest() {
         s1.setVerdedigend(2);
-        assertEquals(2, s1.getVerdedigend());
+        assertEquals(0, s1.getVerdedigend());
     }
     
     @Test
     public void getUithoudingsvermogenTest(){
-        assertEquals(71, s1.getUithoudingsvermogen());
+        assertEquals(51, s1.getUithoudingsvermogen());
     }
     
     @Test
     public void setUithoudingsvermogenTest(){
         s1.setUithoudingsvermogen(98);
-        assertEquals(98, s1.getUithoudingsvermogen());
+        assertEquals(78, s1.getUithoudingsvermogen());
     }
     
     @Test
@@ -123,8 +123,7 @@ public class SpelerTest {
     
     @Test
     public void defineMarketValueAanvTest(){
-        s1.defineMarketValue();
-        assertTrue(s1.defineMarketValue()== 1060000);
+        assertTrue(s1.defineMarketValue()== 934000);
     }
     
     @Test
@@ -286,13 +285,13 @@ public class SpelerTest {
     @Test
     public void defineMarketValueVerdTest() {
         s1.setType(SpelerType.Verdediger);
-        assertTrue(s1.defineMarketValue()==1060000);
+        assertTrue(s1.defineMarketValue()==816000);
     }
     
     @Test
     public void defineMarketValueMidTest() {
         s1.setType(SpelerType.Middenvelder);
-        assertTrue(s1.defineMarketValue()==1060000);
+        assertTrue(s1.defineMarketValue()==904000);
     }
     
     @Test
@@ -309,5 +308,26 @@ public class SpelerTest {
         s1.setRnd(r1);
         s1.playGame();
         assertNotNull(s1.getRnd());
+    }
+    
+    @Test
+    public void defineMarketValueBadAanvTest() {
+        s1.setAanvallend(9);
+        s1.setType(SpelerType.Aanvaller);
+        assertTrue(95000==s1.defineMarketValue());
+    }
+    
+    @Test
+    public void defineMarketValueBadMidTest() {
+        s1.setUithoudingsvermogen(7);
+        s1.setType(SpelerType.Middenvelder);
+        assertTrue(105000==s1.defineMarketValue());
+    }
+    
+    @Test
+    public void defineMarketValueBadVerdTest() {
+        s1.setVerdedigend(6);
+        s1.setType(SpelerType.Verdediger);
+        assertTrue(69000==s1.defineMarketValue());
     }
 }
