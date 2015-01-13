@@ -7,6 +7,9 @@ package gui.controller;
 
 import gui.BackgroundMusic;
 import gui.MainApp;
+import java.awt.Desktop;
+import java.io.File;
+import java.io.IOException;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -89,6 +92,19 @@ public class mainController implements Initializable {
             changeVolume(0);
             volumeSlider.setValue(BackgroundMusic.volume);   
             muteButton.setImage(new Image("/gui/view/media_mute.png"));
+        }
+    }
+    
+    @FXML
+    private void handleRefresh(){
+        mainApp.bgmusicRunnable.refresh();
+    }
+    
+    @FXML
+    private void handleOpenFolder() throws IOException{
+        File musicPath = new File("./src/media");
+        if(Desktop.isDesktopSupported()) {
+            Desktop.getDesktop().open(musicPath);
         }
     }
     

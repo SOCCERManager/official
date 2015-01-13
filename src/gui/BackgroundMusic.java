@@ -38,7 +38,11 @@ public class BackgroundMusic implements Runnable {
         this.threadName = name;
     }
     public void run() {
-
+        initializePlayList();
+    }
+    
+    private void initializePlayList() {
+        System.out.println("Reading all music files and creating players...");
         File folder = new File("./src/media");
         File[] list = folder.listFiles();
         
@@ -81,7 +85,7 @@ public class BackgroundMusic implements Runnable {
 
         System.out.println("Playing: " + players.get(0).getMedia().getSource());
        
-        while(true){}
+        //while(true){}
     }
         
     private MediaPlayer createPlayer(String source) {
@@ -149,5 +153,14 @@ public class BackgroundMusic implements Runnable {
         }
         return 0;
     }
+    
+    public void refresh() {
+        MediaPlayer current = mediaView.getMediaPlayer();
+        current.stop();
+        listOfSongs.clear();
+        players.clear();
+        initializePlayList();
+    }
+    
     
 }

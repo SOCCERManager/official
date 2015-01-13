@@ -25,8 +25,26 @@
             <Font name="Lucida Sans Regular" size="36.0" />
          </font>
       </Button>
-      <ToolBar layoutX="1447.0" prefHeight="47.0" prefWidth="430.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ToolBar layoutX="1447.0" prefHeight="47.0" prefWidth="574.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <items>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleRefresh" prefHeight="35.0" prefWidth="70.0">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media_refresh.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleOpenFolder" prefHeight="35.0" prefWidth="70.0">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media_folder.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
             <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handlePrevious" prefHeight="35.0" prefWidth="70.0">
                <graphic>
                   <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
