@@ -147,9 +147,9 @@
 
 #titleLabel {
     -fx-background-color:#1E2124;
-    -fx-background-opacity:.1;
     -fx-text-fill:#FEFEFE;
     -fx-font-size:85pt;
+    -fx-opacity:.8;
     -fx-font-family: "Segoe UI Light";
-    //-fx-effect: dropshadow(three-pass-box, black, 30, .5, 0, 0);
+    //-fx-effect: dropshadow(three-pass-box, black, 80, .8, 0, 0);
 }
