@@ -115,16 +115,22 @@ public class mainhubController implements Initializable {
     private void handleHistory(){
     }
     @FXML
-    private void handlePlay(){
+    private void handlePlay() throws IOException{
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(MainApp.class.getResource("view/preGame.fxml"));
+        paneAdd(loader);
+    }
+    
+    @FXML
+    private void handlePlayGame() {
         try{
             this.currentgame = Competitie.getCompetitie().playPlayerGame();
             currentgameframeController.currentgame = currentgame;
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(MainApp.class.getResource("view/currentgameframe.fxml"));
             paneAdd(loader); 
-            System.out.println("kkk");
         }catch(Exception e){e.printStackTrace();}
-        bouwXML.SaveGame();
+        bouwXML.SaveGame();        
     }
     
     @FXML
