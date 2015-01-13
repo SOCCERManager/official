@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="compareTeamsPane" prefHeight="560.0" prefWidth="907.0" styleClass="generalAnchor" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.CompareTeamsController">
+   <children>
+      <HBox prefHeight="451.0" prefWidth="907.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox HBox.hgrow="ALWAYS">
+               <children>
+                  <AnchorPane>
+                     <children>
+                        <Label fx:id="userTeamLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="350.0" text="User team" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <TableView fx:id="userTeamTable" prefHeight="400.0" prefWidth="350.0" VBox.vgrow="ALWAYS">
+                    <columns>
+                      <TableColumn fx:id="userSpelerColumn" prefWidth="155.0" text="Speler" />
+                      <TableColumn fx:id="userPositieColumn" prefWidth="118.0" text="Positie" />
+                        <TableColumn fx:id="userScoreColumn" prefWidth="76.0" text="Score" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </VBox>
+            <VBox HBox.hgrow="ALWAYS">
+               <children>
+                  <AnchorPane>
+                     <children>
+                        <Label fx:id="enemyTeamLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="350.0" text="Tegenstander" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <TableView fx:id="enemyTeamTable" prefHeight="400.0" prefWidth="350.0" VBox.vgrow="ALWAYS">
+                     <columns>
+                        <TableColumn fx:id="enemySpelerColumn" prefWidth="155.0" text="Speler" />
+                        <TableColumn fx:id="enemyPositieColumn" prefWidth="118.0" text="Positie" />
+                        <TableColumn fx:id="enemyScoreColumn" prefWidth="76.0" text="Score" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="451.0" prefWidth="200.0" HBox.hgrow="NEVER">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#handlePlayGame" prefHeight="100.0" prefWidth="180.0" text="Speel">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Pane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
