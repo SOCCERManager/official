@@ -20,7 +20,7 @@
                      </font>
                   </Label>
                   <Pane prefWidth="200.0" HBox.hgrow="ALWAYS" />
-                  <Button fx:id="saveOpstellingButton" maxHeight="51.0" maxWidth="571.0" mnemonicParsing="false" onAction="#handleSaveOpstelling" prefHeight="42.0" prefWidth="126.0" text="Opslaan">
+                  <Button fx:id="saveOpstellingButton" maxHeight="51.0" maxWidth="571.0" mnemonicParsing="false" onAction="#handleSaveOpstelling" prefHeight="43.0" prefWidth="165.0" text="Opslaan">
                      <padding>
                         <Insets top="5.0" />
                      </padding>
