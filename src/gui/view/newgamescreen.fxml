@@ -20,11 +20,6 @@
          </font>
       </Label>
       <TextField fx:id="nameField" alignment="CENTER" layoutX="867.0" layoutY="469.0" prefHeight="71.0" prefWidth="1920.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
-      <Label alignment="CENTER" layoutX="943.0" layoutY="363.0" prefHeight="103.0" prefWidth="1920.0" text="YOURI IS EEN DIPSHIT" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-         <font>
-            <Font size="67.0" />
-         </font>
-      </Label>
       <Button layoutY="665.0" mnemonicParsing="false" onAction="#handleStartButton" prefHeight="60.0" prefWidth="1920.0" text="Start New Game" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
    </children>
 </AnchorPane>
