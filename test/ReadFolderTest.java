@@ -32,7 +32,7 @@ public class ReadFolderTest {
     
     @Before
     public void setUp() throws IOException{
-        source = Paths.get("src/saves/standaard.xml");
+        source = Paths.get("src/competitie.xml");
         target = Paths.get("test/testMap/test.xml");
         dir = new File("test/testMap");
         dir.mkdir();
