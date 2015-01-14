@@ -248,7 +248,7 @@
 			<name>ADO Denhaag</name>
 			<opstelling></opstelling>
 			<competitie reference="../../.."></competitie>
-			<budget>1000</budget>
+			<budget>500000</budget>
 		</Team>
 		<Team>
 			<spelers>
@@ -536,7 +536,7 @@
 			<name>Ajax</name>
 			<opstelling></opstelling>
 			<competitie reference="../../.."></competitie>
-			<budget>1000</budget>
+			<budget>500000</budget>
 		</Team>
 		<Team>
 			<spelers>
@@ -774,7 +774,7 @@
 			<name>AZ</name>
 			<opstelling></opstelling>
 			<competitie reference="../../.."></competitie>
-			<budget>1000</budget>
+			<budget>500000</budget>
 		</Team>
 		<Team>
 			<spelers>
@@ -992,7 +992,7 @@
 			<name>SC Cambuur</name>
 			<opstelling></opstelling>
 			<competitie reference="../../.."></competitie>
-			<budget>1000</budget>
+			<budget>500000</budget>
 		</Team>
 		<Team>
 			<spelers>
@@ -1220,7 +1220,7 @@
 			<name>FC Dordrecht</name>
 			<opstelling></opstelling>
 			<competitie reference="../../.."></competitie>
-			<budget>10000</budget>
+			<budget>500000</budget>
 		</Team>
 		<Team>
 			<spelers>
@@ -1458,7 +1458,7 @@
 			<name>Excelsior</name>
 			<opstelling></opstelling>
 			<competitie reference="../../.."></competitie>
-			<budget>1000</budget>
+			<budget>500000</budget>
 		</Team>
 		<Team>
 			<spelers>
@@ -1736,7 +1736,7 @@
 			<name>Feyenoord</name>
 			<opstelling></opstelling>
 			<competitie reference="../../.."></competitie>
-			<budget>1000</budget>
+			<budget>500000</budget>
 		</Team>
 		<Team>
 			<spelers>
@@ -1984,7 +1984,7 @@
 			<name>Go Ahead Eagles</name>
 			<opstelling></opstelling>
 			<competitie reference="../../.."></competitie>
-			<budget>1000</budget>
+			<budget>500000</budget>
 		</Team>
 		<Team>
 			<spelers>
@@ -2202,7 +2202,7 @@
 			<name>FC Groningen</name>
 			<opstelling></opstelling>
 			<competitie reference="../../.."></competitie>
-			<budget>1000</budget>
+			<budget>500000</budget>
 		</Team>
 		<Team>
 			<spelers>
@@ -2490,7 +2490,7 @@
 			<name>sc Heerenveen</name>
 			<opstelling></opstelling>
 			<competitie reference="../../.."></competitie>
-			<budget>1000</budget>
+			<budget>500000</budget>
 		</Team>
 		<Team>
 			<spelers>
@@ -2808,7 +2808,7 @@
 			<name>Heracles Almelo</name>
 			<opstelling></opstelling>
 			<competitie reference="../../.."></competitie>
-			<budget>1000</budget>
+			<budget>500000</budget>
 		</Team>
 		<Team>
 			<spelers>
@@ -3036,7 +3036,7 @@
 			<name>NAC Breda</name>
 			<opstelling></opstelling>
 			<competitie reference="../../.."></competitie>
-			<budget>1000</budget>
+			<budget>500000</budget>
 		</Team>
 		<Team>
 			<spelers>
@@ -3304,7 +3304,7 @@
 			<name>PEC Zwolle</name>
 			<opstelling></opstelling>
 			<competitie reference="../../.."></competitie>
-			<budget>1000</budget>
+			<budget>500000</budget>
 		</Team>
 		<Team>
 			<spelers>
@@ -3582,7 +3582,7 @@
 			<name>PSV</name>
 			<opstelling></opstelling>
 			<competitie reference="../../.."></competitie>
-			<budget>1000</budget>
+			<budget>500000</budget>
 		</Team>
 		<Team>
 			<spelers>
@@ -3840,7 +3840,7 @@
 			<name>FC Tukkers</name>
 			<opstelling></opstelling>
 			<competitie reference="../../.."></competitie>
-			<budget>1000</budget>
+			<budget>500000</budget>
 		</Team>
 		<Team>
 			<spelers>
@@ -4148,7 +4148,7 @@
 			<name>FC Utrecht</name>
 			<opstelling></opstelling>
 			<competitie reference="../../.."></competitie>
-			<budget>1000</budget>
+			<budget>500000</budget>
 		</Team>
 		<Team>
 			<spelers>
@@ -4386,7 +4386,7 @@
 			<name>Vitesse</name>
 			<opstelling></opstelling>
 			<competitie reference="../../.."></competitie>
-			<budget>1000</budget>
+			<budget>500000</budget>
 		</Team>
 		<Team>
 			<spelers>
@@ -4644,7 +4644,7 @@
 			<name>Willem II</name>
 			<opstelling></opstelling>
 			<competitie reference="../../.."></competitie>
-			<budget>1000</budget>
+			<budget>500000</budget>
 		</Team>
 	</teams>
 	<userindex>0</userindex>
