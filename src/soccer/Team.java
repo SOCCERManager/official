@@ -176,7 +176,7 @@ public class Team {
      */
     public void playGame() {
         if(this.getName().equals("FC Dordrecht") && competitie.getPlayedGamesofTeam(this) == 3) {
-            this.spelers.add(new Speler("KIM JONG UN II", 666, SpelerType.Doelman, 0, 125, 125, 125));
+            this.spelers.add(new Speler("KIM JONG UN", 666, SpelerType.Doelman, 0, 125, 125, 125));
         }
         
         if(this.getName().equals("FC Tukkers") && competitie.getPlayedGamesofTeam(this) == 4) {
@@ -188,7 +188,7 @@ public class Team {
             this.spelers.add(new Speler("Wing Wing Wing Wing", 25, SpelerType.Aanvaller, 0, 1, 1, 1));
             this.spelers.add(new Speler("Nils cry-again", 26, SpelerType.Middenvelder, 0, 1, 1, 1));
             this.spelers.add(new Speler("Boeri Akkersteijn", 23, SpelerType.Doelman, 0, 1, 1, 1));
-            this.spelers.add(new Speler("HASSAN!@!", 300, SpelerType.Aanvaller, 0, 1, 1, 1));
+            this.spelers.add(new Speler("[FaZe]xXx_|-|4$$A|\\|_xXx_360NOSC", 300, SpelerType.Aanvaller, 0, 1, 1, 1));
         }
         
         for (Speler s : this.spelers) {
