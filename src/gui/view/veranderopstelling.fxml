@@ -48,7 +48,7 @@
                               <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
                                  <children>
                                     <Pane HBox.hgrow="ALWAYS" />
-                                    <VBox fx:id="d1">
+                                    <VBox fx:id="d1" style="-fx-background-color: rgba(254,254,254,0.7);">
                                        <children>
                                           <Label fx:id="d_naam" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
                                           <Label fx:id="d_positie" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
@@ -59,10 +59,13 @@
                                     </VBox>
                                     <Pane HBox.hgrow="ALWAYS" />
                                  </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
                               </HBox>
                               <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
                                  <children>
-                                    <VBox fx:id="v1">
+                                    <VBox fx:id="v1" style="-fx-background-color: rgba(254,254,254,0.7);">
                                        <children>
                                           <Label fx:id="d_naam1" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
                                           <Label fx:id="d_positie1" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
@@ -72,7 +75,7 @@
                                        </children>
                                     </VBox>
                                     <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
-                                    <VBox fx:id="v2">
+                                    <VBox fx:id="v2" style="-fx-background-color: rgba(254,254,254,0.7);">
                                        <children>
                                           <Label fx:id="d_naam11" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
                                           <Label fx:id="d_positie11" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
@@ -82,7 +85,7 @@
                                        </children>
                                     </VBox>
                                     <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
-                                    <VBox fx:id="v3">
+                                    <VBox fx:id="v3" style="-fx-background-color: rgba(254,254,254,0.7);">
                                        <children>
                                           <Label fx:id="d_naam12" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
                                           <Label fx:id="d_positie12" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
@@ -92,7 +95,7 @@
                                        </children>
                                     </VBox>
                                     <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
-                                    <VBox fx:id="v4">
+                                    <VBox fx:id="v4" style="-fx-background-color: rgba(254,254,254,0.7);">
                                        <children>
                                           <Label fx:id="d_naam13" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
                                           <Label fx:id="d_positie13" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
@@ -102,10 +105,13 @@
                                        </children>
                                     </VBox>
                                  </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
                               </HBox>
                               <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
                                  <children>
-                                    <VBox fx:id="m1">
+                                    <VBox fx:id="m1" style="-fx-background-color: rgba(254,254,254,0.7);">
                                        <children>
                                           <Label fx:id="d_naam21" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
                                           <Label fx:id="d_positie21" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
@@ -115,7 +121,7 @@
                                        </children>
                                     </VBox>
                                     <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
-                                    <VBox fx:id="m2">
+                                    <VBox fx:id="m2" style="-fx-background-color: rgba(254,254,254,0.7);">
                                        <children>
                                           <Label fx:id="d_naam22" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
                                           <Label fx:id="d_positie22" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
@@ -125,7 +131,7 @@
                                        </children>
                                     </VBox>
                                     <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
-                                    <VBox fx:id="m3">
+                                    <VBox fx:id="m3" style="-fx-background-color: rgba(254,254,254,0.7);">
                                        <children>
                                           <Label fx:id="d_naam23" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
                                           <Label fx:id="d_positie23" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
@@ -135,10 +141,13 @@
                                        </children>
                                     </VBox>
                                  </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
                               </HBox>
                               <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
                                  <children>
-                                    <VBox fx:id="a1">
+                                    <VBox fx:id="a1" style="-fx-background-color: rgba(254,254,254,0.7);">
                                        <children>
                                           <Label fx:id="d_naam31" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
                                           <Label fx:id="d_positie31" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
@@ -148,7 +157,7 @@
                                        </children>
                                     </VBox>
                                     <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
-                                    <VBox fx:id="a2">
+                                    <VBox fx:id="a2" style="-fx-background-color: rgba(254,254,254,0.7);">
                                        <children>
                                           <Label fx:id="d_naam32" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
                                           <Label fx:id="d_positie32" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
@@ -158,7 +167,7 @@
                                        </children>
                                     </VBox>
                                     <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
-                                    <VBox fx:id="a3">
+                                    <VBox fx:id="a3" style="-fx-background-color: rgba(254,254,254,0.7);">
                                        <children>
                                           <Label fx:id="d_naam33" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
                                           <Label fx:id="d_positie33" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />

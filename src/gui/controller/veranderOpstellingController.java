@@ -216,19 +216,19 @@ public class veranderOpstellingController implements Initializable {
     @FXML
     private AnchorPane mainOpstellingPane;
     @FXML
-    private TableView<Speler> teamTable;
+    private TableView<PosPlayer> teamTable;
     @FXML
-    private TableColumn<Speler, String> filteredTeamColumn;
+    private TableColumn<PosPlayer, String> filteredTeamColumn;
     @FXML
-    private TableColumn<Speler, String> filteredPositieColumn;
+    private TableColumn<PosPlayer, String> filteredPositieColumn;
     @FXML
-    private TableColumn<Speler, Double> filteredAanvalColumn;
+    private TableColumn<PosPlayer, Double> filteredAanvalColumn;
     @FXML
-    private TableColumn<Speler, Double> filteredStaminaColumn;
+    private TableColumn<PosPlayer, Double> filteredStaminaColumn;
     @FXML
-    private TableColumn<Speler, Double> filteredVerdedigingColumn;
+    private TableColumn<PosPlayer, Double> filteredVerdedigingColumn;
     @FXML
-    private TableColumn<Speler, String> filteredStatusColumn;
+    private TableColumn<PosPlayer, String> filteredStatusColumn;
     @FXML
     private AnchorPane titlePane;
     @FXML
@@ -321,6 +321,7 @@ public class veranderOpstellingController implements Initializable {
                             d_uithouding.getStyleClass().add("yellow-bar");
                             d_verdediging.getStyleClass().add("blue-bar");
                             saveOpstelling();
+                            drawTeam();
                             break;
                         }
                     }
@@ -369,7 +370,8 @@ public class veranderOpstellingController implements Initializable {
                             d_aanval1.getStyleClass().add("red-bar");
                             d_uithouding1.getStyleClass().add("yellow-bar");
                             d_verdediging1.getStyleClass().add("blue-bar");
-                            saveOpstelling();
+                            saveOpstelling();                            
+                            drawTeam();
                             break;
                         }
                     }
@@ -418,7 +420,8 @@ public class veranderOpstellingController implements Initializable {
                             d_aanval11.getStyleClass().add("red-bar");
                             d_uithouding11.getStyleClass().add("yellow-bar");
                             d_verdediging11.getStyleClass().add("blue-bar");
-                            saveOpstelling();
+                            saveOpstelling();                            
+                            drawTeam();
                             break;
                         }
                     }
@@ -467,7 +470,8 @@ public class veranderOpstellingController implements Initializable {
                             d_aanval12.getStyleClass().add("red-bar");
                             d_uithouding12.getStyleClass().add("yellow-bar");
                             d_verdediging12.getStyleClass().add("blue-bar");
-                            saveOpstelling();
+                            saveOpstelling();                            
+                            drawTeam();
                             break;
                         }
                     }
@@ -516,7 +520,8 @@ public class veranderOpstellingController implements Initializable {
                             d_aanval13.getStyleClass().add("red-bar");
                             d_uithouding13.getStyleClass().add("yellow-bar");
                             d_verdediging13.getStyleClass().add("blue-bar");
-                            saveOpstelling();
+                            saveOpstelling();                            
+                            drawTeam();
                             break;
                         }
                     }
@@ -565,7 +570,8 @@ public class veranderOpstellingController implements Initializable {
                             d_aanval21.getStyleClass().add("red-bar");
                             d_uithouding21.getStyleClass().add("yellow-bar");
                             d_verdediging21.getStyleClass().add("blue-bar");
-                            saveOpstelling();
+                            saveOpstelling();                            
+                            drawTeam();
                             break;
                         }
                     }
@@ -614,7 +620,8 @@ public class veranderOpstellingController implements Initializable {
                             d_aanval22.getStyleClass().add("red-bar");
                             d_uithouding22.getStyleClass().add("yellow-bar");
                             d_verdediging22.getStyleClass().add("blue-bar");
-                            saveOpstelling();
+                            saveOpstelling();                            
+                            drawTeam();
                             break;
                         }
                     }
@@ -663,7 +670,8 @@ public class veranderOpstellingController implements Initializable {
                             d_aanval23.getStyleClass().add("red-bar");
                             d_uithouding23.getStyleClass().add("yellow-bar");
                             d_verdediging23.getStyleClass().add("blue-bar");
-                            saveOpstelling();
+                            saveOpstelling();                            
+                            drawTeam();
                             break;
                         }
                     }
@@ -712,7 +720,8 @@ public class veranderOpstellingController implements Initializable {
                             d_aanval31.getStyleClass().add("red-bar");
                             d_uithouding31.getStyleClass().add("yellow-bar");
                             d_verdediging31.getStyleClass().add("blue-bar");
-                            saveOpstelling();
+                            saveOpstelling();                            
+                            drawTeam();
                             break;
                         }
                     }
@@ -761,7 +770,8 @@ public class veranderOpstellingController implements Initializable {
                             d_aanval32.getStyleClass().add("red-bar");
                             d_uithouding32.getStyleClass().add("yellow-bar");
                             d_verdediging32.getStyleClass().add("blue-bar");
-                            saveOpstelling();
+                            saveOpstelling();                            
+                            drawTeam();
                             break;
                         }
                     }
@@ -810,6 +820,8 @@ public class veranderOpstellingController implements Initializable {
                             d_aanval33.getStyleClass().add("red-bar");
                             d_uithouding33.getStyleClass().add("yellow-bar");
                             d_verdediging33.getStyleClass().add("blue-bar");
+                            saveOpstelling();
+                            drawTeam();
                             break;
                         }
                     }
@@ -828,9 +840,21 @@ public class veranderOpstellingController implements Initializable {
     /** EINDE DRAG AND DROP **/
     
     public void drawTeam() {
-        ObservableList<Speler>filteredTeamList = FXCollections.observableArrayList();
+        ObservableList<PosPlayer>filteredTeamList = FXCollections.observableArrayList();
+        ArrayList<PosPlayer> allPosPlayers = new ArrayList<PosPlayer>();
+        ArrayList<PosPlayer> filteredTeam = new ArrayList<PosPlayer>();
+        filteredTeamList.clear();
+        for(int i=0; i<teamSpelers.size(); i++){
+            allPosPlayers.add(new PosPlayer(teamSpelers.get(i), teamSpelers.get(i).getType()));
+        }
         
-        filteredTeamList.addAll(userteam.getSpelers());
+        for(int i=0; i<allPosPlayers.size(); i++){
+            if(opstelling.contains(allPosPlayers.get(i)) == false){
+                filteredTeam.add(allPosPlayers.get(i));
+            }
+        }
+        
+        filteredTeamList.addAll(filteredTeam);
         filteredTeamColumn.setCellValueFactory(
             cellData -> new SimpleStringProperty(cellData.getValue().getNaam()));
         filteredPositieColumn.setCellValueFactory(
@@ -839,17 +863,17 @@ public class veranderOpstellingController implements Initializable {
         filteredAanvalColumn.setCellValueFactory(
                 cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getAanvallend() * 0.01)).asObject());
         filteredAanvalColumn.setCellFactory(
-                ProgressBarTableCell.<Speler> forTableColumn());
+                ProgressBarTableCell.<PosPlayer> forTableColumn());
         
         filteredStaminaColumn.setCellValueFactory(
                 cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getUithoudingsvermogen()* 0.01)).asObject());
         filteredStaminaColumn.setCellFactory(
-                ProgressBarTableCell.<Speler> forTableColumn());
+                ProgressBarTableCell.<PosPlayer> forTableColumn());
         
         filteredVerdedigingColumn.setCellValueFactory(
                 cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getVerdedigend()* 0.01)).asObject());
         filteredVerdedigingColumn.setCellFactory(
-                ProgressBarTableCell.<Speler> forTableColumn());
+                ProgressBarTableCell.<PosPlayer> forTableColumn());
         
         filteredStatusColumn.setCellValueFactory(
             cellData -> new SimpleStringProperty(""+cellData.getValue().getStatus()));
