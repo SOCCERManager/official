@@ -69,7 +69,6 @@ public class MainApp extends Application {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(MainApp.class.getResource("view/root.fxml"));
             Layout = (BorderPane) loader.load();
-            
             // Show the scene containing the root layout.
             Scene scene = new Scene(Layout);
             primarystage.setFullScreen(true);
