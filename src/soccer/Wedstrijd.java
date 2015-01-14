@@ -335,7 +335,7 @@ public class Wedstrijd {
      */ 
     private int getGoals(Team a, Team b) {
         int t = (int) Math.round(
-            ((double)a.getAanvallendTotaal()*(double)a.getUithoudingsTotaal()*this.rnd.nextDouble()*this.rnd.nextDouble()*4)
+            ((double)a.getAanvallendTotaal()*(double)a.getUithoudingsTotaal()*this.rnd.nextDouble()*2)
             /
             ((double)b.getVerdedigingsTotaal()*(double)b.getUithoudingsTotaal())
         );
