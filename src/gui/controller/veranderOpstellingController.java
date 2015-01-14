@@ -46,6 +46,7 @@ import javafx.util.Callback;
 import soccer.Competitie;
 import soccer.PosPlayer;
 import soccer.Speler;
+import static soccer.SpelerType.*;
 import soccer.Team;
 import soccer.bouwXML;
 
@@ -215,19 +216,19 @@ public class veranderOpstellingController implements Initializable {
     @FXML
     private AnchorPane mainOpstellingPane;
     @FXML
-    private TableView<PosPlayer> teamTable;
+    private TableView<Speler> teamTable;
     @FXML
-    private TableColumn<PosPlayer, String> filteredTeamColumn;
+    private TableColumn<Speler, String> filteredTeamColumn;
     @FXML
-    private TableColumn<PosPlayer, String> filteredPositieColumn;
+    private TableColumn<Speler, String> filteredPositieColumn;
     @FXML
-    private TableColumn<PosPlayer, Double> filteredAanvalColumn;
+    private TableColumn<Speler, Double> filteredAanvalColumn;
     @FXML
-    private TableColumn<PosPlayer, Double> filteredStaminaColumn;
+    private TableColumn<Speler, Double> filteredStaminaColumn;
     @FXML
-    private TableColumn<PosPlayer, Double> filteredVerdedigingColumn;
+    private TableColumn<Speler, Double> filteredVerdedigingColumn;
     @FXML
-    private TableColumn<PosPlayer, String> filteredStatusColumn;
+    private TableColumn<Speler, String> filteredStatusColumn;
     @FXML
     private AnchorPane titlePane;
     @FXML
@@ -257,9 +258,10 @@ public class veranderOpstellingController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        
+        for(int i = 0; i < opstelling.size(); i++)
+            System.out.println(opstelling.get(i).getLoc());
         drawTeam();
-        
+        drawOpstelling();
         
         /** DRAG AND DROP **/
         teamTable.setOnDragDetected(new EventHandler<MouseEvent>() { //drag
@@ -299,16 +301,26 @@ public class veranderOpstellingController implements Initializable {
                 if (event.getDragboard().hasString()) {            
 
                     String text = db.getString();
-                    for(PosPlayer s: opstelling){
-                        if(text.equals(s.getNaam())){
+                    for(Speler s: teamSpelers){
+                        if(text.equals(s.getNaam()) && !isInOpstelling(s)){
+                           for(int i = 0; i < opstelling.size(); i++){
+                                if(d_naam.getText().equals(opstelling.get(i).getNaam())){
+                                    opstelling.remove(i);
+                                    break;
+                                }
+                            }
+                            PosPlayer n = new PosPlayer(s, Doelman);
+                            n.setLoc(0);
+                            opstelling.add(n);
                             d_naam.setText(s.getNaam());
-                            d_positie.setText(""+s.getPosSpelertype());
+                            d_positie.setText("Doelman");
                             d_aanval.setProgress(new Double(s.getAanvallend()*0.01));
-                            d_verdediging.setProgress(new Double(s.getDefense())*0.01);
+                            d_verdediging.setProgress(new Double(s.getVerdedigend())*0.01);
                             d_uithouding.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
                             d_aanval.getStyleClass().add("red-bar");
                             d_uithouding.getStyleClass().add("yellow-bar");
                             d_verdediging.getStyleClass().add("blue-bar");
+                            saveOpstelling();
                             break;
                         }
                     }
@@ -338,16 +350,26 @@ public class veranderOpstellingController implements Initializable {
                 if (event.getDragboard().hasString()) {            
 
                     String text = db.getString();
-                    for(PosPlayer s: opstelling){
-                        if(text.equals(s.getNaam())){
+                    for(Speler s: teamSpelers){
+                        if(text.equals(s.getNaam()) && !isInOpstelling(s)){
+                           for(int i = 0; i < opstelling.size(); i++){
+                                if(d_naam1.getText().equals(opstelling.get(i).getNaam())){
+                                    opstelling.remove(i);
+                                    break;
+                                }
+                            }
+                            PosPlayer n = new PosPlayer(s, Verdediger);
+                            n.setLoc(1);
+                            opstelling.add(n);
                             d_naam1.setText(s.getNaam());
-                            d_positie1.setText(""+s.getPosSpelertype());
+                            d_positie1.setText("Verdediger");
                             d_aanval1.setProgress(new Double(s.getAanvallend()*0.01));
-                            d_verdediging1.setProgress(new Double(s.getDefense())*0.01);
+                            d_verdediging1.setProgress(new Double(s.getVerdedigend())*0.01);
                             d_uithouding1.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
                             d_aanval1.getStyleClass().add("red-bar");
                             d_uithouding1.getStyleClass().add("yellow-bar");
                             d_verdediging1.getStyleClass().add("blue-bar");
+                            saveOpstelling();
                             break;
                         }
                     }
@@ -377,16 +399,26 @@ public class veranderOpstellingController implements Initializable {
                 if (event.getDragboard().hasString()) {            
 
                     String text = db.getString();
-                    for(PosPlayer s: opstelling){
-                        if(text.equals(s.getNaam())){
+                    for(Speler s: teamSpelers){
+                        if(text.equals(s.getNaam()) && !isInOpstelling(s)){
+                           for(int i = 0; i < opstelling.size(); i++){
+                                if(d_naam11.getText().equals(opstelling.get(i).getNaam())){
+                                    opstelling.remove(i);
+                                    break;
+                                }
+                            }
+                            PosPlayer n = new PosPlayer(s, Verdediger);
+                            n.setLoc(2);
+                            opstelling.add(n);
                             d_naam11.setText(s.getNaam());
-                            d_positie11.setText(""+s.getPosSpelertype());
+                            d_positie11.setText("Verdediger");
                             d_aanval11.setProgress(new Double(s.getAanvallend()*0.01));
-                            d_verdediging11.setProgress(new Double(s.getDefense())*0.01);
+                            d_verdediging11.setProgress(new Double(s.getVerdedigend())*0.01);
                             d_uithouding11.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
                             d_aanval11.getStyleClass().add("red-bar");
                             d_uithouding11.getStyleClass().add("yellow-bar");
                             d_verdediging11.getStyleClass().add("blue-bar");
+                            saveOpstelling();
                             break;
                         }
                     }
@@ -416,16 +448,26 @@ public class veranderOpstellingController implements Initializable {
                 if (event.getDragboard().hasString()) {            
 
                     String text = db.getString();
-                    for(PosPlayer s: opstelling){
-                        if(text.equals(s.getNaam())){
+                    for(Speler s: teamSpelers){
+                        if(text.equals(s.getNaam()) && !isInOpstelling(s)){
+                           for(int i = 0; i < opstelling.size(); i++){
+                                if(d_naam12.getText().equals(opstelling.get(i).getNaam())){
+                                    opstelling.remove(i);
+                                    break;
+                                }
+                            }
+                            PosPlayer n = new PosPlayer(s, Verdediger);
+                            n.setLoc(3);
+                            opstelling.add(n);
                             d_naam12.setText(s.getNaam());
-                            d_positie12.setText(""+s.getPosSpelertype());
+                            d_positie12.setText("Verdediger");
                             d_aanval12.setProgress(new Double(s.getAanvallend()*0.01));
-                            d_verdediging12.setProgress(new Double(s.getDefense())*0.01);
+                            d_verdediging12.setProgress(new Double(s.getVerdedigend())*0.01);
                             d_uithouding12.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
                             d_aanval12.getStyleClass().add("red-bar");
                             d_uithouding12.getStyleClass().add("yellow-bar");
                             d_verdediging12.getStyleClass().add("blue-bar");
+                            saveOpstelling();
                             break;
                         }
                     }
@@ -455,16 +497,26 @@ public class veranderOpstellingController implements Initializable {
                 if (event.getDragboard().hasString()) {            
 
                     String text = db.getString();
-                    for(PosPlayer s: opstelling){
-                        if(text.equals(s.getNaam())){
+                    for(Speler s: teamSpelers){
+                        if(text.equals(s.getNaam()) && !isInOpstelling(s)){
+                           for(int i = 0; i < opstelling.size(); i++){
+                                if(d_naam13.getText().equals(opstelling.get(i).getNaam())){
+                                    opstelling.remove(i);
+                                    break;
+                                }
+                            }
+                            PosPlayer n = new PosPlayer(s, Verdediger);
+                            n.setLoc(4);
+                            opstelling.add(n);
                             d_naam13.setText(s.getNaam());
-                            d_positie13.setText(""+s.getPosSpelertype());
+                            d_positie13.setText("Verdediger");
                             d_aanval13.setProgress(new Double(s.getAanvallend()*0.01));
-                            d_verdediging13.setProgress(new Double(s.getDefense())*0.01);
+                            d_verdediging13.setProgress(new Double(s.getVerdedigend())*0.01);
                             d_uithouding13.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
                             d_aanval13.getStyleClass().add("red-bar");
                             d_uithouding13.getStyleClass().add("yellow-bar");
                             d_verdediging13.getStyleClass().add("blue-bar");
+                            saveOpstelling();
                             break;
                         }
                     }
@@ -494,16 +546,26 @@ public class veranderOpstellingController implements Initializable {
                 if (event.getDragboard().hasString()) {            
 
                     String text = db.getString();
-                    for(PosPlayer s: opstelling){
-                        if(text.equals(s.getNaam())){
+                    for(Speler s: teamSpelers){
+                        if(text.equals(s.getNaam()) && !isInOpstelling(s)){
+                           for(int i = 0; i < opstelling.size(); i++){
+                                if(d_naam21.getText().equals(opstelling.get(i).getNaam())){
+                                    opstelling.remove(i);
+                                    break;
+                                }
+                            }
+                            PosPlayer n = new PosPlayer(s, Middenvelder);
+                            n.setLoc(5);
+                            opstelling.add(n);
                             d_naam21.setText(s.getNaam());
-                            d_positie21.setText(""+s.getPosSpelertype());
+                            d_positie21.setText("Middenvelder");
                             d_aanval21.setProgress(new Double(s.getAanvallend()*0.01));
-                            d_verdediging21.setProgress(new Double(s.getDefense())*0.01);
+                            d_verdediging21.setProgress(new Double(s.getVerdedigend())*0.01);
                             d_uithouding21.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
                             d_aanval21.getStyleClass().add("red-bar");
                             d_uithouding21.getStyleClass().add("yellow-bar");
                             d_verdediging21.getStyleClass().add("blue-bar");
+                            saveOpstelling();
                             break;
                         }
                     }
@@ -533,16 +595,26 @@ public class veranderOpstellingController implements Initializable {
                 if (event.getDragboard().hasString()) {            
 
                     String text = db.getString();
-                    for(PosPlayer s: opstelling){
-                        if(text.equals(s.getNaam())){
+                    for(Speler s: teamSpelers){
+                        if(text.equals(s.getNaam()) && !isInOpstelling(s)){
+                           for(int i = 0; i < opstelling.size(); i++){
+                                if(d_naam22.getText().equals(opstelling.get(i).getNaam())){
+                                    opstelling.remove(i);
+                                    break;
+                                }
+                            }
+                            PosPlayer n = new PosPlayer(s, Middenvelder);
+                            n.setLoc(6);
+                            opstelling.add(n);
                             d_naam22.setText(s.getNaam());
-                            d_positie22.setText(""+s.getPosSpelertype());
+                            d_positie22.setText("Middenvelder");
                             d_aanval22.setProgress(new Double(s.getAanvallend()*0.01));
-                            d_verdediging22.setProgress(new Double(s.getDefense())*0.01);
+                            d_verdediging22.setProgress(new Double(s.getVerdedigend())*0.01);
                             d_uithouding22.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
                             d_aanval22.getStyleClass().add("red-bar");
                             d_uithouding22.getStyleClass().add("yellow-bar");
                             d_verdediging22.getStyleClass().add("blue-bar");
+                            saveOpstelling();
                             break;
                         }
                     }
@@ -572,16 +644,26 @@ public class veranderOpstellingController implements Initializable {
                 if (event.getDragboard().hasString()) {            
 
                     String text = db.getString();
-                    for(PosPlayer s: opstelling){
-                        if(text.equals(s.getNaam())){
+                    for(Speler s: teamSpelers){
+                        if(text.equals(s.getNaam()) && !isInOpstelling(s)){
+                           for(int i = 0; i < opstelling.size(); i++){
+                                if(d_naam23.getText().equals(opstelling.get(i).getNaam())){
+                                    opstelling.remove(i);
+                                    break;
+                                }
+                            }
+                            PosPlayer n = new PosPlayer(s, Middenvelder);
+                            n.setLoc(7);
+                            opstelling.add(n);
                             d_naam23.setText(s.getNaam());
-                            d_positie23.setText(""+s.getPosSpelertype());
+                            d_positie23.setText("Middenvelder");
                             d_aanval23.setProgress(new Double(s.getAanvallend()*0.01));
-                            d_verdediging23.setProgress(new Double(s.getDefense())*0.01);
+                            d_verdediging23.setProgress(new Double(s.getVerdedigend())*0.01);
                             d_uithouding23.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
                             d_aanval23.getStyleClass().add("red-bar");
                             d_uithouding23.getStyleClass().add("yellow-bar");
                             d_verdediging23.getStyleClass().add("blue-bar");
+                            saveOpstelling();
                             break;
                         }
                     }
@@ -611,16 +693,26 @@ public class veranderOpstellingController implements Initializable {
                 if (event.getDragboard().hasString()) {            
 
                     String text = db.getString();
-                    for(PosPlayer s: opstelling){
-                        if(text.equals(s.getNaam())){
+                    for(Speler s: teamSpelers){
+                        if(text.equals(s.getNaam()) && !isInOpstelling(s)){
+                           for(int i = 0; i < opstelling.size(); i++){
+                                if(d_naam31.getText().equals(opstelling.get(i).getNaam())){
+                                    opstelling.remove(i);
+                                    break;
+                                }
+                            }
+                            PosPlayer n = new PosPlayer(s, Aanvaller);
+                            n.setLoc(8);
+                            opstelling.add(n);
                             d_naam31.setText(s.getNaam());
-                            d_positie31.setText(""+s.getPosSpelertype());
+                            d_positie31.setText("Aanvaller");
                             d_aanval31.setProgress(new Double(s.getAanvallend()*0.01));
-                            d_verdediging31.setProgress(new Double(s.getDefense())*0.01);
+                            d_verdediging31.setProgress(new Double(s.getVerdedigend())*0.01);
                             d_uithouding31.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
                             d_aanval31.getStyleClass().add("red-bar");
                             d_uithouding31.getStyleClass().add("yellow-bar");
                             d_verdediging31.getStyleClass().add("blue-bar");
+                            saveOpstelling();
                             break;
                         }
                     }
@@ -650,16 +742,26 @@ public class veranderOpstellingController implements Initializable {
                 if (event.getDragboard().hasString()) {            
 
                     String text = db.getString();
-                    for(PosPlayer s: opstelling){
-                        if(text.equals(s.getNaam())){
+                    for(Speler s: teamSpelers){
+                        if(text.equals(s.getNaam()) && !isInOpstelling(s)){
+                           for(int i = 0; i < opstelling.size(); i++){
+                                if(d_naam32.getText().equals(opstelling.get(i).getNaam())){
+                                    opstelling.remove(i);
+                                    break;
+                                }
+                            }
+                            PosPlayer n = new PosPlayer(s, Aanvaller);
+                            n.setLoc(9);
+                            opstelling.add(n);
                             d_naam32.setText(s.getNaam());
-                            d_positie32.setText(""+s.getPosSpelertype());
+                            d_positie32.setText("Aanvaller");
                             d_aanval32.setProgress(new Double(s.getAanvallend()*0.01));
-                            d_verdediging32.setProgress(new Double(s.getDefense())*0.01);
+                            d_verdediging32.setProgress(new Double(s.getVerdedigend())*0.01);
                             d_uithouding32.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
                             d_aanval32.getStyleClass().add("red-bar");
                             d_uithouding32.getStyleClass().add("yellow-bar");
                             d_verdediging32.getStyleClass().add("blue-bar");
+                            saveOpstelling();
                             break;
                         }
                     }
@@ -689,12 +791,21 @@ public class veranderOpstellingController implements Initializable {
                 if (event.getDragboard().hasString()) {            
 
                     String text = db.getString();
-                    for(PosPlayer s: opstelling){
-                        if(text.equals(s.getNaam())){
+                    for(Speler s: teamSpelers){
+                        if(text.equals(s.getNaam()) && !isInOpstelling(s)){
+                           for(int i = 0; i < opstelling.size(); i++){
+                                if(d_naam33.getText().equals(opstelling.get(i).getNaam())){
+                                    opstelling.remove(i);
+                                    break;
+                                }
+                            }
+                            PosPlayer n = new PosPlayer(s, Aanvaller);
+                            n.setLoc(10);
+                            opstelling.add(n);
                             d_naam33.setText(s.getNaam());
-                            d_positie33.setText(""+s.getPosSpelertype());
+                            d_positie33.setText("Aanvaller");
                             d_aanval33.setProgress(new Double(s.getAanvallend()*0.01));
-                            d_verdediging33.setProgress(new Double(s.getDefense())*0.01);
+                            d_verdediging33.setProgress(new Double(s.getVerdedigend())*0.01);
                             d_uithouding33.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
                             d_aanval33.getStyleClass().add("red-bar");
                             d_uithouding33.getStyleClass().add("yellow-bar");
@@ -717,21 +828,9 @@ public class veranderOpstellingController implements Initializable {
     /** EINDE DRAG AND DROP **/
     
     public void drawTeam() {
-        ObservableList<PosPlayer>filteredTeamList = FXCollections.observableArrayList();
-        ArrayList<PosPlayer> allPosPlayers = new ArrayList<PosPlayer>();
-        ArrayList<PosPlayer> filteredTeam = new ArrayList<PosPlayer>();
-        filteredTeamList.clear();
-        for(int i=0; i<teamSpelers.size(); i++){
-            allPosPlayers.add(new PosPlayer(teamSpelers.get(i), teamSpelers.get(i).getType()));
-        }
+        ObservableList<Speler>filteredTeamList = FXCollections.observableArrayList();
         
-        for(int i=0; i<allPosPlayers.size(); i++){
-            if(opstelling.contains(allPosPlayers.get(i)) == false){
-                filteredTeam.add(allPosPlayers.get(i));
-            }
-        }
-        
-        filteredTeamList.addAll(filteredTeam);
+        filteredTeamList.addAll(userteam.getSpelers());
         filteredTeamColumn.setCellValueFactory(
             cellData -> new SimpleStringProperty(cellData.getValue().getNaam()));
         filteredPositieColumn.setCellValueFactory(
@@ -740,17 +839,17 @@ public class veranderOpstellingController implements Initializable {
         filteredAanvalColumn.setCellValueFactory(
                 cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getAanvallend() * 0.01)).asObject());
         filteredAanvalColumn.setCellFactory(
-                ProgressBarTableCell.<PosPlayer> forTableColumn());
+                ProgressBarTableCell.<Speler> forTableColumn());
         
         filteredStaminaColumn.setCellValueFactory(
                 cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getUithoudingsvermogen()* 0.01)).asObject());
         filteredStaminaColumn.setCellFactory(
-                ProgressBarTableCell.<PosPlayer> forTableColumn());
+                ProgressBarTableCell.<Speler> forTableColumn());
         
         filteredVerdedigingColumn.setCellValueFactory(
                 cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getVerdedigend()* 0.01)).asObject());
         filteredVerdedigingColumn.setCellFactory(
-                ProgressBarTableCell.<PosPlayer> forTableColumn());
+                ProgressBarTableCell.<Speler> forTableColumn());
         
         filteredStatusColumn.setCellValueFactory(
             cellData -> new SimpleStringProperty(""+cellData.getValue().getStatus()));
@@ -823,19 +922,10 @@ public class veranderOpstellingController implements Initializable {
         alert1.setVisible(true);
     }
     
-    @FXML
-    private void handleSaveOpstelling() {
-        if(opstelling.size() == 11){
+    private void saveOpstelling() {
             userteam.setOpstelling(opstelling);
-            //mainhubController.setOpstellingTable();
-            mainOpstellingPane.setVisible(false);
             bouwXML.SaveGame();
             System.out.println("Saved new opstelling");
-        }
-
-        for(int i=0; i<userteam.getOpstelling().size();i++){
-            System.out.println(userteam.getOpstelling().get(i).getNaam());
-        }
     }
     
     @FXML
@@ -852,10 +942,136 @@ public class veranderOpstellingController implements Initializable {
     private void handleCloseAlert2() {
         alert2.setVisible(false);
     }
-
     
+    private void drawOpstelling(){
+        for(PosPlayer j: opstelling){
+            System.out.println(j.getLoc());
+            switch(j.getLoc()) {
+                case 0:
+                    d_naam.setText(j.getNaam());
+                    d_positie.setText("Doelman");
+                    d_aanval.setProgress(new Double(j.getAanvallend()*0.01));
+                    d_verdediging.setProgress(new Double(j.getVerdedigend())*0.01);
+                    d_uithouding.setProgress(new Double(j.getUithoudingsvermogen())*0.01);
+                    d_aanval.getStyleClass().add("red-bar");
+                    d_uithouding.getStyleClass().add("yellow-bar");
+                    d_verdediging.getStyleClass().add("blue-bar");
+                    break;
+                case 1:
+                    d_naam1.setText(j.getNaam());
+                    d_positie1.setText("Verdediger");
+                    d_aanval1.setProgress(new Double(j.getAanvallend()*0.01));
+                    d_verdediging1.setProgress(new Double(j.getVerdedigend())*0.01);
+                    d_uithouding1.setProgress(new Double(j.getUithoudingsvermogen())*0.01);
+                    d_aanval1.getStyleClass().add("red-bar");
+                    d_uithouding1.getStyleClass().add("yellow-bar");
+                    d_verdediging1.getStyleClass().add("blue-bar");
+                    break;
+                case 2:
+                    d_naam11.setText(j.getNaam());
+                    d_positie11.setText("Verdediger");
+                    d_aanval11.setProgress(new Double(j.getAanvallend()*0.01));
+                    d_verdediging11.setProgress(new Double(j.getVerdedigend())*0.01);
+                    d_uithouding11.setProgress(new Double(j.getUithoudingsvermogen())*0.01);
+                    d_aanval11.getStyleClass().add("red-bar");
+                    d_uithouding11.getStyleClass().add("yellow-bar");
+                    d_verdediging11.getStyleClass().add("blue-bar");
+                    break;
+                case 3:
+                    d_naam12.setText(j.getNaam());
+                    d_positie12.setText("Verdediger");
+                    d_aanval12.setProgress(new Double(j.getAanvallend()*0.01));
+                    d_verdediging12.setProgress(new Double(j.getVerdedigend())*0.01);
+                    d_uithouding12.setProgress(new Double(j.getUithoudingsvermogen())*0.01);
+                    d_aanval12.getStyleClass().add("red-bar");
+                    d_uithouding12.getStyleClass().add("yellow-bar");
+                    d_verdediging12.getStyleClass().add("blue-bar");
+                    break;
+                case 4:
+                    d_naam13.setText(j.getNaam());
+                    d_positie13.setText("Verdediger");
+                    d_aanval13.setProgress(new Double(j.getAanvallend()*0.01));
+                    d_verdediging13.setProgress(new Double(j.getVerdedigend())*0.01);
+                    d_uithouding13.setProgress(new Double(j.getUithoudingsvermogen())*0.01);
+                    d_aanval13.getStyleClass().add("red-bar");
+                    d_uithouding13.getStyleClass().add("yellow-bar");
+                    d_verdediging13.getStyleClass().add("blue-bar");
+                    break;
+                case 5:
+                    d_naam21.setText(j.getNaam());
+                    d_positie21.setText("Middenvelder");
+                    d_aanval21.setProgress(new Double(j.getAanvallend()*0.01));
+                    d_verdediging21.setProgress(new Double(j.getVerdedigend())*0.01);
+                    d_uithouding21.setProgress(new Double(j.getUithoudingsvermogen())*0.01);
+                    d_aanval21.getStyleClass().add("red-bar");
+                    d_uithouding21.getStyleClass().add("yellow-bar");
+                    d_verdediging21.getStyleClass().add("blue-bar");
+                    break;
+                case 6:
+                    d_naam22.setText(j.getNaam());
+                    d_positie22.setText("Middenvelder");
+                    d_aanval22.setProgress(new Double(j.getAanvallend()*0.01));
+                    d_verdediging22.setProgress(new Double(j.getVerdedigend())*0.01);
+                    d_uithouding22.setProgress(new Double(j.getUithoudingsvermogen())*0.01);
+                    d_aanval22.getStyleClass().add("red-bar");
+                    d_uithouding22.getStyleClass().add("yellow-bar");
+                    d_verdediging22.getStyleClass().add("blue-bar");
+                    break;
+                case 7:
+                    d_naam23.setText(j.getNaam());
+                    d_positie23.setText("Middenvelder");
+                    d_aanval23.setProgress(new Double(j.getAanvallend()*0.01));
+                    d_verdediging23.setProgress(new Double(j.getVerdedigend())*0.01);
+                    d_uithouding23.setProgress(new Double(j.getUithoudingsvermogen())*0.01);
+                    d_aanval23.getStyleClass().add("red-bar");
+                    d_uithouding23.getStyleClass().add("yellow-bar");
+                    d_verdediging23.getStyleClass().add("blue-bar");
+                    break;
+                case 8:
+                    d_naam31.setText(j.getNaam());
+                    d_positie31.setText("Aanvaller");
+                    d_aanval31.setProgress(new Double(j.getAanvallend()*0.01));
+                    d_verdediging31.setProgress(new Double(j.getVerdedigend())*0.01);
+                    d_uithouding31.setProgress(new Double(j.getUithoudingsvermogen())*0.01);
+                    d_aanval31.getStyleClass().add("red-bar");
+                    d_uithouding31.getStyleClass().add("yellow-bar");
+                    d_verdediging31.getStyleClass().add("blue-bar");
+                    break;
+                case 9:
+                    d_naam32.setText(j.getNaam());
+                    d_positie32.setText("Aanvaller");
+                    d_aanval32.setProgress(new Double(j.getAanvallend()*0.01));
+                    d_verdediging32.setProgress(new Double(j.getVerdedigend())*0.01);
+                    d_uithouding32.setProgress(new Double(j.getUithoudingsvermogen())*0.01);
+                    d_aanval32.getStyleClass().add("red-bar");
+                    d_uithouding32.getStyleClass().add("yellow-bar");
+                    d_verdediging32.getStyleClass().add("blue-bar");
+                    break;
+                case 10:
+                    d_naam33.setText(j.getNaam());
+                    d_positie33.setText("Aanvaller");
+                    d_aanval33.setProgress(new Double(j.getAanvallend()*0.01));
+                    d_verdediging33.setProgress(new Double(j.getVerdedigend())*0.01);
+                    d_uithouding33.setProgress(new Double(j.getUithoudingsvermogen())*0.01);
+                    d_aanval33.getStyleClass().add("red-bar");
+                    d_uithouding33.getStyleClass().add("yellow-bar");
+                    d_verdediging33.getStyleClass().add("blue-bar");
+                    break;
+                
+                default: System.out.println("IK KAN NIKS"); break;
+            }
+            
+        }
+    }  
     
-
-   
+    private boolean isInOpstelling(Speler s){
+        for(PosPlayer j: opstelling)
+            if(j.getSpeler().equals(s)){
+                alert1Text.setText("Deze speler zit al in de huidige opstelling.");
+                alert1.setVisible(true);
+                return true;
+            }
+        return false;
+    }
 
 }

@@ -103,7 +103,7 @@ public class PreGameController implements Initializable {
         userSpelerColumn.setCellValueFactory(
                 cellData -> new SimpleStringProperty(cellData.getValue().getNaam()));
         userPositieColumn.setCellValueFactory(
-                cellData -> new SimpleStringProperty(""+cellData.getValue().getType()));
+                cellData -> new SimpleStringProperty(""+cellData.getValue().getPosSpelertype()));
         userScoreColumn.setCellValueFactory(
                 cellData -> new SimpleDoubleProperty((cellData.getValue().getAanvallend() + cellData.getValue().getDefense() + cellData.getValue().getUithoudingsvermogen()) / 300).asObject());
         userScoreColumn.setCellFactory(
@@ -112,7 +112,7 @@ public class PreGameController implements Initializable {
         enemySpelerColumn.setCellValueFactory(
                 cellData -> new SimpleStringProperty(cellData.getValue().getNaam()));
         enemyPositieColumn.setCellValueFactory(
-                cellData -> new SimpleStringProperty(""+cellData.getValue().getType()));
+                cellData -> new SimpleStringProperty(""+cellData.getValue().getPosSpelertype()));
         enemyScoreColumn.setCellValueFactory(
                 cellData -> new SimpleDoubleProperty((cellData.getValue().getAanvallend() + cellData.getValue().getDefense() + cellData.getValue().getUithoudingsvermogen()) / 300).asObject());
         enemyScoreColumn.setCellFactory(

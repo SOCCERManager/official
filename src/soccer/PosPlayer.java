@@ -9,6 +9,7 @@ public class PosPlayer {
     private Speler speler;
     private SpelerType posspelertype;
     final double reduceFactor = 0.8; 
+    private int loc;
 
     /**
      * Initialiseer PosPlayer
@@ -256,5 +257,13 @@ public class PosPlayer {
     @Override
     public String toString() {
         return "PosPlayer{" + "speler=" + speler + ", posspelertype=" + posspelertype + ", reduceFactor=" + reduceFactor + '}';
+    }
+    
+    public void setLoc(int i){
+        this.loc = i;
+    }
+    
+    public int getLoc(){
+        return this.loc;
     }
 }
