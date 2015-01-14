@@ -175,14 +175,19 @@ public class Competitie {
         for (int p = (teams.size() / 2); p < teams.size(); p++) {
             b.add(teams.get(p));
         }
-
+        
+        ArrayList<Wedstrijd> reverswedstriedlist = new ArrayList<>();
         Team tmp;
 
         for (int x = 0; x < teams.size() - 1; x++) {
             for (int j = 0; j < a.size(); j++) {
-                Wedstrijd w = new Wedstrijd(a.get(j), b.get(j));
+                Wedstrijd w = new Wedstrijd(a.get(j), b.get(j), x);
                 w.setPlayed(false);
                 wedstrijden.add(w);
+                
+                Wedstrijd u = new Wedstrijd(b.get(j), a.get(j), x+teams.size());
+                u.setPlayed(false);
+                reverswedstriedlist.add(u);
             }
 
             // up each element in a
@@ -199,6 +204,8 @@ public class Competitie {
             b.set(0, a.get(a.size() - 1));
             a.set(a.size() - 1, tmp);
         }
+        
+        wedstrijden.addAll(reverswedstriedlist);
     }
 
     public static Competitie getCompetitie() {

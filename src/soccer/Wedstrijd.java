@@ -15,6 +15,7 @@ public class Wedstrijd {
     private int points_a;
     private int points_b;
     private boolean played;
+    private int speeldag;
     private Random rnd;
     
     /**
@@ -28,7 +29,39 @@ public class Wedstrijd {
         played = false;
         rnd = new Random((long) Math.random());
     }
+    
+    /**
+     * Constructor van Wedstrijd, bestaande uit twee teams
+     * @param team_a het eerste team dat deelneemt aan een wedstrijd
+     * @param team_b het tweede team dat deelneemt aan een wedstrijd
+     * @param speeldag
+     */
+    public Wedstrijd(Team team_a, Team team_b, int speeldag) {
+        this.team_a = team_a;
+        this.team_b = team_b;
+        played = false;
+        rnd = new Random((long) Math.random());
+        this.speeldag = speeldag;
+    }
 
+    /**
+     * Retouneerd de speeldag van de wedstreid
+     * @return 
+     */
+    public int getSpeeldag() {
+        return speeldag;
+    }
+
+    /**
+     * Stelt de speeldag van de wedstreid in.
+     * @param speeldag 
+     */
+    public void setSpeeldag(int speeldag) {
+        this.speeldag = speeldag;
+    }
+
+    
+    
     /**
      * geeft het eerste team in een wedstrijd terug
      * @return het eerste team
