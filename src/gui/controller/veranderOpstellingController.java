@@ -33,8 +33,14 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.cell.ProgressBarTableCell;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.ClipboardContent;
+import javafx.scene.input.DataFormat;
+import javafx.scene.input.DragEvent;
+import javafx.scene.input.Dragboard;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.input.TransferMode;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.util.Callback;
 import soccer.Competitie;
@@ -49,10 +55,165 @@ import soccer.bouwXML;
  * @author codesalad
  */
 public class veranderOpstellingController implements Initializable {
+    /** DRAG AND DROP **/
+    @FXML
+    private Label naam;
+    @FXML
+    private Label rugnummer;
+    @FXML
+    private Pane dragpane;
+    
+    @FXML
+    private VBox d1;
+    @FXML
+    private VBox v1;
+    @FXML
+    private VBox v2;
+    @FXML
+    private VBox v3;
+    @FXML
+    private VBox v4;
+    @FXML
+    private VBox m1;
+    @FXML
+    private VBox m2;
+    @FXML
+    private VBox m3;
+    @FXML
+    private VBox a1;
+    @FXML
+    private VBox a2;
+    @FXML
+    private VBox a3;
+    
+    @FXML
+    private Label d_naam1;
+    @FXML
+    private Label d_positie1;
+    @FXML
+    private ProgressBar d_aanval1;
+    @FXML
+    private ProgressBar d_verdediging1;
+    @FXML
+    private ProgressBar d_uithouding1;
+    
+    @FXML
+    private Label d_naam11;
+    @FXML
+    private Label d_positie11;
+    @FXML
+    private ProgressBar d_aanval11;
+    @FXML
+    private ProgressBar d_verdediging11;
+    @FXML
+    private ProgressBar d_uithouding11;
+    
+    @FXML
+    private Label d_naam12;
+    @FXML
+    private Label d_positie12;
+    @FXML
+    private ProgressBar d_aanval12;
+    @FXML
+    private ProgressBar d_verdediging12;
+    @FXML
+    private ProgressBar d_uithouding12;
+    
+    @FXML
+    private Label d_naam13;
+    @FXML
+    private Label d_positie13;
+    @FXML
+    private ProgressBar d_aanval13;
+    @FXML
+    private ProgressBar d_verdediging13;
+    @FXML
+    private ProgressBar d_uithouding13;
+    
+    @FXML
+    private Label d_naam21;
+    @FXML
+    private Label d_positie21;
+    @FXML
+    private ProgressBar d_aanval21;
+    @FXML
+    private ProgressBar d_verdediging21;
+    @FXML
+    private ProgressBar d_uithouding21;
+    
+    @FXML
+    private Label d_naam22;
+    @FXML
+    private Label d_positie22;
+    @FXML
+    private ProgressBar d_aanval22;
+    @FXML
+    private ProgressBar d_verdediging22;
+    @FXML
+    private ProgressBar d_uithouding22;
+    
+    @FXML
+    private Label d_naam23;
+    @FXML
+    private Label d_positie23;
+    @FXML
+    private ProgressBar d_aanval23;
+    @FXML
+    private ProgressBar d_verdediging23;
+    @FXML
+    private ProgressBar d_uithouding23;
+    
+    @FXML
+    private Label d_naam31;
+    @FXML
+    private Label d_positie31;
+    @FXML
+    private ProgressBar d_aanval31;
+    @FXML
+    private ProgressBar d_verdediging31;
+    @FXML
+    private ProgressBar d_uithouding31;
+    
+    @FXML
+    private Label d_naam32;
+    @FXML
+    private Label d_positie32;
+    @FXML
+    private ProgressBar d_aanval32;
+    @FXML
+    private ProgressBar d_verdediging32;
+    @FXML
+    private ProgressBar d_uithouding32;
+    
+    @FXML
+    private Label d_naam33;
+    @FXML
+    private Label d_positie33;
+    @FXML
+    private ProgressBar d_aanval33;
+    @FXML
+    private ProgressBar d_verdediging33;
+    @FXML
+    private ProgressBar d_uithouding33;
+    
+    @FXML
+    private Label d_naam;
+    @FXML
+    private Label d_positie;
+    @FXML
+    private ProgressBar d_aanval;
+    @FXML
+    private ProgressBar d_verdediging;
+    @FXML
+    private ProgressBar d_uithouding;
+    
+    
+    /** EINDE DRAG AND DROP **/
+    
+    
+    
     @FXML
     private AnchorPane mainOpstellingPane;
-    @FXML
-    private Label opstellingLabel;
     @FXML
     private TableView<PosPlayer> teamTable;
     @FXML
@@ -67,21 +228,6 @@ public class veranderOpstellingController implements Initializable {
     private TableColumn<PosPlayer, Double> filteredVerdedigingColumn;
     @FXML
     private TableColumn<PosPlayer, String> filteredStatusColumn;
-    
-    @FXML
-    private TableView<PosPlayer> opstellingTable;
-    @FXML
-    private TableColumn<PosPlayer, String> opstellingSpelersColumn;
-    @FXML
-    private TableColumn<PosPlayer, String> opstellingPositieColumn;
-    @FXML
-    private TableColumn<PosPlayer, Double> opstellingAanvalColumn;
-    @FXML
-    private TableColumn<PosPlayer, Double> opstellingStaminaColumn;
-    @FXML
-    private TableColumn<PosPlayer, Double> opstellingVerdedigingColumn;
-    @FXML
-    private TableColumn<PosPlayer, String> opstellingStatusColumn;
     @FXML
     private AnchorPane titlePane;
     @FXML
@@ -111,16 +257,464 @@ public class veranderOpstellingController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        opstellingRemoveButton.setDisable(false);
-        opstellingAddButton.setDisable(true);
         
-        drawOpstelling();
         drawTeam();
         
-        System.out.println("Teamspelers: " + teamSpelers.size());
-        System.out.println("opstelling: " + opstelling.size());
-        System.out.println("userteamopstelling: " + userteam.getOpstelling().size());
+        
+        /** DRAG AND DROP **/
+        teamTable.setOnDragDetected(new EventHandler<MouseEvent>() { //drag
+            @Override
+            public void handle(MouseEvent event) {
+                // drag was detected, start drag-and-drop gesture
+                String selected = teamTable.getSelectionModel().getSelectedItem().getNaam();
+                System.out.println(selected);
+                if(selected !=null){
+
+                    Dragboard db = teamTable.startDragAndDrop(TransferMode.ANY);
+                    ClipboardContent content = new ClipboardContent();
+                    content.putString(selected);
+                    db.setContent(content);
+                    event.consume(); 
+                }
+            }
+        });
+        
+        d1.setOnDragOver(new EventHandler<DragEvent>() {
+            @Override
+            public void handle(DragEvent event) {
+                // data is dragged over the target 
+                Dragboard db = event.getDragboard();
+                if (event.getDragboard().hasString()){
+                    event.acceptTransferModes(TransferMode.COPY_OR_MOVE);
+                }
+                event.consume();
+            }
+        });
+        
+        d1.setOnDragDropped(new EventHandler<DragEvent>() {
+            @Override
+            public void handle(DragEvent event) {
+                Dragboard db = event.getDragboard();
+                boolean success = false;
+                if (event.getDragboard().hasString()) {            
+
+                    String text = db.getString();
+                    for(PosPlayer s: opstelling){
+                        if(text.equals(s.getNaam())){
+                            d_naam.setText(s.getNaam());
+                            d_positie.setText(""+s.getPosSpelertype());
+                            d_aanval.setProgress(new Double(s.getAanvallend()*0.01));
+                            d_verdediging.setProgress(new Double(s.getDefense())*0.01);
+                            d_uithouding.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
+                            d_aanval.getStyleClass().add("red-bar");
+                            d_uithouding.getStyleClass().add("yellow-bar");
+                            d_verdediging.getStyleClass().add("blue-bar");
+                            break;
+                        }
+                    }
+                    success = true;
+                }
+                event.setDropCompleted(success);
+                event.consume();
+            } 
+        });
+        v1.setOnDragOver(new EventHandler<DragEvent>() {
+            @Override
+            public void handle(DragEvent event) {
+                // data is dragged over the target 
+                Dragboard db = event.getDragboard();
+                if (event.getDragboard().hasString()){
+                    event.acceptTransferModes(TransferMode.COPY_OR_MOVE);
+                }
+                event.consume();
+            }
+        });
+        
+        v1.setOnDragDropped(new EventHandler<DragEvent>() {
+            @Override
+            public void handle(DragEvent event) {
+                Dragboard db = event.getDragboard();
+                boolean success = false;
+                if (event.getDragboard().hasString()) {            
+
+                    String text = db.getString();
+                    for(PosPlayer s: opstelling){
+                        if(text.equals(s.getNaam())){
+                            d_naam1.setText(s.getNaam());
+                            d_positie1.setText(""+s.getPosSpelertype());
+                            d_aanval1.setProgress(new Double(s.getAanvallend()*0.01));
+                            d_verdediging1.setProgress(new Double(s.getDefense())*0.01);
+                            d_uithouding1.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
+                            d_aanval1.getStyleClass().add("red-bar");
+                            d_uithouding1.getStyleClass().add("yellow-bar");
+                            d_verdediging1.getStyleClass().add("blue-bar");
+                            break;
+                        }
+                    }
+                    success = true;
+                }
+                event.setDropCompleted(success);
+                event.consume();
+            } 
+        });
+        v2.setOnDragOver(new EventHandler<DragEvent>() {
+            @Override
+            public void handle(DragEvent event) {
+                // data is dragged over the target 
+                Dragboard db = event.getDragboard();
+                if (event.getDragboard().hasString()){
+                    event.acceptTransferModes(TransferMode.COPY_OR_MOVE);
+                }
+                event.consume();
+            }
+        });
+        
+        v2.setOnDragDropped(new EventHandler<DragEvent>() {
+            @Override
+            public void handle(DragEvent event) {
+                Dragboard db = event.getDragboard();
+                boolean success = false;
+                if (event.getDragboard().hasString()) {            
+
+                    String text = db.getString();
+                    for(PosPlayer s: opstelling){
+                        if(text.equals(s.getNaam())){
+                            d_naam11.setText(s.getNaam());
+                            d_positie11.setText(""+s.getPosSpelertype());
+                            d_aanval11.setProgress(new Double(s.getAanvallend()*0.01));
+                            d_verdediging11.setProgress(new Double(s.getDefense())*0.01);
+                            d_uithouding11.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
+                            d_aanval11.getStyleClass().add("red-bar");
+                            d_uithouding11.getStyleClass().add("yellow-bar");
+                            d_verdediging11.getStyleClass().add("blue-bar");
+                            break;
+                        }
+                    }
+                    success = true;
+                }
+                event.setDropCompleted(success);
+                event.consume();
+            } 
+        });
+        v3.setOnDragOver(new EventHandler<DragEvent>() {
+            @Override
+            public void handle(DragEvent event) {
+                // data is dragged over the target 
+                Dragboard db = event.getDragboard();
+                if (event.getDragboard().hasString()){
+                    event.acceptTransferModes(TransferMode.COPY_OR_MOVE);
+                }
+                event.consume();
+            }
+        });
+        
+        v3.setOnDragDropped(new EventHandler<DragEvent>() {
+            @Override
+            public void handle(DragEvent event) {
+                Dragboard db = event.getDragboard();
+                boolean success = false;
+                if (event.getDragboard().hasString()) {            
+
+                    String text = db.getString();
+                    for(PosPlayer s: opstelling){
+                        if(text.equals(s.getNaam())){
+                            d_naam12.setText(s.getNaam());
+                            d_positie12.setText(""+s.getPosSpelertype());
+                            d_aanval12.setProgress(new Double(s.getAanvallend()*0.01));
+                            d_verdediging12.setProgress(new Double(s.getDefense())*0.01);
+                            d_uithouding12.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
+                            d_aanval12.getStyleClass().add("red-bar");
+                            d_uithouding12.getStyleClass().add("yellow-bar");
+                            d_verdediging12.getStyleClass().add("blue-bar");
+                            break;
+                        }
+                    }
+                    success = true;
+                }
+                event.setDropCompleted(success);
+                event.consume();
+            } 
+        });
+        v4.setOnDragOver(new EventHandler<DragEvent>() {
+            @Override
+            public void handle(DragEvent event) {
+                // data is dragged over the target 
+                Dragboard db = event.getDragboard();
+                if (event.getDragboard().hasString()){
+                    event.acceptTransferModes(TransferMode.COPY_OR_MOVE);
+                }
+                event.consume();
+            }
+        });
+        
+        v4.setOnDragDropped(new EventHandler<DragEvent>() {
+            @Override
+            public void handle(DragEvent event) {
+                Dragboard db = event.getDragboard();
+                boolean success = false;
+                if (event.getDragboard().hasString()) {            
+
+                    String text = db.getString();
+                    for(PosPlayer s: opstelling){
+                        if(text.equals(s.getNaam())){
+                            d_naam13.setText(s.getNaam());
+                            d_positie13.setText(""+s.getPosSpelertype());
+                            d_aanval13.setProgress(new Double(s.getAanvallend()*0.01));
+                            d_verdediging13.setProgress(new Double(s.getDefense())*0.01);
+                            d_uithouding13.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
+                            d_aanval13.getStyleClass().add("red-bar");
+                            d_uithouding13.getStyleClass().add("yellow-bar");
+                            d_verdediging13.getStyleClass().add("blue-bar");
+                            break;
+                        }
+                    }
+                    success = true;
+                }
+                event.setDropCompleted(success);
+                event.consume();
+            } 
+        });
+        m1.setOnDragOver(new EventHandler<DragEvent>() {
+            @Override
+            public void handle(DragEvent event) {
+                // data is dragged over the target 
+                Dragboard db = event.getDragboard();
+                if (event.getDragboard().hasString()){
+                    event.acceptTransferModes(TransferMode.COPY_OR_MOVE);
+                }
+                event.consume();
+            }
+        });
+        
+        m1.setOnDragDropped(new EventHandler<DragEvent>() {
+            @Override
+            public void handle(DragEvent event) {
+                Dragboard db = event.getDragboard();
+                boolean success = false;
+                if (event.getDragboard().hasString()) {            
+
+                    String text = db.getString();
+                    for(PosPlayer s: opstelling){
+                        if(text.equals(s.getNaam())){
+                            d_naam21.setText(s.getNaam());
+                            d_positie21.setText(""+s.getPosSpelertype());
+                            d_aanval21.setProgress(new Double(s.getAanvallend()*0.01));
+                            d_verdediging21.setProgress(new Double(s.getDefense())*0.01);
+                            d_uithouding21.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
+                            d_aanval21.getStyleClass().add("red-bar");
+                            d_uithouding21.getStyleClass().add("yellow-bar");
+                            d_verdediging21.getStyleClass().add("blue-bar");
+                            break;
+                        }
+                    }
+                    success = true;
+                }
+                event.setDropCompleted(success);
+                event.consume();
+            } 
+        });
+        m2.setOnDragOver(new EventHandler<DragEvent>() {
+            @Override
+            public void handle(DragEvent event) {
+                // data is dragged over the target 
+                Dragboard db = event.getDragboard();
+                if (event.getDragboard().hasString()){
+                    event.acceptTransferModes(TransferMode.COPY_OR_MOVE);
+                }
+                event.consume();
+            }
+        });
+        
+        m2.setOnDragDropped(new EventHandler<DragEvent>() {
+            @Override
+            public void handle(DragEvent event) {
+                Dragboard db = event.getDragboard();
+                boolean success = false;
+                if (event.getDragboard().hasString()) {            
+
+                    String text = db.getString();
+                    for(PosPlayer s: opstelling){
+                        if(text.equals(s.getNaam())){
+                            d_naam22.setText(s.getNaam());
+                            d_positie22.setText(""+s.getPosSpelertype());
+                            d_aanval22.setProgress(new Double(s.getAanvallend()*0.01));
+                            d_verdediging22.setProgress(new Double(s.getDefense())*0.01);
+                            d_uithouding22.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
+                            d_aanval22.getStyleClass().add("red-bar");
+                            d_uithouding22.getStyleClass().add("yellow-bar");
+                            d_verdediging22.getStyleClass().add("blue-bar");
+                            break;
+                        }
+                    }
+                    success = true;
+                }
+                event.setDropCompleted(success);
+                event.consume();
+            } 
+        });
+        m3.setOnDragOver(new EventHandler<DragEvent>() {
+            @Override
+            public void handle(DragEvent event) {
+                // data is dragged over the target 
+                Dragboard db = event.getDragboard();
+                if (event.getDragboard().hasString()){
+                    event.acceptTransferModes(TransferMode.COPY_OR_MOVE);
+                }
+                event.consume();
+            }
+        });
+        
+        m3.setOnDragDropped(new EventHandler<DragEvent>() {
+            @Override
+            public void handle(DragEvent event) {
+                Dragboard db = event.getDragboard();
+                boolean success = false;
+                if (event.getDragboard().hasString()) {            
+
+                    String text = db.getString();
+                    for(PosPlayer s: opstelling){
+                        if(text.equals(s.getNaam())){
+                            d_naam23.setText(s.getNaam());
+                            d_positie23.setText(""+s.getPosSpelertype());
+                            d_aanval23.setProgress(new Double(s.getAanvallend()*0.01));
+                            d_verdediging23.setProgress(new Double(s.getDefense())*0.01);
+                            d_uithouding23.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
+                            d_aanval23.getStyleClass().add("red-bar");
+                            d_uithouding23.getStyleClass().add("yellow-bar");
+                            d_verdediging23.getStyleClass().add("blue-bar");
+                            break;
+                        }
+                    }
+                    success = true;
+                }
+                event.setDropCompleted(success);
+                event.consume();
+            } 
+        });
+        a1.setOnDragOver(new EventHandler<DragEvent>() {
+            @Override
+            public void handle(DragEvent event) {
+                // data is dragged over the target 
+                Dragboard db = event.getDragboard();
+                if (event.getDragboard().hasString()){
+                    event.acceptTransferModes(TransferMode.COPY_OR_MOVE);
+                }
+                event.consume();
+            }
+        });
+        
+        a1.setOnDragDropped(new EventHandler<DragEvent>() {
+            @Override
+            public void handle(DragEvent event) {
+                Dragboard db = event.getDragboard();
+                boolean success = false;
+                if (event.getDragboard().hasString()) {            
+
+                    String text = db.getString();
+                    for(PosPlayer s: opstelling){
+                        if(text.equals(s.getNaam())){
+                            d_naam31.setText(s.getNaam());
+                            d_positie31.setText(""+s.getPosSpelertype());
+                            d_aanval31.setProgress(new Double(s.getAanvallend()*0.01));
+                            d_verdediging31.setProgress(new Double(s.getDefense())*0.01);
+                            d_uithouding31.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
+                            d_aanval31.getStyleClass().add("red-bar");
+                            d_uithouding31.getStyleClass().add("yellow-bar");
+                            d_verdediging31.getStyleClass().add("blue-bar");
+                            break;
+                        }
+                    }
+                    success = true;
+                }
+                event.setDropCompleted(success);
+                event.consume();
+            } 
+        });
+        a2.setOnDragOver(new EventHandler<DragEvent>() {
+            @Override
+            public void handle(DragEvent event) {
+                // data is dragged over the target 
+                Dragboard db = event.getDragboard();
+                if (event.getDragboard().hasString()){
+                    event.acceptTransferModes(TransferMode.COPY_OR_MOVE);
+                }
+                event.consume();
+            }
+        });
+        
+        a2.setOnDragDropped(new EventHandler<DragEvent>() {
+            @Override
+            public void handle(DragEvent event) {
+                Dragboard db = event.getDragboard();
+                boolean success = false;
+                if (event.getDragboard().hasString()) {            
+
+                    String text = db.getString();
+                    for(PosPlayer s: opstelling){
+                        if(text.equals(s.getNaam())){
+                            d_naam32.setText(s.getNaam());
+                            d_positie32.setText(""+s.getPosSpelertype());
+                            d_aanval32.setProgress(new Double(s.getAanvallend()*0.01));
+                            d_verdediging32.setProgress(new Double(s.getDefense())*0.01);
+                            d_uithouding32.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
+                            d_aanval32.getStyleClass().add("red-bar");
+                            d_uithouding32.getStyleClass().add("yellow-bar");
+                            d_verdediging32.getStyleClass().add("blue-bar");
+                            break;
+                        }
+                    }
+                    success = true;
+                }
+                event.setDropCompleted(success);
+                event.consume();
+            } 
+        });
+        a3.setOnDragOver(new EventHandler<DragEvent>() {
+            @Override
+            public void handle(DragEvent event) {
+                // data is dragged over the target 
+                Dragboard db = event.getDragboard();
+                if (event.getDragboard().hasString()){
+                    event.acceptTransferModes(TransferMode.COPY_OR_MOVE);
+                }
+                event.consume();
+            }
+        });
+        
+        a3.setOnDragDropped(new EventHandler<DragEvent>() {
+            @Override
+            public void handle(DragEvent event) {
+                Dragboard db = event.getDragboard();
+                boolean success = false;
+                if (event.getDragboard().hasString()) {            
+
+                    String text = db.getString();
+                    for(PosPlayer s: opstelling){
+                        if(text.equals(s.getNaam())){
+                            d_naam33.setText(s.getNaam());
+                            d_positie33.setText(""+s.getPosSpelertype());
+                            d_aanval33.setProgress(new Double(s.getAanvallend()*0.01));
+                            d_verdediging33.setProgress(new Double(s.getDefense())*0.01);
+                            d_uithouding33.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
+                            d_aanval33.getStyleClass().add("red-bar");
+                            d_uithouding33.getStyleClass().add("yellow-bar");
+                            d_verdediging33.getStyleClass().add("blue-bar");
+                            break;
+                        }
+                    }
+                    success = true;
+                }
+                event.setDropCompleted(success);
+                event.consume();
+            } 
+        });
+        
     }    
+    
+    
+    
+    
+    /** EINDE DRAG AND DROP **/
     
     public void drawTeam() {
         ObservableList<PosPlayer>filteredTeamList = FXCollections.observableArrayList();
@@ -173,40 +767,7 @@ public class veranderOpstellingController implements Initializable {
         teamTable.getSelectionModel().clearSelection();
     }
     
-    public void drawOpstelling() {
-        ObservableList<PosPlayer>opstellingList = FXCollections.observableArrayList();
-        opstellingList.clear();
-        opstellingList.addAll(opstelling);
-        System.out.println("DRAW OPSTELLING "+opstellingList.size());
-        opstellingSpelersColumn.setCellValueFactory(
-            cellData -> new SimpleStringProperty(cellData.getValue().getNaam()));
-        opstellingPositieColumn.setCellValueFactory(
-            cellData -> new SimpleStringProperty(""+cellData.getValue().getType()));
-        opstellingAanvalColumn.setCellValueFactory(
-                cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getAanvallend() * 0.01)).asObject());
-        opstellingAanvalColumn.setCellFactory(
-                ProgressBarTableCell.<PosPlayer> forTableColumn());
-        opstellingStaminaColumn.setCellValueFactory(
-                cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getUithoudingsvermogen()* 0.01)).asObject());
-        opstellingStaminaColumn.setCellFactory(
-                ProgressBarTableCell.<PosPlayer> forTableColumn());
-        opstellingVerdedigingColumn.setCellValueFactory(
-                cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getVerdedigend()* 0.01)).asObject());
-        opstellingVerdedigingColumn.setCellFactory(
-                ProgressBarTableCell.<PosPlayer> forTableColumn());
-        opstellingStatusColumn.setCellValueFactory(
-            cellData -> new SimpleStringProperty(""+cellData.getValue().getStatus()));
-        opstellingTable.setItems(opstellingList);
-        opstellingSpelersColumn.setSortType(TableColumn.SortType.ASCENDING);
-        opstellingTable.getSortOrder().add(opstellingSpelersColumn);
-        
-        opstellingAanvalColumn.getStyleClass().add("red-bar");
-        opstellingStaminaColumn.getStyleClass().add("yellow-bar");
-        opstellingVerdedigingColumn.getStyleClass().add("blue-bar");
-        
-        opstellingTable.getSelectionModel().clearSelection();
-    }
-    
+    /*
     @FXML
     private void handleRemoveFromOpstelling() {
         opstelling.remove(opstellingTable.getSelectionModel().getSelectedItem());
@@ -255,7 +816,7 @@ public class veranderOpstellingController implements Initializable {
         drawOpstelling();
         drawTeam();
 
-    }
+    }*/
     
     public void handleOpstellingMessage() {
         alert1Text.setText("De opstelling bevat niet genoeg spelers! (" + Integer.toString(opstelling.size()) + "/11 spelers)");
@@ -292,7 +853,8 @@ public class veranderOpstellingController implements Initializable {
         alert2.setVisible(false);
     }
 
-            
+    
+    
 
    
 

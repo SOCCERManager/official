@@ -83,6 +83,8 @@ public class PreGameController implements Initializable {
     private AnchorPane compareTeamsPane;
     @FXML
     private AnchorPane resultPane;
+    @FXML
+    private AnchorPane invalidPane;
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -136,9 +138,15 @@ public class PreGameController implements Initializable {
     
     @FXML
     private void handlePlay() throws Exception{
-        Competitie.getCompetitie().playPlayerGame();
-        drawResults();
-        resultPane.setVisible(true);
+        if(Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()).OpstellingIsValide()){
+            System.out.println("HAHAHAHAHAHAHAHAH");
+            Competitie.getCompetitie().playPlayerGame();
+            drawResults();
+            resultPane.setVisible(true);
+        }
+        else
+            invalidPane.setVisible(true);
+        
     }
     
     private void drawResults(){
