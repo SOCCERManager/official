@@ -106,6 +106,8 @@ public class mainController implements Initializable {
     
     @FXML
     private void handleRefresh(){
+        //because it autoplays.
+        playPauseImage.setImage(new Image("/gui/view/media_pause.png"));
         mainApp.bgmusicRunnable.refresh();
     }
     
