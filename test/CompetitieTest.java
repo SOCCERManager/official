@@ -3,14 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import java.time.Clock;
 import java.util.ArrayList;
 import org.junit.After;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Before;
 import soccer.Competitie;
-import static soccer.Competitie.getCompetitie;
 import soccer.PosPlayer;
 import soccer.Speler;
 import soccer.SpelerType;
@@ -886,7 +884,7 @@ public class CompetitieTest {
     public void resetCompetitionTest() {
         c1.resetCompetition();
         assertNotNull(c1.getWedstrijden());
-        assertTrue(c1.getWedstrijden().size() == 6);
+        assertTrue(c1.getWedstrijden().size() == 12);
     }
     /*
     @Test
