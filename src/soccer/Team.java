@@ -237,8 +237,6 @@ public class Team {
      */
     public void generateOpstelling() {
         
-        System.out.println("Generating Opstelling");
-        
         // add some emergaancy student assistents in case you have to few player (:
         while(this.spelers.size() < 11) {
             this.spelers.add(new Speler("Emergancy student assistenten", 0, SpelerType.Middenvelder, 1000, 40, 40, 40));
@@ -274,9 +272,6 @@ public class Team {
         // sort spelers by defensive score
         this.spelers.sort((s2, s1) -> s1.getVerdedigend() - s2.getVerdedigend());
         
-        System.out.println("Sorted player by defence");
-        System.out.println(this.spelers);
-        
         // add defenders till there are 4 defenders in there
         while (this.opstelling.size() < Math.min(totdefenders, 4)+1) {
             Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Verdediger, true);
@@ -298,10 +293,6 @@ public class Team {
         // sort spelers by uithoudings score
         this.spelers.sort((s2, s1) -> s1.getUithoudingsvermogen()- s2.getUithoudingsvermogen());
         
-        System.out.println("Sorted player by Uithoudingsvermogen");
-        System.out.println(this.spelers);
-        System.out.println(totMiddenvelders + " Avaliable middenvelders in total");
-        System.out.println(Math.min(totMiddenvelders, 3)+5);
         // add defenders till there are 4 middenvelders in there
         while (this.opstelling.size() < Math.min(totMiddenvelders, 3)+5) {
             Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Middenvelder, true);
@@ -309,25 +300,16 @@ public class Team {
             this.opstelling.add(new PosPlayer(s, SpelerType.Middenvelder));
         }
         
-        System.out.println("1");
-        System.out.println(this.opstelling);
-        System.out.println(this.spelers);
-        
         // add normaly non middenvelders as middenvelders
         while (this.opstelling.size() < 8) {
             Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Middenvelder, false);
             if(s == null) magicalyFixAPlayer();
             else this.opstelling.add(new PosPlayer(s, SpelerType.Middenvelder));
         }
-        System.out.println("2");
         // see if enough aanvallers are avaliable
         int totAttackers = (int) this.spelers.stream().filter(v -> v.isAvaliableToPlay()).filter(v -> v.getType().equals(SpelerType.Aanvaller)).count();
-        System.out.println("3");
         // sort spelers by aanvallende score
         this.spelers.sort((s2, s1) -> s1.getAanvallend()- s2.getAanvallend());
-        
-        System.out.println("Sorted player by Aanvallend");
-        System.out.println(this.spelers);
         
         // add defenders till there are 4 anvallers in there
         while (this.opstelling.size() < Math.min(totMiddenvelders, 3)+8) {
@@ -335,8 +317,6 @@ public class Team {
             if(s == null) break;
             this.opstelling.add(new PosPlayer(s, SpelerType.Aanvaller));
         }
-        
-        
 
         // add normaly non middenvelders as middenvelders
         while (this.opstelling.size() < 11) {
@@ -344,8 +324,6 @@ public class Team {
             if(s == null) magicalyFixAPlayer();
             else this.opstelling.add(new PosPlayer(s, SpelerType.Aanvaller));
         }
-        
-        System.out.println(this.opstelling);
     }
     
     public void addSpeler(Speler speler) {
