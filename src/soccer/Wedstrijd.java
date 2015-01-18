@@ -285,6 +285,8 @@ public class Wedstrijd {
         if(Random.get().nextBoolean() && score_a>0) score_a--;
         if(Random.get().nextBoolean()) score_b++;
         if(Random.get().nextBoolean() && score_b>0) score_b--;
+        if(Random.get().nextFloat() < 0.05) score_a += 2;
+        if(Random.get().nextFloat() < 0.05) score_b += 2;
         
         if(this.score_a > this.score_b) {
             this.points_a = 3;

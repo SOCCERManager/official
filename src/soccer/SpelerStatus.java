@@ -13,7 +13,7 @@ public enum SpelerStatus {
     /**
      * Enum rode kaart
      */
-    Roode_kaart,
+    Rode_kaart,
 
     /**
      * Enum geblesseerd
