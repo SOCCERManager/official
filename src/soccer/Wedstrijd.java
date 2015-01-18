@@ -1,7 +1,6 @@
 package soccer;
 
 import java.util.Objects;
-import java.util.Random;
 
 /**
  * Class Wedstrijd
@@ -16,7 +15,7 @@ public class Wedstrijd {
     private int points_b;
     private boolean played;
     private int speeldag;
-    private Random rnd;
+    private java.util.Random rnd;
     
     /**
      * Constructor van Wedstrijd, bestaande uit twee teams
@@ -27,7 +26,6 @@ public class Wedstrijd {
         this.team_a = team_a;
         this.team_b = team_b;
         played = false;
-        rnd = new Random((long) Math.random());
     }
     
     /**
@@ -40,7 +38,6 @@ public class Wedstrijd {
         this.team_a = team_a;
         this.team_b = team_b;
         played = false;
-        rnd = new Random((long) Math.random());
         this.speeldag = speeldag;
     }
 
@@ -175,22 +172,6 @@ public class Wedstrijd {
     }
     
     /**
-     * Get randomizer
-     * @return 
-     */
-    public Random getRnd() {
-        return rnd;
-    }
-    
-    /**
-     * Set randomizer
-     * @param rnd 
-     */
-    public void setRnd(Random rnd) {
-        this.rnd = rnd;
-    }
-    
-    /**
      * De equals methode om te kijken of wedstrijden aan elkaar gelijk zijn.
      * @param obj de wedstrijd die vergeleken wordt met de wedstrijd waarbij deze methode is aangeroepen
      * @return true als de wedstrijden gelijk zijn en false als de wedstrijdne niet aan elkaar gelijk zijn. 
@@ -300,7 +281,10 @@ public class Wedstrijd {
         this.score_a = getGoals(team_a, team_b);
         this.score_b = getGoals(team_b, team_a);
         
-        System.out.println(team_a.getName()+" - "+team_b.getName()+": "+score_a+" - "+score_b);
+        if(Random.get().nextBoolean()) score_a++;
+        if(Random.get().nextBoolean() && score_a>0) score_a--;
+        if(Random.get().nextBoolean()) score_b++;
+        if(Random.get().nextBoolean() && score_b>0) score_b--;
         
         if(this.score_a > this.score_b) {
             this.points_a = 3;
@@ -335,10 +319,14 @@ public class Wedstrijd {
      */ 
     private int getGoals(Team a, Team b) {
         int t = (int) Math.round(
-            ((double)a.getAanvallendTotaal()*(double)a.getUithoudingsTotaal()*this.rnd.nextDouble()*2)
+            (((double)a.getAanvallendTotaal()+(double)a.getUithoudingsTotaal())*Random.get().nextFloat()*2)
             /
-            ((double)b.getVerdedigingsTotaal()*(double)b.getUithoudingsTotaal())
+            ((double)b.getVerdedigingsTotaal()+(double)b.getUithoudingsTotaal())
         );
+        
+        if(Random.get().nextFloat() < 0.5) t++;
+        if(Random.get().nextFloat() < 0.3) t--;
+        
         return (t>0? t: 0);
     }
 }

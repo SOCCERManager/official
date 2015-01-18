@@ -1,7 +1,6 @@
 package soccer;
 
 import java.util.Objects;
-import java.util.Random;
 
 /**
  * Class speler
@@ -41,7 +40,6 @@ public class Speler {
         this.aanvallend = aanvallend;
         this.verdedigend = verdedigend;
         this.uithoudingsvermogen = uithoudingsvermogen;
-        this.rnd = new Random((long) Math.random());
     }
 
     /**
@@ -202,24 +200,6 @@ public class Speler {
     }
 
     /**
-     * Set random generator
-     *
-     * @return
-     */
-    public Random getRnd() {
-        return rnd;
-    }
-
-    /**
-     * Get Random generator
-     *
-     * @param rnd
-     */
-    public void setRnd(Random rnd) {
-        this.rnd = rnd;
-    }
-
-    /**
      * Past de status aan van de speler na iedere wedstrijd.
      */
     public void playGame() {
@@ -255,8 +235,7 @@ public class Speler {
      * @return een random getal binnen de opgegeven range
      */
     private int randomWithRange(int min, int max) {
-       if(this.rnd == null) this.rnd = new Random((long) Math.random());
-       return (int)(rnd.nextDouble() * ((max - min) + 1)) + min;
+       return (int)(Random.get().nextDouble() * ((max - min) + 1)) + min;
     }
 
     /**
