@@ -255,4 +255,10 @@ public class PosPlayerTest {
         p1.getSpeler().setGamesTilStatusDisapears(2);
         assertFalse(p1.isAvaliableToPlay());
     }
+    
+    @Test
+    public void getLocTest() {
+        p1.setLoc(0);
+        assertEquals(p1.getLoc(), 0);
+    }
 }

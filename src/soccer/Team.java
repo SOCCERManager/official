@@ -236,6 +236,9 @@ public class Team {
      * Creëert een opstelling voor een team
      */
     public void generateOpstelling() {
+        int verd = 1;
+        int midd = 5;
+        int aanv = 8;
         
         // add some emergaancy student assistents in case you have to few player (:
         while(this.spelers.size() < 11) {
@@ -261,7 +264,9 @@ public class Team {
         // Set doelman
         for (Speler s : this.spelers) {
             if (!dedicated_goalie || s.getType().equals(SpelerType.Doelman)) {
-                this.opstelling.add(new PosPlayer(s, SpelerType.Doelman));
+                PosPlayer n = new PosPlayer(s, SpelerType.Doelman);
+                n.setLoc(0);
+                this.opstelling.add(n);
                 break;
             }
         }
@@ -276,14 +281,22 @@ public class Team {
         while (this.opstelling.size() < Math.min(totdefenders, 4)+1) {
             Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Verdediger, true);
             if(s == null) break;
-            this.opstelling.add(new PosPlayer(s, SpelerType.Verdediger));
+            PosPlayer p = new PosPlayer(s, SpelerType.Verdediger);
+            p.setLoc(verd);
+            verd++;
+            this.opstelling.add(p);
         }
         
         // add normaly non deferders as defenders
         while (this.opstelling.size() < 5) {
             Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Verdediger, false);
             if(s == null) magicalyFixAPlayer();
-            else this.opstelling.add(new PosPlayer(s, SpelerType.Verdediger));
+            else {
+                PosPlayer p = new PosPlayer(s, SpelerType.Verdediger);
+                p.setLoc(verd);
+                verd++;
+                this.opstelling.add(p);
+            }
         }
 
         // see if enough middenvelders are avaliable
@@ -297,14 +310,22 @@ public class Team {
         while (this.opstelling.size() < Math.min(totMiddenvelders, 3)+5) {
             Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Middenvelder, true);
             if(s == null) break;
-            this.opstelling.add(new PosPlayer(s, SpelerType.Middenvelder));
+            PosPlayer p = new PosPlayer(s, SpelerType.Middenvelder);
+            p.setLoc(midd);
+            midd++;
+            this.opstelling.add(p);
         }
         
         // add normaly non middenvelders as middenvelders
         while (this.opstelling.size() < 8) {
             Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Middenvelder, false);
             if(s == null) magicalyFixAPlayer();
-            else this.opstelling.add(new PosPlayer(s, SpelerType.Middenvelder));
+            else {
+                PosPlayer p = new PosPlayer(s, SpelerType.Middenvelder);
+                p.setLoc(midd);
+                midd++;
+                this.opstelling.add(p);
+            }
         }
         // see if enough aanvallers are avaliable
         int totAttackers = (int) this.spelers.stream().filter(v -> v.isAvaliableToPlay()).filter(v -> v.getType().equals(SpelerType.Aanvaller)).count();
@@ -315,14 +336,22 @@ public class Team {
         while (this.opstelling.size() < Math.min(totMiddenvelders, 3)+8) {
             Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Aanvaller, true);
             if(s == null) break;
-            this.opstelling.add(new PosPlayer(s, SpelerType.Aanvaller));
+            PosPlayer p = new PosPlayer(s, SpelerType.Aanvaller);
+            p.setLoc(aanv);
+            aanv++;
+            this.opstelling.add(p);
         }
 
         // add normaly non middenvelders as middenvelders
         while (this.opstelling.size() < 11) {
             Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Aanvaller, false);
             if(s == null) magicalyFixAPlayer();
-            else this.opstelling.add(new PosPlayer(s, SpelerType.Aanvaller));
+            else {
+                PosPlayer p = new PosPlayer(s, SpelerType.Aanvaller);
+                p.setLoc(aanv);
+                aanv++;
+                this.opstelling.add(p);
+            }
         }
     }
     

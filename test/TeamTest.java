@@ -719,11 +719,68 @@ public class TeamTest {
     
     @Test
     public void generateOpstellingMetMagicFixTest() {
-        ArrayList<PosPlayer> opstelling = t1.getOpstelling();
-        t1.getSpelers().get(1).setStatus(SpelerStatus.Gebleseerd);
-        t1.getSpelers().get(2).setStatus(SpelerStatus.Gebleseerd);
-        t1.generateOpstelling();
-        assertEquals(opstelling, t1.getOpstelling());
+        Speler s1 = new Speler("Anton", 1, SpelerType.Doelman, 10000, 10, 20, 30);
+        PosPlayer p1 = new PosPlayer(s1, SpelerType.Doelman);
+        Speler s2 = new Speler("Bert", 2, SpelerType.Verdediger, 15000, 10, 20, 30);
+        PosPlayer p2 = new PosPlayer(s2, SpelerType.Verdediger);
+        Speler s3 = new Speler("Chris", 3, SpelerType.Verdediger, 20000, 10, 20, 30);
+        PosPlayer p3 = new PosPlayer(s3, SpelerType.Verdediger);
+        Speler s4 = new Speler("Davey", 4, SpelerType.Verdediger, 10000, 10, 20, 30);
+        PosPlayer p4 = new PosPlayer(s4, SpelerType.Verdediger);
+        Speler s5 = new Speler("Eric", 5, SpelerType.Verdediger, 15000, 10, 20, 30);
+        PosPlayer p5 = new PosPlayer(s5, SpelerType.Verdediger);
+        Speler s6 = new Speler("Floris (Mentaal beperkt)", 6, SpelerType.Middenvelder, 20000, 10, 20, 30);
+        PosPlayer p6 = new PosPlayer(s6, SpelerType.Middenvelder);
+        Speler s7 = new Speler("Gerard", 7, SpelerType.Middenvelder, 10000, 10, 20, 30);
+        PosPlayer p7 = new PosPlayer(s7, SpelerType.Middenvelder);
+        Speler s8 = new Speler("Hektor", 8, SpelerType.Middenvelder, 15000, 10, 20, 30);
+        PosPlayer p8 = new PosPlayer(s8, SpelerType.Middenvelder);
+        Speler s9 = new Speler("Issambal", 9, SpelerType.Aanvaller, 20000, 10, 20, 30);
+        PosPlayer p9 = new PosPlayer(s9, SpelerType.Aanvaller);
+        Speler s10 = new Speler("Jannet", 10, SpelerType.Aanvaller, 10000, 10, 20, 30);
+        PosPlayer p10 = new PosPlayer(s10, SpelerType.Aanvaller);
+        Speler s11 = new Speler("Kabouter plop", 11, SpelerType.Aanvaller, 15000, 10, 20, 30);
+        PosPlayer p11 = new PosPlayer(s11, SpelerType.Aanvaller);
+        s1.setStatus(null);
+        s2.setStatus(SpelerStatus.Normaal);
+        s3.setStatus(SpelerStatus.Normaal);
+        s4.setStatus(null);
+        s5.setStatus(null);
+        s6.setStatus(null);
+        s7.setStatus(null);
+        s8.setStatus(null);
+        s9.setStatus(null);
+        s10.setStatus(null);
+        s11.setStatus(null);
+        ArrayList<Speler> spelerlijst = new ArrayList<Speler>();
+        ArrayList<PosPlayer> posities = new ArrayList<PosPlayer>();
+        spelerlijst.add(s1);
+        spelerlijst.add(s2);
+        spelerlijst.add(s3);
+        spelerlijst.add(s4);
+        spelerlijst.add(s5);
+        spelerlijst.add(s6);
+        spelerlijst.add(s7);
+        spelerlijst.add(s8);
+        spelerlijst.add(s9);
+        spelerlijst.add(s10);
+        spelerlijst.add(s11);
+        posities.add(p1);
+        posities.add(p2);
+        posities.add(p3);
+        posities.add(p4);
+        posities.add(p5);
+        posities.add(p6);
+        posities.add(p7);
+        posities.add(p8);
+        posities.add(p9);
+        posities.add(p10);
+        posities.add(p11);
+        Team team = new Team(spelerlijst, "TestTeam", posities, eredivisie, 9);
+        team.getSpelers().get(1).setGamesTilStatusDisapears(5);
+        team.getSpelers().get(2).setGamesTilStatusDisapears(5);
+        team.generateOpstelling();
+        assertEquals(posities, team.getOpstelling());
     }
     
     @Test
@@ -1001,4 +1058,96 @@ public class TeamTest {
         assertTrue(t1.getSpelers().size() == 11);
         assertTrue(t2.getSpelers().size() == 1);
     }
+    
+    @Test
+    public void playGameKYUTest() {
+        t1.setName("FC Dordrecht");
+        Wedstrijd w1 = new Wedstrijd(t1, t1);
+        Wedstrijd w2 = new Wedstrijd(t1, t1);
+        Wedstrijd w3 = new Wedstrijd(t1, t1);
+        Wedstrijd w4 = new Wedstrijd(t1, t1);
+        ArrayList<Wedstrijd> wlijst = new ArrayList<>();
+        wlijst.add(w1);
+        wlijst.add(w2);
+        wlijst.add(w3);
+        wlijst.add(w4);
+        t1.getCompetitie().setWedstrijden(wlijst);
+        t1.getCompetitie().getWedstrijden().get(0).setPlayed(true);
+        t1.getCompetitie().getWedstrijden().get(1).setPlayed(true);
+        t1.getCompetitie().getWedstrijden().get(2).setPlayed(true);
+        t1.playGame();
+        assertEquals("KIM JONG UN", t1.getSpelers().get(11).getNaam());
+    }
+    
+    @Test
+    public void playGameAZTest() {
+        t1.setName("FC Tukkers");
+        Wedstrijd w1 = new Wedstrijd(t1, t1);
+        Wedstrijd w2 = new Wedstrijd(t1, t1);
+        Wedstrijd w3 = new Wedstrijd(t1, t1);
+        Wedstrijd w4 = new Wedstrijd(t1, t1);
+        Wedstrijd w5 = new Wedstrijd(t1, t1);
+        ArrayList<Wedstrijd> wlijst = new ArrayList<>();
+        wlijst.add(w1);
+        wlijst.add(w2);
+        wlijst.add(w3);
+        wlijst.add(w4);
+        wlijst.add(w5);
+        t1.getCompetitie().setWedstrijden(wlijst);
+        t1.getCompetitie().getWedstrijden().get(0).setPlayed(true);
+        t1.getCompetitie().getWedstrijden().get(1).setPlayed(true);
+        t1.getCompetitie().getWedstrijden().get(2).setPlayed(true);
+        t1.getCompetitie().getWedstrijden().get(3).setPlayed(true);
+        t1.playGame();
+        assertEquals(t1.getSpelers().get(11).getNaam(), "Andy Zaidman");
+    }
+    
+    @Test
+    public void playGameTeamMemberTest() {
+        t1.setName("Ajax");
+        Wedstrijd w1 = new Wedstrijd(t1, t1);
+        Wedstrijd w2 = new Wedstrijd(t1, t1);
+        Wedstrijd w3 = new Wedstrijd(t1, t1);
+        Wedstrijd w4 = new Wedstrijd(t1, t1);
+        Wedstrijd w5 = new Wedstrijd(t1, t1);
+        Wedstrijd w6 = new Wedstrijd(t1, t1);
+        ArrayList<Wedstrijd> wlijst = new ArrayList<>();
+        wlijst.add(w1);
+        wlijst.add(w2);
+        wlijst.add(w3);
+        wlijst.add(w4);
+        wlijst.add(w5);
+        wlijst.add(w6);
+        t1.getCompetitie().setWedstrijden(wlijst);
+        t1.getCompetitie().getWedstrijden().get(0).setPlayed(true);
+        t1.getCompetitie().getWedstrijden().get(1).setPlayed(true);
+        t1.getCompetitie().getWedstrijden().get(2).setPlayed(true);
+        t1.getCompetitie().getWedstrijden().get(3).setPlayed(true);
+        t1.getCompetitie().getWedstrijden().get(4).setPlayed(true);
+        t1.playGame();
+        assertTrue(t1.getSpelers().size() == 16);
+        assertEquals(t1.getSpelers().get(11).getNaam(), "Florist Strikval");
+        assertEquals(t1.getSpelers().get(12).getNaam(), "Wing Wing Wing Wing");
+        assertEquals(t1.getSpelers().get(13).getNaam(), "Nils cry-again");
+        assertEquals(t1.getSpelers().get(14).getNaam(), "Boeri Akkersteijn");
+        assertEquals(t1.getSpelers().get(15).getNaam(), "[FaZe]xXx_|-|4$$A|\\|_xXx_360NOSC");
+    }
+   /*
+    @Test
+    public void generateOpstellingOnvoldSpelers() {
+        t1.setSpelers(new ArrayList<>());
+        t1.getSpelers().add(new Speler("Henk", 1, SpelerType.Doelman, 5, 41, 40, 40));
+        t1.getSpelers().add(new Speler("Henk", 2, SpelerType.Doelman, 5, 42, 40, 40));
+        t1.getSpelers().add(new Speler("Henk", 3, SpelerType.Aanvaller, 5, 30, 40, 40));
+        t1.getSpelers().add(new Speler("Henk", 4, SpelerType.Middenvelder, 5, 60, 40, 40));
+        t1.getSpelers().add(new Speler("Henk", 5, SpelerType.Verdediger, 5, 46, 40, 40));
+        t1.getSpelers().add(new Speler("Henk", 6, SpelerType.Middenvelder, 5, 10, 40, 40));
+        t1.getSpelers().add(new Speler("Henk", 7, SpelerType.Verdediger, 5, 90, 40, 40));
+        t1.getSpelers().add(new Speler("Henk", 8, SpelerType.Aanvaller, 5, 50, 40, 40));
+        t1.getSpelers().add(new Speler("Henk", 9, SpelerType.Middenvelder, 5, 98, 15, 45));
+        t1.generateOpstelling();
+        assertTrue(t1.getSpelers().size()==11);
+        assertEquals(t1.getSpelers().get(10).getNaam(), "Emergancy student assistenten");
+    }
+    */
 }

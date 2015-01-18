@@ -158,5 +158,24 @@
             </HBox>
          </children>
       </AnchorPane>
+      <AnchorPane fx:id="invalidPane" layoutX="10.0" layoutY="10.0" prefHeight="570.0" prefWidth="917.0" style="-fx-background-color: rgba(254,254,254,0.3);" visible="false" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="510.0" prefWidth="807.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane maxHeight="1.7976931348623157E308" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                  <HBox>
+                     <children>
+                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="82.0" prefWidth="807.0" style="-fx-background-color: rgba(254,254,254,1);" text="Je opstelling is niet valide, verander je opstelling om verder te spelen." textAlignment="CENTER" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Pane maxHeight="1.7976931348623157E308" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

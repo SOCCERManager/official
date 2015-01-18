@@ -7,13 +7,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" fx:id="mainScreenPane" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.mainController">
+<AnchorPane id="AnchorPaneLoad" fx:id="mainScreenPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.mainController">
     <children>
-      <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <image>
-            <Image url="@background8.JPG" />
-         </image>
-      </ImageView>
       <AnchorPane fx:id="mediaPane" layoutX="617.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <HBox alignment="CENTER" layoutX="617.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
@@ -82,7 +77,7 @@
             </HBox>
          </children>
       </AnchorPane>
-        <Button fx:id="mainButton" alignment="TOP_LEFT" contentDisplay="TEXT_ONLY" layoutX="146.0" layoutY="302.0" onAction="#handleLoadButton" onMouseEntered="#handleClickSound" prefHeight="47.0" prefWidth="452.0" style="-fx-background-color: ;" styleClass="menuButton" text="Load Game" AnchorPane.leftAnchor="146.0">
+        <Button fx:id="mainButton" alignment="TOP_LEFT" contentDisplay="TEXT_ONLY" layoutX="146.0" layoutY="302.0" onAction="#handleLoadButton" onMouseEntered="#handleClickSound" prefHeight="47.0" prefWidth="452.0" styleClass="menuButton" text="Load Game" AnchorPane.leftAnchor="146.0">
          <font>
             <Font name="Segoe UI" size="52.0" />
          </font>
@@ -101,6 +96,9 @@
          <font>
             <Font name="Segoe UI Light" size="80.0" />
          </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
       </Label>
     </children>
 </AnchorPane>
