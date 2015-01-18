@@ -265,7 +265,7 @@ public class veranderOpstellingController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
-        Image image = new Image(getClass().getResourceAsStream("/gui/view/shirt.png"));
+        //Image image = new Image(getClass().getResourceAsStream("/gui/view/shirt.png"));
         
         for(int i = 0; i < opstelling.size(); i++)
             System.out.println(opstelling.get(i).getLoc());
