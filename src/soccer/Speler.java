@@ -221,7 +221,7 @@ public class Speler {
                 this.gamesTilStatusDisapears = 1;
                 //1 op 100 kans dat de speler een rode kaart krijgt na een wedstrijd    
             } else if (this.randomWithRange(0, 100) == 0) {
-                this.status = SpelerStatus.Roode_kaart;
+                this.status = SpelerStatus.Rode_kaart;
                 this.gamesTilStatusDisapears = 2;
             }
         }

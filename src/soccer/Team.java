@@ -447,7 +447,7 @@ public class Team {
      * @return
      */
     public int countRedCards() {
-        return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Roode_kaart)).count();
+        return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Rode_kaart)).count();
     }
 
     /**

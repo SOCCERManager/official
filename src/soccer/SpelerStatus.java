@@ -1,5 +1,7 @@
 package soccer;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
 /**
  * Een enum voor de verschillende spelerStatussen. 
  */
