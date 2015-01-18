@@ -868,7 +868,7 @@ public class veranderOpstellingController implements Initializable {
         filteredTeamColumn.setCellValueFactory(
             cellData -> new SimpleStringProperty(cellData.getValue().getNaam()));
         filteredPositieColumn.setCellValueFactory(
-            cellData -> new SimpleStringProperty(""+cellData.getValue().getType()));
+            cellData -> new SimpleStringProperty(cellData.getValue().getType().toString().replace("_", "")));
         
         filteredAanvalColumn.setCellValueFactory(
                 cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getAanvallend() * 0.01)).asObject());
@@ -886,7 +886,7 @@ public class veranderOpstellingController implements Initializable {
                 ProgressBarTableCell.<Speler> forTableColumn());
         
         filteredStatusColumn.setCellValueFactory(
-            cellData -> new SimpleStringProperty(""+cellData.getValue().getStatus()));
+            cellData -> new SimpleStringProperty(cellData.getValue().getStatus().toString().replace("_", " ")));
         
         
         teamTable.setItems(filteredTeamList);
