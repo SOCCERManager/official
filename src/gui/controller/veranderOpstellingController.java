@@ -265,7 +265,7 @@ public class veranderOpstellingController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
-        Image image = new Image(getClass().getResourceAsStream("/gui/view/shirt.png"));
+        //Image image = new Image(getClass().getResourceAsStream("/gui/view/shirt.png"));
         
         for(int i = 0; i < opstelling.size(); i++)
             System.out.println(opstelling.get(i).getLoc());
@@ -868,7 +868,7 @@ public class veranderOpstellingController implements Initializable {
         filteredTeamColumn.setCellValueFactory(
             cellData -> new SimpleStringProperty(cellData.getValue().getNaam()));
         filteredPositieColumn.setCellValueFactory(
-            cellData -> new SimpleStringProperty(""+cellData.getValue().getType()));
+            cellData -> new SimpleStringProperty(cellData.getValue().getType().toString().replace("_", "")));
         
         filteredAanvalColumn.setCellValueFactory(
                 cellData -> new SimpleDoubleProperty(new Double(cellData.getValue().getAanvallend() * 0.01)).asObject());
@@ -886,7 +886,7 @@ public class veranderOpstellingController implements Initializable {
                 ProgressBarTableCell.<Speler> forTableColumn());
         
         filteredStatusColumn.setCellValueFactory(
-            cellData -> new SimpleStringProperty(""+cellData.getValue().getStatus()));
+            cellData -> new SimpleStringProperty(cellData.getValue().getStatus().toString().replace("_", " ")));
         
         
         teamTable.setItems(filteredTeamList);

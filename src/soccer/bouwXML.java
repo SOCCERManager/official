@@ -56,7 +56,7 @@ public class bouwXML {
         Scanner infile = new Scanner(f);
         String te = "";
         while(infile.hasNext())
-            te += infile.nextLine()+"\n";
+            te += infile.nextLine().replace("Roode_kaart", "Rode_kaart")+"\n";
         Competitie c = (Competitie) getStream().fromXML(te);
         Competitie.setCompetitie(c);
         return c;

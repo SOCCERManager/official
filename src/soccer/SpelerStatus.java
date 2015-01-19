@@ -1,5 +1,7 @@
 package soccer;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
 /**
  * Een enum voor de verschillende spelerStatussen. 
  */
@@ -13,7 +15,7 @@ public enum SpelerStatus {
     /**
      * Enum rode kaart
      */
-    Roode_kaart,
+    Rode_kaart,
 
     /**
      * Enum geblesseerd

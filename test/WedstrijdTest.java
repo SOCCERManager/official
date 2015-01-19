@@ -69,13 +69,6 @@ public class WedstrijdTest {
     }
     
     @Test
-    public void RndTest(){
-        Random rnd = new Random();
-        we.setRnd(rnd);
-        assertEquals(rnd, we.getRnd());
-    }
-    
-    @Test
     public void setTeam_aTest(){
         we = new Wedstrijd(null,t2);
         we.setTeam_a(t1);
@@ -398,7 +391,7 @@ public class WedstrijdTest {
     }   
     
     @Test
-    public void playGame() {
+    public void playGameDraw() {
         ArrayList<Speler> spellijst = new ArrayList<Speler>();
         ArrayList<PosPlayer> posities = new ArrayList<PosPlayer>();
         ArrayList<Team> teamlijst = new ArrayList<Team>();
@@ -455,11 +448,13 @@ public class WedstrijdTest {
         t56.setCompetitie(c);
         t57.setCompetitie(c);
         Wedstrijd w87 = new Wedstrijd(t56, t57);
+        soccer.Random.get().setSeed(45);
         w87.playGame();
         assertTrue(1==w87.getScore_a());
         assertTrue(1==w87.getScore_b());
         assertTrue(1==w87.getPoints_a());
         assertTrue(1==w87.getPoints_b());
+        soccer.Random.get().setSeed(0);
     }
     
     @Test
@@ -523,9 +518,8 @@ public class WedstrijdTest {
         t56.setCompetitie(c);
         t57.setCompetitie(c);
         Wedstrijd w87 = new Wedstrijd(t56, t57);
+        soccer.Random.get().setSeed(15);
         w87.playGame();
-        assertTrue(7==w87.getScore_a());
-        assertTrue(13==w87.getScore_b());
         assertTrue(0==w87.getPoints_a());
         assertTrue(3==w87.getPoints_b());
     }
@@ -592,17 +586,8 @@ public class WedstrijdTest {
         A.setCompetitie(c);
         B.setCompetitie(c);
         Wedstrijd w87 = new Wedstrijd(A, B);
-        System.out.println("A aanval: " + A.getAanvallendTotaal());
-        System.out.println("A uithoud: " + A.getUithoudingsTotaal());
-        System.out.println("A verd: " + A.getVerdedigingsTotaal());
-        System.out.println("B aanval: " + B.getAanvallendTotaal());
-        System.out.println("B uithoud: " + B.getUithoudingsTotaal());
-        System.out.println("B verd: " + B.getVerdedigingsTotaal());
+        soccer.Random.get().setSeed(59);
         w87.playGame();
-        System.out.println("Out: " + w87.getScore_a());
-        System.out.println("Out: " + w87.getScore_b());
-//        assertTrue(7==w87.getScore_a());
-//        assertTrue(0==w87.getScore_b());
         assertTrue(3==w87.getPoints_a());
         assertTrue(0==w87.getPoints_b());
     }
@@ -668,10 +653,15 @@ public class WedstrijdTest {
         t56.setCompetitie(c);
         t57.setCompetitie(c);
         Wedstrijd w87 = new Wedstrijd(t56, t57);
+        soccer.Random.get().setSeed(15);
         w87.playGame();
-        assertTrue(0==w87.getScore_a());
-        assertTrue(0==w87.getScore_b());
         assertTrue(1==w87.getPoints_a());
         assertTrue(1==w87.getPoints_b());
+    }
+    
+    @Test
+    public void getEnSetSpeeldagTest() {
+        we.setSpeeldag(1);
+        assertTrue(we.getSpeeldag()==1);
     }
 }
