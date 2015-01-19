@@ -5,20 +5,34 @@
  */
 package gui.controller;
 
+import java.io.File;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.ResourceBundle;
+import javafx.beans.binding.Bindings;
+import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.ProgressBarTableCell;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.scene.media.MediaView;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebView;
 import soccer.Competitie;
 import soccer.PosPlayer;
 import soccer.Speler;
@@ -74,6 +88,16 @@ public class PreGameController implements Initializable {
     private Label userTeamLabel;
     @FXML
     private Label enemyTeamLabel;
+    @FXML
+    private AnchorPane mainWinnerPane;
+    @FXML
+    private Label team2;
+    @FXML
+    private Label team1;
+    @FXML
+    private Label team3;
+    @FXML
+    private AnchorPane winnerVideoPane;
 
     private Wedstrijd wed;
     /**
@@ -138,15 +162,40 @@ public class PreGameController implements Initializable {
     
     @FXML
     private void handlePlay() throws Exception{
-        if(Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()).OpstellingIsValide()){
-            System.out.println("HAHAHAHAHAHAHAHAH");
+        if(Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()).OpstellingIsValide() && Competitie.getCompetitie().gamesLeftToPlay()){
             Competitie.getCompetitie().playPlayerGame();
             drawResults();
             resultPane.setVisible(true);
         }
-        else
+        else {
             invalidPane.setVisible(true);
-        
+            //MOET NOG ZEGGEN DAT DE COMPETITIE VOORBIJ IS.
+            //MOET NOG VRAGEN OF SPELER OPNIEUW WIL SPELEN.
+        }
+        //if no more games:
+        if(Competitie.getCompetitie().gamesLeftToPlay() == false) {
+            ArrayList<Team> teamCopy = new ArrayList<Team>(Competitie.getCompetitie().getTeams());
+            Collections.sort(teamCopy, (Team t1, Team t2) -> Integer.compare(t1.getScore(), t2.getScore()));
+            if(teamCopy.get(teamCopy.size()-1).equals(Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()))) {
+                //Your team wins :D
+                //Show video
+            String content_Url = "<center><iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/4DEXx77bUgI?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe></center>";
+            WebView webView = new WebView();
+            webView.setMinHeight(winnerVideoPane.getHeight());
+            webView.setMinWidth(winnerVideoPane.getWidth());
+            WebEngine webEngine = webView.getEngine();
+            webEngine.loadContent(content_Url);
+        winnerVideoPane.getChildren().add(webView);
+            winnerVideoPane.setVisible(true);  
+            } else {
+                //Show generic winner stage 
+                team1.setText(teamCopy.get(teamCopy.size()-1).getName());
+                team2.setText(teamCopy.get(teamCopy.size()-2).getName());
+                team3.setText(teamCopy.get(teamCopy.size()-3).getName());
+                mainWinnerPane.setVisible(true);
+            }
+      
+        }
     }
     
     private void drawResults(){
@@ -163,4 +212,9 @@ public class PreGameController implements Initializable {
                 cellData -> new SimpleIntegerProperty(cellData.getValue().getPoints_b()).asObject());
         resultTable.setItems(wedstrijdData);
     }
+    
+        @FXML
+    private void handleCloseWinners(ActionEvent event) {
+        mainWinnerPane.setVisible(false);
+    }    
 }
