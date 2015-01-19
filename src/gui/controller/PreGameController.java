@@ -5,6 +5,7 @@
  */
 package gui.controller;
 
+import gui.MainApp;
 import java.io.File;
 import java.net.URL;
 import java.util.ArrayList;
@@ -21,6 +22,8 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -28,11 +31,16 @@ import javafx.scene.control.cell.ProgressBarTableCell;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
+import javafx.stage.Stage;
+import javafx.util.Duration;
 import soccer.Competitie;
 import soccer.PosPlayer;
 import soccer.Speler;
@@ -98,6 +106,14 @@ public class PreGameController implements Initializable {
     private Label team3;
     @FXML
     private AnchorPane winnerVideoPane;
+    @FXML
+    private HBox videoViewer;
+    @FXML
+    private VBox videoVBox;
+    @FXML
+    private AnchorPane pregamePane;
+    
+    private MediaPlayer vplayer;
 
     private Wedstrijd wed;
     /**
@@ -179,14 +195,22 @@ public class PreGameController implements Initializable {
             if(teamCopy.get(teamCopy.size()-1).equals(Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()))) {
                 //Your team wins :D
                 //Show video
-            String content_Url = "<center><iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/4DEXx77bUgI?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe></center>";
-            WebView webView = new WebView();
-            webView.setMinHeight(winnerVideoPane.getHeight());
-            webView.setMinWidth(winnerVideoPane.getWidth());
-            WebEngine webEngine = webView.getEngine();
-            webEngine.loadContent(content_Url);
-        winnerVideoPane.getChildren().add(webView);
-            winnerVideoPane.setVisible(true);  
+                
+                File vfile = new File("./src/media/goldencup.mp4");
+                Media vmedia = new Media(vfile.toURI().toString());
+                vplayer = new MediaPlayer(vmedia);
+                MediaView vviewer = new MediaView(vplayer);
+                vplayer.setAutoPlay(true);
+                vplayer.setCycleCount(Integer.MAX_VALUE);
+                vviewer.setFitHeight(winnerVideoPane.getHeight());
+                winnerVideoPane.getChildren().add(vviewer);
+
+                pregamePane.setVisible(false);
+                invalidPane.setVisible(false);
+
+                //videoVBox.setOpacity(1);
+                videoVBox.setVisible(true);
+ 
             } else {
                 //Show generic winner stage 
                 team1.setText(teamCopy.get(teamCopy.size()-1).getName());
@@ -194,8 +218,13 @@ public class PreGameController implements Initializable {
                 team3.setText(teamCopy.get(teamCopy.size()-3).getName());
                 mainWinnerPane.setVisible(true);
             }
-      
         }
+    }
+    
+    @FXML
+    private void handleCloseVideo() {
+        vplayer.stop();
+        videoVBox.setVisible(false);
     }
     
     private void drawResults(){
