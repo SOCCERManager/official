@@ -205,13 +205,6 @@ public class SpelerTest {
     }
     
     @Test
-    public void getEnSetRndTest() {
-        Random rnd = new Random();
-        s1.setRnd(rnd);
-        assertEquals(rnd, s1.getRnd());
-    }
-    
-    @Test
     public void equalsOngelijkeStatusTest() {
         Speler s2 = new Speler("Bert", 1, SpelerType.Aanvaller, 10000, 81, 98, 22);
         s1.setStatus(SpelerStatus.Normaal);
@@ -263,23 +256,25 @@ public class SpelerTest {
     
     @Test
     public void playGameTestGeblesserd() {
-        s1.setRnd(new Random(5120));
+        soccer.Random.get().setSeed(8419);
         s1.playGame();
         assertEquals(SpelerStatus.Gebleseerd, s1.getStatus());
     }
     
     @Test
     public void playGameTestGelekaart() {
-        s1.setRnd(new Random(38));
+        soccer.Random.get().setSeed(8781);
         s1.playGame();
+        System.out.println("STATUS GELE KAART: " + s1.getStatus());
         assertEquals(SpelerStatus.Gele_kaart, s1.getStatus());
     }
     
     @Test
-    public void playGameTestRoodekaart() {
-        s1.setRnd(new Random(91));
+    public void playGameTestRodekaart() {
+        soccer.Random.get().setSeed(8690);
         s1.playGame();
-        assertEquals(SpelerStatus.Roode_kaart, s1.getStatus());
+        System.out.println("STATUS RODE KAART: " + s1.getStatus());
+        assertEquals(SpelerStatus.Rode_kaart, s1.getStatus());
     }
     
     @Test
@@ -297,17 +292,12 @@ public class SpelerTest {
     @Test
     public void randomWithRangeNotNullTest() {
         Random r1 = new Random((long) 5);
-        s1.setRnd(r1);
         s1.playGame();
-        assertNotNull(s1.getRnd());
     }
     
     @Test
     public void randomWithRangeNullTest() {
-        Random r1 = null;
-        s1.setRnd(r1);
         s1.playGame();
-        assertNotNull(s1.getRnd());
     }
     
     @Test
