@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.media.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
@@ -177,5 +178,78 @@
             </VBox>
          </children>
       </AnchorPane>
+      <AnchorPane id="AnchorPane" fx:id="mainWinnerPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox layoutX="20.0" layoutY="20.0" prefHeight="138.0" prefWidth="600.0" styleClass="messages" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane prefHeight="27.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#handleCloseWinners" styleClass="closeButton" text="x" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane VBox.vgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="380.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                                    <Label fx:id="team2" alignment="CENTER" prefHeight="17.0" prefWidth="205.0" style="-fx-text-fill: silver;" text="2de team" VBox.vgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Segoe UI Light" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                          <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: silver;" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" />
+                                          <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label fx:id="team1" alignment="CENTER" prefHeight="17.0" prefWidth="205.0" style="-fx-text-fill: gold;" text="1ste team">
+                                       <font>
+                                          <Font name="Segoe UI Light" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                          <Pane prefHeight="391.0" prefWidth="200.0" style="-fx-background-color: gold;" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" />
+                                          <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                                    <Pane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                                    <Label fx:id="team3" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="205.0" style="-fx-text-fill: brown;" text="3de team" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Segoe UI Light" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                          <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: brown;" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" />
+                                          <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="winnerVideoPane" layoutX="20.0" layoutY="20.0" prefHeight="570.0" prefWidth="917.0" styleClass="messages" visible="false" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0" />
    </children>
 </AnchorPane>
