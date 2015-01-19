@@ -886,23 +886,12 @@ public class CompetitieTest {
         assertNotNull(c1.getWedstrijden());
         assertTrue(c1.getWedstrijden().size() == 12);
     }
-    /*
+    
     @Test
-    public void playGamesTillPlayerGameIsDue() {
-        Speler s1 = new Speler("Adriaan", 3, SpelerType.Aanvaller, 1, 50, 50, 50);
-        for (int i = 0; i<c1.getTeams().size(); i++) {
-            for (int j = 0; i<=9; i++) {
-                 c1.getTeams().get(0).getSpelers().add(s1);
-            }
-        }   
-        Team t61 = new Team(null, null, null, c1, 89);
-        Team t62 = new Team(null, null, null, c1, 987);
-        c1.resetCompetition();
-        c1.getTeams().add(t61);
-        c1.getTeams().add(t62);
-        c1.setUserindex(4);
-        c1.playGamesTilPlayerGameIsDue();
-        assertTrue(c1.getWedstrijden().get(0).isPlayed());
+    public void playPlayerGameTest() throws Exception {
+        c1.setWedstrijden(new ArrayList<Wedstrijd>());
+        c1.setUserindex(0);
+        System.out.println(c1.playPlayerGame());
     }
-    */
+    
 }
