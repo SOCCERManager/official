@@ -21,17 +21,17 @@
                         <Pane prefHeight="0.0" prefWidth="565.0" VBox.vgrow="ALWAYS" />
                         <HBox prefHeight="62.0">
                            <children>
-                              <Button mnemonicParsing="false" onAction="#handleCompetitie" prefHeight="62.0" prefWidth="185.0" text="Competitie">
+                              <Button mnemonicParsing="false" onAction="#handleCompetitie" prefHeight="62.0" prefWidth="185.0" styleClass="gameButton" text="Competitie">
                                  <HBox.margin>
                                     <Insets right="5.0" />
                                  </HBox.margin>
                               </Button>
-                              <Button mnemonicParsing="false" onAction="#handleHistory" prefHeight="62.0" prefWidth="185.0" text="Match History">
+                              <Button mnemonicParsing="false" onAction="#handleHistory" prefHeight="62.0" prefWidth="185.0" styleClass="gameButton" text="Match History">
                                  <HBox.margin>
                                     <Insets right="5.0" />
                                  </HBox.margin>
                               </Button>
-                              <Button mnemonicParsing="false" onAction="#handleTeam" prefHeight="62.0" prefWidth="185.0" text="Team">
+                              <Button mnemonicParsing="false" onAction="#handleTeam" prefHeight="62.0" prefWidth="185.0" styleClass="gameButton" text="Team">
                                  <HBox.margin>
                                     <Insets right="5.0" />
                                  </HBox.margin>
@@ -58,17 +58,17 @@
                         <Pane prefHeight="0.0" prefWidth="565.0" VBox.vgrow="ALWAYS" />
                         <HBox prefHeight="62.0">
                            <children>
-                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleVeranderOpstelling" prefHeight="62.0" prefWidth="185.0" text="Opstelling">
+                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleVeranderOpstelling" prefHeight="62.0" prefWidth="185.0" styleClass="gameButton" text="Opstelling">
                                  <HBox.margin>
                                     <Insets left="5.0" right="5.0" />
                                  </HBox.margin>
                               </Button>
-                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleKoop" prefHeight="62.0" prefWidth="185.0" text="Markt">
+                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleKoop" prefHeight="62.0" prefWidth="185.0" styleClass="gameButton" text="Markt">
                                  <HBox.margin>
                                     <Insets right="5.0" />
                                  </HBox.margin>
                               </Button>
-                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleVerkoop" prefHeight="62.0" prefWidth="185.0" text="Verkoop" />
+                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleVerkoop" prefHeight="62.0" prefWidth="185.0" styleClass="gameButton" text="Verkoop" />
                            </children>
                         </HBox>
                         <Pane prefHeight="0.0" prefWidth="565.0" VBox.vgrow="ALWAYS" />
@@ -85,12 +85,12 @@
                   <Pane prefWidth="200.0" HBox.hgrow="ALWAYS" />
                   <VBox>
                      <children>
-                        <Button mnemonicParsing="false" onAction="#handlePlay" prefHeight="31.0" prefWidth="150.0" text="Play">
+                        <Button mnemonicParsing="false" onAction="#handlePlay" prefHeight="31.0" prefWidth="150.0" styleClass="gameButton" text="Play">
                            <VBox.margin>
                               <Insets bottom="5.0" />
                            </VBox.margin>
                         </Button>
-                        <Button fx:id="Menu" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="31.0" text="Main menu">
+                        <Button fx:id="Menu" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="31.0" styleClass="gameButton" text="Main menu">
                            <VBox.margin>
                               <Insets bottom="5.0" />
                            </VBox.margin>

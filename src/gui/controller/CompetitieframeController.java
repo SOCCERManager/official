@@ -14,8 +14,10 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
@@ -101,6 +103,8 @@ public class CompetitieframeController implements Initializable {
 						setTextFill(Color.GREEN);
                                                 setFont(Font.font(null, FontWeight.BOLD, USE_COMPUTED_SIZE));
 					} else {
+                                            setTextFill(Color.BLACK);
+                                            setFont(Font.font(null, FontWeight.NORMAL, USE_COMPUTED_SIZE));
 						setText(item);
 					}
                                         }
@@ -112,6 +116,23 @@ public class CompetitieframeController implements Initializable {
       puntenColumn.setSortType(TableColumn.SortType.DESCENDING);
         resultatenTable.getSortOrder().add(puntenColumn);
         teamColumn.isVisible();
+        /*
+        int tellen =0;
+        for(Node n: resultatenTable.lookupAll("TableRow")){
+            if (n instanceof TableRow){
+                TableRow row = (TableRow) n;
+                if(resultatenTable.getItems().get(tellen).getName().equals(Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()).getName())){
+                    row.setStyle("-fx-background-color: ladder(-fx-backgroundcolor, lightcoral 49%, darkred 51%);");
+                }
+                else {
+                    row.setStyle(null);
+                }
+                tellen++;
+                if( tellen == resultatenTable.getItems().size())
+                    break;
+            }
+        }
+                */
     }    
     
 }

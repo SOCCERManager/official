@@ -1,5 +1,5 @@
 #BorderPane{
-    -fx-background-image: url("background5.jpg");
+    -fx-background-image: url("background8.jpg");
     -fx-background-repeat: stretch;   
     -fx-background-position: center center;
     //-fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); Dit zie je toch niet.
@@ -20,7 +20,7 @@
 #mainButton2{
     
 }
-.button {
+/*.button {
     -fx-padding: 5 22 5 22;   
     -fx-background-color: #FEFEFE;
     -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
@@ -29,13 +29,13 @@
     -fx-background-insets: 0 0 0 0, 0, 1, 2;
     -fx-border-radius: 6;
     //-fx-effect: innershadow(gaussian, white, 10, 0.1, 0, 0); 
-}
+}*/
 
-.button:hover {
+/*.button:hover {
     -fx-background-color: #080308;
     -fx-text-fill: #FEFEFE;
 
-}
+}*/
 .mediaButton:hover {
     -fx-background-color: #69B9FF;
     -fx-text-fill: #FEFEFE;
@@ -151,6 +151,39 @@
     -fx-effect: dropshadow(three-pass-box, black, 50, .6, 0, 0);
 }
 
+.gameButton {
+    -fx-background-color:transparent;
+    -fx-text-fill:#FEFEFE;
+    -fx-font-size:19pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-effect: dropshadow(one-pass-box, black, 30, .3, 8, 0);
+}
+
+.gameButton:hover {
+    -fx-background-color:transparent;
+    -fx-text-fill:#69B9FF;
+    -fx-font-size:19pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-effect: dropshadow(one-pass-box, black, 30, .6, 0, 0);
+}
+
+.loadButton {
+    -fx-background-color: transparent;
+    -fx-text-align:top;
+    -fx-text-fill:#FEFEFE;
+    -fx-font-size:12pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-effect: dropshadow(one-pass-box, black, 30, .8, 2, 0);
+}
+
+.loadButton:hover {
+    -fx-background-color:transparent;
+    -fx-text-fill:#69B9FF;
+    -fx-font-size:12pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-effect: dropshadow(one-pass-box, black, 30, .9, 0, 0);
+}
+
 #titleLabel {
     -fx-background-color:#1E2124;
     -fx-text-fill:#FEFEFE;
@@ -158,4 +191,11 @@
     -fx-opacity:.8;
     -fx-font-family: "Segoe UI Light";
     //-fx-effect: dropshadow(three-pass-box, black, 80, .8, 0, 0);
+}
+
+#logopane{
+    -fx-background-image: url("logo.png");
+    -fx-background-position: left center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
 }

@@ -75,6 +75,8 @@ public class loadscreenController implements Initializable {
         final int numButton= i;
         temp.setId("" + i);
         temp.setMinWidth(450.0);
+        temp.getStyleClass().add("loadButton");
+        temp.setMaxHeight(Double.MAX_VALUE);
         temp.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {

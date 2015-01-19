@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
@@ -92,13 +93,6 @@
             <Font name="Lucida Sans Regular" size="36.0" />
          </font>
       </Button>
-      <Label fx:id="titleLabel" layoutX="80.0" layoutY="80.0" prefHeight="166.0" prefWidth="1448.0" text="System Out  Soccer Manager" wrapText="true" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
-         <font>
-            <Font name="Segoe UI Light" size="80.0" />
-         </font>
-         <padding>
-            <Insets left="10.0" />
-         </padding>
-      </Label>
+      <Pane id="logopane" prefHeight="200.0" prefWidth="200.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0" />
     </children>
 </AnchorPane>
