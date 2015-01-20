@@ -11,7 +11,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Random;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -26,15 +25,18 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.Slider;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.cell.ProgressBarTableCell;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import soccer.Competitie;
 import soccer.PosPlayer;
+import soccer.Random;
 import soccer.Speler;
 import soccer.SpelerType;
 import soccer.Team;
@@ -77,7 +79,16 @@ public class KoopframeController implements Initializable {
     @FXML
     private Button koopButton;
     @FXML
-    private Button koopShadow;
+    private HBox sliderHBox;
+    @FXML
+    private HBox alertHBox;
+    @FXML
+    private Slider prijsSlider;
+    @FXML
+    private Label prijsLabel;
+    @FXML
+    private TextArea koopAlert;
+    
     private Team userteam = mainhubController.originalteamlist.get(Competitie.getCompetitie().getUserindex()); 
     private HashSet<Speler> tempList = new HashSet();
     static HashSet<Speler> backupList = new HashSet();
@@ -89,7 +100,8 @@ public class KoopframeController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        
+        alertHBox.setVisible(false);
+        sliderHBox.setVisible(false);
         if(oldmatchplayed == Competitie.getCompetitie().getPlayedGamesofTeam(userteam)){
             System.out.println("OLD TABLE");
             tempList = backupList;
@@ -111,10 +123,8 @@ public class KoopframeController implements Initializable {
                 System.out.println("Speler: " + rowData.getNaam() + "\t\tAanvallend: "+ rowData.getAanvallend() + "\tVerdedigend: " + rowData.getVerdedigend() + "\tUithouding: " + rowData.getUithoudingsvermogen() + "\tPrijs: " + rowData.getPrijs());
                 if(userteam.getBudget()-rowData.getPrijs()<0) {
                     koopButton.setDisable(true);
-                    koopShadow.setDisable((false));
                 }else{
                     koopButton.setDisable(false);
-                    koopShadow.setDisable(true);
                 }
             });
             return row;
@@ -126,7 +136,7 @@ public class KoopframeController implements Initializable {
     }
     
     private void setData() {
-        Random rnd = new Random();
+        Random rnd = Random.get();
         ArrayList<Team> teamList = mainhubController.originalteamlist;
         for (int i = 0; i < rnd.nextInt(teamList.size()); i++) {
             int randomTeamIndex = rnd.nextInt(teamList.size());
@@ -201,25 +211,115 @@ public class KoopframeController implements Initializable {
 //        if(marketTable.getSelectionModel().getSelectedItem()!=null){
 //            temp = marketTable.getSelectionModel().getSelectedItem();
 //        }
+        sliderHBox.setVisible(false);
+        alertHBox.setVisible(false);
         if(marketTable.getSelectionModel().getSelectedItem()!=null){
-            if(userteam.getBudget()-marketTable.getFocusModel().getFocusedItem().getPrijs()>0) {
+            prijsSlider.setValue(1.0);
+            prijsLabel.setText("Bied prijs: " + marketTable.getFocusModel().getFocusedItem().defineMarketValue());
+            sliderHBox.setVisible(true);
+        }
+    }
+    
+    @FXML
+    private void handleBiedPrijs() {
+//        if(marketTable.getSelectionModel().getSelectedItem()!=null){
+//            if(userteam.getBudget()-marketTable.getFocusModel().getFocusedItem().getPrijs()>0) {
+//                Speler temp = marketTable.getFocusModel().getFocusedItem();
+//                System.out.println(temp);
+//                userteam.addSpeler(temp);
+//
+//                tempList.remove(temp);
+//
+//                userteam.setBudget(userteam.getBudget()-temp.defineMarketValue());
+//
+//                marketTable.getSelectionModel().clearSelection();
+//                System.out.println("Removing from table: " + temp.getNaam());
+//                //mainApp.showMainHubScreen();
+//
+//                drawTable();
+//            }
+//        }else{
+//            System.out.println("You've encoutered the bug dragon, the player this table thinks it's selecting is null!");
+//        }
+        if(userteam.getBudget()-marketTable.getFocusModel().getFocusedItem().getPrijs()>0) {
+            //Enough cash
+            
+            //Chance:
+//            if(prijsSlider.getValue()>0 && prijsSlider.getValue()<1 && rnd.nextInt(10)%3==0) {
+//                //Price is lower than market price
+//                //only if 0<price<1 and random % 3 ==0 
+//                Speler temp = marketTable.getFocusModel().getFocusedItem();
+//                userteam.addSpeler(temp);
+//                tempList.remove(temp);
+//
+//                userteam.setBudget(userteam.getBudget()-((int)((prijsSlider.getValue()*marketTable.getFocusModel().getFocusedItem().getPrijs())/1000))*1000);
+//
+//
+//                System.out.println("Removing from table: " + temp.getNaam());
+//                
+//                koopAlert.setText("Speler " + marketTable.getFocusModel().getFocusedItem().getNaam() + " is verkocht voor: €" + ((int)((prijsSlider.getValue()*marketTable.getFocusModel().getFocusedItem().getPrijs())/1000))*1000);
+//                marketTable.getSelectionModel().clearSelection();
+//                drawTable();
+//            }else {
+//                koopAlert.setText("De prijs: €" + ((int)((prijsSlider.getValue()*marketTable.getFocusModel().getFocusedItem().getPrijs())/1000))*1000 + " is te laag! Doe een andere bod.");
+//            }
+//            
+//            if(prijsSlider.getValue()>1 && prijsSlider.getValue()<1.5) {
+//                //Price is higher than market price... guaranteed buy
+//                Speler temp = marketTable.getFocusModel().getFocusedItem();
+//                userteam.addSpeler(temp);
+//                tempList.remove(temp);
+//
+//                userteam.setBudget(userteam.getBudget()-((int)((prijsSlider.getValue()*marketTable.getFocusModel().getFocusedItem().getPrijs())/1000))*1000);
+//
+//                System.out.println("Removing from table: " + temp.getNaam());
+//                
+//                koopAlert.setText("Speler " + marketTable.getFocusModel().getFocusedItem().getNaam() + " is verkocht voor: €" + ((int)((prijsSlider.getValue()*marketTable.getFocusModel().getFocusedItem().getPrijs())/1000))*1000);
+//                marketTable.getSelectionModel().clearSelection();
+//                drawTable();
+//            }
+//            
+//            if(prijsSlider.getValue()==0) {
+//                koopAlert.setText("Uw kunt geen speler kopen voor €0!");
+//            }
+            
+            int prijs = marketTable.getFocusModel().getFocusedItem().getPrijs();
+            if(Random.get().nextFloat() < Math.max(0, Math.sqrt(prijsSlider.getValue()/2)-0.1)) {
+                // Gefleicteerd!
                 Speler temp = marketTable.getFocusModel().getFocusedItem();
-                System.out.println(temp);
                 userteam.addSpeler(temp);
-
                 tempList.remove(temp);
 
-                userteam.setBudget(userteam.getBudget()-temp.defineMarketValue());
+                userteam.setBudget(userteam.getBudget()-((int)((prijsSlider.getValue()*marketTable.getFocusModel().getFocusedItem().getPrijs())/1000))*1000);
 
-                marketTable.getSelectionModel().clearSelection();
+
                 System.out.println("Removing from table: " + temp.getNaam());
-                //mainApp.showMainHubScreen();
-
+                
+                koopAlert.setText("Gefeliciteerd! \nSpeler " + marketTable.getFocusModel().getFocusedItem().getNaam() + " is verkocht voor: €" + ((int)((prijsSlider.getValue()*marketTable.getFocusModel().getFocusedItem().getPrijs())/1000))*1000);
+                marketTable.getSelectionModel().clearSelection();
                 drawTable();
+            } else {
+                koopAlert.setText("Het bod €" + ((int)((prijsSlider.getValue()*marketTable.getFocusModel().getFocusedItem().getPrijs())/1000))*1000 + " is afgewezen! Doe een andere bod.");
+                System.out.println(prijsSlider.getValue());
             }
-        }else{
-            System.out.println("You've encoutered the bug dragon, the player this table thinks it's selecting is null!");
+            
+            
+        } else {
+            koopAlert.setText("Het budget is te klein!");
+            
         }
+        sliderHBox.setVisible(false);
+        alertHBox.setVisible(true);
+    }
+    
+    @FXML
+    private void handleSlidePrice() {
+        prijsLabel.setText("Bied prijs: " + ((int)((prijsSlider.getValue()*marketTable.getFocusModel().getFocusedItem().getPrijs())/1000))*1000);
+    }
+    
+    @FXML
+    private void handleCloseKoopAlert() {
+        alertHBox.setVisible(false);
     }
     
     @FXML

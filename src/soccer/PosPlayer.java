@@ -162,13 +162,17 @@ public class PosPlayer {
     }
 
     /**
-     * Het type speler.
+     * Return het type speler.
      * @return Retourneert het type van de speler.
      */
     public SpelerType getType() {
         return speler.getType();
     }
 
+    /**
+     * Set het type speler
+     * @param type 
+     */
     public void setType(SpelerType type) {
         speler.setType(type);
     }
@@ -258,12 +262,25 @@ public class PosPlayer {
     public String toString() {
         return "PosPlayer{" + "speler=" + speler + ", posspelertype=" + posspelertype + ", reduceFactor=" + reduceFactor + '}';
     }
+    /**
+     * Vraagt locatie in het spel van de speler op
+     * @return een int (0-10) gebaseerd op de positie in het spel van de speler. 
+     */
+    public int getLoc(){
+        return this.loc;
+    }
     
+    /**
+     * Set de locatie van de speler
+     * @param i in (0-10) met:
+     * 0=Doelman
+     * 1-4=Verdediger
+     * 5-7=Middenvelder
+     * 8-10=Aanvaller
+     */
     public void setLoc(int i){
         this.loc = i;
     }
     
-    public int getLoc(){
-        return this.loc;
-    }
+    
 }
