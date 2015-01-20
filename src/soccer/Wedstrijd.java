@@ -235,27 +235,67 @@ public class Wedstrijd {
         
         return 0;
     }
-    
+    /**
+     * Return true als het team gewonnen heeft
+     * @param t team
+     * @return boolean
+     */
     public boolean teamWon(Team t) {
         return this.played && (this.team_a.equals(t) && this.getPoints_a() == 3) || (this.team_b.equals(t) && this.getPoints_b() == 3);
     }
+    
+    /**
+     * Return true als het team verloren heeft
+     * @param t team
+     * @return boolean
+     */
     public boolean teamLost(Team t) {
         return this.played && (this.team_a.equals(t) && this.getPoints_a() == 0) || (this.team_b.equals(t) && this.getPoints_b() == 0);
     }
+    
+    /**
+     * Return true als het team gelijk gespeeld heeft
+     * @param team
+     * @return boolean
+     */
     public boolean teamDrawed(Team t) {
         return this.played && (this.team_a.equals(t) && this.getPoints_a() == 1) || (this.team_b.equals(t) && this.getPoints_b() == 1);
     }
+    
+    /**
+     * Return true als het team gespeeld heeft
+     * @param t team
+     * @return boolean
+     */
     public boolean teamPlayed(Team t) {
         return this.played && teamPlaying(t);
     }
+    
+    /**
+     * Return true als het team in de huidige wedstrijd zit
+     * @param t team
+     * @return true
+     */
     public boolean teamPlaying(Team t) {
         return this.team_a.equals(t) || this.team_b.equals(t);
     }
+    
+    /**
+     * Return het aantal doelpunten van een team in een wedstrijd
+     * @param t team
+     * @return int
+     */
     public int teamGoal(Team t) {
         if(this.team_a.equals(t)) return score_a;
         if(this.team_b.equals(t)) return score_b;
         return 0;
     }
+    
+    /**
+     * Return het aantal tegendoelpunten van een team in een wedstrijd
+     * @param t team
+     * @return int
+     */
     public int teamCounterGoal(Team t) {
         if(this.team_a.equals(t)) return score_b;
         if(this.team_b.equals(t)) return score_a;

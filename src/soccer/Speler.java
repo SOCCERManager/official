@@ -352,10 +352,18 @@ public class Speler {
         return "Speler{" + "naam=" + naam + ", nummer=" + nummer + ", type=" + type + ", status=" + status + ", prijs=" + prijs + ", gamesTilStatusDisapears=" + gamesTilStatusDisapears + ", aanvallend=" + aanvallend + ", verdedigend=" + verdedigend + ", uithoudingsvermogen=" + uithoudingsvermogen + '}';
     }
 
+    /**
+     * Return het aantal games dat een speler niet mee kan spelen in een wedstrijd
+     * @return int aantal
+     */
     public int getGamesTilStatusDisapears() {
         return this.gamesTilStatusDisapears;
     }
 
+    /**
+     * Set het aantal games dat een speler niet mee kan spelen in een wedstrijd
+     * @param games 
+     */
     public void setGamesTilStatusDisapears(int games) {
         this.gamesTilStatusDisapears = games;
     }
