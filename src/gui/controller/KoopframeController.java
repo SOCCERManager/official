@@ -234,7 +234,7 @@ public class KoopframeController implements Initializable {
 
             System.out.println("Removing from market table: " + temp.getNaam());
 
-            koopAlert.setText("Gefeliciteerd! \nSpeler " + marketTable.getFocusModel().getFocusedItem().getNaam() + " is verkocht voor: €" + offeredPrice);
+            koopAlert.setText("Gefeliciteerd! \nSpeler " + marketTable.getFocusModel().getFocusedItem().getNaam() + " is gekocht voor: €" + offeredPrice);
             marketTable.getSelectionModel().clearSelection();
             drawTable();
         } else if(!(Random.get().nextFloat() < Math.max(0, Math.sqrt(prijsSlider.getValue()/2)-0.1)) && (userteam.getBudget()-offeredPrice>0)){
