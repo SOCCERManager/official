@@ -12,7 +12,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="907.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.PreGameController">
    <children>
-      <AnchorPane prefHeight="560.0" prefWidth="907.0" style="-fx-background-color: rgba(254,254,254,0.3);" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane fx:id="pregamePane" prefHeight="560.0" prefWidth="907.0" style="-fx-background-color: rgba(254,254,254,0.3);" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
          <children>
             <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="510.0" prefWidth="807.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
@@ -250,6 +250,21 @@
             </VBox>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="winnerVideoPane" layoutX="20.0" layoutY="20.0" prefHeight="570.0" prefWidth="917.0" styleClass="messages" visible="false" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0" />
+      <VBox fx:id="videoVBox" layoutX="50.0" layoutY="50.0" onMouseClicked="#handleCloseVideo" styleClass="messages" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="27.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleCloseVideo" styleClass="closeButton" text="x" AnchorPane.rightAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <HBox fx:id="videoViewer" layoutX="50.0" layoutY="50.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <AnchorPane fx:id="winnerVideoPane" layoutX="20.0" layoutY="20.0" prefHeight="570.0" prefWidth="917.0" styleClass="messages" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0" HBox.hgrow="ALWAYS" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
    </children>
 </AnchorPane>
