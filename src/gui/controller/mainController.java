@@ -67,8 +67,8 @@ public class mainController implements Initializable {
         System.exit(0);
     }
     
-    @FXML
-    private void handleClickSound() {
+
+    public void handleClickSound() {
         AudioClip clickSound = new AudioClip(new File("./src/gui/clicksound.mp3").toURI().toString());
         clickSound.setVolume(1.5);
         clickSound.play();

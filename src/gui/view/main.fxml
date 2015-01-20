@@ -16,9 +16,9 @@
                <children>
                   <ToolBar fx:id="mediaBar" prefHeight="47.0" prefWidth="667.0" AnchorPane.leftAnchor="617.0" AnchorPane.rightAnchor="616.0" AnchorPane.topAnchor="0.0">
                      <items>
-                        <Label alignment="CENTER" prefHeight="37.0" prefWidth="89.0" text="Music">
+                        <Label alignment="CENTER" prefHeight="37.0" prefWidth="89.0" style="-fx-font-size: 19;" text="Music">
                            <font>
-                              <Font size="19.0" />
+                              <Font name="Segoe UI Light" size="19.0" />
                            </font>
                         </Label>
                         <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleRefresh" onMouseClicked="#handleClickSound" onMouseEntered="#handleClickSound" prefHeight="35.0" prefWidth="70.0" styleClass="mediaButton">
@@ -71,7 +71,7 @@
                               <Image url="@media_volume.png" />
                            </image>
                         </ImageView>
-                        <Slider fx:id="volumeSlider" blockIncrement="0.1" majorTickUnit="0.1" max="1.0" minorTickCount="0" onMouseReleased="#handleVolumeSlider" prefHeight="30.0" prefWidth="171.0" showTickMarks="true" />
+                        <Slider fx:id="volumeSlider" blockIncrement="0.1" majorTickUnit="0.1" max="1.0" minorTickCount="0" onMouseClicked="#handleVolumeSlider" onMouseDragged="#handleVolumeSlider" prefHeight="30.0" prefWidth="171.0" showTickMarks="true" />
                      </items>
                   </ToolBar>
                </children>
