@@ -16,6 +16,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.ImageCursor;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
@@ -142,5 +143,6 @@ public class mainController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         volumeSlider.setValue(BackgroundMusic.volume);        
     }    
+    
     
 }
