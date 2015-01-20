@@ -1088,9 +1088,9 @@ public class TeamTest {
     public void generateOpstellingMagicFixAPlayerTest() {
         t1.setSpelers(new ArrayList<>());
         t1.getSpelers().add(new Speler("Henk", 1, SpelerType.Doelman, 5, 41, 40, 40));
-        t1.getSpelers().add(new Speler("Henk", 2, SpelerType.Doelman, 5, 42, 40, 40));
-        t1.getSpelers().add(new Speler("Henk", 3, SpelerType.Doelman, 5, 30, 40, 40));
-        t1.getSpelers().add(new Speler("Henk", 4, SpelerType.Doelman, 5, 60, 40, 40));
+        t1.getSpelers().add(new Speler("Henk", 2, SpelerType.Verdediger, 5, 42, 40, 40));
+        t1.getSpelers().add(new Speler("Henk", 3, SpelerType.Verdediger, 5, 30, 40, 40));
+        t1.getSpelers().add(new Speler("Henk", 4, SpelerType.Verdediger, 5, 60, 40, 40));
         t1.getSpelers().add(new Speler("Henk", 5, SpelerType.Doelman, 5, 46, 40, 40));
         t1.getSpelers().add(new Speler("Henk", 6, SpelerType.Doelman, 5, 10, 40, 40));
         t1.getSpelers().add(new Speler("Henk", 7, SpelerType.Doelman, 5, 90, 40, 40));
@@ -1098,12 +1098,14 @@ public class TeamTest {
         t1.getSpelers().add(new Speler("Henk", 9, SpelerType.Doelman, 5, 98, 15, 45));
         t1.getSpelers().add(new Speler("Henk", 10, SpelerType.Doelman, 5, 50, 40, 40));
         t1.getSpelers().add(new Speler("Henk", 11, SpelerType.Doelman, 5, 50, 40, 40));
-        t1.getSpelers().get(2).setGamesTilStatusDisapears(4);
-        t1.getSpelers().get(8).setGamesTilStatusDisapears(1);
-        t1.getSpelers().get(9).setGamesTilStatusDisapears(5);
-        t1.generateOpstelling();
-        for(int i =0; i<t1.getSpelers().size(); i++) {
-            assertTrue(t1.getSpelers().get(i).getGamesTilStatusDisapears() == 0);
-        }
+        t1.getSpelers().add(new Speler("Henk", 12, SpelerType.Doelman, 5, 50, 40, 40));
+        t1.getSpelers().get(4).setGamesTilStatusDisapears(4);
+        t1.getSpelers().get(5).setGamesTilStatusDisapears(4);
+        t1.getSpelers().get(6).setGamesTilStatusDisapears(4);
+        t1.getSpelers().get(7).setGamesTilStatusDisapears(4);
+        t1.getSpelers().get(8).setGamesTilStatusDisapears(4);
+        t1.getSpelers().get(9).setGamesTilStatusDisapears(4);
+        t1.getSpelers().get(10).setGamesTilStatusDisapears(4);
+        assertTrue(1==0);
     }
 }
