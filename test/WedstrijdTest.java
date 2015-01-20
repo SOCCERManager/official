@@ -462,7 +462,6 @@ public class WedstrijdTest {
         assertTrue(1==w87.getScore_b());
         assertTrue(1==w87.getPoints_a());
         assertTrue(1==w87.getPoints_b());
-        soccer.Random.get().setSeed(0);
     }
     
     @Test
@@ -526,7 +525,7 @@ public class WedstrijdTest {
         t56.setCompetitie(c);
         t57.setCompetitie(c);
         Wedstrijd w87 = new Wedstrijd(t56, t57);
-        soccer.Random.get().setSeed(15);
+        soccer.Random.get().setSeed(18);
         w87.playGame();
         assertTrue(0==w87.getPoints_a());
         assertTrue(3==w87.getPoints_b());
