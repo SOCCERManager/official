@@ -262,14 +262,13 @@ public class Team {
         boolean dedicated_goalie = this.spelers.stream().filter(v -> v.isAvaliableToPlay()).filter(v -> v.getType().equals(SpelerType.Doelman)).count() > 1;
 
         // Set doelman
-        for (Speler s : this.spelers) {
+        for (Speler s : this.spelers)
             if (!dedicated_goalie || s.getType().equals(SpelerType.Doelman)) {
                 PosPlayer n = new PosPlayer(s, SpelerType.Doelman);
                 n.setLoc(0);
                 this.opstelling.add(n);
                 break;
             }
-        }
 
         // see if enough defenders are avaliable
         int totdefenders = (int) this.spelers.stream().filter(v -> v.isAvaliableToPlay()).filter(v -> v.getType().equals(SpelerType.Verdediger)).count();
