@@ -15,11 +15,11 @@ public class Competitie {
     private static Competitie c;
 
     /**
-     * Constructor van Competitie opgebouwd uit (ArrayList<Wedstrijd> en
-     * ArrayList<Team>)
+     * Constructor van Competitie opgebouwd uit (ArrayList en
+     * ArrayList)
      *
-     * @param wedstrijden ArrayList<Wedstrijd>
-     * @param teams ArrayList<Team>
+     * @param wedstrijden ArrayList
+     * @param teams ArrayList
      */
     public Competitie(ArrayList<Wedstrijd> wedstrijden, ArrayList<Team> teams) {
         this.wedstrijden = wedstrijden;
@@ -39,14 +39,14 @@ public class Competitie {
     /**
      * Setter van userIndex
      *
-     * @param userindex
+     * @param userindex Index van de user
      */
     public void setUserindex(int userindex) {
         this.userindex = userindex;
     }
 
     /**
-     * Getter van een ArrayList<Wedstrijd>, alle wedstrijden in een competitie
+     * Getter van een ArrayList, alle wedstrijden in een competitie
      * in een arrayList
      *
      * @return ArrayList<Wedstrijd>, een lijst van alle wedstrijden in een
@@ -60,7 +60,7 @@ public class Competitie {
      * Setter voor een ArrayList<Wedstrijd>, alle wedstrijden in een competitie
      * in een arrayList
      *
-     * @param wedstrijden dit is de ArrayList<Wedstrijden die de nieuwe lijst
+     * @param wedstrijden dit is de ArrayList die de nieuwe lijst
      * moet worden
      */
     public void setWedstrijden(ArrayList<Wedstrijd> wedstrijden) {
@@ -68,7 +68,7 @@ public class Competitie {
     }
 
     /**
-     * Getter van een ArrayList<Team> terug, alle teams in een competitie
+     * Getter van een ArrayList terug, alle teams in een competitie
      *
      * @return de teams in een competitie
      */
@@ -77,7 +77,7 @@ public class Competitie {
     }
 
     /**
-     * Setter voor een ArrayList<Team>, een arrayList van alle teams in een
+     * Setter voor een ArrayList, een arrayList van alle teams in een
      * competitie
      *
      * @param teams de arrayList van alle teams in een competitie
@@ -160,9 +160,6 @@ public class Competitie {
 
     /**
      * Creërt alle wedstrijden voor een competite uit een ArrayList van Teams.
-     *
-     * @param team De lijst van teams waarvoor de wedstrijden moeten worden
-     * opgeschreven.
      */
     public void bouwWedstrijden() {
         //Collections.shuffle(teams);

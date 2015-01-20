@@ -19,10 +19,10 @@ public class Team {
      * This constructor sets the private variables spelers, name, opstelling and
      * c.
      *
-     * @param spelers De lijst van spelers in het team (ArrayList<Spelers>)
+     * @param spelers De lijst van spelers in het team (ArrayList)
      * @param name De naam van het team (String)
      * @param opstelling De opstelling van het team gemaakt door de positie van
-     * de spelers (ArrayList<PosPlayer>)
+     * de spelers (ArrayList)
      * @param c De competitie waarin dit team speelt (Competitie)
      * @param budget Het budget van het team (int)
      */
@@ -110,7 +110,7 @@ public class Team {
     /**
      * Get de huidige opstelling van het team
      *
-     * @return ArrayList<PosPlayer> waarin de opstelling staat van het team
+     * @return ArrayList waarin de opstelling staat van het team
      */
     public ArrayList<PosPlayer> getOpstelling() {
         return opstelling;
@@ -427,7 +427,7 @@ public class Team {
     /**
      * Counts yellow card that player in team has
      *
-     * @return
+     * @return no of jellowcards
      */
     public int countYellowCards() {
         return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Gele_kaart)).count();
@@ -436,7 +436,7 @@ public class Team {
     /**
      * Counts red cards that players in team have
      *
-     * @return
+     * @return no of red cards
      */
     public int countRedCards() {
         return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Rode_kaart)).count();
@@ -445,7 +445,7 @@ public class Team {
     /**
      * Return count of injuries in team.
      *
-     * @return
+     * @return no of injuries
      */
     public int countGebleseerd() {
         return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Geblesseerd)).count();
@@ -454,7 +454,7 @@ public class Team {
     /**
      * Return count of avaliable team members.
      *
-     * @return
+     * @return no of avaliable members
      */
     public int countAvaliable() {
         return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Normaal)).count();

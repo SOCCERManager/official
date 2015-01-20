@@ -25,7 +25,7 @@ public class Random extends java.util.Random{
     
     /**
      * The one public way to get the Random object
-     * @return 
+     * @return Random object with a proper seed
      */
     public static Random get() {
         if(Random.r == null) {
