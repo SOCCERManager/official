@@ -50,8 +50,18 @@
                                     <Pane HBox.hgrow="ALWAYS" />
                                     <VBox fx:id="d1" style="-fx-background-color: rgba(254,254,254,0.7);">
                                        <children>
-                                          <Label fx:id="d_naam" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
-                                          <Label fx:id="d_positie" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                          <HBox>
+                                             <children>
+                                                <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                                <VBox HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label fx:id="d_naam" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                                      <Label fx:id="d_positie" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                                   </children>
+                                                </VBox>
+                                                <Pane fx:id="status1" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                          </HBox>
                                           <ProgressBar fx:id="d_aanval" prefWidth="200.0" progress="0.0" />
                                           <ProgressBar fx:id="d_verdediging" prefWidth="200.0" progress="0.0" />
                                           <ProgressBar fx:id="d_uithouding" prefWidth="200.0" progress="0.0" />
@@ -67,8 +77,18 @@
                                  <children>
                                     <VBox fx:id="v1" style="-fx-background-color: rgba(254,254,254,0.7);">
                                        <children>
-                                          <Label fx:id="d_naam1" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
-                                          <Label fx:id="d_positie1" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                          <HBox>
+                                             <children>
+                                                <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                                <VBox HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label fx:id="d_naam1" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                                      <Label fx:id="d_positie1" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                                   </children>
+                                                </VBox>
+                                                <Pane fx:id="status2" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                          </HBox>
                                           <ProgressBar fx:id="d_aanval1" prefWidth="200.0" progress="0.0" />
                                           <ProgressBar fx:id="d_verdediging1" prefWidth="200.0" progress="0.0" />
                                           <ProgressBar fx:id="d_uithouding1" prefWidth="200.0" progress="0.0" />
@@ -77,8 +97,18 @@
                                     <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
                                     <VBox fx:id="v2" style="-fx-background-color: rgba(254,254,254,0.7);">
                                        <children>
-                                          <Label fx:id="d_naam11" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
-                                          <Label fx:id="d_positie11" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                          <HBox>
+                                             <children>
+                                                <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                                <VBox HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label fx:id="d_naam11" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                                      <Label fx:id="d_positie11" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                                   </children>
+                                                </VBox>
+                                                <Pane fx:id="status3" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                          </HBox>
                                           <ProgressBar fx:id="d_aanval11" prefWidth="200.0" progress="0.0" />
                                           <ProgressBar fx:id="d_verdediging11" prefWidth="200.0" progress="0.0" />
                                           <ProgressBar fx:id="d_uithouding11" prefWidth="200.0" progress="0.0" />
@@ -87,8 +117,18 @@
                                     <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
                                     <VBox fx:id="v3" style="-fx-background-color: rgba(254,254,254,0.7);">
                                        <children>
-                                          <Label fx:id="d_naam12" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
-                                          <Label fx:id="d_positie12" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                          <HBox>
+                                             <children>
+                                                <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                                <VBox HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label fx:id="d_naam12" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                                      <Label fx:id="d_positie12" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                                   </children>
+                                                </VBox>
+                                                <Pane fx:id="status4" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                          </HBox>
                                           <ProgressBar fx:id="d_aanval12" prefWidth="200.0" progress="0.0" />
                                           <ProgressBar fx:id="d_verdediging12" prefWidth="200.0" progress="0.0" />
                                           <ProgressBar fx:id="d_uithouding12" prefWidth="200.0" progress="0.0" />
@@ -97,8 +137,18 @@
                                     <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
                                     <VBox fx:id="v4" style="-fx-background-color: rgba(254,254,254,0.7);">
                                        <children>
-                                          <Label fx:id="d_naam13" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
-                                          <Label fx:id="d_positie13" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                          <HBox>
+                                             <children>
+                                                <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                                <VBox HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label fx:id="d_naam13" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                                      <Label fx:id="d_positie13" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                                   </children>
+                                                </VBox>
+                                                <Pane fx:id="status5" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                          </HBox>
                                           <ProgressBar fx:id="d_aanval13" prefWidth="200.0" progress="0.0" />
                                           <ProgressBar fx:id="d_verdediging13" prefWidth="200.0" progress="0.0" />
                                           <ProgressBar fx:id="d_uithouding13" prefWidth="200.0" progress="0.0" />
@@ -113,8 +163,18 @@
                                  <children>
                                     <VBox fx:id="m1" style="-fx-background-color: rgba(254,254,254,0.7);">
                                        <children>
-                                          <Label fx:id="d_naam21" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
-                                          <Label fx:id="d_positie21" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                          <HBox>
+                                             <children>
+                                                <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                                <VBox HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label fx:id="d_naam21" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                                      <Label fx:id="d_positie21" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                                   </children>
+                                                </VBox>
+                                                <Pane fx:id="status6" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                          </HBox>
                                           <ProgressBar fx:id="d_aanval21" prefWidth="200.0" progress="0.0" />
                                           <ProgressBar fx:id="d_verdediging21" prefWidth="200.0" progress="0.0" />
                                           <ProgressBar fx:id="d_uithouding21" prefWidth="200.0" progress="0.0" />
@@ -123,8 +183,18 @@
                                     <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
                                     <VBox fx:id="m2" style="-fx-background-color: rgba(254,254,254,0.7);">
                                        <children>
-                                          <Label fx:id="d_naam22" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
-                                          <Label fx:id="d_positie22" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                          <HBox>
+                                             <children>
+                                                <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                                <VBox HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label fx:id="d_naam22" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                                      <Label fx:id="d_positie22" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                                   </children>
+                                                </VBox>
+                                                <Pane fx:id="status7" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                          </HBox>
                                           <ProgressBar fx:id="d_aanval22" prefWidth="200.0" progress="0.0" />
                                           <ProgressBar fx:id="d_verdediging22" prefWidth="200.0" progress="0.0" />
                                           <ProgressBar fx:id="d_uithouding22" prefWidth="200.0" progress="0.0" />
@@ -133,8 +203,18 @@
                                     <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
                                     <VBox fx:id="m3" style="-fx-background-color: rgba(254,254,254,0.7);">
                                        <children>
-                                          <Label fx:id="d_naam23" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
-                                          <Label fx:id="d_positie23" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                          <HBox>
+                                             <children>
+                                                <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                                <VBox HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label fx:id="d_naam23" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                                      <Label fx:id="d_positie23" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                                   </children>
+                                                </VBox>
+                                                <Pane fx:id="status8" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                          </HBox>
                                           <ProgressBar fx:id="d_aanval23" prefWidth="200.0" progress="0.0" />
                                           <ProgressBar fx:id="d_verdediging23" prefWidth="200.0" progress="0.0" />
                                           <ProgressBar fx:id="d_uithouding23" prefWidth="200.0" progress="0.0" />
@@ -149,8 +229,18 @@
                                  <children>
                                     <VBox fx:id="a1" style="-fx-background-color: rgba(254,254,254,0.7);">
                                        <children>
-                                          <Label fx:id="d_naam31" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
-                                          <Label fx:id="d_positie31" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                          <HBox>
+                                             <children>
+                                                <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                                <VBox HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label fx:id="d_naam31" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                                      <Label fx:id="d_positie31" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                                   </children>
+                                                </VBox>
+                                                <Pane fx:id="status9" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                          </HBox>
                                           <ProgressBar fx:id="d_aanval31" prefWidth="200.0" progress="0.0" />
                                           <ProgressBar fx:id="d_verdediging31" prefWidth="200.0" progress="0.0" />
                                           <ProgressBar fx:id="d_uithouding31" prefWidth="200.0" progress="0.0" />
@@ -159,8 +249,18 @@
                                     <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
                                     <VBox fx:id="a2" style="-fx-background-color: rgba(254,254,254,0.7);">
                                        <children>
-                                          <Label fx:id="d_naam32" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
-                                          <Label fx:id="d_positie32" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                          <HBox>
+                                             <children>
+                                                <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                                <VBox HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label fx:id="d_naam32" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                                      <Label fx:id="d_positie32" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                                   </children>
+                                                </VBox>
+                                                <Pane fx:id="status10" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                          </HBox>
                                           <ProgressBar fx:id="d_aanval32" prefWidth="200.0" progress="0.0" />
                                           <ProgressBar fx:id="d_verdediging32" prefWidth="200.0" progress="0.0" />
                                           <ProgressBar fx:id="d_uithouding32" prefWidth="200.0" progress="0.0" />
@@ -169,8 +269,18 @@
                                     <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
                                     <VBox fx:id="a3" style="-fx-background-color: rgba(254,254,254,0.7);">
                                        <children>
-                                          <Label fx:id="d_naam33" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
-                                          <Label fx:id="d_positie33" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                          <HBox>
+                                             <children>
+                                                <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                                <VBox HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label fx:id="d_naam33" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                                      <Label fx:id="d_positie33" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Label" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                                                   </children>
+                                                </VBox>
+                                                <Pane fx:id="status11" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                                             </children>
+                                          </HBox>
                                           <ProgressBar fx:id="d_aanval33" prefWidth="200.0" progress="0.0" />
                                           <ProgressBar fx:id="d_verdediging33" prefWidth="200.0" progress="0.0" />
                                           <ProgressBar fx:id="d_uithouding33" prefWidth="200.0" progress="0.0" />

@@ -62,13 +62,14 @@ public class newgamescreenController {
     
     private boolean isInputValid(){
         String errortext = "";
-        if(nameField.getText() == null || nameField.getText().length() == 0)
+        if(nameField.getText() == null || nameField.getText().length() == 0 || !nameField.getText().matches("[a-zA-Z0-9_]+"))
             errortext = "No valid input";
         if (errortext.length() == 0) {
             return true;
         } else {
             // Show the error message.
-            
+            System.out.println(errortext);
+            nameField.setText(errortext);
             return false;
         }
     }
