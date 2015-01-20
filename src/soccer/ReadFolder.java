@@ -21,6 +21,11 @@ public class ReadFolder {
     private static int aantalGames;
     private static ArrayList<String> saveFilesName = new ArrayList<String>();
     
+    /**
+     * Return de namen van de saves zonder xml
+     * @param location
+     * @return Namen in een rrayList
+     */
     public static ArrayList<String> readNames(String location){
         try{
             String path = new java.io.File(".").getCanonicalPath();
