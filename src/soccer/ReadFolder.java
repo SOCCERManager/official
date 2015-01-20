@@ -15,7 +15,7 @@ import java.util.Date;
 /**
  *Klasse ReadFolder leest alle bestanden in ./saves af en zet de namen ervan in de ArrayList
  * @author codesalad
- * location: afgesproken is >>>>>>>>>>>>/src/saves<<<<<<<<<<<
+ * location: afgesproken is /src/saves
  */
 public class ReadFolder {
     private static int aantalGames;
@@ -66,7 +66,7 @@ public class ReadFolder {
     
     /**
      * Hulp methode voor readNames()
-     * @param file
+     * @param file the file from whom to get the extention
      * @return Retourneert de extensie van een bestand.
      */
     public static String getFileExtension(File file){
