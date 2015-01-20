@@ -958,7 +958,7 @@ public class veranderOpstellingController implements Initializable {
     
     private void saveOpstelling() {
             userteam.setOpstelling(opstelling);
-            bouwXML.SaveGame();
+            try {bouwXML.SaveGame();} catch(Exception e){ System.out.println(e.getStackTrace()); }
             System.out.println("Saved new opstelling");
     }
     
