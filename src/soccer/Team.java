@@ -460,30 +460,59 @@ public class Team {
         return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Normaal)).count();
     }
 
+    /**
+     * Return the amount of the wins of a team
+     * 
+     * @return amount of wins
+     */
     public int getWins() {
         return this.competitie.getWinsOfTeam(this);
     }
 
+    /**
+     * Return the amount of draws of a team
+     * @return amount of draws
+     */
     public int getDraws() {
         return this.competitie.getDrawsOfTeam(this);
     }
 
+    /**
+     * Return the amount of losses of a team
+     * @return amount of losses
+     */
     public int getLosses() {
         return this.competitie.getLossesOfTeam(this);
     }
 
+    /**
+     * Return the amount of played games of a team
+     * @return amount of played games
+     */
     public int getPlayed() {
         return this.competitie.getPlayedGamesofTeam(this);
     }
 
+    /**
+     * Return the amount of goals a team scored
+     * @return amount of goals
+     */
     public int getGoals() {
         return this.competitie.getGoalsofTeam(this);
     }
 
+    /**
+     * Return the amount of goals a team conceived
+     * @return amount of counter goals
+     */
     public int getCounterGoals() {
         return this.competitie.getCounterGoalsofTeam(this);
     }
 
+    /**
+     * Return ((scored goals)-(conceived goals))
+     * @return Goals difference
+     */
     public int getGoalSaldo() {
         return this.getGoals() - this.getCounterGoals();
     }
