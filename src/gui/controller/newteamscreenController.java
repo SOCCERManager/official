@@ -124,7 +124,7 @@ public class newteamscreenController implements Initializable {
     private void handleSelect(){
         Competitie.getCompetitie().setUserindex(
         Competitie.getCompetitie().getTeams().indexOf(teamTable.getSelectionModel().getSelectedItem()));
-        bouwXML.SaveGame();
+        try {bouwXML.SaveGame();} catch(Exception e){ System.out.println(e.getStackTrace()); }
         mainApp.showMainHubScreen();
     }
 }
