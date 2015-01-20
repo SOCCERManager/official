@@ -462,7 +462,6 @@ public class WedstrijdTest {
         assertTrue(1==w87.getScore_b());
         assertTrue(1==w87.getPoints_a());
         assertTrue(1==w87.getPoints_b());
-        soccer.Random.get().setSeed(0);
     }
     
     @Test
@@ -526,7 +525,7 @@ public class WedstrijdTest {
         t56.setCompetitie(c);
         t57.setCompetitie(c);
         Wedstrijd w87 = new Wedstrijd(t56, t57);
-        soccer.Random.get().setSeed(15);
+        soccer.Random.get().setSeed(18);
         w87.playGame();
         assertTrue(0==w87.getPoints_a());
         assertTrue(3==w87.getPoints_b());
@@ -601,7 +600,7 @@ public class WedstrijdTest {
     }
     
     @Test
-    public void playGame0GoalsTest() { 
+    public void playGameRandomValuesTest() { 
         ArrayList<Speler> spellijst = new ArrayList<Speler>();
         ArrayList<PosPlayer> posities = new ArrayList<PosPlayer>();
         ArrayList<Team> teamlijst = new ArrayList<Team>();
@@ -663,6 +662,7 @@ public class WedstrijdTest {
         Wedstrijd w87 = new Wedstrijd(t56, t57);
         soccer.Random.get().setSeed(15);
         w87.playGame();
+        System.out.println("UITSLAG " + w87.getPoints_a() + " - " + w87.getPoints_b());
         assertTrue(1==w87.getPoints_a());
         assertTrue(1==w87.getPoints_b());
     }
@@ -758,7 +758,7 @@ public class WedstrijdTest {
         t2.setCompetitie(c1);
         w1.getTeam_a().getSpelers().get(0).setGamesTilStatusDisapears(2);
         w1.getTeam_b().getSpelers().get(3).setGamesTilStatusDisapears(2);
-        soccer.Random.get().setSeed(2);
+        soccer.Random.get().setSeed(4);
         w1.playGame();
         assertTrue(0 == w1.getPoints_a());
         assertTrue(3 == w1.getPoints_b());
@@ -849,7 +849,7 @@ public class WedstrijdTest {
         t2.setCompetitie(c1);
         w1.getTeam_a().getSpelers().get(0).setGamesTilStatusDisapears(2);
         w1.getTeam_b().getSpelers().get(3).setGamesTilStatusDisapears(2);
-        soccer.Random.get().setSeed(9);
+        soccer.Random.get().setSeed(10);
         w1.playGame();
         assertTrue(w1.getPoints_a() == 3);
         assertTrue(w1.getTeam_a().getBudget() == 500);

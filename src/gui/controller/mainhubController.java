@@ -136,7 +136,7 @@ public class mainhubController implements Initializable {
     }
     
     @FXML
-    private void handlePlayGame() {
+    private void handlePlayGame() throws IOException {
         try{
             this.currentgame = Competitie.getCompetitie().playPlayerGame();
             currentgameframeController.currentgame = currentgame;
@@ -148,7 +148,7 @@ public class mainhubController implements Initializable {
     }
     
     @FXML
-    private void handleBackButton(){
+    private void handleBackButton() throws IOException{
         bouwXML.SaveGame();
         mainApp.showStartScreen();
         

@@ -24,7 +24,6 @@ public class bouwXML {
      * @throws IOException
      */
     public static void bouwXML(Competitie t, File f) throws IOException{
-       
         String xml = getStream().toXML(t);
         BufferedWriter out = new BufferedWriter(new FileWriter(f));
         out.write(xml);
@@ -35,7 +34,7 @@ public class bouwXML {
      * Genereert uit een XML file de Competitie klasse
      * @return  de competitie
      */
-    public static XStream getStream() {
+    private static XStream getStream() {
          XStream xstream = new XStream(new StaxDriver());
          xstream.alias("Competitie", Competitie.class);
          xstream.alias("OpgesteldeSpeler", PosPlayer.class);
@@ -62,10 +61,12 @@ public class bouwXML {
         return c;
     }
     
-    public static void SaveGame() {
-        try{
-        bouwXML.bouwXML(Competitie.getCompetitie(), new File("src/saves/"+loadscreenController.savegame+".xml"));
-        }catch(Exception e){e.printStackTrace();};
+    /**
+     * Saves the game
+     * @throws IOException
+     */
+    public static void SaveGame() throws IOException {
+       bouwXML.bouwXML(Competitie.getCompetitie(), new File("src/saves/"+loadscreenController.savegame+".xml"));
     }
     
     
