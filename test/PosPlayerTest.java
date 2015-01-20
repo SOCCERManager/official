@@ -247,7 +247,7 @@ public class PosPlayerTest {
     public void playGameTest() {
         p1.getSpeler().setGamesTilStatusDisapears(0);
         p1.playGame();
-        soccer.Random.get().setSeed(5);
+        soccer.Random.get().setSeed(6);
         assertEquals(SpelerStatus.Normaal, p1.getStatus());
     }
     
