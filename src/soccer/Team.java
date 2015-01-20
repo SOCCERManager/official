@@ -289,13 +289,10 @@ public class Team {
         // add normaly non deferders as defenders
         while (this.opstelling.size() < 5) {
             Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Verdediger, false);
-            if(s == null) magicalyFixAPlayer();
-            else {
-                PosPlayer p = new PosPlayer(s, SpelerType.Verdediger);
-                p.setLoc(verd);
-                verd++;
-                this.opstelling.add(p);
-            }
+            PosPlayer p = new PosPlayer(s, SpelerType.Verdediger);
+            p.setLoc(verd);
+            verd++;
+            this.opstelling.add(p);
         }
 
         // see if enough middenvelders are avaliable
@@ -318,13 +315,11 @@ public class Team {
         // add normaly non middenvelders as middenvelders
         while (this.opstelling.size() < 8) {
             Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Middenvelder, false);
-            if(s == null) magicalyFixAPlayer();
-            else {
-                PosPlayer p = new PosPlayer(s, SpelerType.Middenvelder);
-                p.setLoc(midd);
-                midd++;
-                this.opstelling.add(p);
-            }
+            PosPlayer p = new PosPlayer(s, SpelerType.Middenvelder);
+            p.setLoc(midd);
+            midd++;
+            this.opstelling.add(p);
+            
         }
         // see if enough aanvallers are avaliable
         int totAttackers = (int) this.spelers.stream().filter(v -> v.isAvaliableToPlay()).filter(v -> v.getType().equals(SpelerType.Aanvaller)).count();
@@ -344,13 +339,11 @@ public class Team {
         // add normaly non middenvelders as middenvelders
         while (this.opstelling.size() < 11) {
             Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Aanvaller, false);
-            if(s == null) magicalyFixAPlayer();
-            else {
-                PosPlayer p = new PosPlayer(s, SpelerType.Aanvaller);
-                p.setLoc(aanv);
-                aanv++;
-                this.opstelling.add(p);
-            }
+            PosPlayer p = new PosPlayer(s, SpelerType.Aanvaller);
+            p.setLoc(aanv);
+            aanv++;
+            this.opstelling.add(p);
+            
         }
     }
     
@@ -493,13 +486,5 @@ public class Team {
 
     public int getGoalSaldo() {
         return this.getGoals() - this.getCounterGoals();
-    }
-
-    private void magicalyFixAPlayer() {
-        for(Speler s: this.spelers) 
-            if(s.isUnavaliableToPlay()) {
-                s.magicalyFix();
-                return;
-            }
     }
 }
