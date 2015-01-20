@@ -238,14 +238,16 @@ public class Competitie {
         
         this.playGamesTilPlayerGameIsDue();
         Wedstrijd houder = null;
+        
         for(Wedstrijd w: this.wedstrijden) {
             if(w.isPlayed()) continue;
             if(w.teamPlaying(this.teams.get(this.userindex))) {
                 w.playGame();
                 houder = w;
                 break;
-            } 
+            }
         }
+        
         this.playGamesTilPlayerGameIsDue();
         return houder;
     }
