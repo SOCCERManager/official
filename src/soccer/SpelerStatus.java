@@ -20,7 +20,7 @@ public enum SpelerStatus {
     /**
      * Enum geblesseerd
      */
-    Gebleseerd,
+    Geblesseerd,
 
     /**
      * enum normaal
