@@ -144,12 +144,12 @@ public class mainhubController implements Initializable {
             loader.setLocation(MainApp.class.getResource("view/currentgameframe.fxml"));
             paneAdd(loader); 
         }catch(Exception e){e.printStackTrace();}
-        bouwXML.SaveGame();        
+        try {bouwXML.SaveGame();} catch(Exception e){ System.out.println(e.getStackTrace()); }       
     }
     
     @FXML
     private void handleBackButton(){
-        bouwXML.SaveGame();
+        try {bouwXML.SaveGame();} catch(Exception e){ System.out.println(e.getStackTrace()); }
         mainApp.showStartScreen();
         
     }
