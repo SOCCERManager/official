@@ -49,10 +49,10 @@
                      <children>
                         <VBox prefHeight="480.0" prefWidth="416.0" styleClass="opstellingBox" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
-                              <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                              <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="NEVER">
                                  <children>
                                     <Pane HBox.hgrow="ALWAYS" />
-                                    <VBox fx:id="d1" style="-fx-background-color: rgba(254,254,254,0.7);">
+                                    <VBox fx:id="d1" style="-fx-background-color: rgba(29,29,29,0.7);">
                                        <children>
                                           <HBox>
                                              <children>
@@ -77,9 +77,10 @@
                                     <Insets bottom="5.0" />
                                  </VBox.margin>
                               </HBox>
-                              <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                              <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="NEVER">
                                  <children>
-                                    <VBox fx:id="v1" style="-fx-background-color: rgba(254,254,254,0.7);">
+                                    <VBox fx:id="v1" style="-fx-background-color: rgba(29,29,29,0.7);">
                                        <children>
                                           <HBox>
                                              <children>
@@ -99,7 +100,7 @@
                                        </children>
                                     </VBox>
                                     <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
-                                    <VBox fx:id="v2" style="-fx-background-color: rgba(254,254,254,0.7);">
+                                    <VBox fx:id="v2" style="-fx-background-color: rgba(29,29,29,0.7);">
                                        <children>
                                           <HBox>
                                              <children>
@@ -119,7 +120,7 @@
                                        </children>
                                     </VBox>
                                     <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
-                                    <VBox fx:id="v3" style="-fx-background-color: rgba(254,254,254,0.7);">
+                                    <VBox fx:id="v3" style="-fx-background-color: rgba(29,29,29,0.7);">
                                        <children>
                                           <HBox>
                                              <children>
@@ -139,7 +140,7 @@
                                        </children>
                                     </VBox>
                                     <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
-                                    <VBox fx:id="v4" style="-fx-background-color: rgba(254,254,254,0.7);">
+                                    <VBox fx:id="v4" style="-fx-background-color: rgba(29,29,29,0.7);">
                                        <children>
                                           <HBox>
                                              <children>
@@ -163,9 +164,10 @@
                                     <Insets bottom="5.0" />
                                  </VBox.margin>
                               </HBox>
-                              <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                              <Pane maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS" />
+                              <HBox fillHeight="false" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="NEVER">
                                  <children>
-                                    <VBox fx:id="m1" style="-fx-background-color: rgba(254,254,254,0.7);">
+                                    <VBox fx:id="m1" style="-fx-background-color: rgba(29,29,29,0.7);">
                                        <children>
                                           <HBox>
                                              <children>
@@ -185,7 +187,7 @@
                                        </children>
                                     </VBox>
                                     <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
-                                    <VBox fx:id="m2" style="-fx-background-color: rgba(254,254,254,0.7);">
+                                    <VBox fx:id="m2" style="-fx-background-color: rgba(29,29,29,0.7);">
                                        <children>
                                           <HBox>
                                              <children>
@@ -205,7 +207,7 @@
                                        </children>
                                     </VBox>
                                     <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
-                                    <VBox fx:id="m3" style="-fx-background-color: rgba(254,254,254,0.7);">
+                                    <VBox fx:id="m3" style="-fx-background-color: rgba(29,29,29,0.7);">
                                        <children>
                                           <HBox>
                                              <children>
@@ -229,9 +231,10 @@
                                     <Insets bottom="5.0" />
                                  </VBox.margin>
                               </HBox>
-                              <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                              <Pane maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="NEVER">
                                  <children>
-                                    <VBox fx:id="a1" style="-fx-background-color: rgba(254,254,254,0.7);">
+                                    <VBox fx:id="a1" style="-fx-background-color: rgba(29,29,29,0.7);">
                                        <children>
                                           <HBox>
                                              <children>
@@ -251,7 +254,7 @@
                                        </children>
                                     </VBox>
                                     <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
-                                    <VBox fx:id="a2" style="-fx-background-color: rgba(254,254,254,0.7);">
+                                    <VBox fx:id="a2" style="-fx-background-color: rgba(29,29,29,0.7);">
                                        <children>
                                           <HBox>
                                              <children>
@@ -271,7 +274,7 @@
                                        </children>
                                     </VBox>
                                     <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
-                                    <VBox fx:id="a3" style="-fx-background-color: rgba(254,254,254,0.7);">
+                                    <VBox fx:id="a3" style="-fx-background-color: rgba(29,29,29,0.7);">
                                        <children>
                                           <HBox>
                                              <children>
@@ -293,6 +296,9 @@
                                  </children>
                               </HBox>
                            </children>
+                           <padding>
+                              <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                           </padding>
                         </VBox>
                      </children>
                   </AnchorPane>
@@ -326,6 +332,6 @@
       </VBox>
    </children>
    <padding>
-      <Insets bottom="50.0" left="50.0" right="50.0" top="-60.0" />
+      <Insets bottom="50.0" left="50.0" right="50.0" />
    </padding>
 </AnchorPane>

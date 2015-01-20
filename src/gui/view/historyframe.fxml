@@ -10,11 +10,6 @@
 
 <AnchorPane id="AnchorPane" prefHeight="589.0" prefWidth="956.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.historyframeController">
    <children>
-      <Pane layoutX="10.0" layoutY="10.0" prefHeight="729.0" prefWidth="1148.0" style="-fx-background-color: rgba(254,254,254,0.3);" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
-         <effect>
-            <BoxBlur height="10.0" iterations="3" width="10.0" />
-         </effect>
-      </Pane>
       <TableView fx:id="historyTable" layoutX="189.0" layoutY="83.0" prefHeight="589.0" prefWidth="956.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
         <columns>
           <TableColumn prefWidth="75.0" text="Teams">

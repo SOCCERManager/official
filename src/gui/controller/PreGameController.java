@@ -166,10 +166,7 @@ public class PreGameController implements Initializable {
     
     public void showCompareTeams() {
         compareTeamsPane.setVisible(true);
-    }
-    
-    public void closeCompareTeams() {
-        compareTeamsPane.setVisible(false);
+        pregamePane.setVisible(false);
     }
     
     public void closeResults() {
@@ -182,6 +179,7 @@ public class PreGameController implements Initializable {
             Competitie.getCompetitie().playPlayerGame();
             drawResults();
             resultPane.setVisible(true);
+            pregamePane.setVisible(false);
         }
         else {
             invalidPane.setVisible(true);

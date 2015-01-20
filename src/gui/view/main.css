@@ -176,6 +176,22 @@
     -fx-effect: dropshadow(two-pass-box, black, 50, .6, 0, 0);
 }
 
+.pregameButton {
+    -fx-background-color:transparent;
+    -fx-text-fill:#FEFEFE;
+    -fx-font-size:30pt;
+    -fx-font-family: "Segoe UI Semilight";
+    -fx-effect: dropshadow(two-pass-box, black, 30, .5, 0, 0);
+}
+
+.pregameButton:hover {
+    -fx-background-color:transparent;
+    -fx-text-fill:#69B9FF;
+    -fx-font-size:30pt;
+    -fx-font-family: "Segoe UI Semilight";
+    -fx-effect: dropshadow(two-pass-box, black, 50, .6, 0, 0);
+}
+
 .gameButton {
     -fx-background-color:transparent;
     -fx-text-fill:#FEFEFE;
