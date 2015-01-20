@@ -972,13 +972,13 @@ public class veranderOpstellingController implements Initializable {
                     drawPlayer(d_naam23, "Middenvelder", d_positie23, d_aanval23, d_verdediging23, d_uithouding23, j, status8);
                     break;
                 case 8:
-                    drawPlayer(d_naam31, "Aanvelder", d_positie31, d_aanval31, d_verdediging31, d_uithouding31, j, status9);
+                    drawPlayer(d_naam31, "Aanvaller", d_positie31, d_aanval31, d_verdediging31, d_uithouding31, j, status9);
                     break;
                 case 9:
-                    drawPlayer(d_naam32, "Aanvelder", d_positie32, d_aanval32, d_verdediging32, d_uithouding32, j, status10);
+                    drawPlayer(d_naam32, "Aanvaller", d_positie32, d_aanval32, d_verdediging32, d_uithouding32, j, status10);
                     break;
                 case 10:
-                    drawPlayer(d_naam33, "Aanvelder", d_positie33, d_aanval33, d_verdediging33, d_uithouding33, j, status11);
+                    drawPlayer(d_naam33, "Aanvaller", d_positie33, d_aanval33, d_verdediging33, d_uithouding33, j, status11);
                     break;
                 
                 default: System.out.println("IK KAN NIKS"); break;
