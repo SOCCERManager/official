@@ -121,11 +121,9 @@ public class KoopframeController implements Initializable {
             row.setOnMouseClicked(event -> {
                 Speler rowData = row.getItem(); 
                 System.out.println("Speler: " + rowData.getNaam() + "\t\tAanvallend: "+ rowData.getAanvallend() + "\tVerdedigend: " + rowData.getVerdedigend() + "\tUithouding: " + rowData.getUithoudingsvermogen() + "\tPrijs: " + rowData.getPrijs());
-                if(userteam.getBudget()-rowData.getPrijs()<0) {
-                    koopButton.setDisable(true);
-                }else{
-                    koopButton.setDisable(false);
-                }
+
+                koopButton.setDisable(false);
+
             });
             return row;
         });        
@@ -152,7 +150,7 @@ public class KoopframeController implements Initializable {
     }
     
     private void drawTable(){
-        koopButton.setDisable(false);
+        koopButton.setDisable(true);
         ObservableList<Speler>spelerList = FXCollections.observableArrayList();
         System.out.println(tempList.size());
         spelerList.addAll(tempList);
@@ -221,92 +219,28 @@ public class KoopframeController implements Initializable {
     }
     
     @FXML
-    private void handleBiedPrijs() {
-//        if(marketTable.getSelectionModel().getSelectedItem()!=null){
-//            if(userteam.getBudget()-marketTable.getFocusModel().getFocusedItem().getPrijs()>0) {
-//                Speler temp = marketTable.getFocusModel().getFocusedItem();
-//                System.out.println(temp);
-//                userteam.addSpeler(temp);
-//
-//                tempList.remove(temp);
-//
-//                userteam.setBudget(userteam.getBudget()-temp.defineMarketValue());
-//
-//                marketTable.getSelectionModel().clearSelection();
-//                System.out.println("Removing from table: " + temp.getNaam());
-//                //mainApp.showMainHubScreen();
-//
-//                drawTable();
-//            }
-//        }else{
-//            System.out.println("You've encoutered the bug dragon, the player this table thinks it's selecting is null!");
-//        }
-        if(userteam.getBudget()-marketTable.getFocusModel().getFocusedItem().getPrijs()>0) {
-            //Enough cash
-            
-            //Chance:
-//            if(prijsSlider.getValue()>0 && prijsSlider.getValue()<1 && rnd.nextInt(10)%3==0) {
-//                //Price is lower than market price
-//                //only if 0<price<1 and random % 3 ==0 
-//                Speler temp = marketTable.getFocusModel().getFocusedItem();
-//                userteam.addSpeler(temp);
-//                tempList.remove(temp);
-//
-//                userteam.setBudget(userteam.getBudget()-((int)((prijsSlider.getValue()*marketTable.getFocusModel().getFocusedItem().getPrijs())/1000))*1000);
-//
-//
-//                System.out.println("Removing from table: " + temp.getNaam());
-//                
-//                koopAlert.setText("Speler " + marketTable.getFocusModel().getFocusedItem().getNaam() + " is verkocht voor: €" + ((int)((prijsSlider.getValue()*marketTable.getFocusModel().getFocusedItem().getPrijs())/1000))*1000);
-//                marketTable.getSelectionModel().clearSelection();
-//                drawTable();
-//            }else {
-//                koopAlert.setText("De prijs: €" + ((int)((prijsSlider.getValue()*marketTable.getFocusModel().getFocusedItem().getPrijs())/1000))*1000 + " is te laag! Doe een andere bod.");
-//            }
-//            
-//            if(prijsSlider.getValue()>1 && prijsSlider.getValue()<1.5) {
-//                //Price is higher than market price... guaranteed buy
-//                Speler temp = marketTable.getFocusModel().getFocusedItem();
-//                userteam.addSpeler(temp);
-//                tempList.remove(temp);
-//
-//                userteam.setBudget(userteam.getBudget()-((int)((prijsSlider.getValue()*marketTable.getFocusModel().getFocusedItem().getPrijs())/1000))*1000);
-//
-//                System.out.println("Removing from table: " + temp.getNaam());
-//                
-//                koopAlert.setText("Speler " + marketTable.getFocusModel().getFocusedItem().getNaam() + " is verkocht voor: €" + ((int)((prijsSlider.getValue()*marketTable.getFocusModel().getFocusedItem().getPrijs())/1000))*1000);
-//                marketTable.getSelectionModel().clearSelection();
-//                drawTable();
-//            }
-//            
-//            if(prijsSlider.getValue()==0) {
-//                koopAlert.setText("Uw kunt geen speler kopen voor €0!");
-//            }
-            
-            int prijs = marketTable.getFocusModel().getFocusedItem().getPrijs();
-            if(Random.get().nextFloat() < Math.max(0, Math.sqrt(prijsSlider.getValue()/2)-0.1)) {
-                // Gefleicteerd!
-                Speler temp = marketTable.getFocusModel().getFocusedItem();
-                userteam.addSpeler(temp);
-                tempList.remove(temp);
+    private void handleBiedPrijs() {        
+        int prijs = marketTable.getFocusModel().getFocusedItem().getPrijs();
+        int offeredPrice = ((int)((prijsSlider.getValue()*marketTable.getFocusModel().getFocusedItem().getPrijs())/1000))*1000;
+        
+        if((Random.get().nextFloat() < Math.max(0, Math.sqrt(prijsSlider.getValue()/2)-0.1)) && userteam.getBudget()-offeredPrice>0) {
+            // Gefleicteerd!
+            Speler temp = marketTable.getFocusModel().getFocusedItem();
+            userteam.addSpeler(temp);
+            tempList.remove(temp);
 
-                userteam.setBudget(userteam.getBudget()-((int)((prijsSlider.getValue()*marketTable.getFocusModel().getFocusedItem().getPrijs())/1000))*1000);
+            userteam.setBudget(userteam.getBudget()-offeredPrice);
 
 
-                System.out.println("Removing from table: " + temp.getNaam());
-                
-                koopAlert.setText("Gefeliciteerd! \nSpeler " + marketTable.getFocusModel().getFocusedItem().getNaam() + " is verkocht voor: €" + ((int)((prijsSlider.getValue()*marketTable.getFocusModel().getFocusedItem().getPrijs())/1000))*1000);
-                marketTable.getSelectionModel().clearSelection();
-                drawTable();
-            } else {
-                koopAlert.setText("Het bod €" + ((int)((prijsSlider.getValue()*marketTable.getFocusModel().getFocusedItem().getPrijs())/1000))*1000 + " is afgewezen! Doe een andere bod.");
-                System.out.println(prijsSlider.getValue());
-            }
-            
-            
-        } else {
-            koopAlert.setText("Het budget is te klein!");
-            
+            System.out.println("Removing from market table: " + temp.getNaam());
+
+            koopAlert.setText("Gefeliciteerd! \nSpeler " + marketTable.getFocusModel().getFocusedItem().getNaam() + " is verkocht voor: €" + offeredPrice);
+            marketTable.getSelectionModel().clearSelection();
+            drawTable();
+        } else if(!(Random.get().nextFloat() < Math.max(0, Math.sqrt(prijsSlider.getValue()/2)-0.1)) && (userteam.getBudget()-offeredPrice>0)){
+            koopAlert.setText("Het bod €" + offeredPrice + " is afgewezen, waarschijnlijk is het te laag! \nDoe een andere bod.");
+        } else if(!(userteam.getBudget()-offeredPrice>0)) {
+            koopAlert.setText("Het budget is te klein! \nBudget: " + userteam.getBudget() + "\nUw bod: €" + offeredPrice);
         }
         sliderHBox.setVisible(false);
         alertHBox.setVisible(true);
@@ -326,16 +260,7 @@ public class KoopframeController implements Initializable {
     private void handleCloseAlert1() {
         alert1.setVisible(false);
     }
-    
-    @FXML
-    private void handleKoopshadow() {
-        alert1Text.setText("Het budget is te klein! Uw budget is: " + userteam.getBudget() + ", "
-                + "\nmaar de speler die u probeert te kopen kost: " + marketTable.getFocusModel().getFocusedItem().getPrijs()
-                + ".\nSpeel een wedstrijd om meer geld te verdienen, of verkoop enkele spelers.");
-        alert1.setVisible(true);
-    }
-    
-    
+
     @FXML
     private void handleExit() {
        this.mainMarketPane.setVisible(false); 
