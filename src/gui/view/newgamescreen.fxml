@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.net.*?>
@@ -13,13 +14,37 @@
         <URL value="@main.css" />
     </stylesheets>
     <children>
-      <Button layoutY="739.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="60.0" prefWidth="1920.0" text="Back" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="79.0" prefHeight="178.0" prefWidth="1920.0" text="New Game" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-         <font>
-            <Font size="96.0" />
-         </font>
-      </Label>
-      <TextField fx:id="nameField" alignment="CENTER" layoutX="867.0" layoutY="469.0" prefHeight="71.0" prefWidth="1920.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
-      <Button layoutY="665.0" mnemonicParsing="false" onAction="#handleStartButton" prefHeight="60.0" prefWidth="1920.0" text="Start New Game" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <VBox layoutY="79.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="79.0" prefHeight="178.0" prefWidth="1920.0" styleClass="newGameText" text="New Game" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font size="96.0" />
+               </font>
+            </Label>
+            <Pane maxHeight="100.0" maxWidth="1.7976931348623157E308" minHeight="100.0" prefHeight="100.0" VBox.vgrow="ALWAYS" />
+            <HBox>
+               <children>
+                  <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="nameField" alignment="CENTER" layoutX="867.0" layoutY="469.0" maxWidth="600.0" minHeight="71.0" prefHeight="71.0" styleClass="textfield" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" HBox.hgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                     <HBox.margin>
+                        <Insets bottom="15.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <Button layoutY="665.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleStartButton" prefHeight="60.0" styleClass="menuButton" text="Start New Game" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutY="739.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="60.0" styleClass="menuButton" text="Back" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Pane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
    </children>
 </AnchorPane>

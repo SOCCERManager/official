@@ -45,12 +45,15 @@ import javafx.scene.input.Dragboard;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.input.TransferMode;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Background;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.util.Callback;
 import soccer.Competitie;
 import soccer.PosPlayer;
 import soccer.Speler;
+import soccer.SpelerStatus;
 import static soccer.SpelerType.*;
 import soccer.Team;
 import soccer.bouwXML;
@@ -213,6 +216,30 @@ public class veranderOpstellingController implements Initializable {
     @FXML
     private ProgressBar d_uithouding;
     
+    @FXML
+    private Pane status1;
+    @FXML
+    private Pane status2;
+    @FXML
+    private Pane status3;
+    @FXML
+    private Pane status4;
+    @FXML
+    private Pane status5;
+    @FXML
+    private Pane status6;
+    @FXML
+    private Pane status7;
+    @FXML
+    private Pane status8;
+    @FXML
+    private Pane status9;
+    @FXML
+    private Pane status10;
+    @FXML
+    private Pane status11;
+    
+    
     
     /** EINDE DRAG AND DROP **/
     
@@ -323,16 +350,9 @@ public class veranderOpstellingController implements Initializable {
                             PosPlayer n = new PosPlayer(s, Doelman);
                             n.setLoc(0);
                             opstelling.add(n);
-                            d_naam.setText(s.getNaam());
-                            d_positie.setText("Doelman");
-                            d_aanval.setProgress(new Double(s.getAanvallend()*0.01));
-                            d_verdediging.setProgress(new Double(s.getVerdedigend())*0.01);
-                            d_uithouding.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
-                            d_aanval.getStyleClass().add("red-bar");
-                            d_uithouding.getStyleClass().add("yellow-bar");
-                            d_verdediging.getStyleClass().add("blue-bar");
                             saveOpstelling();
                             drawTeam();
+                            drawOpstelling();
                             break;
                         }
                     }
@@ -373,16 +393,9 @@ public class veranderOpstellingController implements Initializable {
                             PosPlayer n = new PosPlayer(s, Verdediger);
                             n.setLoc(1);
                             opstelling.add(n);
-                            d_naam1.setText(s.getNaam());
-                            d_positie1.setText("Verdediger");
-                            d_aanval1.setProgress(new Double(s.getAanvallend()*0.01));
-                            d_verdediging1.setProgress(new Double(s.getVerdedigend())*0.01);
-                            d_uithouding1.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
-                            d_aanval1.getStyleClass().add("red-bar");
-                            d_uithouding1.getStyleClass().add("yellow-bar");
-                            d_verdediging1.getStyleClass().add("blue-bar");
-                            saveOpstelling();                            
+                            saveOpstelling();
                             drawTeam();
+                            drawOpstelling();
                             break;
                         }
                     }
@@ -423,16 +436,9 @@ public class veranderOpstellingController implements Initializable {
                             PosPlayer n = new PosPlayer(s, Verdediger);
                             n.setLoc(2);
                             opstelling.add(n);
-                            d_naam11.setText(s.getNaam());
-                            d_positie11.setText("Verdediger");
-                            d_aanval11.setProgress(new Double(s.getAanvallend()*0.01));
-                            d_verdediging11.setProgress(new Double(s.getVerdedigend())*0.01);
-                            d_uithouding11.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
-                            d_aanval11.getStyleClass().add("red-bar");
-                            d_uithouding11.getStyleClass().add("yellow-bar");
-                            d_verdediging11.getStyleClass().add("blue-bar");
-                            saveOpstelling();                            
+                            saveOpstelling();
                             drawTeam();
+                            drawOpstelling();
                             break;
                         }
                     }
@@ -473,16 +479,9 @@ public class veranderOpstellingController implements Initializable {
                             PosPlayer n = new PosPlayer(s, Verdediger);
                             n.setLoc(3);
                             opstelling.add(n);
-                            d_naam12.setText(s.getNaam());
-                            d_positie12.setText("Verdediger");
-                            d_aanval12.setProgress(new Double(s.getAanvallend()*0.01));
-                            d_verdediging12.setProgress(new Double(s.getVerdedigend())*0.01);
-                            d_uithouding12.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
-                            d_aanval12.getStyleClass().add("red-bar");
-                            d_uithouding12.getStyleClass().add("yellow-bar");
-                            d_verdediging12.getStyleClass().add("blue-bar");
-                            saveOpstelling();                            
+                            saveOpstelling();
                             drawTeam();
+                            drawOpstelling();
                             break;
                         }
                     }
@@ -523,16 +522,9 @@ public class veranderOpstellingController implements Initializable {
                             PosPlayer n = new PosPlayer(s, Verdediger);
                             n.setLoc(4);
                             opstelling.add(n);
-                            d_naam13.setText(s.getNaam());
-                            d_positie13.setText("Verdediger");
-                            d_aanval13.setProgress(new Double(s.getAanvallend()*0.01));
-                            d_verdediging13.setProgress(new Double(s.getVerdedigend())*0.01);
-                            d_uithouding13.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
-                            d_aanval13.getStyleClass().add("red-bar");
-                            d_uithouding13.getStyleClass().add("yellow-bar");
-                            d_verdediging13.getStyleClass().add("blue-bar");
-                            saveOpstelling();                            
+                            saveOpstelling();
                             drawTeam();
+                            drawOpstelling();
                             break;
                         }
                     }
@@ -573,16 +565,9 @@ public class veranderOpstellingController implements Initializable {
                             PosPlayer n = new PosPlayer(s, Middenvelder);
                             n.setLoc(5);
                             opstelling.add(n);
-                            d_naam21.setText(s.getNaam());
-                            d_positie21.setText("Middenvelder");
-                            d_aanval21.setProgress(new Double(s.getAanvallend()*0.01));
-                            d_verdediging21.setProgress(new Double(s.getVerdedigend())*0.01);
-                            d_uithouding21.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
-                            d_aanval21.getStyleClass().add("red-bar");
-                            d_uithouding21.getStyleClass().add("yellow-bar");
-                            d_verdediging21.getStyleClass().add("blue-bar");
-                            saveOpstelling();                            
+                            saveOpstelling();
                             drawTeam();
+                            drawOpstelling();
                             break;
                         }
                     }
@@ -623,16 +608,9 @@ public class veranderOpstellingController implements Initializable {
                             PosPlayer n = new PosPlayer(s, Middenvelder);
                             n.setLoc(6);
                             opstelling.add(n);
-                            d_naam22.setText(s.getNaam());
-                            d_positie22.setText("Middenvelder");
-                            d_aanval22.setProgress(new Double(s.getAanvallend()*0.01));
-                            d_verdediging22.setProgress(new Double(s.getVerdedigend())*0.01);
-                            d_uithouding22.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
-                            d_aanval22.getStyleClass().add("red-bar");
-                            d_uithouding22.getStyleClass().add("yellow-bar");
-                            d_verdediging22.getStyleClass().add("blue-bar");
-                            saveOpstelling();                            
+                            saveOpstelling();
                             drawTeam();
+                            drawOpstelling();
                             break;
                         }
                     }
@@ -673,16 +651,9 @@ public class veranderOpstellingController implements Initializable {
                             PosPlayer n = new PosPlayer(s, Middenvelder);
                             n.setLoc(7);
                             opstelling.add(n);
-                            d_naam23.setText(s.getNaam());
-                            d_positie23.setText("Middenvelder");
-                            d_aanval23.setProgress(new Double(s.getAanvallend()*0.01));
-                            d_verdediging23.setProgress(new Double(s.getVerdedigend())*0.01);
-                            d_uithouding23.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
-                            d_aanval23.getStyleClass().add("red-bar");
-                            d_uithouding23.getStyleClass().add("yellow-bar");
-                            d_verdediging23.getStyleClass().add("blue-bar");
-                            saveOpstelling();                            
+                            saveOpstelling();
                             drawTeam();
+                            drawOpstelling();
                             break;
                         }
                     }
@@ -723,16 +694,9 @@ public class veranderOpstellingController implements Initializable {
                             PosPlayer n = new PosPlayer(s, Aanvaller);
                             n.setLoc(8);
                             opstelling.add(n);
-                            d_naam31.setText(s.getNaam());
-                            d_positie31.setText("Aanvaller");
-                            d_aanval31.setProgress(new Double(s.getAanvallend()*0.01));
-                            d_verdediging31.setProgress(new Double(s.getVerdedigend())*0.01);
-                            d_uithouding31.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
-                            d_aanval31.getStyleClass().add("red-bar");
-                            d_uithouding31.getStyleClass().add("yellow-bar");
-                            d_verdediging31.getStyleClass().add("blue-bar");
-                            saveOpstelling();                            
+                            saveOpstelling();
                             drawTeam();
+                            drawOpstelling();
                             break;
                         }
                     }
@@ -773,16 +737,9 @@ public class veranderOpstellingController implements Initializable {
                             PosPlayer n = new PosPlayer(s, Aanvaller);
                             n.setLoc(9);
                             opstelling.add(n);
-                            d_naam32.setText(s.getNaam());
-                            d_positie32.setText("Aanvaller");
-                            d_aanval32.setProgress(new Double(s.getAanvallend()*0.01));
-                            d_verdediging32.setProgress(new Double(s.getVerdedigend())*0.01);
-                            d_uithouding32.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
-                            d_aanval32.getStyleClass().add("red-bar");
-                            d_uithouding32.getStyleClass().add("yellow-bar");
-                            d_verdediging32.getStyleClass().add("blue-bar");
-                            saveOpstelling();                            
+                            saveOpstelling();
                             drawTeam();
+                            drawOpstelling();
                             break;
                         }
                     }
@@ -823,16 +780,9 @@ public class veranderOpstellingController implements Initializable {
                             PosPlayer n = new PosPlayer(s, Aanvaller);
                             n.setLoc(10);
                             opstelling.add(n);
-                            d_naam33.setText(s.getNaam());
-                            d_positie33.setText("Aanvaller");
-                            d_aanval33.setProgress(new Double(s.getAanvallend()*0.01));
-                            d_verdediging33.setProgress(new Double(s.getVerdedigend())*0.01);
-                            d_uithouding33.setProgress(new Double(s.getUithoudingsvermogen())*0.01);
-                            d_aanval33.getStyleClass().add("red-bar");
-                            d_uithouding33.getStyleClass().add("yellow-bar");
-                            d_verdediging33.getStyleClass().add("blue-bar");
                             saveOpstelling();
                             drawTeam();
+                            drawOpstelling();
                             break;
                         }
                     }
@@ -977,119 +927,58 @@ public class veranderOpstellingController implements Initializable {
         alert2.setVisible(false);
     }
     
+    private void drawPlayer(Label naam, String title, Label pos, ProgressBar aanv, ProgressBar verd, ProgressBar uith, PosPlayer j, Pane stat) {
+        naam.setText(j.getNaam());
+        pos.setText(title);
+        aanv.setProgress(new Double(j.getAanvallend()*0.01));
+        verd.setProgress(new Double(j.getVerdedigend())*0.01);
+        uith.setProgress(new Double(j.getUithoudingsvermogen())*0.01);
+        aanv.getStyleClass().add("red-bar");
+        uith.getStyleClass().add("yellow-bar");
+        verd.getStyleClass().add("blue-bar");
+        if(!j.getStatus().equals(SpelerStatus.Normaal))                                
+            stat.getStyleClass().add(""+j.getStatus());
+        else
+            stat.getStyleClass().clear();
+    }
+    
     private void drawOpstelling(){
         for(PosPlayer j: opstelling){
             System.out.println(j.getLoc());
+                
             switch(j.getLoc()) {
                 case 0:
-                    d_naam.setText(j.getNaam());
-                    d_positie.setText("Doelman");
-                    d_aanval.setProgress(new Double(j.getAanvallend()*0.01));
-                    d_verdediging.setProgress(new Double(j.getVerdedigend())*0.01);
-                    d_uithouding.setProgress(new Double(j.getUithoudingsvermogen())*0.01);
-                    d_aanval.getStyleClass().add("red-bar");
-                    d_uithouding.getStyleClass().add("yellow-bar");
-                    d_verdediging.getStyleClass().add("blue-bar");
+                    drawPlayer(d_naam, "Doelman", d_positie, d_aanval, d_verdediging, d_uithouding, j, status1);
                     break;
                 case 1:
-                    d_naam1.setText(j.getNaam());
-                    d_positie1.setText("Verdediger");
-                    d_aanval1.setProgress(new Double(j.getAanvallend()*0.01));
-                    d_verdediging1.setProgress(new Double(j.getVerdedigend())*0.01);
-                    d_uithouding1.setProgress(new Double(j.getUithoudingsvermogen())*0.01);
-                    d_aanval1.getStyleClass().add("red-bar");
-                    d_uithouding1.getStyleClass().add("yellow-bar");
-                    d_verdediging1.getStyleClass().add("blue-bar");
+                    drawPlayer(d_naam1, "Verdediger", d_positie1, d_aanval1, d_verdediging1, d_uithouding1, j, status2);
                     break;
                 case 2:
-                    d_naam11.setText(j.getNaam());
-                    d_positie11.setText("Verdediger");
-                    d_aanval11.setProgress(new Double(j.getAanvallend()*0.01));
-                    d_verdediging11.setProgress(new Double(j.getVerdedigend())*0.01);
-                    d_uithouding11.setProgress(new Double(j.getUithoudingsvermogen())*0.01);
-                    d_aanval11.getStyleClass().add("red-bar");
-                    d_uithouding11.getStyleClass().add("yellow-bar");
-                    d_verdediging11.getStyleClass().add("blue-bar");
+                    drawPlayer(d_naam11, "Verdediger", d_positie11, d_aanval11, d_verdediging11, d_uithouding11, j, status3);
                     break;
                 case 3:
-                    d_naam12.setText(j.getNaam());
-                    d_positie12.setText("Verdediger");
-                    d_aanval12.setProgress(new Double(j.getAanvallend()*0.01));
-                    d_verdediging12.setProgress(new Double(j.getVerdedigend())*0.01);
-                    d_uithouding12.setProgress(new Double(j.getUithoudingsvermogen())*0.01);
-                    d_aanval12.getStyleClass().add("red-bar");
-                    d_uithouding12.getStyleClass().add("yellow-bar");
-                    d_verdediging12.getStyleClass().add("blue-bar");
+                    drawPlayer(d_naam12, "Verdediger", d_positie12, d_aanval12, d_verdediging12, d_uithouding12, j, status4);
                     break;
                 case 4:
-                    d_naam13.setText(j.getNaam());
-                    d_positie13.setText("Verdediger");
-                    d_aanval13.setProgress(new Double(j.getAanvallend()*0.01));
-                    d_verdediging13.setProgress(new Double(j.getVerdedigend())*0.01);
-                    d_uithouding13.setProgress(new Double(j.getUithoudingsvermogen())*0.01);
-                    d_aanval13.getStyleClass().add("red-bar");
-                    d_uithouding13.getStyleClass().add("yellow-bar");
-                    d_verdediging13.getStyleClass().add("blue-bar");
+                    drawPlayer(d_naam13, "Verdediger", d_positie13, d_aanval13, d_verdediging13, d_uithouding13, j, status5);
                     break;
                 case 5:
-                    d_naam21.setText(j.getNaam());
-                    d_positie21.setText("Middenvelder");
-                    d_aanval21.setProgress(new Double(j.getAanvallend()*0.01));
-                    d_verdediging21.setProgress(new Double(j.getVerdedigend())*0.01);
-                    d_uithouding21.setProgress(new Double(j.getUithoudingsvermogen())*0.01);
-                    d_aanval21.getStyleClass().add("red-bar");
-                    d_uithouding21.getStyleClass().add("yellow-bar");
-                    d_verdediging21.getStyleClass().add("blue-bar");
+                    drawPlayer(d_naam21, "Middenvelder", d_positie21, d_aanval21, d_verdediging21, d_uithouding21, j, status6);
                     break;
                 case 6:
-                    d_naam22.setText(j.getNaam());
-                    d_positie22.setText("Middenvelder");
-                    d_aanval22.setProgress(new Double(j.getAanvallend()*0.01));
-                    d_verdediging22.setProgress(new Double(j.getVerdedigend())*0.01);
-                    d_uithouding22.setProgress(new Double(j.getUithoudingsvermogen())*0.01);
-                    d_aanval22.getStyleClass().add("red-bar");
-                    d_uithouding22.getStyleClass().add("yellow-bar");
-                    d_verdediging22.getStyleClass().add("blue-bar");
+                    drawPlayer(d_naam22, "Middenvelder", d_positie22, d_aanval22, d_verdediging22, d_uithouding22, j, status7);
                     break;
                 case 7:
-                    d_naam23.setText(j.getNaam());
-                    d_positie23.setText("Middenvelder");
-                    d_aanval23.setProgress(new Double(j.getAanvallend()*0.01));
-                    d_verdediging23.setProgress(new Double(j.getVerdedigend())*0.01);
-                    d_uithouding23.setProgress(new Double(j.getUithoudingsvermogen())*0.01);
-                    d_aanval23.getStyleClass().add("red-bar");
-                    d_uithouding23.getStyleClass().add("yellow-bar");
-                    d_verdediging23.getStyleClass().add("blue-bar");
+                    drawPlayer(d_naam23, "Middenvelder", d_positie23, d_aanval23, d_verdediging23, d_uithouding23, j, status8);
                     break;
                 case 8:
-                    d_naam31.setText(j.getNaam());
-                    d_positie31.setText("Aanvaller");
-                    d_aanval31.setProgress(new Double(j.getAanvallend()*0.01));
-                    d_verdediging31.setProgress(new Double(j.getVerdedigend())*0.01);
-                    d_uithouding31.setProgress(new Double(j.getUithoudingsvermogen())*0.01);
-                    d_aanval31.getStyleClass().add("red-bar");
-                    d_uithouding31.getStyleClass().add("yellow-bar");
-                    d_verdediging31.getStyleClass().add("blue-bar");
+                    drawPlayer(d_naam31, "Aanvelder", d_positie31, d_aanval31, d_verdediging31, d_uithouding31, j, status9);
                     break;
                 case 9:
-                    d_naam32.setText(j.getNaam());
-                    d_positie32.setText("Aanvaller");
-                    d_aanval32.setProgress(new Double(j.getAanvallend()*0.01));
-                    d_verdediging32.setProgress(new Double(j.getVerdedigend())*0.01);
-                    d_uithouding32.setProgress(new Double(j.getUithoudingsvermogen())*0.01);
-                    d_aanval32.getStyleClass().add("red-bar");
-                    d_uithouding32.getStyleClass().add("yellow-bar");
-                    d_verdediging32.getStyleClass().add("blue-bar");
+                    drawPlayer(d_naam32, "Aanvelder", d_positie32, d_aanval32, d_verdediging32, d_uithouding32, j, status10);
                     break;
                 case 10:
-                    d_naam33.setText(j.getNaam());
-                    d_positie33.setText("Aanvaller");
-                    d_aanval33.setProgress(new Double(j.getAanvallend()*0.01));
-                    d_verdediging33.setProgress(new Double(j.getVerdedigend())*0.01);
-                    d_uithouding33.setProgress(new Double(j.getUithoudingsvermogen())*0.01);
-                    d_aanval33.getStyleClass().add("red-bar");
-                    d_uithouding33.getStyleClass().add("yellow-bar");
-                    d_verdediging33.getStyleClass().add("blue-bar");
+                    drawPlayer(d_naam33, "Aanvelder", d_positie33, d_aanval33, d_verdediging33, d_uithouding33, j, status11);
                     break;
                 
                 default: System.out.println("IK KAN NIKS"); break;
