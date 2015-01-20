@@ -7,6 +7,7 @@ package gui.controller;
 
 import gui.MainApp;
 import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
@@ -121,7 +122,7 @@ public class newteamscreenController implements Initializable {
     }
     
     @FXML
-    private void handleSelect(){
+    private void handleSelect() throws IOException{
         Competitie.getCompetitie().setUserindex(
         Competitie.getCompetitie().getTeams().indexOf(teamTable.getSelectionModel().getSelectedItem()));
         try {bouwXML.SaveGame();} catch(Exception e){ System.out.println(e.getStackTrace()); }

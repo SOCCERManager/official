@@ -141,13 +141,32 @@
 
 .speler { -fx-background-color:#E35454;}
 
-
+.newGameText{
+    -fx-text-fill:#FEFEFE;
+    -fx-font-size:96pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-effect: dropshadow(three-pass-box, black, 30, .5, 0, 0);
+}
+.textfield{
+    -fx-background-color: rgba(254,254,254,0.4);
+    -fx-font-size: 3em;
+    -fx-background-radius: 0;
+    -fx-text-fill: #FEFEFE;
+    -fx-text-shadow: 2px 2px #ff0000;
+}
+.textfield .text {
+    -fx-effect: dropshadow( three-pass-box , black , 20, .5, 0, 0);
+    -fx-font-family: "Segoe UI Light";
+}
+.textfield:active{
+    -fx-background-color: rgba(254,254,254,0.7),-fx-box-border,-fx-control-inner-background;
+}
 .menuButton {
     -fx-background-color:transparent;
     -fx-text-fill:#FEFEFE;
     -fx-font-size:42pt;
     -fx-font-family: "Segoe UI Light";
-    -fx-effect: dropshadow(three-pass-box, black, 30, .5, 0, 0);
+    -fx-effect: dropshadow(two-pass-box, black, 30, .5, 0, 0);
 }
 
 .menuButton:hover {
@@ -155,7 +174,7 @@
     -fx-text-fill:#69B9FF;
     -fx-font-size:42pt;
     -fx-font-family: "Segoe UI Light";
-    -fx-effect: dropshadow(three-pass-box, black, 50, .6, 0, 0);
+    -fx-effect: dropshadow(two-pass-box, black, 50, .6, 0, 0);
 }
 
 .gameButton {
@@ -171,7 +190,7 @@
     -fx-text-fill:#69B9FF;
     -fx-font-size:19pt;
     -fx-font-family: "Segoe UI Light";
-    -fx-effect: dropshadow(three-pass-box, black, 30, .6, 0, 0);
+    -fx-effect: dropshadow(one-pass-box, black, 30, .4, 8, 0);
 }
 
 .loadButton {
@@ -206,3 +225,23 @@
     -fx-background-repeat: no-repeat;
     -fx-background-size: contain;
 }
+
+.Geblesseerd {
+    -fx-background-image: url("Geblesseerd.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: center;
+}
+.Rode_kaart {
+    -fx-background-image: url("Rode_kaart.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: center;
+}
+.Gele_kaart {
+    -fx-background-image: url("Gele_kaart.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: center;
+}
+

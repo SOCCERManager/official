@@ -136,7 +136,7 @@ public class mainhubController implements Initializable {
     }
     
     @FXML
-    private void handlePlayGame() {
+    private void handlePlayGame() throws IOException {
         try{
             this.currentgame = Competitie.getCompetitie().playPlayerGame();
             currentgameframeController.currentgame = currentgame;
