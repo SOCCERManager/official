@@ -134,26 +134,56 @@ public class Competitie {
         return this.wedstrijden.stream().mapToInt(v -> v.scoreOfTeam(t)).sum();
     }
 
+    /**
+     * Return the amount of wins of a team
+     * @param t team
+     * @return the amount of wins
+     */
     public int getWinsOfTeam(Team t) {
         return (int) this.wedstrijden.stream().filter(v -> v.teamWon(t)).count();
     }
-
+    
+    /**
+     * Return the amount of draws of a team
+     * @param t team
+     * @return the amount of draws
+     */
     public int getDrawsOfTeam(Team t) {
         return (int) this.wedstrijden.stream().filter(v -> v.teamDrawed(t)).count();
     }
 
+    /**
+     * Return the amount of losses per team
+     * @param t team
+     * @return the amount of losses
+     */
     public int getLossesOfTeam(Team t) {
         return (int) this.wedstrijden.stream().filter(v -> v.isPlayed()).filter(v -> v.teamLost(t)).count();
     }
 
+    /**
+     * Return the amount of played games per team
+     * @param t team
+     * @return the amount of played games
+     */
     public int getPlayedGamesofTeam(Team t) {
         return (int) this.wedstrijden.stream().filter(v -> v.teamPlayed(t)).count();
     }
 
+    /**
+     * Return the amount of goals per team
+     * @param t team
+     * @return the amount of scored goals
+     */
     public int getGoalsofTeam(Team t) {
         return (int) this.wedstrijden.stream().mapToInt(v -> v.teamGoal(t)).sum();
     }
 
+    /**
+     * Return the amount of counter goals per team
+     * @param t team
+     * @return the amount of conceived goals
+     */
     public int getCounterGoalsofTeam(Team t) {
         return (int) this.wedstrijden.stream().mapToInt(v -> v.teamCounterGoal(t)).sum();
     }
@@ -205,14 +235,25 @@ public class Competitie {
         wedstrijden.addAll(reverswedstriedlist);
     }
 
+    /**
+     * Return the competition a team is playing in
+     * @return competitie
+     */
     public static Competitie getCompetitie() {
         return Competitie.c;
     }
 
+    /**
+     * Set the competition a team is playing in
+     */
     public static void setCompetitie(Competitie c) {
         Competitie.c = c;
     }
 
+    /**
+     * Plays games until there are no games left to play for the player. 
+     * Plays the matches in which the team of the player is not active. 
+     */
     public void playGamesTilPlayerGameIsDue() {
         if(this.wedstrijden == null || this.wedstrijden.isEmpty())
             this.bouwWedstrijden();
@@ -225,10 +266,19 @@ public class Competitie {
         }
     }
     
+    /**
+     * Checks if there are more games left to play
+     * @return boolean
+     */
     public boolean gamesLeftToPlay() {
         return (this.wedstrijden.stream().filter(v -> !v.isPlayed()).count()>0);
     }
     
+    /**
+     * Plays the game of the player
+     * @return the match played by the player
+     * @throws Exception 
+     */
     public Wedstrijd playPlayerGame() throws Exception {
         if(this.wedstrijden == null || this.wedstrijden.isEmpty())
             this.bouwWedstrijden();
