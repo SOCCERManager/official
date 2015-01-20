@@ -41,6 +41,6 @@ public class SpelerStatusTest {
         assertEquals(SpelerStatus.Normaal, SpelerStatus.valueOf("Normaal"));
         assertEquals(SpelerStatus.Gele_kaart, SpelerStatus.valueOf("Gele_kaart"));
         assertEquals(SpelerStatus.Rode_kaart, SpelerStatus.valueOf("Rode_kaart"));
-        assertEquals(SpelerStatus.Geblesseerd, SpelerStatus.valueOf("Gebleseerd"));
+        assertEquals(SpelerStatus.Geblesseerd, SpelerStatus.valueOf("Geblesseerd"));
     }
 }
