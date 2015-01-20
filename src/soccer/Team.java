@@ -369,7 +369,7 @@ public class Team {
      * @return het totaal(int)
      */
     public int getAanvallendTotaal() {
-        if (!this.OpstellingIsValide()) {
+        if (!this.OpstellingIsValide() && !name.equals(Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()).getName())) {
             this.generateOpstelling();
         }
 
@@ -384,7 +384,7 @@ public class Team {
      * @return het totaal (int)
      */
     public int getVerdedigingsTotaal() {
-        if (!this.OpstellingIsValide()) {
+        if (!this.OpstellingIsValide() && !name.equals(Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()).getName())) {
             this.generateOpstelling();
         }
 
@@ -399,7 +399,7 @@ public class Team {
      * @return het totaal (int)
      */
     public int getUithoudingsTotaal() {
-        if (!this.OpstellingIsValide()) {
+        if (!this.OpstellingIsValide() && !name.equals(Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()).getName())) {
             this.generateOpstelling();
         }
 
