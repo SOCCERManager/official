@@ -61,5 +61,58 @@
             </VBox>
          </children>
       </VBox>
+      <HBox fx:id="sliderHBox" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="150.0">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <VBox layoutX="23.0" layoutY="-69.0" prefHeight="200.0" prefWidth="100.0" styleClass="messages" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <AnchorPane VBox.vgrow="NEVER">
+                     <children>
+                        <Label fx:id="prijsLabel" alignment="CENTER" prefHeight="27.0" prefWidth="200.0" text="Bied prijs:" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font name="Segoe UI Light" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane>
+                     <children>
+                        <Slider fx:id="prijsSlider" layoutX="3.0" layoutY="1.0" majorTickUnit="0.05" max="2.0" minorTickCount="0" onMouseClicked="#handleSlidePrice" onMouseDragged="#handleSlidePrice" showTickMarks="true" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="25.0" prefWidth="112.0" VBox.vgrow="NEVER">
+                     <children>
+                        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="20.0" maxWidth="200.0" mnemonicParsing="false" onAction="#handleBiedPrijs" prefHeight="25.0" prefWidth="150.0" text="Bied" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="25.0" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font name="Segoe UI Light" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox fx:id="alertHBox" layoutX="10.0" layoutY="10.0" visible="false" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="150.0">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="messages" HBox.hgrow="ALWAYS">
+               <children>
+                  <AnchorPane VBox.vgrow="ALWAYS">
+                     <children>
+                        <TextArea fx:id="koopAlert" editable="false" prefHeight="200.0" prefWidth="200.0" text="TEKST ALERT&#10;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="25.0" prefWidth="112.0">
+                     <children>
+                        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="46.0" mnemonicParsing="false" onAction="#handleCloseKoopAlert" prefHeight="25.0" prefWidth="109.0" text="OK" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="10.0" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
    </children>
 </AnchorPane>
