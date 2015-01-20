@@ -65,7 +65,6 @@ public class CompetitieframeController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        
         ArrayList<Team> teamList = mainhubController.originalteamlist;
         resultatenList.addAll(teamList);
         teamColumn.setCellValueFactory(
@@ -103,7 +102,7 @@ public class CompetitieframeController implements Initializable {
 						setTextFill(Color.GREEN);
                                                 setFont(Font.font(null, FontWeight.BOLD, USE_COMPUTED_SIZE));
 					} else {
-                                            setTextFill(Color.BLACK);
+                                            setTextFill(Color.WHITE);
                                             setFont(Font.font(null, FontWeight.NORMAL, USE_COMPUTED_SIZE));
 						setText(item);
 					}

@@ -21,17 +21,17 @@
                         <Pane prefHeight="0.0" prefWidth="565.0" VBox.vgrow="ALWAYS" />
                         <HBox prefHeight="62.0">
                            <children>
+                              <Button fx:id="Menu" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="62.0" prefWidth="185.0" styleClass="gameButton" text="Main menu">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Button>
                               <Button mnemonicParsing="false" onAction="#handleCompetitie" prefHeight="62.0" prefWidth="185.0" styleClass="gameButton" text="Competitie">
                                  <HBox.margin>
                                     <Insets right="5.0" />
                                  </HBox.margin>
                               </Button>
                               <Button mnemonicParsing="false" onAction="#handleHistory" prefHeight="62.0" prefWidth="185.0" styleClass="gameButton" text="Match History">
-                                 <HBox.margin>
-                                    <Insets right="5.0" />
-                                 </HBox.margin>
-                              </Button>
-                              <Button mnemonicParsing="false" onAction="#handleTeam" prefHeight="62.0" prefWidth="185.0" styleClass="gameButton" text="Team">
                                  <HBox.margin>
                                     <Insets right="5.0" />
                                  </HBox.margin>
@@ -90,17 +90,15 @@
                               <Insets bottom="5.0" />
                            </VBox.margin>
                         </Button>
-                        <Button fx:id="Menu" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="31.0" styleClass="gameButton" text="Main menu">
-                           <VBox.margin>
-                              <Insets bottom="5.0" />
-                           </VBox.margin>
-                        </Button>
                      </children>
                   </VBox>
                   <Pane prefWidth="200.0" HBox.hgrow="ALWAYS" />
                </children>
             </HBox>
-            <AnchorPane fx:id="viewPane" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <AnchorPane fx:id="viewPane" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></AnchorPane>
          </children>
       </VBox>
    </children>

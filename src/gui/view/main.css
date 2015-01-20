@@ -13,8 +13,7 @@
 
 .opstellingBox{
     -fx-background-image: url("halffield.jpg");
-    -fx-background-repeat: stretch;   
-    -fx-background-position: center center;
+    -fx-background-size: stretch;
     -fx-opacity:1;
 }
 
@@ -79,7 +78,7 @@
 
 
 
-#leftPanel, #resultatenTable, #teamTable, #spelerTable, #marketPane, #verkoopPane, #mainOpstellingPane, #marketTable, #titlePane, #teamTable, #opstellingTable, #opstelTable, #historyTable, #sellTable{
+/*.table-view, .resultatenTable{
     -fx-background-color: rgba(245,245,245,0.3);
     -fx-background-radius: 6;
     -fx-opacity:.8;
@@ -87,7 +86,7 @@
     -fx-font-size: 10pt;
     -fx-text-fill: #d8d8d8;
     -fx-border-radius: 6;
-}
+}*/
 
 .generalAnchor {
     -fx-background-color: rgba(245,245,245,0.3);
@@ -245,3 +244,45 @@
     -fx-background-position: center;
 }
 
+.table-view {
+    -fx-opacity: 0.8;
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #1d1d1d;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: 
+        transparent
+        transparent
+        derive(-fx-base, 80%) 
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 20pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+}
+
+.label {
+    -fx-font-family: "Segoe UI Semilight";
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(one-pass-box, black, 30, .4, 3, 0);
+}
