@@ -102,12 +102,15 @@ public class VerkoopframeController implements Initializable {
         Random rnd = new Random();
         int randomNumber = rnd.nextInt(userteam.getSpelers().size());
         for ( int i = 0; i<randomNumber; i++){
-        int randomSpeler = rnd.nextInt(userteam.getSpelers().size());
-        int randomTeam = rnd.nextInt(mainhubController.originalteamlist.size());            
-            if (toSell.contains(userteam.getSpelers().get(randomSpeler)) == false && userteam.getOpstelling().contains(userteam.getSpelers().get(randomSpeler)) == false) {
-                toSell.add(userteam.getSpelers().get(randomSpeler));
-                teamOffers.add(mainhubController.originalteamlist.get(randomTeam));
+            int randomSpeler = rnd.nextInt(userteam.getSpelers().size());
+            int randomTeam = rnd.nextInt(mainhubController.originalteamlist.size());  
+            if(mainhubController.originalteamlist.get(randomTeam).equals(userteam)) {
+                randomTeam = mainhubController.originalteamlist.size()-1;
             }
+                if (toSell.contains(userteam.getSpelers().get(randomSpeler)) == false && userteam.getOpstelling().contains(userteam.getSpelers().get(randomSpeler)) == false) {
+                    toSell.add(userteam.getSpelers().get(randomSpeler));
+                    teamOffers.add(mainhubController.originalteamlist.get(randomTeam));
+                }
         }
         System.out.println("Spelersize: " + toSell.size());
         System.out.println("Teamsize: " + teamOffers.size());

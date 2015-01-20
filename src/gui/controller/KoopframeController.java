@@ -234,11 +234,11 @@ public class KoopframeController implements Initializable {
 
             System.out.println("Removing from market table: " + temp.getNaam());
 
-            koopAlert.setText("Gefeliciteerd! \nSpeler " + marketTable.getFocusModel().getFocusedItem().getNaam() + " is verkocht voor: €" + offeredPrice);
+            koopAlert.setText("Gefeliciteerd! \nSpeler " + marketTable.getFocusModel().getFocusedItem().getNaam() + " is gekocht voor: €" + offeredPrice);
             marketTable.getSelectionModel().clearSelection();
             drawTable();
         } else if(!(Random.get().nextFloat() < Math.max(0, Math.sqrt(prijsSlider.getValue()/2)-0.1)) && (userteam.getBudget()-offeredPrice>0)){
-            koopAlert.setText("Het bod €" + offeredPrice + " is afgewezen, waarschijnlijk is het te laag! \nDoe een andere bod.");
+            koopAlert.setText("Het bod €" + offeredPrice + " is afgewezen, waarschijnlijk vindt de verkoper het te laag! \nDoe een andere bod.");
         } else if(!(userteam.getBudget()-offeredPrice>0)) {
             koopAlert.setText("Het budget is te klein! \nBudget: " + userteam.getBudget() + "\nUw bod: €" + offeredPrice);
         }
@@ -259,6 +259,11 @@ public class KoopframeController implements Initializable {
     @FXML
     private void handleCloseAlert1() {
         alert1.setVisible(false);
+    }
+    
+    @FXML
+    private void handleCloseBied() {
+        sliderHBox.setVisible(false);
     }
 
     @FXML
