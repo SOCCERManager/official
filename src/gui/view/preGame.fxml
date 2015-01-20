@@ -53,6 +53,9 @@
                                  <font>
                                     <Font size="35.0" />
                                  </font>
+                                 <padding>
+                                    <Insets top="-60.0" />
+                                 </padding>
                               </Label>
                            </children>
                         </AnchorPane>

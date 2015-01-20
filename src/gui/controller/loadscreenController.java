@@ -26,8 +26,11 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import static javafx.scene.layout.GridPane.REMAINING;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import soccer.Team;
 
 /**
  * FXML Controller class
@@ -71,12 +74,28 @@ public class loadscreenController implements Initializable {
     
     private void addGames(String name) {
         i++;
+        VBox v = new VBox();
+        Label l = new Label();
+        Label l2 = new Label();
         final Button temp = new Button(name);
         final int numButton= i;
+        v.setFillWidth(true);
+        v.setMinWidth(450.0);
+        v.setMaxWidth(Double.MAX_VALUE);
+        v.getStyleClass().add("loadfiles");
+        System.out.println(name);
+        try{
+            Competitie c_temp = soccer.bouwXML.leesXML(new File("src/saves/"+name+".xml"));
+            Team t_temp = c_temp.getTeams().get(c_temp.getUserindex());
+            System.out.println(c_temp.getTeams().get(c_temp.getUserindex()).getName());
+            l.setText("  "+t_temp.getName());
+            l2.setText("  Gewonnen: "+t_temp.getWins()+"   Verloren: "+t_temp.getLosses()+"   Budget: "+t_temp.getBudget());
+        }catch(Exception e){System.out.println("IK BREEK ZO MOEILIJK TERING HARD");}
         temp.setId("" + i);
         temp.setMinWidth(450.0);
         temp.getStyleClass().add("loadButton");
         temp.setMaxHeight(Double.MAX_VALUE);
+        temp.setAlignment(Pos.CENTER_LEFT);
         temp.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
@@ -88,7 +107,8 @@ public class loadscreenController implements Initializable {
                 System.out.println("LAAD SPEL: " + name);
             }
         });
-        gameGrid.add(temp, 1, i);
+        v.getChildren().addAll(temp,l,l2);
+        gameGrid.add(v, 1, i);
     }
     
     

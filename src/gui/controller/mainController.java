@@ -21,6 +21,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.HBox;
 import javafx.scene.media.AudioClip;
 
 /**
@@ -28,6 +29,9 @@ import javafx.scene.media.AudioClip;
  * @author codesalad
  */
 public class mainController implements Initializable {
+    
+    @FXML
+    private HBox loadingBox;
     
     @FXML
     private Label label;
@@ -45,12 +49,14 @@ public class mainController implements Initializable {
     
     @FXML
     private void handleLoadButton(ActionEvent event) {
+        loadingBox.setVisible(true);
         handleClickSound();
         mainApp.showLoadScreen();
     }
     
     @FXML
     private void handleNewGameButton(ActionEvent event) {
+        loadingBox.setVisible(true);
         handleClickSound();
         mainApp.showNewGameScreen();
     }

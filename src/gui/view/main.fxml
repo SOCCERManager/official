@@ -94,5 +94,31 @@
          </font>
       </Button>
       <Pane id="logopane" prefHeight="200.0" prefWidth="200.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0" />
+      <HBox fx:id="loadingBox" visible="false" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <children>
+            <VBox>
+               <children>
+                  <Pane maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS" />
+                  <ImageView fitHeight="74.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@loading.gif" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Pane maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS" />
+               </children>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </VBox>
+            <Label layoutX="1769.0" layoutY="943.0" style="-fx-font-size: 70px;" text="Loading..." AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="50.0">
+               <font>
+                  <Font size="70.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
     </children>
 </AnchorPane>

@@ -302,3 +302,16 @@
     -fx-text-fill: white;
     -fx-effect: dropshadow(one-pass-box, black, 30, .4, 3, 0);
 }
+
+.loadfiles {
+    -fx-background-color: rgba(29,29,29,0.3)
+}
+.loadfiles:hover{
+    -fx-background-color: rgba(29,29,29,0.7)
+}
+
+.scroll-pane .scroll-bar{
+    -fx-background-color: rgba(29,29,29,0.5);
+    -fx-control-inner-background: #1d1d1d;
+    -fx-base: rgba(29,29,29,0.9);
+}
