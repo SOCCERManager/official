@@ -19,10 +19,10 @@ public class Team {
      * This constructor sets the private variables spelers, name, opstelling and
      * c.
      *
-     * @param spelers De lijst van spelers in het team (ArrayList<Spelers>)
+     * @param spelers De lijst van spelers in het team (ArrayList)
      * @param name De naam van het team (String)
      * @param opstelling De opstelling van het team gemaakt door de positie van
-     * de spelers (ArrayList<PosPlayer>)
+     * de spelers (ArrayList)
      * @param c De competitie waarin dit team speelt (Competitie)
      * @param budget Het budget van het team (int)
      */
@@ -110,7 +110,7 @@ public class Team {
     /**
      * Get de huidige opstelling van het team
      *
-     * @return ArrayList<PosPlayer> waarin de opstelling staat van het team
+     * @return ArrayList waarin de opstelling staat van het team
      */
     public ArrayList<PosPlayer> getOpstelling() {
         return opstelling;
@@ -289,13 +289,10 @@ public class Team {
         // add normaly non deferders as defenders
         while (this.opstelling.size() < 5) {
             Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Verdediger, false);
-            if(s == null) magicalyFixAPlayer();
-            else {
-                PosPlayer p = new PosPlayer(s, SpelerType.Verdediger);
-                p.setLoc(verd);
-                verd++;
-                this.opstelling.add(p);
-            }
+            PosPlayer p = new PosPlayer(s, SpelerType.Verdediger);
+            p.setLoc(verd);
+            verd++;
+            this.opstelling.add(p);
         }
 
         // see if enough middenvelders are avaliable
@@ -318,13 +315,11 @@ public class Team {
         // add normaly non middenvelders as middenvelders
         while (this.opstelling.size() < 8) {
             Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Middenvelder, false);
-            if(s == null) magicalyFixAPlayer();
-            else {
-                PosPlayer p = new PosPlayer(s, SpelerType.Middenvelder);
-                p.setLoc(midd);
-                midd++;
-                this.opstelling.add(p);
-            }
+            PosPlayer p = new PosPlayer(s, SpelerType.Middenvelder);
+            p.setLoc(midd);
+            midd++;
+            this.opstelling.add(p);
+            
         }
         // see if enough aanvallers are avaliable
         int totAttackers = (int) this.spelers.stream().filter(v -> v.isAvaliableToPlay()).filter(v -> v.getType().equals(SpelerType.Aanvaller)).count();
@@ -344,13 +339,11 @@ public class Team {
         // add normaly non middenvelders as middenvelders
         while (this.opstelling.size() < 11) {
             Speler s = getNextAvaliableSpelerWithTypeLike(SpelerType.Aanvaller, false);
-            if(s == null) magicalyFixAPlayer();
-            else {
-                PosPlayer p = new PosPlayer(s, SpelerType.Aanvaller);
-                p.setLoc(aanv);
-                aanv++;
-                this.opstelling.add(p);
-            }
+            PosPlayer p = new PosPlayer(s, SpelerType.Aanvaller);
+            p.setLoc(aanv);
+            aanv++;
+            this.opstelling.add(p);
+            
         }
     }
     
@@ -434,7 +427,7 @@ public class Team {
     /**
      * Counts yellow card that player in team has
      *
-     * @return
+     * @return no of jellowcards
      */
     public int countYellowCards() {
         return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Gele_kaart)).count();
@@ -443,7 +436,7 @@ public class Team {
     /**
      * Counts red cards that players in team have
      *
-     * @return
+     * @return no of red cards
      */
     public int countRedCards() {
         return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Rode_kaart)).count();
@@ -452,7 +445,7 @@ public class Team {
     /**
      * Return count of injuries in team.
      *
-     * @return
+     * @return no of injuries
      */
     public int countGebleseerd() {
         return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Geblesseerd)).count();
@@ -461,7 +454,7 @@ public class Team {
     /**
      * Return count of avaliable team members.
      *
-     * @return
+     * @return no of avaliable members
      */
     public int countAvaliable() {
         return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Normaal)).count();
@@ -493,13 +486,5 @@ public class Team {
 
     public int getGoalSaldo() {
         return this.getGoals() - this.getCounterGoals();
-    }
-
-    private void magicalyFixAPlayer() {
-        for(Speler s: this.spelers) 
-            if(s.isUnavaliableToPlay()) {
-                s.magicalyFix();
-                return;
-            }
     }
 }

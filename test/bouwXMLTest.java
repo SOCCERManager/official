@@ -67,7 +67,6 @@ public class bouwXMLTest {
         while(infile.hasNext())
             te += infile.nextLine()+"\n";
         assertEquals(te, "<?xml version=\"1.0\" ?><Competitie><wedstrijden><Wedstrijd><team__a><spelers><Speler><naam>A</naam><nummer>14</nummer><type>Aanvaller</type><prijs>10</prijs><gamesTilStatusDisapears>0</gamesTilStatusDisapears><aanvallend>10</aanvallend><verdedigend>10</verdedigend><uithoudingsvermogen>10</uithoudingsvermogen></Speler></spelers><name>Team</name><opstelling><OpgesteldeSpeler><speler reference=\"../../../spelers/Speler\"></speler><posspelertype>Aanvaller</posspelertype><reduceFactor>0.8</reduceFactor><loc>0</loc></OpgesteldeSpeler></opstelling><budget>50000</budget></team__a><team__b><spelers reference=\"../../team__a/spelers\"></spelers><name>Team</name><opstelling reference=\"../../team__a/opstelling\"></opstelling><budget>50000</budget></team__b><score__a>0</score__a><score__b>0</score__b><points__a>0</points__a><points__b>0</points__b><played>true</played><speeldag>0</speeldag></Wedstrijd></wedstrijden><teams><Team reference=\"../../wedstrijden/Wedstrijd/team__a\"></Team><Team reference=\"../../wedstrijden/Wedstrijd/team__b\"></Team><Team><spelers reference=\"../../../wedstrijden/Wedstrijd/team__a/spelers\"></spelers><name>Team</name><opstelling reference=\"../../../wedstrijden/Wedstrijd/team__a/opstelling\"></opstelling><budget>50000</budget></Team><Team><spelers reference=\"../../../wedstrijden/Wedstrijd/team__a/spelers\"></spelers><name>Team</name><opstelling reference=\"../../../wedstrijden/Wedstrijd/team__a/opstelling\"></opstelling><budget>50000</budget></Team></teams><userindex>0</userindex></Competitie>\n");
-        System.out.println(te);
     }
     
     @Test
@@ -89,7 +88,7 @@ public class bouwXMLTest {
         ff.delete();
     }
     
-    @Test(expected=AssertionError.class)
+    @Test(expected=FileNotFoundException.class)
     public void saveGameException() throws FileNotFoundException, IOException  { 
         loadscreenController.savegame = "../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../";
         File ff = new File("src/saves/"+loadscreenController.savegame+".xml");

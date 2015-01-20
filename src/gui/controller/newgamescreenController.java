@@ -29,7 +29,9 @@ public class newgamescreenController {
     
     private MainApp mainApp;
     /**
-     * Initializes the controller class.
+     * Initilaizeerd de nieuwscreencontrolooer
+     * @param url Url naar path
+     * @param rb de recources die gebruikt worden
      */
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

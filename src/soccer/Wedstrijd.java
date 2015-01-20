@@ -32,7 +32,7 @@ public class Wedstrijd {
      * Constructor van Wedstrijd, bestaande uit twee teams
      * @param team_a het eerste team dat deelneemt aan een wedstrijd
      * @param team_b het tweede team dat deelneemt aan een wedstrijd
-     * @param speeldag
+     * @param speeldag retouneerd speeldag
      */
     public Wedstrijd(Team team_a, Team team_b, int speeldag) {
         this.team_a = team_a;
@@ -43,7 +43,7 @@ public class Wedstrijd {
 
     /**
      * Retouneerd de speeldag van de wedstreid
-     * @return 
+     * @return speeldag van wedstrijd
      */
     public int getSpeeldag() {
         return speeldag;
@@ -51,7 +51,7 @@ public class Wedstrijd {
 
     /**
      * Stelt de speeldag van de wedstreid in.
-     * @param speeldag 
+     * @param speeldag retuneerd de speeldag
      */
     public void setSpeeldag(int speeldag) {
         this.speeldag = speeldag;

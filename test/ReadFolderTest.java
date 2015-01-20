@@ -78,5 +78,11 @@ public class ReadFolderTest {
         File file1 = new File("123");
         assertEquals(ReadFolder.getFileExtension(file1), "");
     }
+    
+    @Test
+    public void init() {
+        ReadFolder r = new ReadFolder();
+        assertEquals(r, r);
+    }
 }
 

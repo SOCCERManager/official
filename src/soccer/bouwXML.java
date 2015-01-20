@@ -21,7 +21,7 @@ public class bouwXML {
      * Een Competitie wordt in de opgegeven XMLfie gezet.
      * @param t de opgegeven competitie
      * @param f de file waar de xml in moet komen te staan
-     * @throws IOException
+     * @throws IOException File is missing
      */
     public static void bouwXML(Competitie t, File f) throws IOException{
         String xml = getStream().toXML(t);
@@ -49,7 +49,7 @@ public class bouwXML {
      * This function reads the contents of File f and transfers the contents to a Competitie class.
      * @param f de file waaruit gelezen moet worden
      * @return de competitie die aan alle eisen voldoet. 
-     * @throws FileNotFoundException
+     * @throws FileNotFoundException Bestand bestaat niet
      */
     public static Competitie leesXML(File f) throws FileNotFoundException{
         Scanner infile = new Scanner(f);
@@ -63,7 +63,7 @@ public class bouwXML {
     
     /**
      * Saves the game
-     * @throws IOException
+     * @throws IOException Bestand bestaat niet
      */
     public static void SaveGame() throws IOException {
        bouwXML.bouwXML(Competitie.getCompetitie(), new File("src/saves/"+loadscreenController.savegame+".xml"));
