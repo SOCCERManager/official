@@ -569,7 +569,7 @@ public class TeamTest {
         t1.getSpelers().get(1).setStatus(SpelerStatus.Gele_kaart);
         t1.getSpelers().get(5).setStatus(SpelerStatus.Gele_kaart);
         t1.getSpelers().get(9).setStatus(SpelerStatus.Rode_kaart);
-        t1.getSpelers().get(6).setStatus(SpelerStatus.Gebleseerd);
+        t1.getSpelers().get(6).setStatus(SpelerStatus.Geblesseerd);
         assertEquals(2, t1.countYellowCards());
     }
     
@@ -578,7 +578,7 @@ public class TeamTest {
         t1.getSpelers().get(1).setStatus(SpelerStatus.Rode_kaart);
         t1.getSpelers().get(5).setStatus(SpelerStatus.Gele_kaart);
         t1.getSpelers().get(9).setStatus(SpelerStatus.Rode_kaart);
-        t1.getSpelers().get(6).setStatus(SpelerStatus.Gebleseerd);
+        t1.getSpelers().get(6).setStatus(SpelerStatus.Geblesseerd);
         assertEquals(2, t1.countRedCards());
     }
     
@@ -587,7 +587,7 @@ public class TeamTest {
         t1.getSpelers().get(1).setStatus(SpelerStatus.Gele_kaart);
         t1.getSpelers().get(5).setStatus(SpelerStatus.Gele_kaart);
         t1.getSpelers().get(9).setStatus(SpelerStatus.Rode_kaart);
-        t1.getSpelers().get(6).setStatus(SpelerStatus.Gebleseerd);
+        t1.getSpelers().get(6).setStatus(SpelerStatus.Geblesseerd);
         assertEquals(1, t1.countGebleseerd());
     }
     
@@ -596,7 +596,7 @@ public class TeamTest {
         t1.getSpelers().get(1).setStatus(SpelerStatus.Gele_kaart);
         t1.getSpelers().get(5).setStatus(SpelerStatus.Gele_kaart);
         t1.getSpelers().get(9).setStatus(SpelerStatus.Rode_kaart);
-        t1.getSpelers().get(6).setStatus(SpelerStatus.Gebleseerd);
+        t1.getSpelers().get(6).setStatus(SpelerStatus.Geblesseerd);
         assertEquals(7, t1.countAvaliable());
     }
     

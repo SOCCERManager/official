@@ -223,7 +223,7 @@ public class SpelerTest {
     @Test
     public void magicalyFixTest() {
         s1.setGamesTilStatusDisapears(2);
-        s1.setStatus(SpelerStatus.Gebleseerd);
+        s1.setStatus(SpelerStatus.Geblesseerd);
         s1.magicalyFix();
         assertEquals(0, s1.getGamesTilStatusDisapears());
         assertEquals(SpelerStatus.Normaal, s1.getStatus());
@@ -246,7 +246,7 @@ public class SpelerTest {
     
     @Test
     public void playGameGamesTillStatusDissappears1Test() {
-        s1.setStatus(SpelerStatus.Gebleseerd);
+        s1.setStatus(SpelerStatus.Geblesseerd);
         s1.setGamesTilStatusDisapears(1);
         s1.playGame();
         assertEquals(SpelerStatus.Normaal, s1.getStatus());
@@ -258,7 +258,7 @@ public class SpelerTest {
     public void playGameTestGeblesserd() {
         soccer.Random.get().setSeed(8419);
         s1.playGame();
-        assertEquals(SpelerStatus.Gebleseerd, s1.getStatus());
+        assertEquals(SpelerStatus.Geblesseerd, s1.getStatus());
     }
     
     @Test

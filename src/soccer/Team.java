@@ -456,7 +456,7 @@ public class Team {
      * @return
      */
     public int countGebleseerd() {
-        return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Gebleseerd)).count();
+        return (int) this.spelers.stream().filter(s -> s.getStatus().equals(SpelerStatus.Geblesseerd)).count();
     }
 
     /**

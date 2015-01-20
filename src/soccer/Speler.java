@@ -212,7 +212,7 @@ public class Speler {
         } else {
             //1 op 100 kans dat de speler geblesseerd raakt na een wedstrijd
             if (this.randomWithRange(0, 100) == 0) {
-                this.status = SpelerStatus.Gebleseerd;
+                this.status = SpelerStatus.Geblesseerd;
                 this.gamesTilStatusDisapears = this.randomWithRange(2, 5);
 
                 //1 op 100 kans dat de speler een gele kaart krijgt na een wedstrijd
