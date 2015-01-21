@@ -13,7 +13,9 @@ import java.util.ResourceBundle;
 import java.util.Scanner;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import soccer.Competitie;
 
 /**
@@ -22,10 +24,14 @@ import soccer.Competitie;
  * @author floris
  */
 
-public class newgamescreenController {
+public class newgamescreenController implements Initializable{
     
     @FXML
     private TextField nameField;
+    @FXML
+    private Button newGameButton;
+    @FXML
+    private Button backButton;
     
     private MainApp mainApp;
     /**
@@ -33,8 +39,12 @@ public class newgamescreenController {
      * @param url Url naar path
      * @param rb de recources die gebruikt worden
      */
+    @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        newGameButton.addEventFilter(MouseEvent.MOUSE_ENTERED, MainApp.clickSoundHandler);
+        newGameButton.addEventFilter(MouseEvent.MOUSE_PRESSED, MainApp.clickSoundHandler);
+        backButton.addEventFilter(MouseEvent.MOUSE_ENTERED, MainApp.clickSoundHandler);
+        backButton.addEventFilter(MouseEvent.MOUSE_PRESSED, MainApp.clickSoundHandler);
     }    
     
     @FXML

@@ -22,6 +22,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.media.AudioClip;
 
@@ -33,7 +34,12 @@ public class mainController implements Initializable {
     
     @FXML
     private HBox loadingBox;
-    
+    @FXML
+    private Button mainButton;
+    @FXML
+    private Button mainButton2;
+    @FXML 
+    private Button mainButton3;
     @FXML
     private Label label;
     @FXML
@@ -44,40 +50,72 @@ public class mainController implements Initializable {
     private ImageView muteButton;
     @FXML
     private ImageView playPauseImage;
+    @FXML
+    private Button m_refresh;
+    @FXML
+    private Button m_folder;
+    @FXML
+    private Button m_back;
+    @FXML
+    private Button m_next;
+    
     
     private MainApp mainApp;
     static double oldVolume;
     
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        volumeSlider.setValue(BackgroundMusic.volume);
+        
+        //main buttons
+        mainButton.addEventFilter(MouseEvent.MOUSE_ENTERED, MainApp.clickSoundHandler);
+        mainButton.addEventFilter(MouseEvent.MOUSE_PRESSED, MainApp.clickSoundHandler);
+        mainButton2.addEventFilter(MouseEvent.MOUSE_ENTERED, MainApp.clickSoundHandler);
+        mainButton2.addEventFilter(MouseEvent.MOUSE_PRESSED, MainApp.clickSoundHandler);
+        mainButton3.addEventFilter(MouseEvent.MOUSE_ENTERED, MainApp.clickSoundHandler);
+        mainButton3.addEventFilter(MouseEvent.MOUSE_PRESSED, MainApp.clickSoundHandler);
+        
+        //MEDIA PLAYER
+        m_refresh.addEventFilter(MouseEvent.MOUSE_ENTERED, MainApp.clickSoundHandler);
+        m_refresh.addEventFilter(MouseEvent.MOUSE_PRESSED, MainApp.clickSoundHandler);
+        m_folder.addEventFilter(MouseEvent.MOUSE_ENTERED, MainApp.clickSoundHandler);
+        m_folder.addEventFilter(MouseEvent.MOUSE_PRESSED, MainApp.clickSoundHandler);
+        m_back.addEventFilter(MouseEvent.MOUSE_ENTERED, MainApp.clickSoundHandler);
+        m_back.addEventFilter(MouseEvent.MOUSE_PRESSED, MainApp.clickSoundHandler);
+        playPauseButton.addEventFilter(MouseEvent.MOUSE_ENTERED, MainApp.clickSoundHandler);
+        playPauseButton.addEventFilter(MouseEvent.MOUSE_PRESSED, MainApp.clickSoundHandler);
+        m_next.addEventFilter(MouseEvent.MOUSE_ENTERED, MainApp.clickSoundHandler);
+        m_next.addEventFilter(MouseEvent.MOUSE_PRESSED, MainApp.clickSoundHandler);
+        muteButton.addEventFilter(MouseEvent.MOUSE_ENTERED, MainApp.clickSoundHandler);
+        muteButton.addEventFilter(MouseEvent.MOUSE_PRESSED, MainApp.clickSoundHandler);
+        volumeSlider.addEventFilter(MouseEvent.MOUSE_ENTERED, MainApp.clickSoundHandler);
+        volumeSlider.addEventFilter(MouseEvent.MOUSE_PRESSED, MainApp.clickSoundHandler);
+        
+    }
+    
     @FXML
     private void handleLoadButton(ActionEvent event) {
         loadingBox.setVisible(true);
-        handleClickSound();
         mainApp.showLoadScreen();
     }
     
     @FXML
     private void handleNewGameButton(ActionEvent event) {
         loadingBox.setVisible(true);
-        handleClickSound();
         mainApp.showNewGameScreen();
     }
     
     @FXML
     private void handleExitButton() {
-        handleClickSound();
         System.exit(0);
     }
     
-
-    public void handleClickSound() {
-        AudioClip clickSound = new AudioClip(new File("./src/gui/clicksound.mp3").toURI().toString());
-        clickSound.setVolume(1.5);
-        clickSound.play();
-    }
+//--------------------media player----------------------
     
     @FXML
     private void handlePrevious() {
         mainApp.bgmusicRunnable.playPrevious();
+        playPauseImage.setImage(new Image("/gui/view/media_pause.png"));
     }
     
     @FXML
@@ -94,6 +132,7 @@ public class mainController implements Initializable {
     @FXML
     private void handleNext() {
         mainApp.bgmusicRunnable.playNext();
+        playPauseImage.setImage(new Image("/gui/view/media_pause.png"));
     }
     
     @FXML
@@ -134,15 +173,9 @@ public class mainController implements Initializable {
     private void changeVolume(double v){
         mainApp.bgmusicRunnable.changeVolume(v);
     }
+//--------------------media player----------------------
     
     public void setMainApp(MainApp mainApp) {
         this.mainApp = mainApp;
-    }
-    
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        volumeSlider.setValue(BackgroundMusic.volume);        
-    }    
-    
-    
+    }     
 }

@@ -19,10 +19,12 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TitledPane;
 import javafx.scene.control.cell.ProgressBarTableCell;
+import javafx.scene.input.MouseEvent;
 import soccer.Competitie;
 import soccer.Speler;
 import soccer.Team;
@@ -58,18 +60,19 @@ public class newteamscreenController implements Initializable {
     @FXML
     private TableColumn<Speler, Double> staminaColumn;
     
+    @FXML
+    private Button chooseButton;
+    
     private MainApp mainApp;
     
-    public newteamscreenController(){
-        
-        
-    }
-
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        chooseButton.addEventFilter(MouseEvent.MOUSE_ENTERED, MainApp.clickSoundHandler);
+        chooseButton.addEventFilter(MouseEvent.MOUSE_PRESSED, MainApp.clickSoundHandler);
+        
             for(int i = 0; i < Competitie.getCompetitie().getTeams().size(); i++){
                 Competitie.getCompetitie().getTeams().get(i).generateOpstelling();
             }

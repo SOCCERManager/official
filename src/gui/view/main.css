@@ -58,21 +58,23 @@
     -fx-text-fill: #FEFEFE;
 }
 
-#mediaPane {
+#mediaPane, .mediaPane {
     -fx-background-color:#1E2124;
     -fx-opacity:.8;
 }
 
-#mediaPane:hover{
+#mediaPane, .mediaPane:hover{
     -fx-background-color:#1E2124;
     -fx-opacity:1;
 }
 
-#mediaBar {
-    -fx-opacity:.5;
+.mediaBar {
+    -fx-background-color:#1E2124;
+    -fx-opacity:.3;
 }
 
-#mediaBar:hover {
+.mediaBar:hover {
+    -fx-background-color:#585B5E;
     -fx-opacity:.8;
 }
 

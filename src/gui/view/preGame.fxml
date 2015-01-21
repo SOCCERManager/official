@@ -20,7 +20,7 @@
                   <HBox>
                      <children>
                         <Pane maxWidth="1.7976931348623157E308" prefWidth="200.0" HBox.hgrow="ALWAYS" />
-                        <Button alignment="CENTER" maxWidth="1.7976931348623157E308" minWidth="355.0" mnemonicParsing="false" onAction="#showCompareTeams" prefWidth="355.0" styleClass="pregameButton" text="Bekijk opstellingen" HBox.hgrow="ALWAYS">
+                        <Button fx:id="opstellingButton" alignment="CENTER" maxWidth="1.7976931348623157E308" minWidth="355.0" mnemonicParsing="false" onAction="#showCompareTeams" prefWidth="355.0" styleClass="pregameButton" text="Bekijk opstellingen" HBox.hgrow="ALWAYS">
                            <font>
                               <Font size="35.0" />
                            </font>
@@ -28,7 +28,7 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </Button>
-                        <Button alignment="CENTER" maxWidth="1.7976931348623157E308" minWidth="355.0" mnemonicParsing="false" onAction="#handlePlay" prefWidth="355.0" styleClass="pregameButton" text="Speel de wedstrijd" HBox.hgrow="ALWAYS">
+                        <Button fx:id="speelButton" alignment="CENTER" maxWidth="1.7976931348623157E308" minWidth="355.0" mnemonicParsing="false" onAction="#handlePlay" prefWidth="355.0" styleClass="pregameButton" text="Speel de wedstrijd" HBox.hgrow="ALWAYS">
                            <font>
                               <Font size="35.0" />
                            </font>

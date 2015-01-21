@@ -24,12 +24,14 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.ProgressBarTableCell;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
@@ -113,6 +115,11 @@ public class PreGameController implements Initializable {
     @FXML
     private AnchorPane pregamePane;
     
+    @FXML
+    private Button opstellingButton;
+    @FXML 
+    private Button speelButton;
+    
     private MediaPlayer vplayer;
 
     private Wedstrijd wed;
@@ -128,6 +135,12 @@ public class PreGameController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        opstellingButton.addEventFilter(MouseEvent.MOUSE_ENTERED, MainApp.clickSoundHandler);
+        opstellingButton.addEventFilter(MouseEvent.MOUSE_PRESSED, MainApp.clickSoundHandler);
+        
+        speelButton.addEventFilter(MouseEvent.MOUSE_ENTERED, MainApp.clickSoundHandler);
+        speelButton.addEventFilter(MouseEvent.MOUSE_PRESSED, MainApp.clickSoundHandler);
+        
         for(Wedstrijd w: Competitie.getCompetitie().getWedstrijden()){
             if(!w.isPlayed()){
                 userData.addAll(w.getTeam_a().getOpstelling());
