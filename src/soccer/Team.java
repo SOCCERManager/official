@@ -259,7 +259,8 @@ public class Team {
 
         // use a 1 4 3 3 setup
         // See if doelman is avaliable
-        boolean dedicated_goalie = this.spelers.stream().filter(v -> v.isAvaliableToPlay()).filter(v -> v.getType().equals(SpelerType.Doelman)).count() > 1;
+        boolean dedicated_goalie = this.spelers.stream().filter(v -> v.isAvaliableToPlay()).filter(v -> v.getType().equals(SpelerType.Doelman)).count() >= 1;
+        System.out.println("KEEPER? : " + dedicated_goalie);
 
         // Set doelman
         for (Speler s : this.spelers)
