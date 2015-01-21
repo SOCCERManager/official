@@ -9,6 +9,7 @@ import gui.MainApp;
 import java.io.File;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 import java.util.Scanner;
 import javafx.fxml.FXML;
@@ -17,6 +18,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import soccer.Competitie;
+import soccer.ReadFolder;
 
 /**
  * FXML Controller class
@@ -55,8 +57,12 @@ public class newgamescreenController implements Initializable{
     
     @FXML
     private void handleStartButton(){
+        String savegame = "";
         if(isInputValid()){
-        String savegame = nameField.getText();
+            if(!nameExists())
+                savegame = nameField.getText();
+            else
+                savegame = nameField.getText() + "1";
         try{
             
         Competitie c = soccer.bouwXML.leesXML(new File("src/competitie.xml"));
@@ -84,5 +90,12 @@ public class newgamescreenController implements Initializable{
             nameField.setText(errortext);
             return false;
         }
+    }
+    
+    private boolean nameExists(){
+        ArrayList<String> ret = ReadFolder.readNames("src/saves/");
+        if(ret.contains(nameField.getText()))
+            return true;
+        return false;
     }
 }
