@@ -308,10 +308,10 @@ public class Wedstrijd {
      * Tot slot wordt gekeken naar de uitslag van de wedstrijd en de hoeveelheid punten die ieder team krijgt. 
      */
     public void playGame(){
-        if(!this.team_a.OpstellingIsValide()) 
+        if(!this.team_a.OpstellingIsValide() && !this.team_a.equals(Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex()))) 
             this.team_a.generateOpstelling();
         
-        if(!this.team_b.OpstellingIsValide())
+        if(!this.team_b.OpstellingIsValide() && !this.team_b.equals(Competitie.getCompetitie().getTeams().get(Competitie.getCompetitie().getUserindex())))
             this.team_b.generateOpstelling();
         
         this.played = true;
