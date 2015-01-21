@@ -239,6 +239,7 @@ public class SpelerTest {
     @Test
     public void playGameGamesTillStatusDissappears0Test() {
         s1.setGamesTilStatusDisapears(0);
+        soccer.Random.get().setSeed(0);
         s1.playGame();
         assertEquals(SpelerStatus.Normaal, s1.getStatus());
 
