@@ -52,7 +52,7 @@ public class MainApp extends Application {
     public static EventHandler clickSoundHandler = new EventHandler<MouseEvent>(){
             @Override
             public void handle(MouseEvent e) {
-                AudioClip clickSound = new AudioClip(new File("./src/gui/clicksound.mp3").toURI().toString());
+                AudioClip clickSound = new AudioClip(new File("src/gui/clicksound.mp3").toURI().toString());
                 clickSound.setVolume(1.5);
                 clickSound.play();
             }
