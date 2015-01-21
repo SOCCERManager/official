@@ -23,15 +23,15 @@
                         <Insets left="5.0" />
                      </HBox.margin>
                   </Label>
-                  <Label fx:id="budgetLabel" alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" prefHeight="51.0" text="Budget" HBox.hgrow="ALWAYS">
+                  <Label fx:id="budgetLabel" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="51.0" text="Budget" HBox.hgrow="ALWAYS">
                      <font>
                         <Font size="35.0" />
                      </font>
                   </Label>
-                  <HBox alignment="CENTER_RIGHT">
+                  <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
                      <children>
                         <Button fx:id="verkoopButton" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleVerkoopSpeler" prefHeight="44.0" prefWidth="162.0" styleClass="gameButton" text="Verkoop" textAlignment="CENTER" AnchorPane.rightAnchor="55.0" />
-                        <Pane prefHeight="1.0" prefWidth="20.0" />
+                        <Pane prefHeight="1.0" prefWidth="19.0" />
                         <Button fx:id="exitSellButton" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleExit" prefHeight="44.0" prefWidth="44.0" styleClass="gameButton" text="X" textAlignment="CENTER" />
                      </children>
                   </HBox>
