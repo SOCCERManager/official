@@ -98,18 +98,21 @@ public class newgamescreenController implements Initializable {
         mainApp.showStartScreen();
 
     }
-
+    
+    private String getUniqueName(String current) {
+        if(!nameExists(current)) {
+            return current;
+        }
+        return getUniqueName(current+"1");
+    }
+    
     @FXML
     private void handleStartButton() {
         String savegame = "";
         if (isInputValid()) {
-            if (!nameExists()) {
-                savegame = nameField.getText();
-            } else {
-                savegame = nameField.getText() + "1";
-            }
+            savegame = getUniqueName(nameField.getText());
+            
             try {
-
                 Competitie c = soccer.bouwXML.leesXML(new File("src/competitie.xml"));
 
                 soccer.bouwXML.bouwXML(c, new File("src/saves/" + savegame + ".xml"));
@@ -205,9 +208,9 @@ public class newgamescreenController implements Initializable {
     }
 //--------------------media player----------------------
 
-    private boolean nameExists() {
+    private boolean nameExists(String s) {
         ArrayList<String> ret = ReadFolder.readNames("src/saves/");
-        if (ret.contains(nameField.getText())) {
+        if (ret.contains(s)) {
             return true;
         }
         return false;
