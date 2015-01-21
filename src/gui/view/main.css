@@ -5,7 +5,7 @@
     //-fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); Dit zie je toch niet.
 }
 #AnchorPaneLoad{
-    -fx-background-image: url("background8.jpg");
+    -fx-background-image: url("background8.JPG");
     -fx-background-repeat: stretch;   
     -fx-background-position: center center;
     //-fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); Dit zie je toch niet.
