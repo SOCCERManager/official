@@ -200,10 +200,4 @@ public class newgamescreenController implements Initializable{
         mainApp.bgmusicRunnable.changeVolume(v);
     }
 //--------------------media player----------------------
-    private boolean nameExists(){
-        ArrayList<String> ret = ReadFolder.readNames("src/saves/");
-        if(ret.contains(nameField.getText()))
-            return true;
-        return false;
-    }
 }
